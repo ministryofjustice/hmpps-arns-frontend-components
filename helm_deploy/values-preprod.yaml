@@ -1,5 +1,5 @@
 ---
-# Per environment values which override defaults in hmpps-arns-frontend-component-api/values.yaml
+# Per environment values which override defaults in hmpps-arns-frontend-components/values.yaml
 
 generic-service:
   replicaCount: 2

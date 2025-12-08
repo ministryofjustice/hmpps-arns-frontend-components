@@ -1,5 +1,5 @@
 ---
-# Per environment values which override defaults in hmpps-arns-frontend-component-api/values.yaml
+# Per environment values which override defaults in hmpps-arns-frontend-components/values.yaml
 
 generic-service:
   replicaCount: 2
@@ -8,7 +8,7 @@ generic-service:
     host: arns-frontend-components-dev.hmpps.service.justice.gov.uk
 
   env:
-    INGRESS_URL: "https://arns-frontend-component-api-dev.hmpps.service.justice.gov.uk"
+    INGRESS_URL: "https://arns-frontend-components-dev.hmpps.service.justice.gov.uk"
     HMPPS_AUTH_URL: "https://sign-in-dev.hmpps.service.justice.gov.uk/auth"
     TOKEN_VERIFICATION_API_URL: "https://token-verification-api-dev.prison.service.justice.gov.uk"
     ENVIRONMENT_NAME: DEV
