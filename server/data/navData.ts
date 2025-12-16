@@ -7,8 +7,8 @@ const rawNavSections: NavSection[] = [
       {
         text: 'Introduction',
         href: '/',
-      }
-    ]
+      },
+    ],
   },
   {
     heading: { text: 'Components' },
@@ -25,13 +25,11 @@ const rawNavSections: NavSection[] = [
         text: 'ROSH widget',
         href: '/rosh-widget',
       },
-
     ],
   },
   {
     heading: { text: 'Legacy components' },
     items: [
-
       {
         text: 'Predictor scores',
         href: '/predictor-scores',
