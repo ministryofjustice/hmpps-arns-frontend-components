@@ -1311,10 +1311,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       class="predictor-badge__type_and_level">LOREM IPSUM <strong>LOW</strong></span>
 
     
-      <span class="predictor-badge__score">0.12%</span>
-    
 
-    <span class="predictor-badge__static_or_dynamic">Static</span>
+    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
   </div>
 
@@ -1339,8 +1337,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       class="predictor-badge__type_and_level">LOREM IPSUM <strong>LOW</strong></span>
 
     
+      <span class="predictor-badge__score">0.12%</span>
+    
 
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    <span class="predictor-badge__static_or_dynamic">Static</span>
 
   </div>
 
@@ -1420,10 +1420,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       class="predictor-badge__type_and_level">LOREM IPSUM <strong>MEDIUM</strong></span>
 
     
-      <span class="predictor-badge__score">23.45%</span>
-    
 
-    <span class="predictor-badge__static_or_dynamic">Static</span>
+    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
   </div>
 
@@ -1448,8 +1446,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       class="predictor-badge__type_and_level">LOREM IPSUM <strong>MEDIUM</strong></span>
 
     
+      <span class="predictor-badge__score">23.45%</span>
+    
 
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    <span class="predictor-badge__static_or_dynamic">Static</span>
 
   </div>
 
@@ -1529,10 +1529,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       class="predictor-badge__type_and_level">LOREM IPSUM <strong>HIGH</strong></span>
 
     
-      <span class="predictor-badge__score">45.67%</span>
-    
 
-    <span class="predictor-badge__static_or_dynamic">Static</span>
+    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
   </div>
 
@@ -1557,8 +1555,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       class="predictor-badge__type_and_level">LOREM IPSUM <strong>HIGH</strong></span>
 
     
+      <span class="predictor-badge__score">45.67%</span>
+    
 
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    <span class="predictor-badge__static_or_dynamic">Static</span>
 
   </div>
 
@@ -1638,10 +1638,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       class="predictor-badge__type_and_level">LOREM IPSUM <strong>VERY HIGH</strong></span>
 
     
-      <span class="predictor-badge__score">67.78%</span>
-    
 
-    <span class="predictor-badge__static_or_dynamic">Static</span>
+    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
   </div>
 
@@ -1666,8 +1664,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       class="predictor-badge__type_and_level">LOREM IPSUM <strong>VERY HIGH</strong></span>
 
     
+      <span class="predictor-badge__score">67.78%</span>
+    
 
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    <span class="predictor-badge__static_or_dynamic">Static</span>
 
   </div>
 
@@ -1780,10 +1780,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       class="predictor-badge__type_and_level">LI <strong>LOW</strong></span>
 
     
-      <span class="predictor-badge__score">0.12%</span>
-    
 
-    <span class="predictor-badge__static_or_dynamic">Static</span>
+    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
   </div>
 
@@ -1823,8 +1821,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       class="predictor-badge__type_and_level">LI <strong>LOW</strong></span>
 
     
+      <span class="predictor-badge__score">0.12%</span>
+    
 
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    <span class="predictor-badge__static_or_dynamic">Static</span>
 
   </div>
 
@@ -1949,10 +1949,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       class="predictor-badge__type_and_level">LI <strong>MEDIUM</strong></span>
 
     
-      <span class="predictor-badge__score">23.45%</span>
-    
 
-    <span class="predictor-badge__static_or_dynamic">Static</span>
+    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
   </div>
 
@@ -1992,8 +1990,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       class="predictor-badge__type_and_level">LI <strong>MEDIUM</strong></span>
 
     
+      <span class="predictor-badge__score">23.45%</span>
+    
 
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    <span class="predictor-badge__static_or_dynamic">Static</span>
 
   </div>
 
@@ -2118,10 +2118,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       class="predictor-badge__type_and_level">LI <strong>HIGH</strong></span>
 
     
-      <span class="predictor-badge__score">45.67%</span>
-    
 
-    <span class="predictor-badge__static_or_dynamic">Static</span>
+    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
   </div>
 
@@ -2161,8 +2159,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       class="predictor-badge__type_and_level">LI <strong>HIGH</strong></span>
 
     
+      <span class="predictor-badge__score">45.67%</span>
+    
 
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    <span class="predictor-badge__static_or_dynamic">Static</span>
 
   </div>
 
@@ -2287,10 +2287,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       class="predictor-badge__type_and_level">LI <strong>VERY HIGH</strong></span>
 
     
-      <span class="predictor-badge__score">67.78%</span>
-    
 
-    <span class="predictor-badge__static_or_dynamic">Static</span>
+    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
   </div>
 
@@ -2330,8 +2328,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       class="predictor-badge__type_and_level">LI <strong>VERY HIGH</strong></span>
 
     
+      <span class="predictor-badge__score">67.78%</span>
+    
 
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    <span class="predictor-badge__static_or_dynamic">Static</span>
 
   </div>
 
