@@ -417,7 +417,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       </p>
       <strong>E.g.</strong>
       <pre><code>{
-  type: 'Lorem Ipsum',
+  type: 'All Reoffending Predictor',
   level: 'VERY_HIGH',
   score: 78.89,
   staticOrDynamic: 'DYNAMIC',
@@ -1447,7 +1447,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </p>
         <strong>E.g.</strong>
         <pre><code>{
-  type: 'Lorem Ipsum',
+  type: 'All Reoffending Predictor',
   level: 'VERY_HIGH',
   score: 78.89,
   staticOrDynamic: 'DYNAMIC'
