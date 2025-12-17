@@ -26,11 +26,11 @@ const rawNavSections: NavSection[] = [
         href: '/rosh-widget',
       },
       {
-        text: 'Predictor Badge',
+        text: 'Predictor badge',
         href: '/predictor-badge',
       },
       {
-        text: 'Expanded Predictor Badge',
+        text: 'Expanded predictor badge',
         href: '/expanded-predictor-badge',
       },
     ],

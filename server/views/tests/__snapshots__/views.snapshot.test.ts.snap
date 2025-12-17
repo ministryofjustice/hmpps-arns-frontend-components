@@ -102,11 +102,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/predictor-badge">Predictor Badge</a>
+            <a href="/predictor-badge">Predictor badge</a>
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/expanded-predictor-badge">Expanded Predictor Badge</a>
+            <a href="/expanded-predictor-badge">Expanded predictor badge</a>
           </li>
         </ul>
     
@@ -220,7 +220,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 <html lang="en" class="govuk-template">
   <head>
     <meta charset="utf-8">
-    <title>Expanded Predictor Badge</title>
+    <title>Expanded predictor badge</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
 
@@ -317,11 +317,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/predictor-badge">Predictor Badge</a>
+            <a href="/predictor-badge">Predictor badge</a>
           </li>
         
           <li class="moj-side-navigation__item moj-side-navigation__item--active">
-            <a href="/expanded-predictor-badge" aria-current="location">Expanded Predictor Badge</a>
+            <a href="/expanded-predictor-badge" aria-current="location">Expanded predictor badge</a>
           </li>
         </ul>
     
@@ -349,23 +349,98 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <div class="govuk-grid-column-two-thirds">
       
   <h1 class="govuk-heading-xl">
-    Expanded Predictor Badge
+    Expanded predictor badge
   </h1>
 
   <div id="predictor-badge-wrapper" class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h2>How to use</h2>
+      <p>Refer to the
+        <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4471390821/Risk+badges">Risk Badges</a>
+        Confluence documentation for usage details.
+      <h3>Code</h3>
+      The
+      <a
+        href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/expanded-predictor-badge">expanded
+        predictor badge Nunjucks macro</a>
+      is available on GitHub.
+      <br>
+      The
+      <a
+        href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_expanded-predictor-badge.scss">expanded
+        predictor badge SCSS</a>
+      is available on GitHub.
+      <h3>Input data format</h3>
+      <p>
+        The predictor badge includes the following fields, which must follow the specified format:
+      <ul>
+        <li>type</li>
+        <ul>
+          <li>OGRS4 generation predictor names (acronyms <strong>not</strong> allowed):</li>
+          <ul>
+            <li>All Reoffending Predictor</li>
+            <li>Violent Reoffending Predictor</li>
+            <li>Direct Contact – Sexual Reoffending Predictor</li>
+            <li>Images and Indirect Contact – Sexual Reoffending Predictor</li>
+            <li>Serious Violent Reoffending Predictor</li>
+            <li>Combined Serious Reoffending Predictor</li>
+          </ul>
+          <li>OGRS3 generation predictor names (acronyms allowed):</li>
+          <ul>
+            <li>Offender Group Reconviction Scale (OGRS)</li>
+            <li>OASys General Reoffending Predictor (OGP)</li>
+            <li>OASys Violent Predictor (OVP)</li>
+            <li>OASys Sexual Predictor – Direct Contact (OSP-DC)</li>
+            <li>OASys Sexual Predictor – Images and Indirect Contact (OSP-IIC)</li>
+            <li>Serious Non-Sexual Violence (SNSV)</li>
+            <li>Risk of Serious Recidivism (RSR)</li>
+          </ul>
+        </ul>
+        <li>level</li>
+        <ul>
+          <li>LOW</li>
+          <li>MEDIUM</li>
+          <li>HIGH</li>
+          <li>VERY_HIGH</li>
+        </ul>
+        <li>score</li>
+        <li>staticOrDynamic</li>
+        <ul>
+          <li>STATIC</li>
+          <li>DYNAMIC</li>
+        </ul>
+        <li>completedDate</li>
+        <ul>
+          <li>Format: DD MMMM YYYY</li>
+        </ul>
+      </ul>
+      </p>
+      <strong>E.g.</strong>
+      <pre><code>{
+  type: 'Lorem Ipsum',
+  level: 'VERY_HIGH',
+  score: 78.89,
+  staticOrDynamic: 'DYNAMIC',
+  completedDate: '25 October 2025',
+}</code></pre>
+      </p>
+      <h2>Examples</h2>
+    </div>
     <div class="govuk-grid-column-one-half">
       <div class="govuk-!-margin-bottom-4">
         
 
   
-
   
     
   
 
+  
+  
+
   <div class="expanded-predictor-badge--low">
     <span
-      class="predictor-badge__type">LOREM IPSUM</span>
+      class="predictor-badge__type">ALL REOFFENDING PREDICTOR</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">LOW</span>
@@ -373,6 +448,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       
 
       <span class="predictor-badge__static_or_dynamic">Static</span>
+
     </div>
 
     <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
@@ -385,14 +461,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
 
   
-
   
     
   
 
+  
+  
+
   <div class="expanded-predictor-badge--low">
     <span
-      class="predictor-badge__type">LOREM IPSUM</span>
+      class="predictor-badge__type">ALL REOFFENDING PREDICTOR</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">LOW</span>
@@ -402,6 +480,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       
 
       <span class="predictor-badge__static_or_dynamic">Static</span>
+
     </div>
 
     <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
@@ -416,14 +495,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
 
   
-
   
     
   
 
+  
+  
+
   <div class="expanded-predictor-badge--low">
     <span
-      class="predictor-badge__type">LOREM IPSUM</span>
+      class="predictor-badge__type">ALL REOFFENDING PREDICTOR</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">LOW</span>
@@ -431,6 +512,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       
 
       <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+
     </div>
 
     <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
@@ -443,14 +525,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
 
   
-
   
     
   
 
+  
+  
+
   <div class="expanded-predictor-badge--low">
     <span
-      class="predictor-badge__type">LOREM IPSUM</span>
+      class="predictor-badge__type">ALL REOFFENDING PREDICTOR</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">LOW</span>
@@ -460,6 +544,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       
 
       <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+
     </div>
 
     <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
@@ -475,14 +560,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
 
   
-
   
     
   
 
+  
+  
+
   <div class="expanded-predictor-badge--medium">
     <span
-      class="predictor-badge__type">LOREM IPSUM</span>
+      class="predictor-badge__type">VIOLENT REOFFENDING PREDICTOR</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">MEDIUM</span>
@@ -490,6 +577,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       
 
       <span class="predictor-badge__static_or_dynamic">Static</span>
+
     </div>
 
     <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
@@ -502,14 +590,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
 
   
-
   
     
   
 
+  
+  
+
   <div class="expanded-predictor-badge--medium">
     <span
-      class="predictor-badge__type">LOREM IPSUM</span>
+      class="predictor-badge__type">VIOLENT REOFFENDING PREDICTOR</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">MEDIUM</span>
@@ -519,6 +609,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       
 
       <span class="predictor-badge__static_or_dynamic">Static</span>
+
     </div>
 
     <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
@@ -533,14 +624,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
 
   
-
   
     
   
 
+  
+  
+
   <div class="expanded-predictor-badge--medium">
     <span
-      class="predictor-badge__type">LOREM IPSUM</span>
+      class="predictor-badge__type">VIOLENT REOFFENDING PREDICTOR</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">MEDIUM</span>
@@ -548,6 +641,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       
 
       <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+
     </div>
 
     <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
@@ -560,14 +654,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
 
   
-
   
     
   
 
+  
+  
+
   <div class="expanded-predictor-badge--medium">
     <span
-      class="predictor-badge__type">LOREM IPSUM</span>
+      class="predictor-badge__type">VIOLENT REOFFENDING PREDICTOR</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">MEDIUM</span>
@@ -577,6 +673,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       
 
       <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+
     </div>
 
     <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
@@ -592,14 +689,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
 
   
-
   
     
   
 
+  
+  
+
   <div class="expanded-predictor-badge--high">
     <span
-      class="predictor-badge__type">LOREM IPSUM</span>
+      class="predictor-badge__type">SERIOUS VIOLENT REOFFENDING PREDICTOR</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">HIGH</span>
@@ -607,6 +706,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       
 
       <span class="predictor-badge__static_or_dynamic">Static</span>
+
     </div>
 
     <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
@@ -619,14 +719,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
 
   
-
   
     
   
 
+  
+  
+
   <div class="expanded-predictor-badge--high">
     <span
-      class="predictor-badge__type">LOREM IPSUM</span>
+      class="predictor-badge__type">SERIOUS VIOLENT REOFFENDING PREDICTOR</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">HIGH</span>
@@ -636,6 +738,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       
 
       <span class="predictor-badge__static_or_dynamic">Static</span>
+
     </div>
 
     <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
@@ -650,14 +753,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
 
   
-
   
     
   
 
+  
+  
+
   <div class="expanded-predictor-badge--high">
     <span
-      class="predictor-badge__type">LOREM IPSUM</span>
+      class="predictor-badge__type">SERIOUS VIOLENT REOFFENDING PREDICTOR</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">HIGH</span>
@@ -665,6 +770,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       
 
       <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+
     </div>
 
     <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
@@ -677,14 +783,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
 
   
-
   
     
   
 
+  
+  
+
   <div class="expanded-predictor-badge--high">
     <span
-      class="predictor-badge__type">LOREM IPSUM</span>
+      class="predictor-badge__type">SERIOUS VIOLENT REOFFENDING PREDICTOR</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">HIGH</span>
@@ -694,6 +802,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       
 
       <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+
     </div>
 
     <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
@@ -709,14 +818,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
 
   
-
   
     
   
 
+  
+  
+
   <div class="expanded-predictor-badge--very-high">
     <span
-      class="predictor-badge__type">LOREM IPSUM</span>
+      class="predictor-badge__type">COMBINED SERIOUS REOFFENDING PREDICTOR</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">VERY HIGH</span>
@@ -724,6 +835,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       
 
       <span class="predictor-badge__static_or_dynamic">Static</span>
+
     </div>
 
     <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
@@ -736,14 +848,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
 
   
-
   
     
   
 
+  
+  
+
   <div class="expanded-predictor-badge--very-high">
     <span
-      class="predictor-badge__type">LOREM IPSUM</span>
+      class="predictor-badge__type">COMBINED SERIOUS REOFFENDING PREDICTOR</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">VERY HIGH</span>
@@ -753,6 +867,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       
 
       <span class="predictor-badge__static_or_dynamic">Static</span>
+
     </div>
 
     <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
@@ -767,14 +882,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
 
   
-
   
     
   
 
+  
+  
+
   <div class="expanded-predictor-badge--very-high">
     <span
-      class="predictor-badge__type">LOREM IPSUM</span>
+      class="predictor-badge__type">COMBINED SERIOUS REOFFENDING PREDICTOR</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">VERY HIGH</span>
@@ -782,6 +899,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       
 
       <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+
     </div>
 
     <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
@@ -794,14 +912,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
 
   
+  
+    
+  
 
+  
   
     
   
 
   <div class="expanded-predictor-badge--very-high">
     <span
-      class="predictor-badge__type">LOREM IPSUM</span>
+      class="predictor-badge__type">COMBINED SERIOUS REOFFENDING PREDICTOR</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">VERY HIGH</span>
@@ -810,7 +932,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         <span class="predictor-badge__score">78.89%</span>
       
 
-      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      <span class="predictor-badge__static_or_dynamic predictor-badge__wrapped_static_or_dynamic">Dynamic</span>
+
     </div>
 
     <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
@@ -990,11 +1113,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/predictor-badge">Predictor Badge</a>
+            <a href="/predictor-badge">Predictor badge</a>
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/expanded-predictor-badge">Expanded Predictor Badge</a>
+            <a href="/expanded-predictor-badge">Expanded predictor badge</a>
           </li>
         </ul>
     
@@ -1131,7 +1254,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 <html lang="en" class="govuk-template">
   <head>
     <meta charset="utf-8">
-    <title>Predictor Badge</title>
+    <title>Predictor badge</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
 
@@ -1228,11 +1351,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </li>
         
           <li class="moj-side-navigation__item moj-side-navigation__item--active">
-            <a href="/predictor-badge" aria-current="location">Predictor Badge</a>
+            <a href="/predictor-badge" aria-current="location">Predictor badge</a>
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/expanded-predictor-badge">Expanded Predictor Badge</a>
+            <a href="/expanded-predictor-badge">Expanded predictor badge</a>
           </li>
         </ul>
     
@@ -1260,29 +1383,88 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <div class="govuk-grid-column-two-thirds">
       
   <h1 class="govuk-heading-xl">
-    Predictor Badge
+    Predictor badge
   </h1>
 
   <div id="predictor-badge-wrapper" class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-      <h2>Full Predictor Name</h2>
-      <div class="govuk-!-margin-bottom-4">
-        
+      <h2>How to use</h2>
+      <p>Refer to the
+        <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4471390821/Risk+badges">Risk Badges</a>
+        Confluence documentation for usage details.
+      <h3>Code</h3>
+      The
+      <a
+        href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/predictor-badge">predictor
+        badge Nunjucks macro</a>
+      is available on GitHub.
+      <br>
+      The
+      <a
+        href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_predictor-badge.scss">predictor
+        badge SCSS</a>
+      is available on GitHub.
+      <h3>Input data format</h3>
+      <p>
+        The predictor badge includes the following fields, which must follow the specified format:
+      <ul>
+        <li>type</li>
+        <ul>
+          <li>OGRS4 generation predictor names (acronyms <strong>not</strong> allowed):</li>
+          <ul>
+            <li>All Reoffending Predictor</li>
+            <li>Violent Reoffending Predictor</li>
+            <li>Direct Contact – Sexual Reoffending Predictor</li>
+            <li>Images and Indirect Contact – Sexual Reoffending Predictor</li>
+            <li>Serious Violent Reoffending Predictor</li>
+            <li>Combined Serious Reoffending Predictor</li>
+          </ul>
+          <li>OGRS3 generation predictor names (acronyms allowed):</li>
+          <ul>
+            <li>Offender Group Reconviction Scale (OGRS)</li>
+            <li>OASys General Reoffending Predictor (OGP)</li>
+            <li>OASys Violent Predictor (OVP)</li>
+            <li>OASys Sexual Predictor – Direct Contact (OSP-DC)</li>
+            <li>OASys Sexual Predictor – Images and Indirect Contact (OSP-IIC)</li>
+            <li>Serious Non-Sexual Violence (SNSV)</li>
+            <li>Risk of Serious Recidivism (RSR)</li>
+          </ul>
+        </ul>
+        <li>level</li>
+        <ul>
+          <li>LOW</li>
+          <li>MEDIUM</li>
+          <li>HIGH</li>
+          <li>VERY_HIGH</li>
+        </ul>
+        <li>score</li>
+        <li>staticOrDynamic</li>
+        <ul>
+          <li>STATIC</li>
+          <li>DYNAMIC</li>
+        </ul>
+      </ul>
+        </p>
+        <strong>E.g.</strong>
+        <pre><code>{
+  type: 'Lorem Ipsum',
+  level: 'VERY_HIGH',
+  score: 78.89,
+  staticOrDynamic: 'DYNAMIC'
+}</code></pre>
+        </p>
+        <h2>Examples</h2>
+        <div class="govuk-!-margin-bottom-4">
+          
 
   
-
-  
-    
-  
-
-
   
     
   
 
   <div class="predictor-badge--low">
     <span
-      class="predictor-badge__type_and_level">LOREM IPSUM <strong>LOW</strong></span>
+      class="predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
     
 
@@ -1291,24 +1473,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 
 
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          
 
   
-
-  
-    
-  
-
-
   
     
   
 
   <div class="predictor-badge--low">
     <span
-      class="predictor-badge__type_and_level">LOREM IPSUM <strong>LOW</strong></span>
+      class="predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
     
 
@@ -1317,24 +1493,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 
 
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          
 
   
-
-  
-    
-  
-
-
   
     
   
 
   <div class="predictor-badge--low">
     <span
-      class="predictor-badge__type_and_level">LOREM IPSUM <strong>LOW</strong></span>
+      class="predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
     
       <span class="predictor-badge__score">0.12%</span>
@@ -1345,24 +1515,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 
 
-      </div>
-      <div class="govuk-!-margin-bottom-8">
-        
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          
 
   
-
-  
-    
-  
-
-
   
     
   
 
   <div class="predictor-badge--low">
     <span
-      class="predictor-badge__type_and_level">LOREM IPSUM <strong>LOW</strong></span>
+      class="predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
     
       <span class="predictor-badge__score">1.23%</span>
@@ -1373,25 +1537,19 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 
 
-      </div>
+        </div>
 
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
+        <div class="govuk-!-margin-bottom-4">
+          
 
   
-    
-  
-
-
   
     
   
 
   <div class="predictor-badge--medium">
     <span
-      class="predictor-badge__type_and_level">LOREM IPSUM <strong>MEDIUM</strong></span>
+      class="predictor-badge__type_and_level">VIOLENT REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
 
     
 
@@ -1400,24 +1558,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 
 
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          
 
   
-
-  
-    
-  
-
-
   
     
   
 
   <div class="predictor-badge--medium">
     <span
-      class="predictor-badge__type_and_level">LOREM IPSUM <strong>MEDIUM</strong></span>
+      class="predictor-badge__type_and_level">VIOLENT REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
 
     
 
@@ -1426,24 +1578,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 
 
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          
 
   
-
-  
-    
-  
-
-
   
     
   
 
   <div class="predictor-badge--medium">
     <span
-      class="predictor-badge__type_and_level">LOREM IPSUM <strong>MEDIUM</strong></span>
+      class="predictor-badge__type_and_level">VIOLENT REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
 
     
       <span class="predictor-badge__score">23.45%</span>
@@ -1454,24 +1600,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 
 
-      </div>
-      <div class="govuk-!-margin-bottom-8">
-        
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          
 
   
-
-  
-    
-  
-
-
   
     
   
 
   <div class="predictor-badge--medium">
     <span
-      class="predictor-badge__type_and_level">LOREM IPSUM <strong>MEDIUM</strong></span>
+      class="predictor-badge__type_and_level">VIOLENT REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
 
     
       <span class="predictor-badge__score">34.56%</span>
@@ -1482,25 +1622,19 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 
 
-      </div>
+        </div>
 
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
+        <div class="govuk-!-margin-bottom-4">
+          
 
   
-    
-  
-
-
   
     
   
 
   <div class="predictor-badge--high">
     <span
-      class="predictor-badge__type_and_level">LOREM IPSUM <strong>HIGH</strong></span>
+      class="predictor-badge__type_and_level">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>HIGH</strong></span>
 
     
 
@@ -1509,24 +1643,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 
 
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          
 
   
-
-  
-    
-  
-
-
   
     
   
 
   <div class="predictor-badge--high">
     <span
-      class="predictor-badge__type_and_level">LOREM IPSUM <strong>HIGH</strong></span>
+      class="predictor-badge__type_and_level">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>HIGH</strong></span>
 
     
 
@@ -1535,24 +1663,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 
 
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          
 
   
-
-  
-    
-  
-
-
   
     
   
 
   <div class="predictor-badge--high">
     <span
-      class="predictor-badge__type_and_level">LOREM IPSUM <strong>HIGH</strong></span>
+      class="predictor-badge__type_and_level">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>HIGH</strong></span>
 
     
       <span class="predictor-badge__score">45.67%</span>
@@ -1563,24 +1685,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 
 
-      </div>
-      <div class="govuk-!-margin-bottom-8">
-        
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          
 
   
-
-  
-    
-  
-
-
   
     
   
 
   <div class="predictor-badge--high">
     <span
-      class="predictor-badge__type_and_level">LOREM IPSUM <strong>HIGH</strong></span>
+      class="predictor-badge__type_and_level">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>HIGH</strong></span>
 
     
       <span class="predictor-badge__score">56.67%</span>
@@ -1591,25 +1707,19 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 
 
-      </div>
+        </div>
 
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
+        <div class="govuk-!-margin-bottom-4">
+          
 
   
-    
-  
-
-
   
     
   
 
   <div class="predictor-badge--very-high">
     <span
-      class="predictor-badge__type_and_level">LOREM IPSUM <strong>VERY HIGH</strong></span>
+      class="predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
 
     
 
@@ -1618,24 +1728,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 
 
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          
 
   
-
-  
-    
-  
-
-
   
     
   
 
   <div class="predictor-badge--very-high">
     <span
-      class="predictor-badge__type_and_level">LOREM IPSUM <strong>VERY HIGH</strong></span>
+      class="predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
 
     
 
@@ -1644,24 +1748,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 
 
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          
 
   
-
-  
-    
-  
-
-
   
     
   
 
   <div class="predictor-badge--very-high">
     <span
-      class="predictor-badge__type_and_level">LOREM IPSUM <strong>VERY HIGH</strong></span>
+      class="predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
 
     
       <span class="predictor-badge__score">67.78%</span>
@@ -1672,24 +1770,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 
 
-      </div>
-      <div class="govuk-!-margin-bottom-8">
-        
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          
 
   
-
-  
-    
-  
-
-
   
     
   
 
   <div class="predictor-badge--very-high">
     <span
-      class="predictor-badge__type_and_level">LOREM IPSUM <strong>VERY HIGH</strong></span>
+      class="predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
 
     
       <span class="predictor-badge__score">78.89%</span>
@@ -1700,686 +1792,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 
 
-      </div>
-    </div>
-
-    <div class="govuk-grid-column-full">
-      <h2>Acronym Predictor Name</h2>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-
-  
-    
-  
-
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-    
-      
-        
-        
-      
-    
-
-    
-  
-
-  <div class="predictor-badge--low">
-    <span
-      class="predictor-badge__type_and_level">LI <strong>LOW</strong></span>
-
-    
-
-    <span class="predictor-badge__static_or_dynamic">Static</span>
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-
-  
-    
-  
-
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-    
-      
-        
-        
-      
-    
-
-    
-  
-
-  <div class="predictor-badge--low">
-    <span
-      class="predictor-badge__type_and_level">LI <strong>LOW</strong></span>
-
-    
-
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-
-  
-    
-  
-
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-    
-      
-        
-        
-      
-    
-
-    
-  
-
-  <div class="predictor-badge--low">
-    <span
-      class="predictor-badge__type_and_level">LI <strong>LOW</strong></span>
-
-    
-      <span class="predictor-badge__score">0.12%</span>
-    
-
-    <span class="predictor-badge__static_or_dynamic">Static</span>
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-8">
-        
-
-  
-
-  
-    
-  
-
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-    
-      
-        
-        
-      
-    
-
-    
-  
-
-  <div class="predictor-badge--low">
-    <span
-      class="predictor-badge__type_and_level">LI <strong>LOW</strong></span>
-
-    
-      <span class="predictor-badge__score">1.23%</span>
-    
-
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
-
-  </div>
-
-
-      </div>
-
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-
-  
-    
-  
-
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-    
-      
-        
-        
-      
-    
-
-    
-  
-
-  <div class="predictor-badge--medium">
-    <span
-      class="predictor-badge__type_and_level">LI <strong>MEDIUM</strong></span>
-
-    
-
-    <span class="predictor-badge__static_or_dynamic">Static</span>
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-
-  
-    
-  
-
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-    
-      
-        
-        
-      
-    
-
-    
-  
-
-  <div class="predictor-badge--medium">
-    <span
-      class="predictor-badge__type_and_level">LI <strong>MEDIUM</strong></span>
-
-    
-
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-
-  
-    
-  
-
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-    
-      
-        
-        
-      
-    
-
-    
-  
-
-  <div class="predictor-badge--medium">
-    <span
-      class="predictor-badge__type_and_level">LI <strong>MEDIUM</strong></span>
-
-    
-      <span class="predictor-badge__score">23.45%</span>
-    
-
-    <span class="predictor-badge__static_or_dynamic">Static</span>
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-8">
-        
-
-  
-
-  
-    
-  
-
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-    
-      
-        
-        
-      
-    
-
-    
-  
-
-  <div class="predictor-badge--medium">
-    <span
-      class="predictor-badge__type_and_level">LI <strong>MEDIUM</strong></span>
-
-    
-      <span class="predictor-badge__score">34.56%</span>
-    
-
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
-
-  </div>
-
-
-      </div>
-
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-
-  
-    
-  
-
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-    
-      
-        
-        
-      
-    
-
-    
-  
-
-  <div class="predictor-badge--high">
-    <span
-      class="predictor-badge__type_and_level">LI <strong>HIGH</strong></span>
-
-    
-
-    <span class="predictor-badge__static_or_dynamic">Static</span>
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-
-  
-    
-  
-
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-    
-      
-        
-        
-      
-    
-
-    
-  
-
-  <div class="predictor-badge--high">
-    <span
-      class="predictor-badge__type_and_level">LI <strong>HIGH</strong></span>
-
-    
-
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-
-  
-    
-  
-
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-    
-      
-        
-        
-      
-    
-
-    
-  
-
-  <div class="predictor-badge--high">
-    <span
-      class="predictor-badge__type_and_level">LI <strong>HIGH</strong></span>
-
-    
-      <span class="predictor-badge__score">45.67%</span>
-    
-
-    <span class="predictor-badge__static_or_dynamic">Static</span>
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-8">
-        
-
-  
-
-  
-    
-  
-
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-    
-      
-        
-        
-      
-    
-
-    
-  
-
-  <div class="predictor-badge--high">
-    <span
-      class="predictor-badge__type_and_level">LI <strong>HIGH</strong></span>
-
-    
-      <span class="predictor-badge__score">56.67%</span>
-    
-
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
-
-  </div>
-
-
-      </div>
-
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-
-  
-    
-  
-
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-    
-      
-        
-        
-      
-    
-
-    
-  
-
-  <div class="predictor-badge--very-high">
-    <span
-      class="predictor-badge__type_and_level">LI <strong>VERY HIGH</strong></span>
-
-    
-
-    <span class="predictor-badge__static_or_dynamic">Static</span>
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-
-  
-    
-  
-
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-    
-      
-        
-        
-      
-    
-
-    
-  
-
-  <div class="predictor-badge--very-high">
-    <span
-      class="predictor-badge__type_and_level">LI <strong>VERY HIGH</strong></span>
-
-    
-
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-
-  
-    
-  
-
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-    
-      
-        
-        
-      
-    
-
-    
-  
-
-  <div class="predictor-badge--very-high">
-    <span
-      class="predictor-badge__type_and_level">LI <strong>VERY HIGH</strong></span>
-
-    
-      <span class="predictor-badge__score">67.78%</span>
-    
-
-    <span class="predictor-badge__static_or_dynamic">Static</span>
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-
-  
-    
-  
-
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-    
-      
-        
-        
-      
-    
-
-    
-  
-
-  <div class="predictor-badge--very-high">
-    <span
-      class="predictor-badge__type_and_level">LI <strong>VERY HIGH</strong></span>
-
-    
-      <span class="predictor-badge__score">78.89%</span>
-    
-
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
-
-  </div>
-
-
-      </div>
+        </div>
     </div>
   </div>
 
@@ -2551,11 +1964,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/predictor-badge">Predictor Badge</a>
+            <a href="/predictor-badge">Predictor badge</a>
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/expanded-predictor-badge">Expanded Predictor Badge</a>
+            <a href="/expanded-predictor-badge">Expanded predictor badge</a>
           </li>
         </ul>
     
@@ -2808,11 +2221,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/predictor-badge">Predictor Badge</a>
+            <a href="/predictor-badge">Predictor badge</a>
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/expanded-predictor-badge">Expanded Predictor Badge</a>
+            <a href="/expanded-predictor-badge">Expanded predictor badge</a>
           </li>
         </ul>
     
@@ -3188,11 +2601,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/predictor-badge">Predictor Badge</a>
+            <a href="/predictor-badge">Predictor badge</a>
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/expanded-predictor-badge">Expanded Predictor Badge</a>
+            <a href="/expanded-predictor-badge">Expanded predictor badge</a>
           </li>
         </ul>
     
@@ -3461,11 +2874,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/predictor-badge">Predictor Badge</a>
+            <a href="/predictor-badge">Predictor badge</a>
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/expanded-predictor-badge">Expanded Predictor Badge</a>
+            <a href="/expanded-predictor-badge">Expanded predictor badge</a>
           </li>
         </ul>
     
@@ -3823,11 +3236,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/predictor-badge">Predictor Badge</a>
+            <a href="/predictor-badge">Predictor badge</a>
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/expanded-predictor-badge">Expanded Predictor Badge</a>
+            <a href="/expanded-predictor-badge">Expanded predictor badge</a>
           </li>
         </ul>
     
@@ -4067,11 +3480,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/predictor-badge">Predictor Badge</a>
+            <a href="/predictor-badge">Predictor badge</a>
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/expanded-predictor-badge">Expanded Predictor Badge</a>
+            <a href="/expanded-predictor-badge">Expanded predictor badge</a>
           </li>
         </ul>
     

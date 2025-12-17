@@ -21,16 +21,3 @@ export const initialiseName = (fullName?: string): string | null => {
   const array = fullName.split(' ')
   return `${array[0][0]}. ${array.reverse()[0]}`
 }
-
-export const govukDate = (date: string | Date): string => {
-  if (!date) return ''
-
-  const d = new Date(date)
-  if (Number.isNaN(d.getTime())) return ''
-
-  return d.toLocaleDateString('en-GB', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  })
-}
