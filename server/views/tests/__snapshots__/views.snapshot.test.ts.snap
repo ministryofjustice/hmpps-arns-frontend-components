@@ -343,7 +343,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
     <p class="govuk-body-m">Multi-agency public protection arrangements</p>
     
         <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-        <p class="govuk-hint govuk-body-m">Last updated: 10th October 2021</p>
+        <p class="govuk-hint govuk-body-m">Last updated: 10 October 2021</p>
     
 
 </aside>
@@ -1918,7 +1918,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
 <html lang="en" class="govuk-template">
   <head>
     <meta charset="utf-8">
-    <title>Rosh widget</title>
+    <title>ROSH widget</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
 
@@ -2039,7 +2039,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
     <div class="govuk-grid-column-two-thirds">
       
   <h1 class="govuk-heading-xl">
-    Rosh widget
+    ROSH widget
   </h1>
 
   <div id="rosh-widget-wrapper" class="govuk-grid-row">
@@ -2052,6 +2052,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
       <h3>Code</h3>
       <p>
         The <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/82d8d1dd544e386bcaa58ea3f64cf2fade3eaec6/server/views/partials/rosh-widget">ROSH widget Nunjucks macro</a> is available on GitHub.
+        <br>
         The <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/a9c439f504404b3afe77306d1d468d17bbd453d5/assets/scss/partials/risk/_rosh-widget.scss">ROSH widget SCSS</a> is available on GitHub.
       </p>
       <h3>Input data format</h3>
@@ -2068,7 +2069,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
             <li>custody (enum - LOW, MEDIUM, HIGH, VERY_HIGH, N/A)</li>
           </ul>
         </li>
-        <li>lastUpdated (string - formatted like 10th October 2021)</li>
+        <li>lastUpdated (string - formatted like 10 October 2021)</li>
       </ul>
       <h4>E.g.</h4>
       <pre>
@@ -2103,7 +2104,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
       custody: 'N/A',
     },
   ],
-  lastUpdated: '10th October 2021',
+  lastUpdated: '10 October 2021',
 }
         </code>
       </pre>
@@ -2167,7 +2168,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
     
 </strong> ROSH</h3>
     <p class="govuk-body-m">Risk of serious harm</p>
-    <p class="govuk-hint govuk-body-m">Last updated: 10th October 2021</p>
+    <p class="govuk-hint govuk-body-m">Last updated: 10 October 2021</p>
     <div class="moj-scrollable-pane">
       <table class="govuk-table rosh-widget__table">
         <caption class="govuk-visually-hidden">Risk of serious harm in Community</caption>
@@ -2384,7 +2385,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
     
 </strong> ROSH</h3>
     <p class="govuk-body-m">Risk of serious harm</p>
-    <p class="govuk-hint govuk-body-m">Last updated: 10th October 2021</p>
+    <p class="govuk-hint govuk-body-m">Last updated: 10 October 2021</p>
     <div class="moj-scrollable-pane">
       <table class="govuk-table rosh-widget__table">
         <caption class="govuk-visually-hidden">Risk of serious harm in Community</caption>
@@ -2546,7 +2547,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
     
 </strong> ROSH</h3>
     <p class="govuk-body-m">Risk of serious harm</p>
-    <p class="govuk-hint govuk-body-m">Last updated: 10th October 2021</p>
+    <p class="govuk-hint govuk-body-m">Last updated: 10 October 2021</p>
     <div class="moj-scrollable-pane">
       <table class="govuk-table rosh-widget__table">
         <caption class="govuk-visually-hidden">Risk of serious harm in Community</caption>

@@ -1,7 +1,7 @@
 {% extends "layouts/side-nav-layout.njk" %}
 {% from "../partials/rosh-widget/macro.njk" import roshWidget %}
 
-{% set pageTitle = "Rosh widget" %}
+{% set pageTitle = "ROSH widget" %}
 {% set mainClasses = "govuk-body" %}
 
 {% block sideNavContent %}
@@ -19,6 +19,7 @@
       <h3>Code</h3>
       <p>
         The <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/82d8d1dd544e386bcaa58ea3f64cf2fade3eaec6/server/views/partials/rosh-widget">ROSH widget Nunjucks macro</a> is available on GitHub.
+        <br>
         The <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/a9c439f504404b3afe77306d1d468d17bbd453d5/assets/scss/partials/risk/_rosh-widget.scss">ROSH widget SCSS</a> is available on GitHub.
       </p>
       <h3>Input data format</h3>
@@ -35,7 +36,7 @@
             <li>custody (enum - LOW, MEDIUM, HIGH, VERY_HIGH, N/A)</li>
           </ul>
         </li>
-        <li>lastUpdated (string - formatted like 10th October 2021)</li>
+        <li>lastUpdated (string - formatted like 10 October 2021)</li>
       </ul>
       <h4>E.g.</h4>
       <pre>
@@ -70,7 +71,7 @@
       custody: 'N/A',
     },
   ],
-  lastUpdated: '10th October 2021',
+  lastUpdated: '10 October 2021',
 }
         </code>
       </pre>

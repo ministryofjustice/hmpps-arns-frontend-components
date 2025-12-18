@@ -115,7 +115,7 @@ describe('GET /rosh-widget', () => {
       .expect('Content-Type', /html/)
       .expect(200)
       .expect(res => {
-        expect(res.text).toContain('<title>Rosh widget</title>')
+        expect(res.text).toContain('<title>ROSH widget</title>')
       })
   })
 })

@@ -101,7 +101,7 @@ export default function componentPageRoutes(): Router {
           custody: 'MEDIUM',
         },
       ],
-      lastUpdated: '10th October 2021',
+      lastUpdated: '10 October 2021',
     },
     roshRiskSummaryCommunity: {
       hasBeenCompleted: true,
@@ -133,7 +133,7 @@ export default function componentPageRoutes(): Router {
           custody: 'N/A',
         },
       ],
-      lastUpdated: '10th October 2021',
+      lastUpdated: '10 October 2021',
     },
     roshRiskSummaryCustody: {
       hasBeenCompleted: true,
@@ -165,12 +165,12 @@ export default function componentPageRoutes(): Router {
           custody: 'LOW',
         },
       ],
-      lastUpdated: '10th October 2021',
+      lastUpdated: '10 October 2021',
     },
     mappa: {
       level: 'CAT 2/LEVEL 1',
       isNominal: false,
-      lastUpdated: '10th October 2021',
+      lastUpdated: '10 October 2021',
     },
     flags: [{ description: 'Hate Crime' }, { description: 'Assault' }],
   }
