@@ -26,11 +26,6 @@ describe('View Snapshot Tests: All Pages', () => {
     expect(response.text).toMatchSnapshot()
   })
 
-  it('should match snapshot for the predictor scores indicator page (/predictor-scores-indicator)', async () => {
-    const response = await request(app).get('/predictor-scores-indicator').expect(200)
-    expect(response.text).toMatchSnapshot()
-  })
-
   it('should match snapshot for the predictor timeline page (/predictor-timeline)', async () => {
     const response = await request(app).get('/predictor-timeline').expect(200)
     expect(response.text).toMatchSnapshot()

@@ -47,10 +47,6 @@ const rawNavSections: NavSection[] = [
         href: '/predictor-scores',
       },
       {
-        text: 'Predictor scores indicator',
-        href: '/predictor-scores-indicator',
-      },
-      {
         text: 'Predictor timeline',
         href: '/predictor-timeline',
       },

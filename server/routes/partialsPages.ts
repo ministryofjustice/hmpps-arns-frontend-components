@@ -26,10 +26,6 @@ export default function componentPageRoutes(): Router {
     const navSections = activateMojNav(rawNavSections, req.path)
     res.render('pages/predictorScoresPage', { legacyComponentRiskScores, navSections })
   })
-  router.get('/predictor-scores-indicator', async (req, res) => {
-    const navSections = activateMojNav(rawNavSections, req.path)
-    res.render('pages/predictorScoresIndicatorPage', { legacyComponentRiskScores, navSections })
-  })
   router.get('/predictor-timeline', async (req, res) => {
     const navSections = activateMojNav(rawNavSections, req.path)
     res.render('pages/predictorTimelinePage', { legacyComponentRiskScores, navSections })
