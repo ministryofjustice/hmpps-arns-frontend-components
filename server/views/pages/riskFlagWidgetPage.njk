@@ -8,6 +8,48 @@
   <h1 class="govuk-heading-xl">
     {{ pageTitle }}
   </h1>
+
+  <div id="risk-flag-widget-wrapper" class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h2>How to use</h2>
+      <p>
+        Refer to the <a
+          href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4474110284/Delius+risk+flags+registers">Delius risk flags (registers)</a>
+        Confluence documentation for usage details.
+      </p>
+      <h3>Code</h3>
+      <p>
+        The <a
+          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/82d8d1dd544e386bcaa58ea3f64cf2fade3eaec6/server/views/partials/risk-flag-widget">Risk flag
+          widget Nunjucks macro</a> is available on GitHub.
+        <br>
+        The <a
+          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/a9c439f504404b3afe77306d1d468d17bbd453d5/assets/scss/partials/risk/_risk-flag-widget.scss">Risk flag
+          widget SCSS</a> is available on GitHub.
+      </p>
+      <h3>Input data format</h3>
+      <p>
+        The risk flag widget includes the following fields, which must follow the specified format:
+      </p>
+      <ul>
+        <li>flags (List of objects)</li>
+          <ul>
+            <li>description (string)</li>
+          </ul>
+        </li>
+      </ul>
+      <h4>E.g.</h4>
+      <pre>
+        <code>
+flags: [
+  { description: 'Hate Crime' },
+  { description: 'Assault' }
+]
+        </code>
+      </pre>
+    </div>
+  </div>
+  <h2>Examples</h2>
   <div id="risk-flag-widget-wrapper" class="govuk-grid-row">
     <div id="risk-flag-widget" class="govuk-grid-column-one-third">
       {{ riskFlagWidget(widgetData.flags) }}

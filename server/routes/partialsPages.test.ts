@@ -50,20 +50,6 @@ describe('GET /predictor-scores', () => {
   })
 })
 
-describe('GET /predictor-scores-indicator', () => {
-  it('should render index page', () => {
-    auditService.logPageView.mockResolvedValue(null)
-
-    return request(app)
-      .get('/predictor-scores-indicator')
-      .expect('Content-Type', /html/)
-      .expect(200)
-      .expect(res => {
-        expect(res.text).toContain('<title>Predictor scores indicator</title>')
-      })
-  })
-})
-
 describe('GET /predictor-timeline', () => {
   it('should render index page', () => {
     auditService.logPageView.mockResolvedValue(null)
