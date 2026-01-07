@@ -6,6 +6,7 @@ import widgetData from '../data/widgetData'
 import legacyComponentRiskScores from '../data/legacyComponentRiskScores'
 import badgeRiskScores from '../data/badgeRiskScores'
 import predictorScaleNotApplicableScores from '../data/predictorScaleNotApplicableScores'
+import predictorTimelineRiskScores from '../data/predictorTimelineRiskScores'
 
 export default function componentPageRoutes(): Router {
   const router = Router()
@@ -25,6 +26,10 @@ export default function componentPageRoutes(): Router {
   router.get('/predictor-scores', async (req, res) => {
     const navSections = activateMojNav(rawNavSections, req.path)
     res.render('pages/predictorScoresPage', { legacyComponentRiskScores, navSections })
+  })
+  router.get('/predictor-timeline', async (req, res) => {
+    const navSections = activateMojNav(rawNavSections, req.path)
+    res.render('pages/predictorTimelinePage', { predictorTimelineRiskScores, navSections })
   })
   router.get('/legacy-predictor-timeline', async (req, res) => {
     const navSections = activateMojNav(rawNavSections, req.path)

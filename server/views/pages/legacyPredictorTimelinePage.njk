@@ -13,7 +13,7 @@
     {{ mojAlert({
       variant: "warning",
       title: "These components are deprecated",
-      html: 'These components are deprecated and have been replaced by <a href="#">TODO</a>.'
+      html: 'These components are deprecated and have been replaced by <a href="/predictor-timeline">Predictor timeline v2</a>.'
     }) }}
   </div>
   <div id="predictor-scores-history" class="govuk-grid-row govuk-!-margin-top-6">
@@ -22,7 +22,7 @@
         <h2 class="govuk-heading-l">Scores history</h2>
         <a id="predictor-timeline__toggle-all" href="#" class="govuk-link">Open all</a>
       </div>
-      {{ predictorTimeline(riskScores.historical) }}
+      {{ predictorTimeline(legacyComponentRiskScores.historical) }}
     </div>
   </div>
 {% endblock %}
