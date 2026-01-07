@@ -19,7 +19,7 @@
 
   <div class="{{ badgeClass }}">
     <span
-      class="predictor-badge__type">{{ predictor.type | upper }}</span>
+      class="predictor-badge__type">{{ predictor.type | titleCase }}</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">{{ predictor.level | replace('_', ' ') }}</span>

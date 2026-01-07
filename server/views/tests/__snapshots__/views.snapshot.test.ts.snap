@@ -424,7 +424,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
   <div class="expanded-predictor-badge--low">
     <span
-      class="predictor-badge__type">ALL REOFFENDING PREDICTOR</span>
+      class="predictor-badge__type">All Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">LOW</span>
@@ -454,7 +454,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
   <div class="expanded-predictor-badge--low">
     <span
-      class="predictor-badge__type">ALL REOFFENDING PREDICTOR</span>
+      class="predictor-badge__type">All Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">LOW</span>
@@ -488,7 +488,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
   <div class="expanded-predictor-badge--low">
     <span
-      class="predictor-badge__type">ALL REOFFENDING PREDICTOR</span>
+      class="predictor-badge__type">All Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">LOW</span>
@@ -518,7 +518,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
   <div class="expanded-predictor-badge--low">
     <span
-      class="predictor-badge__type">ALL REOFFENDING PREDICTOR</span>
+      class="predictor-badge__type">All Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">LOW</span>
@@ -553,7 +553,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
   <div class="expanded-predictor-badge--medium">
     <span
-      class="predictor-badge__type">VIOLENT REOFFENDING PREDICTOR</span>
+      class="predictor-badge__type">Violent Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">MEDIUM</span>
@@ -583,7 +583,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
   <div class="expanded-predictor-badge--medium">
     <span
-      class="predictor-badge__type">VIOLENT REOFFENDING PREDICTOR</span>
+      class="predictor-badge__type">Violent Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">MEDIUM</span>
@@ -617,7 +617,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
   <div class="expanded-predictor-badge--medium">
     <span
-      class="predictor-badge__type">VIOLENT REOFFENDING PREDICTOR</span>
+      class="predictor-badge__type">Violent Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">MEDIUM</span>
@@ -647,7 +647,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
   <div class="expanded-predictor-badge--medium">
     <span
-      class="predictor-badge__type">VIOLENT REOFFENDING PREDICTOR</span>
+      class="predictor-badge__type">Violent Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">MEDIUM</span>
@@ -682,7 +682,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
   <div class="expanded-predictor-badge--high">
     <span
-      class="predictor-badge__type">SERIOUS VIOLENT REOFFENDING PREDICTOR</span>
+      class="predictor-badge__type">Serious Violent Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">HIGH</span>
@@ -712,7 +712,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
   <div class="expanded-predictor-badge--high">
     <span
-      class="predictor-badge__type">SERIOUS VIOLENT REOFFENDING PREDICTOR</span>
+      class="predictor-badge__type">Serious Violent Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">HIGH</span>
@@ -746,7 +746,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
   <div class="expanded-predictor-badge--high">
     <span
-      class="predictor-badge__type">SERIOUS VIOLENT REOFFENDING PREDICTOR</span>
+      class="predictor-badge__type">Serious Violent Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">HIGH</span>
@@ -776,7 +776,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
   <div class="expanded-predictor-badge--high">
     <span
-      class="predictor-badge__type">SERIOUS VIOLENT REOFFENDING PREDICTOR</span>
+      class="predictor-badge__type">Serious Violent Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">HIGH</span>
@@ -811,7 +811,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
   <div class="expanded-predictor-badge--very-high">
     <span
-      class="predictor-badge__type">COMBINED SERIOUS REOFFENDING PREDICTOR</span>
+      class="predictor-badge__type">Combined Serious Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">VERY HIGH</span>
@@ -841,7 +841,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
   <div class="expanded-predictor-badge--very-high">
     <span
-      class="predictor-badge__type">COMBINED SERIOUS REOFFENDING PREDICTOR</span>
+      class="predictor-badge__type">Combined Serious Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">VERY HIGH</span>
@@ -875,7 +875,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
   <div class="expanded-predictor-badge--very-high">
     <span
-      class="predictor-badge__type">COMBINED SERIOUS REOFFENDING PREDICTOR</span>
+      class="predictor-badge__type">Combined Serious Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">VERY HIGH</span>
@@ -907,7 +907,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
   <div class="expanded-predictor-badge--very-high">
     <span
-      class="predictor-badge__type">COMBINED SERIOUS REOFFENDING PREDICTOR</span>
+      class="predictor-badge__type">Combined Serious Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">VERY HIGH</span>
