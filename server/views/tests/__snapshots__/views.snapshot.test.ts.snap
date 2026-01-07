@@ -4380,7 +4380,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-<div class="moj-timeline predictor">
+<div class="predictor-timeline predictor">
   
 
     
@@ -4400,11 +4400,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
     
 
-    <div class="moj-timeline__item">
-      <div class="moj-timeline__header">
-        <p class="moj-timeline__byline">23 Jul 2026 at 12:00</p>
+    <div class="predictor-timeline__item">
+      <div class="predictor-timeline__header">
+        <p class="predictor-timeline__byline">23 Jul 2026 at 12:00</p>
       </div>
-      <div class="moj-timeline__description">
+      <div class="predictor-timeline__description">
         <div class="predictor-timeline-section">
           <ul class="govuk-list">
             
@@ -4642,12 +4642,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       
       
-        <div class="moj-timeline__item">
-          <div class="moj-timeline__header">
-            <p class="moj-timeline__byline">1 Mar 2026 at 09:00</p>
+        <div class="predictor-timeline__item">
+          <div class="predictor-timeline__header">
+            <p class="predictor-timeline__byline">1 Mar 2026 at 09:00</p>
           </div>
-          <div class="moj-timeline__description">
-            <div class="govuk-warning-text moj-timeline__warning">
+          <div class="predictor-timeline__description">
+            <div class="govuk-warning-text predictor-timeline__warning">
               <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
               <strong class="govuk-warning-text__text">
                 <span
@@ -4655,7 +4655,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
                 Risk predictor tools updated
               </strong>
             </div>
-            <details class="govuk-details moj-timeline__details">
+            <details class="govuk-details predictor-timeline__details">
               <summary class="govuk-details__summary">
               <span class="govuk-details__summary-text">
                 How the risk predictor tools have changed
@@ -4707,11 +4707,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
     
 
-    <div class="moj-timeline__item">
-      <div class="moj-timeline__header">
-        <p class="moj-timeline__byline">14 May 2019 at 12:00</p>
+    <div class="predictor-timeline__item">
+      <div class="predictor-timeline__header">
+        <p class="predictor-timeline__byline">14 May 2019 at 12:00</p>
       </div>
-      <div class="moj-timeline__description">
+      <div class="predictor-timeline__description">
         <div class="predictor-timeline-section">
           <ul class="govuk-list">
             
@@ -4789,11 +4789,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     
 
-    <div class="moj-timeline__item">
-      <div class="moj-timeline__header">
-        <p class="moj-timeline__byline">12 September 2018 at 12:00</p>
+    <div class="predictor-timeline__item">
+      <div class="predictor-timeline__header">
+        <p class="predictor-timeline__byline">12 September 2018 at 12:00</p>
       </div>
-      <div class="moj-timeline__description">
+      <div class="predictor-timeline__description">
         <div class="predictor-timeline-section">
           <ul class="govuk-list">
             

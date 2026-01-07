@@ -2,7 +2,7 @@
 
 {% set hasLegacyAssessment = false %}
 
-<div class="moj-timeline predictor">
+<div class="predictor-timeline predictor">
   {% for item in predictorScores %}
 
     {% if hasLegacyAssessment === false %}
@@ -12,12 +12,12 @@
         {% endif %}
       {% endfor %}
       {% if hasLegacyAssessment === true %}
-        <div class="moj-timeline__item">
-          <div class="moj-timeline__header">
-            <p class="moj-timeline__byline">1 Mar 2026 at 09:00</p>
+        <div class="predictor-timeline__item">
+          <div class="predictor-timeline__header">
+            <p class="predictor-timeline__byline">1 Mar 2026 at 09:00</p>
           </div>
-          <div class="moj-timeline__description">
-            <div class="govuk-warning-text moj-timeline__warning">
+          <div class="predictor-timeline__description">
+            <div class="govuk-warning-text predictor-timeline__warning">
               <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
               <strong class="govuk-warning-text__text">
                 <span
@@ -25,7 +25,7 @@
                 Risk predictor tools updated
               </strong>
             </div>
-            <details class="govuk-details moj-timeline__details">
+            <details class="govuk-details predictor-timeline__details">
               <summary class="govuk-details__summary">
               <span class="govuk-details__summary-text">
                 How the risk predictor tools have changed
@@ -77,11 +77,11 @@
       {% endif %}
     {% endif %}
 
-    <div class="moj-timeline__item">
-      <div class="moj-timeline__header">
-        <p class="moj-timeline__byline">{{ item.date }}</p>
+    <div class="predictor-timeline__item">
+      <div class="predictor-timeline__header">
+        <p class="predictor-timeline__byline">{{ item.date }}</p>
       </div>
-      <div class="moj-timeline__description">
+      <div class="predictor-timeline__description">
         <div class="predictor-timeline-section">
           <ul class="govuk-list">
             {% for key, value in item.scores %}
