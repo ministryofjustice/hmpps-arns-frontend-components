@@ -37,6 +37,10 @@ const rawNavSections: NavSection[] = [
         text: 'Predictor timeline v2',
         href: '/predictor-timeline',
       },
+      {
+        text: 'Predictor scale',
+        href: '/predictor-scale',
+      },
     ],
   },
   {
@@ -52,11 +56,11 @@ const rawNavSections: NavSection[] = [
       },
       {
         text: 'Predictor timeline',
-        href: '/legacy-predictor-timeline',
+        href: '/predictor-timeline',
       },
       {
         text: 'Predictor timeline item',
-        href: '/legacy-predictor-timeline-item',
+        href: '/predictor-timeline-item',
       },
     ],
   },

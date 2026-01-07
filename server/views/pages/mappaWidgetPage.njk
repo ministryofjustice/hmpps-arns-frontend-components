@@ -8,6 +8,53 @@
   <h1 class="govuk-heading-xl">
     {{ pageTitle }}
   </h1>
+
+  <div id="mappa-widget-wrapper" class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h2>How to use</h2>
+      <p>
+        Refer to the <a
+          href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4471390821/Risk+badges#Multi-agency-Public-Protection-Arrangement-(MAPPA)-badge">
+          Multi agency Public Protection Arrangement (MAPPA) badge</a>
+        Confluence documentation for usage details.
+      </p>
+      <h3>Code</h3>
+      <p>
+        The <a
+          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/82d8d1dd544e386bcaa58ea3f64cf2fade3eaec6/server/views/partials/mappa-widget">MAPPA
+          widget Nunjucks macro</a> is available on GitHub.
+        <br>
+        The <a
+          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/a9c439f504404b3afe77306d1d468d17bbd453d5/assets/scss/partials/risk/_mappa-widget.scss">MAPPA
+          widget SCSS</a> is available on GitHub.
+      </p>
+      <h3>Input data format</h3>
+      <p>
+        The MAPPA widget includes the following fields, which must follow the specified format:
+      </p>
+      <ul>
+        <li>mappa (object)
+          <ul>
+            <li>level (string)</li>
+            <li>isNominal (boolean)</li>
+            <li>lastUpdated (string - format 'DD MMMM YYYY' e.g '10 October 2021')</li>
+          </ul>
+        </li>
+      </ul>
+      <h4>E.g.</h4>
+      <pre>
+        <code>
+mappa: {
+  level: 'CAT 2/LEVEL 1',
+  isNominal: false,
+  lastUpdated: '10 October 2021',
+}
+        </code>
+      </pre>
+    </div>
+  </div>
+
+  <h2>Examples</h2>
   <div id="mappa-widget-wrapper" class="govuk-grid-row">
     <div id="mappa-widget" class="govuk-grid-column-one-third">
       {{ mappaWidget(widgetData.mappa) }}
@@ -19,4 +66,5 @@
       {{ mappaWidget() }}
     </div>
   </div>
+
 {% endblock %}
