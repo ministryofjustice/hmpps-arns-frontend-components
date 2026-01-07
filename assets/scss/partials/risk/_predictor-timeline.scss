@@ -1,76 +1,80 @@
-$very-high-score-colour: #942514;
-$very-high-score-colour--light: #ffac9f;
-$very-high-score-colour__text: #711a0d;
-$high-score-colour: #d4351c;
-$high-score-colour--light: #f6d7d2;
-$high-score-colour__text: #942514;
-$medium-score-colour: #f47738;
-$medium-score-colour--light: #f9e8bd;
-$medium-score-colour__text: #a34e00;
-$low-score-colour: #85994b;
-$low-score-colour--light: #dee9bd;
-$low-score-colour__text: #485b10;
+.predictor-timeline {
+  margin-bottom: govuk-spacing(4);
+  overflow: hidden;
+  position: relative;
 
-@mixin predictor-timeline-item-base($primary-colour, $secondary-colour, $text-colour) {
-    outline: 2px solid $primary-colour;
-    padding: 0;
-    display: inline-block;
-  
-    &::after {
-      content: "" "";
-      display: block;
-      visibility: hidden;
-      clear: both;
-    }
-  
-    & > span {
-      padding: 3px 6px;
-    }
-  
-    & .predictor-timeline-item__level {
-      @include govuk-font(14, "regular");
-  
-      float: left;
-      color: $text-colour;
-    }
-  
-    & .predictor-timeline-item__score {
-      @include govuk-font(14, "bold");
-  
-      float: right;
-      color: govuk-colour("black");
-      background-color: $secondary-colour;
-    }
+  &:before {
+    background-color: $govuk-brand-colour;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: govuk-spacing(2);
+    width: 5px;
   }
-  
-  .predictor-timeline-item--very-high {
-    @include predictor-timeline-item-base(
-                    $very-high-score-colour,
-                    $very-high-score-colour--light,
-                    $very-high-score-colour__text
-    );
+
+}
+
+.predictor-timeline--full {
+  margin-bottom: 0;
+  &:before {
+    height: calc(100% - 75px);
   }
-  
-  .predictor-timeline-item--high {
-    @include predictor-timeline-item-base($high-score-colour, $high-score-colour--light, $high-score-colour__text);
+}
+
+.predictor-timeline__item {
+  padding-bottom: govuk-spacing(6);
+  padding-left: govuk-spacing(4);
+  position: relative;
+
+  &:before {
+    background-color: $govuk-brand-colour;
+    content: "";
+    height: 5px;
+    left: 0;
+    position: absolute;
+    top: govuk-spacing(2);
+    width: 15px;
   }
-  
-  .predictor-timeline-item--medium {
-    @include predictor-timeline-item-base($medium-score-colour, $medium-score-colour--light, $medium-score-colour__text);
-  }
-  
-  .predictor-timeline-item--low {
-    @include predictor-timeline-item-base($low-score-colour, $low-score-colour--light, $low-score-colour__text);
-  }
-  
-  .predictor-timeline-section--hidden {
-    visibility: hidden;
-    display: none;
-  }
-  
-  .predictor-timeline__heading {
-    h2,
-    a {
-      display: inline;
-    }
-  }
+
+}
+
+.predictor-timeline__title {
+  @include govuk-font($size: 19, $weight: bold);
+  display: inline;
+}
+
+.predictor-timeline__byline {
+  @include govuk-font($size: 19);
+  color: $govuk-text-colour;
+  display: inline;
+  margin: 0;
+}
+
+.predictor-timeline__date {
+  @include govuk-font($size: 16);
+  margin-top: govuk-spacing(1);
+  margin-bottom: 0;
+}
+
+.predictor-timeline__description {
+  @include govuk-font($size: 19);
+  margin-top: govuk-spacing(4);
+}
+
+.predictor-timeline-section--hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.predictor-timeline__heading {
+  margin-bottom: 30px;
+}
+
+.moj-timeline__warning {
+  margin-bottom: 10px !important;
+}
+
+.moj-timeline__details {
+  margin-bottom: 0px !important;
+}

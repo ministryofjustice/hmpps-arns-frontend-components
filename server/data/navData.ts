@@ -33,6 +33,10 @@ const rawNavSections: NavSection[] = [
         text: 'Expanded predictor badge',
         href: '/expanded-predictor-badge',
       },
+      {
+        text: 'Predictor timeline v2',
+        href: '/predictor-timeline',
+      },
     ],
   },
   {
@@ -48,11 +52,11 @@ const rawNavSections: NavSection[] = [
       },
       {
         text: 'Predictor timeline',
-        href: '/predictor-timeline',
+        href: '/legacy-predictor-timeline',
       },
       {
         text: 'Predictor timeline item',
-        href: '/predictor-timeline-item',
+        href: '/legacy-predictor-timeline-item',
       },
     ],
   },

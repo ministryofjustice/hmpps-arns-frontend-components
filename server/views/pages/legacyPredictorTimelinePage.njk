@@ -1,0 +1,28 @@
+{% extends "layouts/side-nav-layout.njk" %}
+{% from "../partials/legacy-predictor-timeline/macro.njk" import predictorTimeline %}
+{%- from "moj/components/alert/macro.njk" import mojAlert -%}
+
+{% set pageTitle = "Legacy predictor timeline" %}
+{% set mainClasses = "govuk-body" %}
+
+{% block sideNavContent %}
+  <h1 class="govuk-heading-xl">
+    {{ pageTitle }}
+  </h1>
+  <div class="govuk-grid-column-full">
+    {{ mojAlert({
+      variant: "warning",
+      title: "These components are deprecated",
+      html: 'These components are deprecated and have been replaced by <a href="#">TODO</a>.'
+    }) }}
+  </div>
+  <div id="predictor-scores-history" class="govuk-grid-row govuk-!-margin-top-6">
+    <div class="govuk-grid-column-full">
+      <div class="govuk-body predictor-timeline__heading">
+        <h2 class="govuk-heading-l">Scores history</h2>
+        <a id="predictor-timeline__toggle-all" href="#" class="govuk-link">Open all</a>
+      </div>
+      {{ predictorTimeline(riskScores.historical) }}
+    </div>
+  </div>
+{% endblock %}

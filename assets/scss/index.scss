@@ -12,9 +12,10 @@ $govuk-page-width: $moj-page-width;
 
 @import "partials/risk/mappa-widget";
 @import "partials/risk/predictor-scores";
+@import "partials/risk/legacy-timeline";
+@import "partials/risk/predictor-timeline-item";
 @import "partials/risk/predictor-timeline";
 @import "partials/risk/risk-flag-widget";
 @import "partials/risk/rosh-widget";
-@import "partials/risk/timeline";
 @import "partials/risk/predictor-badge";
 @import "partials/risk/expanded-predictor-badge";
