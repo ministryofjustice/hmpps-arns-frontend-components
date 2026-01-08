@@ -1,7 +1,7 @@
 const predictorTimelineRiskScores = {
   historical: [
     {
-      date: '23 Jul 2026 at 12:00',
+      date: '23 July 2026 at 12:00',
       scores: {
         allReoffendingPredictor: {
           level: 'LOW',

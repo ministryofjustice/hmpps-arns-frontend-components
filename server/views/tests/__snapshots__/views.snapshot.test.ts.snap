@@ -4275,15 +4275,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
                 <li>Serious Violent Reoffending Predictor</li>
                 <li>Combined Serious Reoffending Predictor</li>
               </ul>
-              <li>OGRS3 generation predictor names (acronyms allowed & encouraged):</li>
+              <li>OGRS3 generation predictor names:</li>
               <ul>
-                <li>Offender Group Reconviction Scale (OGRS)</li>
-                <li>OASys General Reoffending Predictor (OGP)</li>
-                <li>OASys Violent Predictor (OVP)</li>
-                <li>OASys Sexual Predictor – Direct Contact (OSP-DC)</li>
-                <li>OASys Sexual Predictor – Images and Indirect Contact (OSP-IIC)</li>
-                <li>Serious Non-Sexual Violence (SNSV)</li>
-                <li>Risk of Serious Recidivism (RSR)</li>
+                <li>OGRS</li>
+                <li>OGP</li>
+                <li>OVP</li>
+                <li>OSP-DC</li>
+                <li>OSP-IIC</li>
+                <li>SNSV</li>
+                <li>RSR</li>
               </ul>
             </ul>
           </ul>
@@ -4402,7 +4402,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     <div class="predictor-timeline__item">
       <div class="predictor-timeline__header">
-        <p class="predictor-timeline__byline">23 Jul 2026 at 12:00</p>
+        <p class="predictor-timeline__byline">23 July 2026 at 12:00</p>
       </div>
       <div class="predictor-timeline__description">
         <div class="predictor-timeline-section">
@@ -4644,7 +4644,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
         <div class="predictor-timeline__item">
           <div class="predictor-timeline__header">
-            <p class="predictor-timeline__byline">1 Mar 2026 at 09:00</p>
+            <p class="predictor-timeline__byline">23 February 2026 at 09:00</p>
           </div>
           <div class="predictor-timeline__description">
             <div class="govuk-warning-text predictor-timeline__warning">
@@ -4652,7 +4652,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
               <strong class="govuk-warning-text__text">
                 <span
                   class="govuk-visually-hidden">Warning the risk predictor tools have been updated after this date</span>
-                Risk predictor tools updated
+                All assessments started after this date use updated risk predictor tools
               </strong>
             </div>
             <details class="govuk-details predictor-timeline__details">

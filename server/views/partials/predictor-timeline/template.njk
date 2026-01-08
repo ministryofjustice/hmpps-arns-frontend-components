@@ -14,7 +14,7 @@
       {% if hasLegacyAssessment === true %}
         <div class="predictor-timeline__item">
           <div class="predictor-timeline__header">
-            <p class="predictor-timeline__byline">1 Mar 2026 at 09:00</p>
+            <p class="predictor-timeline__byline">{{ ogrs4ReleaseDate | default("23 February 2026 at 09:00") }}</p>
           </div>
           <div class="predictor-timeline__description">
             <div class="govuk-warning-text predictor-timeline__warning">
@@ -22,7 +22,7 @@
               <strong class="govuk-warning-text__text">
                 <span
                   class="govuk-visually-hidden">Warning the risk predictor tools have been updated after this date</span>
-                Risk predictor tools updated
+                All assessments started after this date use updated risk predictor tools
               </strong>
             </div>
             <details class="govuk-details predictor-timeline__details">
