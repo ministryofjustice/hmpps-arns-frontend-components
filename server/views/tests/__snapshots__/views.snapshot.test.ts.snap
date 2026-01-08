@@ -4369,7 +4369,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   ],
 }</code></pre>
       </p>
-      <h3>Macro Parameter</h3>
+      <h3>Macro parameter</h3>
       <ul>
         <li>ogrs4ReleaseDate (string)</li>
         <ul>
