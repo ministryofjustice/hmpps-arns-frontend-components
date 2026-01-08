@@ -4369,6 +4369,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   ],
 }</code></pre>
       </p>
+      <h3>Macro Parameter</h3>
+      <ul>
+        <li>ogrs4ReleaseDate (string)</li>
+        <ul>
+          <li>Overrides the default OGRS4 release date of '23 February 2026 at 09:00' used for the 'All assessments started after this date use updated risk predictor tools' timeline warning - must be format 'DD MMMM YYYY at HH:mm' e.g '01 March 2026 at 09:00'</li>
+        </ul>
+      </ul>
     </div>
     <div class="govuk-grid-column-one-half">
       <h2>Example</h2>
@@ -4380,23 +4387,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+
+
+
 <div class="predictor-timeline predictor">
   
 
     
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
       
     
 
@@ -4630,80 +4627,71 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
       
         
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-      
-        <div class="predictor-timeline__item">
-          <div class="predictor-timeline__header">
-            <p class="predictor-timeline__byline">23 February 2026 at 09:00</p>
-          </div>
-          <div class="predictor-timeline__description">
-            <div class="govuk-warning-text predictor-timeline__warning">
-              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-              <strong class="govuk-warning-text__text">
+  <div class="predictor-timeline__item">
+    <div class="predictor-timeline__header">
+      <p class="predictor-timeline__byline">23 February 2026 at 09:00</p>
+    </div>
+    <div class="predictor-timeline__description">
+      <div class="govuk-warning-text predictor-timeline__warning">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
                 <span
                   class="govuk-visually-hidden">Warning the risk predictor tools have been updated after this date</span>
-                All assessments started after this date use updated risk predictor tools
-              </strong>
-            </div>
-            <details class="govuk-details predictor-timeline__details">
-              <summary class="govuk-details__summary">
+          All assessments started after this date use updated risk predictor tools
+        </strong>
+      </div>
+      <details class="govuk-details predictor-timeline__details">
+        <summary class="govuk-details__summary">
               <span class="govuk-details__summary-text">
                 How the risk predictor tools have changed
               </span>
-              </summary>
-              <div class="govuk-details__text">
-                <h3>All reoffending</h3>
-                <b>Old version:</b> Offender Group Reconviction Scale (OGRS)<br>
-                <b>Updated version:</b> All Reoffending Predictor<br>
-                <br>
-                The All Reoffending Predictor now has both a static and dynamic version.
-                <br><br>
-                <h3>Violent reoffending</h3>
-                <b>Old version:</b> OASys Violent Predictor (OVP)<br>
-                <b>Updated version:</b> Violent Reoffending Predictor<br>
-                <br>
-                The Violent Reoffending Predictor now has both a static and dynamic version.
-                <br><br>
-                <h3>Sexual reoffending</h3>
-                <h4>Direct contact</h4>
-                <b>Old version:</b> OASys Sexual Predictor — Direct Contact (OSP-DC)<br>
-                <b>Updated version:</b> Direct Contact — Sexual Reoffending Predictor<br>
-                <br>
-                The Direct Contact — Sexual Reoffending Predictor only has a static score.
-                <br>
-                <h4>Indirect contact</h4>
-                <b>Old version:</b> OASys Sexual Predictor — Images and indirect contact with children (OSP-IIC)<br>
-                <b>Updated version:</b> Images and Indirect Contact — Sexual Reoffending Predictor<br>
-                <br>
-                The Images and Indirect Contact — Sexual Reoffending Predictor only has a static score.
-                <br><br>
-                <h3>Serious non-sexual violent reoffending</h3>
-                <b>Old version:</b> Previously part of RSR but not displayed<br>
-                <b>Updated version:</b> Serious Violent Reoffending Predictor<br>
-                <br>
-                The Serious Violent Reoffending Predictor has both static and dynamic versions.
-                <br><br>
-                <h3>Serious reoffending</h3>
-                This predictor is a combination of the Direct Contact — Sexual Reoffending Predictor, Images and Indirect Contact — Sexual Reoffending Predictor and Serious Violent Reoffending Predictor scores.
-                <br>
-                <b>Old version:</b> Risk of Serious Recidivism (RSR)<br>
-                <b>Updated version:</b> Combined Serious Reoffending Predictor<br>
-                <br>
-                The Combined Serious Reoffending Predictor has both static and dynamic versions.
-              </div>
-            </details>
-          </div>
+        </summary>
+        <div class="govuk-details__text">
+          <h3>All reoffending</h3>
+          <b>Old version:</b> Offender Group Reconviction Scale (OGRS)<br>
+          <b>Updated version:</b> All Reoffending Predictor<br>
+          <br>
+          The All Reoffending Predictor now has both a static and dynamic version.
+          <br><br>
+          <h3>Violent reoffending</h3>
+          <b>Old version:</b> OASys Violent Predictor (OVP)<br>
+          <b>Updated version:</b> Violent Reoffending Predictor<br>
+          <br>
+          The Violent Reoffending Predictor now has both a static and dynamic version.
+          <br><br>
+          <h3>Sexual reoffending</h3>
+          <h4>Direct contact</h4>
+          <b>Old version:</b> OASys Sexual Predictor — Direct Contact (OSP-DC)<br>
+          <b>Updated version:</b> Direct Contact — Sexual Reoffending Predictor<br>
+          <br>
+          The Direct Contact — Sexual Reoffending Predictor only has a static score.
+          <br>
+          <h4>Indirect contact</h4>
+          <b>Old version:</b> OASys Sexual Predictor — Images and indirect contact with children (OSP-IIC)<br>
+          <b>Updated version:</b> Images and Indirect Contact — Sexual Reoffending Predictor<br>
+          <br>
+          The Images and Indirect Contact — Sexual Reoffending Predictor only has a static score.
+          <br><br>
+          <h3>Serious non-sexual violent reoffending</h3>
+          <b>Old version:</b> Previously part of RSR but not displayed<br>
+          <b>Updated version:</b> Serious Violent Reoffending Predictor<br>
+          <br>
+          The Serious Violent Reoffending Predictor has both static and dynamic versions.
+          <br><br>
+          <h3>Serious reoffending</h3>
+          This predictor is a combination of the Direct Contact — Sexual Reoffending Predictor, Images and
+          Indirect Contact — Sexual Reoffending Predictor and Serious Violent Reoffending Predictor scores.
+          <br>
+          <b>Old version:</b> Risk of Serious Recidivism (RSR)<br>
+          <b>Updated version:</b> Combined Serious Reoffending Predictor<br>
+          <br>
+          The Combined Serious Reoffending Predictor has both static and dynamic versions.
         </div>
+      </details>
+    </div>
+  </div>
+
+        
       
     
 
@@ -4868,6 +4856,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       </div>
     </div>
   
+
+  
+
 </div>
 
     </div>
