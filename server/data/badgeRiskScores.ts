@@ -55,6 +55,24 @@ const badgeRiskScores = {
     staticOrDynamic: 'DYNAMIC',
     completedDate: '25 October 2025',
   },
+  lowNoStaticOrDynamicRiskScore: {
+    level: 'LOW',
+    score: 0.12,
+    type: 'Images and Indirect Contact – Sexual Reoffending Predictor',
+    completedDate: '25 October 2025',
+  },
+  mediumNoStaticOrDynamicRiskScore: {
+    level: 'MEDIUM',
+    score: 23.45,
+    type: 'Direct Contact – Sexual Reoffending Predictor',
+    completedDate: '25 October 2025',
+  },
+  highNoStaticOrDynamicRiskScore: {
+    level: 'HIGH',
+    score: 23.45,
+    type: 'Images and Indirect Contact – Sexual Reoffending Predictor',
+    completedDate: '25 October 2025',
+  },
 }
 
 export default badgeRiskScores
