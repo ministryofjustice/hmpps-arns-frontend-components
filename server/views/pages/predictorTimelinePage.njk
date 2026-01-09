@@ -10,14 +10,16 @@
   <h1 class="govuk-heading-xl">
     {{ pageTitle }}
   </h1>
-  <div class="govuk-grid-column-full">
-    {{ mojAlert({
-      variant: "warning",
-      title: "These components are deprecated",
-      html: 'These components are deprecated and have been replaced by <a href="#">TODO</a>.'
-    }) }}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      {{ mojAlert({
+        variant: "warning",
+        title: "This component is deprecated",
+        html: 'This component is deprecated and has been replaced by <a href="#">TODO</a>.'
+      }) }}
+    </div>
   </div>
-  <div id="predictor-scores-history" class="govuk-grid-row govuk-!-margin-top-6">
+  <div id="predictor-scores-history" class="govuk-grid-row">
     <div class="govuk-grid-column-full">
       <div class="govuk-body predictor-timeline__heading">
         <h2 class="govuk-heading-l">Scores history</h2>

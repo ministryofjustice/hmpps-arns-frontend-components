@@ -14,16 +14,14 @@
     <div class="govuk-grid-column-full">
       {{ mojAlert({
         variant: "warning",
-        title: "These components are deprecated",
-        html: 'These components are deprecated and have been replaced by <a href="/predictor-scale">Predictor scale</a>.'
+        title: "This component is deprecated",
+        html: 'This component is deprecated and has been replaced by <a href="/predictor-scale">Predictor scale</a>.'
       }) }}
     </div>
     <div class="govuk-grid-column-full">
       <h2 class="govuk-heading-l score-header">RSR score</h2>
       {{ predictorScore(legacyComponentRiskScores.current.scores.RSR) }}
     </div>
-  </div>
-  <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-half">
       <h2 class="govuk-heading-l score-header">OSP/DC score</h2>
       {{ predictorScore(legacyComponentRiskScores.current.scores.OSPDC) }}

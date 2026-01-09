@@ -2,7 +2,7 @@
 {% from "../partials/predictor-scale/macro.njk" import predictorScale %}
 {% from "../partials/predictor-scale-marker/macro.njk" import predictorScaleMarker %}
 
-{% set pageTitle = "Predictor scales" %}
+{% set pageTitle = "Predictor scale" %}
 {% set mainClasses = "govuk-body" %}
 
 {% block sideNavContent %}
@@ -10,70 +10,69 @@
     {{ pageTitle }}
   </h1>
 
-  <div class="govuk-grid-column-full">
-    <h2>How to use</h2>
-    <p>Refer to the
-      <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4474143439/Risk+linear+scale">
-        Predictor scale
-      </a>
-      Confluence documentation for usage details.
-    </p>
-    <h3 class="govuk-heading-s">Nunjucks</h3>
-    <p>The predictor scale and the accompanying predictor scale marker Nunjucks macro's are available on GitHub.</p>
-    <ul>
-      <li>
-        <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/predictor-scale">
-          predictor scale Nunjucks macro github
+  <div id="predictor-scale-wrapper" class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h2>How to use</h2>
+      <p>Refer to the
+        <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4474143439/Risk+linear+scale">
+          Predictor scale
         </a>
-      </li>
-      <li>
-        <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/predictor-scale">
-          predictor scale marker Nunjucks macro github
-        </a>
-      </li>
-    </ul>
-    <h3 class="govuk-heading-s">Styles</h3>
-    <p>
-      The
-      <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_predictor-scale.scss">
-        predictor scale SCSS
-      </a>
-      is available on GitHub.
-    </p>
-    <h3>Input data format</h3>
-    <p>The predictor scale includes the following fields, which must follow the specified format:</p>
+        Confluence documentation for usage details.
+      </p>
+      <h3>Code</h3>
+      <p>
+        The
+        <a
+          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/predictor-scale">Predictor
+          scale Nunjucks macro</a>
+        is available on GitHub.
+        <br>
+        The
+        <a
+          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/predictor-scale-marker">Predictor
+          scale marker Nunjucks macro</a>
+        is available on GitHub.
+        <br>
+        The
+        <a
+          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_predictor-scale.scss">Predictor
+          scale SCSS</a>
+        is available on GitHub.
+      </p>
+      <h3>Input data format</h3>
+      <p>The predictor scale includes the following fields, which must follow the specified format:</p>
 
-    <ul>
-      <li>type</li>
       <ul>
-        <li>OGRS4 generation predictor names (acronyms <strong>not</strong> allowed):</li>
+        <li>type</li>
         <ul>
-          <li>All Reoffending Predictor</li>
-          <li>Combined Serious Reoffending Predictor</li>
-          <li>Violent Reoffending Predictor</li>
-          <li>Direct Contact – Sexual Reoffending Predictor</li>
-          <li>Images and Indirect Contact – Sexual Reoffending Predictor</li>
+          <li>OGRS4 generation predictor names (must be title case & acronyms <strong>not</strong> allowed):</li>
+          <ul>
+            <li>All Reoffending Predictor</li>
+            <li>Combined Serious Reoffending Predictor</li>
+            <li>Violent Reoffending Predictor</li>
+            <li>Direct Contact – Sexual Reoffending Predictor</li>
+            <li>Images and Indirect Contact – Sexual Reoffending Predictor</li>
+          </ul>
+          <li>OGRS3 generation predictor names:</li>
+          <ul>
+            <li>OGRS</li>
+            <li>OGP</li>
+            <li>OVP</li>
+            <li>OSP-DC</li>
+            <li>OSP-IIC</li>
+            <li>SNSV</li>
+            <li>RSR</li>
+          </ul>
         </ul>
-        <li>OGRS3 generation predictor names (acronyms allowed):</li>
-        <ul>
-          <li>Offender Group Reconviction Scale (OGRS)</li>
-          <li>OASys General Reoffending Predictor (OGP)</li>
-          <li>OASys Violent Predictor (OVP)</li>
-          <li>OASys Sexual Predictor – Direct Contact (OSP-DC)</li>
-          <li>OASys Sexual Predictor – Images and Indirect Contact (OSP-IIC)</li>
-          <li>Serious Non-Sexual Violence (SNSV)</li>
-          <li>Risk of Serious Recidivism (RSR)</li>
-        </ul>
+        <li>level (enum - LOW, MEDIUM, HIGH, VERY_HIGH)</li>
+        <li>score</li>
+        <li>staticOrDynamic (enum - STATIC, DYNAMIC)</li>
+        <li>lastUpdated (string - 19 December 2024)</li>
+        <li>bandPercentages (List[string] - ["0%", "29.99%", "59.99%", "79.99%", "99.99%"])</li>
       </ul>
-      <li>level (enum - LOW, MEDIUM, HIGH, VERY_HIGH)</li>
-      <li>score</li>
-      <li>staticOrDynamic (enum - STATIC, DYNAMIC)</li>
-      <li>lastUpdated (string - 19 December 2024)</li>
-      <li>bandPercentages (List[string] - ["0%", "29.99%", "59.99%", "79.99%", "99.99%"])</li>
-    </ul>
 
-    <strong>E.g.</strong>
-    <pre><code>{
+      <strong>E.g.</strong>
+      <pre><code>{
   type: 'All Reoffending Predictor',
   level: 'VERY_HIGH',
   score: 78.89,
@@ -83,24 +82,25 @@
 }
     </code></pre>
 
-    <h3>Macro flags</h3>
-    <ul>
-      <li>isLowToVeryHigh (boolean)</li>
+      <h3>Macro flags</h3>
       <ul>
-        <li>true - scale in LOW, MEDIUM, HIGH, <strong>VERY_HIGH</strong> format</li>
-        <li>false - scale in LOW, MEDIUM, HIGH format</li>
+        <li>isLowToVeryHigh (boolean)</li>
+        <ul>
+          <li>true - scale in LOW, MEDIUM, HIGH, <strong>VERY_HIGH</strong> format</li>
+          <li>false - scale in LOW, MEDIUM, HIGH format</li>
+        </ul>
+        <li>showScore (boolean)</li>
+        <ul>
+          <li>true - shows predictor score on the marker</li>
+          <li>false - hides predictor score on the marker</li>
+        </ul>
+        <li>includePercentage (boolean)</li>
+        <ul>
+          <li>true - shows the band percentages on the scale</li>
+          <li>false - hides the band percentages on the scale</li>
+        </ul>
       </ul>
-      <li>showScore (boolean)</li>
-      <ul>
-        <li>true - shows predictor score on the marker</li>
-        <li>false - hides predictor score on the marker</li>
-      </ul>
-      <li>includePercentage (boolean)</li>
-      <ul>
-        <li>true - shows the band percentages on the scale</li>
-        <li>false - hides the band percentages on the scale</li>
-      </ul>
-    </ul>
+    </div>
   </div>
 
   <strong>E.g.</strong>
