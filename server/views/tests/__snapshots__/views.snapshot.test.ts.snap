@@ -353,18 +353,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <div class="govuk-grid-column-full">
       <h2>How to use</h2>
       <p>Refer to the
-        <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4471390821/Risk+badges">Risk Badges</a>
+        <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4471390821/Risk+badges">Risk badges</a>
         Confluence documentation for usage details.
       <h3>Code</h3>
       The
       <a
-        href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/expanded-predictor-badge">expanded
+        href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/expanded-predictor-badge">Expanded
         predictor badge Nunjucks macro</a>
       is available on GitHub.
       <br>
       The
       <a
-        href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_expanded-predictor-badge.scss">expanded
+        href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_expanded-predictor-badge.scss">Expanded
         predictor badge SCSS</a>
       is available on GitHub.
       <h3>Input data format</h3>
@@ -373,7 +373,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       <ul>
         <li>type</li>
         <ul>
-          <li>OGRS4 generation predictor names (acronyms <strong>not</strong> allowed):</li>
+          <li>OGRS4 generation predictor names (must be title case & acronyms <strong>not</strong> allowed):</li>
           <ul>
             <li>All Reoffending Predictor</li>
             <li>Violent Reoffending Predictor</li>
@@ -382,15 +382,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
             <li>Serious Violent Reoffending Predictor</li>
             <li>Combined Serious Reoffending Predictor</li>
           </ul>
-          <li>OGRS3 generation predictor names (acronyms allowed):</li>
+          <li>OGRS3 generation predictor names:</li>
           <ul>
-            <li>Offender Group Reconviction Scale (OGRS)</li>
-            <li>OASys General Reoffending Predictor (OGP)</li>
-            <li>OASys Violent Predictor (OVP)</li>
-            <li>OASys Sexual Predictor – Direct Contact (OSP-DC)</li>
-            <li>OASys Sexual Predictor – Images and Indirect Contact (OSP-IIC)</li>
-            <li>Serious Non-Sexual Violence (SNSV)</li>
-            <li>Risk of Serious Recidivism (RSR)</li>
+            <li>OGRS</li>
+            <li>OGP</li>
+            <li>OVP</li>
+            <li>OSP-DC</li>
+            <li>OSP-IIC</li>
+            <li>SNSV</li>
+            <li>RSR</li>
           </ul>
         </ul>
         <li>level (enum - LOW, MEDIUM, HIGH, VERY_HIGH)</li>
@@ -408,6 +408,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   completedDate: '25 October 2025',
 }</code></pre>
       </p>
+      <h3>Macro flags</h3>
+      <ul>
+        <li>showScore (boolean)</li>
+        <ul>
+          <li>true - displays the score within the expanded predictor badge</li>
+          <li>false - hides the score within the expanded predictor badge</li>
+        </ul>
+      </ul>
       <h2>Examples</h2>
     </div>
     <div class="govuk-grid-column-one-half">
@@ -431,7 +439,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       
 
-      <span class="predictor-badge__static_or_dynamic">Static</span>
+      
+        <span class="predictor-badge__static_or_dynamic">Static</span>
+      
 
     </div>
 
@@ -441,7 +451,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
 
       </div>
-      <div class="govuk-!-margin-bottom-4">
+      <div class="govuk-!-margin-bottom-8">
         
 
   
@@ -463,7 +473,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         <span class="predictor-badge__score">0.12%</span>
       
 
-      <span class="predictor-badge__static_or_dynamic">Static</span>
+      
+        <span class="predictor-badge__static_or_dynamic">Static</span>
+      
 
     </div>
 
@@ -495,7 +507,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       
 
-      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
+        <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
 
     </div>
 
@@ -527,7 +541,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         <span class="predictor-badge__score">1.23%</span>
       
 
-      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
+        <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
 
     </div>
 
@@ -560,71 +576,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       
 
-      <span class="predictor-badge__static_or_dynamic">Static</span>
-
-    </div>
-
-    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-  
-    
-  
-
-  
-  
-
-  <div class="expanded-predictor-badge--medium">
-    <span
-      class="predictor-badge__type">Violent Reoffending Predictor</span>
-
-    <div class="predictor-badge__stats">
-      <span class="predictor-badge__level">MEDIUM</span>
-
       
-        <span class="predictor-badge__score">23.45%</span>
+        <span class="predictor-badge__static_or_dynamic">Static</span>
       
-
-      <span class="predictor-badge__static_or_dynamic">Static</span>
-
-    </div>
-
-    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
-
-  </div>
-
-
-      </div>
-    </div>
-    <div class="govuk-grid-column-one-half">
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-  
-    
-  
-
-  
-  
-
-  <div class="expanded-predictor-badge--medium">
-    <span
-      class="predictor-badge__type">Violent Reoffending Predictor</span>
-
-    <div class="predictor-badge__stats">
-      <span class="predictor-badge__level">MEDIUM</span>
-
-      
-
-      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
 
     </div>
 
@@ -653,10 +607,82 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       <span class="predictor-badge__level">MEDIUM</span>
 
       
+        <span class="predictor-badge__score">23.45%</span>
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Static</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  
+  
+
+  <div class="expanded-predictor-badge--medium">
+    <span
+      class="predictor-badge__type">Violent Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">MEDIUM</span>
+
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  <div class="expanded-predictor-badge--medium">
+    <span
+      class="predictor-badge__type">Violent Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">MEDIUM</span>
+
+      
         <span class="predictor-badge__score">34.56%</span>
       
 
-      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
+        <span class="predictor-badge__static_or_dynamic predictor-badge__wrapped_static_or_dynamic">Dynamic</span>
+      
 
     </div>
 
@@ -689,7 +715,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       
 
-      <span class="predictor-badge__static_or_dynamic">Static</span>
+      
+        <span class="predictor-badge__static_or_dynamic">Static</span>
+      
 
     </div>
 
@@ -699,7 +727,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
 
       </div>
-      <div class="govuk-!-margin-bottom-4">
+      <div class="govuk-!-margin-bottom-8">
         
 
   
@@ -721,7 +749,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         <span class="predictor-badge__score">45.67%</span>
       
 
-      <span class="predictor-badge__static_or_dynamic">Static</span>
+      
+        <span class="predictor-badge__static_or_dynamic">Static</span>
+      
 
     </div>
 
@@ -753,7 +783,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       
 
-      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
+        <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
 
     </div>
 
@@ -785,7 +817,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         <span class="predictor-badge__score">56.67%</span>
       
 
-      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
+        <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
 
     </div>
 
@@ -818,7 +852,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       
 
-      <span class="predictor-badge__static_or_dynamic">Static</span>
+      
+        <span class="predictor-badge__static_or_dynamic">Static</span>
+      
 
     </div>
 
@@ -828,7 +864,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
 
       </div>
-      <div class="govuk-!-margin-bottom-4">
+      <div class="govuk-!-margin-bottom-8">
         
 
   
@@ -850,7 +886,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         <span class="predictor-badge__score">67.78%</span>
       
 
-      <span class="predictor-badge__static_or_dynamic">Static</span>
+      
+        <span class="predictor-badge__static_or_dynamic">Static</span>
+      
 
     </div>
 
@@ -882,7 +920,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       
 
-      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
+        <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
 
     </div>
 
@@ -916,7 +956,210 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         <span class="predictor-badge__score">78.89%</span>
       
 
-      <span class="predictor-badge__static_or_dynamic predictor-badge__wrapped_static_or_dynamic">Dynamic</span>
+      
+        <span class="predictor-badge__static_or_dynamic predictor-badge__wrapped_static_or_dynamic">Dynamic</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-8">
+        
+
+  
+  
+    
+  
+
+  
+  
+
+  <div class="expanded-predictor-badge--low">
+    <span
+      class="predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">LOW</span>
+
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-8">
+        
+
+  
+  
+    
+  
+
+  
+  
+
+  <div class="expanded-predictor-badge--low">
+    <span
+      class="predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">LOW</span>
+
+      
+        <span class="predictor-badge__score">0.12%</span>
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-8">
+        
+
+  
+  
+    
+  
+
+  
+  
+
+  <div class="expanded-predictor-badge--medium">
+    <span
+      class="predictor-badge__type">Direct Contact – Sexual Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">MEDIUM</span>
+
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-8">
+        
+
+  
+  
+    
+  
+
+  
+  
+
+  <div class="expanded-predictor-badge--medium">
+    <span
+      class="predictor-badge__type">Direct Contact – Sexual Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">MEDIUM</span>
+
+      
+        <span class="predictor-badge__score">23.45%</span>
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-8">
+        
+
+  
+  
+    
+  
+
+  
+  
+
+  <div class="expanded-predictor-badge--high">
+    <span
+      class="predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">HIGH</span>
+
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <div class="govuk-!-margin-bottom-8">
+        
+
+  
+  
+    
+  
+
+  
+  
+
+  <div class="expanded-predictor-badge--high">
+    <span
+      class="predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">HIGH</span>
+
+      
+        <span class="predictor-badge__score">23.45%</span>
+      
+
+      
 
     </div>
 
@@ -1422,18 +1665,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <div class="govuk-grid-column-full">
       <h2>How to use</h2>
       <p>Refer to the
-        <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4471390821/Risk+badges">Risk Badges</a>
+        <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4471390821/Risk+badges">Risk badges</a>
         Confluence documentation for usage details.
       <h3>Code</h3>
       The
       <a
-        href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/predictor-badge">predictor
+        href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/predictor-badge">Predictor
         badge Nunjucks macro</a>
       is available on GitHub.
       <br>
       The
       <a
-        href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_predictor-badge.scss">predictor
+        href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_predictor-badge.scss">Predictor
         badge SCSS</a>
       is available on GitHub.
       <h3>Input data format</h3>
@@ -1442,7 +1685,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <ul>
         <li>type</li>
         <ul>
-          <li>OGRS4 generation predictor names (acronyms <strong>not</strong> allowed):</li>
+          <li>OGRS4 generation predictor names (must be title case & acronyms <strong>not</strong> allowed):</li>
           <ul>
             <li>All Reoffending Predictor</li>
             <li>Violent Reoffending Predictor</li>
@@ -1451,33 +1694,41 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             <li>Serious Violent Reoffending Predictor</li>
             <li>Combined Serious Reoffending Predictor</li>
           </ul>
-          <li>OGRS3 generation predictor names (acronyms allowed):</li>
+          <li>OGRS3 generation predictor names:</li>
           <ul>
-            <li>Offender Group Reconviction Scale (OGRS)</li>
-            <li>OASys General Reoffending Predictor (OGP)</li>
-            <li>OASys Violent Predictor (OVP)</li>
-            <li>OASys Sexual Predictor – Direct Contact (OSP-DC)</li>
-            <li>OASys Sexual Predictor – Images and Indirect Contact (OSP-IIC)</li>
-            <li>Serious Non-Sexual Violence (SNSV)</li>
-            <li>Risk of Serious Recidivism (RSR)</li>
+            <li>OGRS</li>
+            <li>OGP</li>
+            <li>OVP</li>
+            <li>OSP-DC</li>
+            <li>OOSP-IIC</li>
+            <li>SNSV</li>
+            <li>RSR</li>
           </ul>
         </ul>
         <li>level (enum - LOW, MEDIUM, HIGH, VERY_HIGH)</li>
         <li>score</li>
         <li>staticOrDynamic (enum - STATIC, DYNAMIC)</li>
       </ul>
-        </p>
-        <strong>E.g.</strong>
-        <pre><code>{
+      </p>
+      <strong>E.g.</strong>
+      <pre><code>{
   type: 'All Reoffending Predictor',
   level: 'VERY_HIGH',
   score: 78.89,
   staticOrDynamic: 'DYNAMIC'
 }</code></pre>
-        </p>
-        <h2>Examples</h2>
-        <div class="govuk-!-margin-bottom-4">
-          
+      </p>
+      <h3>Macro flags</h3>
+      <ul>
+        <li>showScore (boolean)</li>
+        <ul>
+          <li>true - displays the score within the predictor badge</li>
+          <li>false - hides the score within the predictor badge</li>
+        </ul>
+      </ul>
+      <h2>Examples</h2>
+      <div class="govuk-!-margin-bottom-4">
+        
 
   
   
@@ -1490,14 +1741,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     
 
-    <span class="predictor-badge__static_or_dynamic">Static</span>
+    
+      <span class="predictor-badge__static_or_dynamic">Static</span>
+    
 
   </div>
 
 
-        </div>
-        <div class="govuk-!-margin-bottom-4">
-          
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
 
   
   
@@ -1510,14 +1763,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     
 
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
+      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
 
   </div>
 
 
-        </div>
-        <div class="govuk-!-margin-bottom-4">
-          
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
 
   
   
@@ -1532,14 +1787,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <span class="predictor-badge__score">0.12%</span>
     
 
-    <span class="predictor-badge__static_or_dynamic">Static</span>
+    
+      <span class="predictor-badge__static_or_dynamic">Static</span>
+    
 
   </div>
 
 
-        </div>
-        <div class="govuk-!-margin-bottom-8">
-          
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        
 
   
   
@@ -1554,15 +1811,17 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <span class="predictor-badge__score">1.23%</span>
     
 
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
+      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
 
   </div>
 
 
-        </div>
+      </div>
 
-        <div class="govuk-!-margin-bottom-4">
-          
+      <div class="govuk-!-margin-bottom-4">
+        
 
   
   
@@ -1575,14 +1834,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     
 
-    <span class="predictor-badge__static_or_dynamic">Static</span>
+    
+      <span class="predictor-badge__static_or_dynamic">Static</span>
+    
 
   </div>
 
 
-        </div>
-        <div class="govuk-!-margin-bottom-4">
-          
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
 
   
   
@@ -1595,14 +1856,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     
 
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
+      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
 
   </div>
 
 
-        </div>
-        <div class="govuk-!-margin-bottom-4">
-          
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
 
   
   
@@ -1617,14 +1880,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <span class="predictor-badge__score">23.45%</span>
     
 
-    <span class="predictor-badge__static_or_dynamic">Static</span>
+    
+      <span class="predictor-badge__static_or_dynamic">Static</span>
+    
 
   </div>
 
 
-        </div>
-        <div class="govuk-!-margin-bottom-8">
-          
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        
 
   
   
@@ -1639,15 +1904,17 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <span class="predictor-badge__score">34.56%</span>
     
 
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
+      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
 
   </div>
 
 
-        </div>
+      </div>
 
-        <div class="govuk-!-margin-bottom-4">
-          
+      <div class="govuk-!-margin-bottom-4">
+        
 
   
   
@@ -1660,14 +1927,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     
 
-    <span class="predictor-badge__static_or_dynamic">Static</span>
+    
+      <span class="predictor-badge__static_or_dynamic">Static</span>
+    
 
   </div>
 
 
-        </div>
-        <div class="govuk-!-margin-bottom-4">
-          
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
 
   
   
@@ -1680,14 +1949,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     
 
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
+      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
 
   </div>
 
 
-        </div>
-        <div class="govuk-!-margin-bottom-4">
-          
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
 
   
   
@@ -1702,14 +1973,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <span class="predictor-badge__score">45.67%</span>
     
 
-    <span class="predictor-badge__static_or_dynamic">Static</span>
+    
+      <span class="predictor-badge__static_or_dynamic">Static</span>
+    
 
   </div>
 
 
-        </div>
-        <div class="govuk-!-margin-bottom-8">
-          
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        
 
   
   
@@ -1724,15 +1997,17 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <span class="predictor-badge__score">56.67%</span>
     
 
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
+      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
 
   </div>
 
 
-        </div>
+      </div>
 
-        <div class="govuk-!-margin-bottom-4">
-          
+      <div class="govuk-!-margin-bottom-4">
+        
 
   
   
@@ -1745,14 +2020,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     
 
-    <span class="predictor-badge__static_or_dynamic">Static</span>
+    
+      <span class="predictor-badge__static_or_dynamic">Static</span>
+    
 
   </div>
 
 
-        </div>
-        <div class="govuk-!-margin-bottom-4">
-          
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
 
   
   
@@ -1765,14 +2042,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     
 
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
+      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
 
   </div>
 
 
-        </div>
-        <div class="govuk-!-margin-bottom-4">
-          
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
 
   
   
@@ -1787,14 +2066,16 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <span class="predictor-badge__score">67.78%</span>
     
 
-    <span class="predictor-badge__static_or_dynamic">Static</span>
+    
+      <span class="predictor-badge__static_or_dynamic">Static</span>
+    
 
   </div>
 
 
-        </div>
-        <div class="govuk-!-margin-bottom-8">
-          
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        
 
   
   
@@ -1809,12 +2090,141 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <span class="predictor-badge__score">78.89%</span>
     
 
-    <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
+      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
 
   </div>
 
 
-        </div>
+      </div>
+
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--low">
+    <span
+      class="predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>LOW</strong></span>
+
+    
+
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--low">
+    <span
+      class="predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>LOW</strong></span>
+
+    
+      <span class="predictor-badge__score">0.12%</span>
+    
+
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--medium">
+    <span
+      class="predictor-badge__type_and_level">DIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
+
+    
+
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--medium">
+    <span
+      class="predictor-badge__type_and_level">DIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
+
+    
+      <span class="predictor-badge__score">23.45%</span>
+    
+
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--high">
+    <span
+      class="predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+
+    
+
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--high">
+    <span
+      class="predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+
+    
+      <span class="predictor-badge__score">23.45%</span>
+    
+
+    
+
+  </div>
+
+
+      </div>
     </div>
   </div>
 
@@ -1889,7 +2299,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 <html lang="en" class="govuk-template">
   <head>
     <meta charset="utf-8">
-    <title>Predictor scales</title>
+    <title>Predictor scale</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
 
@@ -2018,73 +2428,72 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <div class="govuk-grid-column-two-thirds">
       
   <h1 class="govuk-heading-xl">
-    Predictor scales
+    Predictor scale
   </h1>
 
-  <div class="govuk-grid-column-full">
-    <h2>How to use</h2>
-    <p>Refer to the
-      <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4474143439/Risk+linear+scale">
-        Predictor scale
-      </a>
-      Confluence documentation for usage details.
-    </p>
-    <h3 class="govuk-heading-s">Nunjucks</h3>
-    <p>The predictor scale and the accompanying predictor scale marker Nunjucks macro's are available on GitHub.</p>
-    <ul>
-      <li>
-        <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/predictor-scale">
-          predictor scale Nunjucks macro github
+  <div id="predictor-scale-wrapper" class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h2>How to use</h2>
+      <p>Refer to the
+        <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4474143439/Risk+linear+scale">
+          Predictor scale
         </a>
-      </li>
-      <li>
-        <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/predictor-scale">
-          predictor scale marker Nunjucks macro github
-        </a>
-      </li>
-    </ul>
-    <h3 class="govuk-heading-s">Styles</h3>
-    <p>
-      The
-      <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_predictor-scale.scss">
-        predictor scale SCSS
-      </a>
-      is available on GitHub.
-    </p>
-    <h3>Input data format</h3>
-    <p>The predictor scale includes the following fields, which must follow the specified format:</p>
+        Confluence documentation for usage details.
+      </p>
+      <h3>Code</h3>
+      <p>
+        The
+        <a
+          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/predictor-scale">Predictor
+          scale Nunjucks macro</a>
+        is available on GitHub.
+        <br>
+        The
+        <a
+          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/predictor-scale-marker">Predictor
+          scale marker Nunjucks macro</a>
+        is available on GitHub.
+        <br>
+        The
+        <a
+          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_predictor-scale.scss">Predictor
+          scale SCSS</a>
+        is available on GitHub.
+      </p>
+      <h3>Input data format</h3>
+      <p>The predictor scale includes the following fields, which must follow the specified format:</p>
 
-    <ul>
-      <li>type</li>
       <ul>
-        <li>OGRS4 generation predictor names (acronyms <strong>not</strong> allowed):</li>
+        <li>type</li>
         <ul>
-          <li>All Reoffending Predictor</li>
-          <li>Combined Serious Reoffending Predictor</li>
-          <li>Violent Reoffending Predictor</li>
-          <li>Direct Contact – Sexual Reoffending Predictor</li>
-          <li>Images and Indirect Contact – Sexual Reoffending Predictor</li>
+          <li>OGRS4 generation predictor names (must be title case & acronyms <strong>not</strong> allowed):</li>
+          <ul>
+            <li>All Reoffending Predictor</li>
+            <li>Combined Serious Reoffending Predictor</li>
+            <li>Violent Reoffending Predictor</li>
+            <li>Direct Contact – Sexual Reoffending Predictor</li>
+            <li>Images and Indirect Contact – Sexual Reoffending Predictor</li>
+          </ul>
+          <li>OGRS3 generation predictor names:</li>
+          <ul>
+            <li>OGRS</li>
+            <li>OGP</li>
+            <li>OVP</li>
+            <li>OSP-DC</li>
+            <li>OSP-IIC</li>
+            <li>SNSV</li>
+            <li>RSR</li>
+          </ul>
         </ul>
-        <li>OGRS3 generation predictor names (acronyms allowed):</li>
-        <ul>
-          <li>Offender Group Reconviction Scale (OGRS)</li>
-          <li>OASys General Reoffending Predictor (OGP)</li>
-          <li>OASys Violent Predictor (OVP)</li>
-          <li>OASys Sexual Predictor – Direct Contact (OSP-DC)</li>
-          <li>OASys Sexual Predictor – Images and Indirect Contact (OSP-IIC)</li>
-          <li>Serious Non-Sexual Violence (SNSV)</li>
-          <li>Risk of Serious Recidivism (RSR)</li>
-        </ul>
+        <li>level (enum - LOW, MEDIUM, HIGH, VERY_HIGH)</li>
+        <li>score</li>
+        <li>staticOrDynamic (enum - STATIC, DYNAMIC)</li>
+        <li>lastUpdated (string - 19 December 2024)</li>
+        <li>bandPercentages (List[string] - ["0%", "29.99%", "59.99%", "79.99%", "99.99%"])</li>
       </ul>
-      <li>level (enum - LOW, MEDIUM, HIGH, VERY_HIGH)</li>
-      <li>score</li>
-      <li>staticOrDynamic (enum - STATIC, DYNAMIC)</li>
-      <li>lastUpdated (string - 19 December 2024)</li>
-      <li>bandPercentages (List[string] - ["0%", "29.99%", "59.99%", "79.99%", "99.99%"])</li>
-    </ul>
 
-    <strong>E.g.</strong>
-    <pre><code>{
+      <strong>E.g.</strong>
+      <pre><code>{
   type: 'All Reoffending Predictor',
   level: 'VERY_HIGH',
   score: 78.89,
@@ -2094,24 +2503,25 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 }
     </code></pre>
 
-    <h3>Macro flags</h3>
-    <ul>
-      <li>isLowToVeryHigh (boolean)</li>
+      <h3>Macro flags</h3>
       <ul>
-        <li>true - scale in LOW, MEDIUM, HIGH, <strong>VERY_HIGH</strong> format</li>
-        <li>false - scale in LOW, MEDIUM, HIGH format</li>
+        <li>isLowToVeryHigh (boolean)</li>
+        <ul>
+          <li>true - scale in LOW, MEDIUM, HIGH, <strong>VERY_HIGH</strong> format</li>
+          <li>false - scale in LOW, MEDIUM, HIGH format</li>
+        </ul>
+        <li>showScore (boolean)</li>
+        <ul>
+          <li>true - shows predictor score on the marker</li>
+          <li>false - hides predictor score on the marker</li>
+        </ul>
+        <li>includePercentage (boolean)</li>
+        <ul>
+          <li>true - shows the band percentages on the scale</li>
+          <li>false - hides the band percentages on the scale</li>
+        </ul>
       </ul>
-      <li>showScore (boolean)</li>
-      <ul>
-        <li>true - shows predictor score on the marker</li>
-        <li>false - hides predictor score on the marker</li>
-      </ul>
-      <li>includePercentage (boolean)</li>
-      <ul>
-        <li>true - shows the band percentages on the scale</li>
-        <li>false - hides the band percentages on the scale</li>
-      </ul>
-    </ul>
+    </div>
   </div>
 
   <strong>E.g.</strong>
@@ -3146,13 +3556,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 <div
   role="region"
   class="moj-alert moj-alert--warning"
-  aria-label="warning: These components are deprecated"
+  aria-label="warning: This component is deprecated"
   data-module="moj-alert">
   <div>
     <svg class="moj-alert__icon" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" height="30" width="30"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 2.44922L28.75 26.1992H1.25L15 2.44922ZM13.5107 9.49579H16.4697L16.2431 17.7678H13.7461L13.5107 9.49579ZM13.1299 21.82C13.1299 21.5661 13.1787 21.3285 13.2764 21.1071C13.374 20.8793 13.5075 20.6807 13.6768 20.5114C13.8525 20.3421 14.0544 20.2087 14.2822 20.111C14.5101 20.0134 14.7542 19.9645 15.0146 19.9645C15.2686 19.9645 15.5062 20.0134 15.7275 20.111C15.9554 20.2087 16.154 20.3421 16.3232 20.5114C16.4925 20.6807 16.626 20.8793 16.7236 21.1071C16.8213 21.3285 16.8701 21.5661 16.8701 21.82C16.8701 22.0804 16.8213 22.3246 16.7236 22.5524C16.626 22.7803 16.4925 22.9789 16.3232 23.1481C16.154 23.3174 15.9554 23.4509 15.7275 23.5485C15.5062 23.6462 15.2686 23.695 15.0146 23.695C14.7542 23.695 14.5101 23.6462 14.2822 23.5485C14.0544 23.4509 13.8525 23.3174 13.6768 23.1481C13.5075 22.9789 13.374 22.7803 13.2764 22.5524C13.1787 22.3246 13.1299 22.0804 13.1299 21.82Z" fill="currentColor"/>
     </svg>
   </div>
-  <div class="moj-alert__content">These components are deprecated and have been replaced by <a href="/predictor-scale">Predictor scale</a>.</div>
+  <div class="moj-alert__content">This component is deprecated and has been replaced by <a href="/predictor-scale">Predictor scale</a>.</div>
 
   <div class="moj-alert__action">
     <button class="moj-alert__dismiss" hidden>Dismiss</button>
@@ -3212,8 +3622,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
     </div>
-  </div>
-  <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-half">
       <h2 class="govuk-heading-l score-header">OSP/DC score</h2>
       
@@ -3519,28 +3927,29 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <h1 class="govuk-heading-xl">
     Predictor timeline item
   </h1>
-  <div class="govuk-grid-column-full">
-    
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      
 
 <div
   role="region"
   class="moj-alert moj-alert--warning"
-  aria-label="warning: These components are deprecated"
+  aria-label="warning: This component is deprecated"
   data-module="moj-alert">
   <div>
     <svg class="moj-alert__icon" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" height="30" width="30"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 2.44922L28.75 26.1992H1.25L15 2.44922ZM13.5107 9.49579H16.4697L16.2431 17.7678H13.7461L13.5107 9.49579ZM13.1299 21.82C13.1299 21.5661 13.1787 21.3285 13.2764 21.1071C13.374 20.8793 13.5075 20.6807 13.6768 20.5114C13.8525 20.3421 14.0544 20.2087 14.2822 20.111C14.5101 20.0134 14.7542 19.9645 15.0146 19.9645C15.2686 19.9645 15.5062 20.0134 15.7275 20.111C15.9554 20.2087 16.154 20.3421 16.3232 20.5114C16.4925 20.6807 16.626 20.8793 16.7236 21.1071C16.8213 21.3285 16.8701 21.5661 16.8701 21.82C16.8701 22.0804 16.8213 22.3246 16.7236 22.5524C16.626 22.7803 16.4925 22.9789 16.3232 23.1481C16.154 23.3174 15.9554 23.4509 15.7275 23.5485C15.5062 23.6462 15.2686 23.695 15.0146 23.695C14.7542 23.695 14.5101 23.6462 14.2822 23.5485C14.0544 23.4509 13.8525 23.3174 13.6768 23.1481C13.5075 22.9789 13.374 22.7803 13.2764 22.5524C13.1787 22.3246 13.1299 22.0804 13.1299 21.82Z" fill="currentColor"/>
     </svg>
   </div>
-  <div class="moj-alert__content">These components are deprecated and have been replaced by <a href="/predictor-badge">Predictor badge</a>.</div>
+  <div class="moj-alert__content">This component is deprecated and has been replaced by <a href="/predictor-badge">Predictor badge</a> & <a href="/expanded-predictor-badge">Expanded predictor badge</a>.</div>
 
   <div class="moj-alert__action">
     <button class="moj-alert__dismiss" hidden>Dismiss</button>
   </div>
 </div>
 
-  </div>
-  <div class="govuk-grid-column-full">
-    
+    </div>
+    <div class="govuk-grid-column-full">
+      
 
 
 
@@ -3555,9 +3964,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
 </div>
 
-  </div>
-  <div class="govuk-grid-column-full">
-    
+    </div>
+    <div class="govuk-grid-column-full">
+      
 
 
 
@@ -3572,9 +3981,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
 </div>
 
-  </div>
-  <div class="govuk-grid-column-full">
-    
+    </div>
+    <div class="govuk-grid-column-full">
+      
 
 
 
@@ -3589,6 +3998,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
 </div>
 
+    </div>
   </div>
 
     </div>
@@ -3792,27 +4202,29 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <h1 class="govuk-heading-xl">
     Predictor timeline
   </h1>
-  <div class="govuk-grid-column-full">
-    
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      
 
 <div
   role="region"
   class="moj-alert moj-alert--warning"
-  aria-label="warning: These components are deprecated"
+  aria-label="warning: This component is deprecated"
   data-module="moj-alert">
   <div>
     <svg class="moj-alert__icon" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" height="30" width="30"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 2.44922L28.75 26.1992H1.25L15 2.44922ZM13.5107 9.49579H16.4697L16.2431 17.7678H13.7461L13.5107 9.49579ZM13.1299 21.82C13.1299 21.5661 13.1787 21.3285 13.2764 21.1071C13.374 20.8793 13.5075 20.6807 13.6768 20.5114C13.8525 20.3421 14.0544 20.2087 14.2822 20.111C14.5101 20.0134 14.7542 19.9645 15.0146 19.9645C15.2686 19.9645 15.5062 20.0134 15.7275 20.111C15.9554 20.2087 16.154 20.3421 16.3232 20.5114C16.4925 20.6807 16.626 20.8793 16.7236 21.1071C16.8213 21.3285 16.8701 21.5661 16.8701 21.82C16.8701 22.0804 16.8213 22.3246 16.7236 22.5524C16.626 22.7803 16.4925 22.9789 16.3232 23.1481C16.154 23.3174 15.9554 23.4509 15.7275 23.5485C15.5062 23.6462 15.2686 23.695 15.0146 23.695C14.7542 23.695 14.5101 23.6462 14.2822 23.5485C14.0544 23.4509 13.8525 23.3174 13.6768 23.1481C13.5075 22.9789 13.374 22.7803 13.2764 22.5524C13.1787 22.3246 13.1299 22.0804 13.1299 21.82Z" fill="currentColor"/>
     </svg>
   </div>
-  <div class="moj-alert__content">These components are deprecated and have been replaced by <a href="#">TODO</a>.</div>
+  <div class="moj-alert__content">This component is deprecated and has been replaced by <a href="#">TODO</a>.</div>
 
   <div class="moj-alert__action">
     <button class="moj-alert__dismiss" hidden>Dismiss</button>
   </div>
 </div>
 
+    </div>
   </div>
-  <div id="predictor-scores-history" class="govuk-grid-row govuk-!-margin-top-6">
+  <div id="predictor-scores-history" class="govuk-grid-row">
     <div class="govuk-grid-column-full">
       <div class="govuk-body predictor-timeline__heading">
         <h2 class="govuk-heading-l">Scores history</h2>

@@ -13,22 +13,24 @@
   {% endswitch %}
 
   {% set staticOrDynamicClass = 'predictor-badge__static_or_dynamic' %}
-  {% if showScore and predictor.level === 'VERY_HIGH' and predictor.staticOrDynamic === 'DYNAMIC' %}
+  {% if showScore and predictor.level in ['VERY_HIGH', 'MEDIUM'] and predictor.staticOrDynamic === 'DYNAMIC' %}
     {% set staticOrDynamicClass = staticOrDynamicClass + ' predictor-badge__wrapped_static_or_dynamic' %}
   {% endif %}
 
   <div class="{{ badgeClass }}">
     <span
-      class="predictor-badge__type">{{ predictor.type | titleCase }}</span>
+      class="predictor-badge__type">{{ predictor.type }}</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">{{ predictor.level | replace('_', ' ') }}</span>
 
-      {% if showScore %}
+      {% if showScore and predictor.score %}
         <span class="predictor-badge__score">{{ predictor.score }}%</span>
       {% endif %}
 
-      <span class="{{ staticOrDynamicClass }}">{{ predictor.staticOrDynamic | capitalize }}</span>
+      {% if predictor.staticOrDynamic %}
+        <span class="{{ staticOrDynamicClass }}">{{ predictor.staticOrDynamic | capitalize }}</span>
+      {% endif %}
 
     </div>
 

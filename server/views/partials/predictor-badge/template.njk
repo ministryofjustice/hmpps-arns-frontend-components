@@ -16,11 +16,13 @@
     <span
       class="predictor-badge__type_and_level">{{ predictor.type | upper }} <strong>{{ predictor.level | replace('_', ' ') }}</strong></span>
 
-    {% if showScore %}
+    {% if showScore and predictor.score %}
       <span class="predictor-badge__score">{{ predictor.score }}%</span>
     {% endif %}
 
-    <span class="predictor-badge__static_or_dynamic">{{ predictor.staticOrDynamic | capitalize }}</span>
+    {% if predictor.staticOrDynamic %}
+      <span class="predictor-badge__static_or_dynamic">{{ predictor.staticOrDynamic | capitalize }}</span>
+    {% endif %}
 
   </div>
 {% endif %}

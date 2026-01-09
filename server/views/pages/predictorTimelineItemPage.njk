@@ -9,20 +9,22 @@
   <h1 class="govuk-heading-xl">
     {{ pageTitle }}
   </h1>
-  <div class="govuk-grid-column-full">
-    {{ mojAlert({
-      variant: "warning",
-      title: "These components are deprecated",
-      html: 'These components are deprecated and have been replaced by <a href="/predictor-badge">Predictor badge</a>.'
-    }) }}
-  </div>
-  <div class="govuk-grid-column-full">
-    {{ predictorTimelineItem(legacyComponentRiskScores.historical[0].scores.RSR) }}
-  </div>
-  <div class="govuk-grid-column-full">
-    {{ predictorTimelineItem(legacyComponentRiskScores.historical[0].scores.OSPDC) }}
-  </div>
-  <div class="govuk-grid-column-full">
-    {{ predictorTimelineItem(legacyComponentRiskScores.historical[0].scores.OSPIIC) }}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      {{ mojAlert({
+        variant: "warning",
+        title: "This component is deprecated",
+        html: 'This component is deprecated and has been replaced by <a href="/predictor-badge">Predictor badge</a> & <a href="/expanded-predictor-badge">Expanded predictor badge</a>.'
+      }) }}
+    </div>
+    <div class="govuk-grid-column-full">
+      {{ predictorTimelineItem(legacyComponentRiskScores.historical[0].scores.RSR) }}
+    </div>
+    <div class="govuk-grid-column-full">
+      {{ predictorTimelineItem(legacyComponentRiskScores.historical[0].scores.OSPDC) }}
+    </div>
+    <div class="govuk-grid-column-full">
+      {{ predictorTimelineItem(legacyComponentRiskScores.historical[0].scores.OSPIIC) }}
+    </div>
   </div>
 {% endblock %}
