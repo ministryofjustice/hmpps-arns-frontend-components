@@ -6,6 +6,7 @@ import widgetData from '../data/widgetData'
 import legacyComponentRiskScores from '../data/legacyComponentRiskScores'
 import badgeRiskScores from '../data/badgeRiskScores'
 import predictorScaleNotApplicableScores from '../data/predictorScaleNotApplicableScores'
+import predictorTimelineRiskScores from '../data/predictorTimelineRiskScores'
 
 export default function componentPageRoutes(): Router {
   const router = Router()
@@ -28,11 +29,15 @@ export default function componentPageRoutes(): Router {
   })
   router.get('/predictor-timeline', async (req, res) => {
     const navSections = activateMojNav(rawNavSections, req.path)
-    res.render('pages/predictorTimelinePage', { legacyComponentRiskScores, navSections })
+    res.render('pages/predictorTimelinePage', { predictorTimelineRiskScores, navSections })
   })
-  router.get('/predictor-timeline-item', async (req, res) => {
+  router.get('/legacy-predictor-timeline', async (req, res) => {
     const navSections = activateMojNav(rawNavSections, req.path)
-    res.render('pages/predictorTimelineItemPage', { legacyComponentRiskScores, navSections })
+    res.render('pages/legacyPredictorTimelinePage', { legacyComponentRiskScores, navSections })
+  })
+  router.get('/legacy-predictor-timeline-item', async (req, res) => {
+    const navSections = activateMojNav(rawNavSections, req.path)
+    res.render('pages/legacyPredictorTimelineItemPage', { legacyComponentRiskScores, navSections })
   })
   router.get('/risk-flag-widget', async (req, res) => {
     const navSections = activateMojNav(rawNavSections, req.path)

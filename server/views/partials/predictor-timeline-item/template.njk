@@ -1,22 +1,61 @@
 {% if predictor %}
 
-{% set timelineItemClass = '' %}
+  {% set timelineItemClass = '' %}
 
-{% switch predictor.level %}
+  {% if isLegacy %}
+
+    {% switch predictor.level %}
     {% case 'VERY_HIGH' %}
-        {% set timelineItemClass = 'predictor-timeline-item--very-high'%}
+      {% set timelineItemClass = 'legacy-predictor-timeline-item--very-high' %}
     {% case 'HIGH' %}
-        {% set timelineItemClass = 'predictor-timeline-item--high'%}
+      {% set timelineItemClass = 'legacy-predictor-timeline-item--high' %}
     {% case 'MEDIUM' %}
-        {% set timelineItemClass = 'predictor-timeline-item--medium' %}
+      {% set timelineItemClass = 'legacy-predictor-timeline-item--medium' %}
     {% case 'LOW' %}
-        {% set timelineItemClass = 'predictor-timeline-item--low' %}
-{% endswitch %}
+      {% set timelineItemClass = 'legacy-predictor-timeline-item--low' %}
+    {% endswitch %}
 
-<div class="{{ timelineItemClass }}">
-    <span class="predictor-timeline-item__level"><strong>{{ predictor.type }}</strong> {{ predictor.level }}</span>
-    {% if predictor.score %}
-    <span class="predictor-timeline-item__score">{{ predictor.score }}</span>
+    <div class="{{ timelineItemClass }}">
+      <span
+        class="legacy-predictor-timeline-item__level"><strong>{{ predictor.type }}</strong> {{ predictor.level }}</span>
+      {% if predictor.score %}
+        <span class="legacy-predictor-timeline-item__score">{{ predictor.score }}</span>
+      {% endif %}
+    </div>
+  {% else %}
+
+    {% switch predictor.level %}
+    {% case 'VERY_HIGH' %}
+      {% set timelineItemClass = 'predictor-timeline-item--very-high' %}
+    {% case 'HIGH' %}
+      {% set timelineItemClass = 'predictor-timeline-item--high' %}
+    {% case 'MEDIUM' %}
+      {% set timelineItemClass = 'predictor-timeline-item--medium' %}
+    {% case 'LOW' %}
+      {% set timelineItemClass = 'predictor-timeline-item--low' %}
+    {% endswitch %}
+
+    {% set staticOrDynamicClass = 'predictor-timeline-item__static_or_dynamic' %}
+    {% if predictor.score and predictor.level in ['VERY_HIGH', 'MEDIUM'] and predictor.staticOrDynamic === 'DYNAMIC' %}
+      {% set staticOrDynamicClass = staticOrDynamicClass + ' predictor-timeline-item__wrapped_static_or_dynamic' %}
     {% endif %}
-</div>
+
+    <div class="{{ timelineItemClass }}">
+    <span
+      class="predictor-timeline-item__type">{{ predictor.type | title }}</span>
+
+      <div class="predictor-timeline-item__stats">
+        <span class="predictor-timeline-item__level">{{ predictor.level | replace('_', ' ') }}</span>
+
+        {% if predictor.score %}
+          <span class="predictor-timeline-item__score">{{ predictor.score }}%</span>
+        {% endif %}
+
+        {% if predictor.staticOrDynamic %}
+          <span class="{{ staticOrDynamicClass }}">{{ predictor.staticOrDynamic | capitalize }}</span>
+        {% endif %}
+
+      </div>
+    </div>
+  {% endif %}
 {% endif %}
