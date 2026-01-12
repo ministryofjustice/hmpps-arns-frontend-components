@@ -17,7 +17,13 @@
     {% set staticOrDynamicClass = staticOrDynamicClass + ' predictor-badge__wrapped_static_or_dynamic' %}
   {% endif %}
 
-  <div class="{{ badgeClass }}">
+  {% if fixedWidth or fixedWidth is undefined %}
+    {% set badgeWidthClass = 'expanded-predictor-badge__fixed-width' %}
+  {% else %}
+    {% set badgeWidthClass = 'expanded-predictor-badge__dynamic' %}
+  {% endif %}
+
+  <div class="{{ badgeClass }} {{ badgeWidthClass }}">
     <span
       class="predictor-badge__type">{{ predictor.type }}</span>
 
