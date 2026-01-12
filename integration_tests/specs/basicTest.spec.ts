@@ -1,9 +1,8 @@
-import { test } from '@playwright/test';
-import LoginPage from '../pages/loginPage';
+import { test } from '@playwright/test'
+import LoginPage from '../pages/loginPage'
 
 test('User logs in and checks all pages are working', async ({ page }) => {
-
-  const loginPage = new LoginPage(page);
+  const loginPage = new LoginPage(page)
 
   // Navigate to the login page
   await loginPage.goto()
@@ -58,8 +57,4 @@ test('User logs in and checks all pages are working', async ({ page }) => {
   // Click timeline item link and check page
   await loginPage.clickPredictorTimelineItemLink()
   await loginPage.checkPredictorTimelineItemHeader()
-
-  // Could add a final step to click sign out and check you're signed out here
-
-  console.log('Frontend components pages are working as expected');
-});
+})

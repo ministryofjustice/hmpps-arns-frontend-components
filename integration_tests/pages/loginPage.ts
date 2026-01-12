@@ -1,37 +1,37 @@
 import { expect, Locator, Page } from '@playwright/test'
-import {VALID_USERNAME,VALID_PASSWORD,LOCAL_URL} from './pages-common'
+import { VALID_USERNAME, LOCAL_URL, VALID_PASSWORD } from './pages-common'
 
-export default class LoginPage{
+export default class LoginPage {
   constructor(
-  private page: Page,
-  private loginUsername: Locator = page.getByRole('textbox', { name: 'Username' }),
-  private loginPassword: Locator = page.getByRole('textbox', { name: 'Password' }),
-  private signInButton: Locator = page.getByRole('button', { name: 'Sign in' }),
-  private intro: Locator = page.getByRole('heading', { name: 'Introduction' }),
-  private pageHeader: Locator = page.getByRole('link', { name: 'ARNS Frontend Components' }),
-  private examplesHeader: Locator = page.getByRole('heading', { name: 'Examples' }),
-  private mappaWidgetLink: Locator = page.getByRole('link', { name: 'MAPPA widget' }),
-  private mappaWidgetHeader: Locator = page.getByRole('heading', { name: 'Mappa widget' }),
-  private riskFlagWidgetLink: Locator = page.getByRole('link', { name: 'Risk flag widget' }),
-  private riskFlagHeader: Locator = page.getByRole('heading', { name: 'Risk flag widget' }),
-  private ROSHWidgetLink: Locator = page.getByRole('link', { name: 'ROSH widget' }),
-  private ROSHHeader: Locator = page.getByRole('heading', { name: 'ROSH widget' }),
-  private predictorBadgeLink: Locator = page.getByRole('link', { name: 'Predictor badge', exact: true }),
-  private predictorBadgeHeader: Locator = page.getByRole('heading', { name: 'Predictor badge'}),
-  private expandedPredictorBadgeLink: Locator = page.getByRole('link', { name: 'Expanded predictor badge' }),
-  private expandedPredictorBadgeHeader: Locator = page.getByRole('heading', { name: 'Expanded predictor badge'}),
-  private predictorScaleLink: Locator = page.getByRole('link', { name: 'Predictor scale' }),
-  private predictorScaleHeader: Locator = page.getByRole('heading', { name: 'Predictor scale'}),
-  private predictorScoresLink: Locator = page.getByRole('link', { name: 'Predictor scores' }),
-  private predictorScoresHeader: Locator = page.getByRole('heading', { name: 'Predictor scores'}),
-  private predictorTimelineLink: Locator = page.getByRole('link', { name: 'Predictor timeline', exact: true }),
-  private predictorTimelineHeader: Locator = page.getByRole('heading', { name: 'Predictor timeline'}),
-  private predictorTimelineOpenButton: Locator = page.getByRole('link', { name: 'Open all' }),
-  private predictorTimelineFirstCloseButton: Locator = page.getByRole('link', { name: 'Close' }).first(),
-  private predictorTimelineFirstRow: Locator = page.getByRole('listitem').filter({ hasText: 'RSR HIGH' }),
-  private predictorTimelineItemLink: Locator = page.getByRole('link', { name: 'Predictor timeline item' }),
-  private predictorTimelineItemHeader: Locator = page.getByRole('heading', { name: 'Predictor timeline item'})
-  ) { }
+    private page: Page,
+    private loginUsername: Locator = page.getByRole('textbox', { name: 'Username' }),
+    private loginPassword: Locator = page.getByRole('textbox', { name: 'Password' }),
+    private signInButton: Locator = page.getByRole('button', { name: 'Sign in' }),
+    private intro: Locator = page.getByRole('heading', { name: 'Introduction' }),
+    private pageHeader: Locator = page.getByRole('link', { name: 'ARNS Frontend Components' }),
+    private examplesHeader: Locator = page.getByRole('heading', { name: 'Examples' }),
+    private mappaWidgetLink: Locator = page.getByRole('link', { name: 'MAPPA widget' }),
+    private mappaWidgetHeader: Locator = page.getByRole('heading', { name: 'Mappa widget' }),
+    private riskFlagWidgetLink: Locator = page.getByRole('link', { name: 'Risk flag widget' }),
+    private riskFlagHeader: Locator = page.getByRole('heading', { name: 'Risk flag widget' }),
+    private ROSHWidgetLink: Locator = page.getByRole('link', { name: 'ROSH widget' }),
+    private ROSHHeader: Locator = page.getByRole('heading', { name: 'ROSH widget' }),
+    private predictorBadgeLink: Locator = page.getByRole('link', { name: 'Predictor badge', exact: true }),
+    private predictorBadgeHeader: Locator = page.getByRole('heading', { name: 'Predictor badge' }),
+    private expandedPredictorBadgeLink: Locator = page.getByRole('link', { name: 'Expanded predictor badge' }),
+    private expandedPredictorBadgeHeader: Locator = page.getByRole('heading', { name: 'Expanded predictor badge' }),
+    private predictorScaleLink: Locator = page.getByRole('link', { name: 'Predictor scale' }),
+    private predictorScaleHeader: Locator = page.getByRole('heading', { name: 'Predictor scale' }),
+    private predictorScoresLink: Locator = page.getByRole('link', { name: 'Predictor scores' }),
+    private predictorScoresHeader: Locator = page.getByRole('heading', { name: 'Predictor scores' }),
+    private predictorTimelineLink: Locator = page.getByRole('link', { name: 'Predictor timeline', exact: true }),
+    private predictorTimelineHeader: Locator = page.getByRole('heading', { name: 'Predictor timeline' }),
+    private predictorTimelineOpenButton: Locator = page.getByRole('link', { name: 'Open all' }),
+    private predictorTimelineFirstCloseButton: Locator = page.getByRole('link', { name: 'Close' }).first(),
+    private predictorTimelineFirstRow: Locator = page.getByRole('listitem').filter({ hasText: 'RSR HIGH' }),
+    private predictorTimelineItemLink: Locator = page.getByRole('link', { name: 'Predictor timeline item' }),
+    private predictorTimelineItemHeader: Locator = page.getByRole('heading', { name: 'Predictor timeline item' }),
+  ) {}
 
   async goto() {
     await this.page.goto(LOCAL_URL)
@@ -148,5 +148,4 @@ export default class LoginPage{
   async checkPredictorTimelineItemHeader() {
     await expect(this.predictorTimelineItemHeader).toBeVisible()
   }
-
 }
