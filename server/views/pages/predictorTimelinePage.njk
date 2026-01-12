@@ -16,86 +16,105 @@
         <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4474044754/Risk+scores+timeline">Risk scores
           timeline</a>
         Confluence documentation for usage details.
+      </p>
       <h3>Code</h3>
-      The
-      <a
-        href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/predictor-timeline">Predictor
-        timeline Nunjucks macro</a>
-      is available on GitHub.
-      <br>
-      The
-      <a
-        href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_predictor-timeline.scss">Predictor
-        timeline SCSS</a>
-      is available on GitHub.
-      <br>
-      The
-      <a
-        href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/js/predictor-timeline.js">Predictor
-        timeline javascript</a>
-      is available on GitHub.
+      <p>
+        The
+        <a
+          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/predictor-timeline">Predictor
+          timeline Nunjucks macro</a>
+        is available on GitHub.
+        <br>
+        The
+        <a
+          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_predictor-timeline.scss">Predictor
+          timeline SCSS</a>
+        is available on GitHub.
+        <br>
+        The
+        <a
+          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/js/predictor-timeline.js">Predictor
+          timeline javascript</a>
+        is available on GitHub.
+      </p>
       <h3>Input data format</h3>
       <p>
         The predictor timeline accepts a list of assessments which must be sorted in descending date order (newest
         assessment first), and each item in the list must include the following fields, which must follow the specified
         format:
+      </p>
       <ul>
         <li>date (string - format 'DD MMMM YYYY at HH:mm' e.g '10 October 2021 at 09:00')</li>
-        <li>scores</li>
-        <ul>
-          <li>Key: predictor name</li>
+        <li>
+          scores
           <ul>
-            <li>OGRS4 generation:</li>
-            <ul>
-              <li>allReoffendingPredictor</li>
-              <li>violentReoffendingPredictor</li>
-              <li>directContactSexualReoffendingPredictor</li>
-              <li>indirectImageContactSexualReoffendingPredictor</li>
-              <li>seriousViolentReoffendingPredictor</li>
-              <li>combinedSeriousReoffendingPredictor</li>
-            </ul>
-            <li>OGRS3 generation:</li>
-            <ul>
-              <li>OGRS3</li>
-              <li>OGP</li>
-              <li>OVP</li>
-              <li>OSPDC or OSPC</li>
-              <li>OSPIIC or OSPI</li>
-              <li>SNSV</li>
-              <li>RSR</li>
-            </ul>
-          </ul>
-          <li>Value:</li>
-          <ul>
-            <li>level (enum - LOW, MEDIUM, HIGH, VERY_HIGH)</li>
-            <li>score</li>
-            <li>staticOrDynamic (enum - STATIC, DYNAMIC)</li>
-            <li>type</li>
-            <ul>
-              <li>OGRS4 generation predictor names (must be title case & acronyms <strong>not</strong> allowed):</li>
+            <li>
+              Key: predictor name
               <ul>
-                <li>All Reoffending Predictor</li>
-                <li>Violent Reoffending Predictor</li>
-                <li>Direct Contact – Sexual Reoffending Predictor</li>
-                <li>Images and Indirect Contact – Sexual Reoffending Predictor</li>
-                <li>Serious Violent Reoffending Predictor</li>
-                <li>Combined Serious Reoffending Predictor</li>
+                <li>
+                  OGRS4 generation:
+                  <ul>
+                    <li>allReoffendingPredictor</li>
+                    <li>violentReoffendingPredictor</li>
+                    <li>directContactSexualReoffendingPredictor</li>
+                    <li>indirectImageContactSexualReoffendingPredictor</li>
+                    <li>seriousViolentReoffendingPredictor</li>
+                    <li>combinedSeriousReoffendingPredictor</li>
+                  </ul>
+                </li>
+                <li>
+                  OGRS3 generation:
+                  <ul>
+                    <li>OGRS3</li>
+                    <li>OGP</li>
+                    <li>OVP</li>
+                    <li>OSPDC or OSPC</li>
+                    <li>OSPIIC or OSPI</li>
+                    <li>SNSV</li>
+                    <li>RSR</li>
+                  </ul>
+                </li>
               </ul>
-              <li>OGRS3 generation predictor names (only use acronyms):</li>
+            </li>
+            <li>
+              Value:
               <ul>
-                <li>OGRS3</li>
-                <li>OGP</li>
-                <li>OVP</li>
-                <li>OSP-DC</li>
-                <li>OSP-IIC</li>
-                <li>SNSV</li>
-                <li>RSR</li>
+                <li>level (enum - LOW, MEDIUM, HIGH, VERY_HIGH)</li>
+                <li>score</li>
+                <li>staticOrDynamic (enum - STATIC, DYNAMIC)</li>
+                <li>
+                  type
+                  <ul>
+                    <li>
+                      OGRS4 generation predictor names (must be title case & acronyms <strong>not</strong> allowed):
+                      <ul>
+                        <li>All Reoffending Predictor</li>
+                        <li>Violent Reoffending Predictor</li>
+                        <li>Direct Contact – Sexual Reoffending Predictor</li>
+                        <li>Images and Indirect Contact – Sexual Reoffending Predictor</li>
+                        <li>Serious Violent Reoffending Predictor</li>
+                        <li>Combined Serious Reoffending Predictor</li>
+                      </ul>
+                    </li>
+                    <li>
+                      OGRS3 generation predictor names (only use acronyms):
+                      <ul>
+                        <li>OGRS3</li>
+                        <li>OGP</li>
+                        <li>OVP</li>
+                        <li>OSP-DC</li>
+                        <li>OSP-IIC</li>
+                        <li>SNSV</li>
+                        <li>RSR</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
               </ul>
-            </ul>
+            </li>
           </ul>
-        </ul>
+        </li>
       </ul>
-      </p>
       <strong>E.g.</strong>
       <pre><code>{
   historical: [
@@ -174,13 +193,18 @@
     },
   ],
 }</code></pre>
-      </p>
       <h3>Macro parameter</h3>
       <ul>
-        <li>ogrs4ReleaseDate (string)</li>
-        <ul>
-          <li>Overrides the default OGRS4 release date of '23 February 2026 at 09:00' used for the 'All assessments started after this date use updated risk predictor tools' timeline warning - must be format 'DD MMMM YYYY at HH:mm' e.g '01 March 2026 at 09:00'</li>
-        </ul>
+        <li>
+          ogrs4ReleaseDate (string)
+          <ul>
+            <li>Overrides the default OGRS4 release date of '23 February 2026 at 09:00' used for the 'All assessments
+              started after this date use updated risk predictor tools' timeline warning - must be format 'DD MMMM YYYY
+              at
+              HH:mm' e.g '01 March 2026 at 09:00'
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
     <div class="govuk-grid-column-one-half">
