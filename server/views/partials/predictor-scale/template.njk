@@ -1,17 +1,32 @@
-{% from "partials/predictor-scale-marker/macro.njk" import predictorScaleMarker %}
 {%- from "govuk/components/tag/macro.njk" import govukTag -%}
-
 {% set scaleMarkerClass = '' %}
 {% set staticOrDynamic = '' %}
+
+{% macro predictorScaleMarker(predictorScore, includeScore) %}
+  <div class="scale-marker__card">
+    <div class="scale-marker__card-top">
+      <h3>{{ predictorScore.level | replace("_", " ") }}</h3>
+    </div>
+    {% if includeScore and predictorScore.score %}
+      <div class="scale-marker__card-bottom">
+        <p>{{ predictorScore.score }}%</p>
+      </div>
+      <div class="scale-marker__card-pointer"></div>
+    {% else %}
+      <div class="scale-marker__card-pointer scale-marker__card-pointer--white"></div>
+    {% endif %}
+  </div>
+{% endmacro %}
 
 {% switch predictorScore.staticOrDynamic %}
   {% case 'STATIC' %}
     {% set staticOrDynamic = 'Static' %}
   {% case 'DYNAMIC' %}
     {% set staticOrDynamic = 'Dynamic' %}
+  {% default %}
 {% endswitch %}
 
-{% if isLowToVeryHigh !== true %}
+{% if includeVeryHigh !== true %}
   {% switch predictorScore.level %}
   {% case 'LOW' %}
     {% set scaleMarkerClass = 'scale-marker-wrapper--low scale-marker-wrapper--position-one-of-three' %}
@@ -35,13 +50,13 @@
 
 {% set barTypeClass = '' %}
 
-{% if isLowToVeryHigh !== true and includePercentage !== true %}
+{% if includeVeryHigh !== true and includePercentage !== true %}
   {% set barTypeClass = 'scale-bar--small' %}
-{% elif isLowToVeryHigh === true and includePercentage !== true %}
+{% elif includeVeryHigh === true and includePercentage !== true %}
   {% set barTypeClass = 'scale-bar--small scale-bar--small-fourths' %}
-{% elif isLowToVeryHigh === true and includePercentage === true %}
+{% elif includeVeryHigh === true and includePercentage === true %}
   {% set barTypeClass = 'scale-bar scale-bar--fourths' %}
-{% elif isLowToVeryHigh !== true and includePercentage === true %}
+{% elif includeVeryHigh !== true and includePercentage === true %}
   {% set barTypeClass = 'scale-bar' %}
 {% endif %}
 
@@ -52,18 +67,19 @@
   </div>
 {% else %}
   <div class="predictor-scale govuk-body">
-
     <div class="predictor-scale-header-wrapper">
       <div>
         <h2 class="govuk-heading-m">{{ predictorScore.type }}</h2>
         <p class="govuk-hint">Last updated: {{ predictorScore.lastUpdated }}</p>
       </div>
+      {% if staticOrDynamic !== '' %}
       <div>{{ govukTag({ text: staticOrDynamic, classes: "govuk-tag--grey"}) }}</div>
+      {%  endif %}
     </div>
 
     <div class="scale-marker">
       <div class="{{ scaleMarkerClass }}">
-        {{ predictorScaleMarker(predictorScore, showScore) }}
+        {{ predictorScaleMarker(predictorScore, includeScore) }}
       </div>
     </div>
 
@@ -77,7 +93,7 @@
       <div data-band-persentage="{{ predictorScore.bandPercentages[3] }}">
         <span></span>
       </div>
-      {% if isLowToVeryHigh === true %}
+      {% if includeVeryHigh === true %}
         <div data-band-persentage="{{ predictorScore.bandPercentages[4] }}">
           <span></span>
         </div>
