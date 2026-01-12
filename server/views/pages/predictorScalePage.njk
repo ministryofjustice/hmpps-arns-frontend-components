@@ -43,27 +43,29 @@
       <p>The predictor scale includes the following fields, which must follow the specified format:</p>
 
       <ul>
-        <li>type</li>
-        <ul>
-          <li>OGRS4 generation predictor names (must be title case & acronyms <strong>not</strong> allowed):</li>
+        <li>type
           <ul>
-            <li>All Reoffending Predictor</li>
-            <li>Combined Serious Reoffending Predictor</li>
-            <li>Violent Reoffending Predictor</li>
-            <li>Direct Contact – Sexual Reoffending Predictor</li>
-            <li>Images and Indirect Contact – Sexual Reoffending Predictor</li>
+            <li>OGRS4 generation predictor names (must be title case & acronyms <strong>not</strong> allowed):
+              <ul>
+                <li>All Reoffending Predictor</li>
+                <li>Combined Serious Reoffending Predictor</li>
+                <li>Violent Reoffending Predictor</li>
+                <li>Direct Contact – Sexual Reoffending Predictor</li>
+                <li>Images and Indirect Contact – Sexual Reoffending Predictor</li>
+              </ul>
+            </li>
+            <li>OGRS3 generation predictor names (only use acronyms):
+              <ul>
+                <li>OGRS</li>
+                <li>OGP</li>
+                <li>OVP</li>
+                <li>OSP-DC</li>
+                <li>OSP-IIC</li>
+                <li>SNSV</li>
+                <li>RSR</li>
+              </ul>
+            </li>
           </ul>
-          <li>OGRS3 generation predictor names:</li>
-          <ul>
-            <li>OGRS</li>
-            <li>OGP</li>
-            <li>OVP</li>
-            <li>OSP-DC</li>
-            <li>OSP-IIC</li>
-            <li>SNSV</li>
-            <li>RSR</li>
-          </ul>
-        </ul>
         <li>level (enum - LOW, MEDIUM, HIGH, VERY_HIGH)</li>
         <li>score</li>
         <li>staticOrDynamic (enum - STATIC, DYNAMIC)</li>
@@ -84,21 +86,24 @@
 
       <h3>Macro flags</h3>
       <ul>
-        <li>isLowToVeryHigh (boolean)</li>
-        <ul>
-          <li>true - scale in LOW, MEDIUM, HIGH, <strong>VERY_HIGH</strong> format</li>
-          <li>false - scale in LOW, MEDIUM, HIGH format</li>
-        </ul>
-        <li>showScore (boolean)</li>
-        <ul>
-          <li>true - shows predictor score on the marker</li>
-          <li>false - hides predictor score on the marker</li>
-        </ul>
-        <li>includePercentage (boolean)</li>
-        <ul>
-          <li>true - shows the band percentages on the scale</li>
-          <li>false - hides the band percentages on the scale</li>
-        </ul>
+        <li>isLowToVeryHigh (boolean)
+          <ul>
+            <li>true - scale in LOW, MEDIUM, HIGH, <strong>VERY_HIGH</strong> format</li>
+            <li>false - scale in LOW, MEDIUM, HIGH format</li>
+          </ul>
+        </li>
+        <li>showScore (boolean)
+          <ul>
+            <li>true - shows predictor score on the marker</li>
+            <li>false - hides predictor score on the marker</li>
+          </ul>
+        </li>
+        <li>includePercentage (boolean)
+          <ul>
+            <li>true - shows the band percentages on the scale</li>
+            <li>false - hides the band percentages on the scale</li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
