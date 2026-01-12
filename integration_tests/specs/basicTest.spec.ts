@@ -1,16 +1,12 @@
 import { test } from '@playwright/test'
 import LoginPage from '../pages/loginPage'
+import {login} from "../testUtils";
 
 test('User logs in and checks all pages are working', async ({ page }) => {
   const loginPage = new LoginPage(page)
 
-  // Navigate to the login page
-  await loginPage.goto()
-
-  // Check page is correct and you can log in
-  await loginPage.fillInUsername()
-  await loginPage.fillInPassword()
-  await loginPage.clickSignIn()
+  // Authenticate
+  await login(page, { name: 'A TestUser' })
 
   // Check you have logged in and landed on the homepage
   await loginPage.checkIntroduction()
