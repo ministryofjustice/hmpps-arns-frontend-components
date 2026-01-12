@@ -31,11 +31,6 @@ describe('View Snapshot Tests: All Pages', () => {
     expect(response.text).toMatchSnapshot()
   })
 
-  it('should match snapshot for the predictor timeline item page (/predictor-timeline-item)', async () => {
-    const response = await request(app).get('/predictor-timeline-item').expect(200)
-    expect(response.text).toMatchSnapshot()
-  })
-
   it('should match snapshot for the risk flag widget page (/risk-flag-widget)', async () => {
     const response = await request(app).get('/risk-flag-widget').expect(200)
     expect(response.text).toMatchSnapshot()
@@ -58,6 +53,16 @@ describe('View Snapshot Tests: All Pages', () => {
 
   it('should match snapshot for the predictor scale page (/predictor-scale)', async () => {
     const response = await request(app).get('/predictor-scale').expect(200)
+    expect(response.text).toMatchSnapshot()
+  })
+
+  it('should match snapshot for the legacy predictor timeline page (/legacy-predictor-timeline)', async () => {
+    const response = await request(app).get('/legacy-predictor-timeline').expect(200)
+    expect(response.text).toMatchSnapshot()
+  })
+
+  it('should match snapshot for the legacy predictor timeline item page (/legacy-predictor-timeline-item)', async () => {
+    const response = await request(app).get('/legacy-predictor-timeline-item').expect(200)
     expect(response.text).toMatchSnapshot()
   })
 })
