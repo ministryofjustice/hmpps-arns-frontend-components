@@ -47,11 +47,11 @@ const predictorTimelineRiskScores = {
         },
         OSPDC: {
           level: 'MEDIUM',
-          type: 'OSP/DC',
+          type: 'OSP-DC',
         },
         OSPIIC: {
           level: 'LOW',
-          type: 'OSP/IIC',
+          type: 'OSP-IIC',
         },
       },
     },
@@ -65,11 +65,11 @@ const predictorTimelineRiskScores = {
         },
         OSPC: {
           level: 'MEDIUM',
-          type: 'OSP/C',
+          type: 'OSP-DC',
         },
         OSPI: {
           level: 'LOW',
-          type: 'OSP/I',
+          type: 'OSP-IIC',
         },
       },
     },

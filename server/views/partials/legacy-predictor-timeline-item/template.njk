@@ -4,19 +4,19 @@
 
 {% switch predictor.level %}
     {% case 'VERY_HIGH' %}
-        {% set timelineItemClass = 'legacy-predictor-timeline-item--very-high'%}
+        {% set timelineItemClass = 'moj-predictor-timeline-item--very-high'%}
     {% case 'HIGH' %}
-        {% set timelineItemClass = 'legacy-predictor-timeline-item--high'%}
+        {% set timelineItemClass = 'moj-predictor-timeline-item--high'%}
     {% case 'MEDIUM' %}
-        {% set timelineItemClass = 'legacy-predictor-timeline-item--medium' %}
+        {% set timelineItemClass = 'moj-predictor-timeline-item--medium' %}
     {% case 'LOW' %}
-        {% set timelineItemClass = 'legacy-predictor-timeline-item--low' %}
+        {% set timelineItemClass = 'moj-predictor-timeline-item--low' %}
 {% endswitch %}
 
 <div class="{{ timelineItemClass }}">
-    <span class="legacy-predictor-timeline-item__level"><strong>{{ predictor.type }}</strong> {{ predictor.level }}</span>
+    <span class="moj-predictor-timeline-item__level"><strong>{{ predictor.type }}</strong> {{ predictor.level }}</span>
     {% if predictor.score %}
-    <span class="legacy-predictor-timeline-item__score">{{ predictor.score }}</span>
+    <span class="moj-predictor-timeline-item__score">{{ predictor.score }}</span>
     {% endif %}
 </div>
 {% endif %}

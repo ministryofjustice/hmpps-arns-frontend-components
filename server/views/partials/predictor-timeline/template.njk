@@ -1,7 +1,77 @@
-{% from "partials/predictor-timeline-item/macro.njk" import predictorTimelineItem %}
-
 {% set ogrs4ReleaseDate = ogrs4ReleaseDate | default("23 February 2026 at 09:00") %}
 {% set hasTimelineWarning = false %}
+
+{% macro predictorTimelineItem(predictor, isLegacy) %}
+  {% if predictor %}
+
+    {% set timelineItemClass = '' %}
+
+    {% if isLegacy %}
+
+      {% switch predictor.level %}
+      {% case 'VERY_HIGH' %}
+        {% set timelineItemClass = 'legacy-predictor-timeline-item--very-high' %}
+      {% case 'HIGH' %}
+        {% set timelineItemClass = 'legacy-predictor-timeline-item--high' %}
+      {% case 'MEDIUM' %}
+        {% set timelineItemClass = 'legacy-predictor-timeline-item--medium' %}
+      {% case 'LOW' %}
+        {% set timelineItemClass = 'legacy-predictor-timeline-item--low' %}
+      {% endswitch %}
+
+      <div class="{{ timelineItemClass }}">
+        <span
+          class="legacy-predictor-timeline-item__type_and_level">{{ predictor.type | upper }} <strong>{{ predictor.level | replace('_', ' ') }}</strong></span>
+
+        {% if predictor.score %}
+          <span class="legacy-predictor-timeline-item__score">{{ predictor.score }}%</span>
+        {% endif %}
+
+        {% if predictor.staticOrDynamic %}
+          <span
+            class="legacy-predictor-timeline-item__static_or_dynamic">{{ predictor.staticOrDynamic | capitalize }}</span>
+        {% endif %}
+
+      </div>
+
+    {% else %}
+
+      {% switch predictor.level %}
+      {% case 'VERY_HIGH' %}
+        {% set timelineItemClass = 'predictor-timeline-item--very-high' %}
+      {% case 'HIGH' %}
+        {% set timelineItemClass = 'predictor-timeline-item--high' %}
+      {% case 'MEDIUM' %}
+        {% set timelineItemClass = 'predictor-timeline-item--medium' %}
+      {% case 'LOW' %}
+        {% set timelineItemClass = 'predictor-timeline-item--low' %}
+      {% endswitch %}
+
+      {% set staticOrDynamicClass = 'predictor-timeline-item__static_or_dynamic' %}
+      {% if predictor.score and predictor.level in ['VERY_HIGH', 'MEDIUM'] and predictor.staticOrDynamic === 'DYNAMIC' %}
+        {% set staticOrDynamicClass = staticOrDynamicClass + ' predictor-timeline-item__wrapped_static_or_dynamic' %}
+      {% endif %}
+
+      <div class="{{ timelineItemClass }}">
+    <span
+      class="predictor-timeline-item__type">{{ predictor.type | title }}</span>
+
+        <div class="predictor-timeline-item__stats">
+          <span class="predictor-timeline-item__level">{{ predictor.level | replace('_', ' ') }}</span>
+
+          {% if predictor.score %}
+            <span class="predictor-timeline-item__score">{{ predictor.score }}%</span>
+          {% endif %}
+
+          {% if predictor.staticOrDynamic %}
+            <span class="{{ staticOrDynamicClass }}">{{ predictor.staticOrDynamic | capitalize }}</span>
+          {% endif %}
+
+        </div>
+      </div>
+    {% endif %}
+  {% endif %}
+{% endmacro %}
 
 {% macro timelineWarning() %}
   <div class="predictor-timeline__item">
@@ -63,6 +133,10 @@
           <b>Updated version:</b> Combined Serious Reoffending Predictor<br>
           <br>
           The Combined Serious Reoffending Predictor has both static and dynamic versions.
+          <br><br>
+          <h3>Which version will be displayed</h3>
+          All tools only show a dynamic score if both versions are available.
+          <br>
         </div>
       </details>
     </div>

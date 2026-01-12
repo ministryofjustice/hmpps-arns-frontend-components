@@ -1,3 +1,16 @@
+$very-high-score-colour: #942514;
+$very-high-score-colour--light: #ffac9f;
+$very-high-score-colour__text: #711a0d;
+$high-score-colour: #d4351c;
+$high-score-colour--light: #f6d7d2;
+$high-score-colour__text: #942514;
+$medium-score-colour: #f47738;
+$medium-score-colour--light: #f9e8bd;
+$medium-score-colour__text: #a34e00;
+$low-score-colour: #85994b;
+$low-score-colour--light: #dee9bd;
+$low-score-colour__text: #485b10;
+
 .predictor-timeline {
   margin-bottom: govuk-spacing(4);
   overflow: hidden;
@@ -78,3 +91,128 @@
 .predictor-timeline__details {
   margin-bottom: 0px !important;
 }
+
+@mixin predictor-timeline-item-base($primary-colour, $secondary-colour, $text-colour) {
+  display: inline-flex;
+  flex-direction: column;
+  outline: 2px solid $primary-colour;
+  width: 259px;
+  margin-bottom: 5px;
+
+  & .predictor-timeline-item__type {
+    @include govuk-font(19, "bold");
+    color: govuk-colour("black");
+
+    padding: 10px 10px 2px 10px;
+  }
+
+  & .predictor-timeline-item__stats {
+    padding: 2px 10px 10px 10px;
+  }
+
+  & .predictor-timeline-item__level {
+    @include govuk-font(19, "bold");
+    color: $text-colour;
+
+    padding: 0px;
+  }
+
+  & .predictor-timeline-item__score {
+    @include govuk-font(19, "bold");
+    color: govuk-colour("black");
+
+    background-color: $secondary-colour;
+
+    padding: 2px 5px;
+  }
+
+  & .predictor-timeline-item__static_or_dynamic {
+    @include govuk-font(19, "regular");
+    color: #282D30;
+
+    background-color: #E5E6E7;
+
+    padding: 2px 5px;
+  }
+
+  & .predictor-timeline-item__wrapped_static_or_dynamic {
+    display: inline-block;
+    margin-top: 3px;
+  }
+}
+
+.predictor-timeline-item--very-high {
+  @include predictor-timeline-item-base(
+      $very-high-score-colour,
+      $very-high-score-colour--light,
+      $very-high-score-colour__text
+  );
+}
+
+.predictor-timeline-item--high {
+  @include predictor-timeline-item-base($high-score-colour, $high-score-colour--light, $high-score-colour__text);
+}
+
+.predictor-timeline-item--medium {
+  @include predictor-timeline-item-base($medium-score-colour, $medium-score-colour--light, $medium-score-colour__text);
+}
+
+.predictor-timeline-item--low {
+  @include predictor-timeline-item-base($low-score-colour, $low-score-colour--light, $low-score-colour__text);
+}
+
+@mixin legacy-predictor-timeline-item-base($primary-colour, $secondary-colour, $text-colour) {
+  display: inline-flex;
+  outline: 2px solid $primary-colour;
+  margin-bottom: 5px;
+
+  & .legacy-predictor-timeline-item__type_and_level {
+    @include govuk-font(19, "regular");
+    color: $text-colour;
+
+    padding: 2px 10px;
+  }
+
+  & .legacy-predictor-timeline-item__score {
+    @include govuk-font(19, "bold");
+    color: govuk-colour("black");
+
+    background-color: $secondary-colour;
+    border-left: 2px solid $primary-colour;
+
+    padding: 2px 2px;
+    align-content: center;
+  }
+
+  & .legacy-predictor-timeline-item__static_or_dynamic {
+    @include govuk-font(19, "regular");
+    color: #282D30;
+
+    background-color: #E5E6E7;
+    border-left: 2px solid $primary-colour;
+
+    padding: 2px 2px;
+    align-content: center;
+  }
+}
+
+.legacy-predictor-timeline-item--very-high {
+  @include legacy-predictor-timeline-item-base(
+      $very-high-score-colour,
+      $very-high-score-colour--light,
+      $very-high-score-colour__text
+  );
+}
+
+.legacy-predictor-timeline-item--high {
+  @include legacy-predictor-timeline-item-base($high-score-colour, $high-score-colour--light, $high-score-colour__text);
+}
+
+.legacy-predictor-timeline-item--medium {
+  @include legacy-predictor-timeline-item-base($medium-score-colour, $medium-score-colour--light, $medium-score-colour__text);
+}
+
+.legacy-predictor-timeline-item--low {
+  @include legacy-predictor-timeline-item-base($low-score-colour, $low-score-colour--light, $low-score-colour__text);
+}
+
