@@ -1,6 +1,6 @@
 import { test } from '@playwright/test'
 import LoginPage from '../pages/loginPage'
-import {login} from "../testUtils";
+import {login} from "../testUtils"
 
 test('User logs in and checks all pages are working', async ({ page }) => {
   const loginPage = new LoginPage(page)
