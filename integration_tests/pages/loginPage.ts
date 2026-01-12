@@ -1,8 +1,7 @@
-import { expect, Locator, Page } from '@playwright/test';
-import {VALID_USERNAME, VALID_PASSWORD, LOCAL_URL} from './pages-common'
+import { expect, Locator, Page } from '@playwright/test'
+import {VALID_USERNAME,VALID_PASSWORD,LOCAL_URL} from './pages-common'
 
-export class LoginPage{
-
+export default class LoginPage{
   constructor(
   private page: Page,
   private loginUsername: Locator = page.getByRole('textbox', { name: 'Username' }),
@@ -37,9 +36,7 @@ export class LoginPage{
   async goto() {
     await this.page.goto(LOCAL_URL)
   }
-  async fillInUsername() {
-    await this.loginUsername.fill(VALID_USERNAME);
-  }
+  async fillInUsername() {await this.loginUsername.fill(VALID_USERNAME);}
   async fillInPassword() {
     await this.loginPassword.fill(VALID_PASSWORD);
   }
