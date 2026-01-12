@@ -4,7 +4,7 @@ import rawNavSections from '../data/navData'
 import predictorScaleScores from '../data/predictorScaleScores'
 import widgetData from '../data/widgetData'
 import legacyComponentRiskScores from '../data/legacyComponentRiskScores'
-import badgeRiskScores from '../data/badgeRiskScores'
+import { badgeRiskScores, legacyBadgeRiskScores } from '../data/badgeRiskScores'
 import predictorScaleNotApplicableScores from '../data/predictorScaleNotApplicableScores'
 import predictorTimelineRiskScores from '../data/predictorTimelineRiskScores'
 
@@ -13,11 +13,11 @@ export default function componentPageRoutes(): Router {
 
   router.get('/predictor-badge', async (req, res) => {
     const navSections = activateMojNav(rawNavSections, req.path)
-    res.render('pages/predictorBadgePage', { badgeRiskScores, navSections })
+    res.render('pages/predictorBadgePage', { badgeRiskScores, legacyBadgeRiskScores, navSections })
   })
   router.get('/expanded-predictor-badge', async (req, res) => {
     const navSections = activateMojNav(rawNavSections, req.path)
-    res.render('pages/expandedPredictorBadgePage', { badgeRiskScores, navSections })
+    res.render('pages/expandedPredictorBadgePage', { badgeRiskScores, legacyBadgeRiskScores, navSections })
   })
   router.get('/mappa-widget', async (req, res) => {
     const navSections = activateMojNav(rawNavSections, req.path)

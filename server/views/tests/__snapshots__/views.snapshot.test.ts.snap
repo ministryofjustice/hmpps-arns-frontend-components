@@ -438,7 +438,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     </div>
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-full">
-        <h2>Examples (fixed width)</h2>
+        <h2>OGRS4 examples (fixed width)</h2>
       </div>
       <div class="govuk-grid-column-one-half">
         <div class="govuk-!-margin-bottom-4">
@@ -477,7 +477,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
 
         </div>
-        <div class="govuk-!-margin-bottom-8">
+        <div class="govuk-!-margin-bottom-4">
           
 
   
@@ -495,6 +495,154 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">All Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">LOW</span>
+
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">LOW</span>
+
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">All Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">LOW</span>
+
+      
+        <span class="predictor-badge__score">12.34%</span>
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Static</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">All Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">LOW</span>
+
+      
+        <span class="predictor-badge__score">12.34%</span>
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">LOW</span>
@@ -504,84 +652,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       
 
       
-        <span class="predictor-badge__static_or_dynamic">Static</span>
-      
-
-    </div>
-
-    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
-
-  </div>
-
-
-        </div>
-      </div>
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-!-margin-bottom-4">
-          
-
-  
-  
-    
-  
-
-  
-  
-
-  
-    
-  
-
-  <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
-    <span
-      class="predictor-badge__type">All Reoffending Predictor</span>
-
-    <div class="predictor-badge__stats">
-      <span class="predictor-badge__level">LOW</span>
-
-      
-
-      
-        <span class="predictor-badge__static_or_dynamic">Dynamic</span>
-      
-
-    </div>
-
-    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
-
-  </div>
-
-
-        </div>
-        <div class="govuk-!-margin-bottom-8">
-          
-
-  
-  
-    
-  
-
-  
-  
-
-  
-    
-  
-
-  <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
-    <span
-      class="predictor-badge__type">All Reoffending Predictor</span>
-
-    <div class="predictor-badge__stats">
-      <span class="predictor-badge__level">LOW</span>
-
-      
-        <span class="predictor-badge__score">1.23%</span>
-      
-
-      
-        <span class="predictor-badge__static_or_dynamic">Dynamic</span>
-      
 
     </div>
 
@@ -630,46 +700,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
 
         </div>
-        <div class="govuk-!-margin-bottom-8">
-          
-
-  
-  
-    
-  
-
-  
-  
-
-  
-    
-  
-
-  <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
-    <span
-      class="predictor-badge__type">Violent Reoffending Predictor</span>
-
-    <div class="predictor-badge__stats">
-      <span class="predictor-badge__level">MEDIUM</span>
-
-      
-        <span class="predictor-badge__score">23.45%</span>
-      
-
-      
-        <span class="predictor-badge__static_or_dynamic">Static</span>
-      
-
-    </div>
-
-    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
-
-  </div>
-
-
-        </div>
-      </div>
-      <div class="govuk-grid-column-one-half">
         <div class="govuk-!-margin-bottom-4">
           
 
@@ -707,6 +737,80 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
         </div>
         <div class="govuk-!-margin-bottom-8">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">Direct Contact – Sexual Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">MEDIUM</span>
+
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">Violent Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">MEDIUM</span>
+
+      
+        <span class="predictor-badge__score">34.56%</span>
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Static</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-4">
           
 
   
@@ -746,6 +850,42 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
 
         </div>
+        <div class="govuk-!-margin-bottom-8">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">Direct Contact – Sexual Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">MEDIUM</span>
+
+      
+        <span class="predictor-badge__score">23.45%</span>
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
       </div>
 
       <div class="govuk-grid-column-one-half">
@@ -785,46 +925,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
 
         </div>
-        <div class="govuk-!-margin-bottom-8">
-          
-
-  
-  
-    
-  
-
-  
-  
-
-  
-    
-  
-
-  <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
-    <span
-      class="predictor-badge__type">Serious Violent Reoffending Predictor</span>
-
-    <div class="predictor-badge__stats">
-      <span class="predictor-badge__level">HIGH</span>
-
-      
-        <span class="predictor-badge__score">45.67%</span>
-      
-
-      
-        <span class="predictor-badge__static_or_dynamic">Static</span>
-      
-
-    </div>
-
-    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
-
-  </div>
-
-
-        </div>
-      </div>
-      <div class="govuk-grid-column-one-half">
         <div class="govuk-!-margin-bottom-4">
           
 
@@ -878,17 +978,127 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
   <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
     <span
+      class="predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">HIGH</span>
+
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
+    <span
       class="predictor-badge__type">Serious Violent Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
       <span class="predictor-badge__level">HIGH</span>
 
       
-        <span class="predictor-badge__score">56.67%</span>
+        <span class="predictor-badge__score">4.56%</span>
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Static</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">Serious Violent Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">HIGH</span>
+
+      
+        <span class="predictor-badge__score">4.56%</span>
       
 
       
         <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">HIGH</span>
+
+      
+        <span class="predictor-badge__score">23.45%</span>
+      
+
       
 
     </div>
@@ -938,46 +1148,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
 
         </div>
-        <div class="govuk-!-margin-bottom-8">
-          
-
-  
-  
-    
-  
-
-  
-  
-
-  
-    
-  
-
-  <div class="expanded-predictor-badge--very-high expanded-predictor-badge__fixed-width">
-    <span
-      class="predictor-badge__type">Combined Serious Reoffending Predictor</span>
-
-    <div class="predictor-badge__stats">
-      <span class="predictor-badge__level">VERY HIGH</span>
-
-      
-        <span class="predictor-badge__score">67.78%</span>
-      
-
-      
-        <span class="predictor-badge__static_or_dynamic">Static</span>
-      
-
-    </div>
-
-    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
-
-  </div>
-
-
-        </div>
-      </div>
-      <div class="govuk-grid-column-one-half">
         <div class="govuk-!-margin-bottom-4">
           
 
@@ -1024,6 +1194,80 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
   
   
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--very-high expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">Direct Contact – Sexual Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">VERY HIGH</span>
+
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--very-high expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">Combined Serious Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">VERY HIGH</span>
+
+      
+        <span class="predictor-badge__score">25.55%</span>
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Static</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
     
   
 
@@ -1039,7 +1283,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       <span class="predictor-badge__level">VERY HIGH</span>
 
       
-        <span class="predictor-badge__score">78.89%</span>
+        <span class="predictor-badge__score">25.55%</span>
       
 
       
@@ -1054,9 +1298,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
 
         </div>
-      </div>
-
-      <div class="govuk-grid-column-one-half">
         <div class="govuk-!-margin-bottom-8">
           
 
@@ -1072,126 +1313,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
-  <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
-    <span
-      class="predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
-
-    <div class="predictor-badge__stats">
-      <span class="predictor-badge__level">LOW</span>
-
-      
-
-      
-
-    </div>
-
-    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
-
-  </div>
-
-
-        </div>
-      </div>
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-!-margin-bottom-8">
-          
-
-  
-  
-    
-  
-
-  
-  
-
-  
-    
-  
-
-  <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
-    <span
-      class="predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
-
-    <div class="predictor-badge__stats">
-      <span class="predictor-badge__level">LOW</span>
-
-      
-        <span class="predictor-badge__score">0.12%</span>
-      
-
-      
-
-    </div>
-
-    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
-
-  </div>
-
-
-        </div>
-      </div>
-
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-!-margin-bottom-8">
-          
-
-  
-  
-    
-  
-
-  
-  
-
-  
-    
-  
-
-  <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
+  <div class="expanded-predictor-badge--very-high expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">Direct Contact – Sexual Reoffending Predictor</span>
 
     <div class="predictor-badge__stats">
-      <span class="predictor-badge__level">MEDIUM</span>
+      <span class="predictor-badge__level">VERY HIGH</span>
 
       
-
-      
-
-    </div>
-
-    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
-
-  </div>
-
-
-        </div>
-      </div>
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-!-margin-bottom-8">
-          
-
-  
-  
-    
-  
-
-  
-  
-
-  
-    
-  
-
-  <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
-    <span
-      class="predictor-badge__type">Direct Contact – Sexual Reoffending Predictor</span>
-
-    <div class="predictor-badge__stats">
-      <span class="predictor-badge__level">MEDIUM</span>
-
-      
-        <span class="predictor-badge__score">23.45%</span>
+        <span class="predictor-badge__score">45.56%</span>
       
 
       
@@ -1206,82 +1336,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         </div>
       </div>
 
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-!-margin-bottom-8">
-          
-
-  
-  
-    
-  
-
-  
-  
-
-  
-    
-  
-
-  <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
-    <span
-      class="predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
-
-    <div class="predictor-badge__stats">
-      <span class="predictor-badge__level">HIGH</span>
-
-      
-
-      
-
-    </div>
-
-    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
-
-  </div>
-
-
-        </div>
-      </div>
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-!-margin-bottom-8">
-          
-
-  
-  
-    
-  
-
-  
-  
-
-  
-    
-  
-
-  <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
-    <span
-      class="predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
-
-    <div class="predictor-badge__stats">
-      <span class="predictor-badge__level">HIGH</span>
-
-      
-        <span class="predictor-badge__score">23.45%</span>
-      
-
-      
-
-    </div>
-
-    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
-
-  </div>
-
-
-        </div>
-      </div>
       <div class="govuk-grid-column-full">
-        <h2>Examples (dynamic width)</h2>
+        <h2>OGRS4 examples (dynamic width)</h2>
       </div>
       <div class="govuk-grid-column-full">
         <div class="govuk-!-margin-bottom-4">
@@ -1346,6 +1402,833 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         <span class="predictor-badge__score">23.45%</span>
       
 
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-full">
+        <h2>Legacy data examples (fixed width)</h2>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">RSR</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">LOW</span>
+
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Static</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">RSR</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">LOW</span>
+
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">OGP</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">LOW</span>
+
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">RSR</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">LOW</span>
+
+      
+        <span class="predictor-badge__score">1.23%</span>
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Static</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">RSR</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">LOW</span>
+
+      
+        <span class="predictor-badge__score">1.23%</span>
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">OGP</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">LOW</span>
+
+      
+        <span class="predictor-badge__score">12.34%</span>
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">RSR</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">MEDIUM</span>
+
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Static</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">RSR</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">MEDIUM</span>
+
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">OVP</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">MEDIUM</span>
+
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">RSR</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">MEDIUM</span>
+
+      
+        <span class="predictor-badge__score">4.56%</span>
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Static</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">RSR</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">MEDIUM</span>
+
+      
+        <span class="predictor-badge__score">4.56%</span>
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic predictor-badge__wrapped_static_or_dynamic">Dynamic</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">OVP</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">MEDIUM</span>
+
+      
+        <span class="predictor-badge__score">34.56%</span>
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">RSR</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">HIGH</span>
+
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Static</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">RSR</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">HIGH</span>
+
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">OSP-IIC</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">HIGH</span>
+
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">RSR</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">HIGH</span>
+
+      
+        <span class="predictor-badge__score">25.55%</span>
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Static</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">RSR</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">HIGH</span>
+
+      
+        <span class="predictor-badge__score">25.55%</span>
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">OSP-IIC</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">HIGH</span>
+
+      
+        <span class="predictor-badge__score">45.67%</span>
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--very-high expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">OSP-DC</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">VERY HIGH</span>
+
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-8">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--very-high expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">OSP-DC</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">VERY HIGH</span>
+
+      
+        <span class="predictor-badge__score">67.78%</span>
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-full">
+        <h2>Legacy data examples (dynamic width)</h2>
+      </div>
+      <div class="govuk-grid-column-full">
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--low expanded-predictor-badge__dynamic">
+    <span
+      class="predictor-badge__type">OGP</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">LOW</span>
+
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--high expanded-predictor-badge__dynamic">
+    <span
+      class="predictor-badge__type">RSR</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">HIGH</span>
+
+      
+        <span class="predictor-badge__score">25.55%</span>
+      
+
+      
+        <span class="predictor-badge__static_or_dynamic">Dynamic</span>
       
 
     </div>
@@ -2624,7 +3507,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </ul>
         </li>
       </ul>
-      <h2>Examples</h2>
+      <h2>OGRS4 examples</h2>
       <div class="govuk-!-margin-bottom-4">
         
 
@@ -2680,38 +3563,80 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <div class="predictor-badge--low">
     <span
       class="predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
+
+    
+      <span class="predictor-badge__score">12.34%</span>
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Static</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--low">
+    <span
+      class="predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
+
+    
+      <span class="predictor-badge__score">12.34%</span>
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--low">
+    <span
+      class="predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>LOW</strong></span>
+
+    
+
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--low">
+    <span
+      class="predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
     
       <span class="predictor-badge__score">0.12%</span>
     
 
     
-      <span class="predictor-badge__static_or_dynamic">Static</span>
-    
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-8">
-        
-
-  
-  
-    
-  
-
-  <div class="predictor-badge--low">
-    <span
-      class="predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
-
-    
-      <span class="predictor-badge__score">1.23%</span>
-    
-
-    
-      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
-    
 
   </div>
 
@@ -2775,7 +3700,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       class="predictor-badge__type_and_level">VIOLENT REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
 
     
-      <span class="predictor-badge__score">23.45%</span>
+      <span class="predictor-badge__score">34.56%</span>
     
 
     
@@ -2786,7 +3711,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
       </div>
-      <div class="govuk-!-margin-bottom-8">
+      <div class="govuk-!-margin-bottom-4">
         
 
   
@@ -2810,6 +3735,48 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
       </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--medium">
+    <span
+      class="predictor-badge__type_and_level">DIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
+
+    
+
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--medium">
+    <span
+      class="predictor-badge__type_and_level">DIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
+
+    
+      <span class="predictor-badge__score">23.45%</span>
+    
+
+    
+
+  </div>
+
+
+      </div>
 
       <div class="govuk-!-margin-bottom-4">
         
@@ -2866,13 +3833,641 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <div class="predictor-badge--high">
     <span
       class="predictor-badge__type_and_level">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+
+    
+      <span class="predictor-badge__score">4.56%</span>
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Static</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--high">
+    <span
+      class="predictor-badge__type_and_level">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+
+    
+      <span class="predictor-badge__score">4.56%</span>
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--high">
+    <span
+      class="predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+
+    
+
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--high">
+    <span
+      class="predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+
+    
+      <span class="predictor-badge__score">23.45%</span>
+    
+
+    
+
+  </div>
+
+
+      </div>
+
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--very-high">
+    <span
+      class="predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
+
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Static</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--very-high">
+    <span
+      class="predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
+
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--very-high">
+    <span
+      class="predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
+
+    
+      <span class="predictor-badge__score">25.55%</span>
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Static</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--very-high">
+    <span
+      class="predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
+
+    
+      <span class="predictor-badge__score">25.55%</span>
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--very-high">
+    <span
+      class="predictor-badge__type_and_level">DIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
+
+    
+
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--very-high">
+    <span
+      class="predictor-badge__type_and_level">DIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
+
+    
+      <span class="predictor-badge__score">45.56%</span>
+    
+
+    
+
+  </div>
+
+
+      </div>
+
+      <h2>Legacy data examples</h2>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--low">
+    <span
+      class="predictor-badge__type_and_level">RSR <strong>LOW</strong></span>
+
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Static</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--low">
+    <span
+      class="predictor-badge__type_and_level">RSR <strong>LOW</strong></span>
+
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--low">
+    <span
+      class="predictor-badge__type_and_level">RSR <strong>LOW</strong></span>
+
+    
+      <span class="predictor-badge__score">1.23%</span>
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Static</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--low">
+    <span
+      class="predictor-badge__type_and_level">RSR <strong>LOW</strong></span>
+
+    
+      <span class="predictor-badge__score">1.23%</span>
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--low">
+    <span
+      class="predictor-badge__type_and_level">OGP <strong>LOW</strong></span>
+
+    
+
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--low">
+    <span
+      class="predictor-badge__type_and_level">OGP <strong>LOW</strong></span>
+
+    
+      <span class="predictor-badge__score">12.34%</span>
+    
+
+    
+
+  </div>
+
+
+      </div>
+
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--medium">
+    <span
+      class="predictor-badge__type_and_level">RSR <strong>MEDIUM</strong></span>
+
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Static</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--medium">
+    <span
+      class="predictor-badge__type_and_level">RSR <strong>MEDIUM</strong></span>
+
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--medium">
+    <span
+      class="predictor-badge__type_and_level">RSR <strong>MEDIUM</strong></span>
+
+    
+      <span class="predictor-badge__score">4.56%</span>
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Static</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--medium">
+    <span
+      class="predictor-badge__type_and_level">RSR <strong>MEDIUM</strong></span>
+
+    
+      <span class="predictor-badge__score">4.56%</span>
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--medium">
+    <span
+      class="predictor-badge__type_and_level">OVP <strong>MEDIUM</strong></span>
+
+    
+
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--medium">
+    <span
+      class="predictor-badge__type_and_level">OVP <strong>MEDIUM</strong></span>
+
+    
+      <span class="predictor-badge__score">34.56%</span>
+    
+
+    
+
+  </div>
+
+
+      </div>
+
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--high">
+    <span
+      class="predictor-badge__type_and_level">RSR <strong>HIGH</strong></span>
+
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Static</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--high">
+    <span
+      class="predictor-badge__type_and_level">RSR <strong>HIGH</strong></span>
+
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--high">
+    <span
+      class="predictor-badge__type_and_level">RSR <strong>HIGH</strong></span>
+
+    
+      <span class="predictor-badge__score">25.55%</span>
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Static</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--high">
+    <span
+      class="predictor-badge__type_and_level">RSR <strong>HIGH</strong></span>
+
+    
+      <span class="predictor-badge__score">25.55%</span>
+    
+
+    
+      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--high">
+    <span
+      class="predictor-badge__type_and_level">OSP-IIC <strong>HIGH</strong></span>
+
+    
+
+    
+
+  </div>
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--high">
+    <span
+      class="predictor-badge__type_and_level">OSP-IIC <strong>HIGH</strong></span>
 
     
       <span class="predictor-badge__score">45.67%</span>
     
 
     
-      <span class="predictor-badge__static_or_dynamic">Static</span>
+
+  </div>
+
+
+      </div>
+
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+  
+    
+  
+
+  <div class="predictor-badge--very-high">
+    <span
+      class="predictor-badge__type_and_level">OSP-DC <strong>VERY HIGH</strong></span>
+
+    
+
     
 
   </div>
@@ -2887,234 +4482,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   
 
-  <div class="predictor-badge--high">
-    <span
-      class="predictor-badge__type_and_level">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>HIGH</strong></span>
-
-    
-      <span class="predictor-badge__score">56.67%</span>
-    
-
-    
-      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
-    
-
-  </div>
-
-
-      </div>
-
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-  
-    
-  
-
   <div class="predictor-badge--very-high">
     <span
-      class="predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
-
-    
-
-    
-      <span class="predictor-badge__static_or_dynamic">Static</span>
-    
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-  
-    
-  
-
-  <div class="predictor-badge--very-high">
-    <span
-      class="predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
-
-    
-
-    
-      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
-    
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-  
-    
-  
-
-  <div class="predictor-badge--very-high">
-    <span
-      class="predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
+      class="predictor-badge__type_and_level">OSP-DC <strong>VERY HIGH</strong></span>
 
     
       <span class="predictor-badge__score">67.78%</span>
-    
-
-    
-      <span class="predictor-badge__static_or_dynamic">Static</span>
-    
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-8">
-        
-
-  
-  
-    
-  
-
-  <div class="predictor-badge--very-high">
-    <span
-      class="predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
-
-    
-      <span class="predictor-badge__score">78.89%</span>
-    
-
-    
-      <span class="predictor-badge__static_or_dynamic">Dynamic</span>
-    
-
-  </div>
-
-
-      </div>
-
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-  
-    
-  
-
-  <div class="predictor-badge--low">
-    <span
-      class="predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>LOW</strong></span>
-
-    
-
-    
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-8">
-        
-
-  
-  
-    
-  
-
-  <div class="predictor-badge--low">
-    <span
-      class="predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>LOW</strong></span>
-
-    
-      <span class="predictor-badge__score">0.12%</span>
-    
-
-    
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-  
-    
-  
-
-  <div class="predictor-badge--medium">
-    <span
-      class="predictor-badge__type_and_level">DIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
-
-    
-
-    
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-8">
-        
-
-  
-  
-    
-  
-
-  <div class="predictor-badge--medium">
-    <span
-      class="predictor-badge__type_and_level">DIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
-
-    
-      <span class="predictor-badge__score">23.45%</span>
-    
-
-    
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-  
-    
-  
-
-  <div class="predictor-badge--high">
-    <span
-      class="predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
-
-    
-
-    
-
-  </div>
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-  
-  
-    
-  
-
-  <div class="predictor-badge--high">
-    <span
-      class="predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
-
-    
-      <span class="predictor-badge__score">23.45%</span>
     
 
     
