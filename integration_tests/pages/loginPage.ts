@@ -1,5 +1,5 @@
 import { expect, Locator, Page } from '@playwright/test'
-import { VALID_USERNAME, LOCAL_URL, VALID_PASSWORD } from './pages-common'
+import { VALID_USERNAME, VALID_PASSWORD } from './pages-common'
 
 export default class LoginPage {
   constructor(
@@ -34,7 +34,7 @@ export default class LoginPage {
   ) {}
 
   async goto() {
-    await this.page.goto(LOCAL_URL)
+    await this.page.goto('/')
   }
 
   async fillInUsername() {
