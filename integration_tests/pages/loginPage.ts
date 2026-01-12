@@ -36,86 +36,116 @@ export default class LoginPage{
   async goto() {
     await this.page.goto(LOCAL_URL)
   }
-  async fillInUsername() {await this.loginUsername.fill(VALID_USERNAME);}
+  async fillInUsername() {
+    await this.loginUsername.fill(VALID_USERNAME)
+  }
+
   async fillInPassword() {
-    await this.loginPassword.fill(VALID_PASSWORD);
+    await this.loginPassword.fill(VALID_PASSWORD)
   }
+
   async clickSignIn() {
-    await this.signInButton.click();
+    await this.signInButton.click()
   }
+
   async checkIntroduction() {
-    await expect(this.intro).toBeVisible();
+    await expect(this.intro).toBeVisible()
   }
+
   async checkPageHeader() {
     await expect(this.pageHeader).toBeVisible();
   }
+
   async checkExamplesHeader() {
     await expect(this.examplesHeader).toBeVisible();
   }
+
   async clickMappaWidgetLink() {
     await this.mappaWidgetLink.click();
   }
+
   async checkMappaWidgetHeader() {
     await expect(this.mappaWidgetHeader).toBeVisible();
   }
+
   async clickRiskFlagWidgetLink() {
     await this.riskFlagWidgetLink.click();
   }
+
   async checkRiskFlagHeader() {
     await expect(this.riskFlagHeader).toBeVisible();
   }
+
   async clickROSHWidgetLink() {
     await this.ROSHWidgetLink.click();
   }
+
   async checkROSHHeader() {
     await expect(this.ROSHHeader).toBeVisible();
   }
+
   async clickPredictorBadgeLink() {
     await this.predictorBadgeLink.click();
   }
+
   async checkPredictorBadgeHeader() {
     await expect(this.predictorBadgeHeader).toBeVisible();
   }
+
   async clickExpandedPredictorBadgeLink() {
     await this.expandedPredictorBadgeLink.click();
   }
+
   async checkExpandedPredictorBadgeHeader() {
     await expect(this.expandedPredictorBadgeHeader).toBeVisible();
   }
+
   async clickPredictorScaleLink() {
     await this.predictorScaleLink.click();
   }
+
   async checkPredictorScaleHeader() {
     await expect(this.predictorScaleHeader).toBeVisible();
   }
+
   async clickPredictorScoresLink() {
     await this.predictorScoresLink.click();
   }
+
   async checkPredictorScoresHeader() {
     await expect(this.predictorScoresHeader).toBeVisible();
   }
+
   async clickPredictorTimelineLink() {
     await this.predictorTimelineLink.click();
   }
+
   async checkPredictorTimelineHeader() {
     await expect(this.predictorTimelineHeader).toBeVisible();
   }
+
   async clickPredictorTimelineOpenAllButton() {
     await this.predictorTimelineOpenButton.click();
   }
+
   async clickPredictorTimelineFirstCloseButton() {
     await this.predictorTimelineFirstCloseButton.click();
   }
+
   async checkPredictorTimelineFirstRowIsVisible() {
     await expect(this.predictorTimelineFirstRow).toBeVisible();
   }
+
   async checkPredictorTimelineFirstRowIsHidden() {
     await expect(this.predictorTimelineFirstRow).toBeHidden();
   }
+
   async clickPredictorTimelineItemLink() {
     await this.predictorTimelineItemLink.click();
   }
+
   async checkPredictorTimelineItemHeader() {
     await expect(this.predictorTimelineItemHeader).toBeVisible();
   }
+
 }
