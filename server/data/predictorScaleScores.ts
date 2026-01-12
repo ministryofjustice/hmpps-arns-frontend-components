@@ -19,13 +19,11 @@ const predictorScaleScores = {
     level: 'VERY_HIGH',
     type: 'Direct Contact – Sexual Reoffending Predictor',
     lastUpdated: '19 December 2024',
-    staticOrDynamic: 'DYNAMIC',
   },
   IndecentImages: {
     level: 'HIGH',
     type: 'Images and Indirect Contact – Sexual Reoffending Predictor',
     lastUpdated: '19 December 2024',
-    staticOrDynamic: 'DYNAMIC',
   },
   SeriousViolencePredictor: {
     level: 'LOW',
@@ -48,7 +46,6 @@ const predictorScaleScores = {
     score: 37.67,
     type: 'OGRS3',
     lastUpdated: '19 December 2024',
-    staticOrDynamic: 'DYNAMIC',
     bandPercentages: ['0%', '49.99%', '74.99%', '89.99%', '99.99%'],
   },
   OGP: {
@@ -56,28 +53,24 @@ const predictorScaleScores = {
     score: 42.67,
     type: 'OGP',
     lastUpdated: '19 December 2024',
-    staticOrDynamic: 'DYNAMIC',
     bandPercentages: ['0%', '33.99%', '66.99%', '84.99%', '99.99%'],
   },
   OVP: {
     level: 'VERY_HIGH',
-    score: 62.67,
+    score: 82.67,
     type: 'OVP',
     lastUpdated: '19 December 2024',
-    staticOrDynamic: 'DYNAMIC',
     bandPercentages: ['0%', '29.99%', '59.99%', '79.99%', '99.99%'],
   },
   OSPDC: {
     level: 'LOW',
     type: 'OSP/DC',
     lastUpdated: '19 December 2024',
-    staticOrDynamic: 'DYNAMIC',
   },
   OSPIIC: {
     level: 'MEDIUM',
     type: 'OSP/IIC',
     lastUpdated: '19 December 2024',
-    staticOrDynamic: 'DYNAMIC',
   },
   RSR: {
     level: 'HIGH',

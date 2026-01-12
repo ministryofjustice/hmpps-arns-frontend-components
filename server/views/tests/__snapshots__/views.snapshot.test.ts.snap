@@ -3352,12 +3352,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         <br>
         The
         <a
-          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/predictor-scale-marker">Predictor
-          scale marker Nunjucks macro</a>
-        is available on GitHub.
-        <br>
-        The
-        <a
           href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_predictor-scale.scss">Predictor
           scale SCSS</a>
         is available on GitHub.
@@ -3403,36 +3397,37 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   score: 78.89,
   staticOrDynamic: 'DYNAMIC',
   lastUpdated: '19 December 2024',
-  bandPercentages: ["0%", "29.99%", "59.99%", "79.99%", "99.99%"]
-}
-    </code></pre>
+  bandPercentages: ["0%", ..., "99.99%"]
+} </code></pre>
 
       <h3>Macro flags</h3>
       <ul>
-        <li>isLowToVeryHigh (boolean)
-          <ul>
-            <li>true - scale in LOW, MEDIUM, HIGH, <strong>VERY_HIGH</strong> format</li>
-            <li>false - scale in LOW, MEDIUM, HIGH format</li>
-          </ul>
-        </li>
-        <li>showScore (boolean)
-          <ul>
-            <li>true - shows predictor score on the marker</li>
-            <li>false - hides predictor score on the marker</li>
-          </ul>
-        </li>
-        <li>includePercentage (boolean)
-          <ul>
-            <li>true - shows the band percentages on the scale</li>
-            <li>false - hides the band percentages on the scale</li>
-          </ul>
-        </li>
+        <li>includeVeryHigh (boolean)</li>
+        <ul>
+          <li>true - scale in LOW, MEDIUM, HIGH, <strong>VERY_HIGH</strong> format</li>
+          <li>false - scale in LOW, MEDIUM, HIGH format</li>
+        </ul>
+        <li>includeScore (boolean)</li>
+        <ul>
+          <li>true - displays predictor score on the marker</li>
+          <li>false - hides predictor score on the marker</li>
+        </ul>
+        <li>includePercentage (boolean)</li>
+        <ul>
+          <li>true - displays the band percentages on the scale</li>
+          <li>false - hides the band percentages on the scale</li>
+        </ul>
       </ul>
     </div>
   </div>
 
   <strong>E.g.</strong>
-  <pre><code>predictorScale(predictorObject, isLowToVeryHigh, showScore, includePercentage)</code></pre>
+<pre><code>predictorScale(
+  predictorObject,
+  includeVeryHigh,
+  includeScore,
+  includePercentage,
+)</code></pre>
   <br>
   <h2 class="govuk-heading-m">OGRS4 examples</h2>
 
@@ -3442,8 +3437,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-    
 
+
+    
+  
 
 
   
@@ -3459,31 +3456,33 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
   <div class="predictor-scale govuk-body">
-
     <div class="predictor-scale-header-wrapper">
       <div>
         <h2 class="govuk-heading-m">All Reoffending Predictor</h2>
         <p class="govuk-hint">Last updated: 19 December 2024</p>
       </div>
+      
       <div><strong class="govuk-tag govuk-tag--grey">
   Dynamic
 </strong>
 </div>
+      
     </div>
 
     <div class="scale-marker">
       <div class="scale-marker-wrapper--low scale-marker-wrapper--position-one-of-four">
-        <div class="scale-marker__card">
+        
+  <div class="scale-marker__card">
     <div class="scale-marker__card-top">
-        <h3>LOW</h3>
+      <h3>LOW</h3>
     </div>
     
-    <div class="scale-marker__card-bottom">
+      <div class="scale-marker__card-bottom">
         <p>8.76%</p>
-    </div>
-    <div class="scale-marker__card-pointer"></div>
+      </div>
+      <div class="scale-marker__card-pointer"></div>
     
-</div>
+  </div>
 
       </div>
     </div>
@@ -3515,8 +3514,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-    
 
+
+    
+  
 
 
   
@@ -3532,31 +3533,33 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
   <div class="predictor-scale govuk-body">
-
     <div class="predictor-scale-header-wrapper">
       <div>
         <h2 class="govuk-heading-m">Combined Serious Reoffending Predictor</h2>
         <p class="govuk-hint">Last updated: 19 December 2024</p>
       </div>
+      
       <div><strong class="govuk-tag govuk-tag--grey">
   Dynamic
 </strong>
 </div>
+      
     </div>
 
     <div class="scale-marker">
       <div class="scale-marker-wrapper--medium scale-marker-wrapper--position-two-of-four">
-        <div class="scale-marker__card">
+        
+  <div class="scale-marker__card">
     <div class="scale-marker__card-top">
-        <h3>MEDIUM</h3>
+      <h3>MEDIUM</h3>
     </div>
     
-    <div class="scale-marker__card-bottom">
+      <div class="scale-marker__card-bottom">
         <p>2.67%</p>
-    </div>
-    <div class="scale-marker__card-pointer"></div>
+      </div>
+      <div class="scale-marker__card-pointer"></div>
     
-</div>
+  </div>
 
       </div>
     </div>
@@ -3588,6 +3591,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+
+
     
   
 
@@ -3605,31 +3610,33 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
   <div class="predictor-scale govuk-body">
-
     <div class="predictor-scale-header-wrapper">
       <div>
         <h2 class="govuk-heading-m">Violent Reoffending Predictor</h2>
         <p class="govuk-hint">Last updated: 19 December 2024</p>
       </div>
+      
       <div><strong class="govuk-tag govuk-tag--grey">
   Static
 </strong>
 </div>
+      
     </div>
 
     <div class="scale-marker">
       <div class="scale-marker-wrapper--medium scale-marker-wrapper--position-two-of-four">
-        <div class="scale-marker__card">
+        
+  <div class="scale-marker__card">
     <div class="scale-marker__card-top">
-        <h3>MEDIUM</h3>
+      <h3>MEDIUM</h3>
     </div>
     
-    <div class="scale-marker__card-bottom">
+      <div class="scale-marker__card-bottom">
         <p>35.67%</p>
-    </div>
-    <div class="scale-marker__card-pointer"></div>
+      </div>
+      <div class="scale-marker__card-pointer"></div>
     
-</div>
+  </div>
 
       </div>
     </div>
@@ -3661,7 +3668,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-    
+
+
 
 
 
@@ -3678,28 +3686,25 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
   <div class="predictor-scale govuk-body">
-
     <div class="predictor-scale-header-wrapper">
       <div>
         <h2 class="govuk-heading-m">Direct Contact – Sexual Reoffending Predictor</h2>
         <p class="govuk-hint">Last updated: 19 December 2024</p>
       </div>
-      <div><strong class="govuk-tag govuk-tag--grey">
-  Dynamic
-</strong>
-</div>
+      
     </div>
 
     <div class="scale-marker">
       <div class="scale-marker-wrapper--very-high scale-marker-wrapper--position-four-of-four">
-        <div class="scale-marker__card">
+        
+  <div class="scale-marker__card">
     <div class="scale-marker__card-top">
-        <h3>VERY HIGH</h3>
+      <h3>VERY HIGH</h3>
     </div>
     
-    <div class="scale-marker__card-pointer scale-marker__card-pointer--white"></div>
+      <div class="scale-marker__card-pointer scale-marker__card-pointer--white"></div>
     
-</div>
+  </div>
 
       </div>
     </div>
@@ -3731,7 +3736,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-    
+
+
 
 
 
@@ -3748,28 +3754,25 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
   <div class="predictor-scale govuk-body">
-
     <div class="predictor-scale-header-wrapper">
       <div>
         <h2 class="govuk-heading-m">Images and Indirect Contact – Sexual Reoffending Predictor</h2>
         <p class="govuk-hint">Last updated: 19 December 2024</p>
       </div>
-      <div><strong class="govuk-tag govuk-tag--grey">
-  Dynamic
-</strong>
-</div>
+      
     </div>
 
     <div class="scale-marker">
       <div class="scale-marker-wrapper--high scale-marker-wrapper--position-three-of-three">
-        <div class="scale-marker__card">
+        
+  <div class="scale-marker__card">
     <div class="scale-marker__card-top">
-        <h3>HIGH</h3>
+      <h3>HIGH</h3>
     </div>
     
-    <div class="scale-marker__card-pointer scale-marker__card-pointer--white"></div>
+      <div class="scale-marker__card-pointer scale-marker__card-pointer--white"></div>
     
-</div>
+  </div>
 
       </div>
     </div>
@@ -3800,7 +3803,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-    
+
+
 
 
 
@@ -3817,31 +3821,28 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
   <div class="predictor-scale govuk-body">
-
     <div class="predictor-scale-header-wrapper">
       <div>
         <h2 class="govuk-heading-m">OGRS3</h2>
         <p class="govuk-hint">Last updated: 19 December 2024</p>
       </div>
-      <div><strong class="govuk-tag govuk-tag--grey">
-  Dynamic
-</strong>
-</div>
+      
     </div>
 
     <div class="scale-marker">
       <div class="scale-marker-wrapper--low scale-marker-wrapper--position-one-of-four">
-        <div class="scale-marker__card">
+        
+  <div class="scale-marker__card">
     <div class="scale-marker__card-top">
-        <h3>LOW</h3>
+      <h3>LOW</h3>
     </div>
     
-    <div class="scale-marker__card-bottom">
+      <div class="scale-marker__card-bottom">
         <p>37.67%</p>
-    </div>
-    <div class="scale-marker__card-pointer"></div>
+      </div>
+      <div class="scale-marker__card-pointer"></div>
     
-</div>
+  </div>
 
       </div>
     </div>
@@ -3874,6 +3875,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+
+
     
   
 
@@ -3891,31 +3894,33 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
   <div class="predictor-scale govuk-body">
-
     <div class="predictor-scale-header-wrapper">
       <div>
         <h2 class="govuk-heading-m">RSR</h2>
         <p class="govuk-hint">Last updated: 19 December 2024</p>
       </div>
+      
       <div><strong class="govuk-tag govuk-tag--grey">
   Static
 </strong>
 </div>
+      
     </div>
 
     <div class="scale-marker">
       <div class="scale-marker-wrapper--high scale-marker-wrapper--position-three-of-three">
-        <div class="scale-marker__card">
+        
+  <div class="scale-marker__card">
     <div class="scale-marker__card-top">
-        <h3>HIGH</h3>
+      <h3>HIGH</h3>
     </div>
     
-    <div class="scale-marker__card-bottom">
+      <div class="scale-marker__card-bottom">
         <p>11.34%</p>
-    </div>
-    <div class="scale-marker__card-pointer"></div>
+      </div>
+      <div class="scale-marker__card-pointer"></div>
     
-</div>
+  </div>
 
       </div>
     </div>
@@ -3944,7 +3949,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-    
+
+
 
 
 
@@ -3961,31 +3967,28 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
   <div class="predictor-scale govuk-body">
-
     <div class="predictor-scale-header-wrapper">
       <div>
         <h2 class="govuk-heading-m">OGP</h2>
         <p class="govuk-hint">Last updated: 19 December 2024</p>
       </div>
-      <div><strong class="govuk-tag govuk-tag--grey">
-  Dynamic
-</strong>
-</div>
+      
     </div>
 
     <div class="scale-marker">
       <div class="scale-marker-wrapper--high scale-marker-wrapper--position-three-of-four">
-        <div class="scale-marker__card">
+        
+  <div class="scale-marker__card">
     <div class="scale-marker__card-top">
-        <h3>HIGH</h3>
+      <h3>HIGH</h3>
     </div>
     
-    <div class="scale-marker__card-bottom">
+      <div class="scale-marker__card-bottom">
         <p>42.67%</p>
-    </div>
-    <div class="scale-marker__card-pointer"></div>
+      </div>
+      <div class="scale-marker__card-pointer"></div>
     
-</div>
+  </div>
 
       </div>
     </div>
@@ -4018,7 +4021,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-    
+
+
 
 
 
@@ -4035,31 +4039,28 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
   <div class="predictor-scale govuk-body">
-
     <div class="predictor-scale-header-wrapper">
       <div>
         <h2 class="govuk-heading-m">OVP</h2>
         <p class="govuk-hint">Last updated: 19 December 2024</p>
       </div>
-      <div><strong class="govuk-tag govuk-tag--grey">
-  Dynamic
-</strong>
-</div>
+      
     </div>
 
     <div class="scale-marker">
       <div class="scale-marker-wrapper--very-high scale-marker-wrapper--position-four-of-four">
-        <div class="scale-marker__card">
+        
+  <div class="scale-marker__card">
     <div class="scale-marker__card-top">
-        <h3>VERY HIGH</h3>
+      <h3>VERY HIGH</h3>
     </div>
     
-    <div class="scale-marker__card-bottom">
-        <p>62.67%</p>
-    </div>
-    <div class="scale-marker__card-pointer"></div>
+      <div class="scale-marker__card-bottom">
+        <p>82.67%</p>
+      </div>
+      <div class="scale-marker__card-pointer"></div>
     
-</div>
+  </div>
 
       </div>
     </div>
@@ -4092,7 +4093,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-    
+
+
 
 
 
@@ -4109,28 +4111,25 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
   <div class="predictor-scale govuk-body">
-
     <div class="predictor-scale-header-wrapper">
       <div>
         <h2 class="govuk-heading-m">OSP/DC</h2>
         <p class="govuk-hint">Last updated: 19 December 2024</p>
       </div>
-      <div><strong class="govuk-tag govuk-tag--grey">
-  Dynamic
-</strong>
-</div>
+      
     </div>
 
     <div class="scale-marker">
       <div class="scale-marker-wrapper--low scale-marker-wrapper--position-one-of-four">
-        <div class="scale-marker__card">
+        
+  <div class="scale-marker__card">
     <div class="scale-marker__card-top">
-        <h3>LOW</h3>
+      <h3>LOW</h3>
     </div>
     
-    <div class="scale-marker__card-pointer scale-marker__card-pointer--white"></div>
+      <div class="scale-marker__card-pointer scale-marker__card-pointer--white"></div>
     
-</div>
+  </div>
 
       </div>
     </div>
@@ -4163,7 +4162,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-    
+
+
 
 
 
@@ -4180,28 +4180,25 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
   <div class="predictor-scale govuk-body">
-
     <div class="predictor-scale-header-wrapper">
       <div>
         <h2 class="govuk-heading-m">OSP/IIC</h2>
         <p class="govuk-hint">Last updated: 19 December 2024</p>
       </div>
-      <div><strong class="govuk-tag govuk-tag--grey">
-  Dynamic
-</strong>
-</div>
+      
     </div>
 
     <div class="scale-marker">
       <div class="scale-marker-wrapper--medium scale-marker-wrapper--position-two-of-three">
-        <div class="scale-marker__card">
+        
+  <div class="scale-marker__card">
     <div class="scale-marker__card-top">
-        <h3>MEDIUM</h3>
+      <h3>MEDIUM</h3>
     </div>
     
-    <div class="scale-marker__card-pointer scale-marker__card-pointer--white"></div>
+      <div class="scale-marker__card-pointer scale-marker__card-pointer--white"></div>
     
-</div>
+  </div>
 
       </div>
     </div>
@@ -4228,6 +4225,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       
+
+
 
 
 
