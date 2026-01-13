@@ -18,7 +18,7 @@ export default class LoginPage {
     private ROSHHeader: Locator = page.getByRole('heading', { name: 'ROSH widget' }),
     private predictorBadgeLink: Locator = page.getByRole('link', { name: 'Predictor badge', exact: true }),
     private predictorBadgeHeader: Locator = page.getByRole('heading', { name: 'Predictor badge' }),
-    private expandedPredictorBadgeLink: Locator = page.getByRole('link', { name: 'Expanded predictor badge' }),
+    private expandedPredictorBadgeLink: Locator = page.getByRole('link', { name: 'Expanded predictor badge', exact: true }),
     private expandedPredictorBadgeHeader: Locator = page.getByRole('heading', { name: 'Expanded predictor badge' }),
     private predictorScaleLink: Locator = page.getByRole('link', { name: 'Predictor scale' }),
     private predictorScaleHeader: Locator = page.getByRole('heading', { name: 'Predictor scale' }),
