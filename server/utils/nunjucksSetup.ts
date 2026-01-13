@@ -40,4 +40,10 @@ export default function nunjucksSetup(app: express.Express): void {
 
   njkEnv.addFilter('initialiseName', initialiseName)
   njkEnv.addFilter('assetMap', (url: string) => assetManifest[url] || url)
+  njkEnv.addFilter('isBefore', function isBefore(dateStr, targetDateStr = null): boolean {
+    const formattedDate = dateStr.replace(' at ', ' ')
+    const date = new Date(formattedDate)
+    const target = targetDateStr ? new Date(targetDateStr.replace(' at ', ' ')) : new Date()
+    return date < target
+  })
 }

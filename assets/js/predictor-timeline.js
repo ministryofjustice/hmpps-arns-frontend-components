@@ -2,6 +2,8 @@
 var allHidden = true
 var openText = 'Open'
 var closeText = 'Close'
+var openAllText = 'Open all'
+var closeAllText = 'Close all'
 
 function attachListenerForToggleSectionButton(button, section, initiallyHidden) {
   button.setAttribute('data-section-is-hidden', initiallyHidden)
@@ -23,21 +25,45 @@ function attachListenerForToggleSectionButton(button, section, initiallyHidden) 
   }
 }
 
-function attachListenerForToggleAllButton(button, sections) {
-  button.setAttribute('data-sections-are-hidden', allHidden)
+function attachListenerForToggleAllButton(button, sections, initiallyHidden) {
+  button.setAttribute('data-sections-are-hidden', initiallyHidden)
 
   button.onclick = function(e) {
     e.preventDefault()
 
-    for (var i = 0; i < sections.length; i++) {
-      sections[i].classList.remove('predictor-timeline-section--hidden')
+    var areHidden = button.getAttribute('data-sections-are-hidden') === 'true';
 
-      var openSectionButtons = sections[i].parentElement.getElementsByClassName('predictor-timeline__toggle-section')
+    if (areHidden) {
+      button.innerText = closeAllText
 
-      for (var j = 0; j < openSectionButtons.length; j++) {
-        openSectionButtons[j].setAttribute('data-section-is-hidden', false)
-        openSectionButtons[j].innerText = closeText
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].classList.remove('predictor-timeline-section--hidden')
+
+        var sectionButtons = sections[i].parentElement.getElementsByClassName('predictor-timeline__toggle-section')
+
+        for (var j = 0; j < sectionButtons.length; j++) {
+          sectionButtons[j].setAttribute('data-section-is-hidden', false)
+          sectionButtons[j].innerText = closeText
+        }
       }
+
+      button.setAttribute('data-sections-are-hidden', 'false');
+
+    } else {
+      button.innerText = openAllText
+
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].classList.add('predictor-timeline-section--hidden')
+
+        var sectionButtons = sections[i].parentElement.getElementsByClassName('predictor-timeline__toggle-section')
+
+        for (var j = 0; j < sectionButtons.length; j++) {
+          sectionButtons[j].setAttribute('data-section-is-hidden', true)
+          sectionButtons[j].innerText = openText
+        }
+      }
+
+      button.setAttribute('data-sections-are-hidden', 'true');
     }
   }
 }
@@ -57,9 +83,7 @@ function addPredictorTimelineListeners() {
     }
   }
 
-  if (openAllButton) {
-    attachListenerForToggleAllButton(openAllButton, sections)
-  }
+  attachListenerForToggleAllButton(openAllButton, sections, allHidden)
 }
 
 ;(function() {

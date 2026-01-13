@@ -85,3 +85,11 @@ $low-score-colour__text: #485b10;
 .expanded-predictor-badge--low {
   @include expanded-predictor-badge-base($low-score-colour, $low-score-colour--light, $low-score-colour__text);
 }
+
+.expanded-predictor-badge__fixed-width {
+  width: 259px;
+}
+
+.expanded-predictor-badge__dynamic {
+  width: 100%;
+}

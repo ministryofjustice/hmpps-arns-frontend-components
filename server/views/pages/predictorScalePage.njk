@@ -1,6 +1,5 @@
 {% extends "layouts/side-nav-layout.njk" %}
 {% from "../partials/predictor-scale/macro.njk" import predictorScale %}
-{% from "../partials/predictor-scale-marker/macro.njk" import predictorScaleMarker %}
 
 {% set pageTitle = "Predictor scale" %}
 {% set mainClasses = "govuk-body" %}
@@ -29,12 +28,6 @@
         <br>
         The
         <a
-          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/predictor-scale-marker">Predictor
-          scale marker Nunjucks macro</a>
-        is available on GitHub.
-        <br>
-        The
-        <a
           href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_predictor-scale.scss">Predictor
           scale SCSS</a>
         is available on GitHub.
@@ -43,27 +36,29 @@
       <p>The predictor scale includes the following fields, which must follow the specified format:</p>
 
       <ul>
-        <li>type</li>
-        <ul>
-          <li>OGRS4 generation predictor names (must be title case & acronyms <strong>not</strong> allowed):</li>
+        <li>type
           <ul>
-            <li>All Reoffending Predictor</li>
-            <li>Combined Serious Reoffending Predictor</li>
-            <li>Violent Reoffending Predictor</li>
-            <li>Direct Contact – Sexual Reoffending Predictor</li>
-            <li>Images and Indirect Contact – Sexual Reoffending Predictor</li>
+            <li>OGRS4 generation predictor names (must be title case & acronyms <strong>not</strong> allowed):
+              <ul>
+                <li>All Reoffending Predictor</li>
+                <li>Combined Serious Reoffending Predictor</li>
+                <li>Violent Reoffending Predictor</li>
+                <li>Direct Contact – Sexual Reoffending Predictor</li>
+                <li>Images and Indirect Contact – Sexual Reoffending Predictor</li>
+              </ul>
+            </li>
+            <li>OGRS3 generation predictor names (only use acronyms):
+              <ul>
+                <li>OGRS</li>
+                <li>OGP</li>
+                <li>OVP</li>
+                <li>OSP-DC</li>
+                <li>OSP-IIC</li>
+                <li>SNSV</li>
+                <li>RSR</li>
+              </ul>
+            </li>
           </ul>
-          <li>OGRS3 generation predictor names:</li>
-          <ul>
-            <li>OGRS</li>
-            <li>OGP</li>
-            <li>OVP</li>
-            <li>OSP-DC</li>
-            <li>OSP-IIC</li>
-            <li>SNSV</li>
-            <li>RSR</li>
-          </ul>
-        </ul>
         <li>level (enum - LOW, MEDIUM, HIGH, VERY_HIGH)</li>
         <li>score</li>
         <li>staticOrDynamic (enum - STATIC, DYNAMIC)</li>
@@ -78,25 +73,24 @@
   score: 78.89,
   staticOrDynamic: 'DYNAMIC',
   lastUpdated: '19 December 2024',
-  bandPercentages: ["0%", "29.99%", "59.99%", "79.99%", "99.99%"]
-}
-    </code></pre>
+  bandPercentages: ["0%", ..., "99.99%"]
+} </code></pre>
 
       <h3>Macro flags</h3>
       <ul>
-        <li>isLowToVeryHigh (boolean)</li>
+        <li>includeVeryHigh (boolean)</li>
         <ul>
           <li>true - scale in LOW, MEDIUM, HIGH, <strong>VERY_HIGH</strong> format</li>
           <li>false - scale in LOW, MEDIUM, HIGH format</li>
         </ul>
-        <li>showScore (boolean)</li>
+        <li>includeScore (boolean)</li>
         <ul>
-          <li>true - shows predictor score on the marker</li>
+          <li>true - displays predictor score on the marker</li>
           <li>false - hides predictor score on the marker</li>
         </ul>
         <li>includePercentage (boolean)</li>
         <ul>
-          <li>true - shows the band percentages on the scale</li>
+          <li>true - displays the band percentages on the scale</li>
           <li>false - hides the band percentages on the scale</li>
         </ul>
       </ul>
@@ -104,7 +98,12 @@
   </div>
 
   <strong>E.g.</strong>
-  <pre><code>predictorScale(predictorObject, isLowToVeryHigh, showScore, includePercentage)</code></pre>
+<pre><code>predictorScale(
+  predictorObject,
+  includeVeryHigh,
+  includeScore,
+  includePercentage,
+)</code></pre>
   <br>
   <h2 class="govuk-heading-m">OGRS4 examples</h2>
 
