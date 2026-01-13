@@ -93,7 +93,7 @@
           </ul>
         </li>
       </ul>
-      <h2>Examples</h2>
+      <h2>OGRS4 examples</h2>
       <div class="govuk-!-margin-bottom-4">
         {{ predictorBadge(badgeRiskScores.lowStaticRiskScore, false) }}
       </div>
@@ -103,8 +103,14 @@
       <div class="govuk-!-margin-bottom-4">
         {{ predictorBadge(badgeRiskScores.lowStaticRiskScore, true) }}
       </div>
-      <div class="govuk-!-margin-bottom-8">
+      <div class="govuk-!-margin-bottom-4">
         {{ predictorBadge(badgeRiskScores.lowDynamicRiskScore, true) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge(badgeRiskScores.lowNoStaticOrDynamicRiskScore, false) }}
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        {{ predictorBadge(badgeRiskScores.lowNoStaticOrDynamicRiskScore, true) }}
       </div>
 
       <div class="govuk-!-margin-bottom-4">
@@ -116,8 +122,14 @@
       <div class="govuk-!-margin-bottom-4">
         {{ predictorBadge(badgeRiskScores.mediumStaticRiskScore, true) }}
       </div>
-      <div class="govuk-!-margin-bottom-8">
+      <div class="govuk-!-margin-bottom-4">
         {{ predictorBadge(badgeRiskScores.mediumDynamicRiskScore, true) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge(badgeRiskScores.mediumNoStaticOrDynamicRiskScore, false) }}
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        {{ predictorBadge(badgeRiskScores.mediumNoStaticOrDynamicRiskScore, true) }}
       </div>
 
       <div class="govuk-!-margin-bottom-4">
@@ -129,8 +141,14 @@
       <div class="govuk-!-margin-bottom-4">
         {{ predictorBadge(badgeRiskScores.highStaticRiskScore, true) }}
       </div>
-      <div class="govuk-!-margin-bottom-8">
+      <div class="govuk-!-margin-bottom-4">
         {{ predictorBadge(badgeRiskScores.highDynamicRiskScore, true) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge(badgeRiskScores.highNoStaticOrDynamicRiskScore, false) }}
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        {{ predictorBadge(badgeRiskScores.highNoStaticOrDynamicRiskScore, true) }}
       </div>
 
       <div class="govuk-!-margin-bottom-4">
@@ -142,27 +160,79 @@
       <div class="govuk-!-margin-bottom-4">
         {{ predictorBadge(badgeRiskScores.veryHighStaticRiskScore, true) }}
       </div>
-      <div class="govuk-!-margin-bottom-8">
+      <div class="govuk-!-margin-bottom-4">
         {{ predictorBadge(badgeRiskScores.veryHighDynamicRiskScore, true) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge(badgeRiskScores.veryHighNoStaticOrDynamicRiskScore, false) }}
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        {{ predictorBadge(badgeRiskScores.veryHighNoStaticOrDynamicRiskScore, true) }}
+      </div>
+
+      <h2>Legacy data examples</h2>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge(legacyBadgeRiskScores.lowStaticRiskScore, false) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge(legacyBadgeRiskScores.lowDynamicRiskScore, false) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge(legacyBadgeRiskScores.lowStaticRiskScore, true) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge(legacyBadgeRiskScores.lowDynamicRiskScore, true) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge(legacyBadgeRiskScores.lowRiskScore, false) }}
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        {{ predictorBadge(legacyBadgeRiskScores.lowRiskScore, true) }}
       </div>
 
       <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge(badgeRiskScores.lowNoStaticOrDynamicRiskScore, false) }}
+        {{ predictorBadge(legacyBadgeRiskScores.mediumStaticRiskScore, false) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge(legacyBadgeRiskScores.mediumDynamicRiskScore, false) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge(legacyBadgeRiskScores.mediumStaticRiskScore, true) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge(legacyBadgeRiskScores.mediumDynamicRiskScore, true) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge(legacyBadgeRiskScores.mediumRiskScore, false) }}
       </div>
       <div class="govuk-!-margin-bottom-8">
-        {{ predictorBadge(badgeRiskScores.lowNoStaticOrDynamicRiskScore, true) }}
+        {{ predictorBadge(legacyBadgeRiskScores.mediumRiskScore, true) }}
+      </div>
+
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge(legacyBadgeRiskScores.highStaticRiskScore, false) }}
       </div>
       <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge(badgeRiskScores.mediumNoStaticOrDynamicRiskScore, false) }}
+        {{ predictorBadge(legacyBadgeRiskScores.highDynamicRiskScore, false) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge(legacyBadgeRiskScores.highStaticRiskScore, true) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge(legacyBadgeRiskScores.highDynamicRiskScore, true) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge(legacyBadgeRiskScores.highRiskScore, false) }}
       </div>
       <div class="govuk-!-margin-bottom-8">
-        {{ predictorBadge(badgeRiskScores.mediumNoStaticOrDynamicRiskScore, true) }}
+        {{ predictorBadge(legacyBadgeRiskScores.highRiskScore, true) }}
       </div>
+
       <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge(badgeRiskScores.highNoStaticOrDynamicRiskScore, false) }}
+        {{ predictorBadge(legacyBadgeRiskScores.veryHighRiskScore, false) }}
       </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge(badgeRiskScores.highNoStaticOrDynamicRiskScore, true) }}
+      <div class="govuk-!-margin-bottom-8">
+        {{ predictorBadge(legacyBadgeRiskScores.veryHighRiskScore, true) }}
       </div>
     </div>
   </div>

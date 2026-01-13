@@ -90,22 +90,28 @@
     </div>
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-full">
-        <h2>Examples (fixed width)</h2>
+        <h2>OGRS4 examples (fixed width)</h2>
       </div>
       <div class="govuk-grid-column-one-half">
         <div class="govuk-!-margin-bottom-4">
           {{ expandedPredictorBadge(badgeRiskScores.lowStaticRiskScore, false) }}
         </div>
-        <div class="govuk-!-margin-bottom-8">
-          {{ expandedPredictorBadge(badgeRiskScores.lowStaticRiskScore, true) }}
-        </div>
-      </div>
-      <div class="govuk-grid-column-one-half">
         <div class="govuk-!-margin-bottom-4">
           {{ expandedPredictorBadge(badgeRiskScores.lowDynamicRiskScore, false) }}
         </div>
         <div class="govuk-!-margin-bottom-8">
+          {{ expandedPredictorBadge(badgeRiskScores.lowNoStaticOrDynamicRiskScore, false) }}
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(badgeRiskScores.lowStaticRiskScore, true) }}
+        </div>
+        <div class="govuk-!-margin-bottom-4">
           {{ expandedPredictorBadge(badgeRiskScores.lowDynamicRiskScore, true) }}
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          {{ expandedPredictorBadge(badgeRiskScores.lowNoStaticOrDynamicRiskScore, true) }}
         </div>
       </div>
 
@@ -113,16 +119,22 @@
         <div class="govuk-!-margin-bottom-4">
           {{ expandedPredictorBadge(badgeRiskScores.mediumStaticRiskScore, false) }}
         </div>
-        <div class="govuk-!-margin-bottom-8">
-          {{ expandedPredictorBadge(badgeRiskScores.mediumStaticRiskScore, true) }}
-        </div>
-      </div>
-      <div class="govuk-grid-column-one-half">
         <div class="govuk-!-margin-bottom-4">
           {{ expandedPredictorBadge(badgeRiskScores.mediumDynamicRiskScore, false) }}
         </div>
         <div class="govuk-!-margin-bottom-8">
+          {{ expandedPredictorBadge(badgeRiskScores.mediumNoStaticOrDynamicRiskScore, false) }}
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(badgeRiskScores.mediumStaticRiskScore, true) }}
+        </div>
+        <div class="govuk-!-margin-bottom-4">
           {{ expandedPredictorBadge(badgeRiskScores.mediumDynamicRiskScore, true) }}
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          {{ expandedPredictorBadge(badgeRiskScores.mediumNoStaticOrDynamicRiskScore, true) }}
         </div>
       </div>
 
@@ -130,16 +142,22 @@
         <div class="govuk-!-margin-bottom-4">
           {{ expandedPredictorBadge(badgeRiskScores.highStaticRiskScore, false) }}
         </div>
-        <div class="govuk-!-margin-bottom-8">
-          {{ expandedPredictorBadge(badgeRiskScores.highStaticRiskScore, true) }}
-        </div>
-      </div>
-      <div class="govuk-grid-column-one-half">
         <div class="govuk-!-margin-bottom-4">
           {{ expandedPredictorBadge(badgeRiskScores.highDynamicRiskScore, false) }}
         </div>
         <div class="govuk-!-margin-bottom-8">
+          {{ expandedPredictorBadge(badgeRiskScores.highNoStaticOrDynamicRiskScore, false, true) }}
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(badgeRiskScores.highStaticRiskScore, true) }}
+        </div>
+        <div class="govuk-!-margin-bottom-4">
           {{ expandedPredictorBadge(badgeRiskScores.highDynamicRiskScore, true) }}
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          {{ expandedPredictorBadge(badgeRiskScores.highNoStaticOrDynamicRiskScore, true, true) }}
         </div>
       </div>
 
@@ -147,53 +165,27 @@
         <div class="govuk-!-margin-bottom-4">
           {{ expandedPredictorBadge(badgeRiskScores.veryHighStaticRiskScore, false) }}
         </div>
-        <div class="govuk-!-margin-bottom-8">
-          {{ expandedPredictorBadge(badgeRiskScores.veryHighStaticRiskScore, true) }}
-        </div>
-      </div>
-      <div class="govuk-grid-column-one-half">
         <div class="govuk-!-margin-bottom-4">
           {{ expandedPredictorBadge(badgeRiskScores.veryHighDynamicRiskScore, false) }}
         </div>
         <div class="govuk-!-margin-bottom-8">
+          {{ expandedPredictorBadge(badgeRiskScores.veryHighNoStaticOrDynamicRiskScore, false) }}
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(badgeRiskScores.veryHighStaticRiskScore, true) }}
+        </div>
+        <div class="govuk-!-margin-bottom-4">
           {{ expandedPredictorBadge(badgeRiskScores.veryHighDynamicRiskScore, true) }}
         </div>
-      </div>
-
-      <div class="govuk-grid-column-one-half">
         <div class="govuk-!-margin-bottom-8">
-          {{ expandedPredictorBadge(badgeRiskScores.lowNoStaticOrDynamicRiskScore, false) }}
-        </div>
-      </div>
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-!-margin-bottom-8">
-          {{ expandedPredictorBadge(badgeRiskScores.lowNoStaticOrDynamicRiskScore, true) }}
+          {{ expandedPredictorBadge(badgeRiskScores.veryHighNoStaticOrDynamicRiskScore, true) }}
         </div>
       </div>
 
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-!-margin-bottom-8">
-          {{ expandedPredictorBadge(badgeRiskScores.mediumNoStaticOrDynamicRiskScore, false) }}
-        </div>
-      </div>
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-!-margin-bottom-8">
-          {{ expandedPredictorBadge(badgeRiskScores.mediumNoStaticOrDynamicRiskScore, true) }}
-        </div>
-      </div>
-
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-!-margin-bottom-8">
-          {{ expandedPredictorBadge(badgeRiskScores.highNoStaticOrDynamicRiskScore, false, true) }}
-        </div>
-      </div>
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-!-margin-bottom-8">
-          {{ expandedPredictorBadge(badgeRiskScores.highNoStaticOrDynamicRiskScore, true, true) }}
-        </div>
-      </div>
       <div class="govuk-grid-column-full">
-        <h2>Examples (dynamic width)</h2>
+        <h2>OGRS4 examples (dynamic width)</h2>
       </div>
       <div class="govuk-grid-column-full">
         <div class="govuk-!-margin-bottom-4">
@@ -201,6 +193,101 @@
         </div>
         <div class="govuk-!-margin-bottom-8">
           {{ expandedPredictorBadge(badgeRiskScores.highNoStaticOrDynamicRiskScore, true, false) }}
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-full">
+        <h2>Legacy data examples (fixed width)</h2>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.lowStaticRiskScore, false) }}
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.lowDynamicRiskScore, false) }}
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.lowRiskScore, false) }}
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.lowStaticRiskScore, true) }}
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.lowDynamicRiskScore, true) }}
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.lowRiskScore, true) }}
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.mediumStaticRiskScore, false) }}
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.mediumDynamicRiskScore, false) }}
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.mediumRiskScore, false) }}
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.mediumStaticRiskScore, true) }}
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.mediumDynamicRiskScore, true) }}
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.mediumRiskScore, true) }}
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.highStaticRiskScore, false) }}
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.highDynamicRiskScore, false) }}
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.highRiskScore, false, true) }}
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.highStaticRiskScore, true) }}
+        </div>
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.highDynamicRiskScore, true) }}
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.highRiskScore, true, true) }}
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.veryHighRiskScore, false) }}
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-!-margin-bottom-8">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.veryHighRiskScore, true) }}
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-full">
+        <h2>Legacy data examples (dynamic width)</h2>
+      </div>
+      <div class="govuk-grid-column-full">
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.lowRiskScore, false, false) }}
+        </div>
+        <div class="govuk-!-margin-bottom-8">
+          {{ expandedPredictorBadge(legacyBadgeRiskScores.highDynamicRiskScore, true, false) }}
         </div>
       </div>
     </div>
