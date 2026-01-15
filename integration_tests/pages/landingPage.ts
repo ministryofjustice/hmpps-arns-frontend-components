@@ -35,7 +35,6 @@ export default class LandingPage {
     private predictorTimelineItemHeader: Locator = page.getByRole('heading', { name: 'Predictor timeline item' }),
   ) {}
 
-
   async clickSignIn() {
     await this.signInButton.click()
   }
