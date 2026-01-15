@@ -1,7 +1,6 @@
 import { expect, Locator, Page } from '@playwright/test'
-import { VALID_USERNAME, VALID_PASSWORD } from './pages-common'
 
-export default class LoginPage {
+export default class LandingPage {
   constructor(
     private page: Page,
     private loginUsername: Locator = page.getByRole('textbox', { name: 'Username' }),
@@ -36,17 +35,6 @@ export default class LoginPage {
     private predictorTimelineItemHeader: Locator = page.getByRole('heading', { name: 'Predictor timeline item' }),
   ) {}
 
-  async goto() {
-    await this.page.goto('/')
-  }
-
-  async fillInUsername() {
-    await this.loginUsername.fill(VALID_USERNAME)
-  }
-
-  async fillInPassword() {
-    await this.loginPassword.fill(VALID_PASSWORD)
-  }
 
   async clickSignIn() {
     await this.signInButton.click()

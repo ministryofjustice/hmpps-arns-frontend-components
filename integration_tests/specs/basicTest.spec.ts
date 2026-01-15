@@ -1,56 +1,55 @@
 import { test } from '@playwright/test'
-import LoginPage from '../pages/loginPage'
-import { login } from '../testUtils'
+import LandingPage from '../pages/landingPage'
+import {login} from "../testUtils";
 
 test('User logs in and checks all pages are working', async ({ page }) => {
-  const loginPage = new LoginPage(page)
+  const landingPage = new LandingPage(page)
 
-  // Authenticate
-  await login(page, { name: 'A TestUser' })
+  await login(page, { name: 'A Test User'} )
 
-  // Check you have logged in and landed on the homepage
-  await loginPage.checkIntroduction()
-  await loginPage.checkPageHeader()
+  // Check you have landed on the homepage
+  await landingPage.checkIntroduction()
+  await landingPage.checkPageHeader()
 
   // Click Mappa widget link and check page loads
-  await loginPage.clickMappaWidgetLink()
-  await loginPage.checkMappaWidgetHeader()
-  await loginPage.checkExamplesHeader()
+  await landingPage.clickMappaWidgetLink()
+  await landingPage.checkMappaWidgetHeader()
+  await landingPage.checkExamplesHeader()
 
   // Click Risk Flag link and check page
-  await loginPage.clickRiskFlagWidgetLink()
-  await loginPage.checkRiskFlagHeader()
+  await landingPage.clickRiskFlagWidgetLink()
+  await landingPage.checkRiskFlagHeader()
 
   // Click ROSH link and check page
-  await loginPage.clickROSHWidgetLink()
-  await loginPage.checkROSHHeader()
+  await landingPage.clickROSHWidgetLink()
+  await landingPage.checkROSHHeader()
 
   // Click Predictor badge link and check page
-  await loginPage.clickPredictorBadgeLink()
-  await loginPage.checkPredictorBadgeHeader()
+  await landingPage.clickPredictorBadgeLink()
+  await landingPage.checkPredictorBadgeHeader()
 
   // Click Expanded predictor badge link and check page
-  await loginPage.clickExpandedPredictorBadgeLink()
-  await loginPage.checkExpandedPredictorBadgeHeader()
+  await landingPage.clickExpandedPredictorBadgeLink()
+  await landingPage.checkExpandedPredictorBadgeHeader()
 
   // Click predictor scale link and check page
-  await loginPage.clickPredictorScaleLink()
-  await loginPage.checkPredictorScaleHeader()
+  await landingPage.clickPredictorScaleLink()
+  await landingPage.checkPredictorScaleHeader()
 
   // Click predictor score link and check page
-  await loginPage.clickPredictorScoresLink()
-  await loginPage.checkPredictorScoresHeader()
+  await landingPage.clickPredictorScoresLink()
+  await landingPage.checkPredictorScoresHeader()
 
   // Click timeline link and check page
-  await loginPage.clickPredictorTimelineLink()
-  await loginPage.checkPredictorTimelineHeader()
-  await loginPage.checkPredictorTimelineFirstRowIsHidden()
-  await loginPage.clickPredictorTimelineOpenAllButton()
-  await loginPage.checkPredictorTimelineFirstRowIsVisible()
-  await loginPage.clickPredictorTimelineFirstCloseButton()
-  await loginPage.checkPredictorTimelineFirstRowIsHidden()
+  await landingPage.clickPredictorTimelineLink()
+  await landingPage.checkPredictorTimelineHeader()
+  await landingPage.checkPredictorTimelineFirstRowIsHidden()
+  await landingPage.clickPredictorTimelineOpenAllButton()
+  await landingPage.checkPredictorTimelineFirstRowIsVisible()
+  await landingPage.clickPredictorTimelineFirstCloseButton()
+  await landingPage.checkPredictorTimelineFirstRowIsHidden()
 
   // Click timeline item link and check page
-  await loginPage.clickPredictorTimelineItemLink()
-  await loginPage.checkPredictorTimelineItemHeader()
+  await landingPage.clickPredictorTimelineItemLink()
+  await landingPage.checkPredictorTimelineItemHeader()
 })
