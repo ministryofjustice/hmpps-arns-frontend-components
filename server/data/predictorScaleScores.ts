@@ -5,7 +5,7 @@ const predictorScaleScores = {
     type: 'All Reoffending Predictor',
     lastUpdated: '19 December 2024',
     staticOrDynamic: 'DYNAMIC',
-    bandPercentages: ['0%', '49.99%', '74.99%', '89.99%', '99.99%'],
+    bandPercentages: ['0%', '50%', '75%', '90%', '100%'],
   },
   ViolentPredictor: {
     level: 'MEDIUM',
@@ -13,7 +13,7 @@ const predictorScaleScores = {
     type: 'Violent Reoffending Predictor',
     lastUpdated: '19 December 2024',
     staticOrDynamic: 'STATIC',
-    bandPercentages: ['0%', '29.99%', '59.99%', '79.99%', '99.99%'],
+    bandPercentages: ['0%', '30%', '60%', '80%', '100%'],
   },
   DirectContact: {
     level: 'VERY_HIGH',
@@ -31,7 +31,6 @@ const predictorScaleScores = {
     type: 'Serious Violent Reoffending Predictor',
     lastUpdated: '19 December 2024',
     staticOrDynamic: 'DYNAMIC',
-    bandPercentages: ['0%', '0.99%', '2.99%', '6.89%', '6.90%+'],
   },
   CombinedPredictor: {
     level: 'MEDIUM',
@@ -39,28 +38,28 @@ const predictorScaleScores = {
     type: 'Combined Serious Reoffending Predictor',
     lastUpdated: '19 December 2024',
     staticOrDynamic: 'DYNAMIC',
-    bandPercentages: ['0%', '0.99%', '2.99%', '6.89%', '25%+'],
+    bandPercentages: ['0%', '1%', '3%', '6.9%', '25%+'],
   },
   OGRS3: {
     level: 'LOW',
     score: 37.67,
     type: 'OGRS3',
     lastUpdated: '19 December 2024',
-    bandPercentages: ['0%', '49.99%', '74.99%', '89.99%', '99.99%'],
+    bandPercentages: ['0%', '50%', '75%', '90%', '100%'],
   },
   OGP: {
     level: 'HIGH',
     score: 42.67,
     type: 'OGP',
     lastUpdated: '19 December 2024',
-    bandPercentages: ['0%', '33.99%', '66.99%', '84.99%', '99.99%'],
+    bandPercentages: ['0%', '34%', '67%', '85%', '100%'],
   },
   OVP: {
     level: 'VERY_HIGH',
     score: 82.67,
     type: 'OVP',
     lastUpdated: '19 December 2024',
-    bandPercentages: ['0%', '29.99%', '59.99%', '79.99%', '99.99%'],
+    bandPercentages: ['0%', '30%', '60%', '80%', '100%'],
   },
   OSPDC: {
     level: 'LOW',
@@ -78,7 +77,7 @@ const predictorScaleScores = {
     type: 'RSR',
     lastUpdated: '19 December 2024',
     staticOrDynamic: 'STATIC',
-    bandPercentages: ['0%', '2.99%', '6.89%', '25%+'],
+    bandPercentages: ['0%', '3%', '6.9%', '25%+'],
   },
 }
 
