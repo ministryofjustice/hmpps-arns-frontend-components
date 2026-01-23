@@ -4861,17 +4861,17 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-bar scale-bar--fourths">
-      <div data-band-persentage-start="0%" data-band-persentage="49.99%">
+      <div data-band-persentage-start="0%" data-band-persentage="50%">
         <span></span>
       </div>
-      <div data-band-persentage="74.99%">
+      <div data-band-persentage="75%">
         <span></span>
       </div>
-      <div data-band-persentage="89.99%">
+      <div data-band-persentage="90%">
         <span></span>
       </div>
       
-        <div data-band-persentage="99.99%">
+        <div data-band-persentage="100%">
           <span></span>
         </div>
       
@@ -4938,13 +4938,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-bar scale-bar--fourths">
-      <div data-band-persentage-start="0%" data-band-persentage="0.99%">
+      <div data-band-persentage-start="0%" data-band-persentage="1%">
         <span></span>
       </div>
-      <div data-band-persentage="2.99%">
+      <div data-band-persentage="3%">
         <span></span>
       </div>
-      <div data-band-persentage="6.89%">
+      <div data-band-persentage="6.9%">
         <span></span>
       </div>
       
@@ -5015,17 +5015,17 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-bar scale-bar--fourths">
-      <div data-band-persentage-start="0%" data-band-persentage="29.99%">
+      <div data-band-persentage-start="0%" data-band-persentage="30%">
         <span></span>
       </div>
-      <div data-band-persentage="59.99%">
+      <div data-band-persentage="60%">
         <span></span>
       </div>
-      <div data-band-persentage="79.99%">
+      <div data-band-persentage="80%">
         <span></span>
       </div>
       
-        <div data-band-persentage="99.99%">
+        <div data-band-persentage="100%">
           <span></span>
         </div>
       
@@ -5167,6 +5167,80 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     </div>
   </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      
+
+
+
+
+
+    
+  
+
+
+  
+    
+  
+
+
+
+
+
+  
+
+
+
+  <div class="predictor-scale govuk-body">
+    <div class="predictor-scale-header-wrapper">
+      <div>
+        <h2 class="govuk-heading-m">Serious Violent Reoffending Predictor</h2>
+        <p class="govuk-hint">Last updated: 19 December 2024</p>
+      </div>
+      
+      <div><strong class="govuk-tag govuk-tag--grey">
+  Dynamic
+</strong>
+</div>
+      
+    </div>
+
+    <div class="scale-marker">
+      <div class="scale-marker-wrapper--low scale-marker-wrapper--position-one-of-four">
+        
+  <div class="scale-marker__card">
+    <div class="scale-marker__card-top">
+      <h3>LOW</h3>
+    </div>
+    
+      <div class="scale-marker__card-pointer scale-marker__card-pointer--white"></div>
+    
+  </div>
+
+      </div>
+    </div>
+
+    <div class="scale-bar--small scale-bar--small-fourths">
+      <div data-band-persentage-start="" data-band-persentage="">
+        <span></span>
+      </div>
+      <div data-band-persentage="">
+        <span></span>
+      </div>
+      <div data-band-persentage="">
+        <span></span>
+      </div>
+      
+        <div data-band-persentage="">
+          <span></span>
+        </div>
+      
+    </div>
+  </div>
+
+
+    </div>
+  </div>
 
   <h2 class="govuk-heading-m">Legacy data examples</h2>
 
@@ -5221,17 +5295,17 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-bar scale-bar--fourths">
-      <div data-band-persentage-start="0%" data-band-persentage="49.99%">
+      <div data-band-persentage-start="0%" data-band-persentage="50%">
         <span></span>
       </div>
-      <div data-band-persentage="74.99%">
+      <div data-band-persentage="75%">
         <span></span>
       </div>
-      <div data-band-persentage="89.99%">
+      <div data-band-persentage="90%">
         <span></span>
       </div>
       
-        <div data-band-persentage="99.99%">
+        <div data-band-persentage="100%">
           <span></span>
         </div>
       
@@ -5299,10 +5373,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-bar">
-      <div data-band-persentage-start="0%" data-band-persentage="2.99%">
+      <div data-band-persentage-start="0%" data-band-persentage="3%">
         <span></span>
       </div>
-      <div data-band-persentage="6.89%">
+      <div data-band-persentage="6.9%">
         <span></span>
       </div>
       <div data-band-persentage="25%+">
@@ -5367,17 +5441,17 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-bar scale-bar--fourths">
-      <div data-band-persentage-start="0%" data-band-persentage="33.99%">
+      <div data-band-persentage-start="0%" data-band-persentage="34%">
         <span></span>
       </div>
-      <div data-band-persentage="66.99%">
+      <div data-band-persentage="67%">
         <span></span>
       </div>
-      <div data-band-persentage="84.99%">
+      <div data-band-persentage="85%">
         <span></span>
       </div>
       
-        <div data-band-persentage="99.99%">
+        <div data-band-persentage="100%">
           <span></span>
         </div>
       
@@ -5439,17 +5513,17 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-bar scale-bar--fourths">
-      <div data-band-persentage-start="0%" data-band-persentage="29.99%">
+      <div data-band-persentage-start="0%" data-band-persentage="30%">
         <span></span>
       </div>
-      <div data-band-persentage="59.99%">
+      <div data-band-persentage="60%">
         <span></span>
       </div>
-      <div data-band-persentage="79.99%">
+      <div data-band-persentage="80%">
         <span></span>
       </div>
       
-        <div data-band-persentage="99.99%">
+        <div data-band-persentage="100%">
           <span></span>
         </div>
       
