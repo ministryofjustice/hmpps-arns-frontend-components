@@ -143,6 +143,11 @@
   </div>
 {% endmacro %}
 
+<div class="predictor-timeline__heading">
+  <span class='govuk-heading-m'>Scores history</span>
+  <a id="predictor-timeline__toggle-all" href="#" class="govuk-link" aria-label="Open all score history">Open all</a>
+</div>
+
 <div class="predictor-timeline predictor">
   {% for item in predictorScores %}
 
@@ -169,7 +174,7 @@
             {% endfor %}
           </ul>
         </div>
-        <a href="#" class="govuk-link predictor-timeline__toggle-section">Open</a>
+        <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for {{ item.date }}">Open</a>
       </div>
     </div>
   {% endfor %}

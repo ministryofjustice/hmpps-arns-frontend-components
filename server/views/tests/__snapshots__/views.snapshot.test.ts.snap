@@ -6488,16 +6488,17 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
     <div class="govuk-grid-column-one-half">
       <h2>Example</h2>
-      <div class="predictor-timeline__heading">
-        <span class='govuk-heading-m'>Scores history</span>
-        <a id="predictor-timeline__toggle-all" href="#" class="govuk-link">Open all</a>
-      </div>
       
 
 
 
 
 
+
+<div class="predictor-timeline__heading">
+  <span class='govuk-heading-m'>Scores history</span>
+  <a id="predictor-timeline__toggle-all" href="#" class="govuk-link" aria-label="Open all score history">Open all</a>
+</div>
 
 <div class="predictor-timeline predictor">
   
@@ -6734,7 +6735,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           </ul>
         </div>
-        <a href="#" class="govuk-link predictor-timeline__toggle-section">Open</a>
+        <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for 23 July 2026 at 12:00">Open</a>
       </div>
     </div>
   
@@ -6907,7 +6908,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           </ul>
         </div>
-        <a href="#" class="govuk-link predictor-timeline__toggle-section">Open</a>
+        <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for 14 May 2019 at 12:00">Open</a>
       </div>
     </div>
   
@@ -7007,7 +7008,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           </ul>
         </div>
-        <a href="#" class="govuk-link predictor-timeline__toggle-section">Open</a>
+        <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for 12 September 2018 at 12:00">Open</a>
       </div>
     </div>
   
