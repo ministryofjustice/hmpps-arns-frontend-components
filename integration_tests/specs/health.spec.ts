@@ -1,9 +1,7 @@
 import { expect, test } from '@playwright/test'
 
 test.describe('Health', () => {
-
   test.describe('All healthy', () => {
-
     test('Health check is accessible and status is UP', async ({ page }) => {
       const response = await page.request.get('/health')
       const payload = await response.json()
@@ -24,7 +22,6 @@ test.describe('Health', () => {
   })
 
   test.describe('Some unhealthy', () => {
-
     test('Health check status is down', async ({ page }) => {
       const response = await page.request.get('/health')
       const payload = await response.json()
