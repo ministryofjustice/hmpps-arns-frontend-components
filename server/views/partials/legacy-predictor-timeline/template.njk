@@ -1,5 +1,10 @@
 {% from "partials/legacy-predictor-timeline-item/macro.njk" import predictorTimelineItem %}
 
+<div class="govuk-body predictor-timeline__heading">
+  <h2 class="govuk-heading-l">Scores history</h2>
+  <a id="predictor-timeline__toggle-all" href="#" class="govuk-link" aria-label="Open all score history">Open all</a>
+</div>
+
 <div class="moj-timeline predictor">
     {%for item in predictorScores %}
     <div class="moj-timeline__item">
@@ -22,7 +27,7 @@
                     {% endif %}
                 </ul>
             </div>
-            <a href="#" class="govuk-link predictor-timeline__toggle-section">Open</a>
+            <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for {{ item.date }}">Open</a>
         </div>
     </div>
     {% endfor %}
