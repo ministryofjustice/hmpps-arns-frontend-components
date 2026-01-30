@@ -4,6 +4,8 @@ import LandingPage from '../pages/landingPage'
 test('Checks all pages are working', async ({ page }) => {
   const landingPage = new LandingPage(page)
 
+  await page.goto('/')
+
   // Check you have landed on the homepage
   await landingPage.checkIntroduction()
   await landingPage.checkPageHeader()
