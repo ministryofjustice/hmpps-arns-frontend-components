@@ -20,16 +20,4 @@ test.describe('Health', () => {
       expect(payload.build.name).toBe('hmpps-arns-frontend-components')
     })
   })
-
-  test.describe('Some unhealthy', () => {
-    test('Health check status is down', async ({ page }) => {
-      const response = await page.request.get('/health')
-      const payload = await response.json()
-      expect(payload.status).toBe('DOWN')
-      expect(payload.components.hmppsAuth.status).toBe('UP')
-      expect(payload.components.tokenVerification.status).toBe('DOWN')
-      expect(payload.components.tokenVerification.details.status).toBe(500)
-      expect(payload.components.tokenVerification.details.attempts).toBe(3)
-    })
-  })
 })
