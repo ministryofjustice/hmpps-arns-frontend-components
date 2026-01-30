@@ -28,6 +28,8 @@ generic-service:
   # Environment variables to load into the deployment
   env:
     NODE_ENV: 'production'
+    REDIS_ENABLED: 'true'
+    REDIS_TLS_ENABLED: 'true'
 
   # Pre-existing kubernetes secrets to load as environment variables in the deployment.
   # namespace_secrets:
@@ -36,6 +38,9 @@ generic-service:
 
   namespace_secrets:
     # These secrets are created by terraform.
+    hmpps-arns-frontend-components-elasticache-redis:
+      REDIS_HOST: 'primary_endpoint_address'
+      REDIS_AUTH_TOKEN: 'auth_token'
     hmpps-arns-frontend-components-application-insights:
       APPLICATIONINSIGHTS_CONNECTION_STRING: "APPLICATIONINSIGHTS_CONNECTION_STRING"
     # This secret will need to be created in your namespace (note it isn't in hmpps-templates-dev)
