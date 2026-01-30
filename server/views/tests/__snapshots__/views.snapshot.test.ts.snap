@@ -2755,21 +2755,27 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
     <div class="govuk-grid-column-full">
       
 
+
+
 <div class="govuk-body predictor-timeline__heading">
   <h2 class="govuk-heading-l">Scores history</h2>
-  <a id="predictor-timeline__toggle-all" href="#" class="govuk-link" aria-label="Open all score history">Open all</a>
+  <a id="predictor-timeline__toggle-all" href="#" class="govuk-link" aria-label="Open all score history"
+     aria-controls="predictor-section-14-may-2019-at-12-00-00 predictor-section-12-september-2018-at-12-00-00" aria-expanded="false">Open all</a>
 </div>
 
 <div class="moj-timeline predictor">
+  
+
     
+
     <div class="moj-timeline__item">
-        <div class="moj-timeline__header">
-            <p class="moj-timeline__byline">14 May 2019 at 12:00:00</p>
-        </div>
-        <div class="moj-timeline__description">
-            <div class="predictor-timeline-section">
-                <ul class="govuk-list">
-                    <li>
+      <div class="moj-timeline__header">
+        <p class="moj-timeline__byline">14 May 2019 at 12:00:00</p>
+      </div>
+      <div class="moj-timeline__description">
+        <div id="predictor-section-14-may-2019-at-12-00-00" class="predictor-timeline-section">
+          <ul class="govuk-list">
+            <li>
 
 
 
@@ -2785,8 +2791,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
 </div>
 
 </li>
-                    
-                    <li>
+            
+              <li>
 
 
 
@@ -2802,9 +2808,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
 </div>
 
 </li>
-                    
-                    
-                    <li>
+            
+            
+              <li>
 
 
 
@@ -2820,21 +2826,25 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
 </div>
 
 </li>
-                    
-                </ul>
-            </div>
-            <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for 14 May 2019 at 12:00:00">Open</a>
+            
+          </ul>
         </div>
+        <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for 14 May 2019 at 12:00:00"
+           aria-controls="predictor-section-14-may-2019-at-12-00-00" aria-expanded="false">Open</a>
+      </div>
     </div>
+  
+
     
+
     <div class="moj-timeline__item">
-        <div class="moj-timeline__header">
-            <p class="moj-timeline__byline">12 September 2018 at 12:00:00</p>
-        </div>
-        <div class="moj-timeline__description">
-            <div class="predictor-timeline-section">
-                <ul class="govuk-list">
-                    <li>
+      <div class="moj-timeline__header">
+        <p class="moj-timeline__byline">12 September 2018 at 12:00:00</p>
+      </div>
+      <div class="moj-timeline__description">
+        <div id="predictor-section-12-september-2018-at-12-00-00" class="predictor-timeline-section">
+          <ul class="govuk-list">
+            <li>
 
 
 
@@ -2850,8 +2860,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
 </div>
 
 </li>
-                    
-                    <li>
+            
+              <li>
 
 
 
@@ -2867,9 +2877,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
 </div>
 
 </li>
-                    
-                    
-                    <li>
+            
+            
+              <li>
 
 
 
@@ -2885,13 +2895,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
 </div>
 
 </li>
-                    
-                </ul>
-            </div>
-            <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for 12 September 2018 at 12:00:00">Open</a>
+            
+          </ul>
         </div>
+        <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for 12 September 2018 at 12:00:00"
+           aria-controls="predictor-section-12-september-2018-at-12-00-00" aria-expanded="false">Open</a>
+      </div>
     </div>
-    
+  
 </div>
 
     </div>
@@ -6496,13 +6507,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+
+
 <div class="predictor-timeline__heading">
   <span class='govuk-heading-m'>Scores history</span>
-  <a id="predictor-timeline__toggle-all" href="#" class="govuk-link" aria-label="Open all score history">Open all</a>
+  <a id="predictor-timeline__toggle-all" href="#" class="govuk-link" aria-label="Open all score history"
+     aria-controls="predictor-section-23-july-2026-at-12-00 predictor-section-14-may-2019-at-12-00 predictor-section-12-september-2018-at-12-00" aria-expanded="false">Open all</a>
 </div>
 
 <div class="predictor-timeline predictor">
   
+
+    
 
     
       
@@ -6513,7 +6529,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         <p class="predictor-timeline__byline">23 July 2026 at 12:00</p>
       </div>
       <div class="predictor-timeline__description">
-        <div class="predictor-timeline-section">
+        <div id="predictor-section-23-july-2026-at-12-00" class="predictor-timeline-section">
           <ul class="govuk-list">
             
               
@@ -6736,10 +6752,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           </ul>
         </div>
-        <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for 23 July 2026 at 12:00">Open</a>
+        <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for 23 July 2026 at 12:00"
+           aria-controls="predictor-section-23-july-2026-at-12-00" aria-expanded="false">Open</a>
       </div>
     </div>
   
+
+    
 
     
       
@@ -6821,7 +6840,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         <p class="predictor-timeline__byline">14 May 2019 at 12:00</p>
       </div>
       <div class="predictor-timeline__description">
-        <div class="predictor-timeline-section">
+        <div id="predictor-section-14-may-2019-at-12-00" class="predictor-timeline-section">
           <ul class="govuk-list">
             
               
@@ -6909,10 +6928,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           </ul>
         </div>
-        <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for 14 May 2019 at 12:00">Open</a>
+        <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for 14 May 2019 at 12:00"
+           aria-controls="predictor-section-14-may-2019-at-12-00" aria-expanded="false">Open</a>
       </div>
     </div>
   
+
+    
 
     
 
@@ -6921,7 +6943,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         <p class="predictor-timeline__byline">12 September 2018 at 12:00</p>
       </div>
       <div class="predictor-timeline__description">
-        <div class="predictor-timeline-section">
+        <div id="predictor-section-12-september-2018-at-12-00" class="predictor-timeline-section">
           <ul class="govuk-list">
             
               
@@ -7009,7 +7031,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           </ul>
         </div>
-        <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for 12 September 2018 at 12:00">Open</a>
+        <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for 12 September 2018 at 12:00"
+           aria-controls="predictor-section-12-september-2018-at-12-00" aria-expanded="false">Open</a>
       </div>
     </div>
   

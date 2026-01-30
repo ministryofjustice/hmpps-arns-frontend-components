@@ -143,13 +143,22 @@
   </div>
 {% endmacro %}
 
+{% set allSectionIds %}
+  {%- for item in predictorScores -%}
+    predictor-section-{{ item.date | replace(" ", "-") | replace(":", "-") | lower }}{{ " " if not loop.last }}
+  {%- endfor -%}
+{% endset %}
+
 <div class="predictor-timeline__heading">
   <span class='govuk-heading-m'>Scores history</span>
-  <a id="predictor-timeline__toggle-all" href="#" class="govuk-link" aria-label="Open all score history">Open all</a>
+  <a id="predictor-timeline__toggle-all" href="#" class="govuk-link" aria-label="Open all score history"
+     aria-controls="{{ allSectionIds }}" aria-expanded="false">Open all</a>
 </div>
 
 <div class="predictor-timeline predictor">
   {% for item in predictorScores %}
+
+    {% set sectionId = "predictor-section-" + (item.date | replace(" ", "-") | replace(":", "-") | lower) %}
 
     {% if hasTimelineWarning === false %}
       {% if item.date | isBefore(ogrs4ReleaseDate) %}
@@ -163,7 +172,7 @@
         <p class="predictor-timeline__byline">{{ item.date }}</p>
       </div>
       <div class="predictor-timeline__description">
-        <div class="predictor-timeline-section">
+        <div id="{{ sectionId }}" class="predictor-timeline-section">
           <ul class="govuk-list">
             {% for key, value in item.scores %}
               {% if key | upper not in ['OGRS3', 'OGP', 'OVP', 'RSR', 'OSPDC', 'OSPC', 'OSPIIC', 'OSPI'] %}
@@ -174,7 +183,8 @@
             {% endfor %}
           </ul>
         </div>
-        <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for {{ item.date }}">Open</a>
+        <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for {{ item.date }}"
+           aria-controls="{{ sectionId }}" aria-expanded="false">Open</a>
       </div>
     </div>
   {% endfor %}
