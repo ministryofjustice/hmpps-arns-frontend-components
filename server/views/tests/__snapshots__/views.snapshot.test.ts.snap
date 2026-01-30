@@ -6490,7 +6490,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <h2>Example</h2>
       <div class="predictor-timeline__heading">
         <span class='govuk-heading-m'>Scores history</span>
-        <a id="predictor-timeline__toggle-all" href="#" class="govuk-link">Open all</a>
+        <button id="predictor-timeline__toggle-all" class="govuk-button">Open all</button>
       </div>
       
 
@@ -6734,7 +6734,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           </ul>
         </div>
-        <a href="#" class="govuk-link predictor-timeline__toggle-section">Open</a>
+        <button class="govuk-button predictor-timeline__toggle-section">Open</button>
       </div>
     </div>
   
@@ -6907,7 +6907,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           </ul>
         </div>
-        <a href="#" class="govuk-link predictor-timeline__toggle-section">Open</a>
+        <button class="govuk-button predictor-timeline__toggle-section">Open</button>
       </div>
     </div>
   
@@ -7007,7 +7007,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           </ul>
         </div>
-        <a href="#" class="govuk-link predictor-timeline__toggle-section">Open</a>
+        <button class="govuk-button predictor-timeline__toggle-section">Open</button>
       </div>
     </div>
   
