@@ -2902,10 +2902,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
   
 </div>
 
-<script type="module" src="/assets/js/predictor-timeline.js"></script>
-
     </div>
   </div>
+
+  <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
     </div>
   </div>
@@ -7035,10 +7035,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 </div>
 
-<script type="module" src="/assets/js/predictor-timeline.js"></script>
-
     </div>
   </div>
+
+  <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
     </div>
   </div>
