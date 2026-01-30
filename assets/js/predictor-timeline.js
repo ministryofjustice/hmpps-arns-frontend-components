@@ -15,9 +15,11 @@ function attachListenerForToggleSectionButton(button, section, initiallyHidden) 
 
     if (sectionIsHidden) {
       button.innerText = closeText
+      this.setAttribute('aria-label', this.getAttribute('aria-label').replace('View', 'Hide'));
       section.classList.remove('predictor-timeline-section--hidden')
     } else {
       button.innerText = openText
+      this.setAttribute('aria-label', this.getAttribute('aria-label').replace('Hide', 'View'));
       section.classList.add('predictor-timeline-section--hidden')
     }
 
@@ -35,6 +37,7 @@ function attachListenerForToggleAllButton(button, sections, initiallyHidden) {
 
     if (areHidden) {
       button.innerText = closeAllText
+      button.setAttribute('aria-label', 'Close all score history')
 
       for (var i = 0; i < sections.length; i++) {
         sections[i].classList.remove('predictor-timeline-section--hidden')
@@ -44,6 +47,7 @@ function attachListenerForToggleAllButton(button, sections, initiallyHidden) {
         for (var j = 0; j < sectionButtons.length; j++) {
           sectionButtons[j].setAttribute('data-section-is-hidden', false)
           sectionButtons[j].innerText = closeText
+          sectionButtons[j].setAttribute('aria-label', sectionButtons[j].getAttribute('aria-label').replace('View', 'Hide'));
         }
       }
 
@@ -51,6 +55,7 @@ function attachListenerForToggleAllButton(button, sections, initiallyHidden) {
 
     } else {
       button.innerText = openAllText
+      button.setAttribute('aria-label', 'Open all score history')
 
       for (var i = 0; i < sections.length; i++) {
         sections[i].classList.add('predictor-timeline-section--hidden')
@@ -60,6 +65,7 @@ function attachListenerForToggleAllButton(button, sections, initiallyHidden) {
         for (var j = 0; j < sectionButtons.length; j++) {
           sectionButtons[j].setAttribute('data-section-is-hidden', true)
           sectionButtons[j].innerText = openText
+          sectionButtons[j].setAttribute('aria-label', sectionButtons[j].getAttribute('aria-label').replace('Hide', 'View'));
         }
       }
 
