@@ -1,7 +1,7 @@
 import { test } from '@playwright/test'
 import LandingPage from '../pages/landingPage'
 
-test('User logs in and checks all pages are working', async ({ page }) => {
+test('Checks all pages are working', async ({ page }) => {
   const landingPage = new LandingPage(page)
 
   // Check you have landed on the homepage

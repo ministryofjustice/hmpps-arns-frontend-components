@@ -15,6 +15,7 @@ import setUpWebSecurity from './middleware/setUpWebSecurity'
 import routes from './routes'
 import type { Services } from './services'
 import partialsPages from './routes/partialsPages'
+import setUpWebSession from './middleware/setUpWebSession'
 
 export default function createApp(services: Services): express.Application {
   const app = express()
@@ -26,6 +27,7 @@ export default function createApp(services: Services): express.Application {
   app.use(appInsightsMiddleware())
   app.use(setUpHealthChecks(services.applicationInfo))
   app.use(setUpWebSecurity())
+  app.use(setUpWebSession())
   app.use(setUpWebRequestParsing())
   app.use(setUpStaticResources())
   nunjucksSetup(app)

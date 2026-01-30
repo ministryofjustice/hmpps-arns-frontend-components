@@ -38,6 +38,8 @@ generic-service:
 
   namespace_secrets:
     # These secrets are created by terraform.
+    hmpps-arns-frontend-components-session-secret:
+      SESSION_SECRET: 'SESSION_SECRET'
     hmpps-arns-frontend-components-elasticache-redis:
       REDIS_HOST: 'primary_endpoint_address'
       REDIS_AUTH_TOKEN: 'auth_token'

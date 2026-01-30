@@ -1,6 +1,7 @@
 import express, { Express } from 'express'
 import { NotFound } from 'http-errors'
 
+import { randomUUID } from 'crypto'
 import routes from '../index'
 import nunjucksSetup from '../../utils/nunjucksSetup'
 import errorHandler from '../../errorHandler'
@@ -19,6 +20,7 @@ function appSetup(services: Services, production: boolean): Express {
   nunjucksSetup(app)
   app.use((req, res, next) => {
     req.flash = flashProvider
+    req.id = randomUUID()
     next()
   })
   app.use(express.json())
