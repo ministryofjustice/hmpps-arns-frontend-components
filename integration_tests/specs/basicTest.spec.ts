@@ -1,11 +1,10 @@
 import { test } from '@playwright/test'
 import LandingPage from '../pages/landingPage'
-import { login } from '../testUtils'
 
-test('User logs in and checks all pages are working', async ({ page }) => {
+test('Checks all pages are working', async ({ page }) => {
   const landingPage = new LandingPage(page)
 
-  await login(page, { name: 'A Test User' })
+  await page.goto('/')
 
   // Check you have landed on the homepage
   await landingPage.checkIntroduction()

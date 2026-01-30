@@ -30,9 +30,6 @@ generic-service:
     NODE_ENV: 'production'
     REDIS_ENABLED: 'true'
     REDIS_TLS_ENABLED: 'true'
-    TOKEN_VERIFICATION_ENABLED: 'true'
-    AUDIT_SQS_REGION: 'eu-west-2'
-    AUDIT_SERVICE_NAME: 'HMPPS509' # Your audit service name
 
   # Pre-existing kubernetes secrets to load as environment variables in the deployment.
   # namespace_secrets:
@@ -41,12 +38,6 @@ generic-service:
 
   namespace_secrets:
     # These secrets are created by terraform.
-    hmpps-arns-frontend-components-client-creds:
-      CLIENT_CREDS_CLIENT_ID: 'CLIENT_CREDS_CLIENT_ID'
-      CLIENT_CREDS_CLIENT_SECRET: 'CLIENT_CREDS_CLIENT_SECRET'
-    hmpps-arns-frontend-components-auth-code:
-      AUTH_CODE_CLIENT_ID: 'AUTH_CODE_CLIENT_ID'
-      AUTH_CODE_CLIENT_SECRET: 'AUTH_CODE_CLIENT_SECRET'
     hmpps-arns-frontend-components-session-secret:
       SESSION_SECRET: 'SESSION_SECRET'
     hmpps-arns-frontend-components-elasticache-redis:

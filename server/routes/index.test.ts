@@ -1,6 +1,6 @@
 import type { Express } from 'express'
 import request from 'supertest'
-import { appWithAllRoutes, user } from './testutils/appSetup'
+import { appWithAllRoutes } from './testutils/appSetup'
 import AuditService from '../services/auditService'
 
 jest.mock('../services/auditService')
@@ -11,10 +11,7 @@ let app: Express
 
 beforeEach(() => {
   app = appWithAllRoutes({
-    services: {
-      auditService,
-    },
-    userSupplier: () => user,
+    services: {},
   })
 })
 
