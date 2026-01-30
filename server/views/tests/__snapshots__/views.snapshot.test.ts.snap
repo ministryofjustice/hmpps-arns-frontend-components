@@ -209,7 +209,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
 
     
   <script type="module" src="/assets/js/index.js"></script>
-  <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
   </body>
 </html>
@@ -2302,7 +2301,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
     
   <script type="module" src="/assets/js/index.js"></script>
-  <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
   </body>
 </html>
@@ -2582,7 +2580,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
 
     
   <script type="module" src="/assets/js/index.js"></script>
-  <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
   </body>
 </html>
@@ -2905,6 +2902,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
   
 </div>
 
+<script type="module" src="/assets/js/predictor-timeline.js"></script>
+
     </div>
   </div>
 
@@ -2966,7 +2965,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
 
     
   <script type="module" src="/assets/js/index.js"></script>
-  <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
   </body>
 </html>
@@ -3256,7 +3254,6 @@ mappa: {
 
     
   <script type="module" src="/assets/js/index.js"></script>
-  <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
   </body>
 </html>
@@ -4570,7 +4567,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     
   <script type="module" src="/assets/js/index.js"></script>
-  <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
   </body>
 </html>
@@ -5771,7 +5767,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     
   <script type="module" src="/assets/js/index.js"></script>
-  <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
   </body>
 </html>
@@ -6153,7 +6148,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     
   <script type="module" src="/assets/js/index.js"></script>
-  <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
   </body>
 </html>
@@ -7041,6 +7035,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 </div>
 
+<script type="module" src="/assets/js/predictor-timeline.js"></script>
+
     </div>
   </div>
 
@@ -7102,7 +7098,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     
   <script type="module" src="/assets/js/index.js"></script>
-  <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
   </body>
 </html>
@@ -7392,7 +7387,6 @@ flags: [
 
     
   <script type="module" src="/assets/js/index.js"></script>
-  <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
   </body>
 </html>
@@ -8269,7 +8263,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
 
     
   <script type="module" src="/assets/js/index.js"></script>
-  <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
   </body>
 </html>
