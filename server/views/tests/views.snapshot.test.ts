@@ -1,11 +1,17 @@
 import type { Express } from 'express'
 import request from 'supertest'
+import { ArnsComponents } from '@ministryofjustice/hmpps-arns-frontend-components-lib'
 import { appWithAllRoutes } from '../../routes/testutils/appSetup'
+import arnsComponentMock from './arnsComponentMock'
 
 let app: Express
 
 beforeAll(() => {
-  app = appWithAllRoutes({})
+  app = appWithAllRoutes({
+    services: {
+      arnsComponents: arnsComponentMock as unknown as ArnsComponents,
+    },
+  })
 })
 
 describe('View Snapshot Tests: All Pages', () => {
@@ -41,6 +47,11 @@ describe('View Snapshot Tests: All Pages', () => {
 
   it('should match snapshot for the predictor badge page (/predictor-badge)', async () => {
     const response = await request(app).get('/predictor-badge').expect(200)
+    expect(response.text).toMatchSnapshot()
+  })
+
+  it('should match snapshot for the predictor badge page (/predictor-badge/new)', async () => {
+    const response = await request(app).get('/predictor-badge/new').expect(200)
     expect(response.text).toMatchSnapshot()
   })
 

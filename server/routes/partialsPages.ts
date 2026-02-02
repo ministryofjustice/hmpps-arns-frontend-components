@@ -7,13 +7,24 @@ import legacyComponentRiskScores from '../data/legacyComponentRiskScores'
 import { badgeRiskScores, legacyBadgeRiskScores } from '../data/badgeRiskScores'
 import predictorScaleNotApplicableScores from '../data/predictorScaleNotApplicableScores'
 import predictorTimelineRiskScores from '../data/predictorTimelineRiskScores'
+import { Services } from '../services'
 
-export default function componentPageRoutes(): Router {
+export default function componentPageRoutes({ arnsComponents }: Services): Router {
   const router = Router()
 
   router.get('/predictor-badge', async (req, res) => {
     const navSections = activateMojNav(rawNavSections, req.path)
     res.render('pages/predictorBadgePage', { badgeRiskScores, legacyBadgeRiskScores, navSections })
+  })
+  router.get('/predictor-badge/new', async (req, res) => {
+    const navSections = activateMojNav(rawNavSections, req.path)
+    const riskData = await arnsComponents.getRiskData(null, 'crn', 'X123456')
+    const riskDataLegacy = await arnsComponents.getRiskData(null, 'crn', 'X654321')
+    res.render('pages/predictorBadgeLibraryPage', {
+      navSections,
+      riskData,
+      riskDataLegacy,
+    })
   })
   router.get('/expanded-predictor-badge', async (req, res) => {
     const navSections = activateMojNav(rawNavSections, req.path)
