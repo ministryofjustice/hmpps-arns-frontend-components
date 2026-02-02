@@ -50,23 +50,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
 
       
     </div>
-
-    <nav aria-label="Account navigation">
-      <ul class="hmpps-header__navigation">
-        
-          <li class="hmpps-header__navigation__item">
-            <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
-              <span data-qa=header-user-name>F. Last</span>
-              <span class="hmpps-header__link__sub-text">Manage your details</span>
-            </a>
-          </li>
-        
-
-        <li class="hmpps-header__navigation__item">
-          <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
-        </li>
-      </ul>
-    </nav>
   </div>
 </header>
 
@@ -265,23 +248,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       
     </div>
-
-    <nav aria-label="Account navigation">
-      <ul class="hmpps-header__navigation">
-        
-          <li class="hmpps-header__navigation__item">
-            <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
-              <span data-qa=header-user-name>F. Last</span>
-              <span class="hmpps-header__link__sub-text">Manage your details</span>
-            </a>
-          </li>
-        
-
-        <li class="hmpps-header__navigation__item">
-          <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
-        </li>
-      </ul>
-    </nav>
   </div>
 </header>
 
@@ -2357,23 +2323,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
 
       
     </div>
-
-    <nav aria-label="Account navigation">
-      <ul class="hmpps-header__navigation">
-        
-          <li class="hmpps-header__navigation__item">
-            <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
-              <span data-qa=header-user-name>F. Last</span>
-              <span class="hmpps-header__link__sub-text">Manage your details</span>
-            </a>
-          </li>
-        
-
-        <li class="hmpps-header__navigation__item">
-          <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
-        </li>
-      </ul>
-    </nav>
   </div>
 </header>
 
@@ -2636,23 +2585,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
 
       
     </div>
-
-    <nav aria-label="Account navigation">
-      <ul class="hmpps-header__navigation">
-        
-          <li class="hmpps-header__navigation__item">
-            <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
-              <span data-qa=header-user-name>F. Last</span>
-              <span class="hmpps-header__link__sub-text">Manage your details</span>
-            </a>
-          </li>
-        
-
-        <li class="hmpps-header__navigation__item">
-          <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
-        </li>
-      </ul>
-    </nav>
   </div>
 </header>
 
@@ -3021,23 +2953,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
 
       
     </div>
-
-    <nav aria-label="Account navigation">
-      <ul class="hmpps-header__navigation">
-        
-          <li class="hmpps-header__navigation__item">
-            <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
-              <span data-qa=header-user-name>F. Last</span>
-              <span class="hmpps-header__link__sub-text">Manage your details</span>
-            </a>
-          </li>
-        
-
-        <li class="hmpps-header__navigation__item">
-          <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
-        </li>
-      </ul>
-    </nav>
   </div>
 </header>
 
@@ -3310,23 +3225,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
       
     </div>
-
-    <nav aria-label="Account navigation">
-      <ul class="hmpps-header__navigation">
-        
-          <li class="hmpps-header__navigation__item">
-            <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
-              <span data-qa=header-user-name>F. Last</span>
-              <span class="hmpps-header__link__sub-text">Manage your details</span>
-            </a>
-          </li>
-        
-
-        <li class="hmpps-header__navigation__item">
-          <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
-        </li>
-      </ul>
-    </nav>
   </div>
 </header>
 
@@ -4623,23 +4521,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
       
     </div>
-
-    <nav aria-label="Account navigation">
-      <ul class="hmpps-header__navigation">
-        
-          <li class="hmpps-header__navigation__item">
-            <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
-              <span data-qa=header-user-name>F. Last</span>
-              <span class="hmpps-header__link__sub-text">Manage your details</span>
-            </a>
-          </li>
-        
-
-        <li class="hmpps-header__navigation__item">
-          <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
-        </li>
-      </ul>
-    </nav>
   </div>
 </header>
 
@@ -5823,23 +5704,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
       
     </div>
-
-    <nav aria-label="Account navigation">
-      <ul class="hmpps-header__navigation">
-        
-          <li class="hmpps-header__navigation__item">
-            <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
-              <span data-qa=header-user-name>F. Last</span>
-              <span class="hmpps-header__link__sub-text">Manage your details</span>
-            </a>
-          </li>
-        
-
-        <li class="hmpps-header__navigation__item">
-          <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
-        </li>
-      </ul>
-    </nav>
   </div>
 </header>
 
@@ -6204,23 +6068,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
       
     </div>
-
-    <nav aria-label="Account navigation">
-      <ul class="hmpps-header__navigation">
-        
-          <li class="hmpps-header__navigation__item">
-            <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
-              <span data-qa=header-user-name>F. Last</span>
-              <span class="hmpps-header__link__sub-text">Manage your details</span>
-            </a>
-          </li>
-        
-
-        <li class="hmpps-header__navigation__item">
-          <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
-        </li>
-      </ul>
-    </nav>
   </div>
 </header>
 
@@ -7154,23 +7001,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
 
       
     </div>
-
-    <nav aria-label="Account navigation">
-      <ul class="hmpps-header__navigation">
-        
-          <li class="hmpps-header__navigation__item">
-            <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
-              <span data-qa=header-user-name>F. Last</span>
-              <span class="hmpps-header__link__sub-text">Manage your details</span>
-            </a>
-          </li>
-        
-
-        <li class="hmpps-header__navigation__item">
-          <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
-        </li>
-      </ul>
-    </nav>
   </div>
 </header>
 
@@ -7443,23 +7273,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
 
       
     </div>
-
-    <nav aria-label="Account navigation">
-      <ul class="hmpps-header__navigation">
-        
-          <li class="hmpps-header__navigation__item">
-            <a data-qa="manageDetails" class="hmpps-header__link" href="/account-details" data-test="manage-account-link" rel="noopener noreferrer">
-              <span data-qa=header-user-name>F. Last</span>
-              <span class="hmpps-header__link__sub-text">Manage your details</span>
-            </a>
-          </li>
-        
-
-        <li class="hmpps-header__navigation__item">
-          <a data-qa="signOut" class="hmpps-header__link" href="/sign-out">Sign out</a>
-        </li>
-      </ul>
-    </nav>
   </div>
 </header>
 

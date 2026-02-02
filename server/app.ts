@@ -5,20 +5,17 @@ import createError from 'http-errors'
 import nunjucksSetup from './utils/nunjucksSetup'
 import errorHandler from './errorHandler'
 import { appInsightsMiddleware } from './utils/azureAppInsights'
-import authorisationMiddleware from './middleware/authorisationMiddleware'
 
-import setUpAuthentication from './middleware/setUpAuthentication'
 import setUpCsrf from './middleware/setUpCsrf'
-import setUpCurrentUser from './middleware/setUpCurrentUser'
 import setUpHealthChecks from './middleware/setUpHealthChecks'
 import setUpStaticResources from './middleware/setUpStaticResources'
 import setUpWebRequestParsing from './middleware/setupRequestParsing'
 import setUpWebSecurity from './middleware/setUpWebSecurity'
-import setUpWebSession from './middleware/setUpWebSession'
 
 import routes from './routes'
 import type { Services } from './services'
 import partialsPages from './routes/partialsPages'
+import setUpWebSession from './middleware/setUpWebSession'
 
 export default function createApp(services: Services): express.Application {
   const app = express()
@@ -34,10 +31,7 @@ export default function createApp(services: Services): express.Application {
   app.use(setUpWebRequestParsing())
   app.use(setUpStaticResources())
   nunjucksSetup(app)
-  app.use(setUpAuthentication())
-  app.use(authorisationMiddleware())
   app.use(setUpCsrf())
-  app.use(setUpCurrentUser())
 
   app.use((req, res, next) => {
     res.locals.currentPath = req.path
