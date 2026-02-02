@@ -1,13 +1,11 @@
 import type { Express } from 'express'
 import request from 'supertest'
-import { appWithAllRoutes, user } from '../../routes/testutils/appSetup'
+import { appWithAllRoutes } from '../../routes/testutils/appSetup'
 
 let app: Express
 
 beforeAll(() => {
-  app = appWithAllRoutes({
-    userSupplier: () => user,
-  })
+  app = appWithAllRoutes({})
 })
 
 describe('View Snapshot Tests: All Pages', () => {
