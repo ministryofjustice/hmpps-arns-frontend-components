@@ -161,6 +161,20 @@ $low-score-colour__text: #485b10;
   @include predictor-timeline-item-base($low-score-colour, $low-score-colour--light, $low-score-colour__text);
 }
 
+.predictor-timeline-link-btn {
+  @include govuk-font($size: 19);
+  text-decoration-thickness: max(3px,.1875rem,.12em);
+  text-underline-offset: 3px;
+  background: none !important;
+  border: none;
+  color: $govuk-link-hover-colour;
+  padding: 0 !important;
+  text-decoration: underline;
+  cursor: pointer;
+  text-decoration-skip-ink: none;
+  text-decoration-skip: none
+}
+
 @mixin legacy-predictor-timeline-item-base($primary-colour, $secondary-colour, $text-colour) {
   display: inline-flex;
   outline: 2px solid $primary-colour;
