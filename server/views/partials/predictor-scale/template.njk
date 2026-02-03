@@ -1,6 +1,5 @@
 {%- from "govuk/components/tag/macro.njk" import govukTag -%}
 {% set scaleMarkerClass = '' %}
-{% set scalePositionClass = '' %}
 {% set staticOrDynamic = '' %}
 
 {% macro predictorScaleMarker(predictorScore, includeScore) %}
@@ -30,42 +29,44 @@
 
 {% switch predictorScore.level %}
   {% case 'LOW' %}
-    {% set scaleMarkerClass = 'scale-marker-wrapper--low scale-marker-wrapper--four-positions' %}
+    {% set scaleMarkerClass = 'scale-marker-wrapper--low' %}
   {% case 'MEDIUM' %}
-    {% set scaleMarkerClass = 'scale-marker-wrapper--medium scale-marker-wrapper--four-positions' %}
+    {% set scaleMarkerClass = 'scale-marker-wrapper--medium' %}
   {% case 'HIGH' %}
-    {% set scaleMarkerClass = 'scale-marker-wrapper--high scale-marker-wrapper--four-positions' %}
+    {% set scaleMarkerClass = 'scale-marker-wrapper--high' %}
   {% case 'VERY_HIGH' %}
-    {% set scaleMarkerClass = 'scale-marker-wrapper--very-high scale-marker-wrapper--four-positions' %}
+    {% set scaleMarkerClass = 'scale-marker-wrapper--very-high' %}
 {% endswitch %}
 
-{% if includePercentage %}
-  {% set leftMargin = ((predictorScore.score | round) * 2 - 100) %}
-  {% set scalePositionClass = 'scale-marker-wrapper--margin-' + leftMargin %}
-{% else %}
-  {% switch predictorScore.level %}
-  {% case 'LOW' %}
-    {% if includeVeryHigh %}
-      {% set scalePositionClass = 'scale-marker-wrapper--margin--75' %}
-    {% else %}
-      {% set scalePositionClass = 'scale-marker-wrapper--margin--66' %}
-    {% endif %}
-  {% case 'MEDIUM' %}
-    {% if includeVeryHigh %}
-      {% set scalePositionClass = 'scale-marker-wrapper--margin--25' %}
-    {% else %}
-      {% set scalePositionClass = 'scale-marker-wrapper--margin-0' %}
-    {% endif %}
-  {% case 'HIGH' %}
-    {% if includeVeryHigh %}
-      {% set scalePositionClass = 'scale-marker-wrapper--margin-25' %}
-    {% else %}
-      {% set scalePositionClass = 'scale-marker-wrapper--margin-66' %}
-    {% endif %}
-  {% case 'VERY_HIGH' %}
-    {% set scalePositionClass = 'scale-marker-wrapper--margin-75' %}
-  {% endswitch %}
-{% endif %}
+{% set scalePositionClass = 'scale-marker-wrapper--margin-' + predictorScore.scalePosition %}
+
+{#{% if includePercentage %}#}
+{#  {% set leftMargin = predictorScore.score | round %}#}
+{#  {% set scalePositionClass = 'scale-marker-wrapper--margin-' + leftMargin %}#}
+{#{% else %}#}
+{#  {% switch predictorScore.level %}#}
+{#  {% case 'LOW' %}#}
+{#    {% if includeVeryHigh %}#}
+{#      {% set scalePositionClass = 'scale-marker-wrapper--margin-13' %}#}
+{#    {% else %}#}
+{#      {% set scalePositionClass = 'scale-marker-wrapper--margin-17' %}#}
+{#    {% endif %}#}
+{#  {% case 'MEDIUM' %}#}
+{#    {% if includeVeryHigh %}#}
+{#      {% set scalePositionClass = 'scale-marker-wrapper--margin-38' %}#}
+{#    {% else %}#}
+{#      {% set scalePositionClass = 'scale-marker-wrapper--margin-50' %}#}
+{#    {% endif %}#}
+{#  {% case 'HIGH' %}#}
+{#    {% if includeVeryHigh %}#}
+{#      {% set scalePositionClass = 'scale-marker-wrapper--margin-63' %}#}
+{#    {% else %}#}
+{#      {% set scalePositionClass = 'scale-marker-wrapper--margin-83' %}#}
+{#    {% endif %}#}
+{#  {% case 'VERY_HIGH' %}#}
+{#    {% set scalePositionClass = 'scale-marker-wrapper--margin-88' %}#}
+{#  {% endswitch %}#}
+{#{% endif %}#}
 
 {% set barTypeClass = '' %}
 

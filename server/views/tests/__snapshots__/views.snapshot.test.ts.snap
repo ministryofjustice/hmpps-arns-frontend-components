@@ -4705,9 +4705,38 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
 
 
-  
+
     
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4732,7 +4761,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-marker">
-      <div class="scale-marker-wrapper--low scale-marker-wrapper--position-one-of-four">
+      <div class="scale-marker-wrapper--low scale-marker-wrapper--margin-4">
         
   <div class="scale-marker__card">
     <div class="scale-marker__card-top">
@@ -4782,9 +4811,38 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
 
 
-  
+
     
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4809,7 +4867,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-marker">
-      <div class="scale-marker-wrapper--medium scale-marker-wrapper--position-two-of-four">
+      <div class="scale-marker-wrapper--medium scale-marker-wrapper--margin-46">
         
   <div class="scale-marker__card">
     <div class="scale-marker__card-top">
@@ -4859,9 +4917,38 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
 
 
-  
+
     
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4886,7 +4973,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-marker">
-      <div class="scale-marker-wrapper--medium scale-marker-wrapper--position-two-of-four">
+      <div class="scale-marker-wrapper--medium scale-marker-wrapper--margin-30">
         
   <div class="scale-marker__card">
     <div class="scale-marker__card-top">
@@ -4935,9 +5022,38 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-  
+
     
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4957,7 +5073,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-marker">
-      <div class="scale-marker-wrapper--very-high scale-marker-wrapper--position-four-of-four">
+      <div class="scale-marker-wrapper--very-high scale-marker-wrapper--margin-88">
         
   <div class="scale-marker__card">
     <div class="scale-marker__card-top">
@@ -5003,10 +5119,39 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-  
+
     
   
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5025,7 +5170,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-marker">
-      <div class="scale-marker-wrapper--high scale-marker-wrapper--position-three-of-three">
+      <div class="scale-marker-wrapper--high scale-marker-wrapper--margin-83">
         
   <div class="scale-marker__card">
     <div class="scale-marker__card-top">
@@ -5068,9 +5213,38 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
 
 
-  
+
     
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5095,7 +5269,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-marker">
-      <div class="scale-marker-wrapper--low scale-marker-wrapper--position-one-of-four">
+      <div class="scale-marker-wrapper--low scale-marker-wrapper--margin-13">
         
   <div class="scale-marker__card">
     <div class="scale-marker__card-top">
@@ -5144,9 +5318,38 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-  
+
     
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5166,7 +5369,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-marker">
-      <div class="scale-marker-wrapper--low scale-marker-wrapper--position-one-of-four">
+      <div class="scale-marker-wrapper--low scale-marker-wrapper--margin-19">
         
   <div class="scale-marker__card">
     <div class="scale-marker__card-top">
@@ -5217,10 +5420,39 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
 
 
-  
+
     
   
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5244,7 +5476,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-marker">
-      <div class="scale-marker-wrapper--high scale-marker-wrapper--position-three-of-three">
+      <div class="scale-marker-wrapper--high scale-marker-wrapper--margin-100">
         
   <div class="scale-marker__card">
     <div class="scale-marker__card-top">
@@ -5252,7 +5484,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
     
       <div class="scale-marker__card-bottom">
-        <p>11.34%</p>
+        <p>27.9%</p>
       </div>
       <div class="scale-marker__card-pointer"></div>
     
@@ -5290,9 +5522,38 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-  
+
     
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5312,7 +5573,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-marker">
-      <div class="scale-marker-wrapper--high scale-marker-wrapper--position-three-of-four">
+      <div class="scale-marker-wrapper--high scale-marker-wrapper--margin-32">
         
   <div class="scale-marker__card">
     <div class="scale-marker__card-top">
@@ -5362,9 +5623,38 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-  
+
     
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5384,7 +5674,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-marker">
-      <div class="scale-marker-wrapper--very-high scale-marker-wrapper--position-four-of-four">
+      <div class="scale-marker-wrapper--very-high scale-marker-wrapper--margin-78">
         
   <div class="scale-marker__card">
     <div class="scale-marker__card-top">
@@ -5434,9 +5724,38 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-  
+
     
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5456,7 +5775,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-marker">
-      <div class="scale-marker-wrapper--low scale-marker-wrapper--position-one-of-four">
+      <div class="scale-marker-wrapper--low scale-marker-wrapper--margin-13">
         
   <div class="scale-marker__card">
     <div class="scale-marker__card-top">
@@ -5503,10 +5822,39 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-  
+
     
   
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5525,7 +5873,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
 
     <div class="scale-marker">
-      <div class="scale-marker-wrapper--medium scale-marker-wrapper--position-two-of-three">
+      <div class="scale-marker-wrapper--medium scale-marker-wrapper--margin-50">
         
   <div class="scale-marker__card">
     <div class="scale-marker__card-top">
@@ -5570,8 +5918,37 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
 
 
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
