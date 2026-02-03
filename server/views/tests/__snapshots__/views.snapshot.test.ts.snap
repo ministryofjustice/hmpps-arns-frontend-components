@@ -6352,8 +6352,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 <div class="predictor-timeline__heading">
   <span class='govuk-heading-m'>Scores history</span>
-  <a id="predictor-timeline__toggle-all" href="#" class="govuk-link" aria-label="Open all score history"
-     aria-controls="predictor-section-23-july-2026-at-12-00 predictor-section-14-may-2019-at-12-00 predictor-section-12-september-2018-at-12-00" aria-expanded="false">Open all</a>
+  <button id="predictor-timeline__toggle-all" class="predictor-timeline-link-btn" aria-label="Open all score history"
+     aria-controls="predictor-section-23-july-2026-at-12-00 predictor-section-14-may-2019-at-12-00 predictor-section-12-september-2018-at-12-00" aria-expanded="false">Open all</button>
 </div>
 
 <div class="predictor-timeline predictor">
@@ -6593,8 +6593,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           </ul>
         </div>
-        <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for 23 July 2026 at 12:00"
-           aria-controls="predictor-section-23-july-2026-at-12-00" aria-expanded="false">Open</a>
+        <button class="predictor-timeline-link-btn predictor-timeline__toggle-section" aria-label="View scores for 23 July 2026 at 12:00"
+           aria-controls="predictor-section-23-july-2026-at-12-00" aria-expanded="false">Open</button>
       </div>
     </div>
   
@@ -6769,8 +6769,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           </ul>
         </div>
-        <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for 14 May 2019 at 12:00"
-           aria-controls="predictor-section-14-may-2019-at-12-00" aria-expanded="false">Open</a>
+        <button class="predictor-timeline-link-btn predictor-timeline__toggle-section" aria-label="View scores for 14 May 2019 at 12:00"
+           aria-controls="predictor-section-14-may-2019-at-12-00" aria-expanded="false">Open</button>
       </div>
     </div>
   
@@ -6872,8 +6872,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           </ul>
         </div>
-        <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for 12 September 2018 at 12:00"
-           aria-controls="predictor-section-12-september-2018-at-12-00" aria-expanded="false">Open</a>
+        <button class="predictor-timeline-link-btn predictor-timeline__toggle-section" aria-label="View scores for 12 September 2018 at 12:00"
+           aria-controls="predictor-section-12-september-2018-at-12-00" aria-expanded="false">Open</button>
       </div>
     </div>
   
