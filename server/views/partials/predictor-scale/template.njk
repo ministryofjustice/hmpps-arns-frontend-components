@@ -1,5 +1,6 @@
 {%- from "govuk/components/tag/macro.njk" import govukTag -%}
 {% set scaleMarkerClass = '' %}
+{% set scalePositionClass = '' %}
 {% set staticOrDynamic = '' %}
 
 {% macro predictorScaleMarker(predictorScore, includeScore) %}
@@ -26,25 +27,43 @@
   {% default %}
 {% endswitch %}
 
-{% if includeVeryHigh !== true %}
+
+{% switch predictorScore.level %}
+  {% case 'LOW' %}
+    {% set scaleMarkerClass = 'scale-marker-wrapper--low scale-marker-wrapper--four-positions' %}
+  {% case 'MEDIUM' %}
+    {% set scaleMarkerClass = 'scale-marker-wrapper--medium scale-marker-wrapper--four-positions' %}
+  {% case 'HIGH' %}
+    {% set scaleMarkerClass = 'scale-marker-wrapper--high scale-marker-wrapper--four-positions' %}
+  {% case 'VERY_HIGH' %}
+    {% set scaleMarkerClass = 'scale-marker-wrapper--very-high scale-marker-wrapper--four-positions' %}
+{% endswitch %}
+
+{% if includePercentage %}
+  {% set leftMargin = ((predictorScore.score | round) * 2 - 100) %}
+  {% set scalePositionClass = 'scale-marker-wrapper--margin-' + leftMargin %}
+{% else %}
   {% switch predictorScore.level %}
   {% case 'LOW' %}
-    {% set scaleMarkerClass = 'scale-marker-wrapper--low scale-marker-wrapper--position-one-of-three' %}
+    {% if includeVeryHigh %}
+      {% set scalePositionClass = 'scale-marker-wrapper--margin--75' %}
+    {% else %}
+      {% set scalePositionClass = 'scale-marker-wrapper--margin--66' %}
+    {% endif %}
   {% case 'MEDIUM' %}
-    {% set scaleMarkerClass = 'scale-marker-wrapper--medium scale-marker-wrapper--position-two-of-three' %}
+    {% if includeVeryHigh %}
+      {% set scalePositionClass = 'scale-marker-wrapper--margin--25' %}
+    {% else %}
+      {% set scalePositionClass = 'scale-marker-wrapper--margin-0' %}
+    {% endif %}
   {% case 'HIGH' %}
-    {% set scaleMarkerClass = 'scale-marker-wrapper--high scale-marker-wrapper--position-three-of-three' %}
-  {% endswitch %}
-  {% else %}
-  {% switch predictorScore.level %}
-  {% case 'LOW' %}
-    {% set scaleMarkerClass = 'scale-marker-wrapper--low scale-marker-wrapper--position-one-of-four' %}
-  {% case 'MEDIUM' %}
-    {% set scaleMarkerClass = 'scale-marker-wrapper--medium scale-marker-wrapper--position-two-of-four' %}
-  {% case 'HIGH' %}
-    {% set scaleMarkerClass = 'scale-marker-wrapper--high scale-marker-wrapper--position-three-of-four' %}
-  {% case 'VERY_HIGH' %}{% case 'VERY HIGH' %}
-    {% set scaleMarkerClass = 'scale-marker-wrapper--very-high scale-marker-wrapper--position-four-of-four' %}
+    {% if includeVeryHigh %}
+      {% set scalePositionClass = 'scale-marker-wrapper--margin-25' %}
+    {% else %}
+      {% set scalePositionClass = 'scale-marker-wrapper--margin-66' %}
+    {% endif %}
+  {% case 'VERY_HIGH' %}
+    {% set scalePositionClass = 'scale-marker-wrapper--margin-75' %}
   {% endswitch %}
 {% endif %}
 
@@ -78,7 +97,7 @@
     </div>
 
     <div class="scale-marker">
-      <div class="{{ scaleMarkerClass }}">
+      <div class="{{ scaleMarkerClass }} {{ scalePositionClass }}">
         {{ predictorScaleMarker(predictorScore, includeScore) }}
       </div>
     </div>

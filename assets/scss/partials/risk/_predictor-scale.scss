@@ -105,45 +105,10 @@ $boarder-colour: #B1B4B6;
   width: 100%;
 }
 
-.scale-marker-wrapper--position-one-of-three,
-.scale-marker-wrapper--position-two-of-three,
-.scale-marker-wrapper--position-three-of-three {
-  width: 33%;
-}
-
-.scale-marker-wrapper--position-one-of-three {
-  margin-left: 0;
-}
-
-.scale-marker-wrapper--position-two-of-three {
-  margin-left: 34%;
-}
-
-.scale-marker-wrapper--position-three-of-three {
-  margin-left: 67%;
-}
-
-.scale-marker-wrapper--position-one-of-four,
-.scale-marker-wrapper--position-two-of-four,
-.scale-marker-wrapper--position-three-of-four,
-.scale-marker-wrapper--position-four-of-four {
-  width: 25%;
-}
-
-.scale-marker-wrapper--position-one-of-four {
-  margin-left: 0;
-}
-
-.scale-marker-wrapper--position-two-of-four {
-  margin-left: 25%;
-}
-
-.scale-marker-wrapper--position-three-of-four {
-  margin-left: 50%;
-}
-
-.scale-marker-wrapper--position-four-of-four {
-  margin-left: 75%;
+@for $margin from -100 through 100 {
+  .scale-marker-wrapper--margin-#{$margin} {
+    margin-left: $margin * 1%;
+  }
 }
 
 .scale-marker-wrapper--very-high {
