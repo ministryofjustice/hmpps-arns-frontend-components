@@ -26,27 +26,19 @@
   {% default %}
 {% endswitch %}
 
-{% if includeVeryHigh !== true %}
-  {% switch predictorScore.level %}
+
+{% switch predictorScore.level %}
   {% case 'LOW' %}
-    {% set scaleMarkerClass = 'scale-marker-wrapper--low scale-marker-wrapper--position-one-of-three' %}
+    {% set scaleMarkerClass = 'scale-marker-wrapper--low' %}
   {% case 'MEDIUM' %}
-    {% set scaleMarkerClass = 'scale-marker-wrapper--medium scale-marker-wrapper--position-two-of-three' %}
+    {% set scaleMarkerClass = 'scale-marker-wrapper--medium' %}
   {% case 'HIGH' %}
-    {% set scaleMarkerClass = 'scale-marker-wrapper--high scale-marker-wrapper--position-three-of-three' %}
-  {% endswitch %}
-  {% else %}
-  {% switch predictorScore.level %}
-  {% case 'LOW' %}
-    {% set scaleMarkerClass = 'scale-marker-wrapper--low scale-marker-wrapper--position-one-of-four' %}
-  {% case 'MEDIUM' %}
-    {% set scaleMarkerClass = 'scale-marker-wrapper--medium scale-marker-wrapper--position-two-of-four' %}
-  {% case 'HIGH' %}
-    {% set scaleMarkerClass = 'scale-marker-wrapper--high scale-marker-wrapper--position-three-of-four' %}
-  {% case 'VERY_HIGH' %}{% case 'VERY HIGH' %}
-    {% set scaleMarkerClass = 'scale-marker-wrapper--very-high scale-marker-wrapper--position-four-of-four' %}
-  {% endswitch %}
-{% endif %}
+    {% set scaleMarkerClass = 'scale-marker-wrapper--high' %}
+  {% case 'VERY_HIGH' %}
+    {% set scaleMarkerClass = 'scale-marker-wrapper--very-high' %}
+{% endswitch %}
+
+{% set scalePositionClass = 'scale-marker-wrapper--margin-' + predictorScore.scalePosition %}
 
 {% set barTypeClass = '' %}
 
@@ -78,7 +70,7 @@
     </div>
 
     <div class="scale-marker">
-      <div class="{{ scaleMarkerClass }}">
+      <div class="{{ scaleMarkerClass }} {{ scalePositionClass }}">
         {{ predictorScaleMarker(predictorScore, includeScore) }}
       </div>
     </div>

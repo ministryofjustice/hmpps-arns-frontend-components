@@ -105,45 +105,11 @@ $boarder-colour: #B1B4B6;
   width: 100%;
 }
 
-.scale-marker-wrapper--position-one-of-three,
-.scale-marker-wrapper--position-two-of-three,
-.scale-marker-wrapper--position-three-of-three {
-  width: 33%;
-}
-
-.scale-marker-wrapper--position-one-of-three {
-  margin-left: 0;
-}
-
-.scale-marker-wrapper--position-two-of-three {
-  margin-left: 34%;
-}
-
-.scale-marker-wrapper--position-three-of-three {
-  margin-left: 67%;
-}
-
-.scale-marker-wrapper--position-one-of-four,
-.scale-marker-wrapper--position-two-of-four,
-.scale-marker-wrapper--position-three-of-four,
-.scale-marker-wrapper--position-four-of-four {
-  width: 25%;
-}
-
-.scale-marker-wrapper--position-one-of-four {
-  margin-left: 0;
-}
-
-.scale-marker-wrapper--position-two-of-four {
-  margin-left: 25%;
-}
-
-.scale-marker-wrapper--position-three-of-four {
-  margin-left: 50%;
-}
-
-.scale-marker-wrapper--position-four-of-four {
-  margin-left: 75%;
+@for $margin from 0 through 100 {
+  .scale-marker-wrapper--margin-#{$margin} {
+    position: relative;
+    left: calc(-40px + ($margin/100)*(100% - 1px));
+  }
 }
 
 .scale-marker-wrapper--very-high {
@@ -169,7 +135,6 @@ $boarder-colour: #B1B4B6;
 .scale-marker__card {
   width: 78px;
   bottom: 30px;
-  margin: 0 auto;
   background-color: govuk-colour("white");
   border: 2px solid govuk-colour("black");
 }
@@ -212,10 +177,10 @@ $boarder-colour: #B1B4B6;
   margin-bottom: 15px;
 
   & > div {
-    width: 33%;
+    width: calc(100%/3);
     display: inline;
     float: left;
-    border-right: 1px solid transparent;
+    //border-right: 1px solid transparent;
     box-sizing: border-box;
   }
 
@@ -258,7 +223,7 @@ $boarder-colour: #B1B4B6;
 
 .scale-bar--small-fourths {
   & > div {
-    width: 25%;
+    width: calc(100%/4);
     padding-bottom: 20px;
   }
 
@@ -282,16 +247,12 @@ $boarder-colour: #B1B4B6;
   clear: both;
 
   & > div {
-    width: 33.33%;
+    width: calc(100%/3);
     height: 30px;
     float: left;
-    border-right: 1px solid govuk-colour("black");
+    border-left: 1px solid govuk-colour("black");
     box-sizing: border-box;
     position: relative;
-
-    &:first-child {
-      border-left: 1px solid govuk-colour("black");
-    }
 
     & > span:first-child {
       display: block;
@@ -346,9 +307,10 @@ $boarder-colour: #B1B4B6;
 
 .scale-bar--fourths {
   & > div {
-    width: 25% !important;
+    width: calc(100%/4) !important;
   }
   & > div:nth-child(4) {
+    border-right: 1px solid govuk-colour("black");
     & > span:first-child {
       background-color: $very-high-score-colour;
       &::after { content: "VERY HIGH"; }

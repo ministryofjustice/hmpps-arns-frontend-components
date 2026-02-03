@@ -1,7 +1,10 @@
+import { convertBandToScalePosition, convertScoreToScalePosition } from '../utils/predictorUtils'
+
 const predictorScaleScores = {
   AllPredictor: {
     level: 'LOW',
     score: 8.76,
+    scalePosition: convertScoreToScalePosition(8.76, [0, 50, 75, 90, 100]),
     type: 'All Reoffending Predictor',
     lastUpdated: '19 December 2024',
     staticOrDynamic: 'DYNAMIC',
@@ -10,6 +13,7 @@ const predictorScaleScores = {
   ViolentPredictor: {
     level: 'MEDIUM',
     score: 35.67,
+    scalePosition: convertScoreToScalePosition(35.67, [0, 30, 60, 80, 100]),
     type: 'Violent Reoffending Predictor',
     lastUpdated: '19 December 2024',
     staticOrDynamic: 'STATIC',
@@ -17,16 +21,19 @@ const predictorScaleScores = {
   },
   DirectContact: {
     level: 'VERY_HIGH',
+    scalePosition: convertBandToScalePosition('VERY_HIGH', true),
     type: 'Direct Contact – Sexual Reoffending Predictor',
     lastUpdated: '19 December 2024',
   },
   IndecentImages: {
     level: 'HIGH',
+    scalePosition: convertBandToScalePosition('HIGH', false),
     type: 'Images and Indirect Contact – Sexual Reoffending Predictor',
     lastUpdated: '19 December 2024',
   },
   SeriousViolencePredictor: {
     level: 'LOW',
+    scalePosition: convertBandToScalePosition('LOW', true),
     score: 0.67,
     type: 'Serious Violent Reoffending Predictor',
     lastUpdated: '19 December 2024',
@@ -35,6 +42,7 @@ const predictorScaleScores = {
   CombinedPredictor: {
     level: 'MEDIUM',
     score: 2.67,
+    scalePosition: convertScoreToScalePosition(2.67, [0, 1, 3, 6.9, 25]),
     type: 'Combined Serious Reoffending Predictor',
     lastUpdated: '19 December 2024',
     staticOrDynamic: 'DYNAMIC',
@@ -43,6 +51,7 @@ const predictorScaleScores = {
   OGRS3: {
     level: 'LOW',
     score: 37.67,
+    scalePosition: convertScoreToScalePosition(37.67, [0, 50, 75, 90, 100]),
     type: 'OGRS3',
     lastUpdated: '19 December 2024',
     bandPercentages: ['0%', '50%', '75%', '90%', '100%'],
@@ -50,6 +59,7 @@ const predictorScaleScores = {
   OGP: {
     level: 'HIGH',
     score: 42.67,
+    scalePosition: convertScoreToScalePosition(42.67, [0, 34, 67, 85, 100]),
     type: 'OGP',
     lastUpdated: '19 December 2024',
     bandPercentages: ['0%', '34%', '67%', '85%', '100%'],
@@ -57,23 +67,27 @@ const predictorScaleScores = {
   OVP: {
     level: 'VERY_HIGH',
     score: 82.67,
+    scalePosition: convertScoreToScalePosition(82.67, [0, 30, 60, 80, 100]),
     type: 'OVP',
     lastUpdated: '19 December 2024',
     bandPercentages: ['0%', '30%', '60%', '80%', '100%'],
   },
   OSPDC: {
     level: 'LOW',
+    scalePosition: convertBandToScalePosition('LOW', true),
     type: 'OSP-DC',
     lastUpdated: '19 December 2024',
   },
   OSPIIC: {
     level: 'MEDIUM',
+    scalePosition: convertBandToScalePosition('MEDIUM', false),
     type: 'OSP-IIC',
     lastUpdated: '19 December 2024',
   },
   RSR: {
     level: 'HIGH',
-    score: 11.34,
+    score: 27.9,
+    scalePosition: convertScoreToScalePosition(27.9, [0, 3, 6.9, 25]),
     type: 'RSR',
     lastUpdated: '19 December 2024',
     staticOrDynamic: 'STATIC',
