@@ -107,7 +107,8 @@ $boarder-colour: #B1B4B6;
 
 @for $margin from 0 through 100 {
   .scale-marker-wrapper--margin-#{$margin} {
-    margin-left: $margin * 1%;
+    position: relative;
+    left: calc(-40px + ($margin/100)*(100%));
   }
 }
 
@@ -134,7 +135,6 @@ $boarder-colour: #B1B4B6;
 .scale-marker__card {
   width: 78px;
   bottom: 30px;
-  margin-left: -40px;
   background-color: govuk-colour("white");
   border: 2px solid govuk-colour("black");
 }
