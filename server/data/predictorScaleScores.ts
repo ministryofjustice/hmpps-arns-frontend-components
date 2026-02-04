@@ -63,12 +63,12 @@ const predictorScaleScores = {
   },
   OSPDC: {
     level: 'LOW',
-    type: 'OSP/DC',
+    type: 'OSP-DC',
     lastUpdated: '19 December 2024',
   },
   OSPIIC: {
     level: 'MEDIUM',
-    type: 'OSP/IIC',
+    type: 'OSP-IIC',
     lastUpdated: '19 December 2024',
   },
   RSR: {

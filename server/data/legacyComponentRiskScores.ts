@@ -10,12 +10,12 @@ const legacyComponentRiskScores = {
       OSPDC: {
         level: 'MEDIUM',
         score: 8.76,
-        type: 'OSP/DC',
+        type: 'OSP-DC',
       },
       OSPIIC: {
         level: 'LOW',
         score: 3.45,
-        type: 'OSP/IIC',
+        type: 'OSP-IIC',
       },
     },
   },
@@ -31,12 +31,12 @@ const legacyComponentRiskScores = {
         OSPDC: {
           level: 'MEDIUM',
           score: 7.76,
-          type: 'OSP/DC',
+          type: 'OSP-DC',
         },
         OSPIIC: {
           level: 'LOW',
           score: 3.45,
-          type: 'OSP/IIC',
+          type: 'OSP-IIC',
         },
       },
     },
@@ -51,12 +51,12 @@ const legacyComponentRiskScores = {
         OSPC: {
           level: 'MEDIUM',
           score: 6.76,
-          type: 'OSP/C',
+          type: 'OSP-C',
         },
         OSPI: {
           level: 'LOW',
           score: 3.45,
-          type: 'OSP/I',
+          type: 'OSP-I',
         },
       },
     },

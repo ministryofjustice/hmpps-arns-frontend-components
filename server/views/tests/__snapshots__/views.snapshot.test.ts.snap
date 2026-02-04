@@ -2444,7 +2444,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
     
 
 <div class="moj-predictor-timeline-item--medium">
-    <span class="moj-predictor-timeline-item__level"><strong>OSP/DC</strong> MEDIUM</span>
+    <span class="moj-predictor-timeline-item__level"><strong>OSP-DC</strong> MEDIUM</span>
     
     <span class="moj-predictor-timeline-item__score">7.76</span>
     
@@ -2460,7 +2460,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
 
 
 <div class="moj-predictor-timeline-item--low">
-    <span class="moj-predictor-timeline-item__level"><strong>OSP/IIC</strong> LOW</span>
+    <span class="moj-predictor-timeline-item__level"><strong>OSP-IIC</strong> LOW</span>
     
     <span class="moj-predictor-timeline-item__score">3.45</span>
     
@@ -2730,7 +2730,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
     
 
 <div class="moj-predictor-timeline-item--medium">
-    <span class="moj-predictor-timeline-item__level"><strong>OSP/DC</strong> MEDIUM</span>
+    <span class="moj-predictor-timeline-item__level"><strong>OSP-DC</strong> MEDIUM</span>
     
     <span class="moj-predictor-timeline-item__score">7.76</span>
     
@@ -2748,7 +2748,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
 
 
 <div class="moj-predictor-timeline-item--low">
-    <span class="moj-predictor-timeline-item__level"><strong>OSP/IIC</strong> LOW</span>
+    <span class="moj-predictor-timeline-item__level"><strong>OSP-IIC</strong> LOW</span>
     
     <span class="moj-predictor-timeline-item__score">3.45</span>
     
@@ -2799,7 +2799,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
     
 
 <div class="moj-predictor-timeline-item--medium">
-    <span class="moj-predictor-timeline-item__level"><strong>OSP/C</strong> MEDIUM</span>
+    <span class="moj-predictor-timeline-item__level"><strong>OSP-C</strong> MEDIUM</span>
     
     <span class="moj-predictor-timeline-item__score">6.76</span>
     
@@ -2817,7 +2817,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
 
 
 <div class="moj-predictor-timeline-item--low">
-    <span class="moj-predictor-timeline-item__level"><strong>OSP/I</strong> LOW</span>
+    <span class="moj-predictor-timeline-item__level"><strong>OSP-I</strong> LOW</span>
     
     <span class="moj-predictor-timeline-item__score">3.45</span>
     
@@ -5449,7 +5449,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <div class="predictor-scale govuk-body">
     <div class="predictor-scale-header-wrapper">
       <div>
-        <h2 class="govuk-heading-m">OSP/DC</h2>
+        <h2 class="govuk-heading-m">OSP-DC</h2>
         <p class="govuk-hint">Last updated: 19 December 2024</p>
       </div>
       
@@ -5518,7 +5518,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <div class="predictor-scale govuk-body">
     <div class="predictor-scale-header-wrapper">
       <div>
-        <h2 class="govuk-heading-m">OSP/IIC</h2>
+        <h2 class="govuk-heading-m">OSP-IIC</h2>
         <p class="govuk-hint">Last updated: 19 December 2024</p>
       </div>
       
@@ -5851,7 +5851,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     </div>
     <div class="govuk-grid-column-one-half">
-      <h2 class="govuk-heading-l score-header">OSP/DC score</h2>
+      <h2 class="govuk-heading-l score-header">OSP-DC score</h2>
       
 
 
@@ -5875,7 +5875,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
                 <div class="score-label__card">
     <div class="score-label__card-top">
         <h3>MEDIUM</h3>
-        <p>OSP/DC</p>
+        <p>OSP-DC</p>
     </div>
     
     <div class="score-label__card-pointer score-label__card-pointer--white"></div>
@@ -5904,7 +5904,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     </div>
     <div class="govuk-grid-column-one-half">
-      <h2 class="govuk-heading-l score-header">OSP/IIC score</h2>
+      <h2 class="govuk-heading-l score-header">OSP-IIC score</h2>
       
 
 
@@ -5928,7 +5928,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
                 <div class="score-label__card">
     <div class="score-label__card-top">
         <h3>LOW</h3>
-        <p>OSP/IIC</p>
+        <p>OSP-IIC</p>
     </div>
     
     <div class="score-label__card-pointer score-label__card-pointer--white"></div>
