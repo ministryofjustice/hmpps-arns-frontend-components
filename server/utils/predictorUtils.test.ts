@@ -1,4 +1,4 @@
-import { convertScoreToScalePosition } from './predictorUtils'
+import { convertBandToScalePosition, convertScoreToScalePosition, Level } from './predictorUtils'
 
 describe('predictorUtils', () => {
   describe('convertScoreToScalePosition', () => {
@@ -63,6 +63,30 @@ describe('predictorUtils', () => {
       expect(convertScoreToScalePosition(score, thresholds)).toBe(expectedPosition)
       // Uncomment the below to see a visualisation of the calculated position
       // visualiseTestResult(score, thresholds, expectedPosition)
+    })
+  })
+  describe('convertBandToScalePosition', () => {
+    it.each([['VERY_HIGH', false, 'Level cannot be set to VERY_HIGH if includeVeryHigh=false']])(
+      'Error cases - convertBandToScalePosition(%s, %s) - %s',
+      (level, includeVeryHigh, errorMessage) => {
+        expect(() => {
+          convertBandToScalePosition(level as Level, includeVeryHigh)
+        }).toThrow(Error(errorMessage))
+      },
+    )
+
+    it.each([
+      ['LOW', false, 17],
+      ['LOW', true, 13],
+      ['MEDIUM', false, 50],
+      ['MEDIUM', true, 38],
+      ['HIGH', false, 83],
+      ['HIGH', true, 63],
+      ['VERY_HIGH', true, 88],
+    ])('Happy path cases - convertBandToScalePosition(%s, %s) -> %s', (level, includeVeryHigh, expectedPosition) => {
+      expect(convertBandToScalePosition(level as Level, includeVeryHigh)).toBe(expectedPosition)
+      // Uncomment the below to see a visualisation of the calculated position
+      // visualiseTestResult(0, includeVeryHigh ? [0, 25, 50, 75, 100] : [0, 33, 67, 100], expectedPosition)
     })
   })
 })

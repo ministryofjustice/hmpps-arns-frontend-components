@@ -1,4 +1,4 @@
-type Level = 'LOW' | 'MEDIUM' | 'HIGH' | 'VERY_HIGH'
+export type Level = 'LOW' | 'MEDIUM' | 'HIGH' | 'VERY_HIGH'
 
 export const convertScoreToScalePosition = (score: number, thresholds: number[]) => {
   if (thresholds.length < 2) {
