@@ -163,8 +163,8 @@ $low-score-colour__text: #485b10;
 
 .predictor-timeline-link-btn {
    @include govuk-font($size: 19);
-   text-decoration-thickness: max(3px,.1875rem,.12em);
-   text-underline-offset: 3px;
+   text-decoration-thickness: $govuk-link-underline-thickness;
+   text-underline-offset: $govuk-link-underline-offset;
    background: none;
    border: none;
    color: $govuk-link-colour;
@@ -173,6 +173,15 @@ $low-score-colour__text: #485b10;
    cursor: pointer;
    text-decoration-skip-ink: none;
    text-decoration-skip: none
+}
+
+.predictor-timeline-link-btn:hover {
+  color: $govuk-link-hover-colour;
+  text-decoration-thickness: $govuk-link-hover-underline-thickness;
+  // Disable ink skipping on underlines on hover. Browsers haven't
+  // standardised on this part of the spec yet, so set both properties
+  text-decoration-skip-ink: none; // Chromium, Firefox
+  text-decoration-skip: none; // Safari
 }
 
 .predictor-timeline-link-btn:focus {
