@@ -74,14 +74,14 @@ const predictorScaleScores = {
   },
   OSPDC: {
     level: 'LOW',
+    type: 'OSP-DC',
     scalePosition: convertBandToScalePosition('LOW', true),
-    type: 'OSP/DC',
     lastUpdated: '19 December 2024',
   },
   OSPIIC: {
     level: 'MEDIUM',
+    type: 'OSP-IIC',
     scalePosition: convertBandToScalePosition('MEDIUM', false),
-    type: 'OSP/IIC',
     lastUpdated: '19 December 2024',
   },
   RSR: {

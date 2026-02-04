@@ -151,8 +151,8 @@
 
 <div class="predictor-timeline__heading">
   <span class='govuk-heading-m'>Scores history</span>
-  <a id="predictor-timeline__toggle-all" href="#" class="govuk-link" aria-label="Open all score history"
-     aria-controls="{{ allSectionIds }}" aria-expanded="false">Open all</a>
+  <button id="predictor-timeline__toggle-all" class="predictor-timeline-link-btn" aria-label="Open all score history"
+     aria-controls="{{ allSectionIds }}" aria-expanded="false">Open all</button>
 </div>
 
 <div class="predictor-timeline predictor">
@@ -183,8 +183,8 @@
             {% endfor %}
           </ul>
         </div>
-        <a href="#" class="govuk-link predictor-timeline__toggle-section" aria-label="View scores for {{ item.date }}"
-           aria-controls="{{ sectionId }}" aria-expanded="false">Open</a>
+        <button class="predictor-timeline-link-btn predictor-timeline__toggle-section" aria-label="View scores for {{ item.date }}"
+           aria-controls="{{ sectionId }}" aria-expanded="false">Open</button>
       </div>
     </div>
   {% endfor %}
