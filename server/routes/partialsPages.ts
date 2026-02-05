@@ -30,6 +30,16 @@ export default function componentPageRoutes({ arnsComponents }: Services): Route
     const navSections = activateMojNav(rawNavSections, req.path)
     res.render('pages/expandedPredictorBadgePage', { badgeRiskScores, legacyBadgeRiskScores, navSections })
   })
+  router.get('/expanded-predictor-badge/new', async (req, res) => {
+    const navSections = activateMojNav(rawNavSections, req.path)
+    const riskData = await arnsComponents.getRiskData(null, 'crn', 'X123456')
+    const riskDataLegacy = await arnsComponents.getRiskData(null, 'crn', 'X654321')
+    res.render('pages/expandedPredictorBadgeLibraryPage', {
+      navSections,
+      riskData,
+      riskDataLegacy,
+    })
+  })
   router.get('/mappa-widget', async (req, res) => {
     const navSections = activateMojNav(rawNavSections, req.path)
     res.render('pages/mappaWidgetPage', { widgetData, navSections })
