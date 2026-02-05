@@ -108,7 +108,7 @@ $boarder-colour: #B1B4B6;
 @for $margin from 0 through 100 {
   .scale-marker-wrapper--margin-#{$margin} {
     position: relative;
-    left: calc(-40px + ($margin/100)*(100%));
+    left: calc(-40px + ($margin/100)*(100% - 1px));
   }
 }
 
@@ -177,10 +177,10 @@ $boarder-colour: #B1B4B6;
   margin-bottom: 15px;
 
   & > div {
-    width: 33%;
+    width: calc(100%/3);
     display: inline;
     float: left;
-    border-right: 1px solid transparent;
+    //border-right: 1px solid transparent;
     box-sizing: border-box;
   }
 
@@ -223,7 +223,7 @@ $boarder-colour: #B1B4B6;
 
 .scale-bar--small-fourths {
   & > div {
-    width: 25%;
+    width: calc(100%/4);
     padding-bottom: 20px;
   }
 
@@ -247,15 +247,15 @@ $boarder-colour: #B1B4B6;
   clear: both;
 
   & > div {
-    width: 33.33%;
+    width: calc(100%/3);
     height: 30px;
     float: left;
-    border-right: 1px solid govuk-colour("black");
+    //border-right: 1px solid govuk-colour("black");
     box-sizing: border-box;
     position: relative;
 
     &:first-child {
-      border-left: 1px solid govuk-colour("black");
+      //border-left: 1px solid govuk-colour("black");
     }
 
     & > span:first-child {
@@ -311,7 +311,7 @@ $boarder-colour: #B1B4B6;
 
 .scale-bar--fourths {
   & > div {
-    width: 25% !important;
+    width: calc(100%/4) !important;
   }
   & > div:nth-child(4) {
     & > span:first-child {
