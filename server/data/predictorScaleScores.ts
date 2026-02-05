@@ -49,7 +49,7 @@ const predictorScaleScores = {
   },
   OGP: {
     level: 'HIGH',
-    score: 42.67,
+    score: 72.67,
     type: 'OGP',
     lastUpdated: '19 December 2024',
     bandPercentages: ['0%', '34%', '67%', '85%', '100%'],
