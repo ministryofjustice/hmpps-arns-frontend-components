@@ -1,0 +1,109 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/arns-api/risks/predictors/all/crn/X654321"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": [
+      {
+        "completedDate": "2025-01-01T10:30:00",
+        "status": "COMPLETE",
+        "outputVersion": "1",
+        "output": {
+          "groupReconvictionScore": {
+            "oneYear": 3,
+            "twoYears": 5,
+            "scoreLevel": "LOW"
+          },
+          "violencePredictorScore": {
+            "ovpStaticWeightedScore": 14,
+            "ovpDynamicWeightedScore": 3,
+            "ovpTotalWeightedScore": 17,
+            "oneYear": 4,
+            "twoYears": 7,
+            "ovpRisk": "MEDIUM"
+          },
+          "generalPredictorScore": {
+            "ogpStaticWeightedScore": 3,
+            "ogpDynamicWeightedScore": 7,
+            "ogpTotalWeightedScore": 10,
+            "ogp1Year": 4,
+            "ogp2Year": 8,
+            "ogpRisk": "HIGH"
+          },
+          "riskOfSeriousRecidivismScore": {
+            "percentageScore": 50.1234,
+            "staticOrDynamic": "DYNAMIC",
+            "source": "OASYS",
+            "algorithmVersion": 5,
+            "scoreLevel": "VERY_HIGH"
+          },
+          "sexualPredictorScore": {
+            "ospIndecentPercentageScore": 2.81,
+            "ospContactPercentageScore": 1.07,
+            "ospIndecentScoreLevel": "LOW",
+            "ospContactScoreLevel": "MEDIUM"
+          }
+        }
+      },
+      {
+        "completedDate": "2024-01-01T10:30:00",
+        "status": "COMPLETE",
+        "outputVersion": "1",
+        "output": {
+          "groupReconvictionScore": {},
+          "violencePredictorScore": {},
+          "generalPredictorScore": {},
+          "riskOfSeriousRecidivismScore": {
+            "percentageScore": 51.2345,
+            "staticOrDynamic": "DYNAMIC",
+            "source": "OASYS",
+            "algorithmVersion": 5,
+            "scoreLevel": "VERY_HIGH"
+          },
+          "sexualPredictorScore": {}
+        }
+      },
+      {
+        "completedDate": "2023-01-01T10:30:00",
+        "status": "COMPLETE",
+        "outputVersion": "2",
+        "output": {
+          "allReoffendingPredictor": {
+            "staticOrDynamic": "STATIC",
+            "score": 1.23,
+            "band": "LOW"
+          },
+          "violentReoffendingPredictor": {
+            "staticOrDynamic": "STATIC",
+            "score": 1.23,
+            "band": "MEDIUM"
+          },
+          "seriousViolentReoffendingPredictor": {
+            "staticOrDynamic": "STATIC",
+            "score": 1.23,
+            "band": "HIGH"
+          },
+          "directContactSexualReoffendingPredictor": {
+            "score": 2.81,
+            "band": "VERY_HIGH"
+          },
+          "indirectImageContactSexualReoffendingPredictor": {
+            "score": 1.07,
+            "band": "LOW"
+          },
+          "combinedSeriousReoffendingPredictor": {
+            "algorithmVersion": 6,
+            "staticOrDynamic": "DYNAMIC",
+            "score": 1.23,
+            "band": "LOW"
+          }
+        }
+      }
+    ]
+  }
+}
