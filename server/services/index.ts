@@ -1,10 +1,11 @@
 import { dataAccess } from '../data'
 
 export const services = () => {
-  const { applicationInfo } = dataAccess()
+  const { applicationInfo, arnsComponents } = dataAccess()
 
   return {
     applicationInfo,
+    arnsComponents,
   }
 }
 

@@ -1,3 +1,5 @@
+import { AgentConfig } from '@ministryofjustice/hmpps-rest-client'
+
 const production = process.env.NODE_ENV === 'production'
 
 function get<T>(name: string, fallback: T, options = { requireInProduction: false }): T | string {
@@ -30,6 +32,17 @@ export default {
   session: {
     secret: get('SESSION_SECRET', 'app-insecure-default-session', requiredInProduction),
     expiryMinutes: Number(get('WEB_SESSION_TIMEOUT_IN_MINUTES', 120)),
+  },
+  apis: {
+    arnsApi: {
+      url: get('ARNS_API_URL', 'http://localhost:9091/arns-api', requiredInProduction),
+      healthPath: '/health/ping',
+      timeout: {
+        response: Number(get('ARNS_API_TIMEOUT_RESPONSE', 5000)),
+        deadline: Number(get('ARNS_API_TIMEOUT_DEADLINE', 5000)),
+      },
+      agent: new AgentConfig(Number(get('ARNS_API_TIMEOUT_RESPONSE', 5000))),
+    },
   },
   ingressUrl: get('INGRESS_URL', 'http://localhost:3000', requiredInProduction),
   environmentName: get('ENVIRONMENT_NAME', ''),
