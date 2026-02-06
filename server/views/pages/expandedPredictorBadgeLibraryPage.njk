@@ -1,8 +1,8 @@
 {% extends "layouts/side-nav-layout.njk" %}
 {% from "moj/components/alert/macro.njk" import mojAlert %}
-{% from "arns/components/badge/macro.njk" import predictorBadge %}
+{% from "arns/components/expanded-badge/macro.njk" import expandedPredictorBadge %}
 
-{% set pageTitle = "Library predictor badge" %}
+{% set pageTitle = "Library expanded predictor badge" %}
 {% set mainClasses = "govuk-body" %}
 
 {% block sideNavContent %}
@@ -17,39 +17,23 @@
         <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4471390821/Risk+badges">Risk badges</a>
         Confluence documentation for usage details.
       </p>
-      {{ mojAlert({
-        variant: "warning",
-        title: "Width constraints",
-        showTitleAsHeading: true,
-        dismissible: false,
-        html: 'Implementing systems should account for the width constraints of the parent container in which the predictor badge is rendered. The standard predictor badge is intended to display as a single line with no text wrapping. If the predictor name and band exceeds the available space and would require wrapping, use the <a href="/expanded-predictor-badge">expanded predictor badge</a> instead.'
-      }) }}
-      <p>
-        Example of when <strong>not</strong> to use this component due to text wrapping
-      </p>
-      <div class="badge-restricted-width">
-        {{ predictorBadge({
-          data: riskData,
-          predictor: "indirectImageContactSexualReoffendingPredictor",
-          showScore: true
-        }) }}
-      </div>
-
       <h3>Usage example</h3>
-      <pre><code>{% verbatim %}{% from "arns/components/badge/macro.njk" import predictorBadge %}{% endverbatim %}
+      <pre><code>{% verbatim %}{% from "arns/components/expanded-badge/macro.njk" import expandedPredictorBadge %}{% endverbatim %}
 
-predictorBadge(
+expandedPredictorBadge(
   data: riskData,
   predictor: "allReoffendingPredictor",
-  showScore: true
+  showScore: true,
+  fixedWidth: true
 })
 </code></pre>
 
       <p> renders as follows:</p>
-      {{ predictorBadge({
+      {{ expandedPredictorBadge({
         data: riskData,
         predictor: "allReoffendingPredictor",
-        showScore: true
+        showScore: true,
+        fixedWidth: true
       }) }}
 
       <h3>Macro inputs</h3>
@@ -81,92 +65,144 @@ predictorBadge(
             <li>false - hides the score within the predictor badge</li>
           </ul>
         </li>
+        <li>fixedWidth (boolean)
+          <ul>
+            <li>true - the component has a fixed width</li>
+            <li>false - the component will stretch to the width of the container</li>
+          </ul>
+        </li>
       </ul>
 
-      <h2>OGRS4 Examples</h2>
+      <h2>OGRS4 Examples (fixed width)</h2>
       <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
+        {{ expandedPredictorBadge({
           data: riskData,
           predictor: "allReoffendingPredictor",
-          showScore: true
+          showScore: true,
+          fixedWidth: true
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
+        {{ expandedPredictorBadge({
           data: riskData,
           predictor: "violentReoffendingPredictor",
-          showScore: true
+          showScore: true,
+          fixedWidth: true
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
+        {{ expandedPredictorBadge({
           data: riskData,
           predictor: "seriousViolentReoffendingPredictor",
-          showScore: true
+          showScore: true,
+          fixedWidth: true
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
+        {{ expandedPredictorBadge({
           data: riskData,
           predictor: "directContactSexualReoffendingPredictor",
-          showScore: true
+          showScore: true,
+          fixedWidth: true
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
+        {{ expandedPredictorBadge({
           data: riskData,
           predictor: "indirectImageContactSexualReoffendingPredictor",
-          showScore: true
+          showScore: true,
+          fixedWidth: true
         }) }}
       </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
+      <div class="govuk-!-margin-bottom-8">
+        {{ expandedPredictorBadge({
           data: riskData,
           predictor: "combinedSeriousReoffendingPredictor",
-          showScore: true
+          showScore: true,
+          fixedWidth: true
         }) }}
       </div>
-      <h2>Legacy data examples</h2>
+      <h2>OGRS4 Examples (dynamic width)</h2>
       <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
+        {{ expandedPredictorBadge({
+          data: riskData,
+          predictor: "allReoffendingPredictor",
+          showScore: true,
+          fixedWidth: false
+        }) }}
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        {{ expandedPredictorBadge({
+          data: riskData,
+          predictor: "indirectImageContactSexualReoffendingPredictor",
+          showScore: true,
+          fixedWidth: false
+        }) }}
+      </div>
+      <h2>Legacy data examples (fixed width)</h2>
+      <div class="govuk-!-margin-bottom-4">
+        {{ expandedPredictorBadge({
           data: riskDataLegacy,
           predictor: "ogrs3",
-          showScore: true
+          showScore: true,
+          fixedWidth: true
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
+        {{ expandedPredictorBadge({
           data: riskDataLegacy,
           predictor: "ovp",
-          showScore: true
+          showScore: true,
+          fixedWidth: true
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
+        {{ expandedPredictorBadge({
           data: riskDataLegacy,
           predictor: "ogp",
-          showScore: true
+          showScore: true,
+          fixedWidth: true
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
+        {{ expandedPredictorBadge({
           data: riskDataLegacy,
           predictor: "rsr",
-          showScore: true
+          showScore: true,
+          fixedWidth: true
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
+        {{ expandedPredictorBadge({
           data: riskDataLegacy,
           predictor: "ospdc",
-          showScore: false
+          showScore: false,
+          fixedWidth: true
+        }) }}
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        {{ expandedPredictorBadge({
+          data: riskDataLegacy,
+          predictor: "ospiic",
+          showScore: false,
+          fixedWidth: true
+        }) }}
+      </div>
+      <h2>Legacy data examples (dynamic width)</h2>
+      <div class="govuk-!-margin-bottom-4">
+        {{ expandedPredictorBadge({
+          data: riskDataLegacy,
+          predictor: "ogp",
+          showScore: true,
+          fixedWidth: false
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
+        {{ expandedPredictorBadge({
           data: riskDataLegacy,
-          predictor: "ospiic",
-          showScore: false
+          predictor: "rsr",
+          showScore: true,
+          fixedWidth: false
         }) }}
       </div>
     </div>
