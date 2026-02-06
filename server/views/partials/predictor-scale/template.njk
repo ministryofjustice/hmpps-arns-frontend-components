@@ -38,8 +38,6 @@
     {% set scaleMarkerClass = 'scale-marker-wrapper--very-high' %}
 {% endswitch %}
 
-{% set scalePositionClass = 'scale-marker-wrapper--margin-' + predictorScore.scalePosition %}
-
 {% set barTypeClass = '' %}
 
 {% if includeVeryHigh !== true and includePercentage !== true %}
@@ -70,7 +68,7 @@
     </div>
 
     <div class="scale-marker">
-      <div class="{{ scaleMarkerClass }} {{ scalePositionClass }}">
+      <div class="{{ scaleMarkerClass }} scale-marker-wrapper" data-margin="{{ predictorScore.scalePosition }}">
         {{ predictorScaleMarker(predictorScore, includeScore) }}
       </div>
     </div>

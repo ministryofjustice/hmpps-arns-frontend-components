@@ -17,7 +17,8 @@ export const convertScoreToScalePosition = (score: number, thresholds: number[])
     if (score >= lower && score <= upper) {
       const progressInSegment = (score - lower) / (upper - lower)
       const totalPercentage = i * segmentWeight + progressInSegment * segmentWeight
-      return Math.round(totalPercentage)
+
+      return totalPercentage.toFixed(2)
     }
   }
 
