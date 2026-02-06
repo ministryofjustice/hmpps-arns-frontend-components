@@ -1,6 +1,52 @@
 {%- from "govuk/components/tag/macro.njk" import govukTag -%}
 {% set scaleMarkerClass = '' %}
 {% set staticOrDynamic = '' %}
+{% set thresholds = [] %}
+
+
+  {# select thresholds (switch-style) #}
+  {% if predictorScore.type == "All Reoffending Predictor" %}
+    {% set thresholds = [0, 50, 75, 90, 100] %}
+  {% elif predictorScore.type == "Violent Reoffending Predictor" %}
+    {% set thresholds = [0, 30, 60, 80, 100] %}
+  {% elif predictorScore.type == "Combined Serious Reoffending Predictor" %}
+    {% set thresholds = [0, 1, 3, 6.9, 25] %}
+  {% elif predictorScore.type == "OGRS3" %}
+    {% set thresholds = [0, 50, 75, 90, 100] %}
+  {% elif predictorScore.type == "OGP" %}
+    {% set thresholds = [0, 34, 67, 85, 100] %}
+  {% elif predictorScore.type == "OVP" %}
+    {% set thresholds = [0, 30, 60, 80, 100] %}
+  {% elif predictorScore.type == "RSR" %}
+    {% set thresholds = [0, 3, 6.9, 25] %}
+  {% else %}
+    {% set thresholds = null %}
+  {% endif %}
+
+  {% set numSegments = thresholds | length - 1 %}
+  {% set segmentWeight = 100 / numSegments %}
+  {% set scalePosition = '' %}
+  {% set found = false %}
+
+  {% for i in range(0, numSegments) %}
+    {% if not found %}
+      {% set lower = thresholds[i] %}
+      {% set upper = thresholds[i + 1] %}
+
+      {% if predictorScore.score >= lower and predictorScore.score <= upper %}
+        {% set progressInSegment = (predictorScore.score - lower) / (upper - lower) %}
+        {% set scalePosition =
+          (
+          (i * segmentWeight) +
+          (progressInSegment * segmentWeight)
+          ) | round(2)
+        %}
+        {% set found = true %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+
 
 {% macro predictorScaleMarker(predictorScore, includeScore) %}
   <div class="scale-marker__card">
@@ -68,23 +114,23 @@
     </div>
 
     <div class="scale-marker">
-      <div class="{{ scaleMarkerClass }} scale-marker-wrapper" data-margin="{{ predictorScore.scalePosition }}">
+      <div class="{{ scaleMarkerClass }} scale-marker-wrapper" data-margin="{{ scalePosition }}">
         {{ predictorScaleMarker(predictorScore, includeScore) }}
       </div>
     </div>
 
     <div class="{{ barTypeClass }}">
-      <div data-band-persentage-start="{{ predictorScore.bandPercentages[0] }}" data-band-persentage="{{ predictorScore.bandPercentages[1] }}">
+      <div data-band-persentage-start="{{ thresholds[0] }}" data-band-persentage="{{ thresholds[1] }}">
         <span></span>
       </div>
-      <div data-band-persentage="{{ predictorScore.bandPercentages[2] }}">
+      <div data-band-persentage="{{ thresholds[2] }}">
         <span></span>
       </div>
-      <div data-band-persentage="{{ predictorScore.bandPercentages[3] }}">
+      <div data-band-persentage="{{ thresholds[3] }}">
         <span></span>
       </div>
       {% if includeVeryHigh === true %}
-        <div data-band-persentage="{{ predictorScore.bandPercentages[4] }}">
+        <div data-band-persentage="{{ thresholds[4] }}">
           <span></span>
         </div>
       {% endif %}
