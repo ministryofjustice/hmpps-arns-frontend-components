@@ -1,0 +1,26 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/arns-api/risks/predictors/all/crn/X000001"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": [
+      {
+        "completedDate": "2025-01-01T10:30:00",
+        "status": "COMPLETE",
+        "outputVersion": "2",
+        "output": {
+          "allReoffendingPredictor": {
+            "staticOrDynamic": "STATIC",
+            "score": 1.23,
+            "band": "NOT_APPLICABLE"
+          }
+        }
+      }
+    ]
+  }
+}

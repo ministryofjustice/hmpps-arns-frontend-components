@@ -72,6 +72,18 @@ export default function componentPageRoutes({ arnsComponents }: Services): Route
     const navSections = activateMojNav(rawNavSections, req.path)
     res.render('pages/predictorScalePage', { predictorScaleScores, predictorScaleNotApplicableScores, navSections })
   })
+  router.get('/predictor-scale/new', async (req, res) => {
+    const navSections = activateMojNav(rawNavSections, req.path)
+    const riskData = await arnsComponents.getRiskData(null, 'crn', 'X123456')
+    const riskDataLegacy = await arnsComponents.getRiskData(null, 'crn', 'X654321')
+    const riskDataErrorCases = await arnsComponents.getRiskData(null, 'crn', 'X000001')
+    res.render('pages/predictorScaleLibraryPage', {
+      navSections,
+      riskData,
+      riskDataLegacy,
+      riskDataErrorCases,
+    })
+  })
 
   return router
 }

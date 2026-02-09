@@ -70,6 +70,11 @@ describe('View Snapshot Tests: All Pages', () => {
     expect(response.text).toMatchSnapshot()
   })
 
+  it('should match snapshot for the predictor scale page (/predictor-scale/new)', async () => {
+    const response = await request(app).get('/predictor-scale/new').expect(200)
+    expect(response.text).toMatchSnapshot()
+  })
+
   it('should match snapshot for the legacy predictor timeline page (/legacy-predictor-timeline)', async () => {
     const response = await request(app).get('/legacy-predictor-timeline').expect(200)
     expect(response.text).toMatchSnapshot()
