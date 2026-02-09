@@ -30,7 +30,7 @@ services:
     ports:
       - "9091:8080"
     volumes:
-      - ./wiremock/mappings:/home/wiremock/mappings
+      - ./helm_deploy/hmpps-arns-frontend-components/mappings:/home/wiremock/mappings
 
 networks:
   hmpps:
