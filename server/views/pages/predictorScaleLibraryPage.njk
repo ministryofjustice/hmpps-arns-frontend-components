@@ -1,6 +1,6 @@
 {% extends "layouts/side-nav-layout.njk" %}
 {% from "moj/components/alert/macro.njk" import mojAlert %}
-{% from "arns/components/scale/macro.njk" import predictorScale %}
+{% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
 
 {% set pageTitle = "Library predictor scale" %}
 {% set mainClasses = "govuk-body" %}
@@ -18,7 +18,7 @@
         Confluence documentation for usage details.
       </p>
       <h3>Usage example</h3>
-      <pre><code>{% verbatim %}{% from "arns/components/scale/macro.njk" import predictorScale %}{% endverbatim %}
+      <pre><code>{% verbatim %}{% from "arns/components/predictor-scale/macro.njk" import predictorScale %}{% endverbatim %}
 
 predictorScale(
   data: riskData,
