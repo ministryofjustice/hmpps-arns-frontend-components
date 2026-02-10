@@ -7522,7 +7522,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         Confluence documentation for usage details.
       </p>
       <h3>Usage example</h3>
-      <pre><code>{% from "arns/components/scale/macro.njk" import predictorScale %}
+      <pre><code>{% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
 
 predictorScale(
   data: riskData,
@@ -7567,8 +7567,8 @@ predictorScale(
       
 
       
-        <div class="predictor-scale govuk-body">
-          <div class="predictor-scale-header-wrapper">
+        <div class="arns-predictor-scale govuk-body">
+          <div class="arns-predictor-scale-header-wrapper">
             <div>
               <h2 class="govuk-heading-m">All Reoffending Predictor</h2>
               <p class="govuk-hint">Last updated: 01 January 2025</p>
@@ -7581,25 +7581,25 @@ predictorScale(
             
           </div>
 
-          <div class="scale-marker">
-            <div class="scale-marker-wrapper--low scale-marker-wrapper--position-one-of-four">
+          <div class="arns-scale-marker">
+            <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper--position-one-of-four">
               
-  <div class="scale-marker__card">
-    <div class="scale-marker__card-top">
+  <div class="arns-scale-marker__card">
+    <div class="arns-scale-marker__card-top">
       <h3>LOW</h3>
     </div>
     
-      <div class="scale-marker__card-bottom">
+      <div class="arns-scale-marker__card-bottom">
         <p>1.23%</p>
       </div>
-      <div class="scale-marker__card-pointer"></div>
+      <div class="arns-scale-marker__card-pointer"></div>
     
   </div>
 
             </div>
           </div>
 
-          <div class="scale-bar scale-bar--fourths">
+          <div class="arns-scale-bar arns-scale-bar--fourths">
             <div data-band-percentage-start="0%" data-band-percentage="50%">
               <span></span>
             </div>
@@ -7696,8 +7696,8 @@ predictorScale(
       
 
       
-        <div class="predictor-scale govuk-body">
-          <div class="predictor-scale-header-wrapper">
+        <div class="arns-predictor-scale govuk-body">
+          <div class="arns-predictor-scale-header-wrapper">
             <div>
               <h2 class="govuk-heading-m">All Reoffending Predictor</h2>
               <p class="govuk-hint">Last updated: 01 January 2025</p>
@@ -7710,25 +7710,25 @@ predictorScale(
             
           </div>
 
-          <div class="scale-marker">
-            <div class="scale-marker-wrapper--low scale-marker-wrapper--position-one-of-four">
+          <div class="arns-scale-marker">
+            <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper--position-one-of-four">
               
-  <div class="scale-marker__card">
-    <div class="scale-marker__card-top">
+  <div class="arns-scale-marker__card">
+    <div class="arns-scale-marker__card-top">
       <h3>LOW</h3>
     </div>
     
-      <div class="scale-marker__card-bottom">
+      <div class="arns-scale-marker__card-bottom">
         <p>1.23%</p>
       </div>
-      <div class="scale-marker__card-pointer"></div>
+      <div class="arns-scale-marker__card-pointer"></div>
     
   </div>
 
             </div>
           </div>
 
-          <div class="scale-bar scale-bar--fourths">
+          <div class="arns-scale-bar arns-scale-bar--fourths">
             <div data-band-percentage-start="0%" data-band-percentage="50%">
               <span></span>
             </div>
@@ -7801,8 +7801,8 @@ predictorScale(
       
 
       
-        <div class="predictor-scale govuk-body">
-          <div class="predictor-scale-header-wrapper">
+        <div class="arns-predictor-scale govuk-body">
+          <div class="arns-predictor-scale-header-wrapper">
             <div>
               <h2 class="govuk-heading-m">Violent Reoffending Predictor</h2>
               <p class="govuk-hint">Last updated: 01 January 2025</p>
@@ -7815,25 +7815,25 @@ predictorScale(
             
           </div>
 
-          <div class="scale-marker">
-            <div class="scale-marker-wrapper--low scale-marker-wrapper--position-one-of-four">
+          <div class="arns-scale-marker">
+            <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper--position-one-of-four">
               
-  <div class="scale-marker__card">
-    <div class="scale-marker__card-top">
+  <div class="arns-scale-marker__card">
+    <div class="arns-scale-marker__card-top">
       <h3>LOW</h3>
     </div>
     
-      <div class="scale-marker__card-bottom">
+      <div class="arns-scale-marker__card-bottom">
         <p>1.23%</p>
       </div>
-      <div class="scale-marker__card-pointer"></div>
+      <div class="arns-scale-marker__card-pointer"></div>
     
   </div>
 
             </div>
           </div>
 
-          <div class="scale-bar scale-bar--fourths">
+          <div class="arns-scale-bar arns-scale-bar--fourths">
             <div data-band-percentage-start="0%" data-band-percentage="30%">
               <span></span>
             </div>
@@ -7907,8 +7907,8 @@ predictorScale(
       
 
       
-        <div class="predictor-scale govuk-body">
-          <div class="predictor-scale-header-wrapper">
+        <div class="arns-predictor-scale govuk-body">
+          <div class="arns-predictor-scale-header-wrapper">
             <div>
               <h2 class="govuk-heading-m">Serious Violent Reoffending Predictor</h2>
               <p class="govuk-hint">Last updated: 01 January 2025</p>
@@ -7921,22 +7921,22 @@ predictorScale(
             
           </div>
 
-          <div class="scale-marker">
-            <div class="scale-marker-wrapper--medium scale-marker-wrapper--position-two-of-four">
+          <div class="arns-scale-marker">
+            <div class="arns-scale-marker-wrapper--medium arns-scale-marker-wrapper--position-two-of-four">
               
-  <div class="scale-marker__card">
-    <div class="scale-marker__card-top">
+  <div class="arns-scale-marker__card">
+    <div class="arns-scale-marker__card-top">
       <h3>MEDIUM</h3>
     </div>
     
-      <div class="scale-marker__card-pointer scale-marker__card-pointer--white"></div>
+      <div class="arns-scale-marker__card-pointer arns-scale-marker__card-pointer--white"></div>
     
   </div>
 
             </div>
           </div>
 
-          <div class="scale-bar--small scale-bar--small-fourths">
+          <div class="arns-scale-bar--small arns-scale-bar--small-fourths">
             <div data-band-percentage-start="" data-band-percentage="">
               <span></span>
             </div>
@@ -8010,8 +8010,8 @@ predictorScale(
       
 
       
-        <div class="predictor-scale govuk-body">
-          <div class="predictor-scale-header-wrapper">
+        <div class="arns-predictor-scale govuk-body">
+          <div class="arns-predictor-scale-header-wrapper">
             <div>
               <h2 class="govuk-heading-m">Direct Contact - Sexual Reoffending Predictor</h2>
               <p class="govuk-hint">Last updated: 01 January 2025</p>
@@ -8019,22 +8019,22 @@ predictorScale(
             
           </div>
 
-          <div class="scale-marker">
-            <div class="scale-marker-wrapper--very-high scale-marker-wrapper--position-four-of-four">
+          <div class="arns-scale-marker">
+            <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper--position-four-of-four">
               
-  <div class="scale-marker__card">
-    <div class="scale-marker__card-top">
+  <div class="arns-scale-marker__card">
+    <div class="arns-scale-marker__card-top">
       <h3>VERY HIGH</h3>
     </div>
     
-      <div class="scale-marker__card-pointer scale-marker__card-pointer--white"></div>
+      <div class="arns-scale-marker__card-pointer arns-scale-marker__card-pointer--white"></div>
     
   </div>
 
             </div>
           </div>
 
-          <div class="scale-bar--small scale-bar--small-fourths">
+          <div class="arns-scale-bar--small arns-scale-bar--small-fourths">
             <div data-band-percentage-start="" data-band-percentage="">
               <span></span>
             </div>
@@ -8109,8 +8109,8 @@ predictorScale(
       
 
       
-        <div class="predictor-scale govuk-body">
-          <div class="predictor-scale-header-wrapper">
+        <div class="arns-predictor-scale govuk-body">
+          <div class="arns-predictor-scale-header-wrapper">
             <div>
               <h2 class="govuk-heading-m">Images and Indirect Contact – Sexual Reoffending Predictor</h2>
               <p class="govuk-hint">Last updated: 01 January 2025</p>
@@ -8118,22 +8118,22 @@ predictorScale(
             
           </div>
 
-          <div class="scale-marker">
-            <div class="scale-marker-wrapper--high scale-marker-wrapper--position-three-of-three">
+          <div class="arns-scale-marker">
+            <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper--position-three-of-three">
               
-  <div class="scale-marker__card">
-    <div class="scale-marker__card-top">
+  <div class="arns-scale-marker__card">
+    <div class="arns-scale-marker__card-top">
       <h3>HIGH</h3>
     </div>
     
-      <div class="scale-marker__card-pointer scale-marker__card-pointer--white"></div>
+      <div class="arns-scale-marker__card-pointer arns-scale-marker__card-pointer--white"></div>
     
   </div>
 
             </div>
           </div>
 
-          <div class="scale-bar--small">
+          <div class="arns-scale-bar--small">
             <div data-band-percentage-start="" data-band-percentage="">
               <span></span>
             </div>
@@ -8202,8 +8202,8 @@ predictorScale(
       
 
       
-        <div class="predictor-scale govuk-body">
-          <div class="predictor-scale-header-wrapper">
+        <div class="arns-predictor-scale govuk-body">
+          <div class="arns-predictor-scale-header-wrapper">
             <div>
               <h2 class="govuk-heading-m">Combined Serious Reoffending Predictor</h2>
               <p class="govuk-hint">Last updated: 01 January 2025</p>
@@ -8216,25 +8216,25 @@ predictorScale(
             
           </div>
 
-          <div class="scale-marker">
-            <div class="scale-marker-wrapper--high scale-marker-wrapper--position-three-of-four">
+          <div class="arns-scale-marker">
+            <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper--position-three-of-four">
               
-  <div class="scale-marker__card">
-    <div class="scale-marker__card-top">
+  <div class="arns-scale-marker__card">
+    <div class="arns-scale-marker__card-top">
       <h3>HIGH</h3>
     </div>
     
-      <div class="scale-marker__card-bottom">
+      <div class="arns-scale-marker__card-bottom">
         <p>1.23%</p>
       </div>
-      <div class="scale-marker__card-pointer"></div>
+      <div class="arns-scale-marker__card-pointer"></div>
     
   </div>
 
             </div>
           </div>
 
-          <div class="scale-bar scale-bar--fourths">
+          <div class="arns-scale-bar arns-scale-bar--fourths">
             <div data-band-percentage-start="0%" data-band-percentage="1%">
               <span></span>
             </div>
@@ -8453,8 +8453,8 @@ predictorScale(
       
 
       
-        <div class="predictor-scale govuk-body">
-          <div class="predictor-scale-header-wrapper">
+        <div class="arns-predictor-scale govuk-body">
+          <div class="arns-predictor-scale-header-wrapper">
             <div>
               <h2 class="govuk-heading-m">All Reoffending Predictor</h2>
               <p class="govuk-hint">Last updated: 01 January 2025</p>
@@ -8467,25 +8467,25 @@ predictorScale(
             
           </div>
 
-          <div class="scale-marker">
-            <div class="scale-marker-wrapper--low scale-marker-wrapper--position-one-of-four">
+          <div class="arns-scale-marker">
+            <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper--position-one-of-four">
               
-  <div class="scale-marker__card">
-    <div class="scale-marker__card-top">
+  <div class="arns-scale-marker__card">
+    <div class="arns-scale-marker__card-top">
       <h3>LOW</h3>
     </div>
     
-      <div class="scale-marker__card-bottom">
+      <div class="arns-scale-marker__card-bottom">
         <p>1.23%</p>
       </div>
-      <div class="scale-marker__card-pointer"></div>
+      <div class="arns-scale-marker__card-pointer"></div>
     
   </div>
 
             </div>
           </div>
 
-          <div class="scale-bar scale-bar--fourths">
+          <div class="arns-scale-bar arns-scale-bar--fourths">
             <div data-band-percentage-start="0%" data-band-percentage="50%">
               <span></span>
             </div>
