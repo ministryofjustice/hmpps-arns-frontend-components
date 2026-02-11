@@ -313,7 +313,7 @@ $boarder-colour: #B1B4B6;
     &::after {
       @include govuk-font(16);
       @include scale-bar-label;
-      content: attr(data-band-persentage);
+      content: attr(data-band-percentage);
       position: absolute;
       bottom: -25px;
       right: 0;
@@ -324,7 +324,7 @@ $boarder-colour: #B1B4B6;
     &:first-child::before {
       @include govuk-font(16);
       @include scale-bar-label;
-      content: attr(data-band-persentage-start);
+      content: attr(data-band-percentage-start);
       position: absolute;
       bottom: -25px;
       left: 0;

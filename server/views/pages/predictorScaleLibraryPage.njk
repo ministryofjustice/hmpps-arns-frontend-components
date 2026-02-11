@@ -1,0 +1,144 @@
+{% extends "layouts/side-nav-layout.njk" %}
+{% from "moj/components/alert/macro.njk" import mojAlert %}
+{% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
+
+{% set pageTitle = "Library predictor scale" %}
+{% set mainClasses = "govuk-body" %}
+
+{% block sideNavContent %}
+  <h1 class="govuk-heading-xl">
+    {{ pageTitle }}
+  </h1>
+
+  <div id="predictor-scale-wrapper" class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h2>How to use</h2>
+      <p>Refer to the
+        <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4474143439/Risk+linear+scale"> Predictor scale </a>
+        Confluence documentation for usage details.
+      </p>
+      <h3>Usage example</h3>
+      <pre><code>{% verbatim %}{% from "arns/components/predictor-scale/macro.njk" import predictorScale %}{% endverbatim %}
+
+predictorScale(
+  data: riskData,
+  predictor: "allReoffendingPredictor"
+})
+</code></pre>
+
+      <p> renders as follows:</p>
+      {{ predictorScale({
+        data: riskData,
+        predictor: "allReoffendingPredictor"
+      }) }}
+
+      <h3>Macro inputs</h3>
+      <ul>
+        <li>data (ARNS API data)
+          <ul>
+            <li>This will be produced once per page via a call from the library to the ARNS API, detail on the intro page</li>
+          </ul>
+        </li>
+        <li>predictor (string)
+          <ul>
+            <li>"ogrs3" - identifier for the Offender Group Reconviction Scale v3 (OGRS3)</li>
+            <li>"ovp" - identifier for the OASys Violence Predictor (OVP)</li>
+            <li>"ogp" - identifier for the OASys General Predictor (OGP)</li>
+            <li>"rsr" - identifier for the Risk of Serious Reicidivism (RSR)</li>
+            <li>"ospdc" - identifier for the OASys Sexual Predictor – Direct Contact (OSP-DC)</li>
+            <li>"ospiic" - identifier for the OASys Sexual Predictor – Images and Indirect Contact (OSP-IIC)</li>
+            <li>"allReoffendingPredictor" - identifier for the all reoffending predictor</li>
+            <li>"violentReoffendingPredictor" - identifier for the violent reoffending predictor</li>
+            <li>"seriousViolentReoffendingPredictor" - identifier for the serious violent reoffending predictor</li>
+            <li>"directContactSexualReoffendingPredictor" - identifier for the direct contact - sexual reoffending predictor</li>
+            <li>"indirectImageContactSexualReoffendingPredictor" - identifier for the indirect image contact - sexual reoffending predictor</li>
+            <li>"combinedSeriousReoffendingPredictor" - identifier for the combined serious reoffending predictor</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>OGRS4 Examples</h2>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorScale({
+          data: riskData,
+          predictor: "allReoffendingPredictor"
+        }) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorScale({
+          data: riskData,
+          predictor: "violentReoffendingPredictor"
+        }) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorScale({
+          data: riskData,
+          predictor: "seriousViolentReoffendingPredictor"
+        }) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorScale({
+          data: riskData,
+          predictor: "directContactSexualReoffendingPredictor"
+        }) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorScale({
+          data: riskData,
+          predictor: "indirectImageContactSexualReoffendingPredictor"
+        }) }}
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        {{ predictorScale({
+          data: riskData,
+          predictor: "combinedSeriousReoffendingPredictor"
+        }) }}
+      </div>
+      <h2>Legacy data examples</h2>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorScale({
+          data: riskDataLegacy,
+          predictor: "ogrs3"
+        }) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorScale({
+          data: riskDataLegacy,
+          predictor: "ovp"
+        }) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorScale({
+          data: riskDataLegacy,
+          predictor: "ogp"
+        }) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorScale({
+          data: riskDataLegacy,
+          predictor: "rsr"
+        }) }}
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorScale({
+          data: riskDataLegacy,
+          predictor: "ospdc"
+        }) }}
+      </div>
+      <div class="govuk-!-margin-bottom-8">
+        {{ predictorScale({
+          data: riskDataLegacy,
+          predictor: "ospiic"
+        }) }}
+      </div>
+      <h2>Not applicable example</h2>
+      <div class="govuk-!-margin-bottom-8">
+        {{ predictorScale({
+          data: riskDataErrorCases,
+          predictor: "allReoffendingPredictor"
+        }) }}
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

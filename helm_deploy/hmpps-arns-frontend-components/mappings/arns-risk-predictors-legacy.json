@@ -15,38 +15,38 @@
         "outputVersion": "1",
         "output": {
           "groupReconvictionScore": {
-            "oneYear": 3,
-            "twoYears": 5,
+            "oneYear": 4.56,
+            "twoYears": 5.67,
             "scoreLevel": "LOW"
           },
           "violencePredictorScore": {
             "ovpStaticWeightedScore": 14,
             "ovpDynamicWeightedScore": 3,
             "ovpTotalWeightedScore": 17,
-            "oneYear": 4,
-            "twoYears": 7,
+            "oneYear": 34.45,
+            "twoYears": 45.67,
             "ovpRisk": "MEDIUM"
           },
           "generalPredictorScore": {
             "ogpStaticWeightedScore": 3,
             "ogpDynamicWeightedScore": 7,
             "ogpTotalWeightedScore": 10,
-            "ogp1Year": 4,
-            "ogp2Year": 8,
+            "ogp1Year": 67.89,
+            "ogp2Year": 78.90,
             "ogpRisk": "HIGH"
           },
           "riskOfSeriousRecidivismScore": {
-            "percentageScore": 50.1234,
+            "percentageScore": 12.34,
             "staticOrDynamic": "DYNAMIC",
             "source": "OASYS",
             "algorithmVersion": 5,
-            "scoreLevel": "VERY_HIGH"
+            "scoreLevel": "HIGH"
           },
           "sexualPredictorScore": {
-            "ospIndecentPercentageScore": 2.81,
-            "ospContactPercentageScore": 1.07,
+            "ospIndecentPercentageScore": 0.12,
+            "ospContactPercentageScore": 64.00,
             "ospIndecentScoreLevel": "LOW",
-            "ospContactScoreLevel": "MEDIUM"
+            "ospContactScoreLevel": "VERY_HIGH"
           }
         }
       },
@@ -75,31 +75,31 @@
         "output": {
           "allReoffendingPredictor": {
             "staticOrDynamic": "STATIC",
-            "score": 1.23,
+            "score": 12.34,
             "band": "LOW"
           },
           "violentReoffendingPredictor": {
             "staticOrDynamic": "STATIC",
-            "score": 1.23,
+            "score": 34.56,
             "band": "MEDIUM"
           },
           "seriousViolentReoffendingPredictor": {
             "staticOrDynamic": "STATIC",
-            "score": 1.23,
+            "score": 4.56,
             "band": "HIGH"
           },
           "directContactSexualReoffendingPredictor": {
-            "score": 2.81,
+            "score": 64.00,
             "band": "VERY_HIGH"
           },
           "indirectImageContactSexualReoffendingPredictor": {
-            "score": 1.07,
+            "score": 0.12,
             "band": "LOW"
           },
           "combinedSeriousReoffendingPredictor": {
             "algorithmVersion": 6,
             "staticOrDynamic": "DYNAMIC",
-            "score": 1.23,
+            "score": 0.89,
             "band": "LOW"
           }
         }
