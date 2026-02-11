@@ -1,6 +1,6 @@
 {% extends "layouts/side-nav-layout.njk" %}
 {% from "moj/components/alert/macro.njk" import mojAlert %}
-{% from "arns/components/expanded-badge/macro.njk" import expandedPredictorBadge %}
+{% from "arns/components/expanded-predictor-badge/macro.njk" import expandedPredictorBadge %}
 
 {% set pageTitle = "Library expanded predictor badge" %}
 {% set mainClasses = "govuk-body" %}
@@ -18,7 +18,7 @@
         Confluence documentation for usage details.
       </p>
       <h3>Usage example</h3>
-      <pre><code>{% verbatim %}{% from "arns/components/expanded-badge/macro.njk" import expandedPredictorBadge %}{% endverbatim %}
+      <pre><code>{% verbatim %}{% from "arns/components/expanded-predictor-badge/macro.njk" import expandedPredictorBadge %}{% endverbatim %}
 
 expandedPredictorBadge(
   data: riskData,
