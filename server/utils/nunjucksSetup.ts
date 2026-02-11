@@ -3,6 +3,7 @@ import path from 'path'
 import nunjucks from 'nunjucks'
 import express from 'express'
 import fs from 'fs'
+import { arnsNunjucksSetup } from '@ministryofjustice/hmpps-arns-frontend-components-lib'
 import { initialiseName } from './utils'
 import config from '../config'
 import logger from '../../logger'
@@ -38,6 +39,8 @@ export default function nunjucksSetup(app: express.Express): void {
       noCache: process.env.NODE_ENV !== 'production',
     },
   )
+
+  arnsNunjucksSetup(njkEnv)
 
   njkEnv.addFilter('initialiseName', initialiseName)
   njkEnv.addFilter('assetMap', (url: string) => assetManifest[url] || url)

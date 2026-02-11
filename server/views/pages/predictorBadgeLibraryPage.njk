@@ -1,6 +1,6 @@
 {% extends "layouts/side-nav-layout.njk" %}
 {% from "moj/components/alert/macro.njk" import mojAlert %}
-{% from "arns/components/badge/macro.njk" import predictorBadge %}
+{% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}
 
 {% set pageTitle = "Library predictor badge" %}
 {% set mainClasses = "govuk-body" %}
@@ -36,7 +36,7 @@
       </div>
 
       <h3>Usage example</h3>
-      <pre><code>{% verbatim %}{% from "arns/components/badge/macro.njk" import predictorBadge %}{% endverbatim %}
+      <pre><code>{% verbatim %}{% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}{% endverbatim %}
 
 predictorBadge(
   data: riskData,

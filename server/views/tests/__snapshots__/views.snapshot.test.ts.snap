@@ -2405,7 +2405,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         Confluence documentation for usage details.
       </p>
       <h3>Usage example</h3>
-      <pre><code>{% from "arns/components/expanded-badge/macro.njk" import expandedPredictorBadge %}
+      <pre><code>{% from "arns/components/expanded-predictor-badge/macro.njk" import expandedPredictorBadge %}
 
 expandedPredictorBadge(
   data: riskData,
@@ -2440,24 +2440,24 @@ expandedPredictorBadge(
         
       
 
-      <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
+      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__fixed-width">
         <span
-          class="predictor-badge__type">All Reoffending Predictor</span>
+          class="arns-predictor-badge__type">All Reoffending Predictor</span>
 
-        <div class="predictor-badge__stats">
-          <span class="predictor-badge__level">LOW</span>
-
-          
-            <span class="predictor-badge__score">1.23%</span>
-          
+        <div class="arns-predictor-badge__stats">
+          <span class="arns-predictor-badge__level">LOW</span>
 
           
-            <span class="predictor-badge__static_or_dynamic">Static</span>
+            <span class="arns-predictor-badge__score">1.23%</span>
+          
+
+          
+            <span class="arns-predictor-badge__static_or_dynamic">Static</span>
           
 
         </div>
 
-        <span class="predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -2537,24 +2537,24 @@ expandedPredictorBadge(
         
       
 
-      <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
+      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__fixed-width">
         <span
-          class="predictor-badge__type">All Reoffending Predictor</span>
+          class="arns-predictor-badge__type">All Reoffending Predictor</span>
 
-        <div class="predictor-badge__stats">
-          <span class="predictor-badge__level">LOW</span>
-
-          
-            <span class="predictor-badge__score">1.23%</span>
-          
+        <div class="arns-predictor-badge__stats">
+          <span class="arns-predictor-badge__level">LOW</span>
 
           
-            <span class="predictor-badge__static_or_dynamic">Static</span>
+            <span class="arns-predictor-badge__score">1.23%</span>
+          
+
+          
+            <span class="arns-predictor-badge__static_or_dynamic">Static</span>
           
 
         </div>
 
-        <span class="predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -2598,24 +2598,24 @@ expandedPredictorBadge(
         
       
 
-      <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
+      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__fixed-width">
         <span
-          class="predictor-badge__type">Violent Reoffending Predictor</span>
+          class="arns-predictor-badge__type">Violent Reoffending Predictor</span>
 
-        <div class="predictor-badge__stats">
-          <span class="predictor-badge__level">LOW</span>
-
-          
-            <span class="predictor-badge__score">1.23%</span>
-          
+        <div class="arns-predictor-badge__stats">
+          <span class="arns-predictor-badge__level">LOW</span>
 
           
-            <span class="predictor-badge__static_or_dynamic">Static</span>
+            <span class="arns-predictor-badge__score">1.23%</span>
+          
+
+          
+            <span class="arns-predictor-badge__static_or_dynamic">Static</span>
           
 
         </div>
 
-        <span class="predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -2659,24 +2659,24 @@ expandedPredictorBadge(
         
       
 
-      <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
+      <div class="arns-expanded-predictor-badge--medium arns-expanded-predictor-badge__fixed-width">
         <span
-          class="predictor-badge__type">Serious Violent Reoffending Predictor</span>
+          class="arns-predictor-badge__type">Serious Violent Reoffending Predictor</span>
 
-        <div class="predictor-badge__stats">
-          <span class="predictor-badge__level">MEDIUM</span>
-
-          
-            <span class="predictor-badge__score">1.23%</span>
-          
+        <div class="arns-predictor-badge__stats">
+          <span class="arns-predictor-badge__level">MEDIUM</span>
 
           
-            <span class="predictor-badge__static_or_dynamic">Static</span>
+            <span class="arns-predictor-badge__score">1.23%</span>
+          
+
+          
+            <span class="arns-predictor-badge__static_or_dynamic">Static</span>
           
 
         </div>
 
-        <span class="predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -2720,22 +2720,22 @@ expandedPredictorBadge(
         
       
 
-      <div class="expanded-predictor-badge--very-high expanded-predictor-badge__fixed-width">
+      <div class="arns-expanded-predictor-badge--very-high arns-expanded-predictor-badge__fixed-width">
         <span
-          class="predictor-badge__type">Direct Contact - Sexual Reoffending Predictor</span>
+          class="arns-predictor-badge__type">Direct Contact - Sexual Reoffending Predictor</span>
 
-        <div class="predictor-badge__stats">
-          <span class="predictor-badge__level">VERY HIGH</span>
+        <div class="arns-predictor-badge__stats">
+          <span class="arns-predictor-badge__level">VERY HIGH</span>
 
           
-            <span class="predictor-badge__score">2.81%</span>
+            <span class="arns-predictor-badge__score">2.81%</span>
           
 
           
 
         </div>
 
-        <span class="predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -2779,22 +2779,22 @@ expandedPredictorBadge(
         
       
 
-      <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
+      <div class="arns-expanded-predictor-badge--high arns-expanded-predictor-badge__fixed-width">
         <span
-          class="predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
+          class="arns-predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
 
-        <div class="predictor-badge__stats">
-          <span class="predictor-badge__level">HIGH</span>
+        <div class="arns-predictor-badge__stats">
+          <span class="arns-predictor-badge__level">HIGH</span>
 
           
-            <span class="predictor-badge__score">1.07%</span>
+            <span class="arns-predictor-badge__score">1.07%</span>
           
 
           
 
         </div>
 
-        <span class="predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -2838,24 +2838,24 @@ expandedPredictorBadge(
         
       
 
-      <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
+      <div class="arns-expanded-predictor-badge--high arns-expanded-predictor-badge__fixed-width">
         <span
-          class="predictor-badge__type">Combined Serious Reoffending Predictor</span>
+          class="arns-predictor-badge__type">Combined Serious Reoffending Predictor</span>
 
-        <div class="predictor-badge__stats">
-          <span class="predictor-badge__level">HIGH</span>
-
-          
-            <span class="predictor-badge__score">1.23%</span>
-          
+        <div class="arns-predictor-badge__stats">
+          <span class="arns-predictor-badge__level">HIGH</span>
 
           
-            <span class="predictor-badge__static_or_dynamic">Static</span>
+            <span class="arns-predictor-badge__score">1.23%</span>
+          
+
+          
+            <span class="arns-predictor-badge__static_or_dynamic">Static</span>
           
 
         </div>
 
-        <span class="predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -2888,24 +2888,24 @@ expandedPredictorBadge(
         
       
 
-      <div class="expanded-predictor-badge--low expanded-predictor-badge__dynamic">
+      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__dynamic">
         <span
-          class="predictor-badge__type">All Reoffending Predictor</span>
+          class="arns-predictor-badge__type">All Reoffending Predictor</span>
 
-        <div class="predictor-badge__stats">
-          <span class="predictor-badge__level">LOW</span>
-
-          
-            <span class="predictor-badge__score">1.23%</span>
-          
+        <div class="arns-predictor-badge__stats">
+          <span class="arns-predictor-badge__level">LOW</span>
 
           
-            <span class="predictor-badge__static_or_dynamic">Static</span>
+            <span class="arns-predictor-badge__score">1.23%</span>
+          
+
+          
+            <span class="arns-predictor-badge__static_or_dynamic">Static</span>
           
 
         </div>
 
-        <span class="predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -2955,22 +2955,22 @@ expandedPredictorBadge(
         
       
 
-      <div class="expanded-predictor-badge--high expanded-predictor-badge__dynamic">
+      <div class="arns-expanded-predictor-badge--high arns-expanded-predictor-badge__dynamic">
         <span
-          class="predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
+          class="arns-predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
 
-        <div class="predictor-badge__stats">
-          <span class="predictor-badge__level">HIGH</span>
+        <div class="arns-predictor-badge__stats">
+          <span class="arns-predictor-badge__level">HIGH</span>
 
           
-            <span class="predictor-badge__score">1.07%</span>
+            <span class="arns-predictor-badge__score">1.07%</span>
           
 
           
 
         </div>
 
-        <span class="predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -5626,11 +5626,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
         
       
-      <div class="predictor-badge--high">
-        <span class="predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+      <div class="arns-predictor-badge--high">
+        <span class="arns-predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
 
         
-          <span class="predictor-badge__score">1.07%</span>
+          <span class="arns-predictor-badge__score">1.07%</span>
         
 
         
@@ -5644,7 +5644,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       </div>
 
       <h3>Usage example</h3>
-      <pre><code>{% from "arns/components/badge/macro.njk" import predictorBadge %}
+      <pre><code>{% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}
 
 predictorBadge(
   data: riskData,
@@ -5670,15 +5670,15 @@ predictorBadge(
       
         
       
-      <div class="predictor-badge--low">
-        <span class="predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
+      <div class="arns-predictor-badge--low">
+        <span class="arns-predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
         
-          <span class="predictor-badge__score">1.23%</span>
+          <span class="arns-predictor-badge__score">1.23%</span>
         
 
         
-          <span class="predictor-badge__static_or_dynamic">Static</span>
+          <span class="arns-predictor-badge__static_or_dynamic">Static</span>
         
       </div>
     
@@ -5745,62 +5745,19 @@ predictorBadge(
       
         
       
-      <div class="predictor-badge--low">
-        <span class="predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
+      <div class="arns-predictor-badge--low">
+        <span class="arns-predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
         
-          <span class="predictor-badge__score">1.23%</span>
-        
-
-        
-          <span class="predictor-badge__static_or_dynamic">Static</span>
-        
-      </div>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-
-      
-      
-        
-      
-      <div class="predictor-badge--low">
-        <span class="predictor-badge__type_and_level">VIOLENT REOFFENDING PREDICTOR <strong>LOW</strong></span>
-
-        
-          <span class="predictor-badge__score">1.23%</span>
+          <span class="arns-predictor-badge__score">1.23%</span>
         
 
         
-          <span class="predictor-badge__static_or_dynamic">Static</span>
+          <span class="arns-predictor-badge__static_or_dynamic">Static</span>
         
       </div>
+    
+  
     
   
     
@@ -5828,6 +5785,49 @@ predictorBadge(
     
   
     
+
+      
+      
+        
+      
+      <div class="arns-predictor-badge--low">
+        <span class="arns-predictor-badge__type_and_level">VIOLENT REOFFENDING PREDICTOR <strong>LOW</strong></span>
+
+        
+          <span class="arns-predictor-badge__score">1.23%</span>
+        
+
+        
+          <span class="arns-predictor-badge__static_or_dynamic">Static</span>
+        
+      </div>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+    
   
     
 
@@ -5835,15 +5835,15 @@ predictorBadge(
       
         
       
-      <div class="predictor-badge--medium">
-        <span class="predictor-badge__type_and_level">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
+      <div class="arns-predictor-badge--medium">
+        <span class="arns-predictor-badge__type_and_level">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
 
         
-          <span class="predictor-badge__score">1.23%</span>
+          <span class="arns-predictor-badge__score">1.23%</span>
         
 
         
-          <span class="predictor-badge__static_or_dynamic">Static</span>
+          <span class="arns-predictor-badge__static_or_dynamic">Static</span>
         
       </div>
     
@@ -5880,58 +5880,17 @@ predictorBadge(
       
         
       
-      <div class="predictor-badge--very-high">
-        <span class="predictor-badge__type_and_level">DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
+      <div class="arns-predictor-badge--very-high">
+        <span class="arns-predictor-badge__type_and_level">DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
 
         
-          <span class="predictor-badge__score">2.81%</span>
-        
-
-        
-      </div>
-    
-  
-    
-  
-    
-  
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-
-      
-      
-        
-      
-      <div class="predictor-badge--high">
-        <span class="predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
-
-        
-          <span class="predictor-badge__score">1.07%</span>
+          <span class="arns-predictor-badge__score">2.81%</span>
         
 
         
       </div>
+    
+  
     
   
     
@@ -5959,6 +5918,47 @@ predictorBadge(
     
   
     
+
+      
+      
+        
+      
+      <div class="arns-predictor-badge--high">
+        <span class="arns-predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+
+        
+          <span class="arns-predictor-badge__score">1.07%</span>
+        
+
+        
+      </div>
+    
+  
+    
+  
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
     
 
@@ -5966,15 +5966,15 @@ predictorBadge(
       
         
       
-      <div class="predictor-badge--high">
-        <span class="predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+      <div class="arns-predictor-badge--high">
+        <span class="arns-predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>HIGH</strong></span>
 
         
-          <span class="predictor-badge__score">1.23%</span>
+          <span class="arns-predictor-badge__score">1.23%</span>
         
 
         
-          <span class="predictor-badge__static_or_dynamic">Static</span>
+          <span class="arns-predictor-badge__static_or_dynamic">Static</span>
         
       </div>
     
