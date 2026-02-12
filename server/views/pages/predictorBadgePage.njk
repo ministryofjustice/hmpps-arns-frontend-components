@@ -234,6 +234,22 @@
       <div class="govuk-!-margin-bottom-8">
         {{ predictorBadge(legacyBadgeRiskScores.veryHighRiskScore, true) }}
       </div>
+
+      <h2>Not Applicable example</h2>
+      <div class="govuk-!-margin-bottom-8">
+        {{ predictorBadge(badgeErrorStateRiskScores.notApplicableRiskScore, true) }}
+      </div>
+
+      <h2>Unknown example</h2>
+      <h3>Missing score</h3>
+      <p>This is when score is missing, and showScore is true</p>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge(badgeErrorStateRiskScores.unknownScoreRiskScore, true) }}
+      </div>
+      <h3>Missing band</h3>
+      <div class="govuk-!-margin-bottom-8">
+        {{ predictorBadge(badgeErrorStateRiskScores.unknownLevelRiskScore, true) }}
+      </div>
     </div>
   </div>
 

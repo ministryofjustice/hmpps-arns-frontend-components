@@ -150,4 +150,25 @@ const legacyBadgeRiskScores = {
   },
 }
 
-export { badgeRiskScores, legacyBadgeRiskScores }
+const badgeErrorStateRiskScores = {
+  notApplicableRiskScore: {
+    level: 'NOT_APPLICABLE',
+    score: 0.0,
+    type: 'Direct Contact – Sexual Reoffending Predictor',
+    completedDate: '25 October 2025',
+  },
+  unknownScoreRiskScore: {
+    level: 'LOW',
+    type: 'All Reoffending Predictor',
+    staticOrDynamic: 'STATIC',
+    completedDate: '25 October 2025',
+  },
+  unknownLevelRiskScore: {
+    score: 12.34,
+    type: 'All Reoffending Predictor',
+    staticOrDynamic: 'STATIC',
+    completedDate: '25 October 2025',
+  },
+}
+
+export { badgeRiskScores, legacyBadgeRiskScores, badgeErrorStateRiskScores }

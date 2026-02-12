@@ -290,6 +290,34 @@
           {{ expandedPredictorBadge(legacyBadgeRiskScores.highDynamicRiskScore, true, false) }}
         </div>
       </div>
+
+      <div class="govuk-grid-column-full">
+        <h2>Not Applicable example</h2>
+      </div>
+      <div class="govuk-grid-column-full">
+        <div class="govuk-!-margin-bottom-8">
+          {{ expandedPredictorBadge(badgeErrorStateRiskScores.notApplicableRiskScore, true, true) }}
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-full">
+        <h2>Unknown example</h2>
+        <h3>Missing score</h3>
+        <p>This is when score is missing, and showScore is true</p>
+      </div>
+      <div class="govuk-grid-column-full">
+        <div class="govuk-!-margin-bottom-4">
+          {{ expandedPredictorBadge(badgeErrorStateRiskScores.unknownScoreRiskScore, true, true) }}
+        </div>
+      </div>
+      <div class="govuk-grid-column-full">
+        <h3>Missing band</h3>
+      </div>
+      <div class="govuk-grid-column-full">
+        <div class="govuk-!-margin-bottom-8">
+          {{ expandedPredictorBadge(badgeErrorStateRiskScores.unknownLevelRiskScore, true, true) }}
+        </div>
+      </div>
     </div>
   </div>
 
