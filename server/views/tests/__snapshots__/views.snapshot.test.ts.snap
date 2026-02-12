@@ -421,6 +421,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">All Reoffending Predictor</span>
@@ -457,6 +461,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">All Reoffending Predictor</span>
@@ -487,6 +495,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+
+  
+    
   
 
   
@@ -529,6 +541,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">All Reoffending Predictor</span>
@@ -567,6 +583,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">All Reoffending Predictor</span>
@@ -599,6 +619,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+
+  
+    
   
 
   
@@ -644,6 +668,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">Violent Reoffending Predictor</span>
@@ -674,6 +702,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+
+  
+    
   
 
   
@@ -716,6 +748,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">Direct Contact – Sexual Reoffending Predictor</span>
@@ -746,6 +782,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+
+  
+    
   
 
   
@@ -792,6 +832,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">Violent Reoffending Predictor</span>
@@ -830,6 +874,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">Direct Contact – Sexual Reoffending Predictor</span>
@@ -869,6 +917,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">Serious Violent Reoffending Predictor</span>
@@ -905,6 +957,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">Serious Violent Reoffending Predictor</span>
@@ -935,6 +991,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+
+  
+    
   
 
   
@@ -977,6 +1037,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">Serious Violent Reoffending Predictor</span>
@@ -1015,6 +1079,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">Serious Violent Reoffending Predictor</span>
@@ -1047,6 +1115,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+
+  
+    
   
 
   
@@ -1092,6 +1164,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--very-high expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">Combined Serious Reoffending Predictor</span>
@@ -1122,6 +1198,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+
+  
+    
   
 
   
@@ -1164,6 +1244,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--very-high expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">Direct Contact – Sexual Reoffending Predictor</span>
@@ -1194,6 +1278,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+
+  
+    
   
 
   
@@ -1232,6 +1320,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+    
+  
+
   
     
   
@@ -1272,6 +1364,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+
+  
+    
   
 
   
@@ -1320,6 +1416,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--low expanded-predictor-badge__dynamic">
     <span
       class="predictor-badge__type">All Reoffending Predictor</span>
@@ -1350,6 +1450,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+
+  
+    
   
 
   
@@ -1398,6 +1502,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">RSR</span>
@@ -1434,6 +1542,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">RSR</span>
@@ -1464,6 +1576,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+
+  
+    
   
 
   
@@ -1506,6 +1622,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">RSR</span>
@@ -1544,6 +1664,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--low expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">RSR</span>
@@ -1576,6 +1700,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+
+  
+    
   
 
   
@@ -1621,6 +1749,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">RSR</span>
@@ -1651,6 +1783,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+
+  
+    
   
 
   
@@ -1693,6 +1829,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">OVP</span>
@@ -1723,6 +1863,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+
+  
+    
   
 
   
@@ -1761,6 +1905,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+    
+  
+
   
     
   
@@ -1807,6 +1955,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--medium expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">OVP</span>
@@ -1840,6 +1992,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+
+  
+    
   
 
   
@@ -1882,6 +2038,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">RSR</span>
@@ -1912,6 +2072,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+
+  
+    
   
 
   
@@ -1954,6 +2118,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">RSR</span>
@@ -1992,6 +2160,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--high expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">RSR</span>
@@ -2024,6 +2196,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+
+  
+    
   
 
   
@@ -2069,6 +2245,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--very-high expanded-predictor-badge__fixed-width">
     <span
       class="predictor-badge__type">OSP-DC</span>
@@ -2099,6 +2279,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   
 
   
+  
+
+  
+    
   
 
   
@@ -2147,6 +2331,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--low expanded-predictor-badge__dynamic">
     <span
       class="predictor-badge__type">OGP</span>
@@ -2181,6 +2369,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
   
 
+  
+    
+  
+
   <div class="expanded-predictor-badge--high expanded-predictor-badge__dynamic">
     <span
       class="predictor-badge__type">RSR</span>
@@ -2194,6 +2386,141 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       
         <span class="predictor-badge__static_or_dynamic">Dynamic</span>
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-full">
+        <h2>Not Applicable example</h2>
+      </div>
+      <div class="govuk-grid-column-full">
+        <div class="govuk-!-margin-bottom-8">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  <div class="expanded-predictor-badge--default expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">Direct Contact – Sexual Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">NOT APPLICABLE</span>
+
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-full">
+        <h2>Unknown example</h2>
+        <h3>Missing score</h3>
+        <p>This is when score is missing, and showScore is true</p>
+      </div>
+      <div class="govuk-grid-column-full">
+        <div class="govuk-!-margin-bottom-4">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  
+    
+    
+  
+
+  <div class="expanded-predictor-badge--default expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">All Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">UNKNOWN</span>
+
+      
+
+      
+
+    </div>
+
+    <span class="predictor-badge__last_updated">Last updated: 25 October 2025</span>
+
+  </div>
+
+
+        </div>
+      </div>
+      <div class="govuk-grid-column-full">
+        <h3>Missing band</h3>
+      </div>
+      <div class="govuk-grid-column-full">
+        <div class="govuk-!-margin-bottom-8">
+          
+
+  
+  
+    
+  
+
+  
+  
+
+  
+    
+  
+
+  
+    
+    
+  
+
+  <div class="expanded-predictor-badge--default expanded-predictor-badge__fixed-width">
+    <span
+      class="predictor-badge__type">All Reoffending Predictor</span>
+
+    <div class="predictor-badge__stats">
+      <span class="predictor-badge__level">UNKNOWN</span>
+
+      
+
       
 
     </div>
@@ -4309,6 +4636,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4395,6 +4725,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4417,6 +4750,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4439,6 +4775,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4463,6 +4802,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4487,6 +4829,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4507,6 +4852,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4530,6 +4878,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4552,6 +4903,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4574,6 +4928,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4598,6 +4955,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4622,6 +4982,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4642,6 +5005,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4665,6 +5031,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4687,6 +5056,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4709,6 +5081,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4733,6 +5108,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4757,6 +5135,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4777,6 +5158,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4800,6 +5184,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4822,6 +5209,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4844,6 +5234,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4868,6 +5261,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4892,6 +5288,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4912,6 +5311,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4936,6 +5338,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4958,6 +5363,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -4980,6 +5388,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -5004,6 +5415,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -5028,6 +5442,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -5048,6 +5465,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -5071,6 +5491,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -5093,6 +5516,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -5115,6 +5541,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -5139,6 +5568,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -5163,6 +5595,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -5183,6 +5618,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -5206,6 +5644,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -5228,6 +5669,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -5250,6 +5694,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -5274,6 +5721,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -5298,6 +5748,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -5318,6 +5771,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -5341,6 +5797,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -5361,6 +5820,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
   
+    
+  
+
   
     
   
@@ -5371,6 +5833,84 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     
       <span class="predictor-badge__score">67.78%</span>
+    
+
+    
+
+  </div>
+
+
+      </div>
+
+      <h2>Not Applicable example</h2>
+      <div class="govuk-!-margin-bottom-8">
+        
+
+  
+    
+  
+
+  
+    
+  
+
+  <div class="predictor-badge--default">
+    <span
+      class="predictor-badge__type_and_level">DIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>NOT APPLICABLE</strong></span>
+
+    
+
+    
+
+  </div>
+
+
+      </div>
+
+      <h2>Unknown example</h2>
+      <h3>Missing score</h3>
+      <p>This is when score is missing, and showScore is true</p>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+  
+    
+  
+
+  
+    
+    
+  
+
+  <div class="predictor-badge--default">
+    <span
+      class="predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>UNKNOWN</strong></span>
+
+    
+
+    
+
+  </div>
+
+
+      </div>
+      <h3>Missing band</h3>
+      <div class="govuk-!-margin-bottom-8">
+        
+
+  
+    
+  
+
+  
+    
+    
+  
+
+  <div class="predictor-badge--default">
+    <span
+      class="predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>UNKNOWN</strong></span>
+
     
 
     
@@ -9286,7 +9826,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 <div class="predictor-timeline__heading">
   <span class='govuk-heading-m'>Scores history</span>
   <button id="predictor-timeline__toggle-all" class="predictor-timeline-link-btn" aria-label="Open all score history"
-     aria-controls="predictor-section-23-july-2026-at-12-00 predictor-section-14-may-2019-at-12-00 predictor-section-12-september-2018-at-12-00" aria-expanded="false">Open all</button>
+     aria-controls="predictor-section-23-july-2026-at-12-00 predictor-section-1-june-2026-at-12-00 predictor-section-14-may-2019-at-12-00 predictor-section-12-september-2018-at-12-00 predictor-section-5-january-2017-at-12-00" aria-expanded="false">Open all</button>
 </div>
 
 <div class="predictor-timeline predictor">
@@ -9319,6 +9859,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
 
       
+      
+
+      
+        
       
 
       <div class="predictor-timeline-item--low">
@@ -9360,6 +9904,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       
 
+      
+        
+      
+
       <div class="predictor-timeline-item--medium">
     <span
       class="predictor-timeline-item__type">Violent Reoffending Predictor</span>
@@ -9397,6 +9945,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
       
 
+      
+        
+      
+
       <div class="predictor-timeline-item--medium">
     <span
       class="predictor-timeline-item__type">Direct Contact – Sexual Reoffending Predictor</span>
@@ -9430,6 +9982,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
       
 
+      
+        
+      
+
       <div class="predictor-timeline-item--high">
     <span
       class="predictor-timeline-item__type">Images And Indirect Contact – Sexual Reoffending Predictor</span>
@@ -9461,6 +10017,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
 
       
+      
+
+      
+        
       
 
       <div class="predictor-timeline-item--high">
@@ -9502,6 +10062,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       
 
+      
+        
+      
+
       <div class="predictor-timeline-item--very-high">
     <span
       class="predictor-timeline-item__type">Combined Serious Reoffending Predictor</span>
@@ -9528,6 +10092,140 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </div>
         <button class="predictor-timeline-link-btn predictor-timeline__toggle-section" aria-label="View scores for 23 July 2026 at 12:00"
            aria-controls="predictor-section-23-july-2026-at-12-00" aria-expanded="false">Open</button>
+      </div>
+    </div>
+  
+
+    
+
+    
+      
+    
+
+    <div class="predictor-timeline__item">
+      <div class="predictor-timeline__header">
+        <p class="predictor-timeline__byline">1 June 2026 at 12:00</p>
+      </div>
+      <div class="predictor-timeline__description">
+        <div id="predictor-section-1-june-2026-at-12-00" class="predictor-timeline-section">
+          <ul class="govuk-list">
+            
+              
+                <li>
+  
+
+    
+
+    
+
+      
+        
+      
+
+      
+      
+
+      
+        
+        
+      
+
+      <div class="predictor-timeline-item--default">
+    <span
+      class="predictor-timeline-item__type">Violent Reoffending Predictor</span>
+
+        <div class="predictor-timeline-item__stats">
+          <span class="predictor-timeline-item__level">UNKNOWN</span>
+
+          
+
+          
+
+        </div>
+      </div>
+    
+  
+</li>
+              
+            
+              
+                <li>
+  
+
+    
+
+    
+
+      
+        
+      
+
+      
+      
+
+      
+        
+      
+
+      <div class="predictor-timeline-item--default">
+    <span
+      class="predictor-timeline-item__type">Direct Contact – Sexual Reoffending Predictor</span>
+
+        <div class="predictor-timeline-item__stats">
+          <span class="predictor-timeline-item__level">NOT APPLICABLE</span>
+
+          
+
+          
+
+        </div>
+      </div>
+    
+  
+</li>
+              
+            
+              
+                <li>
+  
+
+    
+
+    
+
+      
+        
+      
+
+      
+      
+
+      
+        
+      
+
+      <div class="predictor-timeline-item--default">
+    <span
+      class="predictor-timeline-item__type">Images And Indirect Contact – Sexual Reoffending Predictor</span>
+
+        <div class="predictor-timeline-item__stats">
+          <span class="predictor-timeline-item__level">NOT APPLICABLE</span>
+
+          
+
+          
+
+        </div>
+      </div>
+    
+  
+</li>
+              
+            
+          </ul>
+        </div>
+        <button class="predictor-timeline-link-btn predictor-timeline__toggle-section" aria-label="View scores for 1 June 2026 at 12:00"
+           aria-controls="predictor-section-1-june-2026-at-12-00" aria-expanded="false">Open</button>
       </div>
     </div>
   
@@ -9629,6 +10327,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       
 
+      
+        
+      
+
       <div class="legacy-predictor-timeline-item--high">
         <span
           class="legacy-predictor-timeline-item__type_and_level">RSR <strong>HIGH</strong></span>
@@ -9658,6 +10360,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       
 
+      
+        
+      
+
       <div class="legacy-predictor-timeline-item--medium">
         <span
           class="legacy-predictor-timeline-item__type_and_level">OSP-DC <strong>MEDIUM</strong></span>
@@ -9680,6 +10386,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
 
     
+
+      
+        
+      
 
       
         
@@ -9732,6 +10442,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       
 
+      
+        
+      
+
       <div class="legacy-predictor-timeline-item--medium">
         <span
           class="legacy-predictor-timeline-item__type_and_level">RSR <strong>MEDIUM</strong></span>
@@ -9756,6 +10470,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
 
     
+
+      
+        
+      
 
       
         
@@ -9788,6 +10506,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       
 
+      
+        
+      
+
       <div class="legacy-predictor-timeline-item--low">
         <span
           class="legacy-predictor-timeline-item__type_and_level">OSP-IIC <strong>LOW</strong></span>
@@ -9807,6 +10529,120 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </div>
         <button class="predictor-timeline-link-btn predictor-timeline__toggle-section" aria-label="View scores for 12 September 2018 at 12:00"
            aria-controls="predictor-section-12-september-2018-at-12-00" aria-expanded="false">Open</button>
+      </div>
+    </div>
+  
+
+    
+
+    
+
+    <div class="predictor-timeline__item">
+      <div class="predictor-timeline__header">
+        <p class="predictor-timeline__byline">5 January 2017 at 12:00</p>
+      </div>
+      <div class="predictor-timeline__description">
+        <div id="predictor-section-5-january-2017-at-12-00" class="predictor-timeline-section">
+          <ul class="govuk-list">
+            
+              
+                <li>
+  
+
+    
+
+    
+
+      
+        
+      
+
+      
+        
+        
+      
+
+      <div class="legacy-predictor-timeline-item--default">
+        <span
+          class="legacy-predictor-timeline-item__type_and_level">RSR <strong>UNKNOWN</strong></span>
+
+        
+
+        
+
+      </div>
+
+    
+  
+</li>
+              
+            
+              
+                <li>
+  
+
+    
+
+    
+
+      
+        
+      
+
+      
+        
+      
+
+      <div class="legacy-predictor-timeline-item--default">
+        <span
+          class="legacy-predictor-timeline-item__type_and_level">OSP-DC <strong>NOT APPLICABLE</strong></span>
+
+        
+
+        
+
+      </div>
+
+    
+  
+</li>
+              
+            
+              
+                <li>
+  
+
+    
+
+    
+
+      
+        
+      
+
+      
+        
+      
+
+      <div class="legacy-predictor-timeline-item--default">
+        <span
+          class="legacy-predictor-timeline-item__type_and_level">OSP-IIC <strong>NOT APPLICABLE</strong></span>
+
+        
+
+        
+
+      </div>
+
+    
+  
+</li>
+              
+            
+          </ul>
+        </div>
+        <button class="predictor-timeline-link-btn predictor-timeline__toggle-section" aria-label="View scores for 5 January 2017 at 12:00"
+           aria-controls="predictor-section-5-january-2017-at-12-00" aria-expanded="false">Open</button>
       </div>
     </div>
   

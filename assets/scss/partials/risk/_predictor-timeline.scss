@@ -10,6 +10,9 @@ $medium-score-colour__text: #a34e00;
 $low-score-colour: #85994b;
 $low-score-colour--light: #dee9bd;
 $low-score-colour__text: #485b10;
+$default-colour: govuk-colour("mid-grey");
+$default-colour--light: govuk-colour("light-grey");
+$default-colour__text: govuk-colour("black");
 
 .predictor-timeline {
   margin-bottom: govuk-spacing(4);
@@ -161,6 +164,10 @@ $low-score-colour__text: #485b10;
   @include predictor-timeline-item-base($low-score-colour, $low-score-colour--light, $low-score-colour__text);
 }
 
+.predictor-timeline-item--default {
+  @include predictor-timeline-item-base($default-colour, $default-colour--light, $default-colour__text);
+}
+
 .predictor-timeline-link-btn {
    @include govuk-font($size: 19);
    text-decoration-thickness: $govuk-link-underline-thickness;
@@ -245,5 +252,9 @@ $low-score-colour__text: #485b10;
 
 .legacy-predictor-timeline-item--low {
   @include legacy-predictor-timeline-item-base($low-score-colour, $low-score-colour--light, $low-score-colour__text);
+}
+
+.legacy-predictor-timeline-item--default {
+  @include legacy-predictor-timeline-item-base($default-colour, $default-colour--light, $default-colour__text);
 }
 

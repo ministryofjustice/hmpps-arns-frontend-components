@@ -38,6 +38,24 @@ const predictorTimelineRiskScores = {
       },
     },
     {
+      date: '1 June 2026 at 12:00',
+      scores: {
+        violentReoffendingPredictor: {
+          score: 38.76,
+          type: 'Violent Reoffending Predictor',
+          staticOrDynamic: 'DYNAMIC',
+        },
+        directContactSexualReoffendingPredictor: {
+          level: 'NOT_APPLICABLE',
+          type: 'Direct Contact – Sexual Reoffending Predictor',
+        },
+        indirectImageContactSexualReoffendingPredictor: {
+          level: 'NOT_APPLICABLE',
+          type: 'Images and Indirect Contact – Sexual Reoffending Predictor',
+        },
+      },
+    },
+    {
       date: '14 May 2019 at 12:00',
       scores: {
         RSR: {
@@ -69,6 +87,23 @@ const predictorTimelineRiskScores = {
         },
         OSPI: {
           level: 'LOW',
+          type: 'OSP-IIC',
+        },
+      },
+    },
+    {
+      date: '5 January 2017 at 12:00',
+      scores: {
+        RSR: {
+          score: 5.34,
+          type: 'RSR',
+        },
+        OSPC: {
+          level: 'NOT_APPLICABLE',
+          type: 'OSP-DC',
+        },
+        OSPI: {
+          level: 'NOT_APPLICABLE',
           type: 'OSP-IIC',
         },
       },

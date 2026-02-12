@@ -1,6 +1,5 @@
 {% if predictor %}
 
-  {% set badgeClass = '' %}
   {% switch predictor.level %}
   {% case 'VERY_HIGH' %}
     {% set badgeClass = 'predictor-badge--very-high' %}
@@ -10,17 +9,26 @@
     {% set badgeClass = 'predictor-badge--medium' %}
   {% case 'LOW' %}
     {% set badgeClass = 'predictor-badge--low' %}
+  {% default %}
+    {% set badgeClass = 'predictor-badge--default' %}
   {% endswitch %}
+
+  {% if predictor.level is undefined or (showScore == true and predictor.score is undefined) %}
+    {% set band = 'UNKNOWN' %}
+    {% set badgeClass = 'predictor-badge--default' %}
+  {% else %}
+    {% set band = predictor.level | replace('_', ' ') %}
+  {% endif %}
 
   <div class="{{ badgeClass }}">
     <span
-      class="predictor-badge__type_and_level">{{ predictor.type | upper }} <strong>{{ predictor.level | replace('_', ' ') }}</strong></span>
+      class="predictor-badge__type_and_level">{{ predictor.type | upper }} <strong>{{ band }}</strong></span>
 
-    {% if showScore and predictor.score %}
+    {% if showScore and predictor.score and badgeClass != 'predictor-badge--default' %}
       <span class="predictor-badge__score">{{ predictor.score }}%</span>
     {% endif %}
 
-    {% if predictor.staticOrDynamic %}
+    {% if predictor.staticOrDynamic and badgeClass != 'predictor-badge--default' %}
       <span class="predictor-badge__static_or_dynamic">{{ predictor.staticOrDynamic | capitalize }}</span>
     {% endif %}
 

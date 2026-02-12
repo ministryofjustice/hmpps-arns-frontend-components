@@ -4,7 +4,7 @@ import rawNavSections from '../data/navData'
 import predictorScaleScores from '../data/predictorScaleScores'
 import widgetData from '../data/widgetData'
 import legacyComponentRiskScores from '../data/legacyComponentRiskScores'
-import { badgeRiskScores, legacyBadgeRiskScores } from '../data/badgeRiskScores'
+import { badgeRiskScores, legacyBadgeRiskScores, badgeErrorStateRiskScores } from '../data/badgeRiskScores'
 import predictorScaleNotApplicableScores from '../data/predictorScaleNotApplicableScores'
 import predictorTimelineRiskScores from '../data/predictorTimelineRiskScores'
 import { Services } from '../services'
@@ -14,7 +14,12 @@ export default function componentPageRoutes({ arnsComponents }: Services): Route
 
   router.get('/predictor-badge', async (req, res) => {
     const navSections = activateMojNav(rawNavSections, req.path)
-    res.render('pages/predictorBadgePage', { badgeRiskScores, legacyBadgeRiskScores, navSections })
+    res.render('pages/predictorBadgePage', {
+      badgeRiskScores,
+      legacyBadgeRiskScores,
+      badgeErrorStateRiskScores,
+      navSections,
+    })
   })
   router.get('/predictor-badge/new', async (req, res) => {
     const navSections = activateMojNav(rawNavSections, req.path)
@@ -28,7 +33,12 @@ export default function componentPageRoutes({ arnsComponents }: Services): Route
   })
   router.get('/expanded-predictor-badge', async (req, res) => {
     const navSections = activateMojNav(rawNavSections, req.path)
-    res.render('pages/expandedPredictorBadgePage', { badgeRiskScores, legacyBadgeRiskScores, navSections })
+    res.render('pages/expandedPredictorBadgePage', {
+      badgeRiskScores,
+      legacyBadgeRiskScores,
+      badgeErrorStateRiskScores,
+      navSections,
+    })
   })
   router.get('/expanded-predictor-badge/new', async (req, res) => {
     const navSections = activateMojNav(rawNavSections, req.path)
