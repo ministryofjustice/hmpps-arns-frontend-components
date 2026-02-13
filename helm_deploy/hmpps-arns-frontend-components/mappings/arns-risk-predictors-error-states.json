@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "GET",
-    "urlPattern": "/arns-api/risks/predictors/all/crn/X000001"
+    "urlPattern": "/arns-api/risks/predictors/all/crn/X000002"
   },
   "response": {
     "status": 200,
@@ -16,8 +16,11 @@
         "output": {
           "allReoffendingPredictor": {
             "staticOrDynamic": "STATIC",
-            "score": 1.23,
-            "band": "NOT_APPLICABLE"
+            "band": "LOW"
+          },
+          "violentReoffendingPredictor": {
+            "staticOrDynamic": "STATIC",
+            "score": 34.56
           }
         }
       }
