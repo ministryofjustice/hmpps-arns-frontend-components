@@ -197,12 +197,41 @@ expandedPredictorBadge(
           fixedWidth: false
         }) }}
       </div>
-      <div class="govuk-!-margin-bottom-4">
+      <div class="govuk-!-margin-bottom-8">
         {{ expandedPredictorBadge({
           data: riskDataLegacy,
           predictor: "rsr",
           showScore: true,
           fixedWidth: false
+        }) }}
+      </div>
+      <h2>Not Applicable example</h2>
+      <div class="govuk-!-margin-bottom-8">
+        {{ expandedPredictorBadge({
+          data: riskDataNotApplicable,
+          predictor: "directContactSexualReoffendingPredictor",
+          showScore: true,
+          showScore: true
+        }) }}
+      </div>
+      <h2>Unknown example</h2>
+      <h3>Missing score</h3>
+      <p>This is when score is missing, and showScore is true</p>
+      <div class="govuk-!-margin-bottom-4">
+        {{ expandedPredictorBadge({
+          data: riskDataErrorStates,
+          predictor: "allReoffendingPredictor",
+          showScore: true,
+          showScore: true
+        }) }}
+      </div>
+      <h3>Missing band</h3>
+      <div class="govuk-!-margin-bottom-8">
+        {{ expandedPredictorBadge({
+          data: riskDataErrorStates,
+          predictor: "violentReoffendingPredictor",
+          showScore: true,
+          showScore: true
         }) }}
       </div>
     </div>

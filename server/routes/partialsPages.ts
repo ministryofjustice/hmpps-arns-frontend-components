@@ -25,10 +25,14 @@ export default function componentPageRoutes({ arnsComponents }: Services): Route
     const navSections = activateMojNav(rawNavSections, req.path)
     const riskData = await arnsComponents.getRiskData(null, 'crn', 'X123456')
     const riskDataLegacy = await arnsComponents.getRiskData(null, 'crn', 'X654321')
+    const riskDataNotApplicable = await arnsComponents.getRiskData(null, 'crn', 'X000001')
+    const riskDataErrorStates = await arnsComponents.getRiskData(null, 'crn', 'X000002')
     res.render('pages/predictorBadgeLibraryPage', {
       navSections,
       riskData,
       riskDataLegacy,
+      riskDataNotApplicable,
+      riskDataErrorStates,
     })
   })
   router.get('/expanded-predictor-badge', async (req, res) => {
@@ -44,10 +48,14 @@ export default function componentPageRoutes({ arnsComponents }: Services): Route
     const navSections = activateMojNav(rawNavSections, req.path)
     const riskData = await arnsComponents.getRiskData(null, 'crn', 'X123456')
     const riskDataLegacy = await arnsComponents.getRiskData(null, 'crn', 'X654321')
+    const riskDataNotApplicable = await arnsComponents.getRiskData(null, 'crn', 'X000001')
+    const riskDataErrorStates = await arnsComponents.getRiskData(null, 'crn', 'X000002')
     res.render('pages/expandedPredictorBadgeLibraryPage', {
       navSections,
       riskData,
       riskDataLegacy,
+      riskDataNotApplicable,
+      riskDataErrorStates,
     })
   })
   router.get('/mappa-widget', async (req, res) => {
@@ -86,12 +94,12 @@ export default function componentPageRoutes({ arnsComponents }: Services): Route
     const navSections = activateMojNav(rawNavSections, req.path)
     const riskData = await arnsComponents.getRiskData(null, 'crn', 'X123456')
     const riskDataLegacy = await arnsComponents.getRiskData(null, 'crn', 'X654321')
-    const riskDataErrorCases = await arnsComponents.getRiskData(null, 'crn', 'X000001')
+    const riskDataNotApplicable = await arnsComponents.getRiskData(null, 'crn', 'X000001')
     res.render('pages/predictorScaleLibraryPage', {
       navSections,
       riskData,
       riskDataLegacy,
-      riskDataErrorCases,
+      riskDataNotApplicable,
     })
   })
 

@@ -2767,6 +2767,10 @@ expandedPredictorBadge(
         
       
 
+      
+        
+      
+
       <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__fixed-width">
         <span
           class="arns-predictor-badge__type">All Reoffending Predictor</span>
@@ -2864,6 +2868,10 @@ expandedPredictorBadge(
         
       
 
+      
+        
+      
+
       <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__fixed-width">
         <span
           class="arns-predictor-badge__type">All Reoffending Predictor</span>
@@ -2919,6 +2927,10 @@ expandedPredictorBadge(
       
 
       
+      
+
+      
+        
       
 
       
@@ -2986,6 +2998,10 @@ expandedPredictorBadge(
         
       
 
+      
+        
+      
+
       <div class="arns-expanded-predictor-badge--medium arns-expanded-predictor-badge__fixed-width">
         <span
           class="arns-predictor-badge__type">Serious Violent Reoffending Predictor</span>
@@ -3041,6 +3057,10 @@ expandedPredictorBadge(
       
 
       
+      
+
+      
+        
       
 
       
@@ -3106,6 +3126,10 @@ expandedPredictorBadge(
         
       
 
+      
+        
+      
+
       <div class="arns-expanded-predictor-badge--high arns-expanded-predictor-badge__fixed-width">
         <span
           class="arns-predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
@@ -3165,6 +3189,10 @@ expandedPredictorBadge(
         
       
 
+      
+        
+      
+
       <div class="arns-expanded-predictor-badge--high arns-expanded-predictor-badge__fixed-width">
         <span
           class="arns-predictor-badge__type">Combined Serious Reoffending Predictor</span>
@@ -3209,6 +3237,10 @@ expandedPredictorBadge(
       
 
       
+      
+
+      
+        
       
 
       
@@ -3276,6 +3308,10 @@ expandedPredictorBadge(
       
 
       
+      
+
+      
+        
       
 
       
@@ -3483,7 +3519,7 @@ expandedPredictorBadge(
   
 
       </div>
-      <div class="govuk-!-margin-bottom-4">
+      <div class="govuk-!-margin-bottom-8">
         
 
 
@@ -3496,6 +3532,198 @@ expandedPredictorBadge(
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+      </div>
+      <h2>Not Applicable example</h2>
+      <div class="govuk-!-margin-bottom-8">
+        
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+
+      
+      
+        
+      
+
+      
+      
+
+      
+        
+      
+
+      
+        
+      
+
+      <div class="arns-expanded-predictor-badge--very-high arns-expanded-predictor-badge__fixed-width">
+        <span
+          class="arns-predictor-badge__type">Direct Contact - Sexual Reoffending Predictor</span>
+
+        <div class="arns-predictor-badge__stats">
+          <span class="arns-predictor-badge__level">VERY HIGH</span>
+
+          
+            <span class="arns-predictor-badge__score">2.81%</span>
+          
+
+          
+
+        </div>
+
+        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
+
+      </div>
+    
+  
+    
+  
+    
+  
+
+      </div>
+      <h2>Unknown example</h2>
+      <h3>Missing score</h3>
+      <p>This is when score is missing, and showScore is true</p>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+
+
+
+  
+    
+  
+    
+  
+    
+
+      
+      
+        
+      
+
+      
+      
+
+      
+        
+      
+
+      
+        
+      
+
+      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__fixed-width">
+        <span
+          class="arns-predictor-badge__type">All Reoffending Predictor</span>
+
+        <div class="arns-predictor-badge__stats">
+          <span class="arns-predictor-badge__level">LOW</span>
+
+          
+            <span class="arns-predictor-badge__score">1.23%</span>
+          
+
+          
+            <span class="arns-predictor-badge__static_or_dynamic">Static</span>
+          
+
+        </div>
+
+        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
+
+      </div>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+      </div>
+      <h3>Missing band</h3>
+      <div class="govuk-!-margin-bottom-8">
+        
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+    
+
+      
+      
+        
+      
+
+      
+      
+
+      
+        
+      
+
+      
+        
+      
+
+      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__fixed-width">
+        <span
+          class="arns-predictor-badge__type">Violent Reoffending Predictor</span>
+
+        <div class="arns-predictor-badge__stats">
+          <span class="arns-predictor-badge__level">LOW</span>
+
+          
+            <span class="arns-predictor-badge__score">1.23%</span>
+          
+
+          
+            <span class="arns-predictor-badge__static_or_dynamic">Static</span>
+          
+
+        </div>
+
+        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
+
+      </div>
     
   
     
@@ -6166,6 +6394,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
         
       
+
+      
+        
+      
+
       <div class="arns-predictor-badge--high">
         <span class="arns-predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
 
@@ -6210,6 +6443,11 @@ predictorBadge(
       
         
       
+
+      
+        
+      
+
       <div class="arns-predictor-badge--low">
         <span class="arns-predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
@@ -6285,6 +6523,11 @@ predictorBadge(
       
         
       
+
+      
+        
+      
+
       <div class="arns-predictor-badge--low">
         <span class="arns-predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
@@ -6330,6 +6573,11 @@ predictorBadge(
       
         
       
+
+      
+        
+      
+
       <div class="arns-predictor-badge--low">
         <span class="arns-predictor-badge__type_and_level">VIOLENT REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
@@ -6375,6 +6623,11 @@ predictorBadge(
       
         
       
+
+      
+        
+      
+
       <div class="arns-predictor-badge--medium">
         <span class="arns-predictor-badge__type_and_level">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
 
@@ -6420,6 +6673,11 @@ predictorBadge(
       
         
       
+
+      
+        
+      
+
       <div class="arns-predictor-badge--very-high">
         <span class="arns-predictor-badge__type_and_level">DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
 
@@ -6463,6 +6721,11 @@ predictorBadge(
       
         
       
+
+      
+        
+      
+
       <div class="arns-predictor-badge--high">
         <span class="arns-predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
 
@@ -6506,6 +6769,11 @@ predictorBadge(
       
         
       
+
+      
+        
+      
+
       <div class="arns-predictor-badge--high">
         <span class="arns-predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>HIGH</strong></span>
 
@@ -6653,7 +6921,7 @@ predictorBadge(
 
 
       </div>
-      <div class="govuk-!-margin-bottom-4">
+      <div class="govuk-!-margin-bottom-8">
         
 
 
@@ -6666,6 +6934,153 @@ predictorBadge(
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+      </div>
+      <h2>Not Applicable example</h2>
+      <div class="govuk-!-margin-bottom-8">
+        
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+
+      
+      
+        
+      
+
+      
+        
+      
+
+      <div class="arns-predictor-badge--very-high">
+        <span class="arns-predictor-badge__type_and_level">DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
+
+        
+          <span class="arns-predictor-badge__score">2.81%</span>
+        
+
+        
+      </div>
+    
+  
+    
+  
+    
+  
+
+
+      </div>
+      <h2>Unknown example</h2>
+      <h3>Missing score</h3>
+      <p>This is when score is missing, and showScore is true</p>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+
+
+
+  
+    
+  
+    
+  
+    
+
+      
+      
+        
+      
+
+      
+        
+      
+
+      <div class="arns-predictor-badge--low">
+        <span class="arns-predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
+
+        
+          <span class="arns-predictor-badge__score">1.23%</span>
+        
+
+        
+          <span class="arns-predictor-badge__static_or_dynamic">Static</span>
+        
+      </div>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+      </div>
+      <h3>Missing band</h3>
+      <div class="govuk-!-margin-bottom-8">
+        
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+    
+
+      
+      
+        
+      
+
+      
+        
+      
+
+      <div class="arns-predictor-badge--low">
+        <span class="arns-predictor-badge__type_and_level">VIOLENT REOFFENDING PREDICTOR <strong>LOW</strong></span>
+
+        
+          <span class="arns-predictor-badge__score">1.23%</span>
+        
+
+        
+          <span class="arns-predictor-badge__static_or_dynamic">Static</span>
+        
+      </div>
     
   
     
@@ -8968,6 +9383,12 @@ predictorScale(
     
   
     
+  
+    
+  
+    
+  
+    
 
         
         
@@ -8975,6 +9396,7 @@ predictorScale(
         
 
         
+            
             
         
 
@@ -8996,47 +9418,39 @@ predictorScale(
         <div class="arns-predictor-scale govuk-body">
           <div class="arns-predictor-scale-header-wrapper">
             <div>
-              <h2 class="govuk-heading-m">All Reoffending Predictor</h2>
+              <h2 class="govuk-heading-m">Direct Contact - Sexual Reoffending Predictor</h2>
               <p class="govuk-hint">Last updated: 01 January 2025</p>
             </div>
-            
-            <div><strong class="govuk-tag govuk-tag--grey">
-  Static
-</strong>
-</div>
             
           </div>
 
           <div class="arns-scale-marker">
-            <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper--position-one-of-four">
+            <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper--position-four-of-four">
               
   <div class="arns-scale-marker__card">
     <div class="arns-scale-marker__card-top">
-      <h3>LOW</h3>
+      <h3>VERY HIGH</h3>
     </div>
     
-      <div class="arns-scale-marker__card-bottom">
-        <p>1.23%</p>
-      </div>
-      <div class="arns-scale-marker__card-pointer"></div>
+      <div class="arns-scale-marker__card-pointer arns-scale-marker__card-pointer--white"></div>
     
   </div>
 
             </div>
           </div>
 
-          <div class="arns-scale-bar arns-scale-bar--fourths">
-            <div data-band-percentage-start="0%" data-band-percentage="50%">
+          <div class="arns-scale-bar--small arns-scale-bar--small-fourths">
+            <div data-band-percentage-start="" data-band-percentage="">
               <span></span>
             </div>
-            <div data-band-percentage="75%">
+            <div data-band-percentage="">
               <span></span>
             </div>
-            <div data-band-percentage="90%">
+            <div data-band-percentage="">
               <span></span>
             </div>
             
-              <div data-band-percentage="100%">
+              <div data-band-percentage="">
                 <span></span>
               </div>
             
@@ -9044,12 +9458,6 @@ predictorScale(
         </div>
       
 
-    
-  
-    
-  
-    
-  
     
   
     

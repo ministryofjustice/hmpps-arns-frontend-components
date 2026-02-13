@@ -162,11 +162,37 @@ predictorBadge(
           showScore: false
         }) }}
       </div>
-      <div class="govuk-!-margin-bottom-4">
+      <div class="govuk-!-margin-bottom-8">
         {{ predictorBadge({
           data: riskDataLegacy,
           predictor: "ospiic",
           showScore: false
+        }) }}
+      </div>
+      <h2>Not Applicable example</h2>
+      <div class="govuk-!-margin-bottom-8">
+        {{ predictorBadge({
+          data: riskDataNotApplicable,
+          predictor: "directContactSexualReoffendingPredictor",
+          showScore: true
+        }) }}
+      </div>
+      <h2>Unknown example</h2>
+      <h3>Missing score</h3>
+      <p>This is when score is missing, and showScore is true</p>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorBadge({
+          data: riskDataErrorStates,
+          predictor: "allReoffendingPredictor",
+          showScore: true
+        }) }}
+      </div>
+      <h3>Missing band</h3>
+      <div class="govuk-!-margin-bottom-8">
+        {{ predictorBadge({
+          data: riskDataErrorStates,
+          predictor: "violentReoffendingPredictor",
+          showScore: true
         }) }}
       </div>
     </div>
