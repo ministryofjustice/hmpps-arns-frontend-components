@@ -102,6 +102,10 @@ export default function componentPageRoutes({ arnsComponents }: Services): Route
       riskDataNotApplicable,
     })
   })
+  router.get('/new', async (req, res, next) => {
+    const navSections = activateMojNav(rawNavSections, '/new')
+    return res.render('pages/newIntroPage', { navSections })
+  })
 
   return router
 }

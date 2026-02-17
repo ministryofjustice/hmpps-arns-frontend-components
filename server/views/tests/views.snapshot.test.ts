@@ -84,4 +84,9 @@ describe('View Snapshot Tests: All Pages', () => {
     const response = await request(app).get('/legacy-predictor-timeline-item').expect(200)
     expect(response.text).toMatchSnapshot()
   })
+
+  it('should match snapshot for the new intro page (/new)', async () => {
+    const response = await request(app).get('/new').expect(200)
+    expect(response.text).toMatchSnapshot()
+  })
 })
