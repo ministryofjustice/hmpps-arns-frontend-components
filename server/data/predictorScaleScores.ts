@@ -31,6 +31,7 @@ const predictorScaleScores = {
     type: 'Serious Violent Reoffending Predictor',
     lastUpdated: '19 December 2024',
     staticOrDynamic: 'DYNAMIC',
+    bandPercentages: ['0%', '1%', '3%', '6.9%', '25%+'],
   },
   CombinedPredictor: {
     level: 'MEDIUM',
