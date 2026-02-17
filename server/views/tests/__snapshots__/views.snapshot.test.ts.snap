@@ -4570,11 +4570,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
       <h3>Code</h3>
       <p>
         The <a
-          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/82d8d1dd544e386bcaa58ea3f64cf2fade3eaec6/server/views/partials/mappa-widget">MAPPA
+          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/mappa-widget">MAPPA
           widget Nunjucks macro</a> is available on GitHub.
         <br>
         The <a
-          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/a9c439f504404b3afe77306d1d468d17bbd453d5/assets/scss/partials/risk/_mappa-widget.scss">MAPPA
+          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_mappa-widget.scss">MAPPA
           widget SCSS</a> is available on GitHub.
       </p>
       <h3>Input data format</h3>
@@ -11263,11 +11263,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
       <h3>Code</h3>
       <p>
         The <a
-          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/82d8d1dd544e386bcaa58ea3f64cf2fade3eaec6/server/views/partials/risk-flag-widget">Risk flag
+          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/risk-flag-widget">Risk flag
           widget Nunjucks macro</a> is available on GitHub.
         <br>
         The <a
-          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/a9c439f504404b3afe77306d1d468d17bbd453d5/assets/scss/partials/risk/_risk-flag-widget.scss">Risk flag
+          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_risk-flag-widget.scss">Risk flag
           widget SCSS</a> is available on GitHub.
       </p>
       <h3>Input data format</h3>
@@ -11533,9 +11533,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
       </p>
       <h3>Code</h3>
       <p>
-        The <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/82d8d1dd544e386bcaa58ea3f64cf2fade3eaec6/server/views/partials/rosh-widget">ROSH widget Nunjucks macro</a> is available on GitHub.
+        The <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/rosh-widget">ROSH widget Nunjucks macro</a> is available on GitHub.
         <br>
-        The <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/a9c439f504404b3afe77306d1d468d17bbd453d5/assets/scss/partials/risk/_rosh-widget.scss">ROSH widget SCSS</a> is available on GitHub.
+        The <a href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_rosh-widget.scss">ROSH widget SCSS</a> is available on GitHub.
       </p>
       <h3>Input data format</h3>
       <p>
