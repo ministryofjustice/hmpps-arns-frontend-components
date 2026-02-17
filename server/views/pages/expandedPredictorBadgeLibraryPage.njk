@@ -22,18 +22,14 @@
 
 expandedPredictorBadge(
   data: riskData,
-  predictor: "allReoffendingPredictor",
-  showScore: true,
-  fixedWidth: true
+  predictor: "allReoffendingPredictor"
 })
 </code></pre>
 
       <p> renders as follows:</p>
       {{ expandedPredictorBadge({
         data: riskData,
-        predictor: "allReoffendingPredictor",
-        showScore: true,
-        fixedWidth: true
+        predictor: "allReoffendingPredictor"
       }) }}
 
       <h3>Macro inputs</h3>
@@ -59,7 +55,7 @@ expandedPredictorBadge(
             <li>"combinedSeriousReoffendingPredictor" - identifier for the combined serious reoffending predictor</li>
           </ul>
         </li>
-        <li>showScore (boolean)
+        <li>showScore (boolean) - optional override - recommended to leave undefined to use the default predictor display config
           <ul>
             <li>true - displays the score within the predictor badge</li>
             <li>false - hides the score within the predictor badge</li>
@@ -67,7 +63,7 @@ expandedPredictorBadge(
         </li>
         <li>fixedWidth (boolean)
           <ul>
-            <li>true - the component has a fixed width</li>
+            <li>true (default) - the component has a fixed width</li>
             <li>false - the component will stretch to the width of the container</li>
           </ul>
         </li>
@@ -77,49 +73,37 @@ expandedPredictorBadge(
       <div class="govuk-!-margin-bottom-4">
         {{ expandedPredictorBadge({
           data: riskData,
-          predictor: "allReoffendingPredictor",
-          showScore: true,
-          fixedWidth: true
+          predictor: "allReoffendingPredictor"
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-4">
         {{ expandedPredictorBadge({
           data: riskData,
-          predictor: "violentReoffendingPredictor",
-          showScore: true,
-          fixedWidth: true
+          predictor: "violentReoffendingPredictor"
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-4">
         {{ expandedPredictorBadge({
           data: riskData,
-          predictor: "seriousViolentReoffendingPredictor",
-          showScore: true,
-          fixedWidth: true
+          predictor: "seriousViolentReoffendingPredictor"
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-4">
         {{ expandedPredictorBadge({
           data: riskData,
-          predictor: "directContactSexualReoffendingPredictor",
-          showScore: true,
-          fixedWidth: true
+          predictor: "directContactSexualReoffendingPredictor"
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-4">
         {{ expandedPredictorBadge({
           data: riskData,
-          predictor: "indirectImageContactSexualReoffendingPredictor",
-          showScore: true,
-          fixedWidth: true
+          predictor: "indirectImageContactSexualReoffendingPredictor"
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-8">
         {{ expandedPredictorBadge({
           data: riskData,
-          predictor: "combinedSeriousReoffendingPredictor",
-          showScore: true,
-          fixedWidth: true
+          predictor: "combinedSeriousReoffendingPredictor"
         }) }}
       </div>
       <h2>OGRS4 Examples (dynamic width)</h2>
@@ -127,7 +111,6 @@ expandedPredictorBadge(
         {{ expandedPredictorBadge({
           data: riskData,
           predictor: "allReoffendingPredictor",
-          showScore: true,
           fixedWidth: false
         }) }}
       </div>
@@ -135,7 +118,6 @@ expandedPredictorBadge(
         {{ expandedPredictorBadge({
           data: riskData,
           predictor: "indirectImageContactSexualReoffendingPredictor",
-          showScore: true,
           fixedWidth: false
         }) }}
       </div>
@@ -143,49 +125,37 @@ expandedPredictorBadge(
       <div class="govuk-!-margin-bottom-4">
         {{ expandedPredictorBadge({
           data: riskDataLegacy,
-          predictor: "ogrs3",
-          showScore: true,
-          fixedWidth: true
+          predictor: "ogrs3"
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-4">
         {{ expandedPredictorBadge({
           data: riskDataLegacy,
-          predictor: "ovp",
-          showScore: true,
-          fixedWidth: true
+          predictor: "ovp"
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-4">
         {{ expandedPredictorBadge({
           data: riskDataLegacy,
-          predictor: "ogp",
-          showScore: true,
-          fixedWidth: true
+          predictor: "ogp"
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-4">
         {{ expandedPredictorBadge({
           data: riskDataLegacy,
-          predictor: "rsr",
-          showScore: true,
-          fixedWidth: true
+          predictor: "rsr"
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-4">
         {{ expandedPredictorBadge({
           data: riskDataLegacy,
-          predictor: "ospdc",
-          showScore: false,
-          fixedWidth: true
+          predictor: "ospdc"
         }) }}
       </div>
       <div class="govuk-!-margin-bottom-8">
         {{ expandedPredictorBadge({
           data: riskDataLegacy,
-          predictor: "ospiic",
-          showScore: false,
-          fixedWidth: true
+          predictor: "ospiic"
         }) }}
       </div>
       <h2>Legacy data examples (dynamic width)</h2>
@@ -193,7 +163,6 @@ expandedPredictorBadge(
         {{ expandedPredictorBadge({
           data: riskDataLegacy,
           predictor: "ogp",
-          showScore: true,
           fixedWidth: false
         }) }}
       </div>
@@ -201,7 +170,6 @@ expandedPredictorBadge(
         {{ expandedPredictorBadge({
           data: riskDataLegacy,
           predictor: "rsr",
-          showScore: true,
           fixedWidth: false
         }) }}
       </div>
@@ -209,29 +177,24 @@ expandedPredictorBadge(
       <div class="govuk-!-margin-bottom-8">
         {{ expandedPredictorBadge({
           data: riskDataNotApplicable,
-          predictor: "directContactSexualReoffendingPredictor",
-          showScore: true,
-          showScore: true
+          predictor: "directContactSexualReoffendingPredictor"
         }) }}
       </div>
       <h2>Unknown example</h2>
       <h3>Missing score</h3>
-      <p>This is when score is missing, and showScore is true</p>
+      <p>Applies when no score is available, but the configuration (default predictor display config or showScore override)
+        requires the score field to be visible.</p>
       <div class="govuk-!-margin-bottom-4">
         {{ expandedPredictorBadge({
           data: riskDataErrorStates,
-          predictor: "allReoffendingPredictor",
-          showScore: true,
-          showScore: true
+          predictor: "allReoffendingPredictor"
         }) }}
       </div>
       <h3>Missing band</h3>
       <div class="govuk-!-margin-bottom-8">
         {{ expandedPredictorBadge({
           data: riskDataErrorStates,
-          predictor: "violentReoffendingPredictor",
-          showScore: true,
-          showScore: true
+          predictor: "violentReoffendingPredictor"
         }) }}
       </div>
     </div>

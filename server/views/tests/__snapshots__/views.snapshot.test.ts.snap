@@ -2736,9 +2736,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
 expandedPredictorBadge(
   data: riskData,
-  predictor: "allReoffendingPredictor",
-  showScore: true,
-  fixedWidth: true
+  predictor: "allReoffendingPredictor"
 })
 </code></pre>
 
@@ -2747,13 +2745,15 @@ expandedPredictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -2828,7 +2828,7 @@ expandedPredictorBadge(
             <li>"combinedSeriousReoffendingPredictor" - identifier for the combined serious reoffending predictor</li>
           </ul>
         </li>
-        <li>showScore (boolean)
+        <li>showScore (boolean) - optional override - recommended to leave undefined to use the default predictor display config
           <ul>
             <li>true - displays the score within the predictor badge</li>
             <li>false - hides the score within the predictor badge</li>
@@ -2836,7 +2836,7 @@ expandedPredictorBadge(
         </li>
         <li>fixedWidth (boolean)
           <ul>
-            <li>true - the component has a fixed width</li>
+            <li>true (default) - the component has a fixed width</li>
             <li>false - the component will stretch to the width of the container</li>
           </ul>
         </li>
@@ -2848,13 +2848,15 @@ expandedPredictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -2911,15 +2913,17 @@ expandedPredictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -2974,17 +2978,19 @@ expandedPredictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -3037,19 +3043,21 @@ expandedPredictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -3075,8 +3083,6 @@ expandedPredictorBadge(
           <span class="arns-predictor-badge__level">VERY HIGH</span>
 
           
-            <span class="arns-predictor-badge__score">2.81%</span>
-          
 
           
 
@@ -3098,21 +3104,23 @@ expandedPredictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -3138,8 +3146,6 @@ expandedPredictorBadge(
           <span class="arns-predictor-badge__level">HIGH</span>
 
           
-            <span class="arns-predictor-badge__score">1.07%</span>
-          
 
           
 
@@ -3159,23 +3165,25 @@ expandedPredictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -3223,13 +3231,15 @@ expandedPredictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -3286,21 +3296,23 @@ expandedPredictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -3326,8 +3338,6 @@ expandedPredictorBadge(
           <span class="arns-predictor-badge__level">HIGH</span>
 
           
-            <span class="arns-predictor-badge__score">1.07%</span>
-          
 
           
 
@@ -3348,7 +3358,6 @@ expandedPredictorBadge(
 
 
 
-
   
     
   
@@ -3370,32 +3379,6 @@ expandedPredictorBadge(
       </div>
       <div class="govuk-!-margin-bottom-4">
         
-
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
 
 
 
@@ -3423,7 +3406,6 @@ expandedPredictorBadge(
 
 
 
-
   
     
   
@@ -3446,6 +3428,29 @@ expandedPredictorBadge(
       <div class="govuk-!-margin-bottom-4">
         
 
+
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
 
 
 
@@ -3470,7 +3475,6 @@ expandedPredictorBadge(
       </div>
       <div class="govuk-!-margin-bottom-8">
         
-
 
 
 
@@ -3499,7 +3503,6 @@ expandedPredictorBadge(
 
 
 
-
   
     
   
@@ -3521,7 +3524,6 @@ expandedPredictorBadge(
       </div>
       <div class="govuk-!-margin-bottom-8">
         
-
 
 
 
@@ -3550,19 +3552,21 @@ expandedPredictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -3588,8 +3592,6 @@ expandedPredictorBadge(
           <span class="arns-predictor-badge__level">VERY HIGH</span>
 
           
-            <span class="arns-predictor-badge__score">2.81%</span>
-          
 
           
 
@@ -3608,19 +3610,22 @@ expandedPredictorBadge(
       </div>
       <h2>Unknown example</h2>
       <h3>Missing score</h3>
-      <p>This is when score is missing, and showScore is true</p>
+      <p>Applies when no score is available, but the configuration (default predictor display config or showScore override)
+        requires the score field to be visible.</p>
       <div class="govuk-!-margin-bottom-4">
         
 
 
 
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -3678,15 +3683,17 @@ expandedPredictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -6650,21 +6657,23 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -6678,8 +6687,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <div class="arns-predictor-badge--high">
         <span class="arns-predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
 
-        
-          <span class="arns-predictor-badge__score">1.07%</span>
         
 
         
@@ -6697,8 +6704,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 predictorBadge(
   data: riskData,
-  predictor: "allReoffendingPredictor",
-  showScore: true
+  predictor: "allReoffendingPredictor"
 })
 </code></pre>
 
@@ -6707,13 +6713,15 @@ predictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -6773,7 +6781,7 @@ predictorBadge(
             <li>"combinedSeriousReoffendingPredictor" - identifier for the combined serious reoffending predictor</li>
           </ul>
         </li>
-        <li>showScore (boolean)
+        <li>showScore (boolean) - optional override - recommended to leave undefined to use the default predictor display config
           <ul>
             <li>true - displays the score within the predictor badge</li>
             <li>false - hides the score within the predictor badge</li>
@@ -6787,13 +6795,15 @@ predictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -6835,15 +6845,17 @@ predictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -6883,17 +6895,19 @@ predictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -6931,19 +6945,21 @@ predictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -6958,8 +6974,6 @@ predictorBadge(
         <span class="arns-predictor-badge__type_and_level">DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
 
         
-          <span class="arns-predictor-badge__score">2.81%</span>
-        
 
         
       </div>
@@ -6977,21 +6991,23 @@ predictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -7006,8 +7022,6 @@ predictorBadge(
         <span class="arns-predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
 
         
-          <span class="arns-predictor-badge__score">1.07%</span>
-        
 
         
       </div>
@@ -7023,23 +7037,25 @@ predictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -7072,7 +7088,6 @@ predictorBadge(
 
 
 
-
   
     
   
@@ -7095,33 +7110,6 @@ predictorBadge(
       </div>
       <div class="govuk-!-margin-bottom-4">
         
-
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
 
 
 
@@ -7150,7 +7138,6 @@ predictorBadge(
 
 
 
-
   
     
   
@@ -7174,6 +7161,30 @@ predictorBadge(
       <div class="govuk-!-margin-bottom-4">
         
 
+
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
 
 
 
@@ -7199,7 +7210,6 @@ predictorBadge(
       </div>
       <div class="govuk-!-margin-bottom-8">
         
-
 
 
 
@@ -7229,19 +7239,21 @@ predictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -7255,8 +7267,6 @@ predictorBadge(
       <div class="arns-predictor-badge--very-high">
         <span class="arns-predictor-badge__type_and_level">DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
 
-        
-          <span class="arns-predictor-badge__score">2.81%</span>
         
 
         
@@ -7272,19 +7282,22 @@ predictorBadge(
       </div>
       <h2>Unknown example</h2>
       <h3>Missing score</h3>
-      <p>This is when score is missing, and showScore is true</p>
+      <p>Applies when no score is available, but the configuration (default predictor display config or showScore override)
+        requires the score field to be visible.</p>
       <div class="govuk-!-margin-bottom-4">
         
 
 
 
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -7327,15 +7340,17 @@ predictorBadge(
 
 
 
+  
+    
+  
+    
+  
+    
+  
+    
 
-  
-    
-  
-    
-  
-    
-  
-    
+      
+      
 
       
       
@@ -8069,25 +8084,28 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <h3>LOW</h3>
     </div>
     
-      <div class="scale-marker__card-pointer scale-marker__card-pointer--white"></div>
+      <div class="scale-marker__card-bottom">
+        <p>0.67%</p>
+      </div>
+      <div class="scale-marker__card-pointer"></div>
     
   </div>
 
       </div>
     </div>
 
-    <div class="scale-bar--small scale-bar--small-fourths">
-      <div data-band-percentage-start="" data-band-percentage="">
+    <div class="scale-bar scale-bar--fourths">
+      <div data-band-percentage-start="0%" data-band-percentage="1%">
         <span></span>
       </div>
-      <div data-band-percentage="">
+      <div data-band-percentage="3%">
         <span></span>
       </div>
-      <div data-band-percentage="">
+      <div data-band-percentage="6.9%">
         <span></span>
       </div>
       
-        <div data-band-percentage="">
+        <div data-band-percentage="25%+">
           <span></span>
         </div>
       
@@ -8774,14 +8792,7 @@ predictorScale(
   
     
 
-        
-        
-        
-        
-
-        
-            
-        
+      
 
       
 
@@ -8831,7 +8842,8 @@ predictorScale(
           </div>
 
           <div class="arns-scale-bar arns-scale-bar--fourths">
-            <div data-band-percentage-start="0%" data-band-percentage="50%">
+            <div data-band-percentage-start="0%"
+                 data-band-percentage="50%">
               <span></span>
             </div>
             <div data-band-percentage="75%">
@@ -8903,14 +8915,7 @@ predictorScale(
   
     
 
-        
-        
-        
-        
-
-        
-            
-        
+      
 
       
 
@@ -8960,7 +8965,8 @@ predictorScale(
           </div>
 
           <div class="arns-scale-bar arns-scale-bar--fourths">
-            <div data-band-percentage-start="0%" data-band-percentage="50%">
+            <div data-band-percentage-start="0%"
+                 data-band-percentage="50%">
               <span></span>
             </div>
             <div data-band-percentage="75%">
@@ -9008,14 +9014,7 @@ predictorScale(
   
     
 
-        
-        
-        
-        
-
-        
-            
-        
+      
 
       
 
@@ -9065,7 +9064,8 @@ predictorScale(
           </div>
 
           <div class="arns-scale-bar arns-scale-bar--fourths">
-            <div data-band-percentage-start="0%" data-band-percentage="30%">
+            <div data-band-percentage-start="0%"
+                 data-band-percentage="30%">
               <span></span>
             </div>
             <div data-band-percentage="60%">
@@ -9113,15 +9113,7 @@ predictorScale(
   
     
 
-        
-        
-        
-        
-
-        
-            
-            
-        
+      
 
       
 
@@ -9160,25 +9152,29 @@ predictorScale(
       <h3>MEDIUM</h3>
     </div>
     
-      <div class="arns-scale-marker__card-pointer arns-scale-marker__card-pointer--white"></div>
+      <div class="arns-scale-marker__card-bottom">
+        <p>1.23%</p>
+      </div>
+      <div class="arns-scale-marker__card-pointer"></div>
     
   </div>
 
             </div>
           </div>
 
-          <div class="arns-scale-bar--small arns-scale-bar--small-fourths">
-            <div data-band-percentage-start="" data-band-percentage="">
+          <div class="arns-scale-bar arns-scale-bar--fourths">
+            <div data-band-percentage-start="0%"
+                 data-band-percentage="1%">
               <span></span>
             </div>
-            <div data-band-percentage="">
+            <div data-band-percentage="3%">
               <span></span>
             </div>
-            <div data-band-percentage="">
+            <div data-band-percentage="6.9%">
               <span></span>
             </div>
             
-              <div data-band-percentage="">
+              <div data-band-percentage="25%+">
                 <span></span>
               </div>
             
@@ -9216,15 +9212,7 @@ predictorScale(
   
     
 
-        
-        
-        
-        
-
-        
-            
-            
-        
+      
 
       
 
@@ -9266,7 +9254,8 @@ predictorScale(
           </div>
 
           <div class="arns-scale-bar--small arns-scale-bar--small-fourths">
-            <div data-band-percentage-start="" data-band-percentage="">
+            <div data-band-percentage-start=""
+                 data-band-percentage="">
               <span></span>
             </div>
             <div data-band-percentage="">
@@ -9314,16 +9303,7 @@ predictorScale(
   
     
 
-        
-        
-        
-        
-
-        
-            
-            
-            
-        
+      
 
       
 
@@ -9365,7 +9345,8 @@ predictorScale(
           </div>
 
           <div class="arns-scale-bar--small">
-            <div data-band-percentage-start="" data-band-percentage="">
+            <div data-band-percentage-start=""
+                 data-band-percentage="">
               <span></span>
             </div>
             <div data-band-percentage="">
@@ -9409,14 +9390,7 @@ predictorScale(
   
     
 
-        
-        
-        
-        
-
-        
-            
-        
+      
 
       
 
@@ -9466,7 +9440,8 @@ predictorScale(
           </div>
 
           <div class="arns-scale-bar arns-scale-bar--fourths">
-            <div data-band-percentage-start="0%" data-band-percentage="1%">
+            <div data-band-percentage-start="0%"
+                 data-band-percentage="1%">
               <span></span>
             </div>
             <div data-band-percentage="3%">
@@ -9666,15 +9641,7 @@ predictorScale(
   
     
 
-        
-        
-        
-        
-
-        
-            
-            
-        
+      
 
       
 
@@ -9716,7 +9683,8 @@ predictorScale(
           </div>
 
           <div class="arns-scale-bar--small arns-scale-bar--small-fourths">
-            <div data-band-percentage-start="" data-band-percentage="">
+            <div data-band-percentage-start=""
+                 data-band-percentage="">
               <span></span>
             </div>
             <div data-band-percentage="">
