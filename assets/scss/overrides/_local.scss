@@ -5,3 +5,9 @@
 .badge-restricted-width {
   width: 500px;
 }
+
+pre {
+  white-space: pre-wrap;       /* CSS3 */
+  word-wrap: break-word;       /* For older browsers */
+  overflow-wrap: break-word;   /* Standard */
+}

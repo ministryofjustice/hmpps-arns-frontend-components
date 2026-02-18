@@ -79,7 +79,7 @@
             "band": "LOW"
           },
           "violentReoffendingPredictor": {
-            "staticOrDynamic": "STATIC",
+            "staticOrDynamic": "DYNAMIC",
             "score": 34.56,
             "band": "MEDIUM"
           },

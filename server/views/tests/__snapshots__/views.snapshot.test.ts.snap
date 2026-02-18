@@ -2771,24 +2771,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
       
 
-      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__fixed-width">
+      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__fixed-width"
+           data-expanded-predictor-badge="All Reoffending Predictor LOW">
+
         <span
-          class="arns-predictor-badge__type">All Reoffending Predictor</span>
+          class="arns-predictor-badge__type" data-test-id="name">All Reoffending Predictor</span>
 
         <div class="arns-predictor-badge__stats">
-          <span class="arns-predictor-badge__level">LOW</span>
+          <span class="arns-predictor-badge__level" data-test-id="band">LOW</span>
 
           
-            <span class="arns-predictor-badge__score">1.23%</span>
+            <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
           
 
           
-            <span class="arns-predictor-badge__static_or_dynamic">Static</span>
+            <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
           
 
         </div>
 
-        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated" data-test-id="completedDate">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -2874,24 +2876,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
       
 
-      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__fixed-width">
+      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__fixed-width"
+           data-expanded-predictor-badge="All Reoffending Predictor LOW">
+
         <span
-          class="arns-predictor-badge__type">All Reoffending Predictor</span>
+          class="arns-predictor-badge__type" data-test-id="name">All Reoffending Predictor</span>
 
         <div class="arns-predictor-badge__stats">
-          <span class="arns-predictor-badge__level">LOW</span>
+          <span class="arns-predictor-badge__level" data-test-id="band">LOW</span>
 
           
-            <span class="arns-predictor-badge__score">1.23%</span>
+            <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
           
 
           
-            <span class="arns-predictor-badge__static_or_dynamic">Static</span>
+            <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
           
 
         </div>
 
-        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated" data-test-id="completedDate">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -2941,24 +2945,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
       
 
-      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__fixed-width">
+      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__fixed-width"
+           data-expanded-predictor-badge="Violent Reoffending Predictor LOW">
+
         <span
-          class="arns-predictor-badge__type">Violent Reoffending Predictor</span>
+          class="arns-predictor-badge__type" data-test-id="name">Violent Reoffending Predictor</span>
 
         <div class="arns-predictor-badge__stats">
-          <span class="arns-predictor-badge__level">LOW</span>
+          <span class="arns-predictor-badge__level" data-test-id="band">LOW</span>
 
           
-            <span class="arns-predictor-badge__score">1.23%</span>
+            <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
           
 
           
-            <span class="arns-predictor-badge__static_or_dynamic">Static</span>
+            <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
           
 
         </div>
 
-        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated" data-test-id="completedDate">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -3008,24 +3014,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
       
 
-      <div class="arns-expanded-predictor-badge--medium arns-expanded-predictor-badge__fixed-width">
+      <div class="arns-expanded-predictor-badge--medium arns-expanded-predictor-badge__fixed-width"
+           data-expanded-predictor-badge="Serious Violent Reoffending Predictor MEDIUM">
+
         <span
-          class="arns-predictor-badge__type">Serious Violent Reoffending Predictor</span>
+          class="arns-predictor-badge__type" data-test-id="name">Serious Violent Reoffending Predictor</span>
 
         <div class="arns-predictor-badge__stats">
-          <span class="arns-predictor-badge__level">MEDIUM</span>
+          <span class="arns-predictor-badge__level" data-test-id="band">MEDIUM</span>
 
           
-            <span class="arns-predictor-badge__score">1.23%</span>
+            <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
           
 
           
-            <span class="arns-predictor-badge__static_or_dynamic">Static</span>
+            <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
           
 
         </div>
 
-        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated" data-test-id="completedDate">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -3075,12 +3083,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
       
 
-      <div class="arns-expanded-predictor-badge--very-high arns-expanded-predictor-badge__fixed-width">
+      <div class="arns-expanded-predictor-badge--very-high arns-expanded-predictor-badge__fixed-width"
+           data-expanded-predictor-badge="Direct Contact - Sexual Reoffending Predictor VERY HIGH">
+
         <span
-          class="arns-predictor-badge__type">Direct Contact - Sexual Reoffending Predictor</span>
+          class="arns-predictor-badge__type" data-test-id="name">Direct Contact - Sexual Reoffending Predictor</span>
 
         <div class="arns-predictor-badge__stats">
-          <span class="arns-predictor-badge__level">VERY HIGH</span>
+          <span class="arns-predictor-badge__level" data-test-id="band">VERY HIGH</span>
 
           
 
@@ -3088,7 +3098,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
         </div>
 
-        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated" data-test-id="completedDate">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -3138,12 +3148,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
       
 
-      <div class="arns-expanded-predictor-badge--high arns-expanded-predictor-badge__fixed-width">
+      <div class="arns-expanded-predictor-badge--high arns-expanded-predictor-badge__fixed-width"
+           data-expanded-predictor-badge="Images and Indirect Contact – Sexual Reoffending Predictor HIGH">
+
         <span
-          class="arns-predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
+          class="arns-predictor-badge__type" data-test-id="name">Images and Indirect Contact – Sexual Reoffending Predictor</span>
 
         <div class="arns-predictor-badge__stats">
-          <span class="arns-predictor-badge__level">HIGH</span>
+          <span class="arns-predictor-badge__level" data-test-id="band">HIGH</span>
 
           
 
@@ -3151,7 +3163,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
         </div>
 
-        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated" data-test-id="completedDate">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -3201,24 +3213,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
       
 
-      <div class="arns-expanded-predictor-badge--high arns-expanded-predictor-badge__fixed-width">
+      <div class="arns-expanded-predictor-badge--high arns-expanded-predictor-badge__fixed-width"
+           data-expanded-predictor-badge="Combined Serious Reoffending Predictor HIGH">
+
         <span
-          class="arns-predictor-badge__type">Combined Serious Reoffending Predictor</span>
+          class="arns-predictor-badge__type" data-test-id="name">Combined Serious Reoffending Predictor</span>
 
         <div class="arns-predictor-badge__stats">
-          <span class="arns-predictor-badge__level">HIGH</span>
+          <span class="arns-predictor-badge__level" data-test-id="band">HIGH</span>
 
           
-            <span class="arns-predictor-badge__score">1.23%</span>
+            <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
           
 
           
-            <span class="arns-predictor-badge__static_or_dynamic">Static</span>
+            <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
           
 
         </div>
 
-        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated" data-test-id="completedDate">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -3257,24 +3271,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
       
 
-      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__dynamic">
+      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__dynamic"
+           data-expanded-predictor-badge="All Reoffending Predictor LOW">
+
         <span
-          class="arns-predictor-badge__type">All Reoffending Predictor</span>
+          class="arns-predictor-badge__type" data-test-id="name">All Reoffending Predictor</span>
 
         <div class="arns-predictor-badge__stats">
-          <span class="arns-predictor-badge__level">LOW</span>
+          <span class="arns-predictor-badge__level" data-test-id="band">LOW</span>
 
           
-            <span class="arns-predictor-badge__score">1.23%</span>
+            <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
           
 
           
-            <span class="arns-predictor-badge__static_or_dynamic">Static</span>
+            <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
           
 
         </div>
 
-        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated" data-test-id="completedDate">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -3330,12 +3346,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
       
 
-      <div class="arns-expanded-predictor-badge--high arns-expanded-predictor-badge__dynamic">
+      <div class="arns-expanded-predictor-badge--high arns-expanded-predictor-badge__dynamic"
+           data-expanded-predictor-badge="Images and Indirect Contact – Sexual Reoffending Predictor HIGH">
+
         <span
-          class="arns-predictor-badge__type">Images and Indirect Contact – Sexual Reoffending Predictor</span>
+          class="arns-predictor-badge__type" data-test-id="name">Images and Indirect Contact – Sexual Reoffending Predictor</span>
 
         <div class="arns-predictor-badge__stats">
-          <span class="arns-predictor-badge__level">HIGH</span>
+          <span class="arns-predictor-badge__level" data-test-id="band">HIGH</span>
 
           
 
@@ -3343,7 +3361,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
         </div>
 
-        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated" data-test-id="completedDate">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -3584,12 +3602,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
       
 
-      <div class="arns-expanded-predictor-badge--very-high arns-expanded-predictor-badge__fixed-width">
+      <div class="arns-expanded-predictor-badge--very-high arns-expanded-predictor-badge__fixed-width"
+           data-expanded-predictor-badge="Direct Contact - Sexual Reoffending Predictor VERY HIGH">
+
         <span
-          class="arns-predictor-badge__type">Direct Contact - Sexual Reoffending Predictor</span>
+          class="arns-predictor-badge__type" data-test-id="name">Direct Contact - Sexual Reoffending Predictor</span>
 
         <div class="arns-predictor-badge__stats">
-          <span class="arns-predictor-badge__level">VERY HIGH</span>
+          <span class="arns-predictor-badge__level" data-test-id="band">VERY HIGH</span>
 
           
 
@@ -3597,7 +3617,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
         </div>
 
-        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated" data-test-id="completedDate">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -3643,24 +3663,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
       
 
-      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__fixed-width">
+      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__fixed-width"
+           data-expanded-predictor-badge="All Reoffending Predictor LOW">
+
         <span
-          class="arns-predictor-badge__type">All Reoffending Predictor</span>
+          class="arns-predictor-badge__type" data-test-id="name">All Reoffending Predictor</span>
 
         <div class="arns-predictor-badge__stats">
-          <span class="arns-predictor-badge__level">LOW</span>
+          <span class="arns-predictor-badge__level" data-test-id="band">LOW</span>
 
           
-            <span class="arns-predictor-badge__score">1.23%</span>
+            <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
           
 
           
-            <span class="arns-predictor-badge__static_or_dynamic">Static</span>
+            <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
           
 
         </div>
 
-        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated" data-test-id="completedDate">Last updated: 01 January 2025</span>
 
       </div>
     
@@ -3711,24 +3733,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
       
 
-      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__fixed-width">
+      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__fixed-width"
+           data-expanded-predictor-badge="Violent Reoffending Predictor LOW">
+
         <span
-          class="arns-predictor-badge__type">Violent Reoffending Predictor</span>
+          class="arns-predictor-badge__type" data-test-id="name">Violent Reoffending Predictor</span>
 
         <div class="arns-predictor-badge__stats">
-          <span class="arns-predictor-badge__level">LOW</span>
+          <span class="arns-predictor-badge__level" data-test-id="band">LOW</span>
 
           
-            <span class="arns-predictor-badge__score">1.23%</span>
+            <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
           
 
           
-            <span class="arns-predictor-badge__static_or_dynamic">Static</span>
+            <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
           
 
         </div>
 
-        <span class="arns-predictor-badge__last_updated">Last updated: 01 January 2025</span>
+        <span class="arns-predictor-badge__last_updated" data-test-id="completedDate">Last updated: 01 January 2025</span>
 
       </div>
     
