@@ -18,12 +18,12 @@
         Confluence documentation for usage details.
       </p>
       <h3>Usage example</h3>
-      <pre><code>{% verbatim %}{% from "arns/components/predictor-scale/macro.njk" import predictorScale %}{% endverbatim %}
+      <pre><code>{% verbatim %}{% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
 
-predictorScale(
+{{ predictorScale({
   data: riskData,
   predictor: "allReoffendingPredictor"
-})
+}) }}{% endverbatim %}
 </code></pre>
 
       <p> renders as follows:</p>

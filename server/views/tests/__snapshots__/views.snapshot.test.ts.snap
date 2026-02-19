@@ -2734,10 +2734,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       <h3>Usage example</h3>
       <pre><code>{% from "arns/components/expanded-predictor-badge/macro.njk" import expandedPredictorBadge %}
 
-expandedPredictorBadge(
+{{ expandedPredictorBadge({
   data: riskData,
   predictor: "allReoffendingPredictor"
-})
+}) }}
 </code></pre>
 
       <p> renders as follows:</p>
@@ -6684,10 +6684,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       
 
-      <div class="arns-predictor-badge--high"
-           data-predictor-badge="Images and Indirect Contact – Sexual Reoffending Predictor HIGH">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+      <div class="arns-predictor-badge--high">
+        <span class="arns-predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
 
         
 
@@ -6704,10 +6702,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <h3>Usage example</h3>
       <pre><code>{% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}
 
-predictorBadge(
+{{ predictorBadge({
   data: riskData,
   predictor: "allReoffendingPredictor"
-})
+}) }}
 </code></pre>
 
       <p> renders as follows:</p>
@@ -6734,17 +6732,15 @@ predictorBadge(
         
       
 
-      <div class="arns-predictor-badge--low"
-           data-predictor-badge="All Reoffending Predictor LOW">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
+      <div class="arns-predictor-badge--low">
+        <span class="arns-predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
         
-          <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+          <span class="arns-predictor-badge__score">1.23%</span>
         
 
         
-          <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+          <span class="arns-predictor-badge__static_or_dynamic">Static</span>
         
       </div>
     
@@ -6818,17 +6814,15 @@ predictorBadge(
         
       
 
-      <div class="arns-predictor-badge--low"
-           data-predictor-badge="All Reoffending Predictor LOW">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
+      <div class="arns-predictor-badge--low">
+        <span class="arns-predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
         
-          <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+          <span class="arns-predictor-badge__score">1.23%</span>
         
 
         
-          <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+          <span class="arns-predictor-badge__static_or_dynamic">Static</span>
         
       </div>
     
@@ -6872,17 +6866,15 @@ predictorBadge(
         
       
 
-      <div class="arns-predictor-badge--low"
-           data-predictor-badge="Violent Reoffending Predictor LOW">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">VIOLENT REOFFENDING PREDICTOR <strong>LOW</strong></span>
+      <div class="arns-predictor-badge--low">
+        <span class="arns-predictor-badge__type_and_level">VIOLENT REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
         
-          <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+          <span class="arns-predictor-badge__score">1.23%</span>
         
 
         
-          <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+          <span class="arns-predictor-badge__static_or_dynamic">Static</span>
         
       </div>
     
@@ -6926,17 +6918,15 @@ predictorBadge(
         
       
 
-      <div class="arns-predictor-badge--medium"
-           data-predictor-badge="Serious Violent Reoffending Predictor MEDIUM">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
+      <div class="arns-predictor-badge--medium">
+        <span class="arns-predictor-badge__type_and_level">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
 
         
-          <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+          <span class="arns-predictor-badge__score">1.23%</span>
         
 
         
-          <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+          <span class="arns-predictor-badge__static_or_dynamic">Static</span>
         
       </div>
     
@@ -6980,10 +6970,8 @@ predictorBadge(
         
       
 
-      <div class="arns-predictor-badge--very-high"
-           data-predictor-badge="Direct Contact - Sexual Reoffending Predictor VERY HIGH">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
+      <div class="arns-predictor-badge--very-high">
+        <span class="arns-predictor-badge__type_and_level">DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
 
         
 
@@ -7030,10 +7018,8 @@ predictorBadge(
         
       
 
-      <div class="arns-predictor-badge--high"
-           data-predictor-badge="Images and Indirect Contact – Sexual Reoffending Predictor HIGH">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+      <div class="arns-predictor-badge--high">
+        <span class="arns-predictor-badge__type_and_level">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
 
         
 
@@ -7080,17 +7066,15 @@ predictorBadge(
         
       
 
-      <div class="arns-predictor-badge--high"
-           data-predictor-badge="Combined Serious Reoffending Predictor HIGH">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+      <div class="arns-predictor-badge--high">
+        <span class="arns-predictor-badge__type_and_level">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>HIGH</strong></span>
 
         
-          <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+          <span class="arns-predictor-badge__score">1.23%</span>
         
 
         
-          <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+          <span class="arns-predictor-badge__static_or_dynamic">Static</span>
         
       </div>
     
@@ -7280,10 +7264,8 @@ predictorBadge(
         
       
 
-      <div class="arns-predictor-badge--very-high"
-           data-predictor-badge="Direct Contact - Sexual Reoffending Predictor VERY HIGH">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
+      <div class="arns-predictor-badge--very-high">
+        <span class="arns-predictor-badge__type_and_level">DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
 
         
 
@@ -7326,17 +7308,15 @@ predictorBadge(
         
       
 
-      <div class="arns-predictor-badge--low"
-           data-predictor-badge="All Reoffending Predictor LOW">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
+      <div class="arns-predictor-badge--low">
+        <span class="arns-predictor-badge__type_and_level">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
         
-          <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+          <span class="arns-predictor-badge__score">1.23%</span>
         
 
         
-          <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+          <span class="arns-predictor-badge__static_or_dynamic">Static</span>
         
       </div>
     
@@ -7381,17 +7361,15 @@ predictorBadge(
         
       
 
-      <div class="arns-predictor-badge--low"
-           data-predictor-badge="Violent Reoffending Predictor LOW">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">VIOLENT REOFFENDING PREDICTOR <strong>LOW</strong></span>
+      <div class="arns-predictor-badge--low">
+        <span class="arns-predictor-badge__type_and_level">VIOLENT REOFFENDING PREDICTOR <strong>LOW</strong></span>
 
         
-          <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+          <span class="arns-predictor-badge__score">1.23%</span>
         
 
         
-          <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+          <span class="arns-predictor-badge__static_or_dynamic">Static</span>
         
       </div>
     
@@ -8795,10 +8773,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <h3>Usage example</h3>
       <pre><code>{% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
 
-predictorScale(
+{{ predictorScale({
   data: riskData,
   predictor: "allReoffendingPredictor"
-})
+}) }}
 </code></pre>
 
       <p> renders as follows:</p>

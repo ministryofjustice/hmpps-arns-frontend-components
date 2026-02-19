@@ -35,12 +35,12 @@
       </div>
 
       <h3>Usage example</h3>
-      <pre><code>{% verbatim %}{% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}{% endverbatim %}
+      <pre><code>{% verbatim %}{% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}
 
-predictorBadge(
+{{ predictorBadge({
   data: riskData,
   predictor: "allReoffendingPredictor"
-})
+}) }}{% endverbatim %}
 </code></pre>
 
       <p> renders as follows:</p>
