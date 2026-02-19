@@ -2734,10 +2734,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       <h3>Usage example</h3>
       <pre><code>{% from "arns/components/expanded-predictor-badge/macro.njk" import expandedPredictorBadge %}
 
-expandedPredictorBadge(
+{{ expandedPredictorBadge({
   data: riskData,
   predictor: "allReoffendingPredictor"
-})
+}) }}
 </code></pre>
 
       <p> renders as follows:</p>
@@ -6704,10 +6704,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <h3>Usage example</h3>
       <pre><code>{% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}
 
-predictorBadge(
+{{ predictorBadge({
   data: riskData,
   predictor: "allReoffendingPredictor"
-})
+}) }}
 </code></pre>
 
       <p> renders as follows:</p>
@@ -8795,10 +8795,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <h3>Usage example</h3>
       <pre><code>{% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
 
-predictorScale(
+{{ predictorScale({
   data: riskData,
   predictor: "allReoffendingPredictor"
-})
+}) }}
 </code></pre>
 
       <p> renders as follows:</p>
