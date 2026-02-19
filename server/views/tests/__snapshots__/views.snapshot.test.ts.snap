@@ -8820,12 +8820,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
       
         
-          
+      
+
+      
+      
         
       
 
       
-
       
         
       
@@ -8846,7 +8848,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </div>
 
           <div class="arns-scale-marker">
-            <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper--position-one-of-four">
+            <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="0.61">
               
   <div class="arns-scale-marker__card">
     <div class="arns-scale-marker__card-top">
@@ -8943,12 +8945,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
       
         
-          
+      
+
+      
+      
         
       
 
       
-
       
         
       
@@ -8969,7 +8973,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </div>
 
           <div class="arns-scale-marker">
-            <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper--position-one-of-four">
+            <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="0.61">
               
   <div class="arns-scale-marker__card">
     <div class="arns-scale-marker__card-top">
@@ -9042,12 +9046,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
       
         
-          
+      
+
+      
+      
         
       
 
       
-
       
         
       
@@ -9068,7 +9074,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </div>
 
           <div class="arns-scale-marker">
-            <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper--position-one-of-four">
+            <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="1.03">
               
   <div class="arns-scale-marker__card">
     <div class="arns-scale-marker__card-top">
@@ -9141,12 +9147,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
       
         
-          
+      
+
+      
+      
         
       
 
       
-
       
         
       
@@ -9167,7 +9175,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </div>
 
           <div class="arns-scale-marker">
-            <div class="arns-scale-marker-wrapper--medium arns-scale-marker-wrapper--position-two-of-four">
+            <div class="arns-scale-marker-wrapper--medium arns-scale-marker-wrapper" data-margin="27.88">
               
   <div class="arns-scale-marker__card">
     <div class="arns-scale-marker__card-top">
@@ -9240,12 +9248,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
       
         
-          
+      
+
+      
+      
         
       
 
       
-
       
         
       
@@ -9261,7 +9271,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </div>
 
           <div class="arns-scale-marker">
-            <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper--position-four-of-four">
+            <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper" data-margin="87.5">
               
   <div class="arns-scale-marker__card">
     <div class="arns-scale-marker__card-top">
@@ -9331,12 +9341,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
       
         
-          
-        
-        
-
       
 
+      
+      
+        
+      
+
+      
       
         
       
@@ -9352,7 +9364,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </div>
 
           <div class="arns-scale-marker">
-            <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper--position-three-of-three">
+            <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper" data-margin="83.33">
               
   <div class="arns-scale-marker__card">
     <div class="arns-scale-marker__card-top">
@@ -9418,12 +9430,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
       
         
-          
+      
+
+      
+      
         
       
 
       
-
       
         
       
@@ -9444,7 +9458,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </div>
 
           <div class="arns-scale-marker">
-            <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper--position-three-of-four">
+            <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper" data-margin="27.88">
               
   <div class="arns-scale-marker__card">
     <div class="arns-scale-marker__card-top">
@@ -9669,12 +9683,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
       
         
-          
+      
+
+      
+      
         
       
 
       
-
       
         
       
@@ -9690,7 +9706,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </div>
 
           <div class="arns-scale-marker">
-            <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper--position-four-of-four">
+            <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper" data-margin="87.5">
               
   <div class="arns-scale-marker__card">
     <div class="arns-scale-marker__card-top">
