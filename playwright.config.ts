@@ -15,7 +15,7 @@ export default defineConfig({
   testDir: './integration_tests/specs',
   expect: {
     toHaveScreenshot: {
-      pathTemplate: 'integration_tests/specs/snapshotTest.spec.ts-snapshots',
+      pathTemplate: '__snapshots__/{testFilePath}/{arg}{ext}',
     },
   },
   /* Maximum time one test can run for. (millis) */
