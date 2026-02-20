@@ -18,8 +18,9 @@ test('Predictor badges', async ({ page }) => {
   const NotApplicableExample = page.getByText('DIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR NOT APPLICABLE')
   const UnknownExample = page.getByText('ALL REOFFENDING PREDICTOR UNKNOWN').first()
 
-  await expect(LowNoScoreBadge).toMatchAriaSnapshot('low-no-score--predictor-badge.png')
-  await expect(HighStaticScore).toMatchAriaSnapshot('high-static-score--predictor-badge.png')
-  await expect(NotApplicableExample).toMatchAriaSnapshot('not-applicable-predictor-badge.png')
-  await expect(UnknownExample).toMatchAriaSnapshot('unknown-predictor-badge.png')
+  await expect(LowNoScoreBadge).toHaveScreenshot('low-no-score-predictor-badge.png')
+  await expect(HighStaticScore).toHaveScreenshot('high-static-score-predictor-badge.png')
+  await expect(NotApplicableExample).toHaveScreenshot('not-applicable-predictor-badge.png')
+  await expect(UnknownExample).toHaveScreenshot('unknown-predictor-badge.png')
+
 })
