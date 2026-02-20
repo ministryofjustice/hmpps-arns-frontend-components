@@ -13,6 +13,11 @@ import { defineConfig, devices } from '@playwright/test'
 export default defineConfig({
   outputDir: './test_results/playwright/test-output',
   testDir: './integration_tests/specs',
+  expect: {
+    toHaveScreenshot: {
+      pathTemplate: 'integration_tests/specs/snapshotTest.spec.ts-snapshots',
+    }
+  },
   /* Maximum time one test can run for. (millis) */
   timeout: 3 * 60 * 1000,
   /* Maximum time test suite can run for. (millis) */
@@ -40,7 +45,7 @@ export default defineConfig({
     trace: process.env.CI ? 'off' : 'on',
     ...devices['Desktop Chrome'],
     testIdAttribute: 'data-qa',
-    baseURL: 'http://localhost:3007',
+    baseURL: 'http://localhost:3000',
   },
 
   /* Configure projects */
