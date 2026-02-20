@@ -40,7 +40,7 @@
             "staticOrDynamic": "DYNAMIC",
             "source": "OASYS",
             "algorithmVersion": 5,
-            "scoreLevel": "HIGH"
+            "scoreLevel": "VERY_HIGH"
           },
           "sexualPredictorScore": {
             "ospIndecentPercentageScore": 0.12,
