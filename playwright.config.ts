@@ -16,7 +16,7 @@ export default defineConfig({
   expect: {
     toHaveScreenshot: {
       pathTemplate: 'integration_tests/specs/snapshotTest.spec.ts-snapshots',
-    }
+    },
   },
   /* Maximum time one test can run for. (millis) */
   timeout: 3 * 60 * 1000,

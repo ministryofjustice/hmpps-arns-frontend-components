@@ -22,5 +22,4 @@ test('Predictor badges', async ({ page }) => {
   await expect(HighStaticScore).toHaveScreenshot('high-static-score-predictor-badge.png')
   await expect(NotApplicableExample).toHaveScreenshot('not-applicable-predictor-badge.png')
   await expect(UnknownExample).toHaveScreenshot('unknown-predictor-badge.png')
-
 })
