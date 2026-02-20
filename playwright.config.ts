@@ -15,7 +15,7 @@ export default defineConfig({
   testDir: './integration_tests/specs',
   expect: {
     toHaveScreenshot: {
-      pathTemplate: '__snapshots__/{testFilePath}/{arg}{ext}',
+      pathTemplate: 'test_results/playwright/test-output/snapshotTest-Predictor-badges-default/{arg}{ext}',
     },
   },
   /* Maximum time one test can run for. (millis) */
