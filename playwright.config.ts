@@ -19,8 +19,8 @@ export default defineConfig({
     toMatchSnapshot: {
       threshold: 0.3,
       maxDiffPixels: 1000,
-      maxDiffPixelRatio: 0.2
-    }
+      maxDiffPixelRatio: 0.2,
+    },
   },
   /* Maximum time one test can run for. (millis) */
   timeout: 3 * 60 * 1000,
