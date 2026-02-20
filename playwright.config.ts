@@ -16,7 +16,7 @@ export default defineConfig({
   /* Rules for snapshot testing */
   expect: {
     timeout: 10000,
-    toMatchSnapshot: {
+    toHaveScreenshot: {
       threshold: 0.3,
       maxDiffPixels: 10000,
       maxDiffPixelRatio: 0.2,
