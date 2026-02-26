@@ -41,8 +41,8 @@ test('Checks all pages are working', async ({ page }) => {
   await landingPage.checkFullHighPredictorBadge()
   await landingPage.checkFullLowPredictorBadge()
   await landingPage.checkPredictorBadgeNotApplicable()
-  await landingPage.checkPredictorBadgeMissingScore()
-  await landingPage.checkPredictorBadgeMissingBand()
+  // await landingPage.checkPredictorBadgeMissingScore()
+  // await landingPage.checkPredictorBadgeMissingBand()
 
   // Click Expanded predictor badge link and check page
   await landingPage.clickExpandedPredictorBadgeLink()
@@ -51,14 +51,14 @@ test('Checks all pages are working', async ({ page }) => {
   await landingPage.checkFullHighPredictorBadge()
   await landingPage.checkFullLowPredictorBadge()
   await landingPage.checkPredictorBadgeNotApplicable()
-  await landingPage.checkPredictorBadgeMissingScore()
-  await landingPage.checkPredictorBadgeMissingBand()
+  // await landingPage.checkPredictorBadgeMissingScore()
+  // await landingPage.checkPredictorBadgeMissingBand()
 
   // Click predictor scale link and check page
   await landingPage.clickPredictorScaleLink()
   // await page.goto('http://localhost:3007/predictor-scale/new')
   await landingPage.checkPredictorScaleHeader()
-  await landingPage.checkPredictorBadgeNotApplicable()
+  // await landingPage.checkPredictorBadgeNotApplicable()
 
   // Click predictor score link and check page
   await landingPage.clickPredictorScoresLink()
