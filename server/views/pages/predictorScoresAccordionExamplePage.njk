@@ -1,0 +1,25 @@
+{% extends "layouts/side-nav-layout.njk" %}
+{% from "arns/components/predictor-scores-accordion/macro.njk" import predictorScoresAccordion %}
+
+{% set userInfo = "Alex Smith | CRN: XX000000" %}
+{% set pageTitle = "Risk predictor scores" %}
+{% set mainClasses = "govuk-body" %}
+
+{% block sideNavContent %}
+
+  <a href="/predictor-scores-accordion" class="govuk-back-link">Back</a>
+
+  <h3 class="govuk-caption-l">{{ userInfo }}</h3>
+  <h2 class="govuk-heading-l">{{ pageTitle }}</h2>
+
+  {{ predictorScoresAccordion({ data: riskData }) }}
+
+  <div class="govuk-back-to-top" data-module="app-back-to-top">
+    <a class="govuk-link govuk-link--no-visited-state" href="#top">
+      <svg class="govuk-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4.1-4.1V17h2V3.9l4.1 4.1 1.4-1.4z"></path>
+      </svg>
+      Back to top
+    </a>
+  </div>
+{% endblock %}

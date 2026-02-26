@@ -106,6 +106,22 @@ export default function componentPageRoutes({ arnsComponents }: Services): Route
     const navSections = activateMojNav(rawNavSections, '/new')
     return res.render('pages/newIntroPage', { navSections })
   })
+  router.get('/predictor-scores-accordion', async (req, res, next) => {
+    const navSections = activateMojNav(rawNavSections, req.path)
+    const riskData = await arnsComponents.getRiskData(null, 'crn', 'X123456')
+    return res.render('pages/predictorScoresAccordionPage', {
+      navSections,
+      riskData,
+    })
+  })
+  router.get('/predictor-scores-accordion/example', async (req, res, next) => {
+    const navSections = activateMojNav(rawNavSections, req.path)
+    const riskData = await arnsComponents.getRiskData(null, 'crn', 'X123456')
+    return res.render('pages/predictorScoresAccordionExamplePage', {
+      navSections,
+      riskData,
+    })
+  })
 
   return router
 }

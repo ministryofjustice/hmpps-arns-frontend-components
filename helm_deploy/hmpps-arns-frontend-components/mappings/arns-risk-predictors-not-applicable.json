@@ -13,6 +13,7 @@
         "completedDate": "2025-01-01T10:30:00",
         "status": "COMPLETE",
         "outputVersion": "2",
+        "assessmentType": "LAYER1",
         "output": {
           "directContactSexualReoffendingPredictor": {
             "score": 0.0,
