@@ -35,8 +35,8 @@ test('Checks all pages are working', async ({ page }) => {
   await landingPage.checkROSHWidgetUnknown()
 
   // Click Predictor badge link and check page
-  // await landingPage.clickPredictorBadgeLink()
-  await page.goto('http://localhost:3007/predictor-badge/new')
+  await landingPage.clickPredictorBadgeLink()
+  // await page.goto('http://localhost:3007/predictor-badge/new')
   await landingPage.checkPredictorBadgeHeader()
   await landingPage.checkFullHighPredictorBadge()
   await landingPage.checkFullLowPredictorBadge()
@@ -45,8 +45,8 @@ test('Checks all pages are working', async ({ page }) => {
   await landingPage.checkPredictorBadgeMissingBand()
 
   // Click Expanded predictor badge link and check page
-  // await landingPage.clickExpandedPredictorBadgeLink()
-  await page.goto('http://localhost:3007/expanded-predictor-badge/new')
+  await landingPage.clickExpandedPredictorBadgeLink()
+  // await page.goto('http://localhost:3007/expanded-predictor-badge/new')
   await landingPage.checkExpandedPredictorBadgeHeader()
   await landingPage.checkFullHighPredictorBadge()
   await landingPage.checkFullLowPredictorBadge()
@@ -55,8 +55,8 @@ test('Checks all pages are working', async ({ page }) => {
   await landingPage.checkPredictorBadgeMissingBand()
 
   // Click predictor scale link and check page
-  // await landingPage.clickPredictorScaleLink()
-  await page.goto('http://localhost:3007/predictor-scale/new')
+  await landingPage.clickPredictorScaleLink()
+  // await page.goto('http://localhost:3007/predictor-scale/new')
   await landingPage.checkPredictorScaleHeader()
   await landingPage.checkPredictorBadgeNotApplicable()
 
