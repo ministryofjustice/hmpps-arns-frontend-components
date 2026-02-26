@@ -36,9 +36,7 @@ export default class LandingPage {
       .locator('div')
       .filter({ hasText: 'COMBINED SERIOUS REOFFENDING' })
       .nth(5),
-    private predictorBadgeNotApplicable: Locator = page.getByText(
-      'DIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR NOT APPLICABLE',
-    ),
+    private predictorBadgeNA: Locator = page.getByText('DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR NOT APPLICABLE'),
     private predictorBadgeMissingScore: Locator = page.getByText('ALL REOFFENDING PREDICTOR UNKNOWN'),
     private predictorBadgeMissingBand: Locator = page.getByText('VIOLENT REOFFENDING PREDICTOR UNKNOWN'),
     private expandedPredictorBadgeLink: Locator = page.getByRole('link', {
@@ -156,7 +154,7 @@ export default class LandingPage {
   }
 
   async checkPredictorBadgeNotApplicable() {
-    await expect(this.predictorBadgeNotApplicable).toBeVisible()
+    await expect(this.predictorBadgeNA).toBeVisible()
   }
 
   async checkPredictorBadgeMissingScore() {
