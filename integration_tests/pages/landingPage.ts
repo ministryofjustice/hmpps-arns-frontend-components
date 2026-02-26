@@ -11,10 +11,21 @@ export default class LandingPage {
     private examplesHeader: Locator = page.getByRole('heading', { name: 'Examples' }),
     private mappaWidgetLink: Locator = page.getByRole('link', { name: 'MAPPA widget' }),
     private mappaWidgetHeader: Locator = page.getByRole('heading', { name: 'Mappa widget' }),
+    private mappaWidgetExample: Locator = page.locator('#mappa-widget'),
+    private mappaWidgetNoData: Locator = page.locator('#mappa-widget-no-matching-data'),
+    private mappaWidgetUnknown: Locator = page.locator('#mappa-widget-null-data'),
     private riskFlagWidgetLink: Locator = page.getByRole('link', { name: 'Risk flag widget' }),
     private riskFlagHeader: Locator = page.getByRole('heading', { name: 'Risk flag widget' }),
+    private riskFlagWidgetExample: Locator = page.locator('#risk-flag-widget'),
+    private riskFlagWidgetNoData: Locator = page.locator('#risk-flag-widget-no-matching-data'),
+    private riskFlagWidgetUnknown: Locator = page.locator('#risk-flag-widget-null-data'),
     private ROSHWidgetLink: Locator = page.getByRole('link', { name: 'ROSH widget' }),
     private ROSHHeader: Locator = page.getByRole('heading', { name: 'ROSH widget' }),
+    private ROSHWidgetFullExample: Locator = page.locator('#rosh-widget-both-inner'),
+    private ROSHWidgetCommunityExample: Locator = page.locator('#rosh-widget-community-inner'),
+    private ROSHWidgetCustodyExample: Locator = page.locator('#rosh-widget-custody-inner'),
+    private ROSHWidgetNoData: Locator = page.locator('#rosh-widget-no-matching-data'),
+    private ROSHWidgetUnknown: Locator = page.locator('#rosh-widget-null-data'),
     private predictorBadgeLink: Locator = page.getByRole('link', { name: 'Predictor badge', exact: true }),
     private predictorBadgeHeader: Locator = page.getByRole('heading', { name: 'Predictor badge' }),
     private expandedPredictorBadgeLink: Locator = page.getByRole('link', {
@@ -55,6 +66,18 @@ export default class LandingPage {
     await expect(this.mappaWidgetHeader).toBeVisible()
   }
 
+  async checkMappaWidget() {
+    await expect(this.mappaWidgetExample).toBeVisible()
+  }
+
+  async checkMappaWidgetNoData() {
+    await expect(this.mappaWidgetNoData).toBeVisible()
+  }
+
+  async checkMappaWidgetUnknown() {
+    await expect(this.mappaWidgetUnknown).toBeVisible()
+  }
+
   async clickRiskFlagWidgetLink() {
     await this.riskFlagWidgetLink.click()
   }
@@ -63,12 +86,45 @@ export default class LandingPage {
     await expect(this.riskFlagHeader).toBeVisible()
   }
 
+  async checkRiskFlagWidget() {
+    await expect(this.riskFlagWidgetExample).toBeVisible()
+  }
+
+  async checkRiskFlagWidgetNoData() {
+    await expect(this.riskFlagWidgetNoData).toBeVisible()
+  }
+
+  async checkRiskFlagWidgetUnknown() {
+    await expect(this.riskFlagWidgetUnknown).toBeVisible()
+  }
+
+
   async clickROSHWidgetLink() {
     await this.ROSHWidgetLink.click()
   }
 
   async checkROSHHeader() {
     await expect(this.ROSHHeader).toBeVisible()
+  }
+
+  async checkROSHWidgetFull() {
+    await expect(this.ROSHWidgetFullExample).toBeVisible()
+  }
+
+  async checkROSHWidgetCommunity() {
+    await expect(this.ROSHWidgetCommunityExample).toBeVisible()
+  }
+
+  async checkROSHWidgetCustody() {
+    await expect(this.ROSHWidgetCustodyExample).toBeVisible()
+  }
+
+  async checkROSHWidgetNoData() {
+    await expect(this.ROSHWidgetNoData).toBeVisible()
+  }
+
+  async checkROSHWidgetUnknown() {
+    await expect(this.ROSHWidgetUnknown).toBeVisible()
   }
 
   async clickPredictorBadgeLink() {

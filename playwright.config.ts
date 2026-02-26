@@ -13,15 +13,6 @@ import { defineConfig, devices } from '@playwright/test'
 export default defineConfig({
   outputDir: './test_results/playwright/test-output',
   testDir: './integration_tests/specs',
-  /* Rules for snapshot testing */
-  expect: {
-    timeout: 10000,
-    toHaveScreenshot: {
-      threshold: 0.3,
-      maxDiffPixels: 10000,
-      maxDiffPixelRatio: 0.2,
-    },
-  },
   /* Maximum time one test can run for. (millis) */
   timeout: 3 * 60 * 1000,
   /* Maximum time test suite can run for. (millis) */
