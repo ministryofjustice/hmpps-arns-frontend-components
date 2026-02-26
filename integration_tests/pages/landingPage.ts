@@ -28,6 +28,19 @@ export default class LandingPage {
     private ROSHWidgetUnknown: Locator = page.locator('#rosh-widget-null-data'),
     private predictorBadgeLink: Locator = page.getByRole('link', { name: 'Predictor badge', exact: true }),
     private predictorBadgeHeader: Locator = page.getByRole('heading', { name: 'Predictor badge' }),
+    private fullHighPredictorBadge: Locator = page
+      .locator('div')
+      .filter({ hasText: 'SERIOUS VIOLENT REOFFENDING' })
+      .nth(5),
+    private fullLowPredictorBadge: Locator = page
+      .locator('div')
+      .filter({ hasText: 'COMBINED SERIOUS REOFFENDING' })
+      .nth(5),
+    private predictorBadgeNotApplicable: Locator = page.getByText(
+      'DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR NOT APPLICABLE',
+    ),
+    private predictorBadgeMissingScore: Locator = page.getByText('ALL REOFFENDING PREDICTOR UNKNOWN'),
+    private predictorBadgeMissingBand: Locator = page.getByText('VIOLENT REOFFENDING PREDICTOR UNKNOWN'),
     private expandedPredictorBadgeLink: Locator = page.getByRole('link', {
       name: 'Expanded predictor badge',
       exact: true,
@@ -132,6 +145,26 @@ export default class LandingPage {
 
   async checkPredictorBadgeHeader() {
     await expect(this.predictorBadgeHeader).toBeVisible()
+  }
+
+  async checkFullHighPredictorBadge() {
+    await expect(this.fullHighPredictorBadge).toBeVisible()
+  }
+
+  async checkFullLowPredictorBadge() {
+    await expect(this.fullLowPredictorBadge).toBeVisible()
+  }
+
+  async checkPredictorBadgeNotApplicable() {
+    await expect(this.predictorBadgeNotApplicable).toBeVisible()
+  }
+
+  async checkPredictorBadgeMissingScore() {
+    await expect(this.predictorBadgeMissingScore).toBeVisible()
+  }
+
+  async checkPredictorBadgeMissingBand() {
+    await expect(this.predictorBadgeMissingBand).toBeVisible()
   }
 
   async clickExpandedPredictorBadgeLink() {
