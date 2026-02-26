@@ -27,7 +27,7 @@ export default class LandingPage {
     private ROSHWidgetNoData: Locator = page.locator('#rosh-widget-no-matching-data'),
     private ROSHWidgetUnknown: Locator = page.locator('#rosh-widget-null-data'),
     private predictorBadgeLink: Locator = page.getByRole('link', { name: 'Predictor badge', exact: true }),
-    private predictorBadgeHeader: Locator = page.getByRole('heading', { name: 'Library predictor badge' }),
+    private predictorBadgeHeader: Locator = page.getByRole('heading', { name: 'Predictor badge' }),
     private fullHighPredictorBadge: Locator = page
       .locator('div')
       .filter({ hasText: 'SERIOUS VIOLENT REOFFENDING' })
@@ -43,9 +43,9 @@ export default class LandingPage {
       name: 'Expanded predictor badge',
       exact: true,
     }),
-    private expandedPredictorBadgeHeader: Locator = page.getByRole('heading', { name: 'Library expanded predictor' }),
+    private expandedPredictorBadgeHeader: Locator = page.getByRole('heading', { name: 'Expanded predictor badge' }),
     private predictorScaleLink: Locator = page.getByRole('link', { name: 'Predictor scale' }),
-    private predictorScaleHeader: Locator = page.getByRole('heading', { name: 'Library predictor scale' }),
+    private predictorScaleHeader: Locator = page.getByRole('heading', { name: 'Predictor scale' }),
     private predictorScoresLink: Locator = page.getByRole('link', { name: 'Predictor scores' }),
     private predictorScoresHeader: Locator = page.getByRole('heading', { name: 'Predictor scores' }),
     private predictorTimelineLink: Locator = page.getByRole('link', { name: 'Predictor timeline', exact: true }),
