@@ -98,7 +98,6 @@ export default class LandingPage {
     await expect(this.riskFlagWidgetUnknown).toBeVisible()
   }
 
-
   async clickROSHWidgetLink() {
     await this.ROSHWidgetLink.click()
   }
