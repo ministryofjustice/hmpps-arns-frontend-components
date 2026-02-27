@@ -10022,6 +10022,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+
     <div class="govuk-inset-text">
   Source: undefined assessment, completed on undefined
 </div>
@@ -10032,14 +10033,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     
 
-
-    
-    
-
     
 
 
     
+    
+
     
 
     
@@ -10050,14 +10049,28 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
     
 
+    
+
+
+    
+    
+
+    
+
+    
+
 
     
     
 
     
 
+    
+
 
     
+    
+
     
 
     
@@ -10071,12 +10084,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <div class="govuk-accordion__section-header">
       <h2 class="govuk-accordion__section-heading">
         <span class="govuk-accordion__section-button" id="predictor-scores-accordion-heading-1">
-          All reoffending predictor
+          <span>All reoffending predictor</span>
         </span>
       </h2>
       
       <div class="govuk-accordion__section-summary govuk-body" id="predictor-scores-accordion-summary-1">
-        <p>All reoffending predictor summary text</p>
+        <span>All reoffending predictor summary text</span>
       </div>
       
     </div>
@@ -10093,7 +10106,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <div class="govuk-accordion__section-header">
       <h2 class="govuk-accordion__section-heading">
         <span class="govuk-accordion__section-button" id="predictor-scores-accordion-heading-2">
-          Violent reoffending predictor
+          <span>Violent reoffending predictor</span>
         </span>
       </h2>
       
@@ -10115,7 +10128,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <div class="govuk-accordion__section-header">
       <h2 class="govuk-accordion__section-heading">
         <span class="govuk-accordion__section-button" id="predictor-scores-accordion-heading-3">
-          Combined serious reoffending predictor
+          <span>Combined serious reoffending predictor</span>
         </span>
       </h2>
       
@@ -10137,7 +10150,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <div class="govuk-accordion__section-header">
       <h2 class="govuk-accordion__section-heading">
         <span class="govuk-accordion__section-button" id="predictor-scores-accordion-heading-4">
-          Serious violent reoffending predictor
+          <span>Serious violent reoffending predictor</span>
         </span>
       </h2>
       
@@ -10159,7 +10172,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <div class="govuk-accordion__section-header">
       <h2 class="govuk-accordion__section-heading">
         <span class="govuk-accordion__section-button" id="predictor-scores-accordion-heading-5">
-          Direct contact - Sexual reoffending predictor
+          <span>Direct contact - Sexual reoffending predictor</span>
         </span>
       </h2>
       
@@ -10181,7 +10194,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <div class="govuk-accordion__section-header">
       <h2 class="govuk-accordion__section-heading">
         <span class="govuk-accordion__section-button" id="predictor-scores-accordion-heading-6">
-          Images and indirect contact - Sexual reoffending predictor
+          <span>Images and indirect contact - Sexual reoffending predictor</span>
         </span>
       </h2>
       
