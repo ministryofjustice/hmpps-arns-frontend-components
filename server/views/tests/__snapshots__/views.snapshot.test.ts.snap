@@ -99,10 +99,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline v2</a>
           </li>
-        
-          <li class="moj-side-navigation__item">
-            <a href="/predictor-scores-accordion">Predictor scores accordion</a>
-          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Legacy components</h4>
@@ -300,10 +296,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline v2</a>
-          </li>
-        
-          <li class="moj-side-navigation__item">
-            <a href="/predictor-scores-accordion">Predictor scores accordion</a>
           </li>
         </ul>
     
@@ -2707,10 +2699,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline v2</a>
           </li>
-        
-          <li class="moj-side-navigation__item">
-            <a href="/predictor-scores-accordion">Predictor scores accordion</a>
-          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Legacy components</h4>
@@ -3946,10 +3934,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline v2</a>
           </li>
-        
-          <li class="moj-side-navigation__item">
-            <a href="/predictor-scores-accordion">Predictor scores accordion</a>
-          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Legacy components</h4>
@@ -4211,10 +4195,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the legacy pre
         
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline v2</a>
-          </li>
-        
-          <li class="moj-side-navigation__item">
-            <a href="/predictor-scores-accordion">Predictor scores accordion</a>
           </li>
         </ul>
     
@@ -4584,10 +4564,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline v2</a>
           </li>
-        
-          <li class="moj-side-navigation__item">
-            <a href="/predictor-scores-accordion">Predictor scores accordion</a>
-          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Legacy components</h4>
@@ -4859,10 +4835,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the new intro 
         
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline v2</a>
-          </li>
-        
-          <li class="moj-side-navigation__item">
-            <a href="/predictor-scores-accordion">Predictor scores accordion</a>
           </li>
         </ul>
     
@@ -5139,10 +5111,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline v2</a>
-          </li>
-        
-          <li class="moj-side-navigation__item">
-            <a href="/predictor-scores-accordion">Predictor scores accordion</a>
           </li>
         </ul>
     
@@ -6653,10 +6621,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline v2</a>
           </li>
-        
-          <li class="moj-side-navigation__item">
-            <a href="/predictor-scores-accordion">Predictor scores accordion</a>
-          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Legacy components</h4>
@@ -7633,10 +7597,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline v2</a>
-          </li>
-        
-          <li class="moj-side-navigation__item">
-            <a href="/predictor-scores-accordion">Predictor scores accordion</a>
           </li>
         </ul>
     
@@ -8824,10 +8784,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline v2</a>
           </li>
-        
-          <li class="moj-side-navigation__item">
-            <a href="/predictor-scores-accordion">Predictor scores accordion</a>
-          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Legacy components</h4>
@@ -9980,10 +9936,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline v2</a>
           </li>
-        
-          <li class="moj-side-navigation__item">
-            <a href="/predictor-scores-accordion">Predictor scores accordion</a>
-          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Legacy components</h4>
@@ -10384,10 +10336,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline v2</a>
           </li>
-        
-          <li class="moj-side-navigation__item moj-side-navigation__item--active">
-            <a href="/predictor-scores-accordion" aria-current="location">Predictor scores accordion</a>
-          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Legacy components</h4>
@@ -10584,10 +10532,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline v2</a>
-          </li>
-        
-          <li class="moj-side-navigation__item">
-            <a href="/predictor-scores-accordion">Predictor scores accordion</a>
           </li>
         </ul>
     
@@ -10952,10 +10896,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
           <li class="moj-side-navigation__item moj-side-navigation__item--active">
             <a href="/predictor-timeline" aria-current="location">Predictor timeline v2</a>
-          </li>
-        
-          <li class="moj-side-navigation__item">
-            <a href="/predictor-scores-accordion">Predictor scores accordion</a>
           </li>
         </ul>
     
@@ -12186,10 +12126,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline v2</a>
           </li>
-        
-          <li class="moj-side-navigation__item">
-            <a href="/predictor-scores-accordion">Predictor scores accordion</a>
-          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Legacy components</h4>
@@ -12461,10 +12397,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
         
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline v2</a>
-          </li>
-        
-          <li class="moj-side-navigation__item">
-            <a href="/predictor-scores-accordion">Predictor scores accordion</a>
           </li>
         </ul>
     
