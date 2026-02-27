@@ -8873,8 +8873,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
 
 
-
-
   
     
   
@@ -8882,76 +8880,79 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
-
-      
-
-      
+      <div class="arns-predictor-scale govuk-body" data-predictor-scale="All Reoffending Predictor">
         
-      
-
-      
-      
-        
-      
-
-      
-      
-        
-      
-
-      
-        <div class="arns-predictor-scale govuk-body">
           <div class="arns-predictor-scale-header-wrapper">
             <div>
-              <h2 class="govuk-heading-m">All Reoffending Predictor</h2>
-              <p class="govuk-hint">Last updated: 01 January 2025</p>
+              <h2 class="govuk-heading-m" data-test-id="name">All Reoffending Predictor</h2>
+              <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
             </div>
             
-            <div><strong class="govuk-tag govuk-tag--grey">
+              <div data-test-id="staticOrDynamic"><strong class="govuk-tag govuk-tag--grey">
   Static
 </strong>
 </div>
             
           </div>
+          
 
-          <div class="arns-scale-marker">
-            <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="0.61">
-              
-  <div class="arns-scale-marker__card">
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<div class="arns-scale-marker" data-test-id='scaleMarker'>
+  <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="0.61" data-test-id='scaleMarkerPosition'>
+    
+  <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
-      <h3>LOW</h3>
+      <h3 data-test-id="scaleMarkerCardContent">LOW</h3>
     </div>
     
-      <div class="arns-scale-marker__card-bottom">
+      <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
         <p>1.23%</p>
       </div>
-      <div class="arns-scale-marker__card-pointer"></div>
+      <div class="arns-scale-marker__card-pointer" data-test-id="scaleMarkerCardPointer"></div>
     
   </div>
 
-            </div>
-          </div>
+  </div>
+</div>
 
-          <div class="arns-scale-bar arns-scale-bar--fourths">
-            <div data-band-percentage-start="0%"
-                 data-band-percentage="50%">
-              <span></span>
-            </div>
-            <div data-band-percentage="75%">
-              <span></span>
-            </div>
-            <div data-band-percentage="90%">
-              <span></span>
-            </div>
-            
-              <div data-band-percentage="100%">
-                <span></span>
-              </div>
-            
-          </div>
-        </div>
-      
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="barType">
+  <div data-band-percentage-start="0%"
+       data-band-percentage="50%" data-test-id='lowBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="75%" data-test-id='mediumBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="90%" data-test-id='highBand'>
+    <span></span>
+  </div>
+  
+    <div data-band-percentage="100%" data-test-id='veryHighBand'>
+      <span></span>
+    </div>
+  
+</div>
+
+
+        
+      </div>
 
     
   
@@ -8998,8 +8999,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
 
-
-
   
     
   
@@ -9007,76 +9006,79 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
-
-      
-
-      
+      <div class="arns-predictor-scale govuk-body" data-predictor-scale="All Reoffending Predictor">
         
-      
-
-      
-      
-        
-      
-
-      
-      
-        
-      
-
-      
-        <div class="arns-predictor-scale govuk-body">
           <div class="arns-predictor-scale-header-wrapper">
             <div>
-              <h2 class="govuk-heading-m">All Reoffending Predictor</h2>
-              <p class="govuk-hint">Last updated: 01 January 2025</p>
+              <h2 class="govuk-heading-m" data-test-id="name">All Reoffending Predictor</h2>
+              <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
             </div>
             
-            <div><strong class="govuk-tag govuk-tag--grey">
+              <div data-test-id="staticOrDynamic"><strong class="govuk-tag govuk-tag--grey">
   Static
 </strong>
 </div>
             
           </div>
+          
 
-          <div class="arns-scale-marker">
-            <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="0.61">
-              
-  <div class="arns-scale-marker__card">
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<div class="arns-scale-marker" data-test-id='scaleMarker'>
+  <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="0.61" data-test-id='scaleMarkerPosition'>
+    
+  <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
-      <h3>LOW</h3>
+      <h3 data-test-id="scaleMarkerCardContent">LOW</h3>
     </div>
     
-      <div class="arns-scale-marker__card-bottom">
+      <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
         <p>1.23%</p>
       </div>
-      <div class="arns-scale-marker__card-pointer"></div>
+      <div class="arns-scale-marker__card-pointer" data-test-id="scaleMarkerCardPointer"></div>
     
   </div>
 
-            </div>
-          </div>
+  </div>
+</div>
 
-          <div class="arns-scale-bar arns-scale-bar--fourths">
-            <div data-band-percentage-start="0%"
-                 data-band-percentage="50%">
-              <span></span>
-            </div>
-            <div data-band-percentage="75%">
-              <span></span>
-            </div>
-            <div data-band-percentage="90%">
-              <span></span>
-            </div>
-            
-              <div data-band-percentage="100%">
-                <span></span>
-              </div>
-            
-          </div>
-        </div>
-      
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="barType">
+  <div data-band-percentage-start="0%"
+       data-band-percentage="50%" data-test-id='lowBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="75%" data-test-id='mediumBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="90%" data-test-id='highBand'>
+    <span></span>
+  </div>
+  
+    <div data-band-percentage="100%" data-test-id='veryHighBand'>
+      <span></span>
+    </div>
+  
+</div>
+
+
+        
+      </div>
 
     
   
@@ -9097,8 +9099,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
 
-
-
   
     
   
@@ -9108,76 +9108,79 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
-
-      
-
-      
+      <div class="arns-predictor-scale govuk-body" data-predictor-scale="Violent Reoffending Predictor">
         
-      
-
-      
-      
-        
-      
-
-      
-      
-        
-      
-
-      
-        <div class="arns-predictor-scale govuk-body">
           <div class="arns-predictor-scale-header-wrapper">
             <div>
-              <h2 class="govuk-heading-m">Violent Reoffending Predictor</h2>
-              <p class="govuk-hint">Last updated: 01 January 2025</p>
+              <h2 class="govuk-heading-m" data-test-id="name">Violent Reoffending Predictor</h2>
+              <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
             </div>
             
-            <div><strong class="govuk-tag govuk-tag--grey">
+              <div data-test-id="staticOrDynamic"><strong class="govuk-tag govuk-tag--grey">
   Static
 </strong>
 </div>
             
           </div>
+          
 
-          <div class="arns-scale-marker">
-            <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="1.03">
-              
-  <div class="arns-scale-marker__card">
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<div class="arns-scale-marker" data-test-id='scaleMarker'>
+  <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="1.03" data-test-id='scaleMarkerPosition'>
+    
+  <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
-      <h3>LOW</h3>
+      <h3 data-test-id="scaleMarkerCardContent">LOW</h3>
     </div>
     
-      <div class="arns-scale-marker__card-bottom">
+      <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
         <p>1.23%</p>
       </div>
-      <div class="arns-scale-marker__card-pointer"></div>
+      <div class="arns-scale-marker__card-pointer" data-test-id="scaleMarkerCardPointer"></div>
     
   </div>
 
-            </div>
-          </div>
+  </div>
+</div>
 
-          <div class="arns-scale-bar arns-scale-bar--fourths">
-            <div data-band-percentage-start="0%"
-                 data-band-percentage="30%">
-              <span></span>
-            </div>
-            <div data-band-percentage="60%">
-              <span></span>
-            </div>
-            <div data-band-percentage="80%">
-              <span></span>
-            </div>
-            
-              <div data-band-percentage="100%">
-                <span></span>
-              </div>
-            
-          </div>
-        </div>
-      
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="barType">
+  <div data-band-percentage-start="0%"
+       data-band-percentage="30%" data-test-id='lowBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="60%" data-test-id='mediumBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="80%" data-test-id='highBand'>
+    <span></span>
+  </div>
+  
+    <div data-band-percentage="100%" data-test-id='veryHighBand'>
+      <span></span>
+    </div>
+  
+</div>
+
+
+        
+      </div>
 
     
   
@@ -9196,8 +9199,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
 
-
-
   
     
   
@@ -9209,76 +9210,79 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
-
-      
-
-      
+      <div class="arns-predictor-scale govuk-body" data-predictor-scale="Serious Violent Reoffending Predictor">
         
-      
-
-      
-      
-        
-      
-
-      
-      
-        
-      
-
-      
-        <div class="arns-predictor-scale govuk-body">
           <div class="arns-predictor-scale-header-wrapper">
             <div>
-              <h2 class="govuk-heading-m">Serious Violent Reoffending Predictor</h2>
-              <p class="govuk-hint">Last updated: 01 January 2025</p>
+              <h2 class="govuk-heading-m" data-test-id="name">Serious Violent Reoffending Predictor</h2>
+              <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
             </div>
             
-            <div><strong class="govuk-tag govuk-tag--grey">
+              <div data-test-id="staticOrDynamic"><strong class="govuk-tag govuk-tag--grey">
   Static
 </strong>
 </div>
             
           </div>
+          
 
-          <div class="arns-scale-marker">
-            <div class="arns-scale-marker-wrapper--medium arns-scale-marker-wrapper" data-margin="27.88">
-              
-  <div class="arns-scale-marker__card">
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<div class="arns-scale-marker" data-test-id='scaleMarker'>
+  <div class="arns-scale-marker-wrapper--medium arns-scale-marker-wrapper" data-margin="27.88" data-test-id='scaleMarkerPosition'>
+    
+  <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
-      <h3>MEDIUM</h3>
+      <h3 data-test-id="scaleMarkerCardContent">MEDIUM</h3>
     </div>
     
-      <div class="arns-scale-marker__card-bottom">
+      <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
         <p>1.23%</p>
       </div>
-      <div class="arns-scale-marker__card-pointer"></div>
+      <div class="arns-scale-marker__card-pointer" data-test-id="scaleMarkerCardPointer"></div>
     
   </div>
 
-            </div>
-          </div>
+  </div>
+</div>
 
-          <div class="arns-scale-bar arns-scale-bar--fourths">
-            <div data-band-percentage-start="0%"
-                 data-band-percentage="1%">
-              <span></span>
-            </div>
-            <div data-band-percentage="3%">
-              <span></span>
-            </div>
-            <div data-band-percentage="6.9%">
-              <span></span>
-            </div>
-            
-              <div data-band-percentage="25%+">
-                <span></span>
-              </div>
-            
-          </div>
-        </div>
-      
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="barType">
+  <div data-band-percentage-start="0%"
+       data-band-percentage="1%" data-test-id='lowBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="3%" data-test-id='mediumBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="6.9%" data-test-id='highBand'>
+    <span></span>
+  </div>
+  
+    <div data-band-percentage="25%+" data-test-id='veryHighBand'>
+      <span></span>
+    </div>
+  
+</div>
+
+
+        
+      </div>
 
     
   
@@ -9295,8 +9299,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
 
-
-
   
     
   
@@ -9310,68 +9312,71 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
-
-      
-
-      
+      <div class="arns-predictor-scale govuk-body" data-predictor-scale="Direct Contact - Sexual Reoffending Predictor">
         
-      
-
-      
-      
-        
-      
-
-      
-      
-        
-      
-
-      
-        <div class="arns-predictor-scale govuk-body">
           <div class="arns-predictor-scale-header-wrapper">
             <div>
-              <h2 class="govuk-heading-m">Direct Contact - Sexual Reoffending Predictor</h2>
-              <p class="govuk-hint">Last updated: 01 January 2025</p>
+              <h2 class="govuk-heading-m" data-test-id="name">Direct Contact - Sexual Reoffending Predictor</h2>
+              <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
             </div>
             
           </div>
+          
 
-          <div class="arns-scale-marker">
-            <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper" data-margin="87.5">
-              
-  <div class="arns-scale-marker__card">
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<div class="arns-scale-marker" data-test-id='scaleMarker'>
+  <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper" data-margin="87.5" data-test-id='scaleMarkerPosition'>
+    
+  <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
-      <h3>VERY HIGH</h3>
+      <h3 data-test-id="scaleMarkerCardContent">VERY HIGH</h3>
     </div>
     
-      <div class="arns-scale-marker__card-pointer arns-scale-marker__card-pointer--white"></div>
+      <div class="arns-scale-marker__card-pointer arns-scale-marker__card-pointer--white" data-test-id="scaleMarkerNoScore"></div>
     
   </div>
 
-            </div>
-          </div>
+  </div>
+</div>
 
-          <div class="arns-scale-bar--small arns-scale-bar--small-fourths">
-            <div data-band-percentage-start=""
-                 data-band-percentage="">
-              <span></span>
-            </div>
-            <div data-band-percentage="">
-              <span></span>
-            </div>
-            <div data-band-percentage="">
-              <span></span>
-            </div>
-            
-              <div data-band-percentage="">
-                <span></span>
-              </div>
-            
-          </div>
-        </div>
-      
+<div class="arns-scale-bar--small arns-scale-bar--small-fourths" data-test-id="barType">
+  <div data-band-percentage-start=""
+       data-band-percentage="" data-test-id='lowBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="" data-test-id='mediumBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="" data-test-id='highBand'>
+    <span></span>
+  </div>
+  
+    <div data-band-percentage="" data-test-id='veryHighBand'>
+      <span></span>
+    </div>
+  
+</div>
+
+
+        
+      </div>
 
     
   
@@ -9386,8 +9391,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
 
-
-
   
     
   
@@ -9403,64 +9406,67 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
-
-      
-
-      
+      <div class="arns-predictor-scale govuk-body" data-predictor-scale="Images and Indirect Contact – Sexual Reoffending Predictor">
         
-      
-
-      
-      
-        
-      
-
-      
-      
-        
-      
-
-      
-        <div class="arns-predictor-scale govuk-body">
           <div class="arns-predictor-scale-header-wrapper">
             <div>
-              <h2 class="govuk-heading-m">Images and Indirect Contact – Sexual Reoffending Predictor</h2>
-              <p class="govuk-hint">Last updated: 01 January 2025</p>
+              <h2 class="govuk-heading-m" data-test-id="name">Images and Indirect Contact – Sexual Reoffending Predictor</h2>
+              <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
             </div>
             
           </div>
+          
 
-          <div class="arns-scale-marker">
-            <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper" data-margin="83.33">
-              
-  <div class="arns-scale-marker__card">
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<div class="arns-scale-marker" data-test-id='scaleMarker'>
+  <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper" data-margin="83.33" data-test-id='scaleMarkerPosition'>
+    
+  <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
-      <h3>HIGH</h3>
+      <h3 data-test-id="scaleMarkerCardContent">HIGH</h3>
     </div>
     
-      <div class="arns-scale-marker__card-pointer arns-scale-marker__card-pointer--white"></div>
+      <div class="arns-scale-marker__card-pointer arns-scale-marker__card-pointer--white" data-test-id="scaleMarkerNoScore"></div>
     
   </div>
 
-            </div>
-          </div>
+  </div>
+</div>
 
-          <div class="arns-scale-bar--small">
-            <div data-band-percentage-start=""
-                 data-band-percentage="">
-              <span></span>
-            </div>
-            <div data-band-percentage="">
-              <span></span>
-            </div>
-            <div data-band-percentage="">
-              <span></span>
-            </div>
-            
-          </div>
-        </div>
-      
+<div class="arns-scale-bar--small" data-test-id="barType">
+  <div data-band-percentage-start=""
+       data-band-percentage="" data-test-id='lowBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="" data-test-id='mediumBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="" data-test-id='highBand'>
+    <span></span>
+  </div>
+  
+</div>
+
+
+        
+      </div>
 
     
   
@@ -9473,8 +9479,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
 
-
-
   
     
   
@@ -9492,76 +9496,79 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
-
-      
-
-      
+      <div class="arns-predictor-scale govuk-body" data-predictor-scale="Combined Serious Reoffending Predictor">
         
-      
-
-      
-      
-        
-      
-
-      
-      
-        
-      
-
-      
-        <div class="arns-predictor-scale govuk-body">
           <div class="arns-predictor-scale-header-wrapper">
             <div>
-              <h2 class="govuk-heading-m">Combined Serious Reoffending Predictor</h2>
-              <p class="govuk-hint">Last updated: 01 January 2025</p>
+              <h2 class="govuk-heading-m" data-test-id="name">Combined Serious Reoffending Predictor</h2>
+              <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
             </div>
             
-            <div><strong class="govuk-tag govuk-tag--grey">
+              <div data-test-id="staticOrDynamic"><strong class="govuk-tag govuk-tag--grey">
   Static
 </strong>
 </div>
             
           </div>
+          
 
-          <div class="arns-scale-marker">
-            <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper" data-margin="27.88">
-              
-  <div class="arns-scale-marker__card">
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<div class="arns-scale-marker" data-test-id='scaleMarker'>
+  <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper" data-margin="27.88" data-test-id='scaleMarkerPosition'>
+    
+  <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
-      <h3>HIGH</h3>
+      <h3 data-test-id="scaleMarkerCardContent">HIGH</h3>
     </div>
     
-      <div class="arns-scale-marker__card-bottom">
+      <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
         <p>1.23%</p>
       </div>
-      <div class="arns-scale-marker__card-pointer"></div>
+      <div class="arns-scale-marker__card-pointer" data-test-id="scaleMarkerCardPointer"></div>
     
   </div>
 
-            </div>
-          </div>
+  </div>
+</div>
 
-          <div class="arns-scale-bar arns-scale-bar--fourths">
-            <div data-band-percentage-start="0%"
-                 data-band-percentage="1%">
-              <span></span>
-            </div>
-            <div data-band-percentage="3%">
-              <span></span>
-            </div>
-            <div data-band-percentage="6.9%">
-              <span></span>
-            </div>
-            
-              <div data-band-percentage="25%+">
-                <span></span>
-              </div>
-            
-          </div>
-        </div>
-      
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="barType">
+  <div data-band-percentage-start="0%"
+       data-band-percentage="1%" data-test-id='lowBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="3%" data-test-id='mediumBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="6.9%" data-test-id='highBand'>
+    <span></span>
+  </div>
+  
+    <div data-band-percentage="25%+" data-test-id='veryHighBand'>
+      <span></span>
+    </div>
+  
+</div>
+
+
+        
+      </div>
 
     
   
@@ -9573,6 +9580,28 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
 
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
 
 
   
@@ -9599,8 +9628,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
 
-
-
   
     
   
@@ -9625,8 +9652,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
 
-
-
   
     
   
@@ -9649,34 +9674,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       </div>
       <div class="govuk-!-margin-bottom-4">
         
-
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-
 
 
   
@@ -9701,8 +9698,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       </div>
       <div class="govuk-!-margin-bottom-8">
         
-
-
 
 
   
@@ -9730,8 +9725,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
 
-
-
   
     
   
@@ -9745,68 +9738,71 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
-
-      
-
-      
+      <div class="arns-predictor-scale govuk-body" data-predictor-scale="Direct Contact - Sexual Reoffending Predictor">
         
-      
-
-      
-      
-        
-      
-
-      
-      
-        
-      
-
-      
-        <div class="arns-predictor-scale govuk-body">
           <div class="arns-predictor-scale-header-wrapper">
             <div>
-              <h2 class="govuk-heading-m">Direct Contact - Sexual Reoffending Predictor</h2>
-              <p class="govuk-hint">Last updated: 01 January 2025</p>
+              <h2 class="govuk-heading-m" data-test-id="name">Direct Contact - Sexual Reoffending Predictor</h2>
+              <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
             </div>
             
           </div>
+          
 
-          <div class="arns-scale-marker">
-            <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper" data-margin="87.5">
-              
-  <div class="arns-scale-marker__card">
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<div class="arns-scale-marker" data-test-id='scaleMarker'>
+  <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper" data-margin="87.5" data-test-id='scaleMarkerPosition'>
+    
+  <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
-      <h3>VERY HIGH</h3>
+      <h3 data-test-id="scaleMarkerCardContent">VERY HIGH</h3>
     </div>
     
-      <div class="arns-scale-marker__card-pointer arns-scale-marker__card-pointer--white"></div>
+      <div class="arns-scale-marker__card-pointer arns-scale-marker__card-pointer--white" data-test-id="scaleMarkerNoScore"></div>
     
   </div>
 
-            </div>
-          </div>
+  </div>
+</div>
 
-          <div class="arns-scale-bar--small arns-scale-bar--small-fourths">
-            <div data-band-percentage-start=""
-                 data-band-percentage="">
-              <span></span>
-            </div>
-            <div data-band-percentage="">
-              <span></span>
-            </div>
-            <div data-band-percentage="">
-              <span></span>
-            </div>
-            
-              <div data-band-percentage="">
-                <span></span>
-              </div>
-            
-          </div>
-        </div>
-      
+<div class="arns-scale-bar--small arns-scale-bar--small-fourths" data-test-id="barType">
+  <div data-band-percentage-start=""
+       data-band-percentage="" data-test-id='lowBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="" data-test-id='mediumBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="" data-test-id='highBand'>
+    <span></span>
+  </div>
+  
+    <div data-band-percentage="" data-test-id='veryHighBand'>
+      <span></span>
+    </div>
+  
+</div>
+
+
+        
+      </div>
 
     
   
@@ -10077,7 +10073,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
     
-<div class="govuk-accordion" data-module="govuk-accordion" id="predictor-scores-accordion" data-i18n.hide-all-sections="Hide all details sections" data-i18n.hide-section="Hide details" data-i18n.hide-section-aria-label="Hide this details section" data-i18n.show-all-sections="Show all details sections" data-i18n.show-section="Show details" data-i18n.show-section-aria-label="Show this details section">
+<div class="govuk-accordion" data-module="govuk-accordion" id="predictor-scores-accordion" data-i18n.hide-all-sections="Hide all details" data-i18n.hide-section="Hide details" data-i18n.hide-section-aria-label="Hide this details section" data-i18n.show-all-sections="Show all details" data-i18n.show-section="Show details" data-i18n.show-section-aria-label="Show this details section">
   
     
   <div class="govuk-accordion__section">
