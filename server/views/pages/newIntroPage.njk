@@ -1,6 +1,6 @@
 {% extends "layouts/side-nav-layout.njk" %}
 
-{% set pageTitle = "New Introduction" %}
+{% set pageTitle = "Introduction" %}
 {% set mainClasses = "govuk-body" %}
 
 {% block sideNavContent %}
@@ -17,25 +17,36 @@
   <h3 class="govuk-heading-m">Install the library</h3>
   <p>
     Use the command
-<pre><code class="intro-code">npm i @ministryofjustice/hmpps-arns-frontend-components-lib</code></pre>
+  </p>
+  <pre><code class="intro-code">npm i @ministryofjustice/hmpps-arns-frontend-components-lib</code></pre>
+  <p>
     to install the package containing the library. This will result in the line
-    <pre><code class="intro-code">@ministryofjustice/hmpps-arns-frontend-components-lib": "0.0.5",</code></pre>
+  </p>
+  <pre><code class="intro-code">@ministryofjustice/hmpps-arns-frontend-components-lib": "0.0.5",</code></pre>
+  <p>
     being added to the file <code class="intro-name">package.json</code> as a runtime dependency.
   </p>
 
-  <h3 class="govuk-heading-m">Add the njks</h3>
+  <h3 class="govuk-heading-m">Add the njks and setup function</h3>
   <p>
     To add the njks from the library into a project, the file <code class="intro-name">server/utils/nunjucksSetup.ts</code> has to be edited.
     The path
-    <pre><code class="intro-code">node_modules/@ministryofjustice/hmpps-arns-frontend-components-lib/dist/</code></pre>
-will need to be added to the njks environment list contained in the initialisation <pre><code class="intro-code-block">const njkEnv = nunjucks.configure( ... </code></pre>
   </p>
+  <pre><code class="intro-code">node_modules/@ministryofjustice/hmpps-arns-frontend-components-lib/dist/</code></pre>
+  <p>
+    will need to be added to the njks environment list contained in the initialisation
+  </p>
+  <pre><code class="intro-code-block">const njkEnv = nunjucks.configure( ... </code></pre>
+  <p>
+    The setup function also needs to be called to bring in globals and filters from the library.
+  </p>
+  <pre><code class="intro-code-block">arnsNunjucksSetup(njkEnv)</code></pre>
 
   <h3 class="govuk-heading-m">Add the SCSS</h3>
   <p>
     Add the following import to your global styles usually in <code class="intro-name">index.scss</code>
-    <pre><code class="intro-code">@import "@ministryofjustice/hmpps-arns-frontend-components-lib/dist/all";</code></pre>
   </p>
+    <pre><code class="intro-code">@import "@ministryofjustice/hmpps-arns-frontend-components-lib/dist/all";</code></pre>
 
   <h2 class="govuk-heading-l">Using components</h2>
 
@@ -43,7 +54,7 @@ will need to be added to the njks environment list contained in the initialisati
   <p>
     Setup the <code class="intro-name">arnsComponent</code> in <code class="intro-name">dataAccess</code> and export it
   </p>
-    <p  style="padding-top: 15px"><pre><code class="intro-code-block">export const dataAccess = () => {
+  <pre style="padding-top: 15px"><code class="intro-code-block">export const dataAccess = () => {
   return {
     ...
     arnsComponents: new ArnsComponents(authClient, config.apis.arnsApi, logger),
@@ -53,11 +64,12 @@ will need to be added to the njks environment list contained in the initialisati
 
 ...
 
-export { ArnsComponents }</code></pre></p>
+export { ArnsComponents }</code></pre>
 
   <h3 class="govuk-heading-m">Service Layer</h3>
   <p>
     Add <code class="intro-name">arnsComponents</code> to your services and return.
+  </p>
     <pre><code class="intro-code-block">import { dataAccess } from '../data'
 
 export const services = () => {
@@ -70,16 +82,17 @@ export const services = () => {
   }
 }
 
-export type Services = ReturnType&lt;typeof services></code></pre></p>
+export type Services = ReturnType&lt;typeof services></code></pre>
   <p>
     Setup arns api in <code class="intro-name">config.ts</code>
-    <pre><code class="intro-code-block">apis: {
+  </p>
+  <pre><code class="intro-code-block">apis: {
   arnsApi: { ... },
 },</code></pre>
-  </p>
   <p>
     call the <code class="intro-name">arnsComponent</code> once per page to insert data into the router
-   <pre><code class="intro-code-block">router.get('/some-route', async (req, res) => {
+  </p>
+  <pre><code class="intro-code-block">router.get('/some-route', async (req, res) => {
     ...
     const riskData = await arnsComponents.getRiskData(
       authClient, 'crn', 'X123456')
@@ -89,7 +102,6 @@ export type Services = ReturnType&lt;typeof services></code></pre></p>
       ...
     })
 })</code></pre>
-  </p>
 
   <p>
     For further information select a component for more details on that particular component.

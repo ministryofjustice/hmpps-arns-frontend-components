@@ -14,26 +14,51 @@ test('Checks all pages are working', async ({ page }) => {
   await landingPage.clickMappaWidgetLink()
   await landingPage.checkMappaWidgetHeader()
   await landingPage.checkExamplesHeader()
+  await landingPage.checkMappaWidget()
+  await landingPage.checkMappaWidgetNoData()
+  await landingPage.checkMappaWidgetUnknown()
 
   // Click Risk Flag link and check page
   await landingPage.clickRiskFlagWidgetLink()
   await landingPage.checkRiskFlagHeader()
+  await landingPage.checkRiskFlagWidget()
+  await landingPage.checkRiskFlagWidgetNoData()
+  await landingPage.checkRiskFlagWidgetUnknown()
 
   // Click ROSH link and check page
   await landingPage.clickROSHWidgetLink()
   await landingPage.checkROSHHeader()
+  await landingPage.checkROSHWidgetFull()
+  await landingPage.checkROSHWidgetCommunity()
+  await landingPage.checkROSHWidgetCustody()
+  await landingPage.checkROSHWidgetNoData()
+  await landingPage.checkROSHWidgetUnknown()
 
   // Click Predictor badge link and check page
   await landingPage.clickPredictorBadgeLink()
+  // await page.goto('/predictor-badge/new')
   await landingPage.checkPredictorBadgeHeader()
+  await landingPage.checkFullHighPredictorBadge()
+  await landingPage.checkFullLowPredictorBadge()
+  // await landingPage.checkPredictorBadgeNotApplicable()
+  // await landingPage.checkPredictorBadgeMissingScore()
+  // await landingPage.checkPredictorBadgeMissingBand()
 
   // Click Expanded predictor badge link and check page
   await landingPage.clickExpandedPredictorBadgeLink()
+  // await page.goto('/expanded-predictor-badge/new')
   await landingPage.checkExpandedPredictorBadgeHeader()
+  // await landingPage.checkFullHighPredictorBadge()
+  // await landingPage.checkFullLowPredictorBadge()
+  // await landingPage.checkPredictorBadgeNotApplicable()
+  // await landingPage.checkPredictorBadgeMissingScore()
+  // await landingPage.checkPredictorBadgeMissingBand()
 
   // Click predictor scale link and check page
   await landingPage.clickPredictorScaleLink()
+  // await page.goto('/predictor-scale/new')
   await landingPage.checkPredictorScaleHeader()
+  // await landingPage.checkPredictorBadgeNotApplicable()
 
   // Click predictor score link and check page
   await landingPage.clickPredictorScoresLink()

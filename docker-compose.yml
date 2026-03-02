@@ -20,6 +20,7 @@ services:
       - SESSION_SECRET=somesecretvalue
       - INGRESS_URL=http://localhost:3000
       - NO_HTTPS=true
+      - ARNS_API_URL=http://wiremock:8080/arns-api
 
   wiremock:
     image: wiremock/wiremock
