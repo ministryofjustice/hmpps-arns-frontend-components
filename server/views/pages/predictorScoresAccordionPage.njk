@@ -11,7 +11,51 @@
 
   <div id="predictor-scores-accordion-wrapper" class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-      <h2>Example</h2>
+      <h2>How to use</h2>
+      <h3>Usage example</h3>
+      <pre><code>{% verbatim %}{{ predictorScoresAccordion({ data: riskData, forename: 'Alex' }) }}{% endverbatim %}</code></pre>
+      <h3>Macro inputs</h3>
+      <ul>
+        <li>data (ARNS API data)
+          <ul>
+            <li>This will be produced once per page via a call from the library to the ARNS API, detail on the intro
+              page
+            </li>
+          </ul>
+        </li>
+        <li>forename (string)
+          <ul>
+            <li>The individual’s forename associated with the current risk profile</li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Page layout</h2>
+      <p>
+        The following wireframe outlines the structural requirements for the 'Risk predictor scores' page.
+        It distinguishes between static elements managed by your service and content generated via the macro.
+      </p>
+      <div class="page-wireframe">
+        <div class="page-wireframe-back-button">Back button</div>
+
+        <div class="page-wireframe-header">Caption header</div>
+        <div class="page-wireframe-header">Risk predictor scores header</div>
+
+        <div class="page-wireframe-predictor-scores-accordion">Predictor scores accordion macro</div>
+
+        <div class="page-wireframe-back-to-top-button">Back to top button</div>
+      </div>
+      <h4>
+        Key
+      </h4>
+      <ul>
+        <li>
+          <span class="red-key-text">Red box</span> - These components (e.g. headers & navigation buttons) must be
+          defined and rendered within your service.
+        </li>
+        <li><span class="green-key-text">Green box</span> - This section identifies the content rendered by the
+          predictor scores accordion macro.</li>
+      </ul>
+      <h3>Example</h3>
       <p>Please follow <a href="/predictor-scores-accordion/example">this</a> link to view a full page example.</p>
     </div>
   </div>
