@@ -3093,6 +3093,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
           <span class="arns-predictor-badge__level" data-test-id="band">VERY HIGH</span>
 
           
+            <span class="arns-predictor-badge__score" data-test-id="score">2.81%</span>
+          
 
           
 
@@ -3611,6 +3613,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         <div class="arns-predictor-badge__stats">
           <span class="arns-predictor-badge__level" data-test-id="band">VERY HIGH</span>
 
+          
+            <span class="arns-predictor-badge__score" data-test-id="score">2.81%</span>
           
 
           
@@ -7022,6 +7026,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
 
         
+          <span class="arns-predictor-badge__score" data-test-id="score">2.81%</span>
+        
 
         
       </div>
@@ -7321,6 +7327,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
         <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
 
+        
+          <span class="arns-predictor-badge__score" data-test-id="score">2.81%</span>
         
 
         
@@ -9310,33 +9318,36 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 <div class="arns-scale-marker" data-test-id='scaleMarker'>
-  <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper" data-margin="87.5" data-test-id='scaleMarkerPosition'>
+  <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper" data-margin="55.55" data-test-id='scaleMarkerPosition'>
     
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
       <h3 data-test-id="scaleMarkerCardContent">VERY HIGH</h3>
     </div>
     
-      <div class="arns-scale-marker__card-pointer arns-scale-marker__card-pointer--white" data-test-id="scaleMarkerNoScore"></div>
+      <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
+        <p>2.81%</p>
+      </div>
+      <div class="arns-scale-marker__card-pointer" data-test-id="scaleMarkerCardPointer"></div>
     
   </div>
 
   </div>
 </div>
 
-<div class="arns-scale-bar--small arns-scale-bar--small-fourths" data-test-id="barType">
-  <div data-band-percentage-start=""
-       data-band-percentage="" data-test-id='lowBand'>
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="barType">
+  <div data-band-percentage-start="0%"
+       data-band-percentage="0.6%" data-test-id='lowBand'>
     <span></span>
   </div>
-  <div data-band-percentage="" data-test-id='mediumBand'>
+  <div data-band-percentage="2.1%" data-test-id='mediumBand'>
     <span></span>
   </div>
-  <div data-band-percentage="" data-test-id='highBand'>
+  <div data-band-percentage="5.3%" data-test-id='highBand'>
     <span></span>
   </div>
   
-    <div data-band-percentage="" data-test-id='veryHighBand'>
+    <div data-band-percentage="83.1%" data-test-id='veryHighBand'>
       <span></span>
     </div>
   
@@ -9736,33 +9747,36 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 <div class="arns-scale-marker" data-test-id='scaleMarker'>
-  <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper" data-margin="87.5" data-test-id='scaleMarkerPosition'>
+  <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper" data-margin="55.55" data-test-id='scaleMarkerPosition'>
     
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
       <h3 data-test-id="scaleMarkerCardContent">VERY HIGH</h3>
     </div>
     
-      <div class="arns-scale-marker__card-pointer arns-scale-marker__card-pointer--white" data-test-id="scaleMarkerNoScore"></div>
+      <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
+        <p>2.81%</p>
+      </div>
+      <div class="arns-scale-marker__card-pointer" data-test-id="scaleMarkerCardPointer"></div>
     
   </div>
 
   </div>
 </div>
 
-<div class="arns-scale-bar--small arns-scale-bar--small-fourths" data-test-id="barType">
-  <div data-band-percentage-start=""
-       data-band-percentage="" data-test-id='lowBand'>
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="barType">
+  <div data-band-percentage-start="0%"
+       data-band-percentage="0.6%" data-test-id='lowBand'>
     <span></span>
   </div>
-  <div data-band-percentage="" data-test-id='mediumBand'>
+  <div data-band-percentage="2.1%" data-test-id='mediumBand'>
     <span></span>
   </div>
-  <div data-band-percentage="" data-test-id='highBand'>
+  <div data-band-percentage="5.3%" data-test-id='highBand'>
     <span></span>
   </div>
   
-    <div data-band-percentage="" data-test-id='veryHighBand'>
+    <div data-band-percentage="83.1%" data-test-id='veryHighBand'>
       <span></span>
     </div>
   
