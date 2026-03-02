@@ -1,0 +1,23 @@
+.govuk-back-to-top {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: "GDS Transport", arial, sans-serif;
+  font-size: 16px;
+}
+
+.govuk-back-to-top a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: underline;
+  color: #1d70b8;
+}
+
+.govuk-back-to-top a:hover {
+  color: #003078;
+}
+
+.govuk-back-to-top__icon {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}

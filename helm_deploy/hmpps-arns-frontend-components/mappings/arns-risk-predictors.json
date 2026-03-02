@@ -13,6 +13,7 @@
         "completedDate": "2023-01-01T10:30:00",
         "status": "COMPLETE",
         "outputVersion": "1",
+        "assessmentType": "LAYER1",
         "output": {
           "groupReconvictionScore": {
             "oneYear": 4.56,
@@ -54,6 +55,7 @@
         "completedDate": "2024-01-01T10:30:00",
         "status": "COMPLETE",
         "outputVersion": "1",
+        "assessmentType": "LAYER1",
         "output": {
           "groupReconvictionScore": {},
           "violencePredictorScore": {},
@@ -72,6 +74,7 @@
         "completedDate": "2025-01-01T10:30:00",
         "status": "COMPLETE",
         "outputVersion": "2",
+        "assessmentType": "LAYER1",
         "output": {
           "allReoffendingPredictor": {
             "staticOrDynamic": "STATIC",
