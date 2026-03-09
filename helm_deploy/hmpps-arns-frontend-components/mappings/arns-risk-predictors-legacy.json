@@ -61,7 +61,7 @@
           "violencePredictorScore": {},
           "generalPredictorScore": {},
           "riskOfSeriousRecidivismScore": {
-            "percentageScore": 51.2345,
+            "percentageScore": 51.23,
             "staticOrDynamic": "DYNAMIC",
             "source": "OASYS",
             "algorithmVersion": 5,

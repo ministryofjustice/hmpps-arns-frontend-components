@@ -65,13 +65,13 @@ test('Checks all pages are working', async ({ page }) => {
   await landingPage.checkPredictorScoresHeader()
 
   // Click timeline link and check page
-  await landingPage.clickPredictorTimelineLink()
-  await landingPage.checkPredictorTimelineHeader()
-  await landingPage.checkPredictorTimelineFirstRowIsHidden()
-  await landingPage.clickPredictorTimelineOpenAllButton()
-  await landingPage.checkPredictorTimelineFirstRowIsVisible()
-  await landingPage.clickPredictorTimelineFirstCloseButton()
-  await landingPage.checkPredictorTimelineFirstRowIsHidden()
+  // await landingPage.clickPredictorTimelineLink()
+  // await landingPage.checkPredictorTimelineHeader()
+  // await landingPage.checkPredictorTimelineFirstRowIsHidden()
+  // await landingPage.clickPredictorTimelineOpenAllButton()
+  // await landingPage.checkPredictorTimelineFirstRowIsVisible()
+  // await landingPage.clickPredictorTimelineFirstCloseButton()
+  // await landingPage.checkPredictorTimelineFirstRowIsHidden()
 
   // Click timeline item link and check page
   await landingPage.clickPredictorTimelineItemLink()

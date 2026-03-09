@@ -45,7 +45,7 @@
           },
           "sexualPredictorScore": {
             "ospIndecentPercentageScore": 0.12,
-            "ospContactPercentageScore": 64.00,
+            "ospContactPercentageScore": 83.1,
             "ospIndecentScoreLevel": "LOW",
             "ospContactScoreLevel": "VERY_HIGH"
           }
@@ -61,7 +61,7 @@
           "violencePredictorScore": {},
           "generalPredictorScore": {},
           "riskOfSeriousRecidivismScore": {
-            "percentageScore": 51.2345,
+            "percentageScore": 51.23,
             "staticOrDynamic": "DYNAMIC",
             "source": "OASYS",
             "algorithmVersion": 5,
@@ -71,7 +71,7 @@
         }
       },
       {
-        "completedDate": "2025-01-01T10:30:00",
+        "completedDate": "2026-03-01T10:30:00",
         "status": "COMPLETE",
         "outputVersion": "2",
         "assessmentType": "LAYER1",
