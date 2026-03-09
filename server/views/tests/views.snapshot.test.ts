@@ -90,13 +90,13 @@ describe('View Snapshot Tests: All Pages', () => {
     expect(response.text).toMatchSnapshot()
   })
 
-  it('should match snapshot for the predictor scores accordion page (/predictor-scores-accordion)', async () => {
-    const response = await request(app).get('/predictor-scores-accordion').expect(200)
+  it('should match snapshot for the predictor scores accordion page (/risk-predictor-scores-content)', async () => {
+    const response = await request(app).get('/risk-predictor-scores-content').expect(200)
     expect(response.text).toMatchSnapshot()
   })
 
-  it('should match snapshot for the predictor scores accordion example page (/predictor-scores-accordion/example)', async () => {
-    const response = await request(app).get('/predictor-scores-accordion/example').expect(200)
+  it('should match snapshot for the predictor scores accordion example page (/risk-predictor-scores-content/example)', async () => {
+    const response = await request(app).get('/risk-predictor-scores-content/example').expect(200)
     expect(response.text).toMatchSnapshot()
   })
 })

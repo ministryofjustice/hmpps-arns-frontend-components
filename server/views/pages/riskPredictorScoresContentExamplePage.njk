@@ -1,5 +1,5 @@
 {% extends "layouts/side-nav-layout.njk" %}
-{% from "arns/components/predictor-scores-accordion/macro.njk" import predictorScoresAccordion %}
+{% from "arns/components/risk-predictor-scores-content/macro.njk" import riskPredictorScoresContent %}
 
 {% set userInfo = "Alex Smith | CRN: XX000000" %}
 {% set pageTitle = "Risk predictor scores" %}
@@ -7,12 +7,12 @@
 
 {% block sideNavContent %}
 
-  <a href="/predictor-scores-accordion" class="govuk-back-link">Back</a>
+  <a href="/risk-predictor-scores-content" class="govuk-back-link">Back</a>
 
   <h3 class="govuk-caption-l">{{ userInfo }}</h3>
   <h2 class="govuk-heading-l">{{ pageTitle }}</h2>
 
-  {{ predictorScoresAccordion({ data: riskData, forename: 'Alex' }) }}
+  {{ riskPredictorScoresContent({ data: riskData, forename: 'Alex' }) }}
 
   <div class="govuk-back-to-top" data-module="app-back-to-top">
     <a class="govuk-link govuk-link--no-visited-state" href="#top">
