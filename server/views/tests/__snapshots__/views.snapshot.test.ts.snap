@@ -9863,7 +9863,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 "
 `;
 
-exports[`View Snapshot Tests: All Pages should match snapshot for the predictor scores accordion example page (/predictor-scores-accordion/example) 1`] = `
+exports[`View Snapshot Tests: All Pages should match snapshot for the predictor scores accordion example page (/risk-predictor-scores-content/example) 1`] = `
 "<!DOCTYPE html>
 <html lang="en" class="govuk-template">
   <head>
@@ -9984,7 +9984,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <div class="govuk-grid-column-two-thirds">
       
 
-  <a href="/predictor-scores-accordion" class="govuk-back-link">Back</a>
+  <a href="/risk-predictor-scores-content" class="govuk-back-link">Back</a>
 
   <h3 class="govuk-caption-l">Alex Smith | CRN: XX000000</h3>
   <h2 class="govuk-heading-l">Risk predictor scores</h2>
@@ -9997,196 +9997,144 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+  <div class="bottom-border">
     <div class="govuk-inset-text">
   Source: undefined assessment, completed on undefined
 </div>
 
-
-    
-    
-
-    
-
-    
-
-
-    
-    
-
-    
-
-    
-
-
-    
-    
-
-    
-
-    
-
-
-    
-    
-
-    
-
-    
-
-
-    
-    
-
-    
-
-    
-
-
-    
-    
-
-    
-
-    
-
-
-    
-<div class="govuk-accordion" data-module="govuk-accordion" id="predictor-scores-accordion" data-i18n.hide-all-sections="Hide all details" data-i18n.hide-section="Hide details" data-i18n.hide-section-aria-label="Hide this details section" data-i18n.show-all-sections="Show all details" data-i18n.show-section="Show details" data-i18n.show-section-aria-label="Show this details section">
-  
-    
-  <div class="govuk-accordion__section">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="predictor-scores-accordion-heading-1">
-          <span>All reoffending predictor</span>
-        </span>
-      </h2>
-      
-      <div class="govuk-accordion__section-summary govuk-body" id="predictor-scores-accordion-summary-1">
-        <span>All reoffending predictor summary text</span>
-      </div>
-      
-    </div>
-    <div id="predictor-scores-accordion-content-1" class="govuk-accordion__section-content">
-    
-      <p>This is the content for the all reoffending predictor.</p>
-    
-    </div>
   </div>
 
   
-    
-  <div class="govuk-accordion__section">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="predictor-scores-accordion-heading-2">
-          <span>Violent reoffending predictor</span>
-        </span>
-      </h2>
-      
-      <div class="govuk-accordion__section-summary govuk-body" id="predictor-scores-accordion-summary-2">
-        <p>Violent reoffending predictor summary text</p>
-      </div>
-      
-    </div>
-    <div id="predictor-scores-accordion-content-2" class="govuk-accordion__section-content">
-    
-      <p>This is the content for the violent reoffending predictor.</p>
-    
-    </div>
-  </div>
+  <h3>All reoffending predictor</h3>
+  <p>All reoffending predictor summary text</p>
 
   
-    
-  <div class="govuk-accordion__section">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="predictor-scores-accordion-heading-3">
-          <span>Combined serious reoffending predictor</span>
-        </span>
-      </h2>
-      
-      <div class="govuk-accordion__section-summary govuk-body" id="predictor-scores-accordion-summary-3">
-        <p>Combined serious reoffending predictor summary text</p>
-      </div>
-      
-    </div>
-    <div id="predictor-scores-accordion-content-3" class="govuk-accordion__section-content">
-    
-      <p>This is the content for the combined serious reoffending predictor.</p>
-    
-    </div>
-  </div>
 
   
+<details class="govuk-details details--chevron-style">
+  <summary class="govuk-details__summary">
+    <span class="details__chevron" aria-hidden="true"></span>
+    <span class="details__toggle-text">
+      <span class="details__show">Show details</span>
+      <span class="details__hide">Hide details</span>
+    </span>
+  </summary>
+  <div class="govuk-details__text">
     
-  <div class="govuk-accordion__section">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="predictor-scores-accordion-heading-4">
-          <span>Serious violent reoffending predictor</span>
-        </span>
-      </h2>
-      
-      <div class="govuk-accordion__section-summary govuk-body" id="predictor-scores-accordion-summary-4">
-        <p>Serious violent reoffending predictor summary text</p>
-      </div>
-      
-    </div>
-    <div id="predictor-scores-accordion-content-4" class="govuk-accordion__section-content">
-    
-      <p>This is the content for the serious violent reoffending predictor.</p>
-    
-    </div>
+    <p>This is the content for the all reoffending predictor.</p>
+  
   </div>
+</details>
 
   
-    
-  <div class="govuk-accordion__section">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="predictor-scores-accordion-heading-5">
-          <span>Direct contact - Sexual reoffending predictor</span>
-        </span>
-      </h2>
-      
-      <div class="govuk-accordion__section-summary govuk-body" id="predictor-scores-accordion-summary-5">
-        <p>Direct contact - Sexual reoffending predictor summary text</p>
-      </div>
-      
-    </div>
-    <div id="predictor-scores-accordion-content-5" class="govuk-accordion__section-content">
-    
-      <p>This is the content for the direct contact - Sexual reoffending predictor.</p>
-    
-    </div>
-  </div>
+  <h3>Violent reoffending predictor</h3>
+  <p>Violent reoffending predictor summary text</p>
 
   
-    
-  <div class="govuk-accordion__section">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="predictor-scores-accordion-heading-6">
-          <span>Images and indirect contact - Sexual reoffending predictor</span>
-        </span>
-      </h2>
-      
-      <div class="govuk-accordion__section-summary govuk-body" id="predictor-scores-accordion-summary-6">
-        <p>Images and indirect contact - Sexual reoffending predictor summary text</p>
-      </div>
-      
-    </div>
-    <div id="predictor-scores-accordion-content-6" class="govuk-accordion__section-content">
-    
-      <p>This is the content for the images and indirect contact - Sexual reoffending predictor.</p>
-    
-    </div>
-  </div>
 
   
-</div>
+<details class="govuk-details details--chevron-style">
+  <summary class="govuk-details__summary">
+    <span class="details__chevron" aria-hidden="true"></span>
+    <span class="details__toggle-text">
+      <span class="details__show">Show details</span>
+      <span class="details__hide">Hide details</span>
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    
+    <p>This is the content for the violent reoffending predictor.</p>
+  
+  </div>
+</details>
 
+  
+  <h3>Combined serious reoffending predictor</h3>
+  <p>Combined serious reoffending predictor summary text</p>
+
+  
+
+  
+<details class="govuk-details details--chevron-style">
+  <summary class="govuk-details__summary">
+    <span class="details__chevron" aria-hidden="true"></span>
+    <span class="details__toggle-text">
+      <span class="details__show">Show details</span>
+      <span class="details__hide">Hide details</span>
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    
+    <p>This is the content for the combined serious reoffending predictor.</p>
+  
+  </div>
+</details>
+
+  
+  <h3>Serious violent reoffending predictor</h3>
+  <p>Serious violent reoffending predictor summary text</p>
+
+  
+
+  
+<details class="govuk-details details--chevron-style">
+  <summary class="govuk-details__summary">
+    <span class="details__chevron" aria-hidden="true"></span>
+    <span class="details__toggle-text">
+      <span class="details__show">Show details</span>
+      <span class="details__hide">Hide details</span>
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    
+    <p>This is the content for the serious violent reoffending predictor.</p>
+  
+  </div>
+</details>
+
+  
+  <h3>Direct contact - Sexual reoffending predictor</h3>
+  <p>Direct contact - Sexual reoffending predictor summary text</p>
+
+  
+
+  
+<details class="govuk-details details--chevron-style">
+  <summary class="govuk-details__summary">
+    <span class="details__chevron" aria-hidden="true"></span>
+    <span class="details__toggle-text">
+      <span class="details__show">Show details</span>
+      <span class="details__hide">Hide details</span>
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    
+    <p>This is the content for the direct contact - Sexual reoffending predictor.</p>
+  
+  </div>
+</details>
+
+  
+  <h3>Images and indirect contact - Sexual reoffending predictor</h3>
+  <p>Images and indirect contact - Sexual reoffending predictor summary text</p>
+
+  
+
+  
+<details class="govuk-details details--chevron-style">
+  <summary class="govuk-details__summary">
+    <span class="details__chevron" aria-hidden="true"></span>
+    <span class="details__toggle-text">
+      <span class="details__show">Show details</span>
+      <span class="details__hide">Hide details</span>
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    
+    <p>This is the content for the images and indirect contact - Sexual reoffending predictor.</p>
+  
+  </div>
+</details>
 
 
 
@@ -10263,12 +10211,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 "
 `;
 
-exports[`View Snapshot Tests: All Pages should match snapshot for the predictor scores accordion page (/predictor-scores-accordion) 1`] = `
+exports[`View Snapshot Tests: All Pages should match snapshot for the predictor scores accordion page (/risk-predictor-scores-content) 1`] = `
 "<!DOCTYPE html>
 <html lang="en" class="govuk-template">
   <head>
     <meta charset="utf-8">
-    <title>Library predictor scores accordion</title>
+    <title>Library risk predictor scores content</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
 
@@ -10385,14 +10333,14 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
 
   <h1 class="govuk-heading-xl">
-    Library predictor scores accordion
+    Library risk predictor scores content
   </h1>
 
-  <div id="predictor-scores-accordion-wrapper" class="govuk-grid-row">
+  <div id="predictor-scores-content-wrapper" class="govuk-grid-row">
     <div class="govuk-grid-column-full">
       <h2>How to use</h2>
       <h3>Usage example</h3>
-      <pre><code>{{ predictorScoresAccordion({ data: riskData, forename: 'Alex' }) }}</code></pre>
+      <pre><code>{{ riskPredictorScoresContent({ data: riskData, forename: 'Alex' }) }}</code></pre>
       <h3>Macro inputs</h3>
       <ul>
         <li>data (ARNS API data)
@@ -10419,7 +10367,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         <div class="page-wireframe-header">Caption header</div>
         <div class="page-wireframe-header">Risk predictor scores header</div>
 
-        <div class="page-wireframe-predictor-scores-accordion">Predictor scores accordion macro</div>
+        <div class="page-wireframe-risk-predictor-scores-content">Risk predictor scores content macro</div>
 
         <div class="page-wireframe-back-to-top-button">Back to top button</div>
       </div>
@@ -10432,10 +10380,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           defined and rendered within your service.
         </li>
         <li><span class="green-key-text">Green box</span> - This section identifies the content rendered by the
-          predictor scores accordion macro.</li>
+          risk predictor scores content macro.</li>
       </ul>
       <h3>Example</h3>
-      <p>Please follow <a href="/predictor-scores-accordion/example">this</a> link to view a full page example.</p>
+      <p>Please follow <a href="/risk-predictor-scores-content/example">this</a> link to view a full page example.</p>
     </div>
   </div>
 

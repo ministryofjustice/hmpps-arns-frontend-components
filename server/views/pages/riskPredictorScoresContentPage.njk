@@ -1,6 +1,6 @@
 {% extends "layouts/side-nav-layout.njk" %}
 
-{% set pageTitle = "Library predictor scores accordion" %}
+{% set pageTitle = "Library risk predictor scores content" %}
 {% set mainClasses = "govuk-body" %}
 
 {% block sideNavContent %}
@@ -9,11 +9,11 @@
     {{ pageTitle }}
   </h1>
 
-  <div id="predictor-scores-accordion-wrapper" class="govuk-grid-row">
+  <div id="predictor-scores-content-wrapper" class="govuk-grid-row">
     <div class="govuk-grid-column-full">
       <h2>How to use</h2>
       <h3>Usage example</h3>
-      <pre><code>{% verbatim %}{{ predictorScoresAccordion({ data: riskData, forename: 'Alex' }) }}{% endverbatim %}</code></pre>
+      <pre><code>{% verbatim %}{{ riskPredictorScoresContent({ data: riskData, forename: 'Alex' }) }}{% endverbatim %}</code></pre>
       <h3>Macro inputs</h3>
       <ul>
         <li>data (ARNS API data)
@@ -40,7 +40,7 @@
         <div class="page-wireframe-header">Caption header</div>
         <div class="page-wireframe-header">Risk predictor scores header</div>
 
-        <div class="page-wireframe-predictor-scores-accordion">Predictor scores accordion macro</div>
+        <div class="page-wireframe-risk-predictor-scores-content">Risk predictor scores content macro</div>
 
         <div class="page-wireframe-back-to-top-button">Back to top button</div>
       </div>
@@ -53,10 +53,10 @@
           defined and rendered within your service.
         </li>
         <li><span class="green-key-text">Green box</span> - This section identifies the content rendered by the
-          predictor scores accordion macro.</li>
+          risk predictor scores content macro.</li>
       </ul>
       <h3>Example</h3>
-      <p>Please follow <a href="/predictor-scores-accordion/example">this</a> link to view a full page example.</p>
+      <p>Please follow <a href="/risk-predictor-scores-content/example">this</a> link to view a full page example.</p>
     </div>
   </div>
 
