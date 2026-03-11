@@ -1,9 +1,76 @@
 {% extends "layouts/side-nav-layout.njk" %}
 {% from "moj/components/alert/macro.njk" import mojAlert %}
 {% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}
+{% from "partials/example.njk" import example %}
+{% from "partials/nunjucksMacroOptions.njk" import nunjucksMacroOptions %}
 
-{% set pageTitle = "Library predictor badge" %}
+{% set pageTitle = "Predictor badge" %}
 {% set mainClasses = "govuk-body" %}
+
+{% set macroOptions = [
+  [
+    {
+      text: "data"
+    },
+    {
+      text: "object"
+    },
+    {
+      html: '<strong>Required.</strong> Data from ARNS API - use service from library to obtain this (see <a href="/new">Introduction</a> for more information)'
+    }
+  ],
+  [
+    {
+      text: "predictor"
+    },
+    {
+      text: "string"
+    },
+    {
+      html: '<strong>Required.</strong> Predictor to render. One of
+            <p class="govuk-!-margin-top-4"><strong>Legacy (OGRS3-gen) predictors</strong></p>
+            <ul>
+              <li><strong>ogrs3</strong> - Offender Group Reconviction Scale v3 (OGRS3)</li>
+              <li><strong>ovp</strong> - OASys Violence Predictor (OVP)</li>
+              <li><strong>ogp</strong> - OASys General Predictor (OGP)</li>
+              <li><strong>rsr</strong> - Risk of Serious Reicidivism (RSR)</li>
+              <li><strong>ospdc</strong> - OASys Sexual Predictor – Direct Contact (OSP-DC)</li>
+              <li><strong>ospiic</strong> - OASys Sexual Predictor – Images and Indirect Contact (OSP-IIC)</li>
+            </ul>
+            <p><strong>Current (OGRS4-gen) predictors</strong></p>
+            <ul>
+              <li><strong>allReoffendingPredictor</strong> - all reoffending predictor - falls back to ogrs3 if legacyFallback set to true</li>
+              <li><strong>violentReoffendingPredictor</strong> - violent reoffending predictor - falls back to ovp if legacyFallback set to true</li>
+              <li><strong>seriousViolentReoffendingPredictor</strong> - serious violent reoffending predictor - no fallback available as new predictor</li>
+              <li><strong>directContactSexualReoffendingPredictor</strong> - direct contact - sexual reoffending predictor - falls back to ospdc if legacyFallback set to true</li>
+              <li><strong>indirectImageContactSexualReoffendingPredictor</strong> - indirect image contact - sexual reoffending predictor - falls back to ospiic if legacyFallback set to true</li>
+              <li><strong>combinedSeriousReoffendingPredictor</strong> - combined serious reoffending predictor - falls back to rsr if legacyFallback set to true</li>
+            </ul>'
+    }
+  ],
+  [
+    {
+      text: "showScore"
+    },
+    {
+      text: "boolean"
+    },
+    {
+      html: 'Override default configuration to always show a show for a predictor (not recommended)'
+    }
+  ],
+  [
+    {
+      text: "legacyFallback"
+    },
+    {
+      text: "boolean"
+    },
+    {
+      html: 'Default false. Fallback to using the legacy (OGRS3-gen) equivalent if the latest assessment is legacy. Will have no affect if predictor is not a current (OGRS4-gen) predictor.'
+    }
+  ]
+] %}
 
 {% block sideNavContent %}
   <h1 class="govuk-heading-xl">
@@ -12,6 +79,19 @@
 
   <div id="predictor-badge-wrapper" class="govuk-grid-row">
     <div class="govuk-grid-column-full">
+      <p>The predictor badge component lets users view the band, score, and type in a badge format. The badge is from the latest completed assessment.</p>
+      {% set defaultExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}
+
+          {{ predictorBadge({
+            data: riskData,
+            predictor: "allReoffendingPredictor"
+          }) }}
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskData}, item: 'predictor-badge', exampleNjks: defaultExampleNjks, exampleId: 'default', macroOptions: macroOptions}) }}
+      {{ nunjucksMacroOptions({macroOptions: macroOptions}) }}
       <h2>How to use</h2>
       <p>Refer to the
         <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4471390821/Risk+badges">Risk badges</a>
@@ -27,157 +107,241 @@
       <p>
         Example of when <strong>not</strong> to use this component due to text wrapping
       </p>
-      <div class="badge-restricted-width">
-        {{ predictorBadge({
-          data: riskData,
-          predictor: "indirectImageContactSexualReoffendingPredictor"
-        }) }}
-      </div>
+      {% set restrictedWidthExampleWidthNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}
+          <div class="badge-restricted-width">
+            {{ predictorBadge({
+              data: riskData,
+              predictor: "indirectImageContactSexualReoffendingPredictor"
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskData}, item: 'predictor-badge', exampleNjks: restrictedWidthExampleWidthNjks, exampleId: 'restricted-width', macroOptions: macroOptions}) }}
 
-      <h3>Usage example</h3>
-      <pre><code>{% verbatim %}{% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}
+      <h2>Show current (OGRS4-gen) badges for a v2 assessment (no fallback)</h2>
+      <p>Display the current (OGRS4-gen) badges for the latest assessment. Note that if the assessment is legacy (v1) or there's no data for this predictor then the badges will not render. If this is not the desired behaviour you may need to add additional validation in your code.</p>
+      {% set ogrs4NoFallbackExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}
+          <p>Badges for a case with all predictors set</p>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskData,
+              predictor: "allReoffendingPredictor"
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskData,
+              predictor: "violentReoffendingPredictor"
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskData,
+              predictor: "seriousViolentReoffendingPredictor"
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskData,
+              predictor: "directContactSexualReoffendingPredictor"
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskData,
+              predictor: "indirectImageContactSexualReoffendingPredictor"
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskData,
+              predictor: "combinedSeriousReoffendingPredictor"
+            }) }}
+          </div>
+          <p>Sexual reoffending badge for the not applicable case</p>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+            data: riskDataNotApplicable,
+            predictor: "directContactSexualReoffendingPredictor"
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskData, riskDataNotApplicable: riskDataNotApplicable}, item: 'predictor-badge', exampleNjks: ogrs4NoFallbackExampleNjks, exampleId: 'ogrs4-no-fallback', macroOptions: macroOptions}) }}
 
-{{ predictorBadge({
-  data: riskData,
-  predictor: "allReoffendingPredictor"
-}) }}{% endverbatim %}
-</code></pre>
+      <h2>Fallback to legacy (OGRS3-gen) badges for a v1 assessment</h2>
+      <p>If you need either the current (OGRS4-gen) or the equivalent OGRS3 badge depending on the version of the latest assessment, use the legacyFallback option</p>
+      {% set ogrs4FallbackExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}
+          <p>Badges for a case with a version 1 (legacy) latest assessment - we request a current (OGRS4-gen) badge but get the legacy version instead.
+            Note that seriousViolentReoffendingPredictor has no fallback so nothing is shown in its place.</p>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskDataLegacy,
+              predictor: "allReoffendingPredictor",
+              legacyFallback: true
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskDataLegacy,
+              predictor: "violentReoffendingPredictor",
+              legacyFallback: true
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskDataLegacy,
+              predictor: "seriousViolentReoffendingPredictor",
+              legacyFallback: true
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskDataLegacy,
+              predictor: "directContactSexualReoffendingPredictor",
+              legacyFallback: true
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskDataLegacy,
+              predictor: "indirectImageContactSexualReoffendingPredictor",
+              legacyFallback: true
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskDataLegacy,
+              predictor: "combinedSeriousReoffendingPredictor",
+              legacyFallback: true
+            }) }}
+          </div>
+          <p>OGP has been deprecated in the current version so allows needs to be explicitly rendered if needed</p>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+            data: riskDataLegacy,
+            predictor: "ogp"
+            }) }}
+          </div>
+          <p>Badges for a case with a version 2 (current) latest assessment - legacyFallback flag is ignored</p>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+            data: riskDataCurrent,
+            predictor: "allReoffendingPredictor",
+            legacyFallback: true
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+            data: riskDataCurrent,
+            predictor: "violentReoffendingPredictor",
+            legacyFallback: true
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+            data: riskDataCurrent,
+            predictor: "seriousViolentReoffendingPredictor",
+            legacyFallback: true
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+            data: riskDataCurrent,
+            predictor: "directContactSexualReoffendingPredictor",
+            legacyFallback: true
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+            data: riskDataCurrent,
+            predictor: "indirectImageContactSexualReoffendingPredictor",
+            legacyFallback: true
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+            data: riskDataCurrent,
+            predictor: "combinedSeriousReoffendingPredictor",
+            legacyFallback: true
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskDataCurrent: riskData, riskDataLegacy: riskDataLegacy}, item: 'predictor-badge', exampleNjks: ogrs4FallbackExampleNjks, exampleId: 'ogrs4-fallback', macroOptions: macroOptions}) }}
 
-      <p> renders as follows:</p>
-      {{ predictorBadge({
-        data: riskData,
-        predictor: "allReoffendingPredictor"
-      }) }}
+      <h2>Show legacy (OGRS3-gen) badges for a v1 assessment</h2>
+      <p>Display the legacy (OGRS3-gen) badges for the latest assessment. Note that if the assessment is not legacy (v2) or there's no data for this predictor then the badges will not render. If this is not the desired behaviour you may need to add additional validation in your code.</p>
+      {% set ogrs3ExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskData,
+              predictor: "ogrs3"
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskData,
+              predictor: "ovp"
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskData,
+              predictor: "ogp"
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskData,
+              predictor: "rsr"
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskData,
+              predictor: "ospdc"
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskData,
+              predictor: "ospiic"
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskDataLegacy}, item: 'predictor-badge', exampleNjks: ogrs3ExampleNjks, exampleId: 'ogrs3', macroOptions: macroOptions}) }}
 
-      <h3>Macro inputs</h3>
-      <ul>
-        <li>data (ARNS API data)
-          <ul>
-            <li>This will be produced once per page via a call from the library to the ARNS API, detail on the intro page</li>
-          </ul>
-        </li>
-        <li>predictor (string)
-          <ul>
-            <li>"ogrs3" - identifier for the Offender Group Reconviction Scale v3 (OGRS3)</li>
-            <li>"ovp" - identifier for the OASys Violence Predictor (OVP)</li>
-            <li>"ogp" - identifier for the OASys General Predictor (OGP)</li>
-            <li>"rsr" - identifier for the Risk of Serious Reicidivism (RSR)</li>
-            <li>"ospdc" - identifier for the OASys Sexual Predictor – Direct Contact (OSP-DC)</li>
-            <li>"ospiic" - identifier for the OASys Sexual Predictor – Images and Indirect Contact (OSP-IIC)</li>
-            <li>"allReoffendingPredictor" - identifier for the all reoffending predictor</li>
-            <li>"violentReoffendingPredictor" - identifier for the violent reoffending predictor</li>
-            <li>"seriousViolentReoffendingPredictor" - identifier for the serious violent reoffending predictor</li>
-            <li>"directContactSexualReoffendingPredictor" - identifier for the direct contact - sexual reoffending predictor</li>
-            <li>"indirectImageContactSexualReoffendingPredictor" - identifier for the indirect image contact - sexual reoffending predictor</li>
-            <li>"combinedSeriousReoffendingPredictor" - identifier for the combined serious reoffending predictor</li>
-          </ul>
-        </li>
-        <li>showScore (boolean) - optional override - recommended to leave undefined to use the default predictor display config
-          <ul>
-            <li>true - displays the score within the predictor badge</li>
-            <li>false - hides the score within the predictor badge</li>
-          </ul>
-        </li>
-      </ul>
-
-      <h2>OGRS4 Examples</h2>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
-          data: riskData,
-          predictor: "allReoffendingPredictor"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
-          data: riskData,
-          predictor: "violentReoffendingPredictor"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
-          data: riskData,
-          predictor: "seriousViolentReoffendingPredictor"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
-          data: riskData,
-          predictor: "directContactSexualReoffendingPredictor"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
-          data: riskData,
-          predictor: "indirectImageContactSexualReoffendingPredictor"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
-          data: riskData,
-          predictor: "combinedSeriousReoffendingPredictor"
-        }) }}
-      </div>
-      <h2>Legacy data examples</h2>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
-          data: riskDataLegacy,
-          predictor: "ogrs3"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
-          data: riskDataLegacy,
-          predictor: "ovp"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
-          data: riskDataLegacy,
-          predictor: "ogp"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
-          data: riskDataLegacy,
-          predictor: "rsr"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
-          data: riskDataLegacy,
-          predictor: "ospdc"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-8">
-        {{ predictorBadge({
-          data: riskDataLegacy,
-          predictor: "ospiic"
-        }) }}
-      </div>
-      <h2>Not Applicable example</h2>
-      <div class="govuk-!-margin-bottom-8">
-        {{ predictorBadge({
-          data: riskDataNotApplicable,
-          predictor: "directContactSexualReoffendingPredictor"
-        }) }}
-      </div>
-      <h2>Unknown example</h2>
-      <h3>Missing score</h3>
+      <h2>Missing bands and scores</h2>
       <p>Applies when no score is available, but the configuration (default predictor display config or showScore override)
-        requires the score field to be visible.</p>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorBadge({
-          data: riskDataErrorStates,
-          predictor: "allReoffendingPredictor"
-        }) }}
-      </div>
-      <h3>Missing band</h3>
-      <div class="govuk-!-margin-bottom-8">
-        {{ predictorBadge({
-          data: riskDataErrorStates,
-          predictor: "violentReoffendingPredictor"
-        }) }}
-      </div>
+        requires the score field to be visible or the band is missing.</p>
+      {% set unknownExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskData,
+              predictor: "allReoffendingPredictor"
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorBadge({
+              data: riskData,
+              predictor: "violentReoffendingPredictor"
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskDataErrorStates}, item: 'predictor-badge', exampleNjks: unknownExampleNjks, exampleId: 'unknown', macroOptions: macroOptions}) }}
     </div>
   </div>
 
