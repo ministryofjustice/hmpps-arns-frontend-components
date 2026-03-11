@@ -6697,6 +6697,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+
+  
+
+  
+    
+  
+
   
     
   
@@ -6712,7 +6719,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
       
 
       
@@ -6755,6 +6761,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+
+  
+
+  
+    
+  
+
   
     
   
@@ -6762,7 +6775,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
       
 
       
@@ -6839,6 +6851,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+
+  
+
+  
+    
+  
+
   
     
   
@@ -6846,7 +6865,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
       
 
       
@@ -6891,6 +6909,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+
+  
+
+  
+    
+  
+
   
     
   
@@ -6900,7 +6925,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
       
 
       
@@ -6943,6 +6967,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+
+  
+
+  
+    
+  
+
   
     
   
@@ -6954,7 +6985,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
       
 
       
@@ -6995,6 +7025,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+
+  
+
+  
+    
+  
+
   
     
   
@@ -7008,7 +7045,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
       
 
       
@@ -7045,6 +7081,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+
+  
+
+  
+    
+  
+
   
     
   
@@ -7060,7 +7103,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
       
 
       
@@ -7093,6 +7135,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+
+  
+
+  
+    
+  
+
   
     
   
@@ -7110,7 +7159,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
       
 
       
@@ -7146,30 +7194,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
+
   
 
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-
+  
+    
+  
 
   
     
@@ -7196,30 +7226,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
+
   
 
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-
+  
+    
+  
 
   
     
@@ -7245,6 +7257,77 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
 
+
+
+  
+
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+
+
+
+  
+
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+
+
+
+  
+
+  
+    
+  
 
   
     
@@ -7270,6 +7353,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
 
 
+
+
+  
+
+  
+    
+  
 
   
     
@@ -7297,6 +7387,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+
+  
+
+  
+    
+  
+
   
     
   
@@ -7310,7 +7407,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
       
 
       
@@ -7351,6 +7447,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+
+  
+
+  
+    
+  
+
   
     
   
@@ -7358,7 +7461,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
       
 
       
@@ -7404,6 +7506,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+
+  
+
+  
+    
+  
+
   
     
   
@@ -7413,7 +7522,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     
 
-      
       
 
       
@@ -8895,7 +9003,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
-      <h3 data-test-id="scaleMarkerCardContent">LOW</h3>
+      <h3 data-test-id="scaleMarkerCardContent">Low</h3>
     </div>
     
       <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
@@ -8908,7 +9016,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 </div>
 
-<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="barType">
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="allReoffendingPredictor-scale">
   <div data-band-percentage-start="0%"
        data-band-percentage="50%" data-test-id='lowBand'>
     <span></span>
@@ -9021,7 +9129,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
-      <h3 data-test-id="scaleMarkerCardContent">LOW</h3>
+      <h3 data-test-id="scaleMarkerCardContent">Low</h3>
     </div>
     
       <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
@@ -9034,7 +9142,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 </div>
 
-<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="barType">
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="allReoffendingPredictor-scale">
   <div data-band-percentage-start="0%"
        data-band-percentage="50%" data-test-id='lowBand'>
     <span></span>
@@ -9123,7 +9231,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
-      <h3 data-test-id="scaleMarkerCardContent">LOW</h3>
+      <h3 data-test-id="scaleMarkerCardContent">Low</h3>
     </div>
     
       <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
@@ -9136,7 +9244,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 </div>
 
-<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="barType">
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="violentReoffendingPredictor-scale">
   <div data-band-percentage-start="0%"
        data-band-percentage="30%" data-test-id='lowBand'>
     <span></span>
@@ -9225,7 +9333,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
-      <h3 data-test-id="scaleMarkerCardContent">MEDIUM</h3>
+      <h3 data-test-id="scaleMarkerCardContent">Medium</h3>
     </div>
     
       <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
@@ -9238,7 +9346,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 </div>
 
-<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="barType">
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="seriousViolentReoffendingPredictor-scale">
   <div data-band-percentage-start="0%"
        data-band-percentage="1%" data-test-id='lowBand'>
     <span></span>
@@ -9322,7 +9430,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
-      <h3 data-test-id="scaleMarkerCardContent">VERY HIGH</h3>
+      <h3 data-test-id="scaleMarkerCardContent">Very high</h3>
     </div>
     
       <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
@@ -9335,7 +9443,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 </div>
 
-<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="barType">
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="directContactSexualReoffendingPredictor-scale">
   <div data-band-percentage-start="0%"
        data-band-percentage="0.6%" data-test-id='lowBand'>
     <span></span>
@@ -9407,6 +9515,9 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
   
+  
+    
+  
 
 
 
@@ -9419,7 +9530,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
-      <h3 data-test-id="scaleMarkerCardContent">HIGH</h3>
+      <h3 data-test-id="scaleMarkerCardContent">High</h3>
     </div>
     
       <div class="arns-scale-marker__card-pointer arns-scale-marker__card-pointer--white" data-test-id="scaleMarkerNoScore"></div>
@@ -9429,7 +9540,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 </div>
 
-<div class="arns-scale-bar--small" data-test-id="barType">
+<div class="arns-scale-bar--small arns-scale-bar--small-sanctions" data-test-id="indirectImageContactSexualReoffendingPredictor-scale">
   <div data-band-percentage-start=""
        data-band-percentage="" data-test-id='lowBand'>
     <span></span>
@@ -9514,7 +9625,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
-      <h3 data-test-id="scaleMarkerCardContent">HIGH</h3>
+      <h3 data-test-id="scaleMarkerCardContent">High</h3>
     </div>
     
       <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
@@ -9527,7 +9638,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 </div>
 
-<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="barType">
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="combinedSeriousReoffendingPredictor-scale">
   <div data-band-percentage-start="0%"
        data-band-percentage="1%" data-test-id='lowBand'>
     <span></span>
@@ -9751,7 +9862,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
-      <h3 data-test-id="scaleMarkerCardContent">VERY HIGH</h3>
+      <h3 data-test-id="scaleMarkerCardContent">Very high</h3>
     </div>
     
       <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
@@ -9764,7 +9875,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 </div>
 
-<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="barType">
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="directContactSexualReoffendingPredictor-scale">
   <div data-band-percentage-start="0%"
        data-band-percentage="0.6%" data-test-id='lowBand'>
     <span></span>
@@ -9997,6 +10108,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+
+
+
+
+
   <div class="bottom-border">
     <div class="govuk-inset-text">
   Source: undefined assessment, completed on undefined
@@ -10005,8 +10121,77 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 
   
-  <h3>All reoffending predictor</h3>
-  <p>All reoffending predictor summary text</p>
+  <div class="predictor-header-wrapper">
+    <h3>All reoffending predictor</h3>
+    
+      <div class="staticOrDynamicTag" data-test-id="arp-staticOrDynamic"><strong class="govuk-tag govuk-tag--grey">
+  Static
+</strong>
+</div>
+    
+  </div>
+  <div class="govuk-!-margin-bottom-4">
+    <span>1.23% of people with a similar profile to Alex will get a sanction for an offence they commit within two years. This puts Alex in the LOW risk band.</span>
+  </div>
+  <div class="scale-wrapper">
+    
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<div class="arns-scale-marker" data-test-id='scaleMarker'>
+  <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="0.61" data-test-id='scaleMarkerPosition'>
+    
+  <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
+    <div class="arns-scale-marker__card-top">
+      <h3 data-test-id="scaleMarkerCardContent">Low</h3>
+    </div>
+    
+      <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
+        <p>1.23%</p>
+      </div>
+      <div class="arns-scale-marker__card-pointer" data-test-id="scaleMarkerCardPointer"></div>
+    
+  </div>
+
+  </div>
+</div>
+
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="allReoffendingPredictor-scale">
+  <div data-band-percentage-start="0%"
+       data-band-percentage="50%" data-test-id='lowBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="75%" data-test-id='mediumBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="90%" data-test-id='highBand'>
+    <span></span>
+  </div>
+  
+    <div data-band-percentage="100%" data-test-id='veryHighBand'>
+      <span></span>
+    </div>
+  
+</div>
+
+
+  </div>
 
   
 
@@ -10021,14 +10206,117 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </summary>
   <div class="govuk-details__text">
     
-    <p>This is the content for the all reoffending predictor.</p>
+    <h3>What this score predicts</h3>
+    <p>The All reoffending predictor predicts the likelihood of someone getting a sanction for any recordable
+      offence.</p>
+    <p>It includes all sexual and all violent offences, but there are other risk predictors that are specifically
+      designed to predict serious, violent and sexual offences.</p>
+    <h3>How we calculate the score</h3>
+    <p>We calculate the score using:</p>
+    <ul>
+      <li>static factors only, when we have limited information (a static score)</li>
+      <li>dynamic and static factors, when we have more detailed information (a dynamic score)</li>
+    </ul>
+    
+      <p>This score has been calculated using static factors only.</p>
+    
+
+    <p>Static factors are things which cannot be deliberately changed, and include the person's:</p>
+    <ul>
+      <li>age when they enter the community caseload</li>
+      <li>sex at birth</li>
+      <li>current offence</li>
+      <li>total number of sanctions</li>
+      <li>length of offending history</li>
+    </ul>
+    <p>Dynamic factors are things that can change, and include their:</p>
+    <ul>
+      <li>accommodation status</li>
+      <li>employment status</li>
+      <li>relationship status</li>
+      <li>history of domestic abuse</li>
+      <li>regular activities that encourage offending</li>
+      <li>drug use and motivation to tackle drug use</li>
+      <li>alcohol use</li>
+      <li>impulsivity</li>
+      <li>pro-criminal attitudes</li>
+    </ul>
   
   </div>
 </details>
 
   
-  <h3>Violent reoffending predictor</h3>
-  <p>Violent reoffending predictor summary text</p>
+  <div class="predictor-header-wrapper">
+    <h3>Violent reoffending predictor</h3>
+    
+      <div class="staticOrDynamicTag" data-test-id="vrp-staticOrDynamic"><strong class="govuk-tag govuk-tag--grey">
+  Static
+</strong>
+</div>
+    
+  </div>
+  <div class="govuk-!-margin-bottom-4">
+    <span>1.23% of people with a similar profile to Alex will get a sanction for an offence they commit within two years. This puts Alex in the LOW risk band.</span>
+  </div>
+  <div class="scale-wrapper">
+    
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<div class="arns-scale-marker" data-test-id='scaleMarker'>
+  <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="1.03" data-test-id='scaleMarkerPosition'>
+    
+  <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
+    <div class="arns-scale-marker__card-top">
+      <h3 data-test-id="scaleMarkerCardContent">Low</h3>
+    </div>
+    
+      <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
+        <p>1.23%</p>
+      </div>
+      <div class="arns-scale-marker__card-pointer" data-test-id="scaleMarkerCardPointer"></div>
+    
+  </div>
+
+  </div>
+</div>
+
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="violentReoffendingPredictor-scale">
+  <div data-band-percentage-start="0%"
+       data-band-percentage="30%" data-test-id='lowBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="60%" data-test-id='mediumBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="80%" data-test-id='highBand'>
+    <span></span>
+  </div>
+  
+    <div data-band-percentage="100%" data-test-id='veryHighBand'>
+      <span></span>
+    </div>
+  
+</div>
+
+
+  </div>
 
   
 
@@ -10049,8 +10337,77 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 </details>
 
   
-  <h3>Combined serious reoffending predictor</h3>
-  <p>Combined serious reoffending predictor summary text</p>
+  <div class="predictor-header-wrapper">
+    <h3>Combined serious reoffending predictor</h3>
+    
+      <div class="staticOrDynamicTag" data-test-id="csrp-staticOrDynamic"><strong class="govuk-tag govuk-tag--grey">
+  Static
+</strong>
+</div>
+    
+  </div>
+  <div class="govuk-!-margin-bottom-4">
+    <span>1.23% of people with a similar profile to Alex will get a sanction for an offence they commit within two years. This puts Alex in the HIGH risk band.</span>
+  </div>
+  <div class="scale-wrapper">
+    
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<div class="arns-scale-marker" data-test-id='scaleMarker'>
+  <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper" data-margin="27.88" data-test-id='scaleMarkerPosition'>
+    
+  <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
+    <div class="arns-scale-marker__card-top">
+      <h3 data-test-id="scaleMarkerCardContent">High</h3>
+    </div>
+    
+      <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
+        <p>1.23%</p>
+      </div>
+      <div class="arns-scale-marker__card-pointer" data-test-id="scaleMarkerCardPointer"></div>
+    
+  </div>
+
+  </div>
+</div>
+
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="combinedSeriousReoffendingPredictor-scale">
+  <div data-band-percentage-start="0%"
+       data-band-percentage="1%" data-test-id='lowBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="3%" data-test-id='mediumBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="6.9%" data-test-id='highBand'>
+    <span></span>
+  </div>
+  
+    <div data-band-percentage="25%+" data-test-id='veryHighBand'>
+      <span></span>
+    </div>
+  
+</div>
+
+
+  </div>
 
   
 
@@ -10071,8 +10428,77 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 </details>
 
   
-  <h3>Serious violent reoffending predictor</h3>
-  <p>Serious violent reoffending predictor summary text</p>
+  <div class="predictor-header-wrapper">
+    <h3>Serious violent reoffending predictor</h3>
+    
+      <div class="staticOrDynamicTag" data-test-id="svrp-staticOrDynamic"><strong class="govuk-tag govuk-tag--grey">
+  Static
+</strong>
+</div>
+    
+  </div>
+  <div class="govuk-!-margin-bottom-4">
+    <span>1.23% of people with a similar profile to Alex will get a sanction for an offence they commit within two years. This puts Alex in the MEDIUM risk band.</span>
+  </div>
+  <div class="scale-wrapper">
+    
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<div class="arns-scale-marker" data-test-id='scaleMarker'>
+  <div class="arns-scale-marker-wrapper--medium arns-scale-marker-wrapper" data-margin="27.88" data-test-id='scaleMarkerPosition'>
+    
+  <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
+    <div class="arns-scale-marker__card-top">
+      <h3 data-test-id="scaleMarkerCardContent">Medium</h3>
+    </div>
+    
+      <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
+        <p>1.23%</p>
+      </div>
+      <div class="arns-scale-marker__card-pointer" data-test-id="scaleMarkerCardPointer"></div>
+    
+  </div>
+
+  </div>
+</div>
+
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="seriousViolentReoffendingPredictor-scale">
+  <div data-band-percentage-start="0%"
+       data-band-percentage="1%" data-test-id='lowBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="3%" data-test-id='mediumBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="6.9%" data-test-id='highBand'>
+    <span></span>
+  </div>
+  
+    <div data-band-percentage="25%+" data-test-id='veryHighBand'>
+      <span></span>
+    </div>
+  
+</div>
+
+
+  </div>
 
   
 
@@ -10093,8 +10519,72 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 </details>
 
   
-  <h3>Direct contact - Sexual reoffending predictor</h3>
-  <p>Direct contact - Sexual reoffending predictor summary text</p>
+  <div class="predictor-header-wrapper">
+    <h3>Direct contact - Sexual reoffending predictor</h3>
+    
+  </div>
+  <div class="govuk-!-margin-bottom-4">
+    <span>2.81% of people with a similar profile to Alex will get a sanction for an offence they commit within two years. This puts Alex in the VERY HIGH risk band.</span>
+  </div>
+  <div class="scale-wrapper">
+    
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<div class="arns-scale-marker" data-test-id='scaleMarker'>
+  <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper" data-margin="55.55" data-test-id='scaleMarkerPosition'>
+    
+  <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
+    <div class="arns-scale-marker__card-top">
+      <h3 data-test-id="scaleMarkerCardContent">Very high</h3>
+    </div>
+    
+      <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
+        <p>2.81%</p>
+      </div>
+      <div class="arns-scale-marker__card-pointer" data-test-id="scaleMarkerCardPointer"></div>
+    
+  </div>
+
+  </div>
+</div>
+
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="directContactSexualReoffendingPredictor-scale">
+  <div data-band-percentage-start="0%"
+       data-band-percentage="0.6%" data-test-id='lowBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="2.1%" data-test-id='mediumBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="5.3%" data-test-id='highBand'>
+    <span></span>
+  </div>
+  
+    <div data-band-percentage="83.1%" data-test-id='veryHighBand'>
+      <span></span>
+    </div>
+  
+</div>
+
+
+  </div>
 
   
 
@@ -10115,12 +10605,71 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 </details>
 
   
-  <h3>Images and indirect contact - Sexual reoffending predictor</h3>
-  <p>Images and indirect contact - Sexual reoffending predictor summary text</p>
+  <div class="predictor-header-wrapper">
+    <h3>Images and indirect contact - Sexual reoffending predictor</h3>
+    
+  </div>
+  <div class="govuk-!-margin-bottom-4">
+    <span>1.07% of people with a similar profile to Alex will get a sanction for an offence they commit within two years. This puts Alex in the HIGH risk band.</span>
+  </div>
+  <div class="scale-wrapper">
+    
+
+
+
+
+
 
   
 
+
+
+
   
+  
+
+
+
+
+  
+
+
+<div class="arns-scale-marker" data-test-id='scaleMarker'>
+  <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper" data-margin="83.33" data-test-id='scaleMarkerPosition'>
+    
+  <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
+    <div class="arns-scale-marker__card-top">
+      <h3 data-test-id="scaleMarkerCardContent">High</h3>
+    </div>
+    
+      <div class="arns-scale-marker__card-pointer arns-scale-marker__card-pointer--white" data-test-id="scaleMarkerNoScore"></div>
+    
+  </div>
+
+  </div>
+</div>
+
+<div class="arns-scale-bar--small" data-test-id="imagesAndIndirectContactSexualReoffendingPredictor-scale">
+  <div data-band-percentage-start=""
+       data-band-percentage="" data-test-id='lowBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="" data-test-id='mediumBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="" data-test-id='highBand'>
+    <span></span>
+  </div>
+  
+</div>
+
+
+  </div>
+
+  
+
+  <div class="noThresholdScaleBuffer">
+    
 <details class="govuk-details details--chevron-style">
   <summary class="govuk-details__summary">
     <span class="details__chevron" aria-hidden="true"></span>
@@ -10135,6 +10684,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
   </div>
 </details>
+  </div>
 
 
 
