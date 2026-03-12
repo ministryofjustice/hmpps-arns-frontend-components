@@ -95,11 +95,13 @@ export default function componentPageRoutes({ arnsComponents }: Services): Route
     const riskData = await arnsComponents.getRiskData(null, 'crn', 'X123456')
     const riskDataLegacy = await arnsComponents.getRiskData(null, 'crn', 'X654321')
     const riskDataNotApplicable = await arnsComponents.getRiskData(null, 'crn', 'X000001')
+    const riskDataErrorStates = await arnsComponents.getRiskData(null, 'crn', 'X000002')
     res.render('pages/predictorScaleLibraryPage', {
       navSections,
       riskData,
       riskDataLegacy,
       riskDataNotApplicable,
+      riskDataErrorStates,
     })
   })
   router.get('/new', async (req, res, next) => {

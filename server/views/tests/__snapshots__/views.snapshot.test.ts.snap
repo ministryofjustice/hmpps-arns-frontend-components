@@ -3633,9 +3633,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
 
       </div>
       <h2>Unknown example</h2>
-      <h3>Missing score</h3>
-      <p>Applies when no score is available, but the configuration (default predictor display config or showScore override)
-        requires the score field to be visible.</p>
+      <p>An unknown state occurs when either the band or score is missing (only if the default/override
+        configuration requires the score to be shown).</p>
       <div class="govuk-!-margin-bottom-4">
         
 
@@ -3691,74 +3690,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
       </div>
     
   
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
-      </div>
-      <h3>Missing band</h3>
-      <div class="govuk-!-margin-bottom-8">
-        
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-
-      
-      
-
-      
-      
-        
-      
-
-      
-      
-
-      
-        
-      
-
-      
-        
-      
-
-      <div class="arns-expanded-predictor-badge--low arns-expanded-predictor-badge__fixed-width"
-           data-expanded-predictor-badge="Violent Reoffending Predictor LOW">
-
-        <span
-          class="arns-predictor-badge__type" data-test-id="name">Violent Reoffending Predictor</span>
-
-        <div class="arns-predictor-badge__stats">
-          <span class="arns-predictor-badge__level" data-test-id="band">LOW</span>
-
-          
-            <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
-          
-
-          
-            <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
-          
-
-        </div>
-
-        <span class="arns-predictor-badge__last_updated" data-test-id="completedDate">Last updated: 01 January 2025</span>
-
-      </div>
     
   
     
@@ -9457,8 +9388,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
       <h2>Missing bands and scores</h2>
-      <p>Applies when no score is available, but the configuration (default predictor display config or showScore override)
-        requires the score field to be visible or the band is missing.</p>
+      <p>An unknown state occurs when either the band or score is missing (only if the default/override
+        configuration requires the score to be shown).</p>
       
       
 
@@ -9565,64 +9496,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
               </div>
-              <div class="govuk-!-margin-bottom-4">
-                
-    
-    
-    
-    
-      
-    
-      
-        
-      
-    
-      
-        
-      
-        
-      
-        
-      
-        
-    
-          
-    
-          
-          
-            
-          
-    
-          
-            
-          
-    
-          <div class="arns-predictor-badge--low"
-               data-predictor-badge="Violent Reoffending Predictor LOW">
-    
-            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">VIOLENT REOFFENDING PREDICTOR <strong>LOW</strong></span>
-    
-            
-              <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
-            
-    
-            
-              <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
-            
-          </div>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-              </div>
   
   </div>
     
@@ -9635,12 +9508,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       {{ predictorBadge({
         data: riskData,
         predictor: &quot;allReoffendingPredictor&quot;
-      }) }}
-    &lt;/div&gt;
-    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
-      {{ predictorBadge({
-        data: riskData,
-        predictor: &quot;violentReoffendingPredictor&quot;
       }) }}
     &lt;/div&gt;</code></pre>
   
@@ -12104,6 +11971,109 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
       </div>
+      <h2>Unknown example</h2>
+      <p>An unknown state occurs when either the band or score is missing.</p>
+      <div class="govuk-!-margin-bottom-4">
+        
+
+
+  
+    
+  
+    
+  
+    
+
+      <div class="arns-predictor-scale govuk-body" data-predictor-scale="All Reoffending Predictor">
+        
+          <div class="arns-predictor-scale-header-wrapper">
+            <div>
+              <h2 class="govuk-heading-m" data-test-id="name">All Reoffending Predictor</h2>
+              <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
+            </div>
+            
+              <div data-test-id="staticOrDynamic"><strong class="govuk-tag govuk-tag--grey">
+  Static
+</strong>
+</div>
+            
+          </div>
+          
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<div class="arns-scale-marker" data-test-id='scaleMarker'>
+  <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="0.61" data-test-id='scaleMarkerPosition'>
+    
+  <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
+    <div class="arns-scale-marker__card-top">
+      <h3 data-test-id="scaleMarkerCardContent">Low</h3>
+    </div>
+    
+      <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
+        <p>1.23%</p>
+      </div>
+      <div class="arns-scale-marker__card-pointer" data-test-id="scaleMarkerCardPointer"></div>
+    
+  </div>
+
+  </div>
+</div>
+
+<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="allReoffendingPredictor-scale">
+  <div data-band-percentage-start="0%"
+       data-band-percentage="50%" data-test-id='lowBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="75%" data-test-id='mediumBand'>
+    <span></span>
+  </div>
+  <div data-band-percentage="90%" data-test-id='highBand'>
+    <span></span>
+  </div>
+  
+    <div data-band-percentage="100%" data-test-id='veryHighBand'>
+      <span></span>
+    </div>
+  
+</div>
+
+
+        
+      </div>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+      </div>
+
     </div>
   </div>
 
