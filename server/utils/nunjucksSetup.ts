@@ -4,7 +4,7 @@ import nunjucks from 'nunjucks'
 import express from 'express'
 import fs from 'fs'
 import { arnsNunjucksSetup } from '@ministryofjustice/hmpps-arns-frontend-components-lib'
-import { initialiseName, outdent } from './utils'
+import { baseMacroOptions, initialiseName, outdent } from './utils'
 import config from '../config'
 import logger from '../../logger'
 
@@ -52,4 +52,5 @@ export default function nunjucksSetup(app: express.Express): void {
   })
   njkEnv.addGlobal('renderAsTemplate', (str: string, context: object) => njkEnv.renderString(str, context))
   njkEnv.addFilter('outdent', outdent)
+  njkEnv.addGlobal('baseMacroOptions', baseMacroOptions)
 }

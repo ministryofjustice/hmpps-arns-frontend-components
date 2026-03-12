@@ -1,151 +1,270 @@
 {% extends "layouts/side-nav-layout.njk" %}
 {% from "moj/components/alert/macro.njk" import mojAlert %}
-{% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
+{% from "arns/components/predictor-scale/macro.njk" import predictorScale %} {# DELETE ME #}
+{% from "partials/example.njk" import example %}
+{% from "partials/nunjucksMacroOptions.njk" import nunjucksMacroOptions %}
+{% from "govuk/components/tag/macro.njk" import govukTag %}
 
-{% set pageTitle = "Library predictor scale" %}
+{% set pageTitle = "Predictor scale" %}
 {% set mainClasses = "govuk-body" %}
+
+{% set macroOptions = baseMacroOptions.concat([
+  [
+    {
+      text: "legacyFallback"
+    },
+    {
+      text: "boolean"
+    },
+    {
+      html: 'Default false. Fallback to using the legacy (OGRS3-gen) equivalent of a predictor if the latest assessment is legacy, but a non-legacy predictor was specified. Will have no affect if the predictor specified is legacy or Serious Violent Reoffending Predictor (there is no legacy equivalent version of this predictor).'
+    }
+  ]
+]) %}
 
 {% block sideNavContent %}
   <h1 class="govuk-heading-xl">
     {{ pageTitle }}
+    <span>{{ govukTag({text: "BETA"}) }}</span>
   </h1>
 
   <div id="predictor-scale-wrapper" class="govuk-grid-row">
     <div class="govuk-grid-column-full">
+      <p>The predictor scale component lets users view a predictor score on a colour-coded scale. The data is from the latest completed assessment.</p>
+      {% set defaultExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
+
+          {{ predictorScale({
+            data: riskData,
+            predictor: "allReoffendingPredictor"
+          }) }}
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskData}, exampleNjks: defaultExampleNjks, exampleId: 'default'}) }}
+      {{ nunjucksMacroOptions({macroOptions: macroOptions}) }}
+
       <h2>How to use</h2>
       <p>Refer to the
         <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4474143439/Risk+linear+scale"> Predictor scale </a>
         Confluence documentation for usage details.
       </p>
-      <h3>Usage example</h3>
-      <pre><code>{% verbatim %}{% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
 
-{{ predictorScale({
-  data: riskData,
-  predictor: "allReoffendingPredictor"
-}) }}{% endverbatim %}
-</code></pre>
+      <h2>Show current (OGRS4-gen) scales for a v2 assessment (no fallback)</h2>
+      <p>Display the current (OGRS4-gen) scale for the latest assessment. Note that if the assessment is legacy (v1) or there's no data for this predictor then the scale will not render. If this is not the desired behaviour you may need to add additional validation in your code.</p>
 
-      <p> renders as follows:</p>
-      {{ predictorScale({
-        data: riskData,
-        predictor: "allReoffendingPredictor"
-      }) }}
+      <h3>All reoffending Predictor</h3>
+      {% set arpExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
 
-      <h3>Macro inputs</h3>
-      <ul>
-        <li>data (ARNS API data)
-          <ul>
-            <li>This will be produced once per page via a call from the library to the ARNS API, detail on the intro page</li>
-          </ul>
-        </li>
-        <li>predictor (string)
-          <ul>
-            <li>"ogrs3" - identifier for the Offender Group Reconviction Scale v3 (OGRS3)</li>
-            <li>"ovp" - identifier for the OASys Violence Predictor (OVP)</li>
-            <li>"ogp" - identifier for the OASys General Predictor (OGP)</li>
-            <li>"rsr" - identifier for the Risk of Serious Reicidivism (RSR)</li>
-            <li>"ospdc" - identifier for the OASys Sexual Predictor – Direct Contact (OSP-DC)</li>
-            <li>"ospiic" - identifier for the OASys Sexual Predictor – Images and Indirect Contact (OSP-IIC)</li>
-            <li>"allReoffendingPredictor" - identifier for the all reoffending predictor</li>
-            <li>"violentReoffendingPredictor" - identifier for the violent reoffending predictor</li>
-            <li>"seriousViolentReoffendingPredictor" - identifier for the serious violent reoffending predictor</li>
-            <li>"directContactSexualReoffendingPredictor" - identifier for the direct contact - sexual reoffending predictor</li>
-            <li>"indirectImageContactSexualReoffendingPredictor" - identifier for the indirect image contact - sexual reoffending predictor</li>
-            <li>"combinedSeriousReoffendingPredictor" - identifier for the combined serious reoffending predictor</li>
-          </ul>
-        </li>
-      </ul>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorScale({
+              data: riskData,
+              predictor: "allReoffendingPredictor"
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskData}, exampleNjks: arpExampleNjks, exampleId: 'arp'}) }}
 
-      <h2>OGRS4 Examples</h2>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorScale({
-          data: riskData,
-          predictor: "allReoffendingPredictor"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorScale({
-          data: riskData,
-          predictor: "violentReoffendingPredictor"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorScale({
-          data: riskData,
-          predictor: "seriousViolentReoffendingPredictor"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorScale({
-          data: riskData,
-          predictor: "directContactSexualReoffendingPredictor"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorScale({
-          data: riskData,
-          predictor: "indirectImageContactSexualReoffendingPredictor"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-8">
-        {{ predictorScale({
-          data: riskData,
-          predictor: "combinedSeriousReoffendingPredictor"
-        }) }}
-      </div>
-      <h2>Legacy data examples</h2>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorScale({
-          data: riskDataLegacy,
-          predictor: "ogrs3"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorScale({
-          data: riskDataLegacy,
-          predictor: "ovp"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorScale({
-          data: riskDataLegacy,
-          predictor: "ogp"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorScale({
-          data: riskDataLegacy,
-          predictor: "rsr"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorScale({
-          data: riskDataLegacy,
-          predictor: "ospdc"
-        }) }}
-      </div>
-      <div class="govuk-!-margin-bottom-8">
-        {{ predictorScale({
-          data: riskDataLegacy,
-          predictor: "ospiic"
-        }) }}
-      </div>
-      <h2>Not applicable example</h2>
-      <div class="govuk-!-margin-bottom-8">
-        {{ predictorScale({
-          data: riskDataNotApplicable,
-          predictor: "directContactSexualReoffendingPredictor"
-        }) }}
-      </div>
+      <h3>Violent reoffending Predictor</h3>
+      {% set vrpExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
+
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorScale({
+              data: riskData,
+              predictor: "violentReoffendingPredictor"
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskData}, exampleNjks: vrpExampleNjks, exampleId: 'vrp'}) }}
+
+      <h3>Serious violent reoffending predictor</h3>
+      {% set svrpExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
+
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorScale({
+              data: riskData,
+              predictor: "seriousViolentReoffendingPredictor"
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskData}, exampleNjks: svrpExampleNjks, exampleId: 'svrp'}) }}
+
+      <h3>Sexual reoffending predictors - with scores</h3>
+      {% set srpExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
+
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorScale({
+              data: riskData,
+              predictor: "directContactSexualReoffendingPredictor"
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorScale({
+              data: riskData,
+              predictor: "indirectImageContactSexualReoffendingPredictor"
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskData}, exampleNjks: srpExampleNjks, exampleId: 'srp'}) }}
+
+      <h3>Sexual reoffending predictors - not applicable</h3>
+      {% set srpNotApplicableExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
+
+          <div class="govuk-!-margin-bottom-8">
+            {{ predictorScale({
+              data: riskData,
+              predictor: "directContactSexualReoffendingPredictor"
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskDataNotApplicable}, exampleNjks: srpNotApplicableExampleNjks, exampleId: 'srp-na'}) }}
+
+      <h3>Combined serious reoffending predictor</h3>
+      {% set csrpExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
+
+          <div class="govuk-!-margin-bottom-8">
+            {{ predictorScale({
+              data: riskData,
+              predictor: "combinedSeriousReoffendingPredictor"
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskData}, exampleNjks: csrpExampleNjks, exampleId: 'csrp'}) }}
+
+      <h2>Fallback to legacy (OGRS3-gen) badges for a v1 assessment</h2>
+      <p>If you need either the current (OGRS4-gen) or the equivalent OGRS3 badge depending on the version of the latest assessment, use the legacyFallback option. Note that there is no fallback for Serious violent reoffending predictor and OGP has been deprecated so should be explicitly rendered if required.</p>
+      {% set arpFallbackExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
+
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorScale({
+              data: riskData,
+              predictor: "allReoffendingPredictor",
+              legacyFallback: true
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskDataLegacy}, exampleNjks: arpFallbackExampleNjks, exampleId: 'arp-fallback'}) }}
+
+      <h2>Show legacy (OGRS3-gen) scale for a v1 assessment</h2>
+      <p>Display the legacy (OGRS3-gen) scale for the latest assessment. Note that if the assessment is not legacy (v2) or there's no data for this predictor then the badges will not render. If this is not the desired behaviour you may need to add additional validation in your code.</p>
+
+      <h3>OGRS3</h3>
+      {% set ogrs3ExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
+
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorScale({
+              data: riskData,
+              predictor: "ogrs3"
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskDataLegacy}, exampleNjks: ogrs3ExampleNjks, exampleId: 'ogrs3'}) }}
+
+      <h3>OVP</h3>
+      {% set ovpExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
+
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorScale({
+              data: riskData,
+              predictor: "ovp"
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskDataLegacy}, exampleNjks: ovpExampleNjks, exampleId: 'ovp'}) }}
+
+      <h3>OGP</h3>
+      {% set ogpExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
+
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorScale({
+              data: riskData,
+              predictor: "ogp"
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskDataLegacy}, exampleNjks: ogpExampleNjks, exampleId: 'ogp'}) }}
+
+      <h3>RSR</h3>
+      {% set rsrExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
+
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorScale({
+              data: riskData,
+              predictor: "rsr"
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskDataLegacy}, exampleNjks: rsrExampleNjks, exampleId: 'rsr'}) }}
+
+      <h3>OSP</h3>
+      {% set ospExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
+
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorScale({
+              data: riskData,
+              predictor: "ospdc"
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-8">
+            {{ predictorScale({
+              data: riskData,
+              predictor: "ospiic"
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskDataLegacy}, exampleNjks: ospExampleNjks, exampleId: 'osp'}) }}
+
       <h2>Unknown example</h2>
       <p>An unknown state occurs when either the band or score is missing.</p>
-      <div class="govuk-!-margin-bottom-4">
-        {{ predictorScale({
-          data: riskDataErrorStates,
-          predictor: "allReoffendingPredictor"
-        }) }}
-      </div>
+      {% set unknownExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
+
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorScale({
+              data: riskData,
+              predictor: "allReoffendingPredictor"
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskDataErrorStates}, exampleNjks: unknownExampleNjks, exampleId: 'unknown'}) }}
 
     </div>
   </div>
