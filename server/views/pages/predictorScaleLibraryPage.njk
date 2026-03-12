@@ -138,6 +138,15 @@
           predictor: "directContactSexualReoffendingPredictor"
         }) }}
       </div>
+      <h2>Unknown example</h2>
+      <p>An unknown state occurs when either the band or score is missing.</p>
+      <div class="govuk-!-margin-bottom-4">
+        {{ predictorScale({
+          data: riskDataErrorStates,
+          predictor: "allReoffendingPredictor"
+        }) }}
+      </div>
+
     </div>
   </div>
 

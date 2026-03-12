@@ -322,8 +322,8 @@
       {{ example({data: {riskData: riskDataLegacy}, exampleNjks: ogrs3ExampleNjks, exampleId: 'ogrs3'}) }}
 
       <h2>Missing bands and scores</h2>
-      <p>Applies when no score is available, but the configuration (default predictor display config or showScore override)
-        requires the score field to be visible or the band is missing.</p>
+      <p>An unknown state occurs when either the band or score is missing (only if the default/override
+        configuration requires the score to be shown).</p>
       {% set unknownExampleNjks %}
         {% raw %}
           {% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}
@@ -331,12 +331,6 @@
             {{ predictorBadge({
               data: riskData,
               predictor: "allReoffendingPredictor"
-            }) }}
-          </div>
-          <div class="govuk-!-margin-bottom-4">
-            {{ predictorBadge({
-              data: riskData,
-              predictor: "violentReoffendingPredictor"
             }) }}
           </div>
         {% endraw %}
