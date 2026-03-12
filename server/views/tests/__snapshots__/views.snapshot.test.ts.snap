@@ -6543,7 +6543,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 <html lang="en" class="govuk-template">
   <head>
     <meta charset="utf-8">
-    <title>Library predictor badge</title>
+    <title>Predictor badge</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
 
@@ -6659,11 +6659,347 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <div class="govuk-grid-column-two-thirds">
       
   <h1 class="govuk-heading-xl">
-    Library predictor badge
+    Predictor badge
   </h1>
 
   <div id="predictor-badge-wrapper" class="govuk-grid-row">
     <div class="govuk-grid-column-full">
+      <p>The predictor badge component lets users view the band, score, and type in a badge format. The badge is from the latest completed assessment.</p>
+      
+      
+
+  
+
+  
+
+  
+
+  
+
+  <div class="govuk-tabs"
+    
+        
+      
+    
+   id="options-default-example-tabs" data-module="govuk-tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
+
+  <ul class="govuk-tabs__list">
+    
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+      <a class="govuk-tabs__tab" href="#default-example-rendered">
+        Rendered
+      </a>
+    </li>
+      
+    
+          <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#default-example-nunjucks">
+        Nunjucks
+      </a>
+    </li>
+      
+    
+          <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#default-example-data">
+        Data
+      </a>
+    </li>
+      
+    
+  </ul>
+  
+      <div class="govuk-tabs__panel" id="default-example-rendered">
+  
+    <div class="arns-predictor-badge--low"
+               data-predictor-badge="All Reoffending Predictor LOW">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+            
+    
+            
+              <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+            
+          </div>
+  
+  </div>
+    
+  
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="default-example-nunjucks">
+  
+    <p>See <a href="#options-details">Nunjucks macro options</a> for more details on how to customise component.</p>
+        <pre class="app-example__code"><code>{% from &quot;arns/components/predictor-badge/macro.njk&quot; import predictorBadge %}
+    
+    {{ predictorBadge({
+      data: riskData,
+      predictor: &quot;allReoffendingPredictor&quot;
+    }) }}</code></pre>
+  
+  </div>
+    
+  
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="default-example-data">
+  
+    <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
+        <pre class="app-example__code"><code>{
+      &quot;riskData&quot;: {
+        &quot;assessments&quot;: [
+          {
+            &quot;completedDateTime&quot;: &quot;01 January 2025 at 15:21&quot;,
+            &quot;outputVersion&quot;: &quot;2&quot;,
+            &quot;allReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;All Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;violentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;seriousViolentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Serious Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;directContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Direct Contact - Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;indirectImageContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Images and Indirect Contact – Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;combinedSeriousReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Combined Serious Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            }
+          },
+          {
+            &quot;outputVersion&quot;: &quot;1&quot;,
+            &quot;completedDateTime&quot;: &quot;02 January 2024 at 18:23&quot;,
+            &quot;ogrs3&quot;: {
+              &quot;name&quot;: &quot;OGRS&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 5,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ovp&quot;: {
+              &quot;name&quot;: &quot;OVP&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 7,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ogp&quot;: {
+              &quot;name&quot;: &quot;OGP&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 8,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospdc&quot;: {
+              &quot;name&quot;: &quot;OSP-DC&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospiic&quot;: {
+              &quot;name&quot;: &quot;OSP-IIC&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;rsr&quot;: {
+              &quot;name&quot;: &quot;RSR&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Dynamic&quot;,
+              &quot;score&quot;: 50.1234,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            }
+          }
+        ]
+      }
+    }</code></pre>
+  
+  </div>
+    
+  
+
+</div>
+
+
+
+      
+  
+  <details class="govuk-details"
+    
+        
+      
+    
+   id="options-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Nunjucks macro options
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    
+    <table class="govuk-table"
+    
+        
+      
+    
+   id="options-table">
+
+
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+    
+      <th scope="col" class="govuk-table__header">Name</th>
+    
+      <th scope="col" class="govuk-table__header">Type</th>
+    
+      <th scope="col" class="govuk-table__header">Description</th>
+    
+    </tr>
+  </thead>
+
+  <tbody class="govuk-table__body">
+
+  
+    <tr class="govuk-table__row">
+    
+      
+      
+      <th scope="row" class="govuk-table__header">data</th>
+      
+    
+      
+      
+      <td class="govuk-table__cell">object</td>
+      
+    
+      
+      
+      <td class="govuk-table__cell"><strong>Required.</strong> Data from ARNS API - use service from library to obtain this (see <a href="/new">Introduction</a> for more information)</td>
+      
+    
+    </tr>
+  
+
+  
+    <tr class="govuk-table__row">
+    
+      
+      
+      <th scope="row" class="govuk-table__header">predictor</th>
+      
+    
+      
+      
+      <td class="govuk-table__cell">string</td>
+      
+    
+      
+      
+      <td class="govuk-table__cell"><strong>Required.</strong> Predictor to render. One of
+            <p class="govuk-!-margin-top-4"><strong>Legacy (OGRS3-gen) predictors</strong></p>
+            <ul>
+              <li><strong>ogrs3</strong> - Offender Group Reconviction Scale v3 (OGRS3)</li>
+              <li><strong>ovp</strong> - OASys Violence Predictor (OVP)</li>
+              <li><strong>ogp</strong> - OASys General Predictor (OGP)</li>
+              <li><strong>rsr</strong> - Risk of Serious Reicidivism (RSR)</li>
+              <li><strong>ospdc</strong> - OASys Sexual Predictor – Direct Contact (OSP-DC)</li>
+              <li><strong>ospiic</strong> - OASys Sexual Predictor – Images and Indirect Contact (OSP-IIC)</li>
+            </ul>
+            <p><strong>Current (OGRS4-gen) predictors</strong></p>
+            <ul>
+              <li><strong>allReoffendingPredictor</strong> - All reoffending predictor</li>
+              <li><strong>violentReoffendingPredictor</strong> - Violent reoffending predictor</li>
+              <li><strong>seriousViolentReoffendingPredictor</strong> - Serious violent reoffending predictor</li>
+              <li><strong>directContactSexualReoffendingPredictor</strong> - Direct contact - Sexual reoffending predictor</li>
+              <li><strong>indirectImageContactSexualReoffendingPredictor</strong> - Indirect image contact - Sexual reoffending predictor</li>
+              <li><strong>combinedSeriousReoffendingPredictor</strong> - Combined serious reoffending predictor</li>
+            </ul></td>
+      
+    
+    </tr>
+  
+
+  
+    <tr class="govuk-table__row">
+    
+      
+      
+      <th scope="row" class="govuk-table__header">showScore</th>
+      
+    
+      
+      
+      <td class="govuk-table__cell">boolean</td>
+      
+    
+      
+      
+      <td class="govuk-table__cell">Override default configuration to always show/hide a score for a predictor (not recommended)</td>
+      
+    
+    </tr>
+  
+
+  
+    <tr class="govuk-table__row">
+    
+      
+      
+      <th scope="row" class="govuk-table__header">legacyFallback</th>
+      
+    
+      
+      
+      <td class="govuk-table__cell">boolean</td>
+      
+    
+      
+      
+      <td class="govuk-table__cell">Default false. Fallback to using the legacy (OGRS3-gen) equivalent of a predictor if the latest assessment is legacy, but a non-legacy predictor was specified. Will have no affect if the predictor specified is legacy or Serious Violent Reoffending Predictor (there is no legacy equivalent version of this predictor).</td>
+      
+    
+    </tr>
+  
+
+  </tbody>
+</table>
+
+  
+  </div>
+</details>
+
+
       <h2>How to use</h2>
       <p>Refer to the
         <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4471390821/Risk+badges">Risk badges</a>
@@ -6692,765 +7028,2735 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <p>
         Example of when <strong>not</strong> to use this component due to text wrapping
       </p>
-      <div class="badge-restricted-width">
-        
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-
       
       
 
-      
-      
+  
+
+  
+
+  
+
+  
+
+  <div class="govuk-tabs"
+    
         
       
-
-      
-        
-      
-
-      <div class="arns-predictor-badge--high"
-           data-predictor-badge="Images and Indirect Contact – Sexual Reoffending Predictor HIGH">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
-
-        
-
-        
-      </div>
     
-  
+   id="options-restricted-width-example-tabs" data-module="govuk-tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
+
+  <ul class="govuk-tabs__list">
     
-  
-
-
-      </div>
-
-      <h3>Usage example</h3>
-      <pre><code>{% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}
-
-{{ predictorBadge({
-  data: riskData,
-  predictor: "allReoffendingPredictor"
-}) }}
-</code></pre>
-
-      <p> renders as follows:</p>
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+      <a class="govuk-tabs__tab" href="#restricted-width-example-rendered">
+        Rendered
+      </a>
+    </li>
       
-
-
-
-  
     
-  
+          <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#restricted-width-example-nunjucks">
+        Nunjucks
+      </a>
+    </li>
+      
     
-  
+          <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#restricted-width-example-data">
+        Data
+      </a>
+    </li>
+      
     
-
+  </ul>
+  
+      <div class="govuk-tabs__panel" id="restricted-width-example-rendered">
+  
+    <div class="badge-restricted-width">
+                
+    
+    
+    
+    
       
-      
-
-      
+    
       
         
       
-
+    
       
         
       
-
-      <div class="arns-predictor-badge--low"
-           data-predictor-badge="All Reoffending Predictor LOW">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
-
         
-          <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
-        
-
-        
-          <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
-        
-      </div>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
-
-
-      <h3>Macro inputs</h3>
-      <ul>
-        <li>data (ARNS API data)
-          <ul>
-            <li>This will be produced once per page via a call from the library to the ARNS API, detail on the intro page</li>
-          </ul>
-        </li>
-        <li>predictor (string)
-          <ul>
-            <li>"ogrs3" - identifier for the Offender Group Reconviction Scale v3 (OGRS3)</li>
-            <li>"ovp" - identifier for the OASys Violence Predictor (OVP)</li>
-            <li>"ogp" - identifier for the OASys General Predictor (OGP)</li>
-            <li>"rsr" - identifier for the Risk of Serious Reicidivism (RSR)</li>
-            <li>"ospdc" - identifier for the OASys Sexual Predictor – Direct Contact (OSP-DC)</li>
-            <li>"ospiic" - identifier for the OASys Sexual Predictor – Images and Indirect Contact (OSP-IIC)</li>
-            <li>"allReoffendingPredictor" - identifier for the all reoffending predictor</li>
-            <li>"violentReoffendingPredictor" - identifier for the violent reoffending predictor</li>
-            <li>"seriousViolentReoffendingPredictor" - identifier for the serious violent reoffending predictor</li>
-            <li>"directContactSexualReoffendingPredictor" - identifier for the direct contact - sexual reoffending predictor</li>
-            <li>"indirectImageContactSexualReoffendingPredictor" - identifier for the indirect image contact - sexual reoffending predictor</li>
-            <li>"combinedSeriousReoffendingPredictor" - identifier for the combined serious reoffending predictor</li>
-          </ul>
-        </li>
-        <li>showScore (boolean) - optional override - recommended to leave undefined to use the default predictor display config
-          <ul>
-            <li>true - displays the score within the predictor badge</li>
-            <li>false - hides the score within the predictor badge</li>
-          </ul>
-        </li>
-      </ul>
-
-      <h2>OGRS4 Examples</h2>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-
-
-  
-    
-  
-    
-  
-    
-
       
-      
-
-      
+        
       
         
       
-
-      
         
-      
-
-      <div class="arns-predictor-badge--low"
-           data-predictor-badge="All Reoffending Predictor LOW">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
-
-        
-          <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
-        
-
-        
-          <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
-        
-      </div>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-
-      
-      
-
-      
       
         
       
-
-      
         
-      
-
-      <div class="arns-predictor-badge--low"
-           data-predictor-badge="Violent Reoffending Predictor LOW">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">VIOLENT REOFFENDING PREDICTOR <strong>LOW</strong></span>
-
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--high"
+               data-predictor-badge="Images and Indirect Contact – Sexual Reoffending Predictor HIGH">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+    
+            
+    
+            
+          </div>
         
-          <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
-        
-
-        
-          <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
-        
-      </div>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-
-      
-      
-
-      
       
         
       
-
-      
-        
-      
-
-      <div class="arns-predictor-badge--medium"
-           data-predictor-badge="Serious Violent Reoffending Predictor MEDIUM">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
-
-        
-          <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
-        
-
-        
-          <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
-        
-      </div>
+    
+    
+              </div>
+  
+  </div>
     
   
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="restricted-width-example-nunjucks">
+  
+    <p>See <a href="#options-details">Nunjucks macro options</a> for more details on how to customise component.</p>
+        <pre class="app-example__code"><code>{% from &quot;arns/components/predictor-badge/macro.njk&quot; import predictorBadge %}
+    &lt;div class=&quot;badge-restricted-width&quot;&gt;
+      {{ predictorBadge({
+        data: riskData,
+        predictor: &quot;indirectImageContactSexualReoffendingPredictor&quot;
+      }) }}
+    &lt;/div&gt;</code></pre>
+  
+  </div>
     
   
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="restricted-width-example-data">
+  
+    <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
+        <pre class="app-example__code"><code>{
+      &quot;riskData&quot;: {
+        &quot;assessments&quot;: [
+          {
+            &quot;completedDateTime&quot;: &quot;01 January 2025 at 15:21&quot;,
+            &quot;outputVersion&quot;: &quot;2&quot;,
+            &quot;allReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;All Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;violentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;seriousViolentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Serious Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;directContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Direct Contact - Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;indirectImageContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Images and Indirect Contact – Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;combinedSeriousReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Combined Serious Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            }
+          },
+          {
+            &quot;outputVersion&quot;: &quot;1&quot;,
+            &quot;completedDateTime&quot;: &quot;02 January 2024 at 18:23&quot;,
+            &quot;ogrs3&quot;: {
+              &quot;name&quot;: &quot;OGRS&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 5,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ovp&quot;: {
+              &quot;name&quot;: &quot;OVP&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 7,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ogp&quot;: {
+              &quot;name&quot;: &quot;OGP&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 8,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospdc&quot;: {
+              &quot;name&quot;: &quot;OSP-DC&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospiic&quot;: {
+              &quot;name&quot;: &quot;OSP-IIC&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;rsr&quot;: {
+              &quot;name&quot;: &quot;RSR&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Dynamic&quot;,
+              &quot;score&quot;: 50.1234,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            }
+          }
+        ]
+      }
+    }</code></pre>
+  
+  </div>
     
   
-    
-  
 
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
+</div>
 
 
 
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
 
-      
-      
-
-      
-      
-        
-      
-
-      
-        
-      
-
-      <div class="arns-predictor-badge--very-high"
-           data-predictor-badge="Direct Contact - Sexual Reoffending Predictor VERY HIGH">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
-
-        
-          <span class="arns-predictor-badge__score" data-test-id="score">2.81%</span>
-        
-
-        
-      </div>
-    
-  
-    
-  
-    
-  
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-
-      
-      
-
-      
-      
-        
-      
-
-      
-        
-      
-
-      <div class="arns-predictor-badge--high"
-           data-predictor-badge="Images and Indirect Contact – Sexual Reoffending Predictor HIGH">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
-
-        
-
-        
-      </div>
-    
-  
-    
-  
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-
+      <h2>Show current (OGRS4-gen) badges for a v2 assessment (no fallback)</h2>
+      <p>Display the current (OGRS4-gen) badges for the latest assessment. Note that if the assessment is legacy (v1) or there's no data for this predictor then the badges will not render. If this is not the desired behaviour you may need to add additional validation in your code.</p>
       
       
 
-      
-      
+  
+
+  
+
+  
+
+  
+
+  <div class="govuk-tabs"
+    
         
       
+    
+   id="options-ogrs4-no-fallback-example-tabs" data-module="govuk-tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
 
+  <ul class="govuk-tabs__list">
+    
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+      <a class="govuk-tabs__tab" href="#ogrs4-no-fallback-example-rendered">
+        Rendered
+      </a>
+    </li>
       
-        
+    
+          <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#ogrs4-no-fallback-example-nunjucks">
+        Nunjucks
+      </a>
+    </li>
       
-
-      <div class="arns-predictor-badge--high"
-           data-predictor-badge="Combined Serious Reoffending Predictor HIGH">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>HIGH</strong></span>
-
-        
-          <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
-        
-
-        
-          <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
-        
-      </div>
     
-  
-
-
-      </div>
-      <h2>Legacy data examples</h2>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
-
-      </div>
-      <div class="govuk-!-margin-bottom-8">
-        
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
-
-      </div>
-      <h2>Not Applicable example</h2>
-      <div class="govuk-!-margin-bottom-8">
-        
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-
+          <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#ogrs4-no-fallback-example-data">
+        Data
+      </a>
+    </li>
       
+    
+  </ul>
+  
+      <div class="govuk-tabs__panel" id="ogrs4-no-fallback-example-rendered">
+  
+    <p>Badges for a case with all predictors set</p>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
       
-
-      
+    
       
         
       
-
+    
       
         
       
-
-      <div class="arns-predictor-badge--very-high"
-           data-predictor-badge="Direct Contact - Sexual Reoffending Predictor VERY HIGH">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
-
         
-          <span class="arns-predictor-badge__score" data-test-id="score">2.81%</span>
+      
         
-
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--low"
+               data-predictor-badge="All Reoffending Predictor LOW">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+            
+    
+            
+              <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+            
+          </div>
         
-      </div>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--low"
+               data-predictor-badge="Violent Reoffending Predictor LOW">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">VIOLENT REOFFENDING PREDICTOR <strong>LOW</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+            
+    
+            
+              <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--medium"
+               data-predictor-badge="Serious Violent Reoffending Predictor MEDIUM">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+            
+    
+            
+              <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--very-high"
+               data-predictor-badge="Direct Contact - Sexual Reoffending Predictor VERY HIGH">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">2.81%</span>
+            
+    
+            
+          </div>
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--high"
+               data-predictor-badge="Images and Indirect Contact – Sexual Reoffending Predictor HIGH">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+    
+            
+    
+            
+          </div>
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--high"
+               data-predictor-badge="Combined Serious Reoffending Predictor HIGH">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+            
+    
+            
+              <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+            
+          </div>
+        
+      
+    
+    
+              </div>
+              <p>Sexual reoffending badge for the not applicable case</p>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--very-high"
+               data-predictor-badge="Direct Contact - Sexual Reoffending Predictor VERY HIGH">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">2.81%</span>
+            
+    
+            
+          </div>
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+  
+  </div>
     
   
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="ogrs4-no-fallback-example-nunjucks">
+  
+    <p>See <a href="#options-details">Nunjucks macro options</a> for more details on how to customise component.</p>
+        <pre class="app-example__code"><code>{% from &quot;arns/components/predictor-badge/macro.njk&quot; import predictorBadge %}
+    &lt;p&gt;Badges for a case with all predictors set&lt;/p&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskData,
+        predictor: &quot;allReoffendingPredictor&quot;
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskData,
+        predictor: &quot;violentReoffendingPredictor&quot;
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskData,
+        predictor: &quot;seriousViolentReoffendingPredictor&quot;
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskData,
+        predictor: &quot;directContactSexualReoffendingPredictor&quot;
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskData,
+        predictor: &quot;indirectImageContactSexualReoffendingPredictor&quot;
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskData,
+        predictor: &quot;combinedSeriousReoffendingPredictor&quot;
+      }) }}
+    &lt;/div&gt;
+    &lt;p&gt;Sexual reoffending badge for the not applicable case&lt;/p&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+      data: riskDataNotApplicable,
+      predictor: &quot;directContactSexualReoffendingPredictor&quot;
+      }) }}
+    &lt;/div&gt;</code></pre>
+  
+  </div>
     
   
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="ogrs4-no-fallback-example-data">
+  
+    <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
+        <pre class="app-example__code"><code>{
+      &quot;riskData&quot;: {
+        &quot;assessments&quot;: [
+          {
+            &quot;completedDateTime&quot;: &quot;01 January 2025 at 15:21&quot;,
+            &quot;outputVersion&quot;: &quot;2&quot;,
+            &quot;allReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;All Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;violentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;seriousViolentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Serious Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;directContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Direct Contact - Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;indirectImageContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Images and Indirect Contact – Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;combinedSeriousReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Combined Serious Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            }
+          },
+          {
+            &quot;outputVersion&quot;: &quot;1&quot;,
+            &quot;completedDateTime&quot;: &quot;02 January 2024 at 18:23&quot;,
+            &quot;ogrs3&quot;: {
+              &quot;name&quot;: &quot;OGRS&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 5,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ovp&quot;: {
+              &quot;name&quot;: &quot;OVP&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 7,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ogp&quot;: {
+              &quot;name&quot;: &quot;OGP&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 8,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospdc&quot;: {
+              &quot;name&quot;: &quot;OSP-DC&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospiic&quot;: {
+              &quot;name&quot;: &quot;OSP-IIC&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;rsr&quot;: {
+              &quot;name&quot;: &quot;RSR&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Dynamic&quot;,
+              &quot;score&quot;: 50.1234,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            }
+          }
+        ]
+      },
+      &quot;riskDataNotApplicable&quot;: {
+        &quot;assessments&quot;: [
+          {
+            &quot;completedDateTime&quot;: &quot;01 January 2025 at 15:21&quot;,
+            &quot;outputVersion&quot;: &quot;2&quot;,
+            &quot;allReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;All Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;violentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;seriousViolentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Serious Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;directContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Direct Contact - Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;indirectImageContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Images and Indirect Contact – Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;combinedSeriousReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Combined Serious Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            }
+          },
+          {
+            &quot;outputVersion&quot;: &quot;1&quot;,
+            &quot;completedDateTime&quot;: &quot;02 January 2024 at 18:23&quot;,
+            &quot;ogrs3&quot;: {
+              &quot;name&quot;: &quot;OGRS&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 5,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ovp&quot;: {
+              &quot;name&quot;: &quot;OVP&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 7,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ogp&quot;: {
+              &quot;name&quot;: &quot;OGP&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 8,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospdc&quot;: {
+              &quot;name&quot;: &quot;OSP-DC&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospiic&quot;: {
+              &quot;name&quot;: &quot;OSP-IIC&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;rsr&quot;: {
+              &quot;name&quot;: &quot;RSR&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Dynamic&quot;,
+              &quot;score&quot;: 50.1234,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            }
+          }
+        ]
+      }
+    }</code></pre>
+  
+  </div>
     
   
 
+</div>
 
-      </div>
-      <h2>Unknown example</h2>
-      <h3>Missing score</h3>
+
+
+
+      <h2>Fallback to legacy (OGRS3-gen) badges for a v1 assessment</h2>
+      <p>If you need either the current (OGRS4-gen) or the equivalent OGRS3 badge depending on the version of the latest assessment, use the legacyFallback option</p>
+      
+      
+
+  
+
+  
+
+  
+
+  
+
+  <div class="govuk-tabs"
+    
+        
+      
+    
+   id="options-ogrs4-fallback-example-tabs" data-module="govuk-tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
+
+  <ul class="govuk-tabs__list">
+    
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+      <a class="govuk-tabs__tab" href="#ogrs4-fallback-example-rendered">
+        Rendered
+      </a>
+    </li>
+      
+    
+          <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#ogrs4-fallback-example-nunjucks">
+        Nunjucks
+      </a>
+    </li>
+      
+    
+          <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#ogrs4-fallback-example-data">
+        Data
+      </a>
+    </li>
+      
+    
+  </ul>
+  
+      <div class="govuk-tabs__panel" id="ogrs4-fallback-example-rendered">
+  
+    <p>Badges for a case with a version 1 (legacy) latest assessment - we request a current (OGRS4-gen) badge but get the legacy version instead.
+                Note that seriousViolentReoffendingPredictor has no fallback so nothing is shown in its place.</p>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--low"
+               data-predictor-badge="All Reoffending Predictor LOW">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+            
+    
+            
+              <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--low"
+               data-predictor-badge="Violent Reoffending Predictor LOW">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">VIOLENT REOFFENDING PREDICTOR <strong>LOW</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+            
+    
+            
+              <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--medium"
+               data-predictor-badge="Serious Violent Reoffending Predictor MEDIUM">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+            
+    
+            
+              <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--very-high"
+               data-predictor-badge="Direct Contact - Sexual Reoffending Predictor VERY HIGH">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">2.81%</span>
+            
+    
+            
+          </div>
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--high"
+               data-predictor-badge="Images and Indirect Contact – Sexual Reoffending Predictor HIGH">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+    
+            
+    
+            
+          </div>
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--high"
+               data-predictor-badge="Combined Serious Reoffending Predictor HIGH">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+            
+    
+            
+              <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+            
+          </div>
+        
+      
+    
+    
+              </div>
+              <p>OGP has been deprecated in the current version so must be explicitly rendered if required</p>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <p>Badges for a case with a version 2 (current) latest assessment - legacyFallback flag is ignored</p>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--low"
+               data-predictor-badge="All Reoffending Predictor LOW">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+            
+    
+            
+              <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--low"
+               data-predictor-badge="Violent Reoffending Predictor LOW">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">VIOLENT REOFFENDING PREDICTOR <strong>LOW</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+            
+    
+            
+              <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--medium"
+               data-predictor-badge="Serious Violent Reoffending Predictor MEDIUM">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">SERIOUS VIOLENT REOFFENDING PREDICTOR <strong>MEDIUM</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+            
+    
+            
+              <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--very-high"
+               data-predictor-badge="Direct Contact - Sexual Reoffending Predictor VERY HIGH">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR <strong>VERY HIGH</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">2.81%</span>
+            
+    
+            
+          </div>
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--high"
+               data-predictor-badge="Images and Indirect Contact – Sexual Reoffending Predictor HIGH">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">IMAGES AND INDIRECT CONTACT – SEXUAL REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+    
+            
+    
+            
+          </div>
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--high"
+               data-predictor-badge="Combined Serious Reoffending Predictor HIGH">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">COMBINED SERIOUS REOFFENDING PREDICTOR <strong>HIGH</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+            
+    
+            
+              <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+            
+          </div>
+        
+      
+    
+    
+              </div>
+  
+  </div>
+    
+  
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="ogrs4-fallback-example-nunjucks">
+  
+    <p>See <a href="#options-details">Nunjucks macro options</a> for more details on how to customise component.</p>
+        <pre class="app-example__code"><code>{% from &quot;arns/components/predictor-badge/macro.njk&quot; import predictorBadge %}
+    &lt;p&gt;Badges for a case with a version 1 (legacy) latest assessment - we request a current (OGRS4-gen) badge but get the legacy version instead.
+      Note that seriousViolentReoffendingPredictor has no fallback so nothing is shown in its place.&lt;/p&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskDataLegacy,
+        predictor: &quot;allReoffendingPredictor&quot;,
+        legacyFallback: true
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskDataLegacy,
+        predictor: &quot;violentReoffendingPredictor&quot;,
+        legacyFallback: true
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskDataLegacy,
+        predictor: &quot;seriousViolentReoffendingPredictor&quot;,
+        legacyFallback: true
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskDataLegacy,
+        predictor: &quot;directContactSexualReoffendingPredictor&quot;,
+        legacyFallback: true
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskDataLegacy,
+        predictor: &quot;indirectImageContactSexualReoffendingPredictor&quot;,
+        legacyFallback: true
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskDataLegacy,
+        predictor: &quot;combinedSeriousReoffendingPredictor&quot;,
+        legacyFallback: true
+      }) }}
+    &lt;/div&gt;
+    &lt;p&gt;OGP has been deprecated in the current version so must be explicitly rendered if required&lt;/p&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+      data: riskDataLegacy,
+      predictor: &quot;ogp&quot;
+      }) }}
+    &lt;/div&gt;
+    &lt;p&gt;Badges for a case with a version 2 (current) latest assessment - legacyFallback flag is ignored&lt;/p&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+      data: riskDataCurrent,
+      predictor: &quot;allReoffendingPredictor&quot;,
+      legacyFallback: true
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+      data: riskDataCurrent,
+      predictor: &quot;violentReoffendingPredictor&quot;,
+      legacyFallback: true
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+      data: riskDataCurrent,
+      predictor: &quot;seriousViolentReoffendingPredictor&quot;,
+      legacyFallback: true
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+      data: riskDataCurrent,
+      predictor: &quot;directContactSexualReoffendingPredictor&quot;,
+      legacyFallback: true
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+      data: riskDataCurrent,
+      predictor: &quot;indirectImageContactSexualReoffendingPredictor&quot;,
+      legacyFallback: true
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+      data: riskDataCurrent,
+      predictor: &quot;combinedSeriousReoffendingPredictor&quot;,
+      legacyFallback: true
+      }) }}
+    &lt;/div&gt;</code></pre>
+  
+  </div>
+    
+  
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="ogrs4-fallback-example-data">
+  
+    <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
+        <pre class="app-example__code"><code>{
+      &quot;riskDataCurrent&quot;: {
+        &quot;assessments&quot;: [
+          {
+            &quot;completedDateTime&quot;: &quot;01 January 2025 at 15:21&quot;,
+            &quot;outputVersion&quot;: &quot;2&quot;,
+            &quot;allReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;All Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;violentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;seriousViolentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Serious Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;directContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Direct Contact - Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;indirectImageContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Images and Indirect Contact – Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;combinedSeriousReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Combined Serious Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            }
+          },
+          {
+            &quot;outputVersion&quot;: &quot;1&quot;,
+            &quot;completedDateTime&quot;: &quot;02 January 2024 at 18:23&quot;,
+            &quot;ogrs3&quot;: {
+              &quot;name&quot;: &quot;OGRS&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 5,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ovp&quot;: {
+              &quot;name&quot;: &quot;OVP&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 7,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ogp&quot;: {
+              &quot;name&quot;: &quot;OGP&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 8,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospdc&quot;: {
+              &quot;name&quot;: &quot;OSP-DC&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospiic&quot;: {
+              &quot;name&quot;: &quot;OSP-IIC&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;rsr&quot;: {
+              &quot;name&quot;: &quot;RSR&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Dynamic&quot;,
+              &quot;score&quot;: 50.1234,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            }
+          }
+        ]
+      },
+      &quot;riskDataLegacy&quot;: {
+        &quot;assessments&quot;: [
+          {
+            &quot;completedDateTime&quot;: &quot;01 January 2025 at 15:21&quot;,
+            &quot;outputVersion&quot;: &quot;2&quot;,
+            &quot;allReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;All Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;violentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;seriousViolentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Serious Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;directContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Direct Contact - Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;indirectImageContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Images and Indirect Contact – Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;combinedSeriousReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Combined Serious Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            }
+          },
+          {
+            &quot;outputVersion&quot;: &quot;1&quot;,
+            &quot;completedDateTime&quot;: &quot;02 January 2024 at 18:23&quot;,
+            &quot;ogrs3&quot;: {
+              &quot;name&quot;: &quot;OGRS&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 5,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ovp&quot;: {
+              &quot;name&quot;: &quot;OVP&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 7,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ogp&quot;: {
+              &quot;name&quot;: &quot;OGP&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 8,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospdc&quot;: {
+              &quot;name&quot;: &quot;OSP-DC&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospiic&quot;: {
+              &quot;name&quot;: &quot;OSP-IIC&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;rsr&quot;: {
+              &quot;name&quot;: &quot;RSR&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Dynamic&quot;,
+              &quot;score&quot;: 50.1234,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            }
+          }
+        ]
+      }
+    }</code></pre>
+  
+  </div>
+    
+  
+
+</div>
+
+
+
+
+      <h2>Show legacy (OGRS3-gen) badges for a v1 assessment</h2>
+      <p>Display the legacy (OGRS3-gen) badges for the latest assessment. Note that if the assessment is not legacy (v2) or there's no data for this predictor then the badges will not render. If this is not the desired behaviour you may need to add additional validation in your code.</p>
+      
+      
+
+  
+
+  
+
+  
+
+  
+
+  <div class="govuk-tabs"
+    
+        
+      
+    
+   id="options-ogrs3-example-tabs" data-module="govuk-tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
+
+  <ul class="govuk-tabs__list">
+    
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+      <a class="govuk-tabs__tab" href="#ogrs3-example-rendered">
+        Rendered
+      </a>
+    </li>
+      
+    
+          <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#ogrs3-example-nunjucks">
+        Nunjucks
+      </a>
+    </li>
+      
+    
+          <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#ogrs3-example-data">
+        Data
+      </a>
+    </li>
+      
+    
+  </ul>
+  
+      <div class="govuk-tabs__panel" id="ogrs3-example-rendered">
+  
+    <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+  
+  </div>
+    
+  
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="ogrs3-example-nunjucks">
+  
+    <p>See <a href="#options-details">Nunjucks macro options</a> for more details on how to customise component.</p>
+        <pre class="app-example__code"><code>{% from &quot;arns/components/predictor-badge/macro.njk&quot; import predictorBadge %}
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskData,
+        predictor: &quot;ogrs3&quot;
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskData,
+        predictor: &quot;ovp&quot;
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskData,
+        predictor: &quot;ogp&quot;
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskData,
+        predictor: &quot;rsr&quot;
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskData,
+        predictor: &quot;ospdc&quot;
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskData,
+        predictor: &quot;ospiic&quot;
+      }) }}
+    &lt;/div&gt;</code></pre>
+  
+  </div>
+    
+  
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="ogrs3-example-data">
+  
+    <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
+        <pre class="app-example__code"><code>{
+      &quot;riskData&quot;: {
+        &quot;assessments&quot;: [
+          {
+            &quot;completedDateTime&quot;: &quot;01 January 2025 at 15:21&quot;,
+            &quot;outputVersion&quot;: &quot;2&quot;,
+            &quot;allReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;All Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;violentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;seriousViolentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Serious Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;directContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Direct Contact - Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;indirectImageContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Images and Indirect Contact – Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;combinedSeriousReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Combined Serious Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            }
+          },
+          {
+            &quot;outputVersion&quot;: &quot;1&quot;,
+            &quot;completedDateTime&quot;: &quot;02 January 2024 at 18:23&quot;,
+            &quot;ogrs3&quot;: {
+              &quot;name&quot;: &quot;OGRS&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 5,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ovp&quot;: {
+              &quot;name&quot;: &quot;OVP&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 7,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ogp&quot;: {
+              &quot;name&quot;: &quot;OGP&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 8,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospdc&quot;: {
+              &quot;name&quot;: &quot;OSP-DC&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospiic&quot;: {
+              &quot;name&quot;: &quot;OSP-IIC&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;rsr&quot;: {
+              &quot;name&quot;: &quot;RSR&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Dynamic&quot;,
+              &quot;score&quot;: 50.1234,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            }
+          }
+        ]
+      }
+    }</code></pre>
+  
+  </div>
+    
+  
+
+</div>
+
+
+
+
+      <h2>Missing bands and scores</h2>
       <p>Applies when no score is available, but the configuration (default predictor display config or showScore override)
-        requires the score field to be visible.</p>
-      <div class="govuk-!-margin-bottom-4">
-        
-
-
-
-  
-    
-  
-    
-  
-    
-
+        requires the score field to be visible or the band is missing.</p>
       
       
 
-      
-      
+  
+
+  
+
+  
+
+  
+
+  <div class="govuk-tabs"
+    
         
       
+    
+   id="options-unknown-example-tabs" data-module="govuk-tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
 
+  <ul class="govuk-tabs__list">
+    
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+      <a class="govuk-tabs__tab" href="#unknown-example-rendered">
+        Rendered
+      </a>
+    </li>
       
-        
+    
+          <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#unknown-example-nunjucks">
+        Nunjucks
+      </a>
+    </li>
       
-
-      <div class="arns-predictor-badge--low"
-           data-predictor-badge="All Reoffending Predictor LOW">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
-
-        
-          <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
-        
-
-        
-          <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
-        
-      </div>
     
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
-
-      </div>
-      <h3>Missing band</h3>
-      <div class="govuk-!-margin-bottom-8">
-        
-
-
-
-  
-    
-  
-    
-  
-    
-  
-    
-
+          <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#unknown-example-data">
+        Data
+      </a>
+    </li>
       
+    
+  </ul>
+  
+      <div class="govuk-tabs__panel" id="unknown-example-rendered">
+  
+    <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
       
-
-      
+    
       
         
       
-
+    
       
         
       
-
-      <div class="arns-predictor-badge--low"
-           data-predictor-badge="Violent Reoffending Predictor LOW">
-
-        <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">VIOLENT REOFFENDING PREDICTOR <strong>LOW</strong></span>
-
         
-          <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+      
         
-
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--low"
+               data-predictor-badge="All Reoffending Predictor LOW">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">ALL REOFFENDING PREDICTOR <strong>LOW</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+            
+    
+            
+              <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+            
+          </div>
         
-          <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+      
         
-      </div>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+              <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+    
+          
+    
+          
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-badge--low"
+               data-predictor-badge="Violent Reoffending Predictor LOW">
+    
+            <span class="arns-predictor-badge__type_and_level" data-test-id="nameAndBand">VIOLENT REOFFENDING PREDICTOR <strong>LOW</strong></span>
+    
+            
+              <span class="arns-predictor-badge__score" data-test-id="score">1.23%</span>
+            
+    
+            
+              <span class="arns-predictor-badge__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+            
+          </div>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+  
+  </div>
     
   
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="unknown-example-nunjucks">
+  
+    <p>See <a href="#options-details">Nunjucks macro options</a> for more details on how to customise component.</p>
+        <pre class="app-example__code"><code>{% from &quot;arns/components/predictor-badge/macro.njk&quot; import predictorBadge %}
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskData,
+        predictor: &quot;allReoffendingPredictor&quot;
+      }) }}
+    &lt;/div&gt;
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorBadge({
+        data: riskData,
+        predictor: &quot;violentReoffendingPredictor&quot;
+      }) }}
+    &lt;/div&gt;</code></pre>
+  
+  </div>
     
   
-    
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="unknown-example-data">
   
-    
+    <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
+        <pre class="app-example__code"><code>{
+      &quot;riskData&quot;: {
+        &quot;assessments&quot;: [
+          {
+            &quot;completedDateTime&quot;: &quot;01 January 2025 at 15:21&quot;,
+            &quot;outputVersion&quot;: &quot;2&quot;,
+            &quot;allReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;All Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;violentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;seriousViolentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Serious Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;directContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Direct Contact - Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;indirectImageContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Images and Indirect Contact – Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;combinedSeriousReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Combined Serious Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            }
+          },
+          {
+            &quot;outputVersion&quot;: &quot;1&quot;,
+            &quot;completedDateTime&quot;: &quot;02 January 2024 at 18:23&quot;,
+            &quot;ogrs3&quot;: {
+              &quot;name&quot;: &quot;OGRS&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 5,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ovp&quot;: {
+              &quot;name&quot;: &quot;OVP&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 7,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ogp&quot;: {
+              &quot;name&quot;: &quot;OGP&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 8,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospdc&quot;: {
+              &quot;name&quot;: &quot;OSP-DC&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospiic&quot;: {
+              &quot;name&quot;: &quot;OSP-IIC&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;rsr&quot;: {
+              &quot;name&quot;: &quot;RSR&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Dynamic&quot;,
+              &quot;score&quot;: 50.1234,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            }
+          }
+        ]
+      }
+    }</code></pre>
   
+  </div>
     
   
 
+</div>
 
-      </div>
+
+
     </div>
   </div>
 
@@ -10519,6 +12825,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
   
   
+    
+  
 
 
 
@@ -10541,7 +12849,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 </div>
 
-<div class="arns-scale-bar--small" data-test-id="imagesAndIndirectContactSexualReoffendingPredictor-scale">
+<div class="arns-scale-bar--small arns-scale-bar--small-sanctions" data-test-id="indirectImageContactSexualReoffendingPredictor-scale">
   <div data-band-percentage-start=""
        data-band-percentage="" data-test-id='lowBand'>
     <span></span>

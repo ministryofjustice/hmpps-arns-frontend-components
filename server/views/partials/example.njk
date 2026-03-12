@@ -1,0 +1,66 @@
+{#
+  Macro to render examples within component pages
+
+  @name example
+
+  @description Macro to render an example, the Nunjucks code and the data within tabs. Should be used within components pages for any examples.
+
+  @example
+    {% from "partials/example.njk" import example %}
+    {{ example({data: {riskData: riskData}, exampleNjks: defaultExampleNjks, exampleId: 'default'}) }}
+
+  @param data - object containing data needed to render the njks provided
+  @param exampleNjks - string containing njks to render
+  @param exampleId - an id for this example
+
+#}
+{% from "govuk/components/tabs/macro.njk" import govukTabs %}
+
+{% macro example(params) %}
+
+  {% set exampleId = params.exampleId + "-example" %}
+
+  {% set renderedHtml %}
+    {{ renderAsTemplate(params.exampleNjks, params.data) | safe }}
+  {% endset %}
+
+  {% set nunjucksHtml %}
+    <p>See <a href="#options-details">Nunjucks macro options</a> for more details on how to customise component.</p>
+    <pre class="app-example__code"><code>{{ params.exampleNjks | outdent }}</code></pre>
+  {% endset %}
+
+  {% set dataHtml %}
+    <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
+    <pre class="app-example__code"><code>{{ params.data | dump(2) | outdent }}</code></pre>
+  {% endset %}
+
+  {{ govukTabs({
+    attributes: {
+      id: "options-" + exampleId + "-tabs"
+    },
+    items: [
+      {
+        label: "Rendered",
+        id: exampleId + "-rendered",
+        panel: {
+          html: renderedHtml
+        }
+      },
+      {
+        label: "Nunjucks",
+        id: exampleId + "-nunjucks",
+        panel: {
+          html: nunjucksHtml
+        }
+      },
+      {
+        label: "Data",
+        id: exampleId + "-data",
+        panel: {
+          html: dataHtml
+        }
+      }
+    ]
+  }) }}
+
+{% endmacro %}

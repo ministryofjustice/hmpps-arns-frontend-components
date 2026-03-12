@@ -21,3 +21,23 @@ export const initialiseName = (fullName?: string): string | null => {
   const array = fullName.split(' ')
   return `${array[0][0]}. ${array.reverse()[0]}`
 }
+
+export const outdent = (str: string) => {
+  const lines = str?.split('\n')
+
+  if (lines) {
+    const minIndent = lines
+      .filter(l => l.trim())
+      .reduce((min, l) => {
+        const match = l.match(/^[ \t]*/)
+        return match ? Math.min(min, match[0].length) : min
+      }, Infinity)
+
+    return lines
+      .map(l => l.slice(minIndent))
+      .join('\n')
+      .trim()
+  }
+
+  return null
+}

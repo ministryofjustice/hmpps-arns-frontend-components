@@ -4,7 +4,7 @@ import nunjucks from 'nunjucks'
 import express from 'express'
 import fs from 'fs'
 import { arnsNunjucksSetup } from '@ministryofjustice/hmpps-arns-frontend-components-lib'
-import { initialiseName } from './utils'
+import { initialiseName, outdent } from './utils'
 import config from '../config'
 import logger from '../../logger'
 
@@ -50,4 +50,6 @@ export default function nunjucksSetup(app: express.Express): void {
     const target = targetDateStr ? new Date(targetDateStr.replace(' at ', ' ')) : new Date()
     return date < target
   })
+  njkEnv.addGlobal('renderAsTemplate', (str: string, context: object) => njkEnv.renderString(str, context))
+  njkEnv.addFilter('outdent', outdent)
 }

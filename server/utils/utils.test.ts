@@ -1,4 +1,4 @@
-import { convertToTitleCase, initialiseName } from './utils'
+import { convertToTitleCase, initialiseName, outdent } from './utils'
 
 describe('convert to title case', () => {
   it.each([
@@ -26,5 +26,17 @@ describe('initialise name', () => {
     ['Double barrelled', 'Robert-John Smith-Jones-Wilson', 'R. Smith-Jones-Wilson'],
   ])('%s initialiseName(%s, %s)', (_: string, a: string, expected: string) => {
     expect(initialiseName(a)).toEqual(expected)
+  })
+})
+
+describe('outdent', () => {
+  it.each([
+    [null, null, null],
+    ['Empty string', '', ''],
+    ['Sentence', 'This is a sentence', 'This is a sentence'],
+    ['Space at start and end', '  space at start and end   ', 'space at start and end'],
+    ['Spaces and line breaks', '  Line break\n\n    another line  ', 'Line break\n\n  another line'],
+  ])('%s initialiseName(%s, %s)', (_: string, a: string, expected: string) => {
+    expect(outdent(a)).toEqual(expected)
   })
 })

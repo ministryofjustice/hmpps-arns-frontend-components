@@ -1,0 +1,70 @@
+{#
+  Macro to render a table of macro options
+
+  @name nunjucksMacroOptions
+
+  @description Macro to render a details component containing a table of available option for a macro
+
+  @example
+    {% from "partials/nunjucksMacroOptions.njk" import nunjucksMacroOptions %}
+    {% set macroOptions = [
+      [
+        {
+          text: "data"
+        },
+        {
+          text: "object"
+        },
+        {
+          html: '<strong>Required.</strong> Data from ARNS API - use service from library to obtain this (see <a href="/new">Introduction</a> for more information)'
+        }
+      ],
+      [
+        {
+          text: "anotherParam"
+        },
+        {
+          text: "string"
+        },
+        {
+          html: 'This is a description'
+        }
+      ],
+    ]
+    {{ nunjucksMacroOptions({macroOptions: macroOptions}) }}
+
+  @param macroOptions - array of arrays containing rows of macroOptions as for govukTable spec
+
+#}
+{% from "govuk/components/details/macro.njk" import govukDetails %}
+{% from "govuk/components/table/macro.njk" import govukTable %}
+
+{% macro nunjucksMacroOptions(params) %}
+  {% set optionsHtml %}
+    {{ govukTable({
+      attributes: {
+        id: "options-table"
+      },
+      firstCellIsHeader: true,
+      head: [
+        {
+          text: "Name"
+        },
+        {
+          text: "Type"
+        },
+        {
+          text: "Description"
+        }
+      ],
+      rows: params.macroOptions
+    }) }}
+  {% endset %}
+  {{ govukDetails({
+    summaryText: "Nunjucks macro options",
+    attributes: {
+      id: "options-details"
+    },
+    html: optionsHtml
+  }) }}
+{% endmacro %}
