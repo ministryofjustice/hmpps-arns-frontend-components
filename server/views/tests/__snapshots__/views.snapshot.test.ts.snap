@@ -7478,6 +7478,16 @@ export type Services = ReturnType&lt;typeof services></code></pre>
     For further information select a component for more details on that particular component.
   </p>
 
+  <h3 class="govuk-heading-m">Filters</h3>
+  <h4 class="govuk-heading-s">containsCompletedAssessment</h4>
+  <p>
+    The <code class="intro-name">containsCompletedAssessment</code> filter determines if the RiskData object from the
+    ARNS API response contains a completed assessment record.
+  </p>
+  <pre><code class="intro-code-block">{% if riskData | containsCompletedAssessment %}
+  {# You have a completed assessment available. #}
+{% endif %}</code></pre>
+
 
     </div>
   </div>
