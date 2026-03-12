@@ -6681,7 +6681,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       
     
-   id="options-predictor-badge-default-example-tabs" data-module="govuk-tabs">
+   id="options-default-example-tabs" data-module="govuk-tabs">
   <h2 class="govuk-tabs__title">
     Contents
   </h2>
@@ -6689,21 +6689,21 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <ul class="govuk-tabs__list">
     
           <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-      <a class="govuk-tabs__tab" href="#predictor-badge-default-example-rendered">
+      <a class="govuk-tabs__tab" href="#default-example-rendered">
         Rendered
       </a>
     </li>
       
     
           <li class="govuk-tabs__list-item">
-      <a class="govuk-tabs__tab" href="#predictor-badge-default-example-nunjucks">
+      <a class="govuk-tabs__tab" href="#default-example-nunjucks">
         Nunjucks
       </a>
     </li>
       
     
           <li class="govuk-tabs__list-item">
-      <a class="govuk-tabs__tab" href="#predictor-badge-default-example-data">
+      <a class="govuk-tabs__tab" href="#default-example-data">
         Data
       </a>
     </li>
@@ -6711,7 +6711,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   </ul>
   
-      <div class="govuk-tabs__panel" id="predictor-badge-default-example-rendered">
+      <div class="govuk-tabs__panel" id="default-example-rendered">
   
     <div class="arns-predictor-badge--low"
                data-predictor-badge="All Reoffending Predictor LOW">
@@ -6730,7 +6730,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
     
   
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="predictor-badge-default-example-nunjucks">
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="default-example-nunjucks">
   
     <p>See <a href="#options-details">Nunjucks macro options</a> for more details on how to customise component.</p>
         <pre class="app-example__code"><code>{% from &quot;arns/components/predictor-badge/macro.njk&quot; import predictorBadge %}
@@ -6743,7 +6743,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
     
   
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="predictor-badge-default-example-data">
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="default-example-data">
   
     <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
         <pre class="app-example__code"><code>{
@@ -6938,12 +6938,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             </ul>
             <p><strong>Current (OGRS4-gen) predictors</strong></p>
             <ul>
-              <li><strong>allReoffendingPredictor</strong> - all reoffending predictor - falls back to ogrs3 if legacyFallback set to true</li>
-              <li><strong>violentReoffendingPredictor</strong> - violent reoffending predictor - falls back to ovp if legacyFallback set to true</li>
-              <li><strong>seriousViolentReoffendingPredictor</strong> - serious violent reoffending predictor - no fallback available as new predictor</li>
-              <li><strong>directContactSexualReoffendingPredictor</strong> - direct contact - sexual reoffending predictor - falls back to ospdc if legacyFallback set to true</li>
-              <li><strong>indirectImageContactSexualReoffendingPredictor</strong> - indirect image contact - sexual reoffending predictor - falls back to ospiic if legacyFallback set to true</li>
-              <li><strong>combinedSeriousReoffendingPredictor</strong> - combined serious reoffending predictor - falls back to rsr if legacyFallback set to true</li>
+              <li><strong>allReoffendingPredictor</strong> - All reoffending predictor</li>
+              <li><strong>violentReoffendingPredictor</strong> - Violent reoffending predictor</li>
+              <li><strong>seriousViolentReoffendingPredictor</strong> - Serious violent reoffending predictor</li>
+              <li><strong>directContactSexualReoffendingPredictor</strong> - Direct contact - Sexual reoffending predictor</li>
+              <li><strong>indirectImageContactSexualReoffendingPredictor</strong> - Indirect image contact - Sexual reoffending predictor</li>
+              <li><strong>combinedSeriousReoffendingPredictor</strong> - Combined serious reoffending predictor</li>
             </ul></td>
       
     
@@ -6965,7 +6965,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
       
       
-      <td class="govuk-table__cell">Override default configuration to always show a show for a predictor (not recommended)</td>
+      <td class="govuk-table__cell">Override default configuration to always show/hide a score for a predictor (not recommended)</td>
       
     
     </tr>
@@ -6986,7 +6986,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
       
       
-      <td class="govuk-table__cell">Default false. Fallback to using the legacy (OGRS3-gen) equivalent if the latest assessment is legacy. Will have no affect if predictor is not a current (OGRS4-gen) predictor.</td>
+      <td class="govuk-table__cell">Default false. Fallback to using the legacy (OGRS3-gen) equivalent of a predictor if the latest assessment is legacy, but a non-legacy predictor was specified. Will have no affect if the predictor specified is legacy or Serious Violent Reoffending Predictor (there is no legacy equivalent version of this predictor).</td>
       
     
     </tr>
@@ -7044,7 +7044,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       
     
-   id="options-predictor-badge-restricted-width-example-tabs" data-module="govuk-tabs">
+   id="options-restricted-width-example-tabs" data-module="govuk-tabs">
   <h2 class="govuk-tabs__title">
     Contents
   </h2>
@@ -7052,21 +7052,21 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <ul class="govuk-tabs__list">
     
           <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-      <a class="govuk-tabs__tab" href="#predictor-badge-restricted-width-example-rendered">
+      <a class="govuk-tabs__tab" href="#restricted-width-example-rendered">
         Rendered
       </a>
     </li>
       
     
           <li class="govuk-tabs__list-item">
-      <a class="govuk-tabs__tab" href="#predictor-badge-restricted-width-example-nunjucks">
+      <a class="govuk-tabs__tab" href="#restricted-width-example-nunjucks">
         Nunjucks
       </a>
     </li>
       
     
           <li class="govuk-tabs__list-item">
-      <a class="govuk-tabs__tab" href="#predictor-badge-restricted-width-example-data">
+      <a class="govuk-tabs__tab" href="#restricted-width-example-data">
         Data
       </a>
     </li>
@@ -7074,7 +7074,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   </ul>
   
-      <div class="govuk-tabs__panel" id="predictor-badge-restricted-width-example-rendered">
+      <div class="govuk-tabs__panel" id="restricted-width-example-rendered">
   
     <div class="badge-restricted-width">
                 
@@ -7134,7 +7134,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
     
   
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="predictor-badge-restricted-width-example-nunjucks">
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="restricted-width-example-nunjucks">
   
     <p>See <a href="#options-details">Nunjucks macro options</a> for more details on how to customise component.</p>
         <pre class="app-example__code"><code>{% from &quot;arns/components/predictor-badge/macro.njk&quot; import predictorBadge %}
@@ -7148,7 +7148,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
     
   
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="predictor-badge-restricted-width-example-data">
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="restricted-width-example-data">
   
     <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
         <pre class="app-example__code"><code>{
@@ -7277,7 +7277,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       
     
-   id="options-predictor-badge-ogrs4-no-fallback-example-tabs" data-module="govuk-tabs">
+   id="options-ogrs4-no-fallback-example-tabs" data-module="govuk-tabs">
   <h2 class="govuk-tabs__title">
     Contents
   </h2>
@@ -7285,21 +7285,21 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <ul class="govuk-tabs__list">
     
           <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-      <a class="govuk-tabs__tab" href="#predictor-badge-ogrs4-no-fallback-example-rendered">
+      <a class="govuk-tabs__tab" href="#ogrs4-no-fallback-example-rendered">
         Rendered
       </a>
     </li>
       
     
           <li class="govuk-tabs__list-item">
-      <a class="govuk-tabs__tab" href="#predictor-badge-ogrs4-no-fallback-example-nunjucks">
+      <a class="govuk-tabs__tab" href="#ogrs4-no-fallback-example-nunjucks">
         Nunjucks
       </a>
     </li>
       
     
           <li class="govuk-tabs__list-item">
-      <a class="govuk-tabs__tab" href="#predictor-badge-ogrs4-no-fallback-example-data">
+      <a class="govuk-tabs__tab" href="#ogrs4-no-fallback-example-data">
         Data
       </a>
     </li>
@@ -7307,7 +7307,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   </ul>
   
-      <div class="govuk-tabs__panel" id="predictor-badge-ogrs4-no-fallback-example-rendered">
+      <div class="govuk-tabs__panel" id="ogrs4-no-fallback-example-rendered">
   
     <p>Badges for a case with all predictors set</p>
               <div class="govuk-!-margin-bottom-4">
@@ -7713,7 +7713,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
     
   
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="predictor-badge-ogrs4-no-fallback-example-nunjucks">
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="ogrs4-no-fallback-example-nunjucks">
   
     <p>See <a href="#options-details">Nunjucks macro options</a> for more details on how to customise component.</p>
         <pre class="app-example__code"><code>{% from &quot;arns/components/predictor-badge/macro.njk&quot; import predictorBadge %}
@@ -7765,7 +7765,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
     
   
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="predictor-badge-ogrs4-no-fallback-example-data">
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="ogrs4-no-fallback-example-data">
   
     <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
         <pre class="app-example__code"><code>{
@@ -7990,7 +7990,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       
     
-   id="options-predictor-badge-ogrs4-fallback-example-tabs" data-module="govuk-tabs">
+   id="options-ogrs4-fallback-example-tabs" data-module="govuk-tabs">
   <h2 class="govuk-tabs__title">
     Contents
   </h2>
@@ -7998,21 +7998,21 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <ul class="govuk-tabs__list">
     
           <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-      <a class="govuk-tabs__tab" href="#predictor-badge-ogrs4-fallback-example-rendered">
+      <a class="govuk-tabs__tab" href="#ogrs4-fallback-example-rendered">
         Rendered
       </a>
     </li>
       
     
           <li class="govuk-tabs__list-item">
-      <a class="govuk-tabs__tab" href="#predictor-badge-ogrs4-fallback-example-nunjucks">
+      <a class="govuk-tabs__tab" href="#ogrs4-fallback-example-nunjucks">
         Nunjucks
       </a>
     </li>
       
     
           <li class="govuk-tabs__list-item">
-      <a class="govuk-tabs__tab" href="#predictor-badge-ogrs4-fallback-example-data">
+      <a class="govuk-tabs__tab" href="#ogrs4-fallback-example-data">
         Data
       </a>
     </li>
@@ -8020,7 +8020,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   </ul>
   
-      <div class="govuk-tabs__panel" id="predictor-badge-ogrs4-fallback-example-rendered">
+      <div class="govuk-tabs__panel" id="ogrs4-fallback-example-rendered">
   
     <p>Badges for a case with a version 1 (legacy) latest assessment - we request a current (OGRS4-gen) badge but get the legacy version instead.
                 Note that seriousViolentReoffendingPredictor has no fallback so nothing is shown in its place.</p>
@@ -8366,7 +8366,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
               </div>
-              <p>OGP has been deprecated in the current version so allows needs to be explicitly rendered if needed</p>
+              <p>OGP has been deprecated in the current version so must be explicitly rendered if required</p>
               <div class="govuk-!-margin-bottom-4">
                 
     
@@ -8746,7 +8746,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
     
   
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="predictor-badge-ogrs4-fallback-example-nunjucks">
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="ogrs4-fallback-example-nunjucks">
   
     <p>See <a href="#options-details">Nunjucks macro options</a> for more details on how to customise component.</p>
         <pre class="app-example__code"><code>{% from &quot;arns/components/predictor-badge/macro.njk&quot; import predictorBadge %}
@@ -8794,7 +8794,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         legacyFallback: true
       }) }}
     &lt;/div&gt;
-    &lt;p&gt;OGP has been deprecated in the current version so allows needs to be explicitly rendered if needed&lt;/p&gt;
+    &lt;p&gt;OGP has been deprecated in the current version so must be explicitly rendered if required&lt;/p&gt;
     &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
       {{ predictorBadge({
       data: riskDataLegacy,
@@ -8848,7 +8848,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
     
   
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="predictor-badge-ogrs4-fallback-example-data">
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="ogrs4-fallback-example-data">
   
     <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
         <pre class="app-example__code"><code>{
@@ -9073,7 +9073,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       
     
-   id="options-predictor-badge-ogrs3-example-tabs" data-module="govuk-tabs">
+   id="options-ogrs3-example-tabs" data-module="govuk-tabs">
   <h2 class="govuk-tabs__title">
     Contents
   </h2>
@@ -9081,21 +9081,21 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <ul class="govuk-tabs__list">
     
           <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-      <a class="govuk-tabs__tab" href="#predictor-badge-ogrs3-example-rendered">
+      <a class="govuk-tabs__tab" href="#ogrs3-example-rendered">
         Rendered
       </a>
     </li>
       
     
           <li class="govuk-tabs__list-item">
-      <a class="govuk-tabs__tab" href="#predictor-badge-ogrs3-example-nunjucks">
+      <a class="govuk-tabs__tab" href="#ogrs3-example-nunjucks">
         Nunjucks
       </a>
     </li>
       
     
           <li class="govuk-tabs__list-item">
-      <a class="govuk-tabs__tab" href="#predictor-badge-ogrs3-example-data">
+      <a class="govuk-tabs__tab" href="#ogrs3-example-data">
         Data
       </a>
     </li>
@@ -9103,7 +9103,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   </ul>
   
-      <div class="govuk-tabs__panel" id="predictor-badge-ogrs3-example-rendered">
+      <div class="govuk-tabs__panel" id="ogrs3-example-rendered">
   
     <div class="govuk-!-margin-bottom-4">
                 
@@ -9301,7 +9301,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
     
   
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="predictor-badge-ogrs3-example-nunjucks">
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="ogrs3-example-nunjucks">
   
     <p>See <a href="#options-details">Nunjucks macro options</a> for more details on how to customise component.</p>
         <pre class="app-example__code"><code>{% from &quot;arns/components/predictor-badge/macro.njk&quot; import predictorBadge %}
@@ -9345,7 +9345,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
     
   
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="predictor-badge-ogrs3-example-data">
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="ogrs3-example-data">
   
     <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
         <pre class="app-example__code"><code>{
@@ -9475,7 +9475,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       
     
-   id="options-predictor-badge-unknown-example-tabs" data-module="govuk-tabs">
+   id="options-unknown-example-tabs" data-module="govuk-tabs">
   <h2 class="govuk-tabs__title">
     Contents
   </h2>
@@ -9483,21 +9483,21 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <ul class="govuk-tabs__list">
     
           <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-      <a class="govuk-tabs__tab" href="#predictor-badge-unknown-example-rendered">
+      <a class="govuk-tabs__tab" href="#unknown-example-rendered">
         Rendered
       </a>
     </li>
       
     
           <li class="govuk-tabs__list-item">
-      <a class="govuk-tabs__tab" href="#predictor-badge-unknown-example-nunjucks">
+      <a class="govuk-tabs__tab" href="#unknown-example-nunjucks">
         Nunjucks
       </a>
     </li>
       
     
           <li class="govuk-tabs__list-item">
-      <a class="govuk-tabs__tab" href="#predictor-badge-unknown-example-data">
+      <a class="govuk-tabs__tab" href="#unknown-example-data">
         Data
       </a>
     </li>
@@ -9505,7 +9505,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   </ul>
   
-      <div class="govuk-tabs__panel" id="predictor-badge-unknown-example-rendered">
+      <div class="govuk-tabs__panel" id="unknown-example-rendered">
   
     <div class="govuk-!-margin-bottom-4">
                 
@@ -9627,7 +9627,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
     
   
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="predictor-badge-unknown-example-nunjucks">
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="unknown-example-nunjucks">
   
     <p>See <a href="#options-details">Nunjucks macro options</a> for more details on how to customise component.</p>
         <pre class="app-example__code"><code>{% from &quot;arns/components/predictor-badge/macro.njk&quot; import predictorBadge %}
@@ -9647,7 +9647,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
     
   
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="predictor-badge-unknown-example-data">
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="unknown-example-data">
   
     <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
         <pre class="app-example__code"><code>{
@@ -12825,6 +12825,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
   
   
+    
+  
 
 
 
@@ -12847,7 +12849,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </div>
 </div>
 
-<div class="arns-scale-bar--small" data-test-id="imagesAndIndirectContactSexualReoffendingPredictor-scale">
+<div class="arns-scale-bar--small arns-scale-bar--small-sanctions" data-test-id="indirectImageContactSexualReoffendingPredictor-scale">
   <div data-band-percentage-start=""
        data-band-percentage="" data-test-id='lowBand'>
     <span></span>

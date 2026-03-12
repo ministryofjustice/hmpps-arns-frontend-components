@@ -1,8 +1,24 @@
+{#
+  Macro to render examples within component pages
+
+  @name example
+
+  @description Macro to render an example, the Nunjucks code and the data within tabs. Should be used within components pages for any examples.
+
+  @example
+    {% from "partials/example.njk" import example %}
+    {{ example({data: {riskData: riskData}, exampleNjks: defaultExampleNjks, exampleId: 'default'}) }}
+
+  @param data - object containing data needed to render the njks provided
+  @param exampleNjks - string containing njks to render
+  @param exampleId - an id for this example
+
+#}
 {% from "govuk/components/tabs/macro.njk" import govukTabs %}
 
 {% macro example(params) %}
 
-  {% set exampleId = params.item + "-" + params.exampleId + "-example" %}
+  {% set exampleId = params.exampleId + "-example" %}
 
   {% set renderedHtml %}
     {{ renderAsTemplate(params.exampleNjks, params.data) | safe }}
