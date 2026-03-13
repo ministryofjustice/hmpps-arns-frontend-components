@@ -1,5 +1,6 @@
 {% extends "layouts/side-nav-layout.njk" %}
 {% from "../partials/rosh-widget/macro.njk" import roshWidget %}
+{% from "moj/components/alert/macro.njk" import mojAlert %}
 
 {% set pageTitle = "ROSH widget" %}
 {% set mainClasses = "govuk-body" %}
@@ -11,6 +12,13 @@
 
   <div id="rosh-widget-wrapper" class="govuk-grid-row">
     <div class="govuk-grid-column-full">
+      {{ mojAlert({
+        variant: "warning",
+        title: "Snippet component",
+        showTitleAsHeading: true,
+        dismissible: false,
+        html: 'This component is currently provided as a snippet and is not yet included in the library. It will be moved into the library in a future release.'
+      }) }}
       <h2>How to use</h2>
       <p>
         Refer to the <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4472635638/Risk+of+Serious+Harm+ROSH+component">Risk of Serious Harm (ROSH) component</a>

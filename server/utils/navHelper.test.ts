@@ -16,16 +16,16 @@ describe('activateMojNav', () => {
   })
 
   it('should set the "active: true" flag on the matching item for other page', () => {
-    const result = activateMojNav(rawNavSections, '/mappa-widget')
+    const result = activateMojNav(rawNavSections, '/predictor-badge')
 
     // Check activated item
-    expect(result[1].items[0].text).toBe('MAPPA widget')
-    expect(result[1].items[0].href).toBe('/mappa-widget')
+    expect(result[1].items[0].text).toBe('Predictor badge')
+    expect(result[1].items[0].href).toBe('/predictor-badge')
     expect(result[1].items[0].active).toBe(true)
 
     // Check other items not active
     result[0].items.forEach(item => expect(item.active).toBeUndefined())
-    result[1].items.filter(item => item.text !== 'MAPPA widget').forEach(item => expect(item.active).toBeUndefined())
+    result[1].items.filter(item => item.text !== 'Predictor badge').forEach(item => expect(item.active).toBeUndefined())
   })
 
   it('should return the original array structure with no items active if path is not found', () => {

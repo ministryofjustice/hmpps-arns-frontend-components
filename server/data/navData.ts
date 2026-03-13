@@ -11,20 +11,8 @@ const rawNavSections: NavSection[] = [
     ],
   },
   {
-    heading: { text: 'Components' },
+    heading: { text: 'Library components' },
     items: [
-      {
-        text: 'MAPPA widget',
-        href: '/mappa-widget',
-      },
-      {
-        text: 'Risk flag widget',
-        href: '/risk-flag-widget',
-      },
-      {
-        text: 'ROSH widget',
-        href: '/rosh-widget',
-      },
       {
         text: 'Predictor badge',
         href: '/predictor-badge',
@@ -37,26 +25,22 @@ const rawNavSections: NavSection[] = [
         text: 'Predictor scale',
         href: '/predictor-scale',
       },
-      {
-        text: 'Predictor timeline v2',
-        href: '/predictor-timeline',
-      },
     ],
   },
   {
-    heading: { text: 'Legacy components' },
+    heading: { text: 'Snippet components' },
     items: [
       {
-        text: 'Predictor scores',
-        href: '/predictor-scores',
+        text: 'MAPPA widget',
+        href: '/mappa-widget',
       },
       {
-        text: 'Predictor timeline',
-        href: '/legacy-predictor-timeline',
+        text: 'Risk flag widget',
+        href: '/risk-flag-widget',
       },
       {
-        text: 'Predictor timeline item',
-        href: '/legacy-predictor-timeline-item',
+        text: 'ROSH widget',
+        href: '/rosh-widget',
       },
     ],
   },

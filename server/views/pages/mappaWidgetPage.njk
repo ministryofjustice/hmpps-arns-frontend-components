@@ -1,5 +1,6 @@
 {% extends "layouts/side-nav-layout.njk" %}
 {% from "../partials/mappa-widget/macro.njk" import mappaWidget %}
+{% from "moj/components/alert/macro.njk" import mojAlert %}
 
 {% set pageTitle = "Mappa widget" %}
 {% set mainClasses = "govuk-body" %}
@@ -11,6 +12,13 @@
 
   <div id="mappa-widget-wrapper" class="govuk-grid-row">
     <div class="govuk-grid-column-full">
+      {{ mojAlert({
+        variant: "warning",
+        title: "Snippet component",
+        showTitleAsHeading: true,
+        dismissible: false,
+        html: 'This component is currently provided as a snippet and is not yet included in the library. It will be moved into the library in a future release.'
+      }) }}
       <h2>How to use</h2>
       <p>
         Refer to the <a

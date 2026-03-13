@@ -24,8 +24,22 @@ afterEach(() => {
   jest.resetAllMocks()
 })
 
-describe('GET /mappa-widget', () => {
+describe('GET /', () => {
   it('should render index page', () => {
+    auditService.logPageView.mockResolvedValue(null)
+
+    return request(app)
+      .get('/')
+      .expect('Content-Type', /html/)
+      .expect(200)
+      .expect(res => {
+        expect(res.text).toContain('<title>Introduction</title>')
+      })
+  })
+})
+
+describe('GET /mappa-widget', () => {
+  it('should render MAPPA widget page', () => {
     auditService.logPageView.mockResolvedValue(null)
 
     return request(app)
@@ -38,35 +52,8 @@ describe('GET /mappa-widget', () => {
   })
 })
 
-describe('GET /predictor-scores', () => {
-  it('should render index page', () => {
-    auditService.logPageView.mockResolvedValue(null)
-
-    return request(app)
-      .get('/predictor-scores')
-      .expect('Content-Type', /html/)
-      .expect(200)
-      .expect(res => {
-        expect(res.text).toContain('<title>Predictor scores</title>')
-      })
-  })
-})
-
-describe('GET /predictor-timeline', () => {
-  it('should render index page', () => {
-    auditService.logPageView.mockResolvedValue(null)
-    return request(app)
-      .get('/predictor-timeline')
-      .expect('Content-Type', /html/)
-      .expect(200)
-      .expect(res => {
-        expect(res.text).toContain('<title>Predictor timeline</title>')
-      })
-  })
-})
-
 describe('GET /risk-flag-widget', () => {
-  it('should render index page', () => {
+  it('should render risk flag widget page', () => {
     auditService.logPageView.mockResolvedValue(null)
 
     return request(app)
@@ -80,7 +67,7 @@ describe('GET /risk-flag-widget', () => {
 })
 
 describe('GET /rosh-widget', () => {
-  it('should render index page', () => {
+  it('should render ROSH widget page', () => {
     auditService.logPageView.mockResolvedValue(null)
 
     return request(app)
@@ -96,33 +83,5 @@ describe('GET /rosh-widget', () => {
 describe('GET /nonexistent-route', () => {
   it('should return 404 Not Found', async () => {
     await request(app).get('/nonexistent-route').expect(404)
-  })
-})
-
-describe('GET /legacy-predictor-timeline', () => {
-  it('should render index page', () => {
-    auditService.logPageView.mockResolvedValue(null)
-
-    return request(app)
-      .get('/legacy-predictor-timeline')
-      .expect('Content-Type', /html/)
-      .expect(200)
-      .expect(res => {
-        expect(res.text).toContain('<title>Legacy predictor timeline</title>')
-      })
-  })
-})
-
-describe('GET /legacy-predictor-timeline-item', () => {
-  it('should render index page', () => {
-    auditService.logPageView.mockResolvedValue(null)
-
-    return request(app)
-      .get('/legacy-predictor-timeline-item')
-      .expect('Content-Type', /html/)
-      .expect(200)
-      .expect(res => {
-        expect(res.text).toContain('<title>Legacy predictor timeline item</title>')
-      })
   })
 })
