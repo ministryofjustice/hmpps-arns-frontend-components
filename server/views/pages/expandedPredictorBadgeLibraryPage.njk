@@ -15,7 +15,7 @@
       text: "boolean"
     },
     {
-      html: 'Override default configuration to always show/hide a score for a predictor (not recommended)'
+      html: 'Override default configuration to always show/hide a score for a predictor (not recommended).'
     }
   ],
   [
@@ -26,7 +26,7 @@
       text: "boolean"
     },
     {
-      html: 'Default true. If set to false, the component will stretch to the width of the container'
+      html: 'Default true. If set to false, the component will stretch to the width of the container.'
     }
   ],
   [
@@ -50,7 +50,7 @@
 
   <div id="predictor-badge-wrapper" class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-      <p>The expanded predictor badge lets users view the band, score and type in an expanded badge format. The badge is from the latest completed assessment.</p>
+      <p>The expanded predictor badge lets users view the band, score and type in an expanded badge format. The data is from the latest completed assessment.</p>
       {% set defaultExampleNjks %}
         {% raw %}
           {% from "arns/components/expanded-predictor-badge/macro.njk" import expandedPredictorBadge %}
@@ -119,7 +119,7 @@
       {{ example({data: {riskData: riskData, riskDataNotApplicable: riskDataNotApplicable}, exampleNjks: ogrs4NoFallbackExampleNjks, exampleId: 'ogrs4-no-fallback'}) }}
 
       <h2>Fallback to legacy (OGRS3-gen) badges for a v1 assessment</h2>
-      <p>If you need either the current (OGRS4-gen) or the equivalent OGRS3 badge depending on the version of the latest assessment, use the legacyFallback option</p>
+      <p>If you need either the current (OGRS4-gen) or the equivalent OGRS3 badge depending on the version of the latest assessment, use the legacyFallback option.</p>
       {% set ogrs4FallbackNjks %}
         {% raw %}
           {% from "arns/components/expanded-predictor-badge/macro.njk" import expandedPredictorBadge %}
@@ -270,7 +270,7 @@
       {{ example({data: {riskData: riskDataLegacy}, exampleNjks: ogrs3ExampleNjks, exampleId: 'ogrs3'}) }}
 
       <h2>Dynamic width</h2>
-      <p>Set the fixedWidth flag as false to make the badge expand to fit the container</p>
+      <p>Set the fixedWidth flag as false to make the badge expand to fit the container.</p>
       {% set dynamicWidthExampleNjks %}
         {% raw %}
           {% from "arns/components/expanded-predictor-badge/macro.njk" import expandedPredictorBadge %}

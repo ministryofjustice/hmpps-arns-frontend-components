@@ -16,7 +16,7 @@
       text: "boolean"
     },
     {
-      html: 'Override default configuration to always show/hide a score for a predictor (not recommended)'
+      html: 'Override default configuration to always show/hide a score for a predictor (not recommended).'
     }
   ],
   [
@@ -40,7 +40,7 @@
 
   <div id="predictor-badge-wrapper" class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-      <p>The predictor badge component lets users view the band, score, and type in a badge format. The badge is from the latest completed assessment.</p>
+      <p>The predictor badge component lets users view the band, score, and type in a badge format. The data is from the latest completed assessment.</p>
       {% set defaultExampleNjks %}
         {% raw %}
           {% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}
@@ -135,7 +135,7 @@
       {{ example({data: {riskData: riskData, riskDataNotApplicable: riskDataNotApplicable}, exampleNjks: ogrs4NoFallbackExampleNjks, exampleId: 'ogrs4-no-fallback'}) }}
 
       <h2>Fallback to legacy (OGRS3-gen) badges for a v1 assessment</h2>
-      <p>If you need either the current (OGRS4-gen) or the equivalent OGRS3 badge depending on the version of the latest assessment, use the legacyFallback option</p>
+      <p>If you need either the current (OGRS4-gen) or the equivalent OGRS3 badge depending on the version of the latest assessment, use the legacyFallback option.</p>
       {% set ogrs4FallbackExampleNjks %}
         {% raw %}
           {% from "arns/components/predictor-badge/macro.njk" import predictorBadge %}

@@ -51,7 +51,7 @@ export const baseMacroOptions = [
       text: 'object',
     },
     {
-      html: '<strong>Required.</strong> Data from ARNS API - use service from library to obtain this (see <a href="/new">Introduction</a> for more information)',
+      html: '<strong>Required.</strong> Data from ARNS API - use service from library to obtain this (see <a href="/new">Introduction</a> for more information).',
     },
   ],
   [

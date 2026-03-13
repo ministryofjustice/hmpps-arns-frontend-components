@@ -148,8 +148,8 @@
       {% endset %}
       {{ example({data: {riskData: riskData}, exampleNjks: csrpExampleNjks, exampleId: 'csrp'}) }}
 
-      <h2>Fallback to legacy (OGRS3-gen) badges for a v1 assessment</h2>
-      <p>If you need either the current (OGRS4-gen) or the equivalent OGRS3 badge depending on the version of the latest assessment, use the legacyFallback option. Note that there is no fallback for Serious violent reoffending predictor and OGP has been deprecated so should be explicitly rendered if required.</p>
+      <h2>Fallback to legacy (OGRS3-gen) scales for a v1 assessment</h2>
+      <p>If you need either the current (OGRS4-gen) or the equivalent OGRS3 scale depending on the version of the latest assessment, use the legacyFallback option. Note that there is no fallback for Serious violent reoffending predictor, and OGP has been deprecated so should be explicitly rendered if required.</p>
       {% set arpFallbackExampleNjks %}
         {% raw %}
           {% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
@@ -166,7 +166,7 @@
       {{ example({data: {riskData: riskDataLegacy}, exampleNjks: arpFallbackExampleNjks, exampleId: 'arp-fallback'}) }}
 
       <h2>Show legacy (OGRS3-gen) scale for a v1 assessment</h2>
-      <p>Display the legacy (OGRS3-gen) scale for the latest assessment. Note that if the assessment is not legacy (v2) or there's no data for this predictor then the badges will not render. If this is not the desired behaviour you may need to add additional validation in your code.</p>
+      <p>Display the legacy (OGRS3-gen) scale for the latest assessment. Note that if the assessment is not legacy (v2) or there's no data for this predictor then the scales will not render. If this is not the desired behaviour you may need to add additional validation in your code.</p>
 
       <h3>OGRS3</h3>
       {% set ogrs3ExampleNjks %}
