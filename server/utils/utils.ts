@@ -41,3 +41,46 @@ export const outdent = (str: string) => {
 
   return null
 }
+
+export const baseMacroOptions = [
+  [
+    {
+      text: 'data',
+    },
+    {
+      text: 'object',
+    },
+    {
+      html: '<strong>Required.</strong> Data from ARNS API - use service from library to obtain this (see <a href="/new">Introduction</a> for more information).',
+    },
+  ],
+  [
+    {
+      text: 'predictor',
+    },
+    {
+      text: 'string',
+    },
+    {
+      html: `<strong>Required.</strong> Predictor to render. One of
+        <p class = "govuk-!-margin-top-4" > <strong>Legacy(OGRS3 - gen) predictors</strong></p>
+        <ul>
+          <li><strong>ogrs3</strong> - Offender Group Reconviction Scale v3 (OGRS3)</li>
+          <li><strong>ovp</strong> - OASys Violence Predictor (OVP)</li>
+          <li><strong>ogp</strong> - OASys General Predictor (OGP)</li>
+          <li><strong>rsr</strong> - Risk of Serious Reicidivism (RSR)</li>
+          <li><strong>ospdc</strong> - OASys Sexual Predictor – Direct Contact (OSP-DC)</li>
+          <li><strong>ospiic</strong> - OASys Sexual Predictor – Images and Indirect Contact (OSP-IIC)</li>
+        </ul>
+        <p><strong>Current (OGRS4-gen) predictors</strong></p>
+        <ul>
+          <li><strong>allReoffendingPredictor</strong> - All reoffending predictor</li>
+          <li><strong>violentReoffendingPredictor</strong> - Violent reoffending predictor</li>
+          <li><strong>seriousViolentReoffendingPredictor</strong> - Serious violent reoffending predictor</li>
+          <li><strong>directContactSexualReoffendingPredictor</strong> - Direct contact - Sexual reoffending predictor</li>
+          <li><strong>indirectImageContactSexualReoffendingPredictor</strong> - Indirect image contact - Sexual reoffending predictor</li>
+          <li><strong>combinedSeriousReoffendingPredictor</strong> - Combined serious reoffending predictor</li>
+        </ul>`,
+    },
+  ],
+]
