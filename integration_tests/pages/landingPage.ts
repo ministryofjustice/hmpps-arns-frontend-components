@@ -46,8 +46,6 @@ export default class LandingPage {
     private expandedPredictorBadgeHeader: Locator = page.getByRole('heading', { name: 'Expanded predictor badge' }),
     private predictorScaleLink: Locator = page.getByRole('link', { name: 'Predictor scale' }),
     private predictorScaleHeader: Locator = page.getByRole('heading', { name: 'Predictor scale' }),
-    private predictorScoresLink: Locator = page.getByRole('link', { name: 'Predictor scores' }),
-    private predictorScoresHeader: Locator = page.getByRole('heading', { name: 'Predictor scores' }),
     private predictorTimelineLink: Locator = page.getByRole('link', { name: 'Predictor timeline', exact: true }),
     private predictorTimelineHeader: Locator = page.getByRole('heading', { name: 'Predictor timeline' }),
     private predictorTimelineOpenButton: Locator = page.getByRole('link', { name: 'Open all' }),
@@ -179,14 +177,6 @@ export default class LandingPage {
 
   async checkPredictorScaleHeader() {
     await expect(this.predictorScaleHeader).toBeVisible()
-  }
-
-  async clickPredictorScoresLink() {
-    await this.predictorScoresLink.click()
-  }
-
-  async checkPredictorScoresHeader() {
-    await expect(this.predictorScoresHeader).toBeVisible()
   }
 
   async clickPredictorTimelineLink() {

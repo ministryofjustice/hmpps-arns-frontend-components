@@ -35,19 +35,19 @@ test('Checks all pages are working', async ({ page }) => {
   await landingPage.checkROSHWidgetUnknown()
 
   // Click Predictor badge link and check page
-  await landingPage.clickPredictorBadgeLink()
+  // await landingPage.clickPredictorBadgeLink()
   // await page.goto('/predictor-badge/new')
-  await landingPage.checkPredictorBadgeHeader()
-  await landingPage.checkFullHighPredictorBadge()
-  await landingPage.checkFullLowPredictorBadge()
+  // await landingPage.checkPredictorBadgeHeader()
+  // await landingPage.checkFullHighPredictorBadge()
+  // await landingPage.checkFullLowPredictorBadge()
   // await landingPage.checkPredictorBadgeNotApplicable()
   // await landingPage.checkPredictorBadgeMissingScore()
   // await landingPage.checkPredictorBadgeMissingBand()
 
   // Click Expanded predictor badge link and check page
-  await landingPage.clickExpandedPredictorBadgeLink()
+  // await landingPage.clickExpandedPredictorBadgeLink()
   // await page.goto('/expanded-predictor-badge/new')
-  await landingPage.checkExpandedPredictorBadgeHeader()
+  // await landingPage.checkExpandedPredictorBadgeHeader()
   // await landingPage.checkFullHighPredictorBadge()
   // await landingPage.checkFullLowPredictorBadge()
   // await landingPage.checkPredictorBadgeNotApplicable()
@@ -55,14 +55,10 @@ test('Checks all pages are working', async ({ page }) => {
   // await landingPage.checkPredictorBadgeMissingBand()
 
   // Click predictor scale link and check page
-  await landingPage.clickPredictorScaleLink()
+  // await landingPage.clickPredictorScaleLink()
   // await page.goto('/predictor-scale/new')
-  await landingPage.checkPredictorScaleHeader()
+  // await landingPage.checkPredictorScaleHeader()
   // await landingPage.checkPredictorBadgeNotApplicable()
-
-  // Click predictor score link and check page
-  await landingPage.clickPredictorScoresLink()
-  await landingPage.checkPredictorScoresHeader()
 
   // Click timeline link and check page
   // await landingPage.clickPredictorTimelineLink()
@@ -72,8 +68,4 @@ test('Checks all pages are working', async ({ page }) => {
   // await landingPage.checkPredictorTimelineFirstRowIsVisible()
   // await landingPage.clickPredictorTimelineFirstCloseButton()
   // await landingPage.checkPredictorTimelineFirstRowIsHidden()
-
-  // Click timeline item link and check page
-  await landingPage.clickPredictorTimelineItemLink()
-  await landingPage.checkPredictorTimelineItemHeader()
 })

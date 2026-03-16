@@ -9,12 +9,130 @@
     {{ pageTitle }}
   </h1>
   <p>
-    The ARNS frontend components service documents design elements to be used in downstream systems along the Gov.UK and MOJ design systems. This should be used in conjunction with the following guide in Confluence - <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/5980553390/Visualising+risk+for+the+updated+risk+predictor+tools">Visualising risk for the updated risk predictor tools</a>
+    The ARNS frontend components service documents design elements to be used in downstream systems along the Gov.UK and MOJ design systems.
+    This should be used in conjunction with the following guide in Confluence -
+    <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/5980553390/Visualising+risk+for+the+updated+risk+predictor+tools">Visualising risk for the updated risk predictor tools</a>.
   </p>
 
-  <h2 class="govuk-heading-l">Using components</h2>
+  <h2 class="govuk-heading-l">First Steps</h2>
+
+  <h3 class="govuk-heading-m">1. Install the library</h3>
   <p>
-    Select a component for details on how to include in your service and example code.
+    Install the package containing the components library using command:
   </p>
+  <pre><code class="intro-code">npm i @ministryofjustice/hmpps-arns-frontend-components-lib</code></pre>
+  <p>
+    This will result in the following being added to the <code class="intro-name">package.json</code> as a runtime dependency:
+  </p>
+  <pre><code class="intro-code">@ministryofjustice/hmpps-arns-frontend-components-lib": "x.y.z",</code></pre>
+
+  <h3 class="govuk-heading-m">2. Configure Nunjucks templates and setup function</h3>
+  <p>
+    To use the Nunjucks (<code class="intro-name">.njk</code>) templates from the library in your project, update <code class="intro-name">server/utils/nunjucksSetup.ts</code>.
+  </p>
+  <p>
+    Add the following path to the list of template directories when initialising the Nunjucks environment:
+  </p>
+  <pre><code class="intro-code">node_modules/@ministryofjustice/hmpps-arns-frontend-components-lib/dist/</code></pre>
+  <p>
+    This path should be included in the configuration for:
+  </p>
+  <pre><code class="intro-code-block">const njkEnv = nunjucks.configure(...)</code></pre>
+  <p>
+    Finally, call the setup function to register the library’s globals and filters with the Nunjucks environment:
+  </p>
+  <pre><code class="intro-code-block">arnsNunjucksSetup(njkEnv)</code></pre>
+
+  <h3 class="govuk-heading-m">3. Import the SCSS</h3>
+  <p>
+    To include the library styles in your project, add the following import to your global stylesheet (usually <code class="intro-name">index.scss</code>):
+  </p>
+  <pre><code class="intro-code">@import "@ministryofjustice/hmpps-arns-frontend-components-lib/dist/all";</code></pre>
+
+  <h3 id="js-import" class="govuk-heading-m">4. Import and initialise the JavaScript</h3>
+  <p>
+    Add the following to your global JavaScript file (typically <code class="intro-name">index.js</code>) to import
+    and initialise the JavaScript required by the library components:
+  </p>
+  <pre><code class="intro-code">import * as arnsFrontend from "@ministryofjustice/hmpps-arns-frontend-components-lib/dist/js/all"</code></pre>
+  <pre><code class="intro-code">arnsFrontend.initAll()</code></pre>
+
+  <h2 class="govuk-heading-l">Using components</h2>
+
+  <h3 class="govuk-heading-m">1. Configure the data Layer</h3>
+  <p>
+    Create and expose the <code class="intro-name">arnsComponents</code> instance within <code class="intro-name">dataAccess</code>.
+  </p>
+  <pre style="padding-top: 15px"><code class="intro-code-block">import { ArnsComponents } from '@ministryofjustice/hmpps-arns-frontend-components-lib'
+
+  export const dataAccess = () => {
+  return {
+    ...
+    arnsComponents: new ArnsComponents(authClient, config.apis.arnsApi, logger),
+    ...
+  }
+}</code></pre>
+
+  <p>
+    Ensure <code class="intro-name">ArnsComponents</code> is exported so it can be used by the service layer.
+  </p>
+  <pre style="padding-top: 15px"><code class="intro-code-block">export { ArnsComponents }</code></pre>
+
+  <h3 class="govuk-heading-m">2. Add the service</h3>
+  <p>
+    Add <code class="intro-name">arnsComponents</code> to your services and return it from the <code class="intro-name">services</code> function.
+  </p>
+  <pre><code class="intro-code-block">import { dataAccess } from '../data'
+
+export const services = () => {
+  const { ..., arnsComponents } = dataAccess()
+
+  return {
+    ...,
+    arnsComponents,
+    ...
+  }
+}
+
+export type Services = ReturnType&lt;typeof services></code></pre>
+
+  <h3 class="govuk-heading-m">3. Configure the ARNS API</h3>
+  <p>
+    Add the ARNS API configuration in <code class="intro-name">config.ts</code>.
+  </p>
+  <pre><code class="intro-code-block">apis: {
+  arnsApi: { ... },
+},</code></pre>
+
+  <h3 class="govuk-heading-m">4. Call the component service in a route</h3>
+  <p>
+    Call the <code class="intro-name">arnsComponent</code> service once per page to retrieve data from the ARNS API.
+    The service transforms the response into the format required by the library components.
+  </p>
+  <pre><code class="intro-code-block">router.get('/some-route', async (req, res) => {
+    const riskData = await arnsComponents.getRiskData(
+      authClient, 'crn', 'X123456')
+
+    res.render('pages/some-page', {
+      ...,
+      riskData,
+      ...
+    })
+})</code></pre>
+
+  <h3 class="govuk-heading-m">5. Learn more about individual components</h3>
+  <p>
+    See the documentation for each component for more details on how to use it.
+  </p>
+
+  <h2 class="govuk-heading-l">Filters</h2>
+  <h3 class="govuk-heading-m">containsCompletedAssessment</h3>
+  <p>
+    The <code class="intro-name">containsCompletedAssessment</code> filter determines if the <code class="intro-name">RiskData</code> object from the
+    ARNS API response contains a completed assessment record. This can be used in templates to conditionally render content when a completed assessment exists.
+  </p>
+  <pre><code class="intro-code-block">{% raw %}{% if riskData | containsCompletedAssessment %}
+  {# You have a completed assessment available. #}
+{% endif %}{% endraw %}</code></pre>
 
 {% endblock %}
