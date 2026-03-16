@@ -48,6 +48,13 @@
   </p>
     <pre><code class="intro-code">@import "@ministryofjustice/hmpps-arns-frontend-components-lib/dist/all";</code></pre>
 
+  <h3 id="js-import" class="govuk-heading-m">Add the JS</h3>
+  <p>
+    Add the following to your global js usually in <code class="intro-name">index.js</code>
+  </p>
+  <pre><code class="intro-code">import * as arnsFrontend from "@ministryofjustice/hmpps-arns-frontend-components-lib/dist/js/all"</code></pre>
+  <pre><code class="intro-code">arnsFrontend.initAll()</code></pre>
+
   <h2 class="govuk-heading-l">Using components</h2>
 
   <h3 class="govuk-heading-m">Data Layer</h3>

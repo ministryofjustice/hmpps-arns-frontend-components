@@ -1,0 +1,77 @@
+{% extends "layouts/side-nav-layout.njk" %}
+{% from "arns/components/predictor-timeline/macro.njk" import predictorTimeline %}
+{% from "partials/example.njk" import example %}
+{% from "partials/nunjucksMacroOptions.njk" import nunjucksMacroOptions %}
+{% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
+{% from "govuk/components/tag/macro.njk" import govukTag %}
+
+{% set pageTitle = "Predictor timeline" %}
+{% set mainClasses = "govuk-body" %}
+
+{% set macroOptions = [
+  [
+    {
+      text: "data"
+    },
+    {
+      text: "object"
+    },
+    {
+      html: '<strong>Required.</strong> Data from ARNS API - use service from library to obtain this (see <a href="/new">Introduction</a> for more information)'
+    }
+  ],
+  [
+    {
+      text: "ogrs4ReleaseDate"
+    },
+    {
+      text: "string"
+    },
+    {
+      html: 'Overrides the default OGRS4 release date of "23 February 2026 at 09:00" used for the "All assessments started after this date use updated risk predictor tools" timeline warning - must be format "DD MMMM YYYY at HH:mm" e.g "01 March 2026 at 09:00" (not recommended)'
+    }
+  ]
+] %}
+
+{% set defaultExampleNjks %}
+  {% raw %}
+    {% from "arns/components/predictor-timeline/macro.njk" import predictorTimeline %}
+
+    {{ predictorTimeline({ data: riskData }) }}
+  {% endraw %}
+{% endset %}
+
+
+{% set jsWarning %}
+  <p><b>This component requires a javascript import for full functionality. see
+    <a href="/#js-import">home page</a>
+    for details.
+  </b></p>
+{% endset %}
+
+{% block sideNavContent %}
+  <h1 class="govuk-heading-xl">
+    {{ pageTitle }}
+    <span>{{ govukTag({text: "BETA"}) }}</span>
+  </h1>
+
+  <div id="predictor-scores-history" class="govuk-grid-row govuk-!-margin-top-6">
+    <div class="govuk-grid-column-full">
+      <p>The predictor timeline component lets users view the history of a subjects assessments.</p>
+      {{ govukWarningText({
+        html: jsWarning,
+        iconFallbackText: "Warning"
+      }) }}
+      {{ example({data: {riskData: riskData}, exampleNjks: defaultExampleNjks, exampleId: 'default'}) }}
+      {{ nunjucksMacroOptions({macroOptions: macroOptions}) }}
+      <h2>How to use</h2>
+      <p>Refer to the
+        <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4474044754/Risk+scores+timeline">Risk scores
+          timeline</a>
+        Confluence documentation for usage details.
+      </p>
+    </div>
+  </div>
+
+  <script type="module" src="{{ '/assets/js/predictor-timeline.js' | assetMap }}"></script>
+{% endblock %}

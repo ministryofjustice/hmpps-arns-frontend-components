@@ -7419,6 +7419,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the new intro 
   </p>
     <pre><code class="intro-code">@import "@ministryofjustice/hmpps-arns-frontend-components-lib/dist/all";</code></pre>
 
+  <h3 id="js-import" class="govuk-heading-m">Add the JS</h3>
+  <p>
+    Add the following to your global js usually in <code class="intro-name">index.js</code>
+  </p>
+  <pre><code class="intro-code">import * as arnsFrontend from "@ministryofjustice/hmpps-arns-frontend-components-lib/dist/js/all"</code></pre>
+  <pre><code class="intro-code">arnsFrontend.initAll()</code></pre>
+
   <h2 class="govuk-heading-l">Using components</h2>
 
   <h3 class="govuk-heading-m">Data Layer</h3>
@@ -19049,1044 +19056,881 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
   <h1 class="govuk-heading-xl">
     Predictor timeline
+    <span><strong class="govuk-tag">
+  BETA
+</strong>
+</span>
   </h1>
+
   <div id="predictor-scores-history" class="govuk-grid-row govuk-!-margin-top-6">
     <div class="govuk-grid-column-full">
+      <p>The predictor timeline component lets users view the history of a subjects assessments.</p>
+      <div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-visually-hidden">Warning</span>
+    
+  <p><b>This component requires a javascript import for full functionality. see
+    <a href="/#js-import">home page</a>
+    for details.
+  </b></p>
+
+  </strong>
+</div>
+
+      
+
+  
+
+  
+
+  
+
+  
+
+  <div class="govuk-tabs"
+    
+        
+      
+    
+   id="options-default-example-tabs" data-module="govuk-tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
+
+  <ul class="govuk-tabs__list">
+    
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+      <a class="govuk-tabs__tab" href="#default-example-rendered">
+        Rendered
+      </a>
+    </li>
+      
+    
+          <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#default-example-nunjucks">
+        Nunjucks
+      </a>
+    </li>
+      
+    
+          <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#default-example-data">
+        Data
+      </a>
+    </li>
+      
+    
+  </ul>
+  
+      <div class="govuk-tabs__panel" id="default-example-rendered">
+  
+    <div class="predictor-timeline__heading" data-test-id="timeline-heading">
+      <span class='govuk-heading-m'>Scores history</span>
+      <button id="predictor-timeline__toggle-all" class="predictor-timeline-link-btn" aria-label="Open all score history"
+              aria-controls="predictor-section-01-january-2025-at-15-21 predictor-section-02-january-2024-at-18-23" aria-expanded="false">Open all</button>
+    </div>
+    
+    <div class="predictor-timeline predictor" data-test-id="predictor-timeline" data-module="predictor-timeline">
+      
+    
+        
+    
+        
+          
+            
+      <div class="predictor-timeline__item" data-test-id="timeline-item">
+        <div class="predictor-timeline__header">
+          <p class="predictor-timeline__byline">23 February 2026 at 09:00</p>
+        </div>
+        <div class="predictor-timeline__description">
+          <div class="govuk-warning-text predictor-timeline__warning">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text" data-test-id="warning-text">
+                    <span
+                            class="govuk-visually-hidden">Warning the risk predictor tools have been updated after this date</span>
+              All assessments started after this date use updated risk predictor tools
+            </strong>
+          </div>
+          <details class="govuk-details predictor-timeline__details">
+            <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    How the risk predictor tools have changed
+                  </span>
+            </summary>
+            <div class="govuk-details__text">
+              <h3>All reoffending</h3>
+              <b>Old version:</b> Offender Group Reconviction Scale (OGRS)<br>
+              <b>Updated version:</b> All Reoffending Predictor<br>
+              <br>
+              The All Reoffending Predictor now has both a static and dynamic version.
+              <br><br>
+              <h3>Violent reoffending</h3>
+              <b>Old version:</b> OASys Violent Predictor (OVP)<br>
+              <b>Updated version:</b> Violent Reoffending Predictor<br>
+              <br>
+              The Violent Reoffending Predictor now has both a static and dynamic version.
+              <br><br>
+              <h3>Sexual reoffending</h3>
+              <h4>Direct contact</h4>
+              <b>Old version:</b> OASys Sexual Predictor — Direct Contact (OSP-DC)<br>
+              <b>Updated version:</b> Direct Contact — Sexual Reoffending Predictor<br>
+              <br>
+              The Direct Contact — Sexual Reoffending Predictor only has a static score.
+              <br>
+              <h4>Indirect contact</h4>
+              <b>Old version:</b> OASys Sexual Predictor — Images and indirect contact with children (OSP-IIC)<br>
+              <b>Updated version:</b> Images and Indirect Contact — Sexual Reoffending Predictor<br>
+              <br>
+              The Images and Indirect Contact — Sexual Reoffending Predictor only has a static score.
+              <br><br>
+              <h3>Serious non-sexual violent reoffending</h3>
+              <b>Old version:</b> Previously part of RSR but not displayed<br>
+              <b>Updated version:</b> Serious Violent Reoffending Predictor<br>
+              <br>
+              The Serious Violent Reoffending Predictor has both static and dynamic versions.
+              <br><br>
+              <h3>Serious reoffending</h3>
+              This predictor is a combination of the Direct Contact — Sexual Reoffending Predictor, Images and
+              Indirect Contact — Sexual Reoffending Predictor and Serious Violent Reoffending Predictor scores.
+              <br>
+              <b>Old version:</b> Risk of Serious Recidivism (RSR)<br>
+              <b>Updated version:</b> Combined Serious Reoffending Predictor<br>
+              <br>
+              The Combined Serious Reoffending Predictor has both static and dynamic versions.
+              <br><br>
+              <h3>Which version will be displayed</h3>
+              All tools only show a dynamic score if both versions are available.
+              <br>
+            </div>
+          </details>
+        </div>
+      </div>
+    
+            
+          
+        
+    
+        <div class="predictor-timeline__item" data-test-id="timeline-item">
+          <div class="predictor-timeline__header" data-test-id="timeline-item-header">
+            <p class="predictor-timeline__byline" data-test-id="timeline-byline">01 January 2025 at 15:21</p>
+          </div>
+          <div class="predictor-timeline__description" data-test-id="timeline-description">
+            <div id="predictor-section-01-january-2025-at-15-21" class="predictor-timeline-section">
+              <ul class="govuk-list">
+                
+                
+                  
+                
+                  
+                
+                  
+                    
+                      <li>
+      
+    
+        
+    
+        
+    
+          
+            
+          
+    
+          
+          
+    
+          
+            
+          
+    
+          <div class="predictor-timeline-item--low" data-expanded-predictor-badge="All Reoffending Predictor LOW">
+            <span class="predictor-timeline-item__type" data-test-id="name">All Reoffending Predictor</span>
+    
+            <div class="predictor-timeline-item__stats">
+              <span class="predictor-timeline-item__level" data-test-id="band">LOW</span>
+    
+              
+                <span class="predictor-timeline-item__score" data-test-id="score">1.23%</span>
+              
+    
+              
+                <span class="predictor-timeline-item__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+              
+    
+            </div>
+          </div>
+        
+      
+    </li>
+                    
+                  
+                
+                  
+                    
+                      <li>
+      
+    
+        
+    
+        
+    
+          
+            
+          
+    
+          
+          
+    
+          
+            
+          
+    
+          <div class="predictor-timeline-item--low" data-expanded-predictor-badge="Violent Reoffending Predictor LOW">
+            <span class="predictor-timeline-item__type" data-test-id="name">Violent Reoffending Predictor</span>
+    
+            <div class="predictor-timeline-item__stats">
+              <span class="predictor-timeline-item__level" data-test-id="band">LOW</span>
+    
+              
+                <span class="predictor-timeline-item__score" data-test-id="score">1.23%</span>
+              
+    
+              
+                <span class="predictor-timeline-item__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+              
+    
+            </div>
+          </div>
+        
+      
+    </li>
+                    
+                  
+                
+                  
+                    
+                      <li>
+      
+    
+        
+    
+        
+    
+          
+            
+          
+    
+          
+          
+    
+          
+            
+          
+    
+          <div class="predictor-timeline-item--medium" data-expanded-predictor-badge="Serious Violent Reoffending Predictor MEDIUM">
+            <span class="predictor-timeline-item__type" data-test-id="name">Serious Violent Reoffending Predictor</span>
+    
+            <div class="predictor-timeline-item__stats">
+              <span class="predictor-timeline-item__level" data-test-id="band">MEDIUM</span>
+    
+              
+                <span class="predictor-timeline-item__score" data-test-id="score">1.23%</span>
+              
+    
+              
+                <span class="predictor-timeline-item__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+              
+    
+            </div>
+          </div>
+        
+      
+    </li>
+                    
+                  
+                
+                  
+                    
+                      <li>
+      
+    
+        
+    
+        
+    
+          
+            
+          
+    
+          
+          
+    
+          
+            
+          
+    
+          <div class="predictor-timeline-item--very-high" data-expanded-predictor-badge="Direct Contact - Sexual Reoffending Predictor VERY HIGH">
+            <span class="predictor-timeline-item__type" data-test-id="name">Direct Contact - Sexual Reoffending Predictor</span>
+    
+            <div class="predictor-timeline-item__stats">
+              <span class="predictor-timeline-item__level" data-test-id="band">VERY HIGH</span>
+    
+              
+                <span class="predictor-timeline-item__score" data-test-id="score">2.81%</span>
+              
+    
+              
+    
+            </div>
+          </div>
+        
+      
+    </li>
+                    
+                  
+                
+                  
+                    
+                      <li>
+      
+    
+        
+    
+        
+    
+          
+            
+          
+    
+          
+          
+    
+          
+            
+          
+    
+          <div class="predictor-timeline-item--high" data-expanded-predictor-badge="Images and Indirect Contact – Sexual Reoffending Predictor HIGH">
+            <span class="predictor-timeline-item__type" data-test-id="name">Images and Indirect Contact – Sexual Reoffending Predictor</span>
+    
+            <div class="predictor-timeline-item__stats">
+              <span class="predictor-timeline-item__level" data-test-id="band">HIGH</span>
+    
+              
+                <span class="predictor-timeline-item__score" data-test-id="score">1.07%</span>
+              
+    
+              
+    
+            </div>
+          </div>
+        
+      
+    </li>
+                    
+                  
+                
+                  
+                    
+                      <li>
+      
+    
+        
+    
+        
+    
+          
+            
+          
+    
+          
+          
+    
+          
+            
+          
+    
+          <div class="predictor-timeline-item--high" data-expanded-predictor-badge="Combined Serious Reoffending Predictor HIGH">
+            <span class="predictor-timeline-item__type" data-test-id="name">Combined Serious Reoffending Predictor</span>
+    
+            <div class="predictor-timeline-item__stats">
+              <span class="predictor-timeline-item__level" data-test-id="band">HIGH</span>
+    
+              
+                <span class="predictor-timeline-item__score" data-test-id="score">1.23%</span>
+              
+    
+              
+                <span class="predictor-timeline-item__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+              
+    
+            </div>
+          </div>
+        
+      
+    </li>
+                    
+                  
+                
+              </ul>
+            </div>
+            <button class="predictor-timeline-link-btn predictor-timeline__toggle-section" aria-label="View scores for 01 January 2025 at 15:21"
+                    aria-controls="predictor-section-01-january-2025-at-15-21" aria-expanded="false">Open</button>
+          </div>
+        </div>
+      
+    
+        
+    
+        
+    
+        <div class="predictor-timeline__item" data-test-id="timeline-item">
+          <div class="predictor-timeline__header" data-test-id="timeline-item-header">
+            <p class="predictor-timeline__byline" data-test-id="timeline-byline">02 January 2024 at 18:23</p>
+          </div>
+          <div class="predictor-timeline__description" data-test-id="timeline-description">
+            <div id="predictor-section-02-january-2024-at-18-23" class="predictor-timeline-section">
+              <ul class="govuk-list">
+                
+                
+                  
+                
+                  
+                
+                  
+                    
+                      <li>
+      
+    
+        
+    
+        
+    
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="legacy-predictor-timeline-item--low" data-predictor-badge="OGRS LOW">
+            <span class="legacy-predictor-timeline-item__type_and_level" data-test-id="nameAndBand">OGRS <strong>LOW</strong></span>
+    
+            
+              <span class="legacy-predictor-timeline-item__score" data-test-id="score">5%</span>
+            
+    
+            
+    
+          </div>
+    
+        
+      
+    </li>
+                    
+                  
+                
+                  
+                    
+                      <li>
+      
+    
+        
+    
+        
+    
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="legacy-predictor-timeline-item--low" data-predictor-badge="OVP LOW">
+            <span class="legacy-predictor-timeline-item__type_and_level" data-test-id="nameAndBand">OVP <strong>LOW</strong></span>
+    
+            
+              <span class="legacy-predictor-timeline-item__score" data-test-id="score">7%</span>
+            
+    
+            
+    
+          </div>
+    
+        
+      
+    </li>
+                    
+                  
+                
+                  
+                    
+                      <li>
+      
+    
+        
+    
+        
+    
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="legacy-predictor-timeline-item--medium" data-predictor-badge="OGP MEDIUM">
+            <span class="legacy-predictor-timeline-item__type_and_level" data-test-id="nameAndBand">OGP <strong>MEDIUM</strong></span>
+    
+            
+              <span class="legacy-predictor-timeline-item__score" data-test-id="score">8%</span>
+            
+    
+            
+    
+          </div>
+    
+        
+      
+    </li>
+                    
+                  
+                
+                  
+                    
+                      <li>
+      
+    
+        
+    
+        
+    
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="legacy-predictor-timeline-item--very-high" data-predictor-badge="OSP-DC VERY HIGH">
+            <span class="legacy-predictor-timeline-item__type_and_level" data-test-id="nameAndBand">OSP-DC <strong>VERY HIGH</strong></span>
+    
+            
+              <span class="legacy-predictor-timeline-item__score" data-test-id="score">1.07%</span>
+            
+    
+            
+    
+          </div>
+    
+        
+      
+    </li>
+                    
+                  
+                
+                  
+                    
+                      <li>
+      
+    
+        
+    
+        
+    
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="legacy-predictor-timeline-item--high" data-predictor-badge="OSP-IIC HIGH">
+            <span class="legacy-predictor-timeline-item__type_and_level" data-test-id="nameAndBand">OSP-IIC <strong>HIGH</strong></span>
+    
+            
+              <span class="legacy-predictor-timeline-item__score" data-test-id="score">2.81%</span>
+            
+    
+            
+    
+          </div>
+    
+        
+      
+    </li>
+                    
+                  
+                
+                  
+                    
+                      <li>
+      
+    
+        
+    
+        
+    
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="legacy-predictor-timeline-item--high" data-predictor-badge="RSR HIGH">
+            <span class="legacy-predictor-timeline-item__type_and_level" data-test-id="nameAndBand">RSR <strong>HIGH</strong></span>
+    
+            
+              <span class="legacy-predictor-timeline-item__score" data-test-id="score">50.1234%</span>
+            
+    
+            
+              <span class="legacy-predictor-timeline-item__static_or_dynamic" data-test-id="staticOrDynamic">Dynamic</span>
+            
+    
+          </div>
+    
+        
+      
+    </li>
+                    
+                  
+                
+              </ul>
+            </div>
+            <button class="predictor-timeline-link-btn predictor-timeline__toggle-section" aria-label="View scores for 02 January 2024 at 18:23"
+                    aria-controls="predictor-section-02-january-2024-at-18-23" aria-expanded="false">Open</button>
+          </div>
+        </div>
+      
+    
+      
+    
+    </div>
+  
+  </div>
+    
+  
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="default-example-nunjucks">
+  
+    <p>See <a href="#options-details">Nunjucks macro options</a> for more details on how to customise component.</p>
+        <pre class="app-example__code"><code>{% from &quot;arns/components/predictor-timeline/macro.njk&quot; import predictorTimeline %}
+    
+    {{ predictorTimeline({ data: riskData }) }}</code></pre>
+  
+  </div>
+    
+  
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="default-example-data">
+  
+    <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
+        <pre class="app-example__code"><code>{
+      &quot;riskData&quot;: {
+        &quot;assessments&quot;: [
+          {
+            &quot;completedDateTime&quot;: &quot;01 January 2025 at 15:21&quot;,
+            &quot;outputVersion&quot;: &quot;2&quot;,
+            &quot;allReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;All Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;violentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;seriousViolentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Serious Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;directContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Direct Contact - Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;indirectImageContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Images and Indirect Contact – Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;combinedSeriousReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Combined Serious Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            }
+          },
+          {
+            &quot;outputVersion&quot;: &quot;1&quot;,
+            &quot;completedDateTime&quot;: &quot;02 January 2024 at 18:23&quot;,
+            &quot;ogrs3&quot;: {
+              &quot;name&quot;: &quot;OGRS&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 5,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ovp&quot;: {
+              &quot;name&quot;: &quot;OVP&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 7,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ogp&quot;: {
+              &quot;name&quot;: &quot;OGP&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 8,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospdc&quot;: {
+              &quot;name&quot;: &quot;OSP-DC&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospiic&quot;: {
+              &quot;name&quot;: &quot;OSP-IIC&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;rsr&quot;: {
+              &quot;name&quot;: &quot;RSR&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Dynamic&quot;,
+              &quot;score&quot;: 50.1234,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            }
+          }
+        ]
+      }
+    }</code></pre>
+  
+  </div>
+    
+  
+
+</div>
+
+
+
+      
+  
+  <details class="govuk-details"
+    
+        
+      
+    
+   id="options-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Nunjucks macro options
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    
+    <table class="govuk-table"
+    
+        
+      
+    
+   id="options-table">
+
+
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+    
+      <th scope="col" class="govuk-table__header">Name</th>
+    
+      <th scope="col" class="govuk-table__header">Type</th>
+    
+      <th scope="col" class="govuk-table__header">Description</th>
+    
+    </tr>
+  </thead>
+
+  <tbody class="govuk-table__body">
+
+  
+    <tr class="govuk-table__row">
+    
+      
+      
+      <th scope="row" class="govuk-table__header">data</th>
+      
+    
+      
+      
+      <td class="govuk-table__cell">object</td>
+      
+    
+      
+      
+      <td class="govuk-table__cell"><strong>Required.</strong> Data from ARNS API - use service from library to obtain this (see <a href="/new">Introduction</a> for more information)</td>
+      
+    
+    </tr>
+  
+
+  
+    <tr class="govuk-table__row">
+    
+      
+      
+      <th scope="row" class="govuk-table__header">ogrs4ReleaseDate</th>
+      
+    
+      
+      
+      <td class="govuk-table__cell">string</td>
+      
+    
+      
+      
+      <td class="govuk-table__cell">Overrides the default OGRS4 release date of "23 February 2026 at 09:00" used for the "All assessments started after this date use updated risk predictor tools" timeline warning - must be format "DD MMMM YYYY at HH:mm" e.g "01 March 2026 at 09:00" (not recommended)</td>
+      
+    
+    </tr>
+  
+
+  </tbody>
+</table>
+
+  
+  </div>
+</details>
+
+
       <h2>How to use</h2>
       <p>Refer to the
         <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4474044754/Risk+scores+timeline">Risk scores
           timeline</a>
         Confluence documentation for usage details.
       </p>
-      <h3>Code</h3>
-      <p>
-        The
-        <a
-          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/tree/main/server/views/partials/predictor-timeline">Predictor
-          timeline Nunjucks macro</a>
-        is available on GitHub.
-        <br>
-        The
-        <a
-          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/scss/partials/risk/_predictor-timeline.scss">Predictor
-          timeline SCSS</a>
-        is available on GitHub.
-        <br>
-        The
-        <a
-          href="https://github.com/ministryofjustice/hmpps-arns-frontend-components/blob/main/assets/js/predictor-timeline.js">Predictor
-          timeline javascript</a>
-        is available on GitHub.
-      </p>
-      <h3>Input data format</h3>
-      <p>
-        The predictor timeline accepts a list of assessments which must be sorted in descending date order (newest
-        assessment first), and each item in the list must include the following fields, which must follow the specified
-        format:
-      </p>
-      <ul>
-        <li>date (string - format 'DD MMMM YYYY at HH:mm' e.g '10 October 2021 at 09:00')</li>
-        <li>
-          scores
-          <ul>
-            <li>
-              Key: predictor name
-              <ul>
-                <li>
-                  OGRS4 generation:
-                  <ul>
-                    <li>allReoffendingPredictor</li>
-                    <li>violentReoffendingPredictor</li>
-                    <li>directContactSexualReoffendingPredictor</li>
-                    <li>indirectImageContactSexualReoffendingPredictor</li>
-                    <li>seriousViolentReoffendingPredictor</li>
-                    <li>combinedSeriousReoffendingPredictor</li>
-                  </ul>
-                </li>
-                <li>
-                  OGRS3 generation:
-                  <ul>
-                    <li>OGRS3</li>
-                    <li>OGP</li>
-                    <li>OVP</li>
-                    <li>OSPDC or OSPC</li>
-                    <li>OSPIIC or OSPI</li>
-                    <li>SNSV</li>
-                    <li>RSR</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              Value:
-              <ul>
-                <li>level (enum - LOW, MEDIUM, HIGH, VERY_HIGH)</li>
-                <li>score</li>
-                <li>staticOrDynamic (enum - STATIC, DYNAMIC)</li>
-                <li>
-                  type
-                  <ul>
-                    <li>
-                      OGRS4 generation predictor names (must be title case & acronyms <strong>not</strong> allowed):
-                      <ul>
-                        <li>All Reoffending Predictor</li>
-                        <li>Violent Reoffending Predictor</li>
-                        <li>Direct Contact – Sexual Reoffending Predictor</li>
-                        <li>Images and Indirect Contact – Sexual Reoffending Predictor</li>
-                        <li>Serious Violent Reoffending Predictor</li>
-                        <li>Combined Serious Reoffending Predictor</li>
-                      </ul>
-                    </li>
-                    <li>
-                      OGRS3 generation predictor names (only use acronyms):
-                      <ul>
-                        <li>OGRS3</li>
-                        <li>OGP</li>
-                        <li>OVP</li>
-                        <li>OSP-DC</li>
-                        <li>OSP-IIC</li>
-                        <li>SNSV</li>
-                        <li>RSR</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <strong>E.g.</strong>
-      <pre><code>{
-  historical: [
-    {
-      date: '23 Jul 2026 at 12:00',
-      scores: {
-        allReoffendingPredictor: {
-          level: 'LOW',
-          score: 11.34,
-          type: 'All Reoffending Predictor',
-          staticOrDynamic: 'STATIC',
-        },
-        violentReoffendingPredictor: {
-          level: 'MEDIUM',
-          score: 38.76,
-          type: 'Violent Reoffending Predictor',
-          staticOrDynamic: 'DYNAMIC',
-        },
-        directContactSexualReoffendingPredictor: {
-          level: 'MEDIUM',
-          type: 'Direct Contact – Sexual Reoffending Predictor',
-        },
-        indirectImageContactSexualReoffendingPredictor: {
-          level: 'HIGH',
-          type: 'Images and Indirect Contact – Sexual Reoffending Predictor',
-        },
-        seriousViolentReoffendingPredictor: {
-          level: 'HIGH',
-          score: 3.45,
-          type: 'Serious Violent Reoffending Predictor',
-          staticOrDynamic: 'DYNAMIC',
-        },
-        combinedSeriousReoffendingPredictor: {
-          level: 'VERY_HIGH',
-          score: 13.67,
-          type: 'Combined Serious Reoffending Predictor',
-          staticOrDynamic: 'DYNAMIC',
-        },
-      },
-    },
-    {
-      date: '14 May 2019 at 12:00',
-      scores: {
-        RSR: {
-          level: 'HIGH',
-          score: 10.3,
-          type: 'RSR',
-        },
-        OSPDC: {
-          level: 'MEDIUM',
-          type: 'OSP-DC',
-        },
-        OSPIIC: {
-          level: 'LOW',
-          type: 'OSP-IIC',
-        },
-      },
-    },
-    {
-      date: '12 September 2018 at 12:00',
-      scores: {
-        RSR: {
-          level: 'MEDIUM',
-          score: 5.34,
-          type: 'RSR',
-        },
-        OSPC: {
-          level: 'MEDIUM',
-          type: 'OSP-DC',
-        },
-        OSPI: {
-          level: 'LOW',
-          type: 'OSP-IIC',
-        },
-      },
-    },
-  ],
-}</code></pre>
-      <h3>Macro parameter</h3>
-      <ul>
-        <li>
-          ogrs4ReleaseDate (string)
-          <ul>
-            <li>Overrides the default OGRS4 release date of '23 February 2026 at 09:00' used for the 'All assessments
-              started after this date use updated risk predictor tools' timeline warning - must be format 'DD MMMM YYYY
-              at
-              HH:mm' e.g '01 March 2026 at 09:00'
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="govuk-grid-column-one-half">
-      <h2>Example</h2>
-      
-
-
-
-
-
-
-
-
-<div class="predictor-timeline__heading">
-  <span class='govuk-heading-m'>Scores history</span>
-  <button id="predictor-timeline__toggle-all" class="predictor-timeline-link-btn" aria-label="Open all score history"
-     aria-controls="predictor-section-23-july-2026-at-12-00 predictor-section-1-june-2026-at-12-00 predictor-section-14-may-2019-at-12-00 predictor-section-12-september-2018-at-12-00 predictor-section-5-january-2017-at-12-00" aria-expanded="false">Open all</button>
-</div>
-
-<div class="predictor-timeline predictor">
-  
-
-    
-
-    
-      
-    
-
-    <div class="predictor-timeline__item">
-      <div class="predictor-timeline__header">
-        <p class="predictor-timeline__byline">23 July 2026 at 12:00</p>
-      </div>
-      <div class="predictor-timeline__description">
-        <div id="predictor-section-23-july-2026-at-12-00" class="predictor-timeline-section">
-          <ul class="govuk-list">
-            
-              
-                <li>
-  
-
-    
-
-    
-
-      
-        
-      
-
-      
-      
-
-      
-        
-      
-
-      <div class="predictor-timeline-item--low">
-    <span
-      class="predictor-timeline-item__type">All Reoffending Predictor</span>
-
-        <div class="predictor-timeline-item__stats">
-          <span class="predictor-timeline-item__level">LOW</span>
-
-          
-            <span class="predictor-timeline-item__score">11.34%</span>
-          
-
-          
-            <span class="predictor-timeline-item__static_or_dynamic">Static</span>
-          
-
-        </div>
-      </div>
-    
-  
-</li>
-              
-            
-              
-                <li>
-  
-
-    
-
-    
-
-      
-        
-      
-
-      
-      
-        
-      
-
-      
-        
-      
-
-      <div class="predictor-timeline-item--medium">
-    <span
-      class="predictor-timeline-item__type">Violent Reoffending Predictor</span>
-
-        <div class="predictor-timeline-item__stats">
-          <span class="predictor-timeline-item__level">MEDIUM</span>
-
-          
-            <span class="predictor-timeline-item__score">38.76%</span>
-          
-
-          
-            <span class="predictor-timeline-item__static_or_dynamic predictor-timeline-item__wrapped_static_or_dynamic">Dynamic</span>
-          
-
-        </div>
-      </div>
-    
-  
-</li>
-              
-            
-              
-                <li>
-  
-
-    
-
-    
-
-      
-        
-      
-
-      
-      
-
-      
-        
-      
-
-      <div class="predictor-timeline-item--medium">
-    <span
-      class="predictor-timeline-item__type">Direct Contact – Sexual Reoffending Predictor</span>
-
-        <div class="predictor-timeline-item__stats">
-          <span class="predictor-timeline-item__level">MEDIUM</span>
-
-          
-
-          
-
-        </div>
-      </div>
-    
-  
-</li>
-              
-            
-              
-                <li>
-  
-
-    
-
-    
-
-      
-        
-      
-
-      
-      
-
-      
-        
-      
-
-      <div class="predictor-timeline-item--high">
-    <span
-      class="predictor-timeline-item__type">Images And Indirect Contact – Sexual Reoffending Predictor</span>
-
-        <div class="predictor-timeline-item__stats">
-          <span class="predictor-timeline-item__level">HIGH</span>
-
-          
-
-          
-
-        </div>
-      </div>
-    
-  
-</li>
-              
-            
-              
-                <li>
-  
-
-    
-
-    
-
-      
-        
-      
-
-      
-      
-
-      
-        
-      
-
-      <div class="predictor-timeline-item--high">
-    <span
-      class="predictor-timeline-item__type">Serious Violent Reoffending Predictor</span>
-
-        <div class="predictor-timeline-item__stats">
-          <span class="predictor-timeline-item__level">HIGH</span>
-
-          
-            <span class="predictor-timeline-item__score">3.45%</span>
-          
-
-          
-            <span class="predictor-timeline-item__static_or_dynamic">Dynamic</span>
-          
-
-        </div>
-      </div>
-    
-  
-</li>
-              
-            
-              
-                <li>
-  
-
-    
-
-    
-
-      
-        
-      
-
-      
-      
-        
-      
-
-      
-        
-      
-
-      <div class="predictor-timeline-item--very-high">
-    <span
-      class="predictor-timeline-item__type">Combined Serious Reoffending Predictor</span>
-
-        <div class="predictor-timeline-item__stats">
-          <span class="predictor-timeline-item__level">VERY HIGH</span>
-
-          
-            <span class="predictor-timeline-item__score">13.67%</span>
-          
-
-          
-            <span class="predictor-timeline-item__static_or_dynamic predictor-timeline-item__wrapped_static_or_dynamic">Dynamic</span>
-          
-
-        </div>
-      </div>
-    
-  
-</li>
-              
-            
-          </ul>
-        </div>
-        <button class="predictor-timeline-link-btn predictor-timeline__toggle-section" aria-label="View scores for 23 July 2026 at 12:00"
-           aria-controls="predictor-section-23-july-2026-at-12-00" aria-expanded="false">Open</button>
-      </div>
-    </div>
-  
-
-    
-
-    
-      
-    
-
-    <div class="predictor-timeline__item">
-      <div class="predictor-timeline__header">
-        <p class="predictor-timeline__byline">1 June 2026 at 12:00</p>
-      </div>
-      <div class="predictor-timeline__description">
-        <div id="predictor-section-1-june-2026-at-12-00" class="predictor-timeline-section">
-          <ul class="govuk-list">
-            
-              
-                <li>
-  
-
-    
-
-    
-
-      
-        
-      
-
-      
-      
-
-      
-        
-        
-      
-
-      <div class="predictor-timeline-item--default">
-    <span
-      class="predictor-timeline-item__type">Violent Reoffending Predictor</span>
-
-        <div class="predictor-timeline-item__stats">
-          <span class="predictor-timeline-item__level">UNKNOWN</span>
-
-          
-
-          
-
-        </div>
-      </div>
-    
-  
-</li>
-              
-            
-              
-                <li>
-  
-
-    
-
-    
-
-      
-        
-      
-
-      
-      
-
-      
-        
-      
-
-      <div class="predictor-timeline-item--default">
-    <span
-      class="predictor-timeline-item__type">Direct Contact – Sexual Reoffending Predictor</span>
-
-        <div class="predictor-timeline-item__stats">
-          <span class="predictor-timeline-item__level">NOT APPLICABLE</span>
-
-          
-
-          
-
-        </div>
-      </div>
-    
-  
-</li>
-              
-            
-              
-                <li>
-  
-
-    
-
-    
-
-      
-        
-      
-
-      
-      
-
-      
-        
-      
-
-      <div class="predictor-timeline-item--default">
-    <span
-      class="predictor-timeline-item__type">Images And Indirect Contact – Sexual Reoffending Predictor</span>
-
-        <div class="predictor-timeline-item__stats">
-          <span class="predictor-timeline-item__level">NOT APPLICABLE</span>
-
-          
-
-          
-
-        </div>
-      </div>
-    
-  
-</li>
-              
-            
-          </ul>
-        </div>
-        <button class="predictor-timeline-link-btn predictor-timeline__toggle-section" aria-label="View scores for 1 June 2026 at 12:00"
-           aria-controls="predictor-section-1-june-2026-at-12-00" aria-expanded="false">Open</button>
-      </div>
-    </div>
-  
-
-    
-
-    
-      
-        
-  <div class="predictor-timeline__item">
-    <div class="predictor-timeline__header">
-      <p class="predictor-timeline__byline">23 February 2026 at 09:00</p>
-    </div>
-    <div class="predictor-timeline__description">
-      <div class="govuk-warning-text predictor-timeline__warning">
-        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-        <strong class="govuk-warning-text__text">
-                <span
-                  class="govuk-visually-hidden">Warning the risk predictor tools have been updated after this date</span>
-          All assessments started after this date use updated risk predictor tools
-        </strong>
-      </div>
-      <details class="govuk-details predictor-timeline__details">
-        <summary class="govuk-details__summary">
-              <span class="govuk-details__summary-text">
-                How the risk predictor tools have changed
-              </span>
-        </summary>
-        <div class="govuk-details__text">
-          <h3>All reoffending</h3>
-          <b>Old version:</b> Offender Group Reconviction Scale (OGRS)<br>
-          <b>Updated version:</b> All Reoffending Predictor<br>
-          <br>
-          The All Reoffending Predictor now has both a static and dynamic version.
-          <br><br>
-          <h3>Violent reoffending</h3>
-          <b>Old version:</b> OASys Violent Predictor (OVP)<br>
-          <b>Updated version:</b> Violent Reoffending Predictor<br>
-          <br>
-          The Violent Reoffending Predictor now has both a static and dynamic version.
-          <br><br>
-          <h3>Sexual reoffending</h3>
-          <h4>Direct contact</h4>
-          <b>Old version:</b> OASys Sexual Predictor — Direct Contact (OSP-DC)<br>
-          <b>Updated version:</b> Direct Contact — Sexual Reoffending Predictor<br>
-          <br>
-          The Direct Contact — Sexual Reoffending Predictor only has a static score.
-          <br>
-          <h4>Indirect contact</h4>
-          <b>Old version:</b> OASys Sexual Predictor — Images and indirect contact with children (OSP-IIC)<br>
-          <b>Updated version:</b> Images and Indirect Contact — Sexual Reoffending Predictor<br>
-          <br>
-          The Images and Indirect Contact — Sexual Reoffending Predictor only has a static score.
-          <br><br>
-          <h3>Serious non-sexual violent reoffending</h3>
-          <b>Old version:</b> Previously part of RSR but not displayed<br>
-          <b>Updated version:</b> Serious Violent Reoffending Predictor<br>
-          <br>
-          The Serious Violent Reoffending Predictor has both static and dynamic versions.
-          <br><br>
-          <h3>Serious reoffending</h3>
-          This predictor is a combination of the Direct Contact — Sexual Reoffending Predictor, Images and
-          Indirect Contact — Sexual Reoffending Predictor and Serious Violent Reoffending Predictor scores.
-          <br>
-          <b>Old version:</b> Risk of Serious Recidivism (RSR)<br>
-          <b>Updated version:</b> Combined Serious Reoffending Predictor<br>
-          <br>
-          The Combined Serious Reoffending Predictor has both static and dynamic versions.
-          <br><br>
-          <h3>Which version will be displayed</h3>
-          All tools only show a dynamic score if both versions are available.
-          <br>
-        </div>
-      </details>
-    </div>
-  </div>
-
-        
-      
-    
-
-    <div class="predictor-timeline__item">
-      <div class="predictor-timeline__header">
-        <p class="predictor-timeline__byline">14 May 2019 at 12:00</p>
-      </div>
-      <div class="predictor-timeline__description">
-        <div id="predictor-section-14-may-2019-at-12-00" class="predictor-timeline-section">
-          <ul class="govuk-list">
-            
-              
-                <li>
-  
-
-    
-
-    
-
-      
-        
-      
-
-      
-        
-      
-
-      <div class="legacy-predictor-timeline-item--high">
-        <span
-          class="legacy-predictor-timeline-item__type_and_level">RSR <strong>HIGH</strong></span>
-
-        
-          <span class="legacy-predictor-timeline-item__score">10.3%</span>
-        
-
-        
-
-      </div>
-
-    
-  
-</li>
-              
-            
-              
-                <li>
-  
-
-    
-
-    
-
-      
-        
-      
-
-      
-        
-      
-
-      <div class="legacy-predictor-timeline-item--medium">
-        <span
-          class="legacy-predictor-timeline-item__type_and_level">OSP-DC <strong>MEDIUM</strong></span>
-
-        
-
-        
-
-      </div>
-
-    
-  
-</li>
-              
-            
-              
-                <li>
-  
-
-    
-
-    
-
-      
-        
-      
-
-      
-        
-      
-
-      <div class="legacy-predictor-timeline-item--low">
-        <span
-          class="legacy-predictor-timeline-item__type_and_level">OSP-IIC <strong>LOW</strong></span>
-
-        
-
-        
-
-      </div>
-
-    
-  
-</li>
-              
-            
-          </ul>
-        </div>
-        <button class="predictor-timeline-link-btn predictor-timeline__toggle-section" aria-label="View scores for 14 May 2019 at 12:00"
-           aria-controls="predictor-section-14-may-2019-at-12-00" aria-expanded="false">Open</button>
-      </div>
-    </div>
-  
-
-    
-
-    
-
-    <div class="predictor-timeline__item">
-      <div class="predictor-timeline__header">
-        <p class="predictor-timeline__byline">12 September 2018 at 12:00</p>
-      </div>
-      <div class="predictor-timeline__description">
-        <div id="predictor-section-12-september-2018-at-12-00" class="predictor-timeline-section">
-          <ul class="govuk-list">
-            
-              
-                <li>
-  
-
-    
-
-    
-
-      
-        
-      
-
-      
-        
-      
-
-      <div class="legacy-predictor-timeline-item--medium">
-        <span
-          class="legacy-predictor-timeline-item__type_and_level">RSR <strong>MEDIUM</strong></span>
-
-        
-          <span class="legacy-predictor-timeline-item__score">5.34%</span>
-        
-
-        
-
-      </div>
-
-    
-  
-</li>
-              
-            
-              
-                <li>
-  
-
-    
-
-    
-
-      
-        
-      
-
-      
-        
-      
-
-      <div class="legacy-predictor-timeline-item--medium">
-        <span
-          class="legacy-predictor-timeline-item__type_and_level">OSP-DC <strong>MEDIUM</strong></span>
-
-        
-
-        
-
-      </div>
-
-    
-  
-</li>
-              
-            
-              
-                <li>
-  
-
-    
-
-    
-
-      
-        
-      
-
-      
-        
-      
-
-      <div class="legacy-predictor-timeline-item--low">
-        <span
-          class="legacy-predictor-timeline-item__type_and_level">OSP-IIC <strong>LOW</strong></span>
-
-        
-
-        
-
-      </div>
-
-    
-  
-</li>
-              
-            
-          </ul>
-        </div>
-        <button class="predictor-timeline-link-btn predictor-timeline__toggle-section" aria-label="View scores for 12 September 2018 at 12:00"
-           aria-controls="predictor-section-12-september-2018-at-12-00" aria-expanded="false">Open</button>
-      </div>
-    </div>
-  
-
-    
-
-    
-
-    <div class="predictor-timeline__item">
-      <div class="predictor-timeline__header">
-        <p class="predictor-timeline__byline">5 January 2017 at 12:00</p>
-      </div>
-      <div class="predictor-timeline__description">
-        <div id="predictor-section-5-january-2017-at-12-00" class="predictor-timeline-section">
-          <ul class="govuk-list">
-            
-              
-                <li>
-  
-
-    
-
-    
-
-      
-        
-      
-
-      
-        
-        
-      
-
-      <div class="legacy-predictor-timeline-item--default">
-        <span
-          class="legacy-predictor-timeline-item__type_and_level">RSR <strong>UNKNOWN</strong></span>
-
-        
-
-        
-
-      </div>
-
-    
-  
-</li>
-              
-            
-              
-                <li>
-  
-
-    
-
-    
-
-      
-        
-      
-
-      
-        
-      
-
-      <div class="legacy-predictor-timeline-item--default">
-        <span
-          class="legacy-predictor-timeline-item__type_and_level">OSP-DC <strong>NOT APPLICABLE</strong></span>
-
-        
-
-        
-
-      </div>
-
-    
-  
-</li>
-              
-            
-              
-                <li>
-  
-
-    
-
-    
-
-      
-        
-      
-
-      
-        
-      
-
-      <div class="legacy-predictor-timeline-item--default">
-        <span
-          class="legacy-predictor-timeline-item__type_and_level">OSP-IIC <strong>NOT APPLICABLE</strong></span>
-
-        
-
-        
-
-      </div>
-
-    
-  
-</li>
-              
-            
-          </ul>
-        </div>
-        <button class="predictor-timeline-link-btn predictor-timeline__toggle-section" aria-label="View scores for 5 January 2017 at 12:00"
-           aria-controls="predictor-section-5-january-2017-at-12-00" aria-expanded="false">Open</button>
-      </div>
-    </div>
-  
-
-  
-
-</div>
-
     </div>
   </div>
 

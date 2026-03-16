@@ -1,18 +1,23 @@
 import type { Express } from 'express'
 import request from 'supertest'
+import { ArnsComponents } from '@ministryofjustice/hmpps-arns-frontend-components-lib'
 import { appWithAllRoutes } from './testutils/appSetup'
 import AuditService from '../services/auditService'
+import config from '../config'
+import logger from '../../logger'
 
 jest.mock('../services/auditService')
 
 const auditService = new AuditService(null) as jest.Mocked<AuditService>
+const arnsComponetMock = new ArnsComponents(null, config.apis.arnsApi, logger)
 
 let app: Express
 
 beforeEach(() => {
   app = appWithAllRoutes({
-    services: {},
+    services: { arnsComponents: arnsComponetMock },
   })
+  arnsComponetMock.getRiskData = jest.fn()
 })
 
 afterEach(() => {
@@ -50,7 +55,6 @@ describe('GET /predictor-scores', () => {
 describe('GET /predictor-timeline', () => {
   it('should render index page', () => {
     auditService.logPageView.mockResolvedValue(null)
-
     return request(app)
       .get('/predictor-timeline')
       .expect('Content-Type', /html/)
