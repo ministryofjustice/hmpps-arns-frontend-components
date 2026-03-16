@@ -50,7 +50,6 @@
 
   <div id="predictor-scores-history" class="govuk-grid-row govuk-!-margin-top-6">
     <div class="govuk-grid-column-full">
-      <p>The predictor timeline component lets users view the history of a subjects assessments.</p>
       {{ mojAlert({
         variant: "warning",
         title: "JavaScript import required",
@@ -61,6 +60,7 @@
           <a href="/#js-import">home page</a> for details.
         </p>'
       }) }}
+      <p>The predictor timeline component lets users view the history of a subjects assessments.</p>
       {{ example({data: {riskData: riskData}, exampleNjks: defaultExampleNjks, exampleId: 'default'}) }}
       {{ nunjucksMacroOptions({macroOptions: macroOptions}) }}
       <h2>How to use</h2>

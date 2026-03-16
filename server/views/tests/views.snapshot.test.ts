@@ -50,6 +50,11 @@ describe('View Snapshot Tests: All Pages', () => {
     expect(response.text).toMatchSnapshot()
   })
 
+  it('should match snapshot for the predictor timeline page (/predictor-timeline)', async () => {
+    const response = await request(app).get('/predictor-timeline').expect(200)
+    expect(response.text).toMatchSnapshot()
+  })
+
   it('should match snapshot for the predictor scores accordion page (/risk-predictor-scores-content)', async () => {
     const response = await request(app).get('/risk-predictor-scores-content').expect(200)
     expect(response.text).toMatchSnapshot()
