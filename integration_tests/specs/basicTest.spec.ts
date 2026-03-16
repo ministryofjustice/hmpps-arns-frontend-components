@@ -1,7 +1,7 @@
 import { test } from '@playwright/test'
 import LandingPage from '../pages/landingPage'
-import arnsApiMock from "../mockApis/arnsApiMock";
-import {resetStubs} from "../mockApis/wiremock";
+import arnsApiMock from '../mockApis/arnsApiMock'
+import { resetStubs } from '../mockApis/wiremock'
 
 test.describe('page tests', () => {
   test.beforeEach(async () => {
@@ -85,4 +85,3 @@ test.describe('page tests', () => {
     await landingPage.checkPredictorTimelineItemHeader()
   })
 })
-
