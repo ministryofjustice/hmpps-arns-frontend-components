@@ -12781,13 +12781,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
       <div class="govuk-tabs__panel" id="default-example-rendered">
   
-    <div class="predictor-timeline__heading" data-test-id="timeline-heading">
+    <div class="arns-predictor-timeline__heading" data-test-id="timeline-heading">
       <span class='govuk-heading-m'>Scores history</span>
-      <button id="predictor-timeline__toggle-all" class="predictor-timeline-link-btn" aria-label="Open all score history"
+      <button id="predictor-timeline__toggle-all" class="arns-predictor-timeline-link-btn" aria-label="Open all score history"
               aria-controls="predictor-section-01-january-2025-at-15-21 predictor-section-02-january-2024-at-18-23" aria-expanded="false">Open all</button>
     </div>
     
-    <div class="predictor-timeline predictor" data-test-id="predictor-timeline" data-module="predictor-timeline">
+    <div class="arns-predictor-timeline predictor" data-test-id="predictor-timeline" data-module="predictor-timeline">
       
     
         
@@ -12795,12 +12795,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
           
             
-      <div class="predictor-timeline__item" data-test-id="timeline-item">
-        <div class="predictor-timeline__header">
-          <p class="predictor-timeline__byline">23 February 2026 at 09:00</p>
+      <div class="arns-predictor-timeline__item" data-test-id="timeline-item">
+        <div class="arns-predictor-timeline__header">
+          <p class="arns-predictor-timeline__byline">23 February 2026 at 09:00</p>
         </div>
-        <div class="predictor-timeline__description">
-          <div class="govuk-warning-text predictor-timeline__warning">
+        <div class="arns-predictor-timeline__description">
+          <div class="govuk-warning-text arns-predictor-timeline__warning">
             <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
             <strong class="govuk-warning-text__text" data-test-id="warning-text">
                     <span
@@ -12808,7 +12808,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
               All assessments started after this date use updated risk predictor tools
             </strong>
           </div>
-          <details class="govuk-details predictor-timeline__details">
+          <details class="govuk-details arns-predictor-timeline__details">
             <summary class="govuk-details__summary">
                   <span class="govuk-details__summary-text">
                     How the risk predictor tools have changed
@@ -12867,12 +12867,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           
         
     
-        <div class="predictor-timeline__item" data-test-id="timeline-item">
-          <div class="predictor-timeline__header" data-test-id="timeline-item-header">
-            <p class="predictor-timeline__byline" data-test-id="timeline-byline">01 January 2025 at 15:21</p>
+        <div class="arns-predictor-timeline__item" data-test-id="timeline-item">
+          <div class="arns-predictor-timeline__header" data-test-id="timeline-item-header">
+            <p class="arns-predictor-timeline__byline" data-test-id="timeline-byline">01 January 2025 at 15:21</p>
           </div>
-          <div class="predictor-timeline__description" data-test-id="timeline-description">
-            <div id="predictor-section-01-january-2025-at-15-21" class="predictor-timeline-section">
+          <div class="arns-predictor-timeline__description" data-test-id="timeline-description">
+            <div id="predictor-section-01-january-2025-at-15-21" class="arns-predictor-timeline-section">
               <ul class="govuk-list">
                 
                 
@@ -12900,60 +12900,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           
     
-          <div class="predictor-timeline-item--low" data-expanded-predictor-badge="All Reoffending Predictor LOW">
-            <span class="predictor-timeline-item__type" data-test-id="name">All Reoffending Predictor</span>
+          <div class="arns-predictor-timeline-item--low" data-expanded-predictor-badge="All Reoffending Predictor LOW">
+            <span class="arns-predictor-timeline-item__type" data-test-id="name">All Reoffending Predictor</span>
     
-            <div class="predictor-timeline-item__stats">
-              <span class="predictor-timeline-item__level" data-test-id="band">LOW</span>
-    
-              
-                <span class="predictor-timeline-item__score" data-test-id="score">1.23%</span>
-              
+            <div class="arns-predictor-timeline-item__stats">
+              <span class="arns-predictor-timeline-item__level" data-test-id="band">LOW</span>
     
               
-                <span class="predictor-timeline-item__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
-              
-    
-            </div>
-          </div>
-        
-      
-    </li>
-                    
-                  
-                
-                  
-                    
-                      <li>
-      
-    
-        
-    
-        
-    
-          
-            
-          
-    
-          
-          
-    
-          
-            
-          
-    
-          <div class="predictor-timeline-item--low" data-expanded-predictor-badge="Violent Reoffending Predictor LOW">
-            <span class="predictor-timeline-item__type" data-test-id="name">Violent Reoffending Predictor</span>
-    
-            <div class="predictor-timeline-item__stats">
-              <span class="predictor-timeline-item__level" data-test-id="band">LOW</span>
-    
-              
-                <span class="predictor-timeline-item__score" data-test-id="score">1.23%</span>
+                <span class="arns-predictor-timeline-item__score" data-test-id="score">1.23%</span>
               
     
               
-                <span class="predictor-timeline-item__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+                <span class="arns-predictor-timeline-item__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
               
     
             </div>
@@ -12984,58 +12942,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           
     
-          <div class="predictor-timeline-item--medium" data-expanded-predictor-badge="Serious Violent Reoffending Predictor MEDIUM">
-            <span class="predictor-timeline-item__type" data-test-id="name">Serious Violent Reoffending Predictor</span>
+          <div class="arns-predictor-timeline-item--low" data-expanded-predictor-badge="Violent Reoffending Predictor LOW">
+            <span class="arns-predictor-timeline-item__type" data-test-id="name">Violent Reoffending Predictor</span>
     
-            <div class="predictor-timeline-item__stats">
-              <span class="predictor-timeline-item__level" data-test-id="band">MEDIUM</span>
-    
-              
-                <span class="predictor-timeline-item__score" data-test-id="score">1.23%</span>
-              
+            <div class="arns-predictor-timeline-item__stats">
+              <span class="arns-predictor-timeline-item__level" data-test-id="band">LOW</span>
     
               
-                <span class="predictor-timeline-item__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+                <span class="arns-predictor-timeline-item__score" data-test-id="score">1.23%</span>
               
     
-            </div>
-          </div>
-        
-      
-    </li>
-                    
-                  
-                
-                  
-                    
-                      <li>
-      
-    
-        
-    
-        
-    
-          
-            
-          
-    
-          
-          
-    
-          
-            
-          
-    
-          <div class="predictor-timeline-item--very-high" data-expanded-predictor-badge="Direct Contact - Sexual Reoffending Predictor VERY HIGH">
-            <span class="predictor-timeline-item__type" data-test-id="name">Direct Contact - Sexual Reoffending Predictor</span>
-    
-            <div class="predictor-timeline-item__stats">
-              <span class="predictor-timeline-item__level" data-test-id="band">VERY HIGH</span>
-    
               
-                <span class="predictor-timeline-item__score" data-test-id="score">2.81%</span>
-              
-    
+                <span class="arns-predictor-timeline-item__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
               
     
             </div>
@@ -13066,14 +12984,56 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           
     
-          <div class="predictor-timeline-item--high" data-expanded-predictor-badge="Images and Indirect Contact – Sexual Reoffending Predictor HIGH">
-            <span class="predictor-timeline-item__type" data-test-id="name">Images and Indirect Contact – Sexual Reoffending Predictor</span>
+          <div class="arns-predictor-timeline-item--medium" data-expanded-predictor-badge="Serious Violent Reoffending Predictor MEDIUM">
+            <span class="arns-predictor-timeline-item__type" data-test-id="name">Serious Violent Reoffending Predictor</span>
     
-            <div class="predictor-timeline-item__stats">
-              <span class="predictor-timeline-item__level" data-test-id="band">HIGH</span>
+            <div class="arns-predictor-timeline-item__stats">
+              <span class="arns-predictor-timeline-item__level" data-test-id="band">MEDIUM</span>
     
               
-                <span class="predictor-timeline-item__score" data-test-id="score">1.07%</span>
+                <span class="arns-predictor-timeline-item__score" data-test-id="score">1.23%</span>
+              
+    
+              
+                <span class="arns-predictor-timeline-item__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+              
+    
+            </div>
+          </div>
+        
+      
+    </li>
+                    
+                  
+                
+                  
+                    
+                      <li>
+      
+    
+        
+    
+        
+    
+          
+            
+          
+    
+          
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-timeline-item--very-high" data-expanded-predictor-badge="Direct Contact - Sexual Reoffending Predictor VERY HIGH">
+            <span class="arns-predictor-timeline-item__type" data-test-id="name">Direct Contact - Sexual Reoffending Predictor</span>
+    
+            <div class="arns-predictor-timeline-item__stats">
+              <span class="arns-predictor-timeline-item__level" data-test-id="band">VERY HIGH</span>
+    
+              
+                <span class="arns-predictor-timeline-item__score" data-test-id="score">2.81%</span>
               
     
               
@@ -13106,18 +13066,58 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           
     
-          <div class="predictor-timeline-item--high" data-expanded-predictor-badge="Combined Serious Reoffending Predictor HIGH">
-            <span class="predictor-timeline-item__type" data-test-id="name">Combined Serious Reoffending Predictor</span>
+          <div class="arns-predictor-timeline-item--high" data-expanded-predictor-badge="Images and Indirect Contact – Sexual Reoffending Predictor HIGH">
+            <span class="arns-predictor-timeline-item__type" data-test-id="name">Images and Indirect Contact – Sexual Reoffending Predictor</span>
     
-            <div class="predictor-timeline-item__stats">
-              <span class="predictor-timeline-item__level" data-test-id="band">HIGH</span>
-    
-              
-                <span class="predictor-timeline-item__score" data-test-id="score">1.23%</span>
-              
+            <div class="arns-predictor-timeline-item__stats">
+              <span class="arns-predictor-timeline-item__level" data-test-id="band">HIGH</span>
     
               
-                <span class="predictor-timeline-item__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
+                <span class="arns-predictor-timeline-item__score" data-test-id="score">1.07%</span>
+              
+    
+              
+    
+            </div>
+          </div>
+        
+      
+    </li>
+                    
+                  
+                
+                  
+                    
+                      <li>
+      
+    
+        
+    
+        
+    
+          
+            
+          
+    
+          
+          
+    
+          
+            
+          
+    
+          <div class="arns-predictor-timeline-item--high" data-expanded-predictor-badge="Combined Serious Reoffending Predictor HIGH">
+            <span class="arns-predictor-timeline-item__type" data-test-id="name">Combined Serious Reoffending Predictor</span>
+    
+            <div class="arns-predictor-timeline-item__stats">
+              <span class="arns-predictor-timeline-item__level" data-test-id="band">HIGH</span>
+    
+              
+                <span class="arns-predictor-timeline-item__score" data-test-id="score">1.23%</span>
+              
+    
+              
+                <span class="arns-predictor-timeline-item__static_or_dynamic" data-test-id="staticOrDynamic">Static</span>
               
     
             </div>
@@ -13130,7 +13130,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
                 
               </ul>
             </div>
-            <button class="predictor-timeline-link-btn predictor-timeline__toggle-section" aria-label="View scores for 01 January 2025 at 15:21"
+            <button class="arns-predictor-timeline-link-btn arns-predictor-timeline__toggle-section" aria-label="View scores for 01 January 2025 at 15:21"
                     aria-controls="predictor-section-01-january-2025-at-15-21" aria-expanded="false">Open</button>
           </div>
         </div>
@@ -13140,12 +13140,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
         
     
-        <div class="predictor-timeline__item" data-test-id="timeline-item">
-          <div class="predictor-timeline__header" data-test-id="timeline-item-header">
-            <p class="predictor-timeline__byline" data-test-id="timeline-byline">02 January 2024 at 18:23</p>
+        <div class="arns-predictor-timeline__item" data-test-id="timeline-item">
+          <div class="arns-predictor-timeline__header" data-test-id="timeline-item-header">
+            <p class="arns-predictor-timeline__byline" data-test-id="timeline-byline">02 January 2024 at 18:23</p>
           </div>
-          <div class="predictor-timeline__description" data-test-id="timeline-description">
-            <div id="predictor-section-02-january-2024-at-18-23" class="predictor-timeline-section">
+          <div class="arns-predictor-timeline__description" data-test-id="timeline-description">
+            <div id="predictor-section-02-january-2024-at-18-23" class="arns-predictor-timeline-section">
               <ul class="govuk-list">
                 
                 
@@ -13170,45 +13170,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           
     
-          <div class="legacy-predictor-timeline-item--low" data-predictor-badge="OGRS LOW">
-            <span class="legacy-predictor-timeline-item__type_and_level" data-test-id="nameAndBand">OGRS <strong>LOW</strong></span>
+          <div class="arns-legacy-predictor-timeline-item--low" data-predictor-badge="OGRS LOW">
+            <span class="arns-legacy-predictor-timeline-item__type_and_level" data-test-id="nameAndBand">OGRS <strong>LOW</strong></span>
     
             
-              <span class="legacy-predictor-timeline-item__score" data-test-id="score">5%</span>
-            
-    
-            
-    
-          </div>
-    
-        
-      
-    </li>
-                    
-                  
-                
-                  
-                    
-                      <li>
-      
-    
-        
-    
-        
-    
-          
-            
-          
-    
-          
-            
-          
-    
-          <div class="legacy-predictor-timeline-item--low" data-predictor-badge="OVP LOW">
-            <span class="legacy-predictor-timeline-item__type_and_level" data-test-id="nameAndBand">OVP <strong>LOW</strong></span>
-    
-            
-              <span class="legacy-predictor-timeline-item__score" data-test-id="score">7%</span>
+              <span class="arns-legacy-predictor-timeline-item__score" data-test-id="score">5%</span>
             
     
             
@@ -13238,45 +13204,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           
     
-          <div class="legacy-predictor-timeline-item--medium" data-predictor-badge="OGP MEDIUM">
-            <span class="legacy-predictor-timeline-item__type_and_level" data-test-id="nameAndBand">OGP <strong>MEDIUM</strong></span>
+          <div class="arns-legacy-predictor-timeline-item--low" data-predictor-badge="OVP LOW">
+            <span class="arns-legacy-predictor-timeline-item__type_and_level" data-test-id="nameAndBand">OVP <strong>LOW</strong></span>
     
             
-              <span class="legacy-predictor-timeline-item__score" data-test-id="score">8%</span>
-            
-    
-            
-    
-          </div>
-    
-        
-      
-    </li>
-                    
-                  
-                
-                  
-                    
-                      <li>
-      
-    
-        
-    
-        
-    
-          
-            
-          
-    
-          
-            
-          
-    
-          <div class="legacy-predictor-timeline-item--very-high" data-predictor-badge="OSP-DC VERY HIGH">
-            <span class="legacy-predictor-timeline-item__type_and_level" data-test-id="nameAndBand">OSP-DC <strong>VERY HIGH</strong></span>
-    
-            
-              <span class="legacy-predictor-timeline-item__score" data-test-id="score">1.07%</span>
+              <span class="arns-legacy-predictor-timeline-item__score" data-test-id="score">7%</span>
             
     
             
@@ -13306,11 +13238,11 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           
     
-          <div class="legacy-predictor-timeline-item--high" data-predictor-badge="OSP-IIC HIGH">
-            <span class="legacy-predictor-timeline-item__type_and_level" data-test-id="nameAndBand">OSP-IIC <strong>HIGH</strong></span>
+          <div class="arns-legacy-predictor-timeline-item--medium" data-predictor-badge="OGP MEDIUM">
+            <span class="arns-legacy-predictor-timeline-item__type_and_level" data-test-id="nameAndBand">OGP <strong>MEDIUM</strong></span>
     
             
-              <span class="legacy-predictor-timeline-item__score" data-test-id="score">2.81%</span>
+              <span class="arns-legacy-predictor-timeline-item__score" data-test-id="score">8%</span>
             
     
             
@@ -13340,15 +13272,83 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
           
     
-          <div class="legacy-predictor-timeline-item--high" data-predictor-badge="RSR HIGH">
-            <span class="legacy-predictor-timeline-item__type_and_level" data-test-id="nameAndBand">RSR <strong>HIGH</strong></span>
+          <div class="arns-legacy-predictor-timeline-item--very-high" data-predictor-badge="OSP-DC VERY HIGH">
+            <span class="arns-legacy-predictor-timeline-item__type_and_level" data-test-id="nameAndBand">OSP-DC <strong>VERY HIGH</strong></span>
     
             
-              <span class="legacy-predictor-timeline-item__score" data-test-id="score">50.1234%</span>
+              <span class="arns-legacy-predictor-timeline-item__score" data-test-id="score">1.07%</span>
             
     
             
-              <span class="legacy-predictor-timeline-item__static_or_dynamic" data-test-id="staticOrDynamic">Dynamic</span>
+    
+          </div>
+    
+        
+      
+    </li>
+                    
+                  
+                
+                  
+                    
+                      <li>
+      
+    
+        
+    
+        
+    
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-legacy-predictor-timeline-item--high" data-predictor-badge="OSP-IIC HIGH">
+            <span class="arns-legacy-predictor-timeline-item__type_and_level" data-test-id="nameAndBand">OSP-IIC <strong>HIGH</strong></span>
+    
+            
+              <span class="arns-legacy-predictor-timeline-item__score" data-test-id="score">2.81%</span>
+            
+    
+            
+    
+          </div>
+    
+        
+      
+    </li>
+                    
+                  
+                
+                  
+                    
+                      <li>
+      
+    
+        
+    
+        
+    
+          
+            
+          
+    
+          
+            
+          
+    
+          <div class="arns-legacy-predictor-timeline-item--high" data-predictor-badge="RSR HIGH">
+            <span class="arns-legacy-predictor-timeline-item__type_and_level" data-test-id="nameAndBand">RSR <strong>HIGH</strong></span>
+    
+            
+              <span class="arns-legacy-predictor-timeline-item__score" data-test-id="score">50.1234%</span>
+            
+    
+            
+              <span class="arns-legacy-predictor-timeline-item__static_or_dynamic" data-test-id="staticOrDynamic">Dynamic</span>
             
     
           </div>
@@ -13361,7 +13361,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
                 
               </ul>
             </div>
-            <button class="predictor-timeline-link-btn predictor-timeline__toggle-section" aria-label="View scores for 02 January 2024 at 18:23"
+            <button class="arns-predictor-timeline-link-btn arns-predictor-timeline__toggle-section" aria-label="View scores for 02 January 2024 at 18:23"
                     aria-controls="predictor-section-02-january-2024-at-18-23" aria-expanded="false">Open</button>
           </div>
         </div>
