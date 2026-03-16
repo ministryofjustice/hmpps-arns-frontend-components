@@ -181,14 +181,6 @@ export default class LandingPage {
     await expect(this.predictorScaleHeader).toBeVisible()
   }
 
-  async clickPredictorScoresLink() {
-    await this.predictorScoresLink.click()
-  }
-
-  async checkPredictorScoresHeader() {
-    await expect(this.predictorScoresHeader).toBeVisible()
-  }
-
   async clickPredictorTimelineLink() {
     await this.predictorTimelineLink.click()
   }
@@ -211,13 +203,5 @@ export default class LandingPage {
 
   async checkPredictorTimelineFirstRowIsHidden() {
     await expect(this.predictorTimelineFirstRow).toBeHidden()
-  }
-
-  async clickPredictorTimelineItemLink() {
-    await this.predictorTimelineItemLink.click()
-  }
-
-  async checkPredictorTimelineItemHeader() {
-    await expect(this.predictorTimelineItemHeader).toBeVisible()
   }
 }

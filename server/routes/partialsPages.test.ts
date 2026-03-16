@@ -80,6 +80,48 @@ describe('GET /rosh-widget', () => {
   })
 })
 
+describe('GET /predictor-badge', () => {
+  it('should render Predictor badge page', () => {
+    auditService.logPageView.mockResolvedValue(null)
+
+    return request(app)
+      .get('/predictor-badge')
+      .expect('Content-Type', /html/)
+      .expect(200)
+      .expect(res => {
+        expect(res.text).toContain('<title>Predictor badge</title>')
+      })
+  })
+})
+
+describe('GET /expanded-predictor-badge', () => {
+  it('should render Expanded predictor badge page', () => {
+    auditService.logPageView.mockResolvedValue(null)
+
+    return request(app)
+      .get('/expanded-predictor-badge')
+      .expect('Content-Type', /html/)
+      .expect(200)
+      .expect(res => {
+        expect(res.text).toContain('<title>Expanded predictor badge</title>')
+      })
+  })
+})
+
+describe('GET /predictor-scale', () => {
+  it('should render Predictor scale page', () => {
+    auditService.logPageView.mockResolvedValue(null)
+
+    return request(app)
+      .get('/predictor-scale')
+      .expect('Content-Type', /html/)
+      .expect(200)
+      .expect(res => {
+        expect(res.text).toContain('<title>Predictor scale</title>')
+      })
+  })
+})
+
 describe('GET /nonexistent-route', () => {
   it('should return 404 Not Found', async () => {
     await request(app).get('/nonexistent-route').expect(404)
