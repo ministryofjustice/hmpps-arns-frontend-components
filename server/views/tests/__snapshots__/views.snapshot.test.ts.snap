@@ -83,6 +83,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
           <li class="moj-side-navigation__item">
             <a href="/predictor-scale">Predictor scale</a>
           </li>
+        
+          <li class="moj-side-navigation__item">
+            <a href="/predictor-timeline">Predictor timeline</a>
+          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Snippet components</h4>
@@ -126,7 +130,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
   </p>
   <pre><code class="intro-code">@ministryofjustice/hmpps-arns-frontend-components-lib": "0.0.5",</code></pre>
 
-  <h3 class="govuk-heading-m">2. Add the Nunjucks templates and setup function</h3>
+  <h3 class="govuk-heading-m">2. Configure Nunjucks templates and setup function</h3>
   <p>
     To use the Nunjucks (<code class="intro-name">.njk</code>) templates from the library in your project, update <code class="intro-name">server/utils/nunjucksSetup.ts</code>.
   </p>
@@ -143,11 +147,19 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
   </p>
   <pre><code class="intro-code-block">arnsNunjucksSetup(njkEnv)</code></pre>
 
-  <h3 class="govuk-heading-m">3. Add the SCSS</h3>
+  <h3 class="govuk-heading-m">3. Import the SCSS</h3>
   <p>
     To include the library styles in your project, add the following import to your global stylesheet (usually <code class="intro-name">index.scss</code>):
   </p>
   <pre><code class="intro-code">@import "@ministryofjustice/hmpps-arns-frontend-components-lib/dist/all";</code></pre>
+
+  <h3 id="js-import" class="govuk-heading-m">4. Import and initialise the JavaScript</h3>
+  <p>
+    Add the following to your global JavaScript file (typically <code class="intro-name">index.js</code>) to import
+    and initialise the JavaScript required by the library components:
+  </p>
+  <pre><code class="intro-code">import * as arnsFrontend from "@ministryofjustice/hmpps-arns-frontend-components-lib/dist/js/all"</code></pre>
+  <pre><code class="intro-code">arnsFrontend.initAll()</code></pre>
 
   <h2 class="govuk-heading-l">Using components</h2>
 
@@ -374,6 +386,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
           <li class="moj-side-navigation__item">
             <a href="/predictor-scale">Predictor scale</a>
+          </li>
+        
+          <li class="moj-side-navigation__item">
+            <a href="/predictor-timeline">Predictor timeline</a>
           </li>
         </ul>
     
@@ -4112,6 +4128,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
           <li class="moj-side-navigation__item">
             <a href="/predictor-scale">Predictor scale</a>
           </li>
+        
+          <li class="moj-side-navigation__item">
+            <a href="/predictor-timeline">Predictor timeline</a>
+          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Snippet components</h4>
@@ -4387,6 +4407,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
           <li class="moj-side-navigation__item">
             <a href="/predictor-scale">Predictor scale</a>
+          </li>
+        
+          <li class="moj-side-navigation__item">
+            <a href="/predictor-timeline">Predictor timeline</a>
           </li>
         </ul>
     
@@ -7598,6 +7622,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
           <li class="moj-side-navigation__item moj-side-navigation__item--active">
             <a href="/predictor-scale" aria-current="location">Predictor scale</a>
+          </li>
+        
+          <li class="moj-side-navigation__item">
+            <a href="/predictor-timeline">Predictor timeline</a>
           </li>
         </ul>
     
@@ -11641,6 +11669,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           <li class="moj-side-navigation__item">
             <a href="/predictor-scale">Predictor scale</a>
           </li>
+        
+          <li class="moj-side-navigation__item">
+            <a href="/predictor-timeline">Predictor timeline</a>
+          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Snippet components</h4>
@@ -12414,6 +12446,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           <li class="moj-side-navigation__item">
             <a href="/predictor-scale">Predictor scale</a>
           </li>
+        
+          <li class="moj-side-navigation__item">
+            <a href="/predictor-timeline">Predictor timeline</a>
+          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Snippet components</h4>
@@ -12638,6 +12674,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
         
           <li class="moj-side-navigation__item">
             <a href="/predictor-scale">Predictor scale</a>
+          </li>
+        
+          <li class="moj-side-navigation__item">
+            <a href="/predictor-timeline">Predictor timeline</a>
           </li>
         </ul>
     
@@ -12914,6 +12954,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
         
           <li class="moj-side-navigation__item">
             <a href="/predictor-scale">Predictor scale</a>
+          </li>
+        
+          <li class="moj-side-navigation__item">
+            <a href="/predictor-timeline">Predictor timeline</a>
           </li>
         </ul>
     

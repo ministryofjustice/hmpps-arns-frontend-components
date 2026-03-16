@@ -3,6 +3,7 @@
 {% from "partials/example.njk" import example %}
 {% from "partials/nunjucksMacroOptions.njk" import nunjucksMacroOptions %}
 {% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
+{% from "moj/components/alert/macro.njk" import mojAlert %}
 {% from "govuk/components/tag/macro.njk" import govukTag %}
 
 {% set pageTitle = "Predictor timeline" %}
@@ -41,14 +42,6 @@
   {% endraw %}
 {% endset %}
 
-
-{% set jsWarning %}
-  <p><b>This component requires a javascript import for full functionality. see
-    <a href="/#js-import">home page</a>
-    for details.
-  </b></p>
-{% endset %}
-
 {% block sideNavContent %}
   <h1 class="govuk-heading-xl">
     {{ pageTitle }}
@@ -58,9 +51,15 @@
   <div id="predictor-scores-history" class="govuk-grid-row govuk-!-margin-top-6">
     <div class="govuk-grid-column-full">
       <p>The predictor timeline component lets users view the history of a subjects assessments.</p>
-      {{ govukWarningText({
-        html: jsWarning,
-        iconFallbackText: "Warning"
+      {{ mojAlert({
+        variant: "warning",
+        title: "JavaScript import required",
+        showTitleAsHeading: true,
+        dismissible: false,
+        html: '<p>
+          This component requires a JavaScript import for full functionality. See the
+          <a href="/#js-import">home page</a> for details.
+        </p>'
       }) }}
       {{ example({data: {riskData: riskData}, exampleNjks: defaultExampleNjks, exampleId: 'default'}) }}
       {{ nunjucksMacroOptions({macroOptions: macroOptions}) }}

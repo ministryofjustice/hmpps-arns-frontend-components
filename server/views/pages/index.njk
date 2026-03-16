@@ -26,7 +26,7 @@
   </p>
   <pre><code class="intro-code">@ministryofjustice/hmpps-arns-frontend-components-lib": "0.0.5",</code></pre>
 
-  <h3 class="govuk-heading-m">2. Add the Nunjucks templates and setup function</h3>
+  <h3 class="govuk-heading-m">2. Configure Nunjucks templates and setup function</h3>
   <p>
     To use the Nunjucks (<code class="intro-name">.njk</code>) templates from the library in your project, update <code class="intro-name">server/utils/nunjucksSetup.ts</code>.
   </p>
@@ -43,11 +43,19 @@
   </p>
   <pre><code class="intro-code-block">arnsNunjucksSetup(njkEnv)</code></pre>
 
-  <h3 class="govuk-heading-m">3. Add the SCSS</h3>
+  <h3 class="govuk-heading-m">3. Import the SCSS</h3>
   <p>
     To include the library styles in your project, add the following import to your global stylesheet (usually <code class="intro-name">index.scss</code>):
   </p>
   <pre><code class="intro-code">@import "@ministryofjustice/hmpps-arns-frontend-components-lib/dist/all";</code></pre>
+
+  <h3 id="js-import" class="govuk-heading-m">4. Import and initialise the JavaScript</h3>
+  <p>
+    Add the following to your global JavaScript file (typically <code class="intro-name">index.js</code>) to import
+    and initialise the JavaScript required by the library components:
+  </p>
+  <pre><code class="intro-code">import * as arnsFrontend from "@ministryofjustice/hmpps-arns-frontend-components-lib/dist/js/all"</code></pre>
+  <pre><code class="intro-code">arnsFrontend.initAll()</code></pre>
 
   <h2 class="govuk-heading-l">Using components</h2>
 

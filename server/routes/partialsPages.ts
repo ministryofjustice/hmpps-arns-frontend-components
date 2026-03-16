@@ -49,6 +49,11 @@ export default function componentPageRoutes({ arnsComponents }: Services): Route
       riskDataErrorStates,
     })
   })
+  router.get('/predictor-timeline', async (req, res) => {
+    const navSections = activateMojNav(rawNavSections, req.path)
+    const riskData = await arnsComponents.getRiskData(null, 'crn', 'X123456')
+    res.render('pages/predictorTimelinePage', { riskData, navSections })
+  })
   router.get('/risk-predictor-scores-content', async (req, res, next) => {
     const navSections = activateMojNav(rawNavSections, req.path)
     const riskData = await arnsComponents.getRiskData(null, 'crn', 'X123456')

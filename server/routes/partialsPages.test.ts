@@ -122,6 +122,20 @@ describe('GET /predictor-scale', () => {
   })
 })
 
+describe('GET /predictor-timeline', () => {
+  it('should render Predictor timeline page', () => {
+    auditService.logPageView.mockResolvedValue(null)
+
+    return request(app)
+      .get('/predictor-timeline')
+      .expect('Content-Type', /html/)
+      .expect(200)
+      .expect(res => {
+        expect(res.text).toContain('<title>Predictor timeline</title>')
+      })
+  })
+})
+
 describe('GET /nonexistent-route', () => {
   it('should return 404 Not Found', async () => {
     await request(app).get('/nonexistent-route').expect(404)
