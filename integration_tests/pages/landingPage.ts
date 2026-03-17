@@ -3,9 +3,6 @@ import { expect, Locator, Page } from '@playwright/test'
 export default class LandingPage {
   constructor(
     private page: Page,
-    private loginUsername: Locator = page.getByRole('textbox', { name: 'Username' }),
-    private loginPassword: Locator = page.getByRole('textbox', { name: 'Password' }),
-    private signInButton: Locator = page.getByRole('button', { name: 'Sign in' }),
     private intro: Locator = page.getByRole('heading', { name: 'Introduction' }),
     private pageHeader: Locator = page.getByRole('link', { name: 'ARNS Frontend Components' }),
     private examplesHeader: Locator = page.getByRole('heading', { name: 'Examples' }),
@@ -48,11 +45,9 @@ export default class LandingPage {
     private predictorScaleHeader: Locator = page.getByRole('heading', { name: 'Predictor scale' }),
     private predictorTimelineLink: Locator = page.getByRole('link', { name: 'Predictor timeline', exact: true }),
     private predictorTimelineHeader: Locator = page.getByRole('heading', { name: 'Predictor timeline' }),
-    private predictorTimelineOpenButton: Locator = page.getByRole('link', { name: 'Open all' }),
-    private predictorTimelineFirstCloseButton: Locator = page.getByRole('link', { name: 'Close' }).first(),
+    private predictorTimelineOpenButton: Locator = page.getByRole('button', { name: 'Open all' }),
+    private predictorTimelineFirstCloseButton: Locator = page.getByRole('button', { name: 'Close' }).first(),
     private predictorTimelineFirstRow: Locator = page.getByRole('listitem').filter({ hasText: 'RSR HIGH' }),
-    private predictorTimelineItemLink: Locator = page.getByRole('link', { name: 'Predictor timeline item' }),
-    private predictorTimelineItemHeader: Locator = page.getByRole('heading', { name: 'Predictor timeline item' }),
   ) {}
 
   async checkIntroduction() {
@@ -201,13 +196,5 @@ export default class LandingPage {
 
   async checkPredictorTimelineFirstRowIsHidden() {
     await expect(this.predictorTimelineFirstRow).toBeHidden()
-  }
-
-  async clickPredictorTimelineItemLink() {
-    await this.predictorTimelineItemLink.click()
-  }
-
-  async checkPredictorTimelineItemHeader() {
-    await expect(this.predictorTimelineItemHeader).toBeVisible()
   }
 }
