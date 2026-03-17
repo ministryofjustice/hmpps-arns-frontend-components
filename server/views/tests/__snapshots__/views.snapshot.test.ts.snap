@@ -672,7 +672,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     
       
       
-      <td class="govuk-table__cell"><strong>Required.</strong> Data from ARNS API - use service from library to obtain this (see <a href="/new">Introduction</a> for more information).</td>
+      <td class="govuk-table__cell"><strong>Required.</strong> Data from ARNS API - use service from library to obtain this (see <a href="/">Introduction</a> for more information).</td>
       
     
     </tr>
@@ -4684,7 +4684,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
       
       
-      <td class="govuk-table__cell"><strong>Required.</strong> Data from ARNS API - use service from library to obtain this (see <a href="/new">Introduction</a> for more information).</td>
+      <td class="govuk-table__cell"><strong>Required.</strong> Data from ARNS API - use service from library to obtain this (see <a href="/">Introduction</a> for more information).</td>
       
     
     </tr>
@@ -7959,7 +7959,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
       
       
-      <td class="govuk-table__cell"><strong>Required.</strong> Data from ARNS API - use service from library to obtain this (see <a href="/new">Introduction</a> for more information).</td>
+      <td class="govuk-table__cell"><strong>Required.</strong> Data from ARNS API - use service from library to obtain this (see <a href="/">Introduction</a> for more information).</td>
       
     
     </tr>
@@ -13546,7 +13546,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
       
       
-      <td class="govuk-table__cell"><strong>Required.</strong> Data from ARNS API - use service from library to obtain this (see <a href="/new">Introduction</a> for more information)</td>
+      <td class="govuk-table__cell"><strong>Required.</strong> Data from ARNS API - use service from library to obtain this (see <a href="/">Introduction</a> for more information)</td>
       
     
     </tr>
