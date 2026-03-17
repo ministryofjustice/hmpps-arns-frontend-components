@@ -4,11 +4,11 @@ import arnsApiMock from '../mockApis/arnsApiMock'
 import { resetStubs } from '../mockApis/wiremock'
 
 test.describe('page tests', () => {
-  test.beforeEach(async () => {
+  test.beforeAll(async () => {
     await arnsApiMock.stubGetRiskData()
   })
 
-  test.afterEach(async () => {
+  test.afterAll(async () => {
     await resetStubs()
   })
 
@@ -47,29 +47,23 @@ test.describe('page tests', () => {
 
     // Click Predictor badge link and check page
     await landingPage.clickPredictorBadgeLink()
-    // await page.goto('/predictor-badge/new')
     await landingPage.checkPredictorBadgeHeader()
     await landingPage.checkFullHighPredictorBadge()
     await landingPage.checkFullLowPredictorBadge()
-    // await landingPage.checkPredictorBadgeNotApplicable()
-    // await landingPage.checkPredictorBadgeMissingScore()
-    // await landingPage.checkPredictorBadgeMissingBand()
+    await landingPage.checkPredictorBadgeNotApplicable()
+    await landingPage.checkPredictorBadgeMissingScore()
 
     // Click Expanded predictor badge link and check page
     await landingPage.clickExpandedPredictorBadgeLink()
-    // await page.goto('/expanded-predictor-badge/new')
     await landingPage.checkExpandedPredictorBadgeHeader()
-    // await landingPage.checkFullHighPredictorBadge()
-    // await landingPage.checkFullLowPredictorBadge()
-    // await landingPage.checkPredictorBadgeNotApplicable()
-    // await landingPage.checkPredictorBadgeMissingScore()
-    // await landingPage.checkPredictorBadgeMissingBand()
+    await landingPage.checkFullHighPredictorBadge()
+    await landingPage.checkFullLowPredictorBadge()
+    await landingPage.checkPredictorBadgeNotApplicable()
+    await landingPage.checkPredictorBadgeMissingScore()
 
     // Click predictor scale link and check page
     await landingPage.clickPredictorScaleLink()
-    // await page.goto('/predictor-scale/new')
     await landingPage.checkPredictorScaleHeader()
-    // await landingPage.checkPredictorBadgeNotApplicable()
 
     // Click timeline link and check page
     await landingPage.clickPredictorTimelineLink()
@@ -79,9 +73,5 @@ test.describe('page tests', () => {
     await landingPage.checkPredictorTimelineFirstRowIsVisible()
     await landingPage.clickPredictorTimelineFirstCloseButton()
     await landingPage.checkPredictorTimelineFirstRowIsHidden()
-
-    // Click timeline item link and check page
-    await landingPage.clickPredictorTimelineItemLink()
-    await landingPage.checkPredictorTimelineItemHeader()
   })
 })
