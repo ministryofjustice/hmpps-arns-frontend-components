@@ -1,4 +1,5 @@
 {% extends "layouts/side-nav-layout.njk" %}
+{% from "govuk/components/tag/macro.njk" import govukTag %}
 
 {% set pageTitle = "Risk predictor scores content" %}
 {% set mainClasses = "govuk-body" %}
@@ -7,6 +8,7 @@
 
   <h1 class="govuk-heading-xl">
     {{ pageTitle }}
+    <span>{{ govukTag({text: "WIP"}) }}</span>
   </h1>
 
   <div id="predictor-scores-content-wrapper" class="govuk-grid-row">

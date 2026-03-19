@@ -12839,6 +12839,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
   <h1 class="govuk-heading-xl">
     Risk predictor scores content
+    <span><strong class="govuk-tag">
+  WIP
+</strong>
+</span>
   </h1>
 
   <div id="predictor-scores-content-wrapper" class="govuk-grid-row">
