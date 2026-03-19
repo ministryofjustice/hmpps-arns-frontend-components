@@ -87,6 +87,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline</a>
           </li>
+        
+          <li class="moj-side-navigation__item">
+            <a href="/risk-predictor-scores-content">Risk predictor scores content</a>
+          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Snippet components</h4>
@@ -390,6 +394,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
         
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline</a>
+          </li>
+        
+          <li class="moj-side-navigation__item">
+            <a href="/risk-predictor-scores-content">Risk predictor scores content</a>
           </li>
         </ul>
     
@@ -4132,6 +4140,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline</a>
           </li>
+        
+          <li class="moj-side-navigation__item">
+            <a href="/risk-predictor-scores-content">Risk predictor scores content</a>
+          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Snippet components</h4>
@@ -4411,6 +4423,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline</a>
+          </li>
+        
+          <li class="moj-side-navigation__item">
+            <a href="/risk-predictor-scores-content">Risk predictor scores content</a>
           </li>
         </ul>
     
@@ -7627,6 +7643,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline</a>
           </li>
+        
+          <li class="moj-side-navigation__item">
+            <a href="/risk-predictor-scores-content">Risk predictor scores content</a>
+          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Snippet components</h4>
@@ -7742,7 +7762,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="0.61" data-test-id='scaleMarkerPosition'>
+      <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
         
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
@@ -7776,7 +7796,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </div>
       
     </div>
-    
     
             
           </div>
@@ -8145,7 +8164,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="0.61" data-test-id='scaleMarkerPosition'>
+      <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
         
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
@@ -8179,7 +8198,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </div>
       
     </div>
-    
     
             
           </div>
@@ -8433,7 +8451,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="1.03" data-test-id='scaleMarkerPosition'>
+      <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
         
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
@@ -8467,7 +8485,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </div>
       
     </div>
-    
     
             
           </div>
@@ -8721,7 +8738,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--medium arns-scale-marker-wrapper" data-margin="27.88" data-test-id='scaleMarkerPosition'>
+      <div class="arns-scale-marker-wrapper--medium arns-scale-marker-wrapper arns-scale-marker-wrapper-position-28" data-test-id='scaleMarkerPosition'>
         
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
@@ -8755,7 +8772,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </div>
       
     </div>
-    
     
             
           </div>
@@ -9004,7 +9020,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper" data-margin="55.55" data-test-id='scaleMarkerPosition'>
+      <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-56" data-test-id='scaleMarkerPosition'>
         
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
@@ -9038,7 +9054,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </div>
       
     </div>
-    
     
             
           </div>
@@ -9111,7 +9126,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper" data-margin="83.33" data-test-id='scaleMarkerPosition'>
+      <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-83" data-test-id='scaleMarkerPosition'>
         
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
@@ -9138,7 +9153,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       </div>
       
     </div>
-    
     
             
           </div>
@@ -9389,7 +9403,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper" data-margin="55.55" data-test-id='scaleMarkerPosition'>
+      <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-56" data-test-id='scaleMarkerPosition'>
         
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
@@ -9423,7 +9437,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </div>
       
     </div>
-    
     
             
           </div>
@@ -9679,7 +9692,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper" data-margin="27.88" data-test-id='scaleMarkerPosition'>
+      <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-28" data-test-id='scaleMarkerPosition'>
         
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
@@ -9713,7 +9726,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </div>
       
     </div>
-    
     
             
           </div>
@@ -9956,7 +9968,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="0.61" data-test-id='scaleMarkerPosition'>
+      <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
         
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
@@ -9990,7 +10002,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </div>
       
     </div>
-    
     
             
           </div>
@@ -11334,7 +11345,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="0.61" data-test-id='scaleMarkerPosition'>
+      <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
         
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
@@ -11368,7 +11379,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </div>
       
     </div>
-    
     
             
           </div>
@@ -11673,6 +11683,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline</a>
           </li>
+        
+          <li class="moj-side-navigation__item">
+            <a href="/risk-predictor-scores-content">Risk predictor scores content</a>
+          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Snippet components</h4>
@@ -11713,6 +11727,15 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
+
+  <div data-test-id="predictor-intro">
+    <p>We have developed and validated these risk predictors using real historical data about how often people who have been on probation get further sanctions.</p>
+    <p>Someone gets a sanction if they:</p>
+    <ul>
+      <li>are convicted by a court and given a sentence (such as a fine, community order, discharge or prison)</li>
+      <li>accept a formal caution from the police</li>
+    </ul>
+  </div>
   <div class="bottom-border">
     <div class="govuk-inset-text">
   Source: undefined assessment, completed on undefined
@@ -11731,7 +11754,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   </div>
   <div class="govuk-!-margin-bottom-4">
-    <span>1.23% of people with a similar profile to Alex will get a sanction for an offence they commit within two years. This puts Alex in the LOW risk band.</span>
+    <span data-test-id="arp-probability-statement">
+      About 1 in 100 people (1.23%) with a similar profile to Alex will get a sanction for an
+      offence they commit within two years. This puts Alex in the low risk band.
+    </span>
   </div>
   <div class="scale-wrapper">
     
@@ -11755,7 +11781,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 <div class="arns-scale-marker" data-test-id='scaleMarker'>
-  <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="0.61" data-test-id='scaleMarkerPosition'>
+  <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
     
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
@@ -11790,12 +11816,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
 </div>
 
-
   </div>
 
   
 
-  
+  <div class="bottom-border">
+    
 <details class="govuk-details details--chevron-style">
   <summary class="govuk-details__summary">
     <span class="details__chevron" aria-hidden="true"></span>
@@ -11807,10 +11833,13 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <div class="govuk-details__text">
     
     <h3>What this score predicts</h3>
-    <p>The All reoffending predictor predicts the likelihood of someone getting a sanction for any recordable
-      offence.</p>
-    <p>It includes all sexual and all violent offences, but there are other risk predictors that are specifically
-      designed to predict serious, violent and sexual offences.</p>
+    <p>
+      The All reoffending predictor predicts the likelihood of someone getting a sanction for any recordable offence.
+    </p>
+    <p>
+      It includes all sexual and all violent offences, but there are other risk predictors that are specifically
+      designed to predict serious, violent and sexual offences.
+    </p>
     <h3>How we calculate the score</h3>
     <p>We calculate the score using:</p>
     <ul>
@@ -11818,17 +11847,17 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <li>dynamic and static factors, when we have more detailed information (a dynamic score)</li>
     </ul>
     
-      <p>This score has been calculated using static factors only.</p>
+      <p data-test-id="arp-static-or-dynamic-factors">This score has been calculated using static factors only.</p>
     
 
     <p>Static factors are things which cannot be deliberately changed, and include the person's:</p>
     <ul>
       <li>age when they enter the community caseload</li>
-      <li>sex at birth</li>
       <li>current offence</li>
       <li>total number of sanctions</li>
       <li>length of offending history</li>
     </ul>
+    <p>The person’s current legal gender also counts towards the static score.</p>
     <p>Dynamic factors are things that can change, and include their:</p>
     <ul>
       <li>accommodation status</li>
@@ -11839,11 +11868,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <li>drug use and motivation to tackle drug use</li>
       <li>alcohol use</li>
       <li>impulsivity</li>
-      <li>pro-criminal attitudes</li>
+      <li>attitudes that support or excuse criminal behaviour</li>
     </ul>
   
   </div>
 </details>
+  </div>
 
   
   <div class="predictor-header-wrapper">
@@ -11856,7 +11886,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   </div>
   <div class="govuk-!-margin-bottom-4">
-    <span>1.23% of people with a similar profile to Alex will get a sanction for an offence they commit within two years. This puts Alex in the LOW risk band.</span>
+    <span data-test-id="vrp-probability-statement">
+      About 1 in 100 people (1.23%) with a similar profile to Alex will get a sanction for a
+      violent offence they commit within two years. This puts Alex in the low risk band.
+    </span>
   </div>
   <div class="scale-wrapper">
     
@@ -11880,7 +11913,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 <div class="arns-scale-marker" data-test-id='scaleMarker'>
-  <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper" data-margin="1.03" data-test-id='scaleMarkerPosition'>
+  <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
     
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
@@ -11915,12 +11948,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
 </div>
 
-
   </div>
 
   
 
-  
+  <div class="bottom-border">
+    
 <details class="govuk-details details--chevron-style">
   <summary class="govuk-details__summary">
     <span class="details__chevron" aria-hidden="true"></span>
@@ -11931,10 +11964,67 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </summary>
   <div class="govuk-details__text">
     
-    <p>This is the content for the violent reoffending predictor.</p>
+    <h3>What this score predicts</h3>
+    <p>The Violent reoffending predictor predicts the risk of reoffending for all offences that are classed as violent.</p>
+    <p>
+      However, the <a href="#serious-violent-reoffending-predictor-header">Serious violent reoffending predictor</a> is
+      specifically designed to predict the most serious violent offences.  Because of this, the Violent reoffending
+      predictor should be used to identify whether someone is likely to commit offences not covered by the Serious
+      violent reoffending predictor, such as:
+    </p>
+    <ul>
+      <li>actual bodily harm, common assault and aggravated assault</li>
+      <li>robbery and assault with intent to rob</li>
+      <li>arson not endangering life</li>
+      <li>criminal damage not endangering life</li>
+      <li>abduction of children</li>
+      <li>intimidation</li>
+      <li>breach of restraining order</li>
+      <li>possessing or use of knives or offensive weapons offences</li>
+      <li>public order and harassment</li>
+      <li>resisting arrest</li>
+      <li>disorderly behaviour</li>
+      <li>drunkenness offences (not including those related to driving)</li>
+    </ul>
+    <p>
+      To check if a specific offence is classed as violent, go to the
+      <a href="https://equip-portal.equip.service.justice.gov.uk/CtrlWebIsapi.dll/app/documents/C025AF635DB44965AC7B629E5538CB5B/master">
+        full list of violent offences (EQUip)</a>.
+    </p>
+    <h3>How we calculate the score</h3>
+    <p>We calculate the score using:</p>
+    <ul>
+      <li>static factors only, when we have limited information (a static score)</li>
+      <li>dynamic and static factors, when we have more detailed information (a dynamic score)</li>
+    </ul>
+    
+      <p data-test-id="vrp-static-or-dynamic-factors">This score has been calculated using static factors only.</p>
+    
+    <p>Static factors are things which cannot be deliberately changed, and include the person's:</p>
+    <ul>
+      <li>age when they enter the community caseload</li>
+      <li>current offence</li>
+      <li>total number of sanctions</li>
+      <li>number of violent sanctions</li>
+      <li>length of offending history</li>
+    </ul>
+    <p>The person’s current legal gender also counts towards the static score.</p>
+    <p>Dynamic factors are things that can change, and include their:</p>
+    <ul>
+      <li>accommodation status</li>
+      <li>employment status</li>
+      <li>relationship status</li>
+      <li>history of domestic abuse</li>
+      <li>regular activities that encourage offending</li>
+      <li>drug use and motivation to tackle drug use</li>
+      <li>alcohol use</li>
+      <li>impulsivity</li>
+      <li>temper control</li>
+    </ul>
   
   </div>
 </details>
+  </div>
 
   
   <div class="predictor-header-wrapper">
@@ -11947,7 +12037,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   </div>
   <div class="govuk-!-margin-bottom-4">
-    <span>1.23% of people with a similar profile to Alex will get a sanction for an offence they commit within two years. This puts Alex in the HIGH risk band.</span>
+    <span data-test-id="csrp-probability-statement">
+      About 1 in 100 people (1.23%) with a similar profile to Alex will get a sanction for a
+      seriously harmful offence they commit within two years. This puts Alex in the high risk band.
+    </span>
   </div>
   <div class="scale-wrapper">
     
@@ -11971,7 +12064,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 <div class="arns-scale-marker" data-test-id='scaleMarker'>
-  <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper" data-margin="27.88" data-test-id='scaleMarkerPosition'>
+  <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-28" data-test-id='scaleMarkerPosition'>
     
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
@@ -12006,12 +12099,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
 </div>
 
-
   </div>
 
   
 
-  
+  <div class="bottom-border">
+    
 <details class="govuk-details details--chevron-style">
   <summary class="govuk-details__summary">
     <span class="details__chevron" aria-hidden="true"></span>
@@ -12022,14 +12115,39 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </summary>
   <div class="govuk-details__text">
     
-    <p>This is the content for the combined serious reoffending predictor.</p>
+    <h3>What this score predicts</h3>
+    <p>
+      The Combined serious reoffending predictor predicts seriously harmful offences by combining the scores from other predictors.
+    </p>
+    <p>
+      A seriously harmful offence involves an event that is life-threatening or traumatic.
+      The victim will find it difficult or impossible to recover physically or psychologically.
+    </p>
+    <h3>Risks combined in this score</h3>
+    <p>The Combined serious reoffending predictor combines 3 different scores:</p>
+    <ul>
+      <li>Serious violent reoffending predictor</li>
+      <li>Direct contact – sexual reoffending predictor</li>
+      <li>Images and indirect contact – sexual reoffending predictor</li>
+    </ul>
+    <p>
+      If a person has no history of sexual or sexually motivated offending, we base their score only on their
+      Serious violent reoffending predictor score.
+    </p>
+    <p>Everyone gets a Serious violent reoffending predictor score, even if they have no history of violent offending.</p>
+    <p>Go to the details for the Serious violent reoffending predictor and the two sexual reoffending predictors to find out:</p>
+    <ul>
+      <li>the offences they predict</li>
+      <li>how we calculate the scores </li>
+    </ul>
   
   </div>
 </details>
+  </div>
 
   
   <div class="predictor-header-wrapper">
-    <h3>Serious violent reoffending predictor</h3>
+    <h3 id="serious-violent-reoffending-predictor-header">Serious violent reoffending predictor</h3>
     
       <div class="staticOrDynamicTag" data-test-id="svrp-staticOrDynamic"><strong class="govuk-tag govuk-tag--grey">
   Static
@@ -12038,7 +12156,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   </div>
   <div class="govuk-!-margin-bottom-4">
-    <span>1.23% of people with a similar profile to Alex will get a sanction for an offence they commit within two years. This puts Alex in the MEDIUM risk band.</span>
+    <span data-test-id="svrp-probability-statement">
+      About 1 in 100 people (1.23%) with a similar profile to Alex will get a sanction for a
+      serious violent offence they commit within two years. This puts Alex in the medium risk band.
+    </span>
   </div>
   <div class="scale-wrapper">
     
@@ -12062,7 +12183,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 <div class="arns-scale-marker" data-test-id='scaleMarker'>
-  <div class="arns-scale-marker-wrapper--medium arns-scale-marker-wrapper" data-margin="27.88" data-test-id='scaleMarkerPosition'>
+  <div class="arns-scale-marker-wrapper--medium arns-scale-marker-wrapper arns-scale-marker-wrapper-position-28" data-test-id='scaleMarkerPosition'>
     
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
@@ -12097,12 +12218,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
 </div>
 
-
   </div>
 
   
 
-  
+  <div class="bottom-border">
+    
 <details class="govuk-details details--chevron-style">
   <summary class="govuk-details__summary">
     <span class="details__chevron" aria-hidden="true"></span>
@@ -12113,21 +12234,76 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </summary>
   <div class="govuk-details__text">
     
-    <p>This is the content for the serious violent reoffending predictor.</p>
+    
+    <h3>What this score predicts</h3>
+    <p>The Serious violent reoffending predictor predicts the risk of reoffending for:</p>
+    <ul>
+      <li>murder or attempted murder</li>
+      <li>conspiracy to, soliciting, assisting or encouraging murder</li>
+      <li>manslaughter</li>
+      <li>wounding or inflicting grievous bodily harm (GBH)</li>
+      <li>nonfatal strangulation or suffocation</li>
+      <li>offences related to possessing or use of a firearm or imitation firearm</li>
+      <li>aggravated burglary in a dwelling</li>
+      <li>kidnap or false imprisonment</li>
+      <li>arson endangering life</li>
+      <li>criminal damage endangering life</li>
+      <li>aggravated vehicle taking causing death</li>
+      <li>blackmail</li>
+      <li>other non-motoring offences endangering life</li>
+    </ul>
+    <p>It does not predict the following serious offences:</p>
+    <ul>
+      <li>cruelty to or neglect of children</li>
+      <li>abandoning children under two years</li>
+      <li>abduction of children</li>
+      <li>terrorism offences</li>
+    </ul>
+    <h3>How we calculate the score</h3>
+    <p>We calculate the score using:</p>
+    <ul>
+      <li>static factors only, when we have limited information (a static score)</li>
+      <li>dynamic and static factors, when we have more detailed information (a dynamic score)</li>
+    </ul>
+    
+      <p data-test-id="svrp-static-or-dynamic-factors">This score has been calculated using static factors only.</p>
+    
+    <p>Static factors are things which cannot be deliberately changed, and include the person's:</p>
+    <ul>
+      <li>age when they enter the community caseload</li>
+      <li>current offence</li>
+      <li>total number of sanctions</li>
+      <li>number of violent sanctions</li>
+      <li>length of offending history</li>
+    </ul>
+    <p>The person’s current legal gender also counts towards the static score.</p>
+    <p>Dynamic factors are things that can change, and include their:</p>
+    <ul>
+      <li>previous and current weapons offences</li>
+      <li>accommodation status</li>
+      <li>employment status</li>
+      <li>alcohol use</li>
+      <li>temper control</li>
+      <li>attitudes that support or excuse criminal behaviour</li>
+    </ul>
   
   </div>
 </details>
+  </div>
 
   
   <div class="predictor-header-wrapper">
     <h3>Direct contact - Sexual reoffending predictor</h3>
-    
   </div>
-  <div class="govuk-!-margin-bottom-4">
-    <span>2.81% of people with a similar profile to Alex will get a sanction for an offence they commit within two years. This puts Alex in the VERY HIGH risk band.</span>
-  </div>
-  <div class="scale-wrapper">
-    
+  
+    <div class="govuk-!-margin-bottom-4">
+      <span data-test-id="dcsrp-probability-statement">
+        About 3 in 100 people (2.81%) with a similar profile to Alex will get a sanction for a
+        direct contact sexual offence they commit within two years. This puts Alex in the very high risk band.
+      </span>
+    </div>
+    <div class="scale-wrapper">
+      
 
 
 
@@ -12148,7 +12324,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 <div class="arns-scale-marker" data-test-id='scaleMarker'>
-  <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper" data-margin="55.55" data-test-id='scaleMarkerPosition'>
+  <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-56" data-test-id='scaleMarkerPosition'>
     
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
@@ -12183,12 +12359,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
 </div>
 
+    </div>
 
-  </div>
+    
 
-  
-
-  
+    <div class="bottom-border">
+      
 <details class="govuk-details details--chevron-style">
   <summary class="govuk-details__summary">
     <span class="details__chevron" aria-hidden="true"></span>
@@ -12199,21 +12375,87 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </summary>
   <div class="govuk-details__text">
     
-    <p>This is the content for the direct contact - Sexual reoffending predictor.</p>
-  
+      <h3>What this score predicts</h3>
+      <p>The Direct contact – sexual reoffending predictor predicts the risk of the following offences with an adult victim:</p>
+      <ul>
+        <li>rape or attempted rape</li>
+        <li>sexual assault</li>
+        <li>causing a female to engage in sexual activity without consent</li>
+        <li>sex with an adult relative</li>
+        <li>sexual activity with someone with a mental disorder or learning disability, including ‘breach of trust’ offences</li>
+        <li>abduction (under the Sexual Offences 1956 Act)</li>
+        <li>trafficking for sexual exploitation</li>
+        <li>administering a substance with intent to engage in a sexual activity</li>
+      </ul>
+      <p>It also predicts the risk of the following offences with a child victim:</p>
+      <ul>
+        <li>rape or attempted rape</li>
+        <li>assault by penetration</li>
+        <li>sexual assault</li>
+        <li>causing a female to engage in sexual activity without consent</li>
+        <li>sexual activity with a child family member</li>
+        <li>inciting a child family member to engage in sexual activity</li>
+        <li>abuse of trust sexual offences</li>
+        <li>abduction (under the Sexual Offences 1956 Act, not the Child Abduction Act 1984)</li>
+      </ul>
+      <p>
+        It does not predict other sexual offences that do not involve actual or attempted physical contact with a live
+        human victim. For example:
+      </p>
+      <ul>
+        <li>possession of extreme pornographic images</li>
+        <li>exposure</li>
+        <li>voyeurism</li>
+        <li>sending a photograph or film of genitals</li>
+        <li>sharing or threatening to share an intimate photograph or film</li>
+      </ul>
+      <p>
+        Further guidance about the offences it does not predict is available as an annex to the
+        <a href="https://equip-portal.equip.service.justice.gov.uk/CtrlWebIsapi.dll/app/documents/091B36B5CE134AC5B45D06A30D09F8B9/master">
+          Understanding risk predictors - actuarial risk assessment instruments (ARAI) user guidance (EQUip)</a>.
+      </p>
+      <h3>How we calculate the score</h3>
+      <p>
+        We only calculate a Direct contact – sexual reoffending predictor score for men with a known history of sexual
+        or sexually motivated offending.
+      </p>
+      <p>We calculate the score using the number of current and previous sanctions a person has for:</p>
+      <ul>
+        <li>sexual or sexually motivated offences involving contact with an adult</li>
+        <li>sexual or sexually motivated offences involving direct contact with a child</li>
+        <li>non-contact sexual offences</li>
+      </ul>
+      <p>It does not count indecent images of children offences.</p>
+      <p>We also look at static factors, which are things which cannot be deliberately changed. These include:</p>
+      <ul>
+        <li>age when they enter the community caseload</li>
+        <li>total number of sanctions</li>
+        <li>if their current offence was a direct contact offence committed against a stranger victim</li>
+      </ul>
+    
   </div>
 </details>
+    </div>
+  
 
   
   <div class="predictor-header-wrapper">
     <h3>Images and indirect contact - Sexual reoffending predictor</h3>
-    
   </div>
-  <div class="govuk-!-margin-bottom-4">
-    <span>1.07% of people with a similar profile to Alex will get a sanction for an offence they commit within two years. This puts Alex in the HIGH risk band.</span>
-  </div>
-  <div class="scale-wrapper">
+  
+
     
+        
+      
+
+    <div class="govuk-!-margin-bottom-4">
+      <span data-test-id="iicsrp-intro-statement">
+        Alex is in the high risk category for getting a sanction for an indirect sexual contact
+        offence they commit within two years. This is because they have more than 2 previous relevant sanctions.
+      </span>
+    </div>
+    <div class="scale-wrapper">
+      
 
 
 
@@ -12237,7 +12479,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 <div class="arns-scale-marker" data-test-id='scaleMarker'>
-  <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper" data-margin="83.33" data-test-id='scaleMarkerPosition'>
+  <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-83" data-test-id='scaleMarkerPosition'>
     
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
@@ -12265,13 +12507,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
 </div>
 
+    </div>
 
-  </div>
-
-  
-
-  <div class="noThresholdScaleBuffer">
     
+
+    <div class="noThresholdScaleBuffer bottom-border">
+      
 <details class="govuk-details details--chevron-style">
   <summary class="govuk-details__summary">
     <span class="details__chevron" aria-hidden="true"></span>
@@ -12282,11 +12523,131 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   </summary>
   <div class="govuk-details__text">
     
-    <p>This is the content for the images and indirect contact - Sexual reoffending predictor.</p>
+      <h3>What this score predicts</h3>
+      <p>The Images and indirect contact – sexual reoffending predictor predicts the risk of:</p>
+      <ul>
+        <li>causing or inciting a child to engage in sexual activity</li>
+        <li>engaging in sexual activity in the presence of a child under 13 (offender aged 18 or over)</li>
+        <li>causing a child under 13 to watch a sexual act (offender aged 18 or over)</li>
+        <li>meeting a child following sexual grooming</li>
+        <li>sexual communication with a child</li>
+        <li>taking, permitting to be taken or making indecent photographs or pseudo photographs of children</li>
+        <li>distributing or publishing indecent photographs or pseudo photographs of children</li>
+        <li>possession of an indecent photograph of a child</li>
+        <li>possessing prohibited images of children</li>
+      </ul>
+      <p>
+        It does not predict other sexual offences that do not involve actual or attempted physical contact with a live
+        human victim. For example:
+      </p>
+      <ul>
+        <li>possession of extreme pornographic images</li>
+        <li>exposure</li>
+        <li>voyeurism</li>
+        <li>sending a photograph or film of genitals</li>
+        <li>sharing or threatening to share an intimate photograph or film</li>
+      </ul>
+      <p>
+        Further guidance about the offences it does not predict is available as an annex to the
+        <a href="https://equip-portal.equip.service.justice.gov.uk/CtrlWebIsapi.dll/app/documents/091B36B5CE134AC5B45D06A30D09F8B9/master">
+          Understanding risk predictors - actuarial risk assessment instruments (ARAI) user guidance (EQUip)</a>.
+      </p>
+      <h3>How we calculate the score</h3>
+      <p>
+        We only calculate an Images and indirect contact – sexual reoffending predictor score for men with a known
+        history of sexual or sexually motivated offending.
+      </p>
+      <p>We calculate the score using the number of current and previous sanctions a person has for:</p>
+      <ul>
+        <li>indirect child contact offences</li>
+        <li>indecent images of children offences</li>
+      </ul>
+      <p>Indirect contact offences are:</p>
+      <ul>
+        <li>causing a child to watch a sexual act</li>
+        <li>causing or inciting a child to engage in sexual activity</li>
+        <li>arranging child prostitution or pornography</li>
+        <li>arranging or facilitating child sexual offences</li>
+        <li>sexual communication with a child</li>
+        <li>grooming</li>
+      </ul>
+      <p>The score puts the person into a risk band:</p>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-half">
+          <table class="govuk-table">
+
+
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+    
+      <th scope="col" class="govuk-table__header">Risk band</th>
+    
+      <th scope="col" class="govuk-table__header">Number of sanctions</th>
+    
+    </tr>
+  </thead>
+
+  <tbody class="govuk-table__body">
+
   
+    <tr class="govuk-table__row">
+    
+      
+      
+      <th scope="row" class="govuk-table__header">Low</th>
+      
+    
+      
+      
+      <td class="govuk-table__cell">0</td>
+      
+    
+    </tr>
+  
+
+  
+    <tr class="govuk-table__row">
+    
+      
+      
+      <th scope="row" class="govuk-table__header">Medium</th>
+      
+    
+      
+      
+      <td class="govuk-table__cell">1</td>
+      
+    
+    </tr>
+  
+
+  
+    <tr class="govuk-table__row">
+    
+      
+      
+      <th scope="row" class="govuk-table__header">High</th>
+      
+    
+      
+      
+      <td class="govuk-table__cell">2 or more</td>
+      
+    
+    </tr>
+  
+
+  </tbody>
+</table>
+
+        </div>
+      </div>
+    
   </div>
 </details>
-  </div>
+    </div>
+  
+
 
 
 
@@ -12368,7 +12729,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 <html lang="en" class="govuk-template">
   <head>
     <meta charset="utf-8">
-    <title>Library risk predictor scores content</title>
+    <title>Risk predictor scores content</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
 
@@ -12450,6 +12811,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline</a>
           </li>
+        
+          <li class="moj-side-navigation__item moj-side-navigation__item--active">
+            <a href="/risk-predictor-scores-content" aria-current="location">Risk predictor scores content</a>
+          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Snippet components</h4>
@@ -12473,7 +12838,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
 
   <h1 class="govuk-heading-xl">
-    Library risk predictor scores content
+    Risk predictor scores content
   </h1>
 
   <div id="predictor-scores-content-wrapper" class="govuk-grid-row">
@@ -12678,6 +13043,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
           <li class="moj-side-navigation__item moj-side-navigation__item--active">
             <a href="/predictor-timeline" aria-current="location">Predictor timeline</a>
+          </li>
+        
+          <li class="moj-side-navigation__item">
+            <a href="/risk-predictor-scores-content">Risk predictor scores content</a>
           </li>
         </ul>
     
@@ -13743,6 +14112,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline</a>
           </li>
+        
+          <li class="moj-side-navigation__item">
+            <a href="/risk-predictor-scores-content">Risk predictor scores content</a>
+          </li>
         </ul>
     
       <h4 class="moj-side-navigation__title">Snippet components</h4>
@@ -14022,6 +14395,10 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
         
           <li class="moj-side-navigation__item">
             <a href="/predictor-timeline">Predictor timeline</a>
+          </li>
+        
+          <li class="moj-side-navigation__item">
+            <a href="/risk-predictor-scores-content">Risk predictor scores content</a>
           </li>
         </ul>
     

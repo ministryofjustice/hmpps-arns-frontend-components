@@ -136,6 +136,34 @@ describe('GET /predictor-timeline', () => {
   })
 })
 
+describe('GET /risk-predictor-scores-content', () => {
+  it('should render Risk predictor scores content page', () => {
+    auditService.logPageView.mockResolvedValue(null)
+
+    return request(app)
+      .get('/risk-predictor-scores-content')
+      .expect('Content-Type', /html/)
+      .expect(200)
+      .expect(res => {
+        expect(res.text).toContain('<title>Risk predictor scores content</title>')
+      })
+  })
+})
+
+describe('GET /risk-predictor-scores-content/example', () => {
+  it('should render Risk predictor scores content example page', () => {
+    auditService.logPageView.mockResolvedValue(null)
+
+    return request(app)
+      .get('/risk-predictor-scores-content/example')
+      .expect('Content-Type', /html/)
+      .expect(200)
+      .expect(res => {
+        expect(res.text).toContain('<title>Risk predictor scores</title>')
+      })
+  })
+})
+
 describe('GET /nonexistent-route', () => {
   it('should return 404 Not Found', async () => {
     await request(app).get('/nonexistent-route').expect(404)
