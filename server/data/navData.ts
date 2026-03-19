@@ -29,6 +29,10 @@ const rawNavSections: NavSection[] = [
         text: 'Predictor timeline',
         href: '/predictor-timeline',
       },
+      {
+        text: 'Risk predictor scores content',
+        href: '/risk-predictor-scores-content',
+      },
     ],
   },
   {
