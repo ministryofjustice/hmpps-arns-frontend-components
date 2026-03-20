@@ -8,10 +8,6 @@ test.describe('page tests', () => {
     await arnsApiMock.stubGetRiskData()
   })
 
-  test.afterAll(async () => {
-    await resetStubs()
-  })
-
   test('Checks all pages are working', async ({ page }) => {
     const landingPage = new LandingPage(page)
 
@@ -73,5 +69,11 @@ test.describe('page tests', () => {
     await landingPage.checkPredictorTimelineFirstRowIsVisible()
     await landingPage.clickPredictorTimelineFirstCloseButton()
     await landingPage.checkPredictorTimelineFirstRowIsHidden()
+
+    // Click detailed risk predictor scores link and check page
+    await landingPage.clickDetailedRiskPredictorScoresLink()
+    await landingPage.checkDetailedRiskPredictorScoresHeader()
+    await landingPage.clickDetailedRiskPredictorScoresExampleLink()
+    await landingPage.checkDetailedRiskPredictorScoresExampleHeader()
   })
 })
