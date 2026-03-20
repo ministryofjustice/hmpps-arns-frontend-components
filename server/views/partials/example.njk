@@ -12,6 +12,7 @@
   @param data - object containing data needed to render the njks provided
   @param exampleNjks - string containing njks to render
   @param exampleId - an id for this example
+  @param openInNewPageUrl - (optional) a url to link to the example rather than rendering inline
 
 #}
 {% from "govuk/components/tabs/macro.njk" import govukTabs %}
@@ -21,7 +22,11 @@
   {% set exampleId = params.exampleId + "-example" %}
 
   {% set renderedHtml %}
-    {{ renderAsTemplate(params.exampleNjks, params.data) | safe }}
+    {% if not params.openInNewPageUrl %}
+      {{ renderAsTemplate(params.exampleNjks, params.data) | safe }}
+    {% else %}
+      <a href="{{ params.openInNewPageUrl }}">Open example in new page</a>
+    {% endif %}
   {% endset %}
 
   {% set nunjucksHtml %}
