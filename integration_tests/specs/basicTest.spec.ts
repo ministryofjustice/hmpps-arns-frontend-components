@@ -1,15 +1,10 @@
 import { test } from '@playwright/test'
 import LandingPage from '../pages/landingPage'
 import arnsApiMock from '../mockApis/arnsApiMock'
-import { resetStubs } from '../mockApis/wiremock'
 
 test.describe('page tests', () => {
   test.beforeAll(async () => {
     await arnsApiMock.stubGetRiskData()
-  })
-
-  test.afterAll(async () => {
-    await resetStubs()
   })
 
   test('Checks all pages are working', async ({ page }) => {
@@ -73,5 +68,11 @@ test.describe('page tests', () => {
     await landingPage.checkPredictorTimelineFirstRowIsVisible()
     await landingPage.clickPredictorTimelineFirstCloseButton()
     await landingPage.checkPredictorTimelineFirstRowIsHidden()
+
+    // Click detailed risk predictor scores link and check page
+    await landingPage.clickDetailedRiskPredictorScoresLink()
+    await landingPage.checkDetailedRiskPredictorScoresHeader()
+    await landingPage.clickDetailedRiskPredictorScoresExampleLink()
+    await landingPage.checkDetailedRiskPredictorScoresExampleHeader()
   })
 })

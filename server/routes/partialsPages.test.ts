@@ -136,26 +136,26 @@ describe('GET /predictor-timeline', () => {
   })
 })
 
-describe('GET /risk-predictor-scores-content', () => {
+describe('GET /detailed-risk-predictor-scores', () => {
   it('should render Risk predictor scores content page', () => {
     auditService.logPageView.mockResolvedValue(null)
 
     return request(app)
-      .get('/risk-predictor-scores-content')
+      .get('/detailed-risk-predictor-scores')
       .expect('Content-Type', /html/)
       .expect(200)
       .expect(res => {
-        expect(res.text).toContain('<title>Risk predictor scores content</title>')
+        expect(res.text).toContain('<title>Detailed risk predictor scores</title>')
       })
   })
 })
 
-describe('GET /risk-predictor-scores-content/example', () => {
+describe('GET /detailed-risk-predictor-scores/example', () => {
   it('should render Risk predictor scores content example page', () => {
     auditService.logPageView.mockResolvedValue(null)
 
     return request(app)
-      .get('/risk-predictor-scores-content/example')
+      .get('/detailed-risk-predictor-scores/example')
       .expect('Content-Type', /html/)
       .expect(200)
       .expect(res => {

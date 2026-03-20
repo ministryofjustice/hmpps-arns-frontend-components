@@ -1,0 +1,95 @@
+{% extends "layouts/side-nav-layout.njk" %}
+{% from "govuk/components/tag/macro.njk" import govukTag %}
+{% from "partials/example.njk" import example %}
+{% from "partials/nunjucksMacroOptions.njk" import nunjucksMacroOptions %}
+
+{% set pageTitle = "Detailed risk predictor scores" %}
+{% set mainClasses = "govuk-body" %}
+
+{% set macroOptions = [
+  [
+    {
+      text: "data"
+    },
+    {
+      text: "object"
+    },
+    {
+      html: '<strong>Required.</strong> Data from ARNS API - use service from library to obtain this (see <a href="/">Introduction</a> for more information).'
+    }
+  ],
+  [
+    {
+      text: "forename"
+    },
+    {
+      text: "string"
+    },
+    {
+      html: '<strong>Required.</strong> The forename associated with the current case.'
+    }
+  ]
+] %}
+
+{% block sideNavContent %}
+
+  <h1 class="govuk-heading-xl">
+    {{ pageTitle }}
+    <span>{{ govukTag({text: "WIP"}) }}</span>
+  </h1>
+
+  <div id="predictor-scores-content-wrapper" class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <p>The detailed risk predictor scores component lets users view a detailed full-page view of all actuarial predictors. The macro provides the content for the page. The data is from the latest completed assessment.</p>
+      {% set defaultExampleNjks %}
+        {% raw %}
+          {% from "arns/components/risk-predictor-scores-content/macro.njk" import riskPredictorScoresContent %}
+
+          {# Add page header here #}
+
+          {{ riskPredictorScoresContent({
+            data: riskData,
+            forename: "Alex"
+          }) }}
+
+          {# Add page footer here #}
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskData}, exampleNjks: defaultExampleNjks, exampleId: 'default', openInNewPageUrl: "/detailed-risk-predictor-scores/example"}) }}
+      {{ nunjucksMacroOptions({macroOptions: macroOptions}) }}
+
+      <h2>How to use</h2>
+      <p>Refer to the
+        <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4471390821/Risk+badges">Risk badges</a>
+        Confluence documentation for usage details.
+      </p>
+      <h3>Page layout</h3>
+      <p>
+        The following wireframe outlines the structural requirements for the 'Risk predictor scores' page.
+        It distinguishes between static elements managed by your service and content generated via the macro.
+      </p>
+      <div class="page-wireframe">
+        <div class="page-wireframe-back-button">Back button</div>
+
+        <div class="page-wireframe-header">Caption header</div>
+        <div class="page-wireframe-header">Risk predictor scores header</div>
+
+        <div class="page-wireframe-detailed-risk-predictor-scores">Risk predictor scores content macro</div>
+
+        <div class="page-wireframe-back-to-top-button">Back to top button</div>
+      </div>
+      <h4>
+        Key
+      </h4>
+      <ul>
+        <li>
+          <span class="red-key-text">Red box</span> - These components (e.g. headers & navigation buttons) must be
+          defined and rendered within your service.
+        </li>
+        <li><span class="green-key-text">Green box</span> - This section identifies the content rendered by the
+          risk predictor scores content macro.</li>
+      </ul>
+    </div>
+  </div>
+
+{% endblock %}

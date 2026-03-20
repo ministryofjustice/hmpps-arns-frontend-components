@@ -48,6 +48,18 @@ export default class LandingPage {
     private predictorTimelineOpenButton: Locator = page.getByRole('button', { name: 'Open all' }),
     private predictorTimelineFirstCloseButton: Locator = page.getByRole('button', { name: 'Close' }).first(),
     private predictorTimelineFirstRow: Locator = page.getByRole('listitem').filter({ hasText: 'RSR HIGH' }),
+    private detailedRiskPredictorScoresLink: Locator = page.getByRole('link', {
+      name: 'Detailed risk predictor scores',
+    }),
+    private detailedRiskPredictorScoresHeader: Locator = page.getByRole('heading', {
+      name: 'Detailed risk predictor scores',
+    }),
+    private detailedRiskPredictorScoresExampleLink: Locator = page
+      .locator('#default-example-rendered')
+      .getByRole('link', { name: 'Open example in new page' }),
+    private detailedRiskPredictorScoresExampleHeader: Locator = page.getByRole('heading', {
+      name: 'Risk predictor scores',
+    }),
   ) {}
 
   async checkIntroduction() {
@@ -196,5 +208,21 @@ export default class LandingPage {
 
   async checkPredictorTimelineFirstRowIsHidden() {
     await expect(this.predictorTimelineFirstRow).toBeHidden()
+  }
+
+  async clickDetailedRiskPredictorScoresLink() {
+    await this.detailedRiskPredictorScoresLink.click()
+  }
+
+  async checkDetailedRiskPredictorScoresHeader() {
+    await expect(this.detailedRiskPredictorScoresHeader).toBeVisible()
+  }
+
+  async clickDetailedRiskPredictorScoresExampleLink() {
+    await this.detailedRiskPredictorScoresExampleLink.click()
+  }
+
+  async checkDetailedRiskPredictorScoresExampleHeader() {
+    await expect(this.detailedRiskPredictorScoresExampleHeader).toBeVisible()
   }
 }

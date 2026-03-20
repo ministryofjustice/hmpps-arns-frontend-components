@@ -89,7 +89,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/risk-predictor-scores-content">Risk predictor scores content</a>
+            <a href="/detailed-risk-predictor-scores">Detailed risk predictor scores</a>
           </li>
         </ul>
     
@@ -397,7 +397,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/risk-predictor-scores-content">Risk predictor scores content</a>
+            <a href="/detailed-risk-predictor-scores">Detailed risk predictor scores</a>
           </li>
         </ul>
     
@@ -4142,7 +4142,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/risk-predictor-scores-content">Risk predictor scores content</a>
+            <a href="/detailed-risk-predictor-scores">Detailed risk predictor scores</a>
           </li>
         </ul>
     
@@ -4426,7 +4426,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/risk-predictor-scores-content">Risk predictor scores content</a>
+            <a href="/detailed-risk-predictor-scores">Detailed risk predictor scores</a>
           </li>
         </ul>
     
@@ -7645,7 +7645,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/risk-predictor-scores-content">Risk predictor scores content</a>
+            <a href="/detailed-risk-predictor-scores">Detailed risk predictor scores</a>
           </li>
         </ul>
     
@@ -11596,7 +11596,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 "
 `;
 
-exports[`View Snapshot Tests: All Pages should match snapshot for the predictor scores accordion example page (/risk-predictor-scores-content/example) 1`] = `
+exports[`View Snapshot Tests: All Pages should match snapshot for the predictor scores accordion example page (/detailed-risk-predictor-scores/example) 1`] = `
 "<!DOCTYPE html>
 <html lang="en" class="govuk-template">
   <head>
@@ -11685,7 +11685,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/risk-predictor-scores-content">Risk predictor scores content</a>
+            <a href="/detailed-risk-predictor-scores">Detailed risk predictor scores</a>
           </li>
         </ul>
     
@@ -11709,7 +11709,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <div class="govuk-grid-column-two-thirds">
       
 
-  <a href="/risk-predictor-scores-content" class="govuk-back-link">Back</a>
+  <a href="/detailed-risk-predictor-scores" class="govuk-back-link">Back</a>
 
   <h3 class="govuk-caption-l">Alex Smith | CRN: XX000000</h3>
   <h2 class="govuk-heading-l">Risk predictor scores</h2>
@@ -12724,12 +12724,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 "
 `;
 
-exports[`View Snapshot Tests: All Pages should match snapshot for the predictor scores accordion page (/risk-predictor-scores-content) 1`] = `
+exports[`View Snapshot Tests: All Pages should match snapshot for the predictor scores accordion page (/detailed-risk-predictor-scores) 1`] = `
 "<!DOCTYPE html>
 <html lang="en" class="govuk-template">
   <head>
     <meta charset="utf-8">
-    <title>Risk predictor scores content</title>
+    <title>Detailed risk predictor scores</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
 
@@ -12813,7 +12813,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </li>
         
           <li class="moj-side-navigation__item moj-side-navigation__item--active">
-            <a href="/risk-predictor-scores-content" aria-current="location">Risk predictor scores content</a>
+            <a href="/detailed-risk-predictor-scores" aria-current="location">Detailed risk predictor scores</a>
           </li>
         </ul>
     
@@ -12838,7 +12838,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
 
   <h1 class="govuk-heading-xl">
-    Risk predictor scores content
+    Detailed risk predictor scores
     <span><strong class="govuk-tag">
   WIP
 </strong>
@@ -12847,25 +12847,281 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
   <div id="predictor-scores-content-wrapper" class="govuk-grid-row">
     <div class="govuk-grid-column-full">
+      <p>The detailed risk predictor scores component lets users view a detailed full-page view of all actuarial predictors. The macro provides the content for the page. The data is from the latest completed assessment.</p>
+      
+      
+
+  
+
+  
+
+  
+
+  
+
+  <div class="govuk-tabs"
+    
+        
+      
+    
+   id="options-default-example-tabs" data-module="govuk-tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
+
+  <ul class="govuk-tabs__list">
+    
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+      <a class="govuk-tabs__tab" href="#default-example-rendered">
+        Rendered
+      </a>
+    </li>
+      
+    
+          <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#default-example-nunjucks">
+        Nunjucks
+      </a>
+    </li>
+      
+    
+          <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#default-example-data">
+        Data
+      </a>
+    </li>
+      
+    
+  </ul>
+  
+      <div class="govuk-tabs__panel" id="default-example-rendered">
+  
+    <a href="/detailed-risk-predictor-scores/example">Open example in new page</a>
+  
+  </div>
+    
+  
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="default-example-nunjucks">
+  
+    <p>See <a href="#options-details">Nunjucks macro options</a> for more details on how to customise component.</p>
+        <pre class="app-example__code"><code>{% from &quot;arns/components/risk-predictor-scores-content/macro.njk&quot; import riskPredictorScoresContent %}
+    
+    {# Add page header here #}
+    
+    {{ riskPredictorScoresContent({
+      data: riskData,
+      forename: &quot;Alex&quot;
+    }) }}
+    
+    {# Add page footer here #}</code></pre>
+  
+  </div>
+    
+  
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="default-example-data">
+  
+    <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
+        <pre class="app-example__code"><code>{
+      &quot;riskData&quot;: {
+        &quot;assessments&quot;: [
+          {
+            &quot;completedDateTime&quot;: &quot;01 January 2025 at 15:21&quot;,
+            &quot;outputVersion&quot;: &quot;2&quot;,
+            &quot;allReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;All Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;violentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;seriousViolentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Serious Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;directContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Direct Contact - Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;indirectImageContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Images and Indirect Contact – Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;combinedSeriousReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Combined Serious Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            }
+          },
+          {
+            &quot;outputVersion&quot;: &quot;1&quot;,
+            &quot;completedDateTime&quot;: &quot;02 January 2024 at 18:23&quot;,
+            &quot;ogrs3&quot;: {
+              &quot;name&quot;: &quot;OGRS&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 5,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ovp&quot;: {
+              &quot;name&quot;: &quot;OVP&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 7,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ogp&quot;: {
+              &quot;name&quot;: &quot;OGP&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 8,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospdc&quot;: {
+              &quot;name&quot;: &quot;OSP-DC&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospiic&quot;: {
+              &quot;name&quot;: &quot;OSP-IIC&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;rsr&quot;: {
+              &quot;name&quot;: &quot;RSR&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Dynamic&quot;,
+              &quot;score&quot;: 50.1234,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            }
+          }
+        ]
+      }
+    }</code></pre>
+  
+  </div>
+    
+  
+
+</div>
+
+
+
+      
+  
+  <details class="govuk-details"
+    
+        
+      
+    
+   id="options-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Nunjucks macro options
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    
+    <table class="govuk-table"
+    
+        
+      
+    
+   id="options-table">
+
+
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+    
+      <th scope="col" class="govuk-table__header">Name</th>
+    
+      <th scope="col" class="govuk-table__header">Type</th>
+    
+      <th scope="col" class="govuk-table__header">Description</th>
+    
+    </tr>
+  </thead>
+
+  <tbody class="govuk-table__body">
+
+  
+    <tr class="govuk-table__row">
+    
+      
+      
+      <th scope="row" class="govuk-table__header">data</th>
+      
+    
+      
+      
+      <td class="govuk-table__cell">object</td>
+      
+    
+      
+      
+      <td class="govuk-table__cell"><strong>Required.</strong> Data from ARNS API - use service from library to obtain this (see <a href="/">Introduction</a> for more information).</td>
+      
+    
+    </tr>
+  
+
+  
+    <tr class="govuk-table__row">
+    
+      
+      
+      <th scope="row" class="govuk-table__header">forename</th>
+      
+    
+      
+      
+      <td class="govuk-table__cell">string</td>
+      
+    
+      
+      
+      <td class="govuk-table__cell"><strong>Required.</strong> The forename associated with the current case.</td>
+      
+    
+    </tr>
+  
+
+  </tbody>
+</table>
+
+  
+  </div>
+</details>
+
+
+
       <h2>How to use</h2>
-      <h3>Usage example</h3>
-      <pre><code>{{ riskPredictorScoresContent({ data: riskData, forename: 'Alex' }) }}</code></pre>
-      <h3>Macro inputs</h3>
-      <ul>
-        <li>data (ARNS API data)
-          <ul>
-            <li>This will be produced once per page via a call from the library to the ARNS API, detail on the intro
-              page
-            </li>
-          </ul>
-        </li>
-        <li>forename (string)
-          <ul>
-            <li>The individual’s forename associated with the current risk profile</li>
-          </ul>
-        </li>
-      </ul>
-      <h2>Page layout</h2>
+      <p>Refer to the
+        <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4471390821/Risk+badges">Risk badges</a>
+        Confluence documentation for usage details.
+      </p>
+      <h3>Page layout</h3>
       <p>
         The following wireframe outlines the structural requirements for the 'Risk predictor scores' page.
         It distinguishes between static elements managed by your service and content generated via the macro.
@@ -12876,7 +13132,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         <div class="page-wireframe-header">Caption header</div>
         <div class="page-wireframe-header">Risk predictor scores header</div>
 
-        <div class="page-wireframe-risk-predictor-scores-content">Risk predictor scores content macro</div>
+        <div class="page-wireframe-detailed-risk-predictor-scores">Risk predictor scores content macro</div>
 
         <div class="page-wireframe-back-to-top-button">Back to top button</div>
       </div>
@@ -12891,8 +13147,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         <li><span class="green-key-text">Green box</span> - This section identifies the content rendered by the
           risk predictor scores content macro.</li>
       </ul>
-      <h3>Example</h3>
-      <p>Please follow <a href="/risk-predictor-scores-content/example">this</a> link to view a full page example.</p>
     </div>
   </div>
 
@@ -13050,7 +13304,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/risk-predictor-scores-content">Risk predictor scores content</a>
+            <a href="/detailed-risk-predictor-scores">Detailed risk predictor scores</a>
           </li>
         </ul>
     
@@ -14118,7 +14372,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/risk-predictor-scores-content">Risk predictor scores content</a>
+            <a href="/detailed-risk-predictor-scores">Detailed risk predictor scores</a>
           </li>
         </ul>
     
@@ -14402,7 +14656,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
           </li>
         
           <li class="moj-side-navigation__item">
-            <a href="/risk-predictor-scores-content">Risk predictor scores content</a>
+            <a href="/detailed-risk-predictor-scores">Detailed risk predictor scores</a>
           </li>
         </ul>
     
