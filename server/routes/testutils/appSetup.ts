@@ -9,6 +9,7 @@ import type { Services } from '../../services'
 import componentPageRoutes from '../partialsPages'
 
 jest.mock('../../services/auditService')
+jest.mock('../../../server/applicationInfo')
 
 export const flashProvider = jest.fn()
 

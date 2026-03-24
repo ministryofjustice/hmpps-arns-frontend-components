@@ -7,6 +7,7 @@ import { arnsNunjucksSetup } from '@ministryofjustice/hmpps-arns-frontend-compon
 import { baseMacroOptions, initialiseName, outdent } from './utils'
 import config from '../config'
 import logger from '../../logger'
+import applicationInfoSupplier from '../applicationInfo'
 
 export default function nunjucksSetup(app: express.Express): void {
   app.set('view engine', 'njk')
@@ -53,4 +54,6 @@ export default function nunjucksSetup(app: express.Express): void {
   njkEnv.addGlobal('renderAsTemplate', (str: string, context: object) => njkEnv.renderString(str, context))
   njkEnv.addFilter('outdent', outdent)
   njkEnv.addGlobal('baseMacroOptions', baseMacroOptions)
+  njkEnv.addGlobal('applicationInsightsConnectionString', process.env.APPLICATIONINSIGHTS_CONNECTION_STRING)
+  njkEnv.addGlobal('applicationInsightsRoleName', applicationInfoSupplier()?.applicationName)
 }

@@ -14,5 +14,10 @@
 {% endblock %}
 
 {% block bodyEnd %}
+  <script nonce="{{ cspNonce }}">
+    document.addEventListener('DOMContentLoaded', function () {
+      document.initialiseTelemetry('{{ applicationInsightsConnectionString | default('') }}', '{{ applicationInsightsRoleName }}')
+    })
+  </script>
   <script type="module" src="{{ '/assets/js/index.js' | assetMap }}"></script>
 {% endblock %}
