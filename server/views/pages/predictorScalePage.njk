@@ -249,6 +249,22 @@
       {% endset %}
       {{ example({data: {riskData: riskDataLegacy}, exampleNjks: ospExampleNjks, exampleId: 'osp'}) }}
 
+      <h2>Excluded date example</h2>
+      {% set excludedDateExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
+
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorScale({
+            data: riskData,
+            predictor: "ogrs3",
+            excludeDate: true
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskDataLegacy}, exampleNjks: excludedDateExampleNjks, exampleId: 'excludedDate'}) }}
+
       <h2>Unknown example</h2>
       <p>An unknown state occurs when either the band or score is missing.</p>
       {% set unknownExampleNjks %}

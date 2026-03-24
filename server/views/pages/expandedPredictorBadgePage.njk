@@ -118,6 +118,66 @@
       {% endset %}
       {{ example({data: {riskData: riskData, riskDataNotApplicable: riskDataNotApplicable}, exampleNjks: ogrs4NoFallbackExampleNjks, exampleId: 'ogrs4-no-fallback'}) }}
 
+      <h2>Excluded date example</h2>
+      {% set ogrs4ExcludeDateExampleNjks %}
+        {% raw %}
+          {% from "arns/components/expanded-predictor-badge/macro.njk" import expandedPredictorBadge %}
+
+          <div class="govuk-!-margin-bottom-4">
+            {{ expandedPredictorBadge({
+            data: riskData,
+            predictor: "allReoffendingPredictor",
+            excludeDate: true
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ expandedPredictorBadge({
+            data: riskData,
+            predictor: "violentReoffendingPredictor",
+            excludeDate: true
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ expandedPredictorBadge({
+            data: riskData,
+            predictor: "seriousViolentReoffendingPredictor",
+            excludeDate: true
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ expandedPredictorBadge({
+            data: riskData,
+            predictor: "directContactSexualReoffendingPredictor",
+            excludeDate: true
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ expandedPredictorBadge({
+            data: riskData,
+            predictor: "indirectImageContactSexualReoffendingPredictor",
+            excludeDate: true
+            }) }}
+          </div>
+          <div class="govuk-!-margin-bottom-4">
+            {{ expandedPredictorBadge({
+            data: riskData,
+            predictor: "combinedSeriousReoffendingPredictor",
+            excludeDate: true
+            }) }}
+          </div>
+
+          <p>Sexual reoffending badge for the not applicable case:</p>
+          <div class="govuk-!-margin-bottom-4">
+            {{ expandedPredictorBadge({
+            data: riskDataNotApplicable,
+            predictor: "directContactSexualReoffendingPredictor",
+            excludeDate: true
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskData, riskDataNotApplicable: riskDataNotApplicable}, exampleNjks: ogrs4ExcludeDateExampleNjks, exampleId: 'ogrs4-excluded-date'}) }}
+
       <h2>Fallback to legacy (OGRS3-gen) badges for a v1 assessment</h2>
       <p>If you need either the current (OGRS4-gen) or the equivalent OGRS3 badge depending on the version of the latest assessment, use the legacyFallback option.</p>
       {% set ogrs4FallbackNjks %}
