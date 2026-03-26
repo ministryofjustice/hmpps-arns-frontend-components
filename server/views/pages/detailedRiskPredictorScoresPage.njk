@@ -89,6 +89,25 @@
         <li><span class="green-key-text">Green box</span> - This section identifies the content rendered by the
           risk predictor scores content macro.</li>
       </ul>
+
+      <h2>Track section open/close in app insights</h2>
+      <p>A script is provided to allow the tracking of each section to be opened/closed. In order to use it you need to:</p>
+      <ul>
+        <li>Already have set up app insights client-side in a script - <a href="https://github.com/ministryofjustice/hmpps-manage-people-on-probation-ui/blob/main/assets/js/appInsights.js">example from MPOP</a></li>
+        <li>
+          Update the app insights init script to call the ARNS script
+          <pre class="app-example__code"><code>import * as arnsCustomAppInsights from '@ministryofjustice/hmpps-arns-frontend-components-lib/dist/js/arns-custom-app-insights'
+
+function setUpAppInsights() {
+
+  // Set up app insights
+  const appInsights = ...
+
+  arnsCustomAppInsights.init(appInsights)
+}
+          </code></pre>
+        </li>
+      </ul>
     </div>
   </div>
 
