@@ -307,6 +307,8 @@ export type Services = ReturnType&lt;typeof services></code></pre>
     })
   </script>
   <script type="module" src="/assets/js/index.js"></script>
+  
+  <script type="module" src="/assets/js/clean-up-code-examples.js"></script>
 
   </body>
 </html>
@@ -4057,6 +4059,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     })
   </script>
   <script type="module" src="/assets/js/index.js"></script>
+  
+  <script type="module" src="/assets/js/clean-up-code-examples.js"></script>
 
   </body>
 </html>
@@ -4346,6 +4350,8 @@ mappa: {
     })
   </script>
   <script type="module" src="/assets/js/index.js"></script>
+  
+  <script type="module" src="/assets/js/clean-up-code-examples.js"></script>
 
   </body>
 </html>
@@ -7570,6 +7576,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     })
   </script>
   <script type="module" src="/assets/js/index.js"></script>
+  
+  <script type="module" src="/assets/js/clean-up-code-examples.js"></script>
 
   </body>
 </html>
@@ -11615,6 +11623,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     })
   </script>
   <script type="module" src="/assets/js/index.js"></script>
+  
+  <script type="module" src="/assets/js/clean-up-code-examples.js"></script>
 
   </body>
 </html>
@@ -12898,6 +12908,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     })
   </script>
   <script type="module" src="/assets/js/index.js"></script>
+  
+  <script type="module" src="/assets/js/clean-up-code-examples.js"></script>
 
   </body>
 </html>
@@ -13413,6 +13425,8 @@ function setUpAppInsights() {
     })
   </script>
   <script type="module" src="/assets/js/index.js"></script>
+  
+  <script type="module" src="/assets/js/clean-up-code-examples.js"></script>
 
   </body>
 </html>
@@ -14486,6 +14500,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     })
   </script>
   <script type="module" src="/assets/js/index.js"></script>
+  
+  <script type="module" src="/assets/js/clean-up-code-examples.js"></script>
 
   </body>
 </html>
@@ -14775,6 +14791,8 @@ flags: [
     })
   </script>
   <script type="module" src="/assets/js/index.js"></script>
+  
+  <script type="module" src="/assets/js/clean-up-code-examples.js"></script>
 
   </body>
 </html>
@@ -15651,6 +15669,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
     })
   </script>
   <script type="module" src="/assets/js/index.js"></script>
+  
+  <script type="module" src="/assets/js/clean-up-code-examples.js"></script>
 
   </body>
 </html>

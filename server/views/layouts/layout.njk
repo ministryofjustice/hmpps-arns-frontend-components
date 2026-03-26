@@ -20,4 +20,6 @@
     })
   </script>
   <script type="module" src="{{ '/assets/js/index.js' | assetMap }}"></script>
+  {# Temp workaround due to bug in govuk tabs component where code block identation is not respected #}
+  <script type="module" src="{{ '/assets/js/clean-up-code-examples.js' | assetMap }}"></script>
 {% endblock %}
