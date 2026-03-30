@@ -27,15 +27,18 @@ export default class LandingPage {
     private predictorBadgeHeader: Locator = page.getByRole('heading', { name: 'Predictor badge' }),
     private fullHighPredictorBadge: Locator = page
       .locator('div')
-      .filter({ hasText: 'SERIOUS VIOLENT REOFFENDING' })
+      .filter({ hasText: 'Serious violent reoffending' })
       .nth(5),
     private fullLowPredictorBadge: Locator = page
       .locator('div')
-      .filter({ hasText: 'COMBINED SERIOUS REOFFENDING' })
+      .filter({ hasText: 'Combined serious reoffending' })
       .nth(5),
-    private predictorBadgeNA: Locator = page.getByText('DIRECT CONTACT - SEXUAL REOFFENDING PREDICTOR NOT APPLICABLE'),
-    private predictorBadgeMissingScore: Locator = page.getByText('ALL REOFFENDING PREDICTOR UNKNOWN'),
-    private predictorBadgeMissingBand: Locator = page.getByText('VIOLENT REOFFENDING PREDICTOR UNKNOWN'),
+    private predictorBadgeNA: Locator = page.getByText(
+      'Direct contact \u2013 sexual reoffending predictor NOT APPLICABLE',
+      { exact: true },
+    ),
+    private predictorBadgeMissingScore: Locator = page.getByText('All reoffending predictor UNKNOWN'),
+    private predictorBadgeMissingBand: Locator = page.getByText('Violent reoffending predictor UNKNOWN'),
     private expandedPredictorBadgeLink: Locator = page.getByRole('link', {
       name: 'Expanded predictor badge',
       exact: true,
