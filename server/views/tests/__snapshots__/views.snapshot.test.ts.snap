@@ -14706,7 +14706,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       <div class="govuk-tabs__panel" id="default-example-rendered">
   
     <div class="arns-predictor-timeline__heading" data-test-id="timeline-heading">
-      <span class='govuk-heading-m'>Scores history</span>
+      <span class='govuk-heading-m'>Risk predictor scores history</span>
       <button id="predictor-timeline__toggle-all" class="arns-predictor-timeline-link-btn" aria-label="Open all score history"
               aria-controls="predictor-section-01-january-2025-at-15-21 predictor-section-02-january-2024-at-18-23" aria-expanded="false">Open all</button>
     </div>
