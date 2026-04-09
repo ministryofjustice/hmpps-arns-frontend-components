@@ -8617,7 +8617,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m" data-test-id="name">All Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">All Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -8926,7 +8926,70 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
       
       
-      <td class="govuk-table__cell">Default false. Fallback to using the legacy (OGRS3-gen) equivalent of a predictor if the latest assessment is legacy, but a non-legacy predictor was specified. Will have no affect if the predictor specified is legacy or Serious Violent Reoffending Predictor (there is no legacy equivalent version of this predictor).</td>
+      <td class="govuk-table__cell"><p><strong>Optional</strong></p><p>Default false. Fallback to using the legacy (OGRS3-gen) equivalent of a predictor if the latest assessment is legacy, but a non-legacy predictor was specified.</p><p>Will have no affect if the predictor specified is legacy or Serious Violent Reoffending Predictor (there is no legacy equivalent version of this predictor).</p></td>
+      
+    
+    </tr>
+  
+
+  
+    <tr class="govuk-table__row">
+    
+      
+      
+      <th scope="row" class="govuk-table__header">excludeDate</th>
+      
+    
+      
+      
+      <td class="govuk-table__cell">boolean</td>
+      
+    
+      
+      
+      <td class="govuk-table__cell"><p><strong>Optional</strong></p><p>Default false. When true this will exclude the last updated date element from the component.</p></td>
+      
+    
+    </tr>
+  
+
+  
+    <tr class="govuk-table__row">
+    
+      
+      
+      <th scope="row" class="govuk-table__header">headingLevel</th>
+      
+    
+      
+      
+      <td class="govuk-table__cell">number</td>
+      
+    
+      
+      
+      <td class="govuk-table__cell"><p><strong>Optional</strong></p><p>Default 2 (h2). Completes the heading tag.</p><p>Changes the heading tag to a custom size e.g. setting this to 3 will result in the header tag of h3.</p><p>note that the headingClass option should be used in combination with this to ensure the correct styles are applied.</p></td>
+      
+    
+    </tr>
+  
+
+  
+    <tr class="govuk-table__row">
+    
+      
+      
+      <th scope="row" class="govuk-table__header">headingClass</th>
+      
+    
+      
+      
+      <td class="govuk-table__cell">string</td>
+      
+    
+      
+      
+      <td class="govuk-table__cell"><p><strong>Optional</strong></p><p>Default "m". Completes the govuk-heading-{{ headingClass }} class. </p><p>Changes the heading class to enable correct styles for the custom size. </p><p>e.g. setting this to "xs" will result in the "govuk-heading-xs" class.</p><p>note that the headingLevel option should be used in combination with this to ensure the correct tag is applied.</p></td>
       
     
     </tr>
@@ -9004,6 +9067,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
+    
+    
       
     
       
@@ -9021,7 +9086,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m" data-test-id="name">All Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">All Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -9291,6 +9356,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
+    
+    
       
     
       
@@ -9310,7 +9377,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m" data-test-id="name">Violent Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">Violent Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -9578,6 +9645,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
+    
+    
       
     
       
@@ -9599,7 +9668,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m" data-test-id="name">Serious Violent Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">Serious Violent Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -9865,6 +9934,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
+    
+    
       
     
       
@@ -9888,7 +9959,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m" data-test-id="name">Direct Contact - Sexual Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">Direct Contact - Sexual Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -9968,6 +10039,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
+    
+    
       
     
       
@@ -9993,7 +10066,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m" data-test-id="name">Images and Indirect Contact – Sexual Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">Images and Indirect Contact – Sexual Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -10252,6 +10325,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
+    
+    
       
     
       
@@ -10275,7 +10350,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m" data-test-id="name">Direct Contact - Sexual Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">Direct Contact - Sexual Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -10534,6 +10609,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
+    
+    
       
     
       
@@ -10561,7 +10638,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m" data-test-id="name">Combined Serious Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">Combined Serious Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -10822,6 +10899,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
+    
+    
       
     
       
@@ -10839,7 +10918,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m" data-test-id="name">All Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">All Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -11113,6 +11192,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
+    
+    
       
     
       
@@ -11320,6 +11401,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     <div class="govuk-!-margin-bottom-4">
                 
+    
+    
     
     
     
@@ -11533,6 +11616,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
+    
+    
       
     
       
@@ -11740,6 +11825,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     <div class="govuk-!-margin-bottom-4">
                 
+    
+    
     
     
     
@@ -11953,6 +12040,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
+    
+    
       
     
       
@@ -11981,6 +12070,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
               </div>
               <div class="govuk-!-margin-bottom-8">
                 
+    
+    
     
     
     
@@ -12200,6 +12291,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
+    
+    
       
     
       
@@ -12247,6 +12340,297 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="excludedDate-example-data">
+  
+    <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
+        <pre class="app-example__code"><code>{
+      &quot;riskData&quot;: {
+        &quot;assessments&quot;: [
+          {
+            &quot;completedDateTime&quot;: &quot;01 January 2025 at 15:21&quot;,
+            &quot;outputVersion&quot;: &quot;2&quot;,
+            &quot;allReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;All Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;violentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;seriousViolentReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Serious Violent Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;directContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Direct Contact - Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;indirectImageContactSexualReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Images and Indirect Contact – Sexual Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            },
+            &quot;combinedSeriousReoffendingPredictor&quot;: {
+              &quot;name&quot;: &quot;Combined Serious Reoffending Predictor&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Static&quot;,
+              &quot;score&quot;: 1.23,
+              &quot;completedDate&quot;: &quot;01 January 2025&quot;
+            }
+          },
+          {
+            &quot;outputVersion&quot;: &quot;1&quot;,
+            &quot;completedDateTime&quot;: &quot;02 January 2024 at 18:23&quot;,
+            &quot;ogrs3&quot;: {
+              &quot;name&quot;: &quot;OGRS&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 5,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ovp&quot;: {
+              &quot;name&quot;: &quot;OVP&quot;,
+              &quot;band&quot;: &quot;LOW&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 7,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ogp&quot;: {
+              &quot;name&quot;: &quot;OGP&quot;,
+              &quot;band&quot;: &quot;MEDIUM&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 8,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospdc&quot;: {
+              &quot;name&quot;: &quot;OSP-DC&quot;,
+              &quot;band&quot;: &quot;VERY HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 1.07,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;ospiic&quot;: {
+              &quot;name&quot;: &quot;OSP-IIC&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: null,
+              &quot;score&quot;: 2.81,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            },
+            &quot;rsr&quot;: {
+              &quot;name&quot;: &quot;RSR&quot;,
+              &quot;band&quot;: &quot;HIGH&quot;,
+              &quot;staticOrDynamic&quot;: &quot;Dynamic&quot;,
+              &quot;score&quot;: 50.1234,
+              &quot;completedDate&quot;: &quot;02 January 2024&quot;
+            }
+          }
+        ]
+      }
+    }</code></pre>
+  
+  </div>
+    
+  
+
+</div>
+
+
+
+
+      <h2>Custom header size example</h2>
+      
+      
+
+  
+
+  
+
+  
+
+  
+
+  <div class="govuk-tabs"
+    
+        
+      
+    
+   id="options-customHeaderDate-example-tabs" data-module="govuk-tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
+
+  <ul class="govuk-tabs__list">
+    
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+      <a class="govuk-tabs__tab" href="#customHeaderDate-example-rendered">
+        Rendered
+      </a>
+    </li>
+      
+    
+          <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#customHeaderDate-example-nunjucks">
+        Nunjucks
+      </a>
+    </li>
+      
+    
+          <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#customHeaderDate-example-data">
+        Data
+      </a>
+    </li>
+      
+    
+  </ul>
+  
+      <div class="govuk-tabs__panel" id="customHeaderDate-example-rendered">
+  
+    <div class="govuk-!-margin-bottom-4">
+                
+    
+    
+    
+    
+    
+      
+    
+      
+          
+      
+    
+      
+        
+      
+        
+      
+        
+    
+          <div class="arns-predictor-scale govuk-body" data-predictor-scale="All Reoffending Predictor">
+            
+              <div class="arns-predictor-scale-header-wrapper">
+                <div>
+                  <h4 class="govuk-heading-xs predictor-scale-header" data-test-id="name">All Reoffending Predictor</h4>
+                  
+                  <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
+                  
+                </div>
+                
+                  <div data-test-id="staticOrDynamic"><strong class="govuk-tag govuk-tag--grey">
+      Static
+    </strong>
+    </div>
+                
+              </div>
+              
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+      
+    
+    
+    
+    
+      
+    
+    
+    <div class="arns-scale-marker" data-test-id='scaleMarker'>
+      <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
+        
+      <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
+        <div class="arns-scale-marker__card-top">
+          <h3 data-test-id="scaleMarkerCardContent">Low</h3>
+        </div>
+        
+          <div class="arns-scale-marker__card-bottom" data-test-id="scaleMarkerCardBottom">
+            <p>1.23%</p>
+          </div>
+          <div class="arns-scale-marker__card-pointer" data-test-id="scaleMarkerCardPointer"></div>
+        
+      </div>
+    
+      </div>
+    </div>
+    
+    <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="allReoffendingPredictor-scale">
+      <div data-band-percentage-start="0%"
+           data-band-percentage="50%" data-test-id='lowBand'>
+        <span></span>
+      </div>
+      <div data-band-percentage="75%" data-test-id='mediumBand'>
+        <span></span>
+      </div>
+      <div data-band-percentage="90%" data-test-id='highBand'>
+        <span></span>
+      </div>
+      
+        <div data-band-percentage="100%" data-test-id='veryHighBand'>
+          <span></span>
+        </div>
+      
+    </div>
+    
+            
+          </div>
+    
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+              </div>
+  
+  </div>
+    
+  
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="customHeaderDate-example-nunjucks">
+  
+    <p>See <a href="#options-details">Nunjucks macro options</a> for more details on how to customise component.</p>
+        <pre class="app-example__code"><code>{% from &quot;arns/components/predictor-scale/macro.njk&quot; import predictorScale %}
+    
+    &lt;div class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ predictorScale({
+      data: riskData,
+      predictor: &quot;allReoffendingPredictor&quot;,
+      headingLevel: 4,
+      headingClass: &quot;xs&quot;
+      }) }}
+    &lt;/div&gt;</code></pre>
+  
+  </div>
+    
+  
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="customHeaderDate-example-data">
   
     <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
         <pre class="app-example__code"><code>{
@@ -12412,6 +12796,8 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
+    
+    
       
     
       
@@ -12429,7 +12815,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m" data-test-id="name">All Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">All Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
