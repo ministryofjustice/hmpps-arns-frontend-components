@@ -1,7 +1,9 @@
 {% extends "govuk/template.njk" %}
 
 {% block head %}
+  <a id="top"></a>
   <link href="{{ '/assets/css/index.css' | assetMap }}" rel="stylesheet"/>
+  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 {% endblock %}
 
 {% block pageTitle %}{{ pageTitle | default(applicationName) }}{% endblock %}
