@@ -16,7 +16,50 @@
       text: "boolean"
     },
     {
-      html: 'Default false. Fallback to using the legacy (OGRS3-gen) equivalent of a predictor if the latest assessment is legacy, but a non-legacy predictor was specified. Will have no affect if the predictor specified is legacy or Serious Violent Reoffending Predictor (there is no legacy equivalent version of this predictor).'
+      html: '<p><strong>Optional</strong></p>' +
+      '<p>Default false. Fallback to using the legacy (OGRS3-gen) equivalent of a predictor if the latest assessment is legacy, but a non-legacy predictor was specified.</p>' +
+      '<p>Will have no affect if the predictor specified is legacy or Serious Violent Reoffending Predictor (there is no legacy equivalent version of this predictor).</p>'
+    }
+  ],
+  [
+    {
+      text: "excludeDate"
+    },
+    {
+      text: "boolean"
+    },
+    {
+      html: '<p><strong>Optional</strong></p>' +
+      '<p>Default false. When true this will exclude the last updated date element from the component.</p>'
+    }
+  ],
+  [
+    {
+      text: "headingLevel"
+    },
+    {
+      text: "number"
+    },
+    {
+      html: '<p><strong>Optional</strong></p>' +
+      '<p>Default 2 (h2). Completes the heading tag.</p>' +
+      '<p>Changes the heading tag to a custom size e.g. setting this to 3 will result in the header tag of h3.</p>' +
+      '<p>note that the headingClass option should be used in combination with this to ensure the correct styles are applied.</p>'
+    }
+  ],
+  [
+    {
+      text: "headingClass"
+    },
+    {
+      text: "string"
+    },
+    {
+      html: '<p><strong>Optional</strong></p>' +
+      '<p>Default "m". Completes the govuk-heading-{{ headingClass }} class. </p>' +
+      '<p>Changes the heading class to enable correct styles for the custom size. </p>' +
+      '<p>e.g. setting this to "xs" will result in the "govuk-heading-xs" class.</p>' +
+      '<p>note that the headingLevel option should be used in combination with this to ensure the correct tag is applied.</p>'
     }
   ]
 ]) %}
@@ -264,6 +307,23 @@
         {% endraw %}
       {% endset %}
       {{ example({data: {riskData: riskDataLegacy}, exampleNjks: excludedDateExampleNjks, exampleId: 'excludedDate'}) }}
+
+      <h2>Custom header size example</h2>
+      {% set customHeaderExampleNjks %}
+        {% raw %}
+          {% from "arns/components/predictor-scale/macro.njk" import predictorScale %}
+
+          <div class="govuk-!-margin-bottom-4">
+            {{ predictorScale({
+            data: riskData,
+            predictor: "allReoffendingPredictor",
+            headingLevel: 4,
+            headingClass: "xs"
+            }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {riskData: riskData}, exampleNjks: customHeaderExampleNjks, exampleId: 'customHeaderDate'}) }}
 
       <h2>Unknown example</h2>
       <p>An unknown state occurs when either the band or score is missing.</p>
