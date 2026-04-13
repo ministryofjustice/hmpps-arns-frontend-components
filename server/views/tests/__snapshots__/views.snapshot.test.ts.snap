@@ -8617,7 +8617,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">All Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m" data-test-id="name">All Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -9067,8 +9067,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
-    
-    
       
     
       
@@ -9086,7 +9084,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">All Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m" data-test-id="name">All Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -9356,8 +9354,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
-    
-    
       
     
       
@@ -9377,7 +9373,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">Violent Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m" data-test-id="name">Violent Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -9645,8 +9641,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
-    
-    
       
     
       
@@ -9668,7 +9662,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">Serious Violent Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m" data-test-id="name">Serious Violent Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -9934,8 +9928,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
-    
-    
       
     
       
@@ -9959,7 +9951,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">Direct Contact - Sexual Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m" data-test-id="name">Direct Contact - Sexual Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -10039,8 +10031,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
-    
-    
       
     
       
@@ -10066,7 +10056,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">Images and Indirect Contact – Sexual Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m" data-test-id="name">Images and Indirect Contact – Sexual Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -10325,8 +10315,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
-    
-    
       
     
       
@@ -10350,7 +10338,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">Direct Contact - Sexual Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m" data-test-id="name">Direct Contact - Sexual Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -10609,8 +10597,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
-    
-    
       
     
       
@@ -10638,7 +10624,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">Combined Serious Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m" data-test-id="name">Combined Serious Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -10899,8 +10885,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
-    
-    
       
     
       
@@ -10918,7 +10902,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">All Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m" data-test-id="name">All Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -11192,8 +11176,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
-    
-    
       
     
       
@@ -11401,8 +11383,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     <div class="govuk-!-margin-bottom-4">
                 
-    
-    
     
     
     
@@ -11616,8 +11596,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
-    
-    
       
     
       
@@ -11825,8 +11803,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
     <div class="govuk-!-margin-bottom-4">
                 
-    
-    
     
     
     
@@ -12040,8 +12016,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
-    
-    
       
     
       
@@ -12070,8 +12044,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
               </div>
               <div class="govuk-!-margin-bottom-8">
                 
-    
-    
     
     
     
@@ -12291,8 +12263,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
-    
-    
       
     
       
@@ -12504,8 +12474,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
-    
-    
       
     
       
@@ -12523,7 +12491,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h4 class="govuk-heading-xs predictor-scale-header" data-test-id="name">All Reoffending Predictor</h4>
+                  <h2 class="govuk-heading-m" data-test-id="name">All Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -12796,8 +12764,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
     
     
-    
-    
       
     
       
@@ -12815,7 +12781,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             
               <div class="arns-predictor-scale-header-wrapper">
                 <div>
-                  <h2 class="govuk-heading-m predictor-scale-header" data-test-id="name">All Reoffending Predictor</h2>
+                  <h2 class="govuk-heading-m" data-test-id="name">All Reoffending Predictor</h2>
                   
                   <p class="govuk-hint" data-test-id="LastUpdatedDate">Last updated: 01 January 2025</p>
                   
@@ -13242,7 +13208,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
 
 
 
-  <div class="govuk-body" data-module="arns-custom-app-insights">
+  <div data-module="arns-custom-app-insights">
     <section class="bottom-border" data-test-id="predictor-intro" aria-labelledby="intro-heading">
       <h2 id="intro-heading" class="govuk-visually-hidden">
         Introduction to risk predictors
@@ -13288,7 +13254,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </div>
         <div class="scale-wrapper"
              role="img"
-             aria-label="A linear gauge chart showing the All reoffending predictor score is 1.23%. This is in the LOW band. Below 50% is low, 50% to below 75% is medium, 75% to below 90% is high, 90% to 100% is very high. This was last updated 01 January 2025.">
+             aria-label="A linear gauge chart showing the All reoffending predictor score is 1.23%. This is in the LOW band. There are four bands, 0% to 50% is low, 50% to 75% is medium, 75% to 90% is high, 90% to 100% is very high, This was last updated 01 January 2025.">
           
 
 
@@ -13441,7 +13407,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </div>
         <div class="scale-wrapper"
              role="img"
-             aria-label="A linear gauge chart showing the Violent reoffending predictor score is 1.23%. This is in the LOW band. Below 30% is low, 30% to below 60% is medium, 60% to below 80% is high, 80% to 100% is very high. This was last updated 01 January 2025.">
+             aria-label="A linear gauge chart showing the Violent reoffending predictor score is 1.23%. This is in the LOW band. There are four bands, 0% to 30% is low, 30% to 60% is medium, 60% to 80% is high, 80% to 100% is very high, This was last updated 01 January 2025.">
           
 
 
@@ -13533,7 +13499,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             The Violent reoffending predictor predicts the risk of reoffending for all offences that are classed as violent.
           </p>
           <p>
-            However, the <a href="#svrp-heading">Serious violent reoffending predictor</a>
+            However, the <a href="#svrp-header">Serious violent reoffending predictor</a>
             is
             specifically designed to predict the most serious violent offences. Because of this, the Violent reoffending
             predictor should be used to identify whether someone is likely to commit offences not covered by the Serious
@@ -13617,7 +13583,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </div>
         <div class="scale-wrapper"
              role="img"
-             aria-label="A linear gauge chart showing the Combined serious reoffending predictor score is 1.23%. This is in the HIGH band. Below 1% is low, 1% to below 3% is medium, 3% to below 6.9% is high, 6.9% to 25% or above is very high. This was last updated 01 January 2025.">
+             aria-label="A linear gauge chart showing the Combined serious reoffending predictor score is 1.23%. This is in the HIGH band. There are four bands, 0% to 1% is low, 1% to 3% is medium, 3% to 6.9% is high, 6.9% to 25+% is very high, This was last updated 01 January 2025.">
           
 
 
@@ -13744,7 +13710,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <section role="region" aria-labelledby="svrp-heading">
       
         <div class="predictor-header-wrapper">
-          <h3 id="svrp-heading">Serious violent reoffending predictor</h3>
+          <h3 id="svrp-header">Serious violent reoffending predictor</h3>
           <div class="staticOrDynamicTag" data-test-id="svrp-staticOrDynamic">
             <strong class="govuk-tag govuk-tag--grey">
   Static
@@ -13760,7 +13726,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         </div>
         <div class="scale-wrapper"
              role="img"
-             aria-label="A linear gauge chart showing the Serious violent reoffending predictor score is 1.23%. This is in the MEDIUM band. Below 1% is low, 1% to below 3% is medium, 3% to below 6.9% is high, 6.9% to 25% or above is very high. This was last updated 01 January 2025.">
+             aria-label="A linear gauge chart showing the Serious violent reoffending predictor score is 1.23%. This is in the MEDIUM band. There are four bands, 0% to 1% is low, 1% to 3% is medium, 3% to 6.9% is high, 6.9% to 25+% is very high, This was last updated 01 January 2025.">
           
 
 
@@ -13923,7 +13889,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           </div>
           <div class="scale-wrapper"
                role="img"
-               aria-label="A linear gauge chart showing the Direct contact sexual reoffending predictor score is 2.81%. This is in the VERY HIGH band. Below 0.6% is low, 0.6% to below 2.1% is medium, 2.1% to below 5.3% is high, 5.3% to 83.1% is very high. This was last updated 01 January 2025.">
+               aria-label="A linear gauge chart showing the Direct contact sexual reoffending predictor score is 2.81%. This is in the VERY HIGH band. There are four bands, 0% to 0.6% is low, 0.6% to 2.1% is medium, 2.1% to 5.3% is high, 5.3% to 83.1% is very high, This was last updated 01 January 2025.">
             
 
 
@@ -15918,7 +15884,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     </div>
   </div>
 
-  <script type="module" src="/assets/js/predictor-timeline.js"></script>
 
     </div>
   </div>
