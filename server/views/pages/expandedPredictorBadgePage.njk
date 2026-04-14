@@ -64,6 +64,12 @@
       {{ example({data: {riskData: riskData}, exampleNjks: defaultExampleNjks, exampleId: 'default'}) }}
       {{ nunjucksMacroOptions({macroOptions: macroOptions}) }}
 
+      <h2>How to use</h2>
+      <p>Refer to the
+        <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4471390821/Risk+badges">Risk badges</a>
+        Confluence documentation for usage details.
+      </p>
+
       <h2>Show current (OGRS4-gen) badges for a v2 assessment (no fallback)</h2>
       <p>Display the current (OGRS4-gen) badges for the latest assessment. Note that if the assessment is legacy (v1) or there's no data for this predictor then the badges will not render. If this is not the desired behaviour you may need to add additional validation in your code.</p>
       {% set ogrs4NoFallbackExampleNjks %}
