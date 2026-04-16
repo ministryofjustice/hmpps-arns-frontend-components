@@ -10,9 +10,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
     <meta name="theme-color" content="#1d70b8">
 
     
-  <a id="top"></a>
   <link href="/assets/css/index.css" rel="stylesheet"/>
-  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -27,6 +25,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the Intro page
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
     
+  <a id="top" href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -370,9 +369,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
     <meta name="theme-color" content="#1d70b8">
 
     
-  <a id="top"></a>
   <link href="/assets/css/index.css" rel="stylesheet"/>
-  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -387,6 +384,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the expanded p
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
     
+  <a id="top" href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -5048,9 +5046,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
     <meta name="theme-color" content="#1d70b8">
 
     
-  <a id="top"></a>
   <link href="/assets/css/index.css" rel="stylesheet"/>
-  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -5065,6 +5061,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the mappa widg
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
     
+  <a id="top" href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -5384,9 +5381,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <meta name="theme-color" content="#1d70b8">
 
     
-  <a id="top"></a>
   <link href="/assets/css/index.css" rel="stylesheet"/>
-  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -5401,6 +5396,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
     
+  <a id="top" href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -8679,9 +8675,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <meta name="theme-color" content="#1d70b8">
 
     
-  <a id="top"></a>
   <link href="/assets/css/index.css" rel="stylesheet"/>
-  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -8696,6 +8690,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
     
+  <a id="top" href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -13442,9 +13437,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <meta name="theme-color" content="#1d70b8">
 
     
-  <a id="top"></a>
   <link href="/assets/css/index.css" rel="stylesheet"/>
-  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -13459,6 +13452,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
     
+  <a id="top" href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -14774,9 +14768,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <meta name="theme-color" content="#1d70b8">
 
     
-  <a id="top"></a>
   <link href="/assets/css/index.css" rel="stylesheet"/>
-  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -14791,6 +14783,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
     
+  <a id="top" href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -15345,9 +15338,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     <meta name="theme-color" content="#1d70b8">
 
     
-  <a id="top"></a>
   <link href="/assets/css/index.css" rel="stylesheet"/>
-  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -15362,6 +15353,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
     
+  <a id="top" href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -16473,9 +16465,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
     <meta name="theme-color" content="#1d70b8">
 
     
-  <a id="top"></a>
   <link href="/assets/css/index.css" rel="stylesheet"/>
-  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -16490,6 +16480,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the risk flag 
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
     
+  <a id="top" href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -16809,9 +16800,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
     <meta name="theme-color" content="#1d70b8">
 
     
-  <a id="top"></a>
   <link href="/assets/css/index.css" rel="stylesheet"/>
-  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
@@ -16826,6 +16815,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh widge
   <body class="govuk-template__body">
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
     
+  <a id="top" href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
     
