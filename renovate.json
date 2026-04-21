@@ -41,6 +41,6 @@
     }
   ],
   "vulnerabilityAlerts": {
-    "stabilityDays": 0
+    "stabilityDays": 7
   }
 }
