@@ -33,7 +33,7 @@
     "npm": "^11"
   },
   "dependencies": {
-    "@aws-sdk/client-sqs": "^3.934.0",
+    "@aws-sdk/client-sqs": "^3.1039.0",
     "@microsoft/applicationinsights-web": "3.4.1",
     "@ministryofjustice/frontend": "^9.0.0",
     "@ministryofjustice/hmpps-arns-frontend-components-lib": "2.0.0",
