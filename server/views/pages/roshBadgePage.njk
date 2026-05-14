@@ -14,23 +14,8 @@
   </h1>
   <div id="rosh-badge-wrapper" class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-      <p>The rosh badge component lets users view the band and type in a badge format. The data is from the latest completed assessment.</p>
+      <p>The rosh badge component lets users view the band in a badge format. The data is from the latest completed assessment.</p>
       {% set defaultExampleNjks %}
-        {% raw %}
-          {% from "arns/components/rosh-badge/macro.njk" import roshBadge %}
-          {{ roshBadge({data: roshDataLow }) }}
-        {% endraw %}
-      {% endset %}
-      {{ example({data: {roshDataLow: roshDataLow}, exampleNjks: defaultExampleNjks, exampleId: 'default'}) }}
-      {{ nunjucksMacroOptions({macroOptions: macroOptions}) }}
-      <h2>How to use</h2>
-      <p>Refer to the
-        <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4471390821/Risk+badges">Risk badges</a>
-        Confluence documentation for usage details.
-      </p>
-      <h2>Show current (OGRS4-gen) badges for a v2 assessment (no fallback)</h2>
-      <p>Display the current (OGRS4-gen) badges for the latest assessment. Note that if the assessment is legacy (v1) or there's no data for this predictor then the badges will not render. If this is not the desired behaviour you may need to add additional validation in your code.</p>
-      {% set ogrs4NoFallbackExampleNjks %}
         {% raw %}
           {% from "arns/components/rosh-badge/macro.njk" import roshBadge %}
           <p>Badges for a case with all bands set.</p>
@@ -49,7 +34,13 @@
           </div>
         {% endraw %}
       {% endset %}
-      {{ example({data: {roshDataLow: roshDataLow, roshDataMedium: roshDataMedium, roshDataHigh: roshDataHigh, roshDataVeryHigh: roshDataVeryHigh}, exampleNjks: ogrs4NoFallbackExampleNjks, exampleId: 'ogrs4-no-fallback'}) }}
+      {{ example({data: {roshDataLow: roshDataLow, roshDataMedium: roshDataMedium, roshDataHigh: roshDataHigh, roshDataVeryHigh: roshDataVeryHigh}, exampleNjks: defaultExampleNjks, exampleId: 'default'}) }}
+      {{ nunjucksMacroOptions({macroOptions: macroOptions}) }}
+      <h2>How to use</h2>
+      <p>Refer to the
+        <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4471390821/Risk+badges">Risk badges</a>
+        Confluence documentation for usage details.
+      </p>
       <h2>Missing band</h2>
       <p>An unknown state occurs when the band is missing.</p>
       {% set unknownExampleNjks %}

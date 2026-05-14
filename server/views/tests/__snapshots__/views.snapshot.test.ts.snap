@@ -17019,7 +17019,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh badge
   </h1>
   <div id="rosh-badge-wrapper" class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-      <p>The rosh badge component lets users view the band and type in a badge format. The data is from the latest completed assessment.</p>
+      <p>The rosh badge component lets users view the band in a badge format. The data is from the latest completed assessment.</p>
       
       
 
@@ -17071,6 +17071,18 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh badge
   
       <div class="govuk-tabs__panel" id="default-example-rendered">
   
+    <p>Badges for a case with all bands set.</p>
+    
+              <div id="rosh-badge-low" class="govuk-!-margin-bottom-4">
+                
+    
+      
+    
+        
+      
+    
+      
+    
     <div class="arns-badge-base--medium"
                data-badge-base="Risk of serious harm MEDIUM">
     
@@ -17080,6 +17092,71 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh badge
     
             
           </div>
+    
+              </div>
+              <div id="rosh-badge-medium" class="govuk-!-margin-bottom-4">
+                
+    
+      
+    
+        
+      
+    
+      
+    
+    <div class="arns-badge-base--medium"
+               data-badge-base="Risk of serious harm MEDIUM">
+    
+            <span class="arns-badge-base__type_and_level" data-test-id="nameAndBand">Risk of serious harm <strong>MEDIUM</strong></span>
+    
+            
+    
+            
+          </div>
+    
+              </div>
+              <div id="rosh-badge-high" class="govuk-!-margin-bottom-4">
+                
+    
+      
+    
+        
+      
+    
+      
+    
+    <div class="arns-badge-base--medium"
+               data-badge-base="Risk of serious harm MEDIUM">
+    
+            <span class="arns-badge-base__type_and_level" data-test-id="nameAndBand">Risk of serious harm <strong>MEDIUM</strong></span>
+    
+            
+    
+            
+          </div>
+    
+              </div>
+              <div id="rosh-badge-very-high" class="govuk-!-margin-bottom-4">
+                
+    
+      
+    
+        
+      
+    
+      
+    
+    <div class="arns-badge-base--medium"
+               data-badge-base="Risk of serious harm MEDIUM">
+    
+            <span class="arns-badge-base__type_and_level" data-test-id="nameAndBand">Risk of serious harm <strong>MEDIUM</strong></span>
+    
+            
+    
+            
+          </div>
+    
+              </div>
   
   </div>
     
@@ -17088,7 +17165,20 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh badge
   
     <p>See <a href="#options-details">Nunjucks macro options</a> for more details on how to customise component.</p>
         <pre class="app-example__code"><code>{% from &quot;arns/components/rosh-badge/macro.njk&quot; import roshBadge %}
-    {{ roshBadge({data: roshDataLow }) }}</code></pre>
+    &lt;p&gt;Badges for a case with all bands set.&lt;/p&gt;
+    
+    &lt;div id=&quot;rosh-badge-low&quot; class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ roshBadge({data: roshDataLow }) }}
+    &lt;/div&gt;
+    &lt;div id=&quot;rosh-badge-medium&quot; class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ roshBadge({data: roshDataMedium }) }}
+    &lt;/div&gt;
+    &lt;div id=&quot;rosh-badge-high&quot; class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ roshBadge({data: roshDataHigh }) }}
+    &lt;/div&gt;
+    &lt;div id=&quot;rosh-badge-very-high&quot; class=&quot;govuk-!-margin-bottom-4&quot;&gt;
+      {{ roshBadge({data: roshDataVeryHigh }) }}
+    &lt;/div&gt;</code></pre>
   
   </div>
     
@@ -17098,6 +17188,27 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh badge
     <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
         <pre class="app-example__code"><code>{
       &quot;roshDataLow&quot;: {
+        &quot;assessment&quot;: {
+          &quot;overallRisk&quot;: &quot;MEDIUM&quot;,
+          &quot;completedDate&quot;: null,
+          &quot;risks&quot;: []
+        }
+      },
+      &quot;roshDataMedium&quot;: {
+        &quot;assessment&quot;: {
+          &quot;overallRisk&quot;: &quot;MEDIUM&quot;,
+          &quot;completedDate&quot;: null,
+          &quot;risks&quot;: []
+        }
+      },
+      &quot;roshDataHigh&quot;: {
+        &quot;assessment&quot;: {
+          &quot;overallRisk&quot;: &quot;MEDIUM&quot;,
+          &quot;completedDate&quot;: null,
+          &quot;risks&quot;: []
+        }
+      },
+      &quot;roshDataVeryHigh&quot;: {
         &quot;assessment&quot;: {
           &quot;overallRisk&quot;: &quot;MEDIUM&quot;,
           &quot;completedDate&quot;: null,
@@ -17191,213 +17302,6 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh badge
         <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4471390821/Risk+badges">Risk badges</a>
         Confluence documentation for usage details.
       </p>
-      <h2>Show current (OGRS4-gen) badges for a v2 assessment (no fallback)</h2>
-      <p>Display the current (OGRS4-gen) badges for the latest assessment. Note that if the assessment is legacy (v1) or there's no data for this predictor then the badges will not render. If this is not the desired behaviour you may need to add additional validation in your code.</p>
-      
-      
-
-  
-
-  
-
-  
-
-  
-
-  <div class="govuk-tabs"
-    
-        
-        
-      
-        
-      
-    
-   id="options-ogrs4-no-fallback-example-tabs" data-module="govuk-tabs">
-  <h2 class="govuk-tabs__title">
-    Contents
-  </h2>
-
-  <ul class="govuk-tabs__list">
-    
-          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-      <a class="govuk-tabs__tab" href="#ogrs4-no-fallback-example-rendered">
-        Rendered
-      </a>
-    </li>
-      
-    
-          <li class="govuk-tabs__list-item">
-      <a class="govuk-tabs__tab" href="#ogrs4-no-fallback-example-nunjucks">
-        Nunjucks
-      </a>
-    </li>
-      
-    
-          <li class="govuk-tabs__list-item">
-      <a class="govuk-tabs__tab" href="#ogrs4-no-fallback-example-data">
-        Data
-      </a>
-    </li>
-      
-    
-  </ul>
-  
-      <div class="govuk-tabs__panel" id="ogrs4-no-fallback-example-rendered">
-  
-    <p>Badges for a case with all bands set.</p>
-    
-              <div id="rosh-badge-low" class="govuk-!-margin-bottom-4">
-                
-    
-      
-    
-        
-      
-    
-      
-    
-    <div class="arns-badge-base--medium"
-               data-badge-base="Risk of serious harm MEDIUM">
-    
-            <span class="arns-badge-base__type_and_level" data-test-id="nameAndBand">Risk of serious harm <strong>MEDIUM</strong></span>
-    
-            
-    
-            
-          </div>
-    
-              </div>
-              <div id="rosh-badge-medium" class="govuk-!-margin-bottom-4">
-                
-    
-      
-    
-        
-      
-    
-      
-    
-    <div class="arns-badge-base--medium"
-               data-badge-base="Risk of serious harm MEDIUM">
-    
-            <span class="arns-badge-base__type_and_level" data-test-id="nameAndBand">Risk of serious harm <strong>MEDIUM</strong></span>
-    
-            
-    
-            
-          </div>
-    
-              </div>
-              <div id="rosh-badge-high" class="govuk-!-margin-bottom-4">
-                
-    
-      
-    
-        
-      
-    
-      
-    
-    <div class="arns-badge-base--medium"
-               data-badge-base="Risk of serious harm MEDIUM">
-    
-            <span class="arns-badge-base__type_and_level" data-test-id="nameAndBand">Risk of serious harm <strong>MEDIUM</strong></span>
-    
-            
-    
-            
-          </div>
-    
-              </div>
-              <div id="rosh-badge-very-high" class="govuk-!-margin-bottom-4">
-                
-    
-      
-    
-        
-      
-    
-      
-    
-    <div class="arns-badge-base--medium"
-               data-badge-base="Risk of serious harm MEDIUM">
-    
-            <span class="arns-badge-base__type_and_level" data-test-id="nameAndBand">Risk of serious harm <strong>MEDIUM</strong></span>
-    
-            
-    
-            
-          </div>
-    
-              </div>
-  
-  </div>
-    
-  
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="ogrs4-no-fallback-example-nunjucks">
-  
-    <p>See <a href="#options-details">Nunjucks macro options</a> for more details on how to customise component.</p>
-        <pre class="app-example__code"><code>{% from &quot;arns/components/rosh-badge/macro.njk&quot; import roshBadge %}
-    &lt;p&gt;Badges for a case with all bands set.&lt;/p&gt;
-    
-    &lt;div id=&quot;rosh-badge-low&quot; class=&quot;govuk-!-margin-bottom-4&quot;&gt;
-      {{ roshBadge({data: roshDataLow }) }}
-    &lt;/div&gt;
-    &lt;div id=&quot;rosh-badge-medium&quot; class=&quot;govuk-!-margin-bottom-4&quot;&gt;
-      {{ roshBadge({data: roshDataMedium }) }}
-    &lt;/div&gt;
-    &lt;div id=&quot;rosh-badge-high&quot; class=&quot;govuk-!-margin-bottom-4&quot;&gt;
-      {{ roshBadge({data: roshDataHigh }) }}
-    &lt;/div&gt;
-    &lt;div id=&quot;rosh-badge-very-high&quot; class=&quot;govuk-!-margin-bottom-4&quot;&gt;
-      {{ roshBadge({data: roshDataVeryHigh }) }}
-    &lt;/div&gt;</code></pre>
-  
-  </div>
-    
-  
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="ogrs4-no-fallback-example-data">
-  
-    <p>Data used to render this example. <strong>Use the built-in service to obtain this data from the ARNS API and pass it into every page you require to use the macros in.</strong></p>
-        <pre class="app-example__code"><code>{
-      &quot;roshDataLow&quot;: {
-        &quot;assessment&quot;: {
-          &quot;overallRisk&quot;: &quot;MEDIUM&quot;,
-          &quot;completedDate&quot;: null,
-          &quot;risks&quot;: []
-        }
-      },
-      &quot;roshDataMedium&quot;: {
-        &quot;assessment&quot;: {
-          &quot;overallRisk&quot;: &quot;MEDIUM&quot;,
-          &quot;completedDate&quot;: null,
-          &quot;risks&quot;: []
-        }
-      },
-      &quot;roshDataHigh&quot;: {
-        &quot;assessment&quot;: {
-          &quot;overallRisk&quot;: &quot;MEDIUM&quot;,
-          &quot;completedDate&quot;: null,
-          &quot;risks&quot;: []
-        }
-      },
-      &quot;roshDataVeryHigh&quot;: {
-        &quot;assessment&quot;: {
-          &quot;overallRisk&quot;: &quot;MEDIUM&quot;,
-          &quot;completedDate&quot;: null,
-          &quot;risks&quot;: []
-        }
-      }
-    }</code></pre>
-  
-  </div>
-    
-  
-
-</div>
-
-
-
       <h2>Missing band</h2>
       <p>An unknown state occurs when the band is missing.</p>
       
