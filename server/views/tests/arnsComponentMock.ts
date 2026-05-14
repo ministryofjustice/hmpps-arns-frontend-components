@@ -95,6 +95,13 @@ const arnsComponentMock = {
       },
     ],
   }),
+  getRoshData: jest.fn().mockReturnValue({
+    assessment: {
+      overallRisk: 'MEDIUM',
+      completedDate: null,
+      risks: [],
+    },
+  }),
 }
 
 export default arnsComponentMock

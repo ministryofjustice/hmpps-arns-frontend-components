@@ -23,6 +23,13 @@ export default class LandingPage {
     private ROSHWidgetCustodyExample: Locator = page.locator('#rosh-widget-custody-inner'),
     private ROSHWidgetNoData: Locator = page.locator('#rosh-widget-no-matching-data'),
     private ROSHWidgetUnknown: Locator = page.locator('#rosh-widget-null-data'),
+    private ROSHBadgeLink: Locator = page.getByRole('link', { name: 'ROSH badge' }),
+    private ROSHBadgeHeader: Locator = page.getByRole('heading', { name: 'Risk badge' }),
+    private ROSHBadgeLow: Locator = page.locator('#rosh-badge-low'),
+    private ROSHBadgeMedium: Locator = page.locator('#rosh-badge-medium'),
+    private ROSHBadgeHigh: Locator = page.locator('#rosh-badge-high'),
+    private ROSHBadgeVeryHigh: Locator = page.locator('#rosh-badge-very-high'),
+    private ROSHBadgeUnknown: Locator = page.locator('#rosh-badge-unknown'),
     private predictorBadgeLink: Locator = page.getByRole('link', { name: 'Predictor badge', exact: true }),
     private predictorBadgeHeader: Locator = page.getByRole('heading', { name: 'Predictor badge' }),
     private fullHighPredictorBadge: Locator = page
@@ -143,6 +150,34 @@ export default class LandingPage {
 
   async checkROSHWidgetUnknown() {
     await expect(this.ROSHWidgetUnknown).toBeVisible()
+  }
+
+  async clickROSHBadgeLink() {
+    await this.ROSHBadgeLink.click()
+  }
+
+  async checkROSHBadgeHeader() {
+    await expect(this.ROSHBadgeHeader).toBeVisible()
+  }
+
+  async checkROSHBadgeLow() {
+    await expect(this.ROSHBadgeLow).toBeVisible()
+  }
+
+  async checkROSHBadgeMedium() {
+    await expect(this.ROSHBadgeMedium).toBeVisible()
+  }
+
+  async checkROSHBadgeHigh() {
+    await expect(this.ROSHBadgeHigh).toBeVisible()
+  }
+
+  async checkROSHBadgeVeryHigh() {
+    await expect(this.ROSHBadgeVeryHigh).toBeVisible()
+  }
+
+  async checkROSHBadgeUnknown() {
+    await expect(this.ROSHBadgeUnknown).toBeVisible()
   }
 
   async clickPredictorBadgeLink() {

@@ -94,6 +94,20 @@ describe('GET /predictor-badge', () => {
   })
 })
 
+describe('GET /rosh-badge', () => {
+  it('should render Rosh badge page', () => {
+    auditService.logPageView.mockResolvedValue(null)
+
+    return request(app)
+      .get('/rosh-badge')
+      .expect('Content-Type', /html/)
+      .expect(200)
+      .expect(res => {
+        expect(res.text).toContain('<title>ROSH badge</title>')
+      })
+  })
+})
+
 describe('GET /expanded-predictor-badge', () => {
   it('should render Expanded predictor badge page', () => {
     auditService.logPageView.mockResolvedValue(null)

@@ -1,0 +1,66 @@
+{% extends "layouts/side-nav-layout.njk" %}
+{% from "partials/example.njk" import example %}
+{% from "partials/nunjucksMacroOptions.njk" import nunjucksMacroOptions %}
+{% from "govuk/components/tag/macro.njk" import govukTag %}
+
+{% set pageTitle = "ROSH badge" %}
+{% set mainClasses = "govuk-body" %}
+{% set macroOptions = baseMacroOptions.slice(0, -1) %}
+
+{% block sideNavContent %}
+  <h1 class="govuk-heading-xl">
+    {{ pageTitle }}
+    <span>{{ govukTag({text: "BETA"}) }}</span>
+  </h1>
+  <div id="rosh-badge-wrapper" class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <p>The rosh badge component lets users view the band and type in a badge format. The data is from the latest completed assessment.</p>
+      {% set defaultExampleNjks %}
+        {% raw %}
+          {% from "arns/components/rosh-badge/macro.njk" import roshBadge %}
+          {{ roshBadge({data: roshDataLow }) }}
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {roshDataLow: roshDataLow}, exampleNjks: defaultExampleNjks, exampleId: 'default'}) }}
+      {{ nunjucksMacroOptions({macroOptions: macroOptions}) }}
+      <h2>How to use</h2>
+      <p>Refer to the
+        <a href="https://dsdmoj.atlassian.net/wiki/spaces/NDSS/pages/4471390821/Risk+badges">Risk badges</a>
+        Confluence documentation for usage details.
+      </p>
+      <h2>Show current (OGRS4-gen) badges for a v2 assessment (no fallback)</h2>
+      <p>Display the current (OGRS4-gen) badges for the latest assessment. Note that if the assessment is legacy (v1) or there's no data for this predictor then the badges will not render. If this is not the desired behaviour you may need to add additional validation in your code.</p>
+      {% set ogrs4NoFallbackExampleNjks %}
+        {% raw %}
+          {% from "arns/components/rosh-badge/macro.njk" import roshBadge %}
+          <p>Badges for a case with all bands set.</p>
+
+          <div id="rosh-badge-low" class="govuk-!-margin-bottom-4">
+            {{ roshBadge({data: roshDataLow }) }}
+          </div>
+          <div id="rosh-badge-medium" class="govuk-!-margin-bottom-4">
+            {{ roshBadge({data: roshDataMedium }) }}
+          </div>
+          <div id="rosh-badge-high" class="govuk-!-margin-bottom-4">
+            {{ roshBadge({data: roshDataHigh }) }}
+          </div>
+          <div id="rosh-badge-very-high" class="govuk-!-margin-bottom-4">
+            {{ roshBadge({data: roshDataVeryHigh }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {roshDataLow: roshDataLow, roshDataMedium: roshDataMedium, roshDataHigh: roshDataHigh, roshDataVeryHigh: roshDataVeryHigh}, exampleNjks: ogrs4NoFallbackExampleNjks, exampleId: 'ogrs4-no-fallback'}) }}
+      <h2>Missing band</h2>
+      <p>An unknown state occurs when the band is missing.</p>
+      {% set unknownExampleNjks %}
+        {% raw %}
+          {% from "arns/components/rosh-badge/macro.njk" import roshBadge %}
+          <div id="rosh-badge-unknown" class="govuk-!-margin-bottom-4">
+            {{ roshBadge({data: roshDataUnknown }) }}
+          </div>
+        {% endraw %}
+      {% endset %}
+      {{ example({data: {roshDataUnknown: roshDataUnknown}, exampleNjks: unknownExampleNjks, exampleId: 'unknown'}) }}
+    </div>
+  </div>
+{% endblock %}

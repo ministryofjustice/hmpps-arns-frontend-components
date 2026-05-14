@@ -21,6 +21,22 @@ export default function componentPageRoutes({ arnsComponents }: Services): Route
       riskDataErrorStates,
     })
   })
+  router.get('/rosh-badge', async (req, res) => {
+    const navSections = activateMojNav(rawNavSections, req.path)
+    const roshDataLow = await arnsComponents.getRoshData(null, 'X111111')
+    const roshDataMedium = await arnsComponents.getRoshData(null, 'X222222')
+    const roshDataHigh = await arnsComponents.getRoshData(null, 'X333333')
+    const roshDataVeryHigh = await arnsComponents.getRoshData(null, 'X444444')
+    const roshDataUnknown = await arnsComponents.getRoshData(null, 'X555555')
+    res.render('pages/roshBadgePage', {
+      navSections,
+      roshDataLow,
+      roshDataMedium,
+      roshDataHigh,
+      roshDataVeryHigh,
+      roshDataUnknown,
+    })
+  })
   router.get('/expanded-predictor-badge', async (req, res) => {
     const navSections = activateMojNav(rawNavSections, req.path)
     const riskData = await arnsComponents.getRiskData(null, 'crn', 'X123456')
