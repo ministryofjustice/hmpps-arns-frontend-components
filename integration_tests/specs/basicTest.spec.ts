@@ -31,7 +31,7 @@ test.describe('page tests', () => {
     await landingPage.checkRiskFlagWidgetNoData()
     await landingPage.checkRiskFlagWidgetUnknown()
 
-    // Click ROSH link and check page
+    // Click ROSH Widget link and check page
     await landingPage.clickROSHWidgetLink()
     await landingPage.checkROSHHeader()
     await landingPage.checkROSHWidgetFull()
@@ -47,6 +47,15 @@ test.describe('page tests', () => {
     await landingPage.checkFullLowPredictorBadge()
     await landingPage.checkPredictorBadgeNotApplicable()
     await landingPage.checkPredictorBadgeMissingScore()
+
+    // Click ROSH badge link and check page
+    await landingPage.clickROSHBadgeLink()
+    await landingPage.checkROSHBadgeHeader()
+    await landingPage.checkROSHBadgeLow()
+    await landingPage.checkROSHBadgeMedium()
+    await landingPage.checkROSHBadgeHigh()
+    await landingPage.checkROSHBadgeVeryHigh()
+    await landingPage.checkROSHBadgeUnknown()
 
     // Click Expanded predictor badge link and check page
     await landingPage.clickExpandedPredictorBadgeLink()
