@@ -24,7 +24,7 @@ export default class LandingPage {
     private ROSHWidgetNoData: Locator = page.locator('#rosh-widget-no-matching-data'),
     private ROSHWidgetUnknown: Locator = page.locator('#rosh-widget-null-data'),
     private ROSHBadgeLink: Locator = page.getByRole('link', { name: 'ROSH badge' }),
-    private ROSHBadgeHeader: Locator = page.getByRole('heading', { name: 'Risk badge' }),
+    private ROSHBadgeHeader: Locator = page.getByRole('heading', { name: 'ROSH badge' }),
     private ROSHBadgeLow: Locator = page.locator('#rosh-badge-low'),
     private ROSHBadgeMedium: Locator = page.locator('#rosh-badge-medium'),
     private ROSHBadgeHigh: Locator = page.locator('#rosh-badge-high'),
