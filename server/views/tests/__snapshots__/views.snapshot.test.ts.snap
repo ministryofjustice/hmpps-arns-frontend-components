@@ -17019,7 +17019,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the rosh badge
   </h1>
   <div id="rosh-badge-wrapper" class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-      <p>The rosh badge component lets users view the band in a badge format. The data is from the latest completed assessment.</p>
+      <p>The ROSH (Risk of Serious Harm) badge component lets users view the band in a badge format. The data is from the latest completed assessment.</p>
       
       
 
