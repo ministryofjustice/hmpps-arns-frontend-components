@@ -1,5 +1,6 @@
 import express, { Express } from 'express'
 import { NotFound } from 'http-errors'
+import 'connect-flash'
 
 import { randomUUID } from 'crypto'
 import routes from '../index'
