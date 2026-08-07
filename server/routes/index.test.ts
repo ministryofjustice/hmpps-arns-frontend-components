@@ -2,8 +2,6 @@ import type { Express } from 'express'
 import request from 'supertest'
 import { appWithAllRoutes } from './testutils/appSetup'
 
-jest.mock('../services/auditService')
-
 let app: Express
 
 beforeEach(() => {

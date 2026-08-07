@@ -5,8 +5,6 @@ import { appWithAllRoutes } from './testutils/appSetup'
 import config from '../config'
 import logger from '../../logger'
 
-jest.mock('../services/auditService')
-
 const arnsComponetMock = new ArnsComponents(null, config.apis.arnsApi, logger)
 
 let app: Express
