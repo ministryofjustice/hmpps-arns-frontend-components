@@ -8938,9 +8938,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
     
     
-    <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
-        
+    
+    
+    <div aria-label="A linear gauge chart showing the All Reoffending Predictor score is 1.23%. This is in the LOW band. Below 50% is low, 50% to below 75% is medium, 75% to below 90% is high, 90% to 100% is very high. This was last updated 01 January 2025." role="img" data-test-id='scaleBarContainer'>
+      <div class="arns-scale-marker" data-test-id='scaleMarker'>
+        <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
+          
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
           <h3 data-test-id="scaleMarkerCardContent">Low</h3>
@@ -8953,25 +8956,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       </div>
     
+        </div>
       </div>
-    </div>
     
-    <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="allReoffendingPredictor-scale">
-      <div data-band-percentage-start="0%"
-           data-band-percentage="50%" data-test-id='lowBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="75%" data-test-id='mediumBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="90%" data-test-id='highBand'>
-        <span></span>
-      </div>
-      
-        <div data-band-percentage="100%" data-test-id='veryHighBand'>
+      <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="allReoffendingPredictor-scale">
+        <div data-band-percentage-start="0%"
+             data-band-percentage="50%" data-test-id='lowBand'>
           <span></span>
         </div>
-      
+        <div data-band-percentage="75%" data-test-id='mediumBand'>
+          <span></span>
+        </div>
+        <div data-band-percentage="90%" data-test-id='highBand'>
+          <span></span>
+        </div>
+        
+          <div data-band-percentage="100%" data-test-id='veryHighBand'>
+            <span></span>
+          </div>
+        
+      </div>
     </div>
     
             
@@ -9416,9 +9420,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
     
     
-    <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
-        
+    
+    
+    <div aria-label="A linear gauge chart showing the All Reoffending Predictor score is 1.23%. This is in the LOW band. Below 50% is low, 50% to below 75% is medium, 75% to below 90% is high, 90% to 100% is very high. This was last updated 01 January 2025." role="img" data-test-id='scaleBarContainer'>
+      <div class="arns-scale-marker" data-test-id='scaleMarker'>
+        <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
+          
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
           <h3 data-test-id="scaleMarkerCardContent">Low</h3>
@@ -9431,25 +9438,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       </div>
     
+        </div>
       </div>
-    </div>
     
-    <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="allReoffendingPredictor-scale">
-      <div data-band-percentage-start="0%"
-           data-band-percentage="50%" data-test-id='lowBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="75%" data-test-id='mediumBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="90%" data-test-id='highBand'>
-        <span></span>
-      </div>
-      
-        <div data-band-percentage="100%" data-test-id='veryHighBand'>
+      <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="allReoffendingPredictor-scale">
+        <div data-band-percentage-start="0%"
+             data-band-percentage="50%" data-test-id='lowBand'>
           <span></span>
         </div>
-      
+        <div data-band-percentage="75%" data-test-id='mediumBand'>
+          <span></span>
+        </div>
+        <div data-band-percentage="90%" data-test-id='highBand'>
+          <span></span>
+        </div>
+        
+          <div data-band-percentage="100%" data-test-id='veryHighBand'>
+            <span></span>
+          </div>
+        
+      </div>
     </div>
     
             
@@ -9710,9 +9718,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
     
     
-    <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
-        
+    
+    
+    <div aria-label="A linear gauge chart showing the Violent Reoffending Predictor score is 1.23%. This is in the LOW band. Below 30% is low, 30% to below 60% is medium, 60% to below 80% is high, 80% to 100% is very high. This was last updated 01 January 2025." role="img" data-test-id='scaleBarContainer'>
+      <div class="arns-scale-marker" data-test-id='scaleMarker'>
+        <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
+          
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
           <h3 data-test-id="scaleMarkerCardContent">Low</h3>
@@ -9725,25 +9736,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       </div>
     
+        </div>
       </div>
-    </div>
     
-    <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="violentReoffendingPredictor-scale">
-      <div data-band-percentage-start="0%"
-           data-band-percentage="30%" data-test-id='lowBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="60%" data-test-id='mediumBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="80%" data-test-id='highBand'>
-        <span></span>
-      </div>
-      
-        <div data-band-percentage="100%" data-test-id='veryHighBand'>
+      <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="violentReoffendingPredictor-scale">
+        <div data-band-percentage-start="0%"
+             data-band-percentage="30%" data-test-id='lowBand'>
           <span></span>
         </div>
-      
+        <div data-band-percentage="60%" data-test-id='mediumBand'>
+          <span></span>
+        </div>
+        <div data-band-percentage="80%" data-test-id='highBand'>
+          <span></span>
+        </div>
+        
+          <div data-band-percentage="100%" data-test-id='veryHighBand'>
+            <span></span>
+          </div>
+        
+      </div>
     </div>
     
             
@@ -10004,9 +10016,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
     
     
-    <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--medium arns-scale-marker-wrapper arns-scale-marker-wrapper-position-28" data-test-id='scaleMarkerPosition'>
-        
+    
+    
+    <div aria-label="A linear gauge chart showing the Serious Violent Reoffending Predictor score is 1.23%. This is in the MEDIUM band. Below 1% is low, 1% to below 3% is medium, 3% to below 6.9% is high, 6.9% to 25%+ is very high. This was last updated 01 January 2025." role="img" data-test-id='scaleBarContainer'>
+      <div class="arns-scale-marker" data-test-id='scaleMarker'>
+        <div class="arns-scale-marker-wrapper--medium arns-scale-marker-wrapper arns-scale-marker-wrapper-position-28" data-test-id='scaleMarkerPosition'>
+          
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
           <h3 data-test-id="scaleMarkerCardContent">Medium</h3>
@@ -10019,25 +10034,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       </div>
     
+        </div>
       </div>
-    </div>
     
-    <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="seriousViolentReoffendingPredictor-scale">
-      <div data-band-percentage-start="0%"
-           data-band-percentage="1%" data-test-id='lowBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="3%" data-test-id='mediumBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="6.9%" data-test-id='highBand'>
-        <span></span>
-      </div>
-      
-        <div data-band-percentage="25%+" data-test-id='veryHighBand'>
+      <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="seriousViolentReoffendingPredictor-scale">
+        <div data-band-percentage-start="0%"
+             data-band-percentage="1%" data-test-id='lowBand'>
           <span></span>
         </div>
-      
+        <div data-band-percentage="3%" data-test-id='mediumBand'>
+          <span></span>
+        </div>
+        <div data-band-percentage="6.9%" data-test-id='highBand'>
+          <span></span>
+        </div>
+        
+          <div data-band-percentage="25%+" data-test-id='veryHighBand'>
+            <span></span>
+          </div>
+        
+      </div>
     </div>
     
             
@@ -10293,9 +10309,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
     
     
-    <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-56" data-test-id='scaleMarkerPosition'>
-        
+    
+    
+    <div aria-label="A linear gauge chart showing the Direct Contact - Sexual Reoffending Predictor score is 2.81%. This is in the VERY HIGH band. Below 0.6% is low, 0.6% to below 2.1% is medium, 2.1% to below 5.3% is high, 5.3% to 83.1% is very high. This was last updated 01 January 2025." role="img" data-test-id='scaleBarContainer'>
+      <div class="arns-scale-marker" data-test-id='scaleMarker'>
+        <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-56" data-test-id='scaleMarkerPosition'>
+          
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
           <h3 data-test-id="scaleMarkerCardContent">Very high</h3>
@@ -10308,25 +10327,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       </div>
     
+        </div>
       </div>
-    </div>
     
-    <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="directContactSexualReoffendingPredictor-scale">
-      <div data-band-percentage-start="0%"
-           data-band-percentage="0.6%" data-test-id='lowBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="2.1%" data-test-id='mediumBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="5.3%" data-test-id='highBand'>
-        <span></span>
-      </div>
-      
-        <div data-band-percentage="83.1%" data-test-id='veryHighBand'>
+      <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="directContactSexualReoffendingPredictor-scale">
+        <div data-band-percentage-start="0%"
+             data-band-percentage="0.6%" data-test-id='lowBand'>
           <span></span>
         </div>
-      
+        <div data-band-percentage="2.1%" data-test-id='mediumBand'>
+          <span></span>
+        </div>
+        <div data-band-percentage="5.3%" data-test-id='highBand'>
+          <span></span>
+        </div>
+        
+          <div data-band-percentage="83.1%" data-test-id='veryHighBand'>
+            <span></span>
+          </div>
+        
+      </div>
     </div>
     
             
@@ -10403,9 +10423,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
     
     
-    <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-83" data-test-id='scaleMarkerPosition'>
-        
+    
+    
+    <div aria-label="A linear gauge chart showing the Images and Indirect Contact – Sexual Reoffending Predictor in the HIGH band. There are three bands, low when zero sanctions, medium when one sanction, high when two or more sanctions. This was last updated 01 January 2025." role="img" data-test-id='scaleBarContainer'>
+      <div class="arns-scale-marker" data-test-id='scaleMarker'>
+        <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-83" data-test-id='scaleMarkerPosition'>
+          
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
           <h3 data-test-id="scaleMarkerCardContent">High</h3>
@@ -10415,21 +10438,22 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       </div>
     
+        </div>
       </div>
-    </div>
     
-    <div class="arns-scale-bar--small arns-scale-bar--small-sanctions" data-test-id="indirectImageContactSexualReoffendingPredictor-scale">
-      <div data-band-percentage-start=""
-           data-band-percentage="" data-test-id='lowBand'>
-        <span></span>
+      <div class="arns-scale-bar--small arns-scale-bar--small-sanctions" data-test-id="indirectImageContactSexualReoffendingPredictor-scale">
+        <div data-band-percentage-start=""
+             data-band-percentage="" data-test-id='lowBand'>
+          <span></span>
+        </div>
+        <div data-band-percentage="" data-test-id='mediumBand'>
+          <span></span>
+        </div>
+        <div data-band-percentage="" data-test-id='highBand'>
+          <span></span>
+        </div>
+        
       </div>
-      <div data-band-percentage="" data-test-id='mediumBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="" data-test-id='highBand'>
-        <span></span>
-      </div>
-      
     </div>
     
             
@@ -10687,9 +10711,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
     
     
-    <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-56" data-test-id='scaleMarkerPosition'>
-        
+    
+    
+    <div aria-label="A linear gauge chart showing the Direct Contact - Sexual Reoffending Predictor score is 2.81%. This is in the VERY HIGH band. Below 0.6% is low, 0.6% to below 2.1% is medium, 2.1% to below 5.3% is high, 5.3% to 83.1% is very high. This was last updated 01 January 2025." role="img" data-test-id='scaleBarContainer'>
+      <div class="arns-scale-marker" data-test-id='scaleMarker'>
+        <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-56" data-test-id='scaleMarkerPosition'>
+          
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
           <h3 data-test-id="scaleMarkerCardContent">Very high</h3>
@@ -10702,25 +10729,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       </div>
     
+        </div>
       </div>
-    </div>
     
-    <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="directContactSexualReoffendingPredictor-scale">
-      <div data-band-percentage-start="0%"
-           data-band-percentage="0.6%" data-test-id='lowBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="2.1%" data-test-id='mediumBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="5.3%" data-test-id='highBand'>
-        <span></span>
-      </div>
-      
-        <div data-band-percentage="83.1%" data-test-id='veryHighBand'>
+      <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="directContactSexualReoffendingPredictor-scale">
+        <div data-band-percentage-start="0%"
+             data-band-percentage="0.6%" data-test-id='lowBand'>
           <span></span>
         </div>
-      
+        <div data-band-percentage="2.1%" data-test-id='mediumBand'>
+          <span></span>
+        </div>
+        <div data-band-percentage="5.3%" data-test-id='highBand'>
+          <span></span>
+        </div>
+        
+          <div data-band-percentage="83.1%" data-test-id='veryHighBand'>
+            <span></span>
+          </div>
+        
+      </div>
     </div>
     
             
@@ -10983,9 +11011,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
     
     
-    <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-28" data-test-id='scaleMarkerPosition'>
-        
+    
+    
+    <div aria-label="A linear gauge chart showing the Combined Serious Reoffending Predictor score is 1.23%. This is in the HIGH band. Below 1% is low, 1% to below 3% is medium, 3% to below 6.9% is high, 6.9% to 25%+ is very high. This was last updated 01 January 2025." role="img" data-test-id='scaleBarContainer'>
+      <div class="arns-scale-marker" data-test-id='scaleMarker'>
+        <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-28" data-test-id='scaleMarkerPosition'>
+          
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
           <h3 data-test-id="scaleMarkerCardContent">High</h3>
@@ -10998,25 +11029,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       </div>
     
+        </div>
       </div>
-    </div>
     
-    <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="combinedSeriousReoffendingPredictor-scale">
-      <div data-band-percentage-start="0%"
-           data-band-percentage="1%" data-test-id='lowBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="3%" data-test-id='mediumBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="6.9%" data-test-id='highBand'>
-        <span></span>
-      </div>
-      
-        <div data-band-percentage="25%+" data-test-id='veryHighBand'>
+      <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="combinedSeriousReoffendingPredictor-scale">
+        <div data-band-percentage-start="0%"
+             data-band-percentage="1%" data-test-id='lowBand'>
           <span></span>
         </div>
-      
+        <div data-band-percentage="3%" data-test-id='mediumBand'>
+          <span></span>
+        </div>
+        <div data-band-percentage="6.9%" data-test-id='highBand'>
+          <span></span>
+        </div>
+        
+          <div data-band-percentage="25%+" data-test-id='veryHighBand'>
+            <span></span>
+          </div>
+        
+      </div>
     </div>
     
             
@@ -11266,9 +11298,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
     
     
-    <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
-        
+    
+    
+    <div aria-label="A linear gauge chart showing the All Reoffending Predictor score is 1.23%. This is in the LOW band. Below 50% is low, 50% to below 75% is medium, 75% to below 90% is high, 90% to 100% is very high. This was last updated 01 January 2025." role="img" data-test-id='scaleBarContainer'>
+      <div class="arns-scale-marker" data-test-id='scaleMarker'>
+        <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
+          
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
           <h3 data-test-id="scaleMarkerCardContent">Low</h3>
@@ -11281,25 +11316,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       </div>
     
+        </div>
       </div>
-    </div>
     
-    <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="allReoffendingPredictor-scale">
-      <div data-band-percentage-start="0%"
-           data-band-percentage="50%" data-test-id='lowBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="75%" data-test-id='mediumBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="90%" data-test-id='highBand'>
-        <span></span>
-      </div>
-      
-        <div data-band-percentage="100%" data-test-id='veryHighBand'>
+      <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="allReoffendingPredictor-scale">
+        <div data-band-percentage-start="0%"
+             data-band-percentage="50%" data-test-id='lowBand'>
           <span></span>
         </div>
-      
+        <div data-band-percentage="75%" data-test-id='mediumBand'>
+          <span></span>
+        </div>
+        <div data-band-percentage="90%" data-test-id='highBand'>
+          <span></span>
+        </div>
+        
+          <div data-band-percentage="100%" data-test-id='veryHighBand'>
+            <span></span>
+          </div>
+        
+      </div>
     </div>
     
             
@@ -12892,9 +12928,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
     
     
-    <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
-        
+    
+    
+    <div aria-label="A linear gauge chart showing the All Reoffending Predictor score is 1.23%. This is in the LOW band. Below 50% is low, 50% to below 75% is medium, 75% to below 90% is high, 90% to 100% is very high. This was last updated 01 January 2025." role="img" data-test-id='scaleBarContainer'>
+      <div class="arns-scale-marker" data-test-id='scaleMarker'>
+        <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
+          
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
           <h3 data-test-id="scaleMarkerCardContent">Low</h3>
@@ -12907,25 +12946,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       </div>
     
+        </div>
       </div>
-    </div>
     
-    <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="allReoffendingPredictor-scale">
-      <div data-band-percentage-start="0%"
-           data-band-percentage="50%" data-test-id='lowBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="75%" data-test-id='mediumBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="90%" data-test-id='highBand'>
-        <span></span>
-      </div>
-      
-        <div data-band-percentage="100%" data-test-id='veryHighBand'>
+      <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="allReoffendingPredictor-scale">
+        <div data-band-percentage-start="0%"
+             data-band-percentage="50%" data-test-id='lowBand'>
           <span></span>
         </div>
-      
+        <div data-band-percentage="75%" data-test-id='mediumBand'>
+          <span></span>
+        </div>
+        <div data-band-percentage="90%" data-test-id='highBand'>
+          <span></span>
+        </div>
+        
+          <div data-band-percentage="100%" data-test-id='veryHighBand'>
+            <span></span>
+          </div>
+        
+      </div>
     </div>
     
             
@@ -13187,9 +13227,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
       
     
     
-    <div class="arns-scale-marker" data-test-id='scaleMarker'>
-      <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
-        
+    
+    
+    <div aria-label="A linear gauge chart showing the All Reoffending Predictor score is 1.23%. This is in the LOW band. Below 50% is low, 50% to below 75% is medium, 75% to below 90% is high, 90% to 100% is very high. This was last updated 01 January 2025." role="img" data-test-id='scaleBarContainer'>
+      <div class="arns-scale-marker" data-test-id='scaleMarker'>
+        <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
+          
       <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
         <div class="arns-scale-marker__card-top">
           <h3 data-test-id="scaleMarkerCardContent">Low</h3>
@@ -13202,25 +13245,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         
       </div>
     
+        </div>
       </div>
-    </div>
     
-    <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="allReoffendingPredictor-scale">
-      <div data-band-percentage-start="0%"
-           data-band-percentage="50%" data-test-id='lowBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="75%" data-test-id='mediumBand'>
-        <span></span>
-      </div>
-      <div data-band-percentage="90%" data-test-id='highBand'>
-        <span></span>
-      </div>
-      
-        <div data-band-percentage="100%" data-test-id='veryHighBand'>
+      <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="allReoffendingPredictor-scale">
+        <div data-band-percentage-start="0%"
+             data-band-percentage="50%" data-test-id='lowBand'>
           <span></span>
         </div>
-      
+        <div data-band-percentage="75%" data-test-id='mediumBand'>
+          <span></span>
+        </div>
+        <div data-band-percentage="90%" data-test-id='highBand'>
+          <span></span>
+        </div>
+        
+          <div data-band-percentage="100%" data-test-id='veryHighBand'>
+            <span></span>
+          </div>
+        
+      </div>
     </div>
     
             
@@ -13672,9 +13716,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
             offence they commit within two years. This puts Alex in the low risk band.
           </span>
         </div>
-        <div class="scale-wrapper"
-             role="img"
-             aria-label="A linear gauge chart showing the All reoffending predictor score is 1.23%. This is in the LOW band. Below 50% is low, 50% to below 75% is medium, 75% to below 90% is high, 90% to 100% is very high. This was last updated 01 January 2025.">
+        <div class="scale-wrapper">
           
 
 
@@ -13695,9 +13737,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
 
 
-<div class="arns-scale-marker" data-test-id='scaleMarker'>
-  <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
-    
+
+
+<div aria-label="A linear gauge chart showing the All Reoffending Predictor score is 1.23%. This is in the LOW band. Below 50% is low, 50% to below 75% is medium, 75% to below 90% is high, 90% to 100% is very high. This was last updated 01 January 2025." role="img" data-test-id='scaleBarContainer'>
+  <div class="arns-scale-marker" data-test-id='scaleMarker'>
+    <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
+      
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
       <h3 data-test-id="scaleMarkerCardContent">Low</h3>
@@ -13710,25 +13755,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   </div>
 
+    </div>
   </div>
-</div>
 
-<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="allReoffendingPredictor-scale">
-  <div data-band-percentage-start="0%"
-       data-band-percentage="50%" data-test-id='lowBand'>
-    <span></span>
-  </div>
-  <div data-band-percentage="75%" data-test-id='mediumBand'>
-    <span></span>
-  </div>
-  <div data-band-percentage="90%" data-test-id='highBand'>
-    <span></span>
-  </div>
-  
-    <div data-band-percentage="100%" data-test-id='veryHighBand'>
+  <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="allReoffendingPredictor-scale">
+    <div data-band-percentage-start="0%"
+         data-band-percentage="50%" data-test-id='lowBand'>
       <span></span>
     </div>
-  
+    <div data-band-percentage="75%" data-test-id='mediumBand'>
+      <span></span>
+    </div>
+    <div data-band-percentage="90%" data-test-id='highBand'>
+      <span></span>
+    </div>
+    
+      <div data-band-percentage="100%" data-test-id='veryHighBand'>
+        <span></span>
+      </div>
+    
+  </div>
 </div>
 
         </div>
@@ -13825,9 +13871,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         violent offence they commit within two years. This puts Alex in the low risk band.
       </span>
         </div>
-        <div class="scale-wrapper"
-             role="img"
-             aria-label="A linear gauge chart showing the Violent reoffending predictor score is 1.23%. This is in the LOW band. Below 30% is low, 30% to below 60% is medium, 60% to below 80% is high, 80% to 100% is very high. This was last updated 01 January 2025.">
+        <div class="scale-wrapper">
           
 
 
@@ -13848,9 +13892,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
 
 
-<div class="arns-scale-marker" data-test-id='scaleMarker'>
-  <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
-    
+
+
+<div aria-label="A linear gauge chart showing the Violent Reoffending Predictor score is 1.23%. This is in the LOW band. Below 30% is low, 30% to below 60% is medium, 60% to below 80% is high, 80% to 100% is very high. This was last updated 01 January 2025." role="img" data-test-id='scaleBarContainer'>
+  <div class="arns-scale-marker" data-test-id='scaleMarker'>
+    <div class="arns-scale-marker-wrapper--low arns-scale-marker-wrapper arns-scale-marker-wrapper-position-1" data-test-id='scaleMarkerPosition'>
+      
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
       <h3 data-test-id="scaleMarkerCardContent">Low</h3>
@@ -13863,25 +13910,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   </div>
 
+    </div>
   </div>
-</div>
 
-<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="violentReoffendingPredictor-scale">
-  <div data-band-percentage-start="0%"
-       data-band-percentage="30%" data-test-id='lowBand'>
-    <span></span>
-  </div>
-  <div data-band-percentage="60%" data-test-id='mediumBand'>
-    <span></span>
-  </div>
-  <div data-band-percentage="80%" data-test-id='highBand'>
-    <span></span>
-  </div>
-  
-    <div data-band-percentage="100%" data-test-id='veryHighBand'>
+  <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="violentReoffendingPredictor-scale">
+    <div data-band-percentage-start="0%"
+         data-band-percentage="30%" data-test-id='lowBand'>
       <span></span>
     </div>
-  
+    <div data-band-percentage="60%" data-test-id='mediumBand'>
+      <span></span>
+    </div>
+    <div data-band-percentage="80%" data-test-id='highBand'>
+      <span></span>
+    </div>
+    
+      <div data-band-percentage="100%" data-test-id='veryHighBand'>
+        <span></span>
+      </div>
+    
+  </div>
 </div>
 
         </div>
@@ -14001,9 +14049,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         seriously harmful offence they commit within two years. This puts Alex in the high risk band.
       </span>
         </div>
-        <div class="scale-wrapper"
-             role="img"
-             aria-label="A linear gauge chart showing the Combined serious reoffending predictor score is 1.23%. This is in the HIGH band. Below 1% is low, 1% to below 3% is medium, 3% to below 6.9% is high, 6.9% to 25% or above is very high. This was last updated 01 January 2025.">
+        <div class="scale-wrapper">
           
 
 
@@ -14024,9 +14070,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
 
 
-<div class="arns-scale-marker" data-test-id='scaleMarker'>
-  <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-28" data-test-id='scaleMarkerPosition'>
-    
+
+
+<div aria-label="A linear gauge chart showing the Combined Serious Reoffending Predictor score is 1.23%. This is in the HIGH band. Below 1% is low, 1% to below 3% is medium, 3% to below 6.9% is high, 6.9% to 25%+ is very high. This was last updated 01 January 2025." role="img" data-test-id='scaleBarContainer'>
+  <div class="arns-scale-marker" data-test-id='scaleMarker'>
+    <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-28" data-test-id='scaleMarkerPosition'>
+      
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
       <h3 data-test-id="scaleMarkerCardContent">High</h3>
@@ -14039,25 +14088,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   </div>
 
+    </div>
   </div>
-</div>
 
-<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="combinedSeriousReoffendingPredictor-scale">
-  <div data-band-percentage-start="0%"
-       data-band-percentage="1%" data-test-id='lowBand'>
-    <span></span>
-  </div>
-  <div data-band-percentage="3%" data-test-id='mediumBand'>
-    <span></span>
-  </div>
-  <div data-band-percentage="6.9%" data-test-id='highBand'>
-    <span></span>
-  </div>
-  
-    <div data-band-percentage="25%+" data-test-id='veryHighBand'>
+  <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="combinedSeriousReoffendingPredictor-scale">
+    <div data-band-percentage-start="0%"
+         data-band-percentage="1%" data-test-id='lowBand'>
       <span></span>
     </div>
-  
+    <div data-band-percentage="3%" data-test-id='mediumBand'>
+      <span></span>
+    </div>
+    <div data-band-percentage="6.9%" data-test-id='highBand'>
+      <span></span>
+    </div>
+    
+      <div data-band-percentage="25%+" data-test-id='veryHighBand'>
+        <span></span>
+      </div>
+    
+  </div>
 </div>
 
         </div>
@@ -14144,9 +14194,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
         serious violent offence they commit within two years. This puts Alex in the medium risk band.
       </span>
         </div>
-        <div class="scale-wrapper"
-             role="img"
-             aria-label="A linear gauge chart showing the Serious violent reoffending predictor score is 1.23%. This is in the MEDIUM band. Below 1% is low, 1% to below 3% is medium, 3% to below 6.9% is high, 6.9% to 25% or above is very high. This was last updated 01 January 2025.">
+        <div class="scale-wrapper">
           
 
 
@@ -14167,9 +14215,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
 
 
-<div class="arns-scale-marker" data-test-id='scaleMarker'>
-  <div class="arns-scale-marker-wrapper--medium arns-scale-marker-wrapper arns-scale-marker-wrapper-position-28" data-test-id='scaleMarkerPosition'>
-    
+
+
+<div aria-label="A linear gauge chart showing the Serious Violent Reoffending Predictor score is 1.23%. This is in the MEDIUM band. Below 1% is low, 1% to below 3% is medium, 3% to below 6.9% is high, 6.9% to 25%+ is very high. This was last updated 01 January 2025." role="img" data-test-id='scaleBarContainer'>
+  <div class="arns-scale-marker" data-test-id='scaleMarker'>
+    <div class="arns-scale-marker-wrapper--medium arns-scale-marker-wrapper arns-scale-marker-wrapper-position-28" data-test-id='scaleMarkerPosition'>
+      
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
       <h3 data-test-id="scaleMarkerCardContent">Medium</h3>
@@ -14182,25 +14233,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   </div>
 
+    </div>
   </div>
-</div>
 
-<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="seriousViolentReoffendingPredictor-scale">
-  <div data-band-percentage-start="0%"
-       data-band-percentage="1%" data-test-id='lowBand'>
-    <span></span>
-  </div>
-  <div data-band-percentage="3%" data-test-id='mediumBand'>
-    <span></span>
-  </div>
-  <div data-band-percentage="6.9%" data-test-id='highBand'>
-    <span></span>
-  </div>
-  
-    <div data-band-percentage="25%+" data-test-id='veryHighBand'>
+  <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="seriousViolentReoffendingPredictor-scale">
+    <div data-band-percentage-start="0%"
+         data-band-percentage="1%" data-test-id='lowBand'>
       <span></span>
     </div>
-  
+    <div data-band-percentage="3%" data-test-id='mediumBand'>
+      <span></span>
+    </div>
+    <div data-band-percentage="6.9%" data-test-id='highBand'>
+      <span></span>
+    </div>
+    
+      <div data-band-percentage="25%+" data-test-id='veryHighBand'>
+        <span></span>
+      </div>
+    
+  </div>
 </div>
 
         </div>
@@ -14307,9 +14359,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           direct contact sexual offence they commit within two years. This puts Alex in the very high risk band.
         </span>
           </div>
-          <div class="scale-wrapper"
-               role="img"
-               aria-label="A linear gauge chart showing the Direct contact sexual reoffending predictor score is 2.81%. This is in the VERY HIGH band. Below 0.6% is low, 0.6% to below 2.1% is medium, 2.1% to below 5.3% is high, 5.3% to 83.1% is very high. This was last updated 01 January 2025.">
+          <div class="scale-wrapper">
             
 
 
@@ -14330,9 +14380,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
 
 
-<div class="arns-scale-marker" data-test-id='scaleMarker'>
-  <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-56" data-test-id='scaleMarkerPosition'>
-    
+
+
+<div aria-label="A linear gauge chart showing the Direct Contact - Sexual Reoffending Predictor score is 2.81%. This is in the VERY HIGH band. Below 0.6% is low, 0.6% to below 2.1% is medium, 2.1% to below 5.3% is high, 5.3% to 83.1% is very high. This was last updated 01 January 2025." role="img" data-test-id='scaleBarContainer'>
+  <div class="arns-scale-marker" data-test-id='scaleMarker'>
+    <div class="arns-scale-marker-wrapper--very-high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-56" data-test-id='scaleMarkerPosition'>
+      
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
       <h3 data-test-id="scaleMarkerCardContent">Very high</h3>
@@ -14345,25 +14398,26 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   </div>
 
+    </div>
   </div>
-</div>
 
-<div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="directContactSexualReoffendingPredictor-scale">
-  <div data-band-percentage-start="0%"
-       data-band-percentage="0.6%" data-test-id='lowBand'>
-    <span></span>
-  </div>
-  <div data-band-percentage="2.1%" data-test-id='mediumBand'>
-    <span></span>
-  </div>
-  <div data-band-percentage="5.3%" data-test-id='highBand'>
-    <span></span>
-  </div>
-  
-    <div data-band-percentage="83.1%" data-test-id='veryHighBand'>
+  <div class="arns-scale-bar arns-scale-bar--fourths" data-test-id="directContactSexualReoffendingPredictor-scale">
+    <div data-band-percentage-start="0%"
+         data-band-percentage="0.6%" data-test-id='lowBand'>
       <span></span>
     </div>
-  
+    <div data-band-percentage="2.1%" data-test-id='mediumBand'>
+      <span></span>
+    </div>
+    <div data-band-percentage="5.3%" data-test-id='highBand'>
+      <span></span>
+    </div>
+    
+      <div data-band-percentage="83.1%" data-test-id='veryHighBand'>
+        <span></span>
+      </div>
+    
+  </div>
 </div>
 
           </div>
@@ -14485,9 +14539,7 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
           offence they commit within two years. This is because they have more than 2 previous relevant sanctions.
         </span>
           </div>
-          <div class="scale-wrapper"
-               role="img"
-               aria-label="A linear gauge chart showing the Images and indirect contact sexual reoffending predictor in the HIGH band. There are three bands, low when zero sanctions, medium when one sanction, high when two or more sanctions. This was last updated 01 January 2025.">
+          <div class="scale-wrapper">
             
 
 
@@ -14511,9 +14563,12 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
   
 
 
-<div class="arns-scale-marker" data-test-id='scaleMarker'>
-  <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-83" data-test-id='scaleMarkerPosition'>
-    
+
+
+<div aria-label="A linear gauge chart showing the Images and Indirect Contact – Sexual Reoffending Predictor in the HIGH band. There are three bands, low when zero sanctions, medium when one sanction, high when two or more sanctions. This was last updated 01 January 2025." role="img" data-test-id='scaleBarContainer'>
+  <div class="arns-scale-marker" data-test-id='scaleMarker'>
+    <div class="arns-scale-marker-wrapper--high arns-scale-marker-wrapper arns-scale-marker-wrapper-position-83" data-test-id='scaleMarkerPosition'>
+      
   <div class="arns-scale-marker__card" data-test-id="scaleMarkerCard">
     <div class="arns-scale-marker__card-top">
       <h3 data-test-id="scaleMarkerCardContent">High</h3>
@@ -14523,21 +14578,22 @@ exports[`View Snapshot Tests: All Pages should match snapshot for the predictor 
     
   </div>
 
+    </div>
   </div>
-</div>
 
-<div class="arns-scale-bar--small arns-scale-bar--small-sanctions" data-test-id="indirectImageContactSexualReoffendingPredictor-scale">
-  <div data-band-percentage-start=""
-       data-band-percentage="" data-test-id='lowBand'>
-    <span></span>
+  <div class="arns-scale-bar--small arns-scale-bar--small-sanctions" data-test-id="indirectImageContactSexualReoffendingPredictor-scale">
+    <div data-band-percentage-start=""
+         data-band-percentage="" data-test-id='lowBand'>
+      <span></span>
+    </div>
+    <div data-band-percentage="" data-test-id='mediumBand'>
+      <span></span>
+    </div>
+    <div data-band-percentage="" data-test-id='highBand'>
+      <span></span>
+    </div>
+    
   </div>
-  <div data-band-percentage="" data-test-id='mediumBand'>
-    <span></span>
-  </div>
-  <div data-band-percentage="" data-test-id='highBand'>
-    <span></span>
-  </div>
-  
 </div>
 
           </div>
