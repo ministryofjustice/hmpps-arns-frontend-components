@@ -14,6 +14,11 @@ When deployed to an environment with multiple pods we run applications with an i
 a distributed cache of sessions.
 The template app is, by default, configured not to use REDIS when running locally.
 
+## Accessing the app via browser
+
+Once the app has been started (either via docker-compose or by running the app locally),
+you can access it via your browser at [http://localhost:3000](http://localhost:3000).
+
 ## Running the app via docker-compose
 
 The easiest way to run the app is to use docker compose to create the service and all dependencies.
