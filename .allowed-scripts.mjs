@@ -9,7 +9,7 @@ export default configureAllowedScripts({
     // ESBuild is written in GoLang - this is needed to download prebuilt binaries for the specific platform
     'node_modules/esbuild@0.28.2': 'ALLOW',
     // Provides native macOS file system event notifications used by file-watching dev tools
-    "node_modules/fsevents@2.3.3": "ALLOW",
+    'node_modules/fsevents@2.3.3': 'ALLOW',
     // Native solution to quickly resolve module paths, used by jest and eslint
     'node_modules/unrs-resolver@1.12.2': 'ALLOW',
   },
