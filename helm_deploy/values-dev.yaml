@@ -11,6 +11,3 @@ generic-service:
     INGRESS_URL: "https://arns-frontend-components-dev.hmpps.service.justice.gov.uk"
     ENVIRONMENT_NAME: DEV
     ARNS_API_URL: "http://hmpps-arns-frontend-components-wiremock/arns-api"
-
-generic-prometheus-alerts:
-  alertSeverity: hmpps-arns-risk-actuarial-nonprod
