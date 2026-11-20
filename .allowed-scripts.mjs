@@ -12,5 +12,7 @@ export default configureAllowedScripts({
     'node_modules/fsevents@2.3.3': 'ALLOW',
     // Native solution to quickly resolve module paths, used by jest and eslint
     'node_modules/unrs-resolver@1.12.2': 'ALLOW',
+    // Checks the protobufjs version range used by the parent package
+    'node_modules/protobufjs@7.6.6': 'ALLOW',
   },
 })
